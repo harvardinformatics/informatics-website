@@ -3,8 +3,12 @@ nav:
   - Home: index.md
   - About: about.md
   - Resources: 
-    - resources.md
+    - Resources: resources.md
     - Python: resources/python.md
+  - Research: research.md
+  - Software: software.md
+  - Contact Us: contact.md
+  - Events: events.md
 theme: 
   name: material
   features:
