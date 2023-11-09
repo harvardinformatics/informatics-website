@@ -4,15 +4,15 @@ subtitle: "Part 1: R Basics"
 date: "October 18, 2023"
 author: "Adam Freedman, Gregg Thomas, and Lei Ma"
 output: 
-  html_document:
-    keep_md: true
+    html_document:
+      keep_md: true
 ---
 
 Welcome to the first part of the [FAS Informatics](https://informatics.fas.harvard.edu/) [Intro to R workshop](https://harvardinformatics.github.io/workshops/2023-fall/r/)! 
 
 If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part1-student.Rmd)
 
-# What is R?
+## What is R?
 
 R is a functional programming language, which means that most of what one does is apply functions to objects. Functions perform various operations on the objects, with particular functions constructed to work with particular kinds of objects. For example, the *sum()* function works with numeric data. 
 

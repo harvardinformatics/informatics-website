@@ -450,10 +450,16 @@ Of course, if we aren't interested in trout, we would want to filter on the *spe
 >
 > 1. As a prelude to quantifying sampling effort across habitats and years, construct a new tibble called *sampling_data* that includes the following variables: *year*, *sitecode*, *section*, *reach*, and *species*:
 
+=== "Exercise"
 
-```r
-sampling_data <- select(vertebrates, year, sitecode, section, reach, species)
-```
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+
+    ```r
+    sampling_data <- select(vertebrates, year, sitecode, section, reach, species)
+    ```
 
 With large data frames with many columns, it can often be difficult to type out a list of everything you want. Conveniently, select comes with its own helper functions to allow you to pick columns. For example, the `starts_with()` function generates a list of all the columns that start with a particular word in the current data frame. 
 
@@ -577,11 +583,16 @@ trout_cgs
 
 > **Row selection exercise:** Create a new tibble that only contains Cutthroat trout, in old growth forest, and before the year 2000)
 
+=== "Exercise"
 
-```r
-trout_OG_early <- filter(vertebrates, species=="Cutthroat trout", section =="OG", year < 2000)
-trout_OG_early
-```
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+    ```r
+    trout_OG_early <- filter(vertebrates, species=="Cutthroat trout", section =="OG", year < 2000)
+    trout_OG_early
+    ```
 
 ```
 ## # A tibble: 3,398 × 16
@@ -694,10 +705,15 @@ filter(vertebrates, (species == "Coastal giant salamander" | species == "Cascade
 
 > **Complex row selection exercise** Can you select only observations generated after the year 2000, where the species is Cutthroat trout, and where the reach is lower (L) or middle (M) but not upper (U). 
 
+=== "Exercise"
 
-```r
-filter(vertebrates,species == "Cutthroat trout", reach != "U", year > 2000)
-```
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+    ```r
+    filter(vertebrates,species == "Cutthroat trout", reach != "U", year > 2000)
+    ```
 
 ```
 ## # A tibble: 7,884 × 16
@@ -738,29 +754,46 @@ In redirecting back to the *vertebrates* tibble, we are changing the input data 
 
 This is a complicated exercise, but there are hints in the comments below. Note there are many ways to do this exercise, and the hints are just one way. You might find ways to combined steps, for example. 
 
+=== "Exercise"
 
+    ```r
+    ## Create a new tibble that contains just coastal giant salamander observations
 
-```r
-## Create a new tibble that contains just coastal giant salamander observations
-coastal <- filter(vertebrates, species=="Coastal giant salamander")
+    ## Create a new variable called tail_length equal to length_2_mm minus length_1_mm
 
-## Create a new variable called tail_length equal to length_2_mm minus length_1_mm
-coastal <- mutate(coastal, tail_length = length_2_mm - length_1_mm)
+    ## Create a new variable called tail_mean that stores the mean of tail_length column; remember that you need to include the argument na.rm = TRUE to tell the mean function to remove missing values first
 
-## Create a new variable called tail_mean that stores the mean of tail_length column; remember that you need to include the argument na.rm = TRUE to tell the mean function to remove missing values first
-tail_mean <- mean(coastal$tail_length, na.rm=TRUE)
+    ## Create a new variable called tail_sd that stores the standard deviation of tail_length column. The function for this is sd(); like mean() you need to include the argument na.rm = TRUE to tell the sd function to remove missing values first
 
-## Create a new variable called tail_sd that stores the standard deviation of tail_length column. The function for this is sd(); like mean() you need to include the argument na.rm = TRUE to tell the sd function to remove missing values first
-tail_sd <- sd(coastal$tail_length, na.rm=TRUE)
+    ## Create a new column in the coastal tibble that is TRUE if tail_length more than two standard deviations from the mean
 
-## Create a new column in the coastal tibble that is TRUE if tail_length more than two standard deviations from the mean
-coastal <- mutate(coastal, tail_outlier=(tail_length > (tail_mean+2*tail_sd) | (tail_length<tail_mean-2*tail_sd)))
+    ## Filter the coastal tibble to keep only rows where outlier is TRUE
 
-## Filter the coastal tibble to keep only rows where outlier is TRUE
-outliers <- filter(coastal, tail_outlier == TRUE)
+    ## You should have 522 observations in your outliers tibble. If you don't and you aren't sure what went wrong, put up your orange sticky.
+    ```
+=== "Solution"
 
-## You should have 522 observations in your outliers tibble. If you don't and you aren't sure what went wrong, put up your red sticky.
-```
+    ```r
+    ## Create a new tibble that contains just coastal giant salamander observations
+    coastal <- filter(vertebrates, species=="Coastal giant salamander")
+
+    ## Create a new variable called tail_length equal to length_2_mm minus length_1_mm
+    coastal <- mutate(coastal, tail_length = length_2_mm - length_1_mm)
+
+    ## Create a new variable called tail_mean that stores the mean of tail_length column; remember that you need to include the argument na.rm = TRUE to tell the mean function to remove missing values first
+    tail_mean <- mean(coastal$tail_length, na.rm=TRUE)
+
+    ## Create a new variable called tail_sd that stores the standard deviation of tail_length column. The function for this is sd(); like mean() you need to include the argument na.rm = TRUE to tell the sd function to remove missing values first
+    tail_sd <- sd(coastal$tail_length, na.rm=TRUE)
+
+    ## Create a new column in the coastal tibble that is TRUE if tail_length more than two standard deviations from the mean
+    coastal <- mutate(coastal, tail_outlier=(tail_length > (tail_mean+2*tail_sd) | (tail_length<tail_mean-2*tail_sd)))
+
+    ## Filter the coastal tibble to keep only rows where outlier is TRUE
+    outliers <- filter(coastal, tail_outlier == TRUE)
+
+    ## You should have 522 observations in your outliers tibble. If you don't and you aren't sure what went wrong, put up your red sticky.
+    ```
 
 
 ### Using ```mutate()``` to reformat missing values
@@ -822,12 +855,18 @@ sd(coastalZ$length_1_mm_Z, na.rm=TRUE)
 > **New variables creation exercise 2:**
 > Can you think of another way to generate the Z-score column? Hint: you can create new variables for the constituent parts of the Z-score function, and then perform the calculation using those constituent parts. Try doing that, updating *coastalZ* with the new variables. It should take three separate mutate commands. Write the Z-score to the new variable *z2*
 
+=== "Exercise"
 
-```r
-coastalZ <- mutate(coastalZ, meanlength =  mean(length_1_mm, na.rm=TRUE))
-coastalZ <- mutate(coastalZ, sdlength =  sd(length_1_mm, na.rm=TRUE))
-coastalZ <- mutate(coastalZ, z2 = (length_1_mm - meanlength) / sdlength)
-```
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+
+    ```r
+    coastalZ <- mutate(coastalZ, meanlength =  mean(length_1_mm, na.rm=TRUE))
+    coastalZ <- mutate(coastalZ, sdlength =  sd(length_1_mm, na.rm=TRUE))
+    coastalZ <- mutate(coastalZ, z2 = (length_1_mm - meanlength) / sdlength)
+    ```
  
 To confirm this produces the same output as the first implementation, calculate the mean and standard deviation of *z2* (these should also be 0 and 1, respectively).
  
@@ -1038,9 +1077,16 @@ In this example, we pipe together the two function calls we executed earlier, bu
 > 1. Try creating a more complex piped workflow, calling in sequence the ```filter()``` and ```select()``` commands above, followed by using ```mutate()``` to normalize all weights by the maximum value of all cutthroat trout weights.
 
 
-```r
-wnorm <- select(vertebrates, year, section, species, length_1_mm, weight_g) %>% filter(species=="Cutthroat trout", year < 2000, section =="OG") %>% mutate(normalized_weight = weight_g / max(weight_g, na.rm=TRUE))
-```
+=== "Exercise"
+
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+
+    ```r
+    wnorm <- select(vertebrates, year, section, species, length_1_mm, weight_g) %>% filter(species=="Cutthroat trout", year < 2000, section =="OG") %>% mutate(normalized_weight = weight_g / max(weight_g, na.rm=TRUE))
+    ```
 
 > 2. Try experimenting with different row and column selections, and new variable creations with these three functions. You can even switch the order, e.g. create a new synthetic variable then applying ```filter()``` to it.
 
@@ -1137,7 +1183,7 @@ You may have noticed that these two ways of handling NAs lead to different resul
 
 ### Using ```group_by()``` with ```summarize()```
 
-In most data sets, summarizing across all observations (rows) may not be particularly informative, because what one usually wants to do is to get information specific to different groups of observations, e.g. those in different habitats, exposed to different experimental treatments, etc. Thus, in most circumstances one will want to define those groups for a tibble. One can do this using the ```group_by()``` function, which takes as it's first argument the name of the data frame, and the following arguments are variables to group by; these can then be followed by other keyword arguments). An obvious grouping for the *vertebrates* tibble is species.
+In most data sets, summarizing across all observations (rows) may not be particularly informative, because what one usually wants to do is to get information specific to different groups of observations, e.g. those in different habitats, exposed to different experimental treatments, etc. Thus, in most circumstances one will want to define those groups for a tibble. One can do this using the ```group_by()``` function, which takes as it's first argument the name of the data frame, and the following arguments are variables to group by; these can then be followed by other keyword arguments. An obvious grouping for the *vertebrates* tibble is species.
 
 > To obtain this grouping, run the command block below:
 
@@ -1251,19 +1297,34 @@ We have now produced mean statistic by species.
 >
 > Try building a tibble grouped by *species* and  *section*, then use summarize to get the mean and standard deviation of weight. But first, get rid of missing values for both of these variables (hint: use `drop_na()`) and **DON'T** make changes to the *vertebrates* tibble.
 
+=== "Exercise"
 
-```r
-# start with the vertebrates table
-vertebrates %>%
-  # we only want the columns species, section, and weight_g
-  select(species, section, weight_g) %>%
-  # remove NAs
-  drop_na() %>%
-  # group by species and section
-  group_by(species, section) %>%
-  # summarize mean weight, standard deviation of weight, and number of observations in each group
-  summarize(mean_weight=mean(weight_g), std_weight=sd(weight_g), num=n())
-```
+    ```r
+    # start with the vertebrates table
+
+      # we only want the columns species, section, and weight_g
+
+      # remove NAs
+
+      # group by species and section
+
+      # summarize mean weight, standard deviation of weight, and number of observations in each group
+
+    ```
+=== "Solution"
+
+    ```r
+    # start with the vertebrates table
+    vertebrates %>%
+      # we only want the columns species, section, and weight_g
+      select(species, section, weight_g) %>%
+      # remove NAs
+      drop_na() %>%
+      # group by species and section
+      group_by(species, section) %>%
+      # summarize mean weight, standard deviation of weight, and number of observations in each group
+      summarize(mean_weight=mean(weight_g), std_weight=sd(weight_g), num=n())
+    ```
 
 ```
 ## `summarise()` has grouped output by 'species'. You can override using the

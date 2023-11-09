@@ -12,7 +12,7 @@ Welcome to the Part 3 of the [FAS Informatics](https://informatics.fas.harvard.e
 
 If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part3-student.Rmd).
 
-# Data visualization in R with ggplot2
+## Data visualization in R with ggplot2
 
 Conveying research findings in a meaningful way is an integral part to being a scientist, almost as important as performing research itself. The scale of modern biological data compounds its importance -- we now need to summarize and condense millions of data points into meaningful, easy to understand figures while still showing the scale and variance in our data. All of which leads to the need for scientists to be able to programmatically generate visualizations for exploratory analysis, to convey conclusions, and for reproducibility of final figures.
 
@@ -203,16 +203,30 @@ Let's use this information to now plot the **points** for `Petal.Length` and `Pe
 
 > Run the following code block to add a geom_point() layer to the plot of Petal.Length and Petal.Width:
 
+=== "Exercise"
 
-```r
-# Load the iris data into a ggplot grob, specify the aesthetics, and
-# add a layer that adds the points with geom_point()
+    ```r
 
-iris_plot <- ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
-  geom_point(size=2, alpha=0.5, color="darkgreen")
+    # Load the iris data into a ggplot grob, specify the aesthetics, and
+    # add a layer that adds the points with geom_point()
 
-print(iris_plot)
-```
+    iris_plot <- ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
+      geom_point()
+
+    print(iris_plot)
+
+    ```
+=== "Solution"
+
+    ```r
+    # Load the iris data into a ggplot grob, specify the aesthetics, and
+    # add a layer that adds the points with geom_point()
+
+    iris_plot <- ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
+      geom_point(size=2, alpha=0.5, color="darkgreen")
+
+    print(iris_plot)
+    ```
 
 ![](R-workshop-2023-Part3_files/figure-html/iris-plot-3-1.png)<!-- -->
 
@@ -231,15 +245,26 @@ What if we wanted to fit a model that describes the relationship between the x a
 > **Exercise**:
 > In the code block below, add anothar **layer** to the plot to fit a model to it with `geom_smooth()`. If you just add `+ geom_smooth()` what happens? Is this a linear regression?
 
+=== "Exercise"
 
-```r
-iris_plot_2 <- iris_plot + 
-  ## When prompted, add a layer of geom_smooth() here
-  geom_smooth(method = "lm", se = FALSE, linetype = "dashed", color = "#333333")
-  ## When prompted, add a layer of geom_smooth() here
+    ```r
 
-print(iris_plot_2)
-```
+    iris_plot_2 <- iris_plot + 
+      ## When prompted, add a layer of geom_smooth() here
+
+    print(iris_plot_2)
+
+    ```
+=== "Solution"
+
+      ```r
+      iris_plot_2 <- iris_plot + 
+        ## When prompted, add a layer of geom_smooth() here
+        geom_smooth(method = "lm", se = FALSE, linetype = "dashed", color = "#333333")
+        ## When prompted, add a layer of geom_smooth() here
+
+      print(iris_plot_2)
+      ```
 
 ```
 ## `geom_smooth()` using formula = 'y ~ x'
@@ -275,21 +300,38 @@ Let's try this ourselves.
 > **Exercise**:
 > In the code block below, add a new `geom_point()` layer to add points that plot `Sepal.Length` and `Sepal.Width` on the same grid as `Petal.Length` and `Petal.Width`:
 
+=== "Exercise"
 
-```r
-iris_plot <- ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
-  geom_point(color="#e69f00") +
-  
-  ## When prompted, add a new geom_point() layer here with Sepal data
-  geom_point(aes(x=Sepal.Length, y=Sepal.Width), color="#56b4e9") +
-  
-  ## When prompted, add layers that change the labels of the x and y axes here
-  xlab("Length") +
-  ylab("Width")
+    ```r
 
-# Display the plot
-print(iris_plot)
-```
+    iris_plot <- ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
+      geom_point()
+
+      ## When prompted, add a new geom_point() layer here with Sepal data
+
+      ## When prompted, add layers that change the labels of the x and y axes here
+
+
+    # Display the plot
+    print(iris_plot)
+
+    ```
+=== "Solution"
+
+    ```r
+    iris_plot <- ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
+      geom_point(color="#e69f00") +
+      
+      ## When prompted, add a new geom_point() layer here with Sepal data
+      geom_point(aes(x=Sepal.Length, y=Sepal.Width), color="#56b4e9") +
+      
+      ## When prompted, add layers that change the labels of the x and y axes here
+      xlab("Length") +
+      ylab("Width")
+
+    # Display the plot
+    print(iris_plot)
+    ```
 
 ![](R-workshop-2023-Part3_files/figure-html/iris-plot-5-1.png)<!-- -->
 
@@ -340,15 +382,27 @@ Note that we've lost some information here, as we now can't associate a particul
 
 > **Exercise**: In the code block below, insert another function before the pivot to assign each flower its own ID. 
 
+=== "Exercise"
 
-```r
-iris_part <- iris %>% 
-  # insert function here
-  mutate(id = row_number()) %>% 
-  pivot_longer(cols = !c(id, Species), names_sep = "\\.", names_to = c("Part", ".value"))
+    ```r
 
-iris_part
-```
+    iris_part <- iris %>% 
+      # insert function here
+      pivot_longer(cols = !c(id, Species), names_sep = "\\.", names_to = c("Part", ".value"))
+
+    iris_part
+
+    ```
+=== "Solution"
+
+    ```r
+    iris_part <- iris %>% 
+      # insert function here
+      mutate(id = row_number()) %>% 
+      pivot_longer(cols = !c(id, Species), names_sep = "\\.", names_to = c("Part", ".value"))
+
+    iris_part
+    ```
 
 ```
 ## # A tibble: 300 × 5
@@ -371,15 +425,27 @@ Now we can plot the data with the new variable "Part" as a grouping variable.
 
 >Run the following code to see how ggplot automatically handles the data.
 
+=== "Exercise"
 
-```r
-iris_plot <- ggplot(iris_part, aes(x = Length, y = Width, color = Part)) +
-  geom_point() +
-  ## when prompted, insert code to change colors and legend
-  scale_color_manual(values = c(Petal = "#e69f00", Sepal = "#56b4e9"), name = "Flower Part", labels = c(Petal = "Petals!", Sepal = "Sepals!"))
+    ```r
 
-print(iris_plot)
-```
+    iris_plot <- ggplot(iris_part, aes(x = Length, y = Width, color = Part)) +
+      geom_point()
+      ## when prompted, insert code to change colors and legend
+
+    print(iris_plot)
+
+    ```
+=== "Solution"
+
+    ```r
+    iris_plot <- ggplot(iris_part, aes(x = Length, y = Width, color = Part)) +
+      geom_point() +
+      ## when prompted, insert code to change colors and legend
+      scale_color_manual(values = c(Petal = "#e69f00", Sepal = "#56b4e9"), name = "Flower Part", labels = c(Petal = "Petals!", Sepal = "Sepals!"))
+
+    print(iris_plot)
+    ```
 
 ![](R-workshop-2023-Part3_files/figure-html/iris-plot-8-1.png)<!-- -->
 
@@ -461,14 +527,26 @@ To make a histogram of lengths we'll first need to **add a column with the lengt
 > **Exercise**:
 > In the code block below, use `mutate()` to add the length of each SV as another column in the macaque_svs data frame. Call this column `length`. What is the average length of all structural variants in the dataset?
 
+=== "Exercise"
 
-```r
-## When prompted, add a column to the macaque_svs data frame that contains the length of each SV
-## Call this column 'length'
-macaque_svs <- macaque_svs %>% mutate(length = end - start)
+    ```r
 
-mean(macaque_svs$length)
-```
+    ## When prompted, add a column to the macaque_svs data frame that contains the length of each SV
+    ## Call this column 'length'
+
+
+    mean(macaque_svs$length)
+
+    ```
+=== "Solution"
+
+    ```r
+    ## When prompted, add a column to the macaque_svs data frame that contains the length of each SV
+    ## Call this column 'length'
+    macaque_svs <- macaque_svs %>% mutate(length = end - start)
+
+    mean(macaque_svs$length)
+    ```
 
 ```
 ## [1] 3615.021
@@ -478,20 +556,38 @@ Now, let's make a histogram to visualize the shape of the distribution of length
 
 > Run the following block of code to visualize the distribution of SV lengths as a histogram:
 
+=== "Exercise"
 
-```r
-sv_len_hist <- macaque_svs %>% 
-  
-  ## when prompted add a function here to replace any SV with length > 5000 with 5000
-  mutate(length = replace(length, length > 5000, 5000)) %>% 
-  
-  ggplot(aes(x=length)) +
-    ## when prompted, change the histogram color and bin number here
-    geom_histogram(color="#999999")
+    ```r
 
-# Display the plot
-print(sv_len_hist)
-```
+
+    sv_len_hist <- macaque_svs %>% 
+      
+      ## when prompted add a function here to replace any SV with length > 5000 with 5000
+      
+      ggplot(aes(x=length)) +
+        ## when prompted, change the histogram color and bin number here
+        geom_histogram()
+
+    # Display the plot
+    print(sv_len_hist)
+
+    ```
+=== "Solution"
+
+    ```r
+    sv_len_hist <- macaque_svs %>% 
+      
+      ## when prompted add a function here to replace any SV with length > 5000 with 5000
+      mutate(length = replace(length, length > 5000, 5000)) %>% 
+      
+      ggplot(aes(x=length)) +
+        ## when prompted, change the histogram color and bin number here
+        geom_histogram(color="#999999")
+
+    # Display the plot
+    print(sv_len_hist)
+    ```
 
 ```
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
@@ -533,18 +629,31 @@ In addition to **layers** like `geom_line()`, which requires x and y coordinates
 >
 > 3. Once you like how it looks, assign it to the object `sv_len_hist` to move on to the next code chunk
 
+=== "Exercise"
 
-```r
-## When prompted, calculate the mean SV length as mean_sv_len
-mean_sv_len <- macaque_svs %>% filter(length <= 5000) %>% pull(length) %>% mean()
-## When prompted, calculated the mean SV length as mean_sv_len
+    ```r
 
-sv_len_hist_2 <- sv_len_hist + 
-  ## When prompted, add a layer with geom_vline() at the mean SV length
-  geom_vline(xintercept=mean_sv_len, linewidth=1, linetype="dotted", color="black")
+    ## When prompted, calculate the mean SV length as mean_sv_len
 
-print(sv_len_hist_2)
-```
+    sv_len_hist_2 <- sv_len_hist
+      ## When prompted, add a layer with geom_vline() at the mean SV length
+      
+    print(sv_len_hist_2)
+
+    ```
+=== "Solution"
+
+    ```r
+    ## When prompted, calculate the mean SV length as mean_sv_len
+    mean_sv_len <- macaque_svs %>% filter(length <= 5000) %>% pull(length) %>% mean()
+    ## When prompted, calculated the mean SV length as mean_sv_len
+
+    sv_len_hist_2 <- sv_len_hist + 
+      ## When prompted, add a layer with geom_vline() at the mean SV length
+      geom_vline(xintercept=mean_sv_len, linewidth=1, linetype="dotted", color="black")
+
+    print(sv_len_hist_2)
+    ```
 
 ```
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.

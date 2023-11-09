@@ -7,9 +7,10 @@ nav:
     - resources/index.md
     - Python: resources/python.md
     - R: 
-      - Part 1: resources/R_Workshop/R-workshop-2023-Part1.md
-      - Part 2: resources/R_Workshop/R-workshop-2023-Part2.md
-      - Part 3: resources/R_Workshop/R-workshop-2023-Part3.md
+      - Part 1: resources/R/R-workshop-2023-Part1.md
+      - Part 2: resources/R/R-workshop-2023-Part2.md
+      - Part 3: resources/R/R-workshop-2023-Part3.md
+      - resources/R/index.md
   - Research: research/index.md
   - Software: software/index.md
   - Contact Us: contact.md
