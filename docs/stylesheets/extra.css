@@ -1,5 +1,32 @@
 .md-grid {
   max-width: 1440px; 
-
-
 }
+
+/*------------------------------------------------------*/
+/* Software logo styles */
+
+.software-logo-cont {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.software-logo {
+  align-items: center;
+  width: 60%;
+  height: auto;
+}
+
+@media (max-width: 1025px) {
+.software-logo-cont {                 
+      flex-direction: row;
+      justify-content: center;
+  }
+}
+/* Responsive styles */
+
+/*------------------------------------------------------*/
+
+
+
