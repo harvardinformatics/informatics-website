@@ -1,21 +1,36 @@
 site_name: Harvard FAS Informatics Group
 nav:
   - Home: index.md
-  - About: about.md
+  - About: 
+    - about/index.md
   - Resources: 
-    - Resources: resources.md
+    - resources/index.md
     - Python: resources/python.md
-  - Research: research.md
-  - Software: software.md
+    - R: 
+      - Part 1: resources/R/R-workshop-2023-Part1.md
+      - Part 2: resources/R/R-workshop-2023-Part2.md
+      - Part 3: resources/R/R-workshop-2023-Part3.md
+      - resources/R/index.md
+  - Research: research/index.md
+  - Software: software/index.md
   - Contact Us: contact.md
   - Events: events.md
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 theme: 
   name: material
   features:
     - navigation.tabs
-    - navigation.sections
-    - toc.integrate
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -35,3 +50,5 @@ theme:
       name: Switch to light mode    
     primary: salmon
     accent: black
+extra_css:
+  - stylesheets/extra.css
