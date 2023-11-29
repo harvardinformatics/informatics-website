@@ -51,5 +51,8 @@ theme:
       name: Switch to light mode    
     primary: salmon
     accent: black
+plugins:
+  - search
+  - table-reader    
 extra_css:
   - stylesheets/extra.css
