@@ -11,6 +11,7 @@ nav:
       - Part 2: resources/R/R-workshop-2023-Part2.md
       - Part 3: resources/R/R-workshop-2023-Part3.md
       - resources/R/index.md
+    - Unix: resources/Unix/index.md
   - Research: research/index.md
   - Software: software/index.md
   - Contact Us: contact.md

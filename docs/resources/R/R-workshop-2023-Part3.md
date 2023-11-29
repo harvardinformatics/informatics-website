@@ -782,15 +782,26 @@ So we can see that there are now two more columns in our data frame: **type**, w
 
 > **Exercise**: Use the function `str_replace_all()` to remove the "<" and ">" characters from the `type` column.
 
+=== "Exercise"
 
-```r
-# Hint 1: Use the ? command in the console to bring up the documentation page for this new function
-# Hint 2: You can use logical operations like | (or) in the string you input to the pattern argument. What should you replace it with if you want to remove the pattern?
-# Hint 3: You can use $ get at the type column or use mutate()
+    ```r
+    # Hint 1: Use the ? command in the console to bring up the documentation page for this new function
+    # Hint 2: You can use logical operations like | (or) in the string you input to the pattern argument. What should you replace it with if you want to remove the pattern?
+    # Hint 3: You can use $ get at the type column or use mutate()
 
-macaque_svs_sep <- macaque_svs_sep %>% 
-  mutate(type = str_replace_all(string = type, pattern = "<|>", replacement = ""))
-```
+
+    ```
+
+=== "Solution"
+
+    ```r
+    # Hint 1: Use the ? command in the console to bring up the documentation page for this new function
+    # Hint 2: You can use logical operations like | (or) in the string you input to the pattern argument. What should you replace it with if you want to remove the pattern?
+    # Hint 3: You can use $ get at the type column or use mutate()
+
+    macaque_svs_sep <- macaque_svs_sep %>% 
+      mutate(type = str_replace_all(string = type, pattern = "<|>", replacement = ""))
+    ```
 
 Now that we have this information, we want to construct a boxplot with ggplot that uses this new data to summarize the distribution of **length** of the SVs and group the SVs on the x-axis by **type**. In the case of a boxplot, we simply **add the type variable as the x aesthetic**.
 
@@ -837,13 +848,22 @@ In the boxplot above, it would be nice to visualize the mean SV length at the sa
 >
 > 1. In the code block below, generate a summary tibble containing one value for the total number of chromosomes (name that variable "n") and one value for the average SV length of all SVs (name that variable "mean_len"):
 
+=== "Exercise"
 
-```r
-# Hint: start with macaque_svs_sep and %>% it into a summarize function which contains the two statistics we want
-macaque_svs_sep %>% 
-  # Enter your summarize command here
-  summarize(n=n_distinct(chr), mean_len=mean(length, na.rm=TRUE))
-```
+    ```r
+    # Hint: start with macaque_svs_sep and %>% it into a summarize function which contains the two statistics we want
+    # Enter your summarize command here
+
+    ```
+
+=== "Solution"
+
+    ```r
+    # Hint: start with macaque_svs_sep and %>% it into a summarize function which contains the two statistics we want
+    macaque_svs_sep %>% 
+      # Enter your summarize command here
+      summarize(n=n_distinct(chr), mean_len=mean(length, na.rm=TRUE))
+    ```
 
 ```
 ## # A tibble: 1 × 2
@@ -854,16 +874,25 @@ macaque_svs_sep %>%
 
 > 2. In the code block below, group the `macaque_svs_sep` by chromosome and calculate the number of SVs (call it "n_svs") per chromosome as well as the mean SV length (call it "mean_len") per chromosome. Save this one as macaque_svs_chr.
 
+=== "Exercise"
 
-```r
-# Hint: you tibble result should have three columns ["chr", "n_svs", "mean_len"]
-macaque_svs_chr <- macaque_svs_sep %>% 
-  # Enter your combined group_by() and summarise() command here
-  group_by(chr) %>% 
-  summarise(n_svs = n_distinct(sv), mean_len = mean(length, na.rm=TRUE))
+    ```r
+    # Hint: you tibble result should have three columns ["chr", "n_svs", "mean_len"]
+    # Enter your combined group_by() and summarise() command here
 
-print(macaque_svs_chr)
-```
+    print(macaque_svs_chr)
+    ```
+=== "Solution"
+
+    ```r
+    # Hint: you tibble result should have three columns ["chr", "n_svs", "mean_len"]
+    macaque_svs_chr <- macaque_svs_sep %>% 
+      # Enter your combined group_by() and summarise() command here
+      group_by(chr) %>% 
+      summarise(n_svs = n_distinct(sv), mean_len = mean(length, na.rm=TRUE))
+
+    print(macaque_svs_chr)
+    ```
 
 ```
 ## # A tibble: 22 × 3
@@ -886,13 +915,21 @@ Now we can add another layer to our boxplot. Let's visualize the mean as a blue 
 
 > 3. Add a new layer to `sv_len_boxplot` using our new tibble that visualizes the mean SV length for each chromosome as a blue dot 
 
+=== "Exercise"
+  
+      ```r
+      # Hint: you will need to re-specify the data and aes within the geom
+      # Enter your new layer here
+  
+      ```
+=== "Solution"
 
-```r
-# Hint: you will need to re-specify the data and aes within the geom
-sv_len_boxplot +
-  # Enter your new layer here
-  geom_point(data=macaque_svs_chr, aes(x=chr, y=mean_len), color="blue") 
-```
+    ```r
+    # Hint: you will need to re-specify the data and aes within the geom
+    sv_len_boxplot +
+      # Enter your new layer here
+      geom_point(data=macaque_svs_chr, aes(x=chr, y=mean_len), color="blue") 
+    ```
 
 ![](R-workshop-2023-Part3_files/figure-html/sv-len-with-means-1.png)<!-- -->
 
@@ -997,18 +1034,27 @@ ggplot(macaque_svs_sep, aes(x = fct_infreq(chr))) +
 
 > **Exercise** Let's pretend we never knew about the forcats package or that handy function, but we do know about base R's `reorder()` function, which is a base R function that also turns your vector into a factor. How would we make the same graph as above? This will take two steps.
 
+=== "Exercise"
 
-```r
-# Summarize the counts by chromosome in a new data frame
-macaque_svs_chr_count <- macaque_svs_sep %>% 
-  group_by(chr) %>% 
-  mutate(count=n())
+    ```r
+    # Summarize the counts by chromosome in a new data frame
 
-# Re-order by count when we define the aesthetics
-ggplot(macaque_svs_chr_count, aes(x=reorder(chr,-count))) +
-  geom_bar(stat="count") +
-  theme(axis.text.x=element_text(angle=25, hjust=1))
-```
+    # Re-order by count when we define the aesthetics
+
+    ```
+=== "Solution"
+
+    ```r
+    # Summarize the counts by chromosome in a new data frame
+    macaque_svs_chr_count <- macaque_svs_sep %>% 
+      group_by(chr) %>% 
+      mutate(count=n())
+
+    # Re-order by count when we define the aesthetics
+    ggplot(macaque_svs_chr_count, aes(x=reorder(chr,-count))) +
+      geom_bar(stat="count") +
+      theme(axis.text.x=element_text(angle=25, hjust=1))
+    ```
 
 ![](R-workshop-2023-Part3_files/figure-html/sv-count-barplot-chr-order-1.png)<!-- -->
 
@@ -1105,41 +1151,58 @@ Here we can see that the SVs from this macaque sample are predominantly deletion
 >
 > Don't save any data to named objects (not necessarily best practice for readability, but a good exercise in piping!). 
 
+=== "Exercise"
 
-```r
-## Write a single command to do all the steps to generate the barplot above without saving any objects
+    ```r
+    ## Write a single command to do all the steps to generate the barplot above without saving any objects
 
-# Read the data from a file
-read_tsv("https://harvardinformatics.github.io/workshops/2023-fall/r/data/macaque-svs-filtered.bed", col_names=c("chr", "start", "end", "sv")) %>% 
-  
-  # Add a column representing the length of each SV
-  mutate(length=end-start) %>%
-  # Filter out SVs longer than 5000bp or on the X or Y chromosomes
-  filter(length < 5000 & !chr == "chrX" & !chr == "chrY") %>%
-  # Separate the SV column to add a column of SV type
-  separate(sv, c(NA, NA, "type", NA, "score"), sep=":", remove=FALSE) %>%
-  # remove < and > characters
-  mutate(type = str_replace_all(string = type, pattern = "<|>", replacement = "")) %>%
-  # Make chr column into a factor sorted alphabetically or by frequency
-    mutate(chr = factor(chr, levels=c("chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7", "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14", "chr15", "chr16", "chr17", "chr18", "chr19", "chr20", "chrX", "chrY"))) %>%
-  # Plot a stacked barplot of the number of SVs grouped by chr and filled by type
-  ggplot(aes(x=chr, fill=type)) +
-    geom_bar(position="fill") +
-    theme(axis.text.x=element_text(angle=25, hjust=1)) +
-  # add a horizontal line at y = 0.10 with geom_hline()
-  geom_hline(yintercept=0.10, linetype="dotted", color="#333333")
-```
+    # Read the data from a file
 
-```
-## Rows: 3646 Columns: 4
-## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: "\t"
-## chr (2): chr, sv
-## dbl (2): start, end
-## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-```
+      
+      # Add a column representing the length of each SV
+
+      # Filter out SVs longer than 5000bp or on the X or Y chromosomes
+
+      # Separate the SV column to add a column of SV type
+
+      # remove < and > characters
+
+      # Make chr column into a factor sorted alphabetically or by frequency
+
+      # Plot a stacked barplot of the number of SVs grouped by chr and filled by type
+
+
+
+      # add a horizontal line at y = 0.10 with geom_hline()
+
+    ```
+
+=== "Solution"
+
+    ```r
+    ## Write a single command to do all the steps to generate the barplot above without saving any objects
+
+    # Read the data from a file
+    read_tsv("https://harvardinformatics.github.io/workshops/2023-fall/r/data/macaque-svs-filtered.bed", col_names=c("chr", "start", "end", "sv")) %>% 
+      
+      # Add a column representing the length of each SV
+      mutate(length=end-start) %>%
+      # Filter out SVs longer than 5000bp or on the X or Y chromosomes
+      filter(length < 5000 & !chr == "chrX" & !chr == "chrY") %>%
+      # Separate the SV column to add a column of SV type
+      separate(sv, c(NA, NA, "type", NA, "score"), sep=":", remove=FALSE) %>%
+      # remove < and > characters
+      mutate(type = str_replace_all(string = type, pattern = "<|>", replacement = "")) %>%
+      # Make chr column into a factor sorted alphabetically or by frequency
+        mutate(chr = factor(chr, levels=c("chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7", "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14", "chr15", "chr16", "chr17", "chr18", "chr19", "chr20", "chrX", "chrY"))) %>%
+      # Plot a stacked barplot of the number of SVs grouped by chr and filled by type
+      ggplot(aes(x=chr, fill=type)) +
+        geom_bar(position="fill") +
+        theme(axis.text.x=element_text(angle=25, hjust=1)) +
+      # add a horizontal line at y = 0.10 with geom_hline()
+      geom_hline(yintercept=0.10, linetype="dotted", color="#333333")
+    ```
+
 
 ![](R-workshop-2023-Part3_files/figure-html/sv-count-barplot-chr-prop-piped-1.png)<!-- -->
 
