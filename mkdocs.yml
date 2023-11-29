@@ -11,12 +11,18 @@ nav:
       - Part 2: resources/R/R-workshop-2023-Part2.md
       - Part 3: resources/R/R-workshop-2023-Part3.md
       - resources/R/index.md
-    - Unix: resources/Unix/index.md
+    - Unix: 
+      - Part 1: resources/Unix/Biotips-workshop-2023-Day1.md
+      - Part 2: resources/Unix/Biotips-workshop-2023-Day2.md
+      - Part 3: resources/Unix/Biotips-workshop-2023-Day3.md
+      - Part 4: resources/Unix/Biotips-workshop-2023-Day4.md
+      - resources/Unix/index.md
   - Research: research/index.md
   - Software: software/index.md
   - Contact Us: contact.md
   - Events: events.md
 markdown_extensions:
+  - admonition
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
