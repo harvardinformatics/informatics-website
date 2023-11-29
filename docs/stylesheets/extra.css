@@ -5,6 +5,12 @@
 /*------------------------------------------------------*/
 /* Software logo styles */
 
+.software-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .software-logo-cont {
   display: flex;
   justify-content: center;
@@ -13,7 +19,7 @@
 
 .software-logo {
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 50%;
   height: auto;
 }
@@ -34,9 +40,23 @@
 }
 
 @media (max-width: 1025px) {
-.software-logo-cont {                 
-      flex-direction: row;
-      justify-content: center;
+  .software-cont {             
+    flex-direction: column;
+    justify-content: center;
+  }
+  .software-logo-cont {
+    min-height: 10vh;
+  }
+  .software-logo {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1vh;
+  }
+  .software-title-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
   }
 }
 /* Responsive styles */
