@@ -6,16 +6,31 @@
 /* Software logo styles */
 
 .software-logo-cont {
-  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .software-logo {
-  align-items: center;
-  width: 60%;
+  display: block;
+  margin: 0 auto; 
+  width: 50%;
   height: auto;
+}
+
+.software-title-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.software-title {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  font-size: 2em;
 }
 
 @media (max-width: 1025px) {
@@ -27,6 +42,38 @@
 /* Responsive styles */
 
 /*------------------------------------------------------*/
+/* Grid */
 
+.row { 
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.col-1-24 { width:4.166667%; display:inline-block; }
+.col-2-24 { width:8.333333%; display:inline-block; }
+.col-3-24 { width:12.5%; display:inline-block; }
+.col-4-24 { width:16.666667%; display:inline-block; }
+.col-5-24 { width:20.833333%; display:inline-block; }
+.col-6-24 { width:25%; display:inline-block; }
+.col-7-24 { width:29.166667%; display:inline-block; }
+.col-8-24 { width:33.333333%; display:inline-block; }
+.col-9-24 { width:37.5%; display:inline-block; }
+.col-10-24 { width:41.666667%; display:inline-block; }
+.col-11-24 { width:45.833333%; display:inline-block; }
+.col-12-24 { width:50%; display:inline-block; }
+.col-13-24 { width:54.166667%; display:inline-block; }
+.col-14-24 { width:58.333333%; display:inline-block; }
+.col-15-24 { width:62.5%; display:inline-block; }
+.col-16-24 { width:66.666667%; display:inline-block; }
+.col-17-24 { width:70.833333%; display:inline-block; }
+.col-18-24 { width:75%; display:inline-block; }
+.col-19-24 { width:79.1666667%; display:inline-block; }
+.col-20-24 { width:83.333333%; display:inline-block; }
+.col-21-24 { width:87.5%; display:inline-block; }
+.col-22-24 { width:91.666667%; display:inline-block; }
+.col-23-24 { width:95.833333%; display:inline-block; }
+.col-24-24 { width:100%; display:inline-block; }
+/* 24 */
 
