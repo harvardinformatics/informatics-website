@@ -1,3 +1,3 @@
-# machine-learning resources
+# machine learning resources
 
 {{ read_csv('data/machine-learning.csv') }}
