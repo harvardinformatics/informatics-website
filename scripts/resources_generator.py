@@ -11,13 +11,15 @@ import json
 
 ############################################################
 
-resources_template_file = "templates/resources_template.md";
-tag_template_file = "templates/tag_table_template.md";
+resources_template_file = "../templates/resources_template.md";
+tag_template_file = "../templates/tag_table_template.md";
+# Markdown templates
 
 resources_json_file = "../data/resources/resources-primary.json";
-# Input files and templates
+# JSON file with links and tags
 
 resources_output_file = "../docs/resources/index.md";
+# The output file for the resources page
 
 ####################
 
@@ -38,6 +40,9 @@ tag_list = sorted(list(tags.keys()), key=lambda x: x.lower());
 # Get a list of the active tags, sorted alphabetically
 
 ####################
+
+tag_counts = { tag : 0 for tag in tag_list };
+# Tag counts to display in the buttons on the resources page
 
 for tag in tag_list:
 # Loop over every tag to generate a csv table and a markdown page for each
@@ -66,6 +71,9 @@ for tag in tag_list:
 
                 if tag in links[link]['tags']:
                 # Check if the current tag is in the current link
+
+                    tag_counts[tag] += 1;
+                    # Increment the count for the current tag
 
                     cur_link = "<a href='" + links[link]['link'] + "' target='_blank'>" + link + "</a>";
                     # HTML for the current resource link
@@ -106,6 +114,8 @@ with open(resources_output_file, 'w') as resources_output:
     # Add a button link for every active tag
         if tags[tag]['status'] == "active":
 
+            cur_tag_count = str(tag_counts[tag]);
+
             if first_row:
                 tags_table += "<div class='row res-tag-table'>\n";
                 first_row = False;
@@ -113,14 +123,17 @@ with open(resources_output_file, 'w') as resources_output:
 
             if tags_in_row == tags_per_row:
                 tags_table += "</div>\n";
+                # tags_table += "---\n";
+                tags_table += "<div class='sep-div'></div>\n";
                 if tag != tag_list[-1]:
                     tags_table += "<div class='row res-tag-table'>\n";
                 tags_in_row = 0;
             # If the current row is full, close it and add a new one
 
-            tags_table += "<div class='col-6-24 res-tag-link-cont'>\n"
-            tags_table += "<div class='res-tag-link'><a href='tags/" + tag.replace(" ", "-") + "/'>" + tag + "</a></div>\n";
+            tags_table += "<div class='col-5-24 res-tag-link-cont'>\n"
+            tags_table += "<div class='res-tag-link'><a href='tags/" + tag.replace(" ", "-") + "/'>" + tag + " (" + cur_tag_count + ")</a></div>\n";
             tags_table += "</div>\n";
+            tags_table += "<div class='col-1-24'></div>\n";
             tags_in_row += 1;
             # Add the current tag button to the table
         ## End active tag block
@@ -134,4 +147,4 @@ with open(resources_output_file, 'w') as resources_output:
     # Write the resources page using the template
 ## Close the resources output file
 
-
+############################################################

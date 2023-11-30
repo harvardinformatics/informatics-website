@@ -1,0 +1,221 @@
+
+<!doctype html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+    <link type="text/css" rel="stylesheet" href="css/grid.css"  media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/global.css"  media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"> 
+    <title>Harvard IFX R Intro - Fall 2023</title>
+</head>
+
+<body>
+    <div class="row" id="desktop_nav">
+		<div class="col-2-24" id="margin"></div>
+		<div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="index.html">Intro</a></div>
+		<div class="col-4-24 dropdown" id="nav_link_cell">
+			<a href="start.html" class="nav_link">Workshop</a>
+			<div class="dropdown_container desktop_drop">
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="start.html" id="dropdown_nav_link">Get Started</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day1-instructor.html" id="dropdown_nav_link">Day 1: Genomics formats & tools, part 1</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day2-instructor.html" id="dropdown_nav_link">Day 2: Genomics formats & tools, part 2</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day3-instructor.html" id="dropdown_nav_link">Day 3: Shell scripting, part 1</a></li>
+
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day4-instructor.Rmd" id="dropdown_nav_link">Day 4: Shell scripting, part2</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="terms.html">Terminology</a></div>
+		<div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="programs.html">Programs</a></div>
+		<div class="col-4-24" id="nav_link_cell_active"><a class="nav_link" id="active" href="#">Links</a></div>
+		<div class="col-u-2-24" id="margin"></div>
+	</div>
+
+	<div class="row" id="mobile_nav">
+		<div class="col-24-24 dropdown" id="nav_link_cell">
+			<a href="#" class="nav_link"><img id="mobile_logo_nav" src="img/nav.png"></a>
+			<div class="dropdown_container mobile_drop">
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="index.html" id="mobile_nav_link">Intro</a></li>
+					<li class="dropdown_list_item"><a href="start.html" id="mobile_nav_link">Workshop</a></li>
+					<li class="dropdown_list_item"><a href="terms.html" id="mobile_nav_link">Terminology</a></li>
+					<li class="dropdown_list_item"><a href="programs.html" id="mobile_nav_link">Programs</a></li>
+					<li class="dropdown_list_item"><a href="links.html" id="mobile_nav_link">Links</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+    <div class="row" id="section-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-col">
+            <div class="row" id="section-row">
+                <div class="col-2-24" id="inner-margin"></div>
+                <div class="col-20-24" id="section-content">
+                    <h4>Find here a list of links to relevant resources.</h4>
+                </div>
+                <div class="col-2-24" id="inner-margin"></div>
+            </div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>
+
+    <!--
+    <a name="links"></a>
+    <div class="row" id="section-header-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-header-row">
+            <div id="section-header">R Resources</div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>
+    <div class="row" id="section-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-col">
+            <div class="row" id="section-row">
+                <div class="col-2-24" id="inner-margin"></div>
+                <div class="col-20-24" id="section-content">
+
+                    <ul id="links-list">
+                        <li><a href="https://www.r-project.org/" target="_blank">The R Programming language</a></li>
+                    </ul>               
+
+                    <ul id="links-list">
+                        <li><a href="https://posit.co/products/open-source/rstudio/" target="_blank">RStudio</a></li>
+                    </ul>               
+
+                    <ul id="links-list">
+                        <li><a href="https://cran.r-project.org/" target="_blank">CRAN (R package repository)</a></li>
+                    </ul>                                      
+
+                    <ul id="links-list">
+                        <li><a href="https://www.bioconductor.org/" target="_blank">Bioconductor (R bio-related package repository)</a></li>
+                    </ul>                          
+
+                </div>
+                <div class="col-2-24" id="inner-margin"></div>
+            </div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>
+
+    <a name="links"></a>
+    <div class="row" id="section-header-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-header-row">
+            <div id="section-header">tidyverse Resources</div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>
+    <div class="row" id="section-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-col">
+            <div class="row" id="section-row">
+                <div class="col-2-24" id="inner-margin"></div>
+                <div class="col-20-24" id="section-content">
+
+                    <ul id="links-list">
+                        <li><a href="https://www.tidyverse.org/" target="_blank">tidyverse</a></li>
+                    </ul>
+
+                    <ul id="links-list">
+                        <li><a href="https://hollis.harvard.edu/permalink/f/1mdq5o5/TN_cdi_doaj_primary_oai_doaj_org_article_10d611fd6e81405d8cf3f689b8dfa3a2" target="_blank">Paper on tidy data (Wickham 2014)</a></li>
+                    </ul>
+
+                    <ul id="links-list">
+                        <li><a href="http://id.lib.harvard.edu/alma/990138412570203941/catalog" target="_blank">Grammar of Graphics book (Wilkinson 1999)</a></li>
+                    </ul>
+
+                    <ul id="links-list">
+                        <li><a href="https://hollis.harvard.edu/permalink/f/1mdq5o5/TN_cdi_informaworld_taylorfrancis_310_1198_jcgs_2009_07098" target="_blank">A Layered Grammar of Graphics (Wickham 2010)</a></li>
+                    </ul>
+
+                    <ul id="links-list">
+                        <li><a href="https://hollis.harvard.edu/permalink/f/1s5nto6/01HVD_ALMA512300276480003941" target="_blank">Fundamentals of Data Visualization (Wilke 2019)</a></li>
+                    </ul>                                        
+
+                </div>
+                <div class="col-2-24" id="inner-margin"></div>
+            </div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>
+
+    <a name="links"></a>
+    <div class="row" id="section-header-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-header-row">
+            <div id="section-header">Workshop Resources</div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>
+    <div class="row" id="section-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-col">
+            <div class="row" id="section-row">
+                <div class="col-2-24" id="inner-margin"></div>
+                <div class="col-20-24" id="section-content">
+
+                    <ul id="links-list">
+                        <li><a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2019.0364" target="_blank">Bird collision dataset (Winger et al. 2019)</a></li>
+                    </ul>
+
+                    <ul id="links-list">
+                        <li><a href="https://github.com/rfordatascience/tidytuesday" target="_blank">tidytuesday datasets</a></li>
+                    </ul>                    
+
+                </div>
+                <div class="col-2-24" id="inner-margin"></div>
+            </div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>
+    -->
+
+ <a name="inst-links"></a>
+    <div class="row" id="section-header-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-header-row">
+            <div id="section-header">Instructors</div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>
+    <div class="row" id="section-cont">
+        <div class="col-4-24" id="outer-margin"></div>
+        <div class="col-16-24" id="section-col">
+            <div class="row" id="section-row">
+                <div class="col-2-24" id="inner-margin"></div>
+                <div class="col-20-24" id="section-content">
+
+                    <ul id="links-list">
+                        <li><a href="https://informatics.fas.harvard.edu/" target="_blank">Harvard Informatics</a></li>
+                    </ul>                
+
+                    <ul id="links-list">
+                        <li><a href="https://scholar.harvard.edu/tsackton/home" target="_blank">Tim Sackton</a></li>
+                    </ul>
+
+                    <ul id="links-list">
+                        <li><a href="https://gwct.github.io/" target="_blank">Gregg Thomas</a></li>
+                    </ul>
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+                </div>
+                <div class="col-2-24" id="inner-margin"></div>
+            </div>
+        </div>
+        <div class="col-4-24" id="outer-margin"></div>
+    </div>   
+
+    <div class="row" id="footer">
+		<div class="col-1">
+			<div id="footer_text">
+				<center>Site designed and maintained by <a href="https://gwct.github.io" target="_blank">Gregg Thomas</a>, Harvard Informatics | © Copyright 2023 | Page built: 11/17/2023 20:31:52 UTC </center>
+			</div>
+		</div>
+	</div>
+</body>
