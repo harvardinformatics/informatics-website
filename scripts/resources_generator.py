@@ -11,14 +11,17 @@ import json
 
 ############################################################
 
-resources_template_file = "../templates/resources_template.md";
-tag_template_file = "../templates/tag_table_template.md";
+print("-" * 20);
+print("RUNNING scripts/resources_generatory.py TO GENERATE TAG PAGES")
+
+resources_template_file = "templates/resources_template.md";
+tag_template_file = "templates/tag_table_template.md";
 # Markdown templates
 
-resources_json_file = "../data/resources/resources-primary.json";
+resources_json_file = "data/resources/resources-primary.json";
 # JSON file with links and tags
 
-resources_output_file = "../docs/resources/index.md";
+resources_output_file = "docs/resources/index.md";
 # The output file for the resources page
 
 ####################
@@ -49,7 +52,7 @@ for tag in tag_list:
 
     print("ADDING TAG PAGE:\t" + tag);
 
-    rel_tag_table_file = "../data/resources/tag-csv/" + tag.replace(" ", "-") + ".csv";
+    rel_tag_table_file = "data/resources/tag-csv/" + tag.replace(" ", "-") + ".csv";
     # The path to the tag table file relative to this script
 
     tag_table_file = "data/resources/tag-csv/" + tag.replace(" ", "-") + ".csv";
@@ -91,7 +94,7 @@ for tag in tag_list:
             ## End active link block
         ## End link loop
 
-    tag_output_name = "../docs/resources/tags/" + tag.replace(" ", "-") + ".md";
+    tag_output_name = "docs/resources/tags/" + tag.replace(" ", "-") + ".md";
     # The path to the tag page relative to this script
 
     with open(tag_output_name, 'w') as tag_output:
@@ -146,5 +149,7 @@ with open(resources_output_file, 'w') as resources_output:
     resources_output.write(resources_template.format(tags_table=tags_table));
     # Write the resources page using the template
 ## Close the resources output file
+
+print("-" * 20);
 
 ############################################################

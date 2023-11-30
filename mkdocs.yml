@@ -7,12 +7,13 @@ nav:
     - resources/index.md
     - Workshops:
       - R: 
-        - Introduction: resources/Workshops/R/intro.html
+        - Introduction: resources/Workshops/R/index.html
         - Get started: resources/Workshops/R/start.html
         - Part 1: resources/Workshops/R/R-workshop-2023-Part1.md
         - Part 2: resources/Workshops/R/R-workshop-2023-Part2.md
         - Part 3: resources/Workshops/R/R-workshop-2023-Part3.md
       - Unix: 
+        - Introduction: resources/Workshops/Unix/index.html
         - Get started: resources/Workshops/Unix/start.html
         - Part 1: resources/Workshops/Unix/Biotips-workshop-2023-Day1.md
         - Part 2: resources/Workshops/Unix/Biotips-workshop-2023-Day2.md
@@ -60,6 +61,8 @@ theme:
     accent: black
 plugins:
   - search
-  - table-reader    
+  - table-reader
+hooks:
+  - scripts/resources_generator.py 
 extra_css:
   - stylesheets/extra.css
