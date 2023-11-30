@@ -1,3 +1,5 @@
 # microbiology resources
 
-{{ read_csv('data/microbiology.csv') }}
+Links to resources related to microbiology
+
+{{ read_csv('data/resources/tag-csv/microbiology.csv') }}

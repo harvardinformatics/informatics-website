@@ -1,3 +1,5 @@
 # single cell resources
 
-{{ read_csv('data/single-cell.csv') }}
+Links to resources related to single cell sequencing
+
+{{ read_csv('data/resources/tag-csv/single-cell.csv') }}

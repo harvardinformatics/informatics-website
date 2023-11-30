@@ -1,3 +1,5 @@
 # RNA seq resources
 
-{{ read_csv('data/RNA-seq.csv') }}
+Links to resources related RNA sequencing
+
+{{ read_csv('data/resources/tag-csv/RNA-seq.csv') }}

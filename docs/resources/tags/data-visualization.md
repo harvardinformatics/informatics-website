@@ -1,3 +1,5 @@
 # data visualization resources
 
-{{ read_csv('data/data-visualization.csv') }}
+Links to resources related to data visualization
+
+{{ read_csv('data/resources/tag-csv/data-visualization.csv') }}

@@ -1,3 +1,5 @@
 # high-performance computing resources
 
-{{ read_csv('data/high-performance-computing.csv') }}
+Links to resources related to high-performance computing
+
+{{ read_csv('data/resources/tag-csv/high-performance-computing.csv') }}

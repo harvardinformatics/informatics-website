@@ -1,3 +1,5 @@
 # R resources
 
-{{ read_csv('data/R.csv') }}
+Links to resources related to the R statistical programming language
+
+{{ read_csv('data/resources/tag-csv/R.csv') }}

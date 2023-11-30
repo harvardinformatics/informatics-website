@@ -1,3 +1,5 @@
 # unix resources
 
-{{ read_csv('data/unix.csv') }}
+Links to resources related to the unix operating system and shell commands and scripting
+
+{{ read_csv('data/resources/tag-csv/unix.csv') }}

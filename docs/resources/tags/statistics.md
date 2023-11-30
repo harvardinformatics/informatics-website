@@ -1,3 +1,5 @@
 # statistics resources
 
-{{ read_csv('data/statistics.csv') }}
+Links to resources related to statistics
+
+{{ read_csv('data/resources/tag-csv/statistics.csv') }}

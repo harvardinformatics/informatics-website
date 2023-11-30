@@ -1,3 +1,5 @@
 # metagenomics resources
 
-{{ read_csv('data/metagenomics.csv') }}
+Links to resources related to metagenomics
+
+{{ read_csv('data/resources/tag-csv/metagenomics.csv') }}

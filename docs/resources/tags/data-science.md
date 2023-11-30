@@ -1,3 +1,5 @@
 # data science resources
 
-{{ read_csv('data/data-science.csv') }}
+Links to resources related to data science in general
+
+{{ read_csv('data/resources/tag-csv/data-science.csv') }}

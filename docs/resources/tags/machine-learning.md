@@ -1,3 +1,5 @@
 # machine learning resources
 
-{{ read_csv('data/machine-learning.csv') }}
+Links to resources related to machine learning
+
+{{ read_csv('data/resources/tag-csv/machine-learning.csv') }}

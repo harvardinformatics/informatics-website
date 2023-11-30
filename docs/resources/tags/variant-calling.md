@@ -1,3 +1,5 @@
 # variant calling resources
 
-{{ read_csv('data/variant-calling.csv') }}
+Links to resources related variant calling
+
+{{ read_csv('data/resources/tag-csv/variant-calling.csv') }}
