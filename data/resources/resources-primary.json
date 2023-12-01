@@ -1,0 +1,366 @@
+{
+    "links": {    
+        "R for data science book": {
+            "id": "1",
+            "name": "R for data science book",
+            "link": "https://r4ds.hadley.nz/",
+            "tags": ["R",  "data science"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Software carpentry novice git lesson": {
+            "id": "2",
+            "name": "Software carpentry novice git lesson",
+            "link": "https://swcarpentry.github.io/git-novice/",
+            "tags": ["git", "unix"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Data carpentry data wrangling for genomics": {
+            "id": "3",
+            "name": "Data carpentry data wrangling for genomics",
+            "link": "https://datacarpentry.org/wrangling-genomics/index.html",
+            "tags": ["bioinformatics", "genomics", "variant calling"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Missing semester of your CS education": {
+            "id": "4",
+            "name": "Missing semester of your CS education",
+            "link": "https://missing.csail.mit.edu/",
+            "tags": ["git", "unix"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Modern statistics for modern biology": {
+            "id": "5",
+            "name": "Modern statistics for modern biology",
+            "link": "https://web.stanford.edu/class/bios221/book/",
+            "tags": ["statistics", "bioinformatics", "R", "data science"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Bacterial and viral bioinformatics resource center":{
+            "id": "6",
+            "name": "Bacterial and viral bioinformatics resource center",
+            "link": "https://www.bv-brc.org/",
+            "tags": ["microbiology", "genomics", "metagenomics"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Tidy Tuesday": {
+            "id": "7",
+            "name": "Tidy Tuesday",
+            "link": "https://github.com/rfordatascience/tidytuesday ",
+            "tags": ["data science", "R", "python"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Metagenomics wiki": {
+            "id": "8",
+            "name": "Metagenomics wiki",
+            "link": "https://www.metagenomics.wiki/",
+            "tags": ["bioinformatics", "metagenomics"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Harvard library data services": {
+            "id": "9",
+            "name": "Harvard library data services",
+            "link": "https://hlrdm.library.harvard.edu/",
+            "tags": ["data sciecne", "harvard"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Harvard library data services youtube series on data management": {
+            "id": "10",
+            "name": "Harvard library data services youtube series on data management",
+            "link": "https://www.youtube.com/playlist?list=PLWIsV2soJK-VaW7IhxYyyOwiamjVV_FuB",
+            "tags": ["data science", "harvard"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "FAS RC User Codes": {
+            "id": "11",
+            "name": "FAS RC User Codes",
+            "link": "https://github.com/fasrc/User_Codes",
+            "tags": ["unix", "high-performance computing", "harvard"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Data analysis for the life sciences Harvard EdX course": {
+            "id": "12",
+            "name": "Data analysis for the life sciences Harvard EdX course",
+            "link": "https://rafalab.dfci.harvard.edu/pages/harvardx.html",
+            "tags": ["data science", "bioinformatics", "statistics", "R", "genomics", "high-performance computing", "RNA seq", "python", "machine learning", "harvard"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Riffomonas project: R tutorials for biologist on YouTube": {
+            "id": "13",
+            "name": "Riffomonas project: R tutorials for biologist on YouTube",
+            "link": "https://www.youtube.com/c/riffomonasproject",
+            "tags": ["R", "data science", "data visualization"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Bioinformatics workbook": {
+            "id": "14",
+            "name": "Bioinformatics workbook",
+            "link": "https://bioinformaticsworkbook.org",
+            "tags": ["bioinformatics", "genomics", "RNA seq", "genome assembly", "metagenomics", "nextflow", "data science"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Guided workflows for R package Suerat (for RNA-seq)": {
+            "id": "15",
+            "name": "Guided workflows for R package Suerat (for RNA-seq)",
+            "link": "https://satijalab.org/seurat/articles/get_started.html",
+            "tags": ["bioinformatics", "RNA seq", "single cell", "R"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "The Python Tutorial": {
+            "id": "16",
+            "name": "The Python Tutorial",
+            "link": "https://docs.python.org/3/tutorial/index.html",
+            "tags": ["python", "data science", "data visualization"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Python for data science handbook": {
+            "id": "17",
+            "name": "Python for data science handbook",
+            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+            "tags": ["python", "data science", "data visualization", "machine learning"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Harvard Research Computing quickstart guide": {
+            "id": "18",
+            "name": "Harvard Research Computing quickstart guide",
+            "link": "https://docs.rc.fas.harvard.edu/kb/quickstart-guide/",
+            "tags": ["high-performance computing", "harvard", "unix"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Harvard Statistics department consulting office hours": {
+            "id": "19",
+            "name": "Harvard Statistics department consulting office hours",
+            "link": "https://statistics.fas.harvard.edu/harvard-statistics-consulting-service",
+            "tags": ["statistics", "harvard"],
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Template": {
+            "id": "999",
+            "name": "template",
+            "link": "",
+            "tags": [],
+            "date-added": "11-28-2023",
+            "status" : "inactive",
+            "description": ""
+        }
+    },
+
+    "tags": {
+        "R": {
+            "id": "1",
+            "tag": "R",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to the R statistical programming language"
+        },
+
+        "git": {
+            "id": "2",
+            "tag": "git",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to the git version control system"
+        },
+
+        "unix": {
+            "id": "3",
+            "tag": "unix",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to the unix operating system and shell commands and scripting"
+        },
+
+        "bioinformatics": {
+            "id": "4",
+            "tag": "bioinformatics",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to general bioinformatics tasks"
+        },
+
+        "genomics": {
+            "id": "5",
+            "tag": "genomics",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to general genomics topics"
+        },
+
+        "data science": {
+            "id": "6",
+            "tag": "data science",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to data science in general"
+        },
+
+        "statistics": {
+            "id": "7",
+            "tag": "statistics",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to statistics"
+        },
+
+        "python": {
+            "id": "8",
+            "tag": "python",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to the Python programming language"
+        },
+
+        "machine learning": {
+            "id": "9",
+            "tag": "machine learning",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to machine learning"
+        },
+
+        "high-performance computing": {
+            "id": "10",
+            "tag": "high-performance computing",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to high-performance computing"
+        },
+
+        "harvard": {
+            "id": "11",
+            "tag": "harvard",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources that are located at or are specific to Harvard"
+        },
+
+        "RNA seq": {
+            "id": "12",
+            "tag": "RNA seq",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related RNA sequencing"
+        },
+
+        "genome assembly": {
+            "id": "13",
+            "tag": "genome assembly",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to genome assembly"
+        },
+
+        "metagenomics": {
+            "id": "14",
+            "tag": "metagenomics",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to metagenomics"
+        },
+
+        "nextflow": {
+            "id": "15",
+            "tag": "nextflow",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to the nextflow workflow management system"
+        },
+
+        "single cell": {
+            "id": "16",
+            "tag": "single cell",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to single cell sequencing"
+        },
+
+        "data visualization": {
+            "id": "17",
+            "tag": "data visualization",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to data visualization"
+        },
+
+        "microbiology": {
+            "id": "18",
+            "tag": "microbiology",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related to microbiology"
+        },
+
+        "variant calling": {
+            "id": "19",
+            "tag": "variant calling",
+            "date-added": "11-28-2023",
+            "status" : "active",
+            "description": "Links to resources related variant calling"
+        },
+
+        "template": {
+            "id": "999",
+            "tag": "template",
+            "date-added": "11-28-2023",
+            "status" : "inactive",
+            "description": "Links to resources related to"
+        }
+    }
+
+}

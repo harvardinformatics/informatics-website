@@ -5,18 +5,20 @@ nav:
     - about/index.md
   - Resources: 
     - resources/index.md
-    - Python: resources/python.md
-    - R: 
-      - Part 1: resources/R/R-workshop-2023-Part1.md
-      - Part 2: resources/R/R-workshop-2023-Part2.md
-      - Part 3: resources/R/R-workshop-2023-Part3.md
-      - resources/R/index.md
-    - Unix: 
-      - Part 1: resources/Unix/Biotips-workshop-2023-Day1.md
-      - Part 2: resources/Unix/Biotips-workshop-2023-Day2.md
-      - Part 3: resources/Unix/Biotips-workshop-2023-Day3.md
-      - Part 4: resources/Unix/Biotips-workshop-2023-Day4.md
-      - resources/Unix/index.md
+    - Workshops:
+      - R: 
+        - Introduction: resources/Workshops/R/index.html
+        - Get started: resources/Workshops/R/start.html
+        - Part 1: resources/Workshops/R/R-workshop-2023-Part1.md
+        - Part 2: resources/Workshops/R/R-workshop-2023-Part2.md
+        - Part 3: resources/Workshops/R/R-workshop-2023-Part3.md
+      - Unix: 
+        - Introduction: resources/Workshops/Unix/index.html
+        - Get started: resources/Workshops/Unix/start.html
+        - Part 1: resources/Workshops/Unix/Biotips-workshop-2023-Day1.md
+        - Part 2: resources/Workshops/Unix/Biotips-workshop-2023-Day2.md
+        - Part 3: resources/Workshops/Unix/Biotips-workshop-2023-Day3.md
+        - Part 4: resources/Workshops/Unix/Biotips-workshop-2023-Day4.md
   - Research: research/index.md
   - Software: software/index.md
   - Contact Us: contact.md
@@ -57,5 +59,10 @@ theme:
       name: Switch to light mode    
     primary: salmon
     accent: black
+plugins:
+  - search
+  - table-reader
+hooks:
+  - scripts/resources_generator.py 
 extra_css:
   - stylesheets/extra.css

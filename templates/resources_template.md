@@ -4,9 +4,9 @@ hide:
 ---
 
 <style>
-    .md-sidebar--secondary {
+    .md-sidebar--secondary {{
         order: 0;
-    }
+    }}
 </style>
 
 # Resources
@@ -44,93 +44,4 @@ This is a link to a page about [python](python.md)
 
 We have compiled a list of external resources and tagged them with the categories below. Click on each tag to see the links!
 
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/bioinformatics/'>bioinformatics (6)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/data-science/'>data science (9)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/data-visualization/'>data visualization (3)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/genome-assembly/'>genome assembly (1)</a></div>
-</div>
-<div class='col-1-24'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/genomics/'>genomics (4)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/git/'>git (2)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/harvard/'>harvard (6)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/high-performance-computing/'>high-performance computing (3)</a></div>
-</div>
-<div class='col-1-24'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/machine-learning/'>machine learning (2)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/metagenomics/'>metagenomics (3)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/microbiology/'>microbiology (1)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/nextflow/'>nextflow (1)</a></div>
-</div>
-<div class='col-1-24'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/python/'>python (4)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/R/'>R (6)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/RNA-seq/'>RNA seq (3)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/single-cell/'>single cell (1)</a></div>
-</div>
-<div class='col-1-24'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/statistics/'>statistics (3)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/unix/'>unix (4)</a></div>
-</div>
-<div class='col-1-24'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/variant-calling/'>variant calling (1)</a></div>
-</div>
-<div class='col-1-24'></div>
-</div>
+{tags_table}

@@ -1,0 +1,144 @@
+
+<!doctype html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+    <link type="text/css" rel="stylesheet" href="css/grid.css"  media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/global.css"  media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"> 
+    <title>Harvard IFX Biotips - Fall 2023</title>
+</head>
+
+<body>
+    <div class="row" id="desktop_nav">
+		<div class="col-2-24" id="margin"></div>
+		<div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="index.html">Intro</a></div>
+		<div class="col-4-24 dropdown" id="nav_link_cell">
+			<a href="start.html" class="nav_link">Workshop</a>
+			<div class="dropdown_container desktop_drop">
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="start.html" id="dropdown_nav_link">Get Started</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day1-instructor.html" id="dropdown_nav_link">Day 1: Genomics formats & tools, part 1</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day2-instructor.html" id="dropdown_nav_link">Day 2: Genomics formats & tools, part 2</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day3-instructor.html" id="dropdown_nav_link">Day 3: Shell scripting, part 1</a></li>
+
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day4-instructor.Rmd" id="dropdown_nav_link">Day 4: Shell scripting, part2</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4-24" id="nav_link_cell_active"><a class="nav_link" id="active" href="#">Terminology</a></div>
+		<div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="programs.html">Programs</a></div>
+		<div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="links.html">Links</a></div>
+		<div class="col-u-2-24" id="margin"></div>
+	</div>
+
+	<div class="row" id="mobile_nav">
+		<div class="col-24-24 dropdown" id="nav_link_cell">
+			<a href="#" class="nav_link"><img id="mobile_logo_nav" src="img/nav.png"></a>
+			<div class="dropdown_container mobile_drop">
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="index.html" id="mobile_nav_link">Intro</a></li>
+					<li class="dropdown_list_item"><a href="start.html" id="mobile_nav_link">Workshop</a></li>
+					<li class="dropdown_list_item"><a href="terms.html" id="mobile_nav_link">Terminology</a></li>
+					<li class="dropdown_list_item"><a href="programs.html" id="mobile_nav_link">Programs</a></li>
+					<li class="dropdown_list_item"><a href="links.html" id="mobile_nav_link">Links</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+    <a class="internal-link" name="general"></a>
+    <div class="row" id="header">Terminology & File Formats</div>
+
+    <div class="row" id="body-row">
+        <div class="col-3-24" id="side-nav-cont">
+            <div id="side-nav">
+                <span id="side-header">Page contents</span>
+                <ul>
+                    <li><a href="terms.html#general">General terms</a></li>
+                    <li><a href="terms.html#formats">Common genomics file formats</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-21-24" id="main-cont">
+            <div class="row" id="top-row-cont">
+                <div class="col-24-24" id="top-row"></div>
+            </div>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Definitions of general bioinformatics terms related to this workshop</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+
+                            <p>
+                                Sometimes the hardest part of learning a new topic is learning the terminology or jargon that those within
+                                the community commonly use. Here is a table of some terms that are common, but may be unfamiliar to someone new to bioinformatics. 
+                                Some of these are my attempt to define abstract terms. If you want any terms defined or added to 
+                                the list, or you feel the definitions are inaccurate, please contact <a href="https://gwct.github.io/" target="_blank">me</a>.
+                            </p>
+
+                            <p>
+                                Importantly, while some terms technically have different meanings, they are often used synonymously. I have tried to indicate
+                                these terms with matching number of asterisks.
+                            </p>
+
+                            
+<div class="table-cont">
+    <table class="prog-table">
+        <thead><th>﻿Term</th><th>Definition</th></thead><tr><td><b>Terminal*</b></td><td>The window in which you type commands in to be interpreted by the shell</td></tr><tr><td><b>Console*</b></td><td>Similar to terminal, but full screen with no graphical component.</td></tr><tr><td><b>Shell*</b></td><td>The program that interprets commands typed into a terminal. In your terminal you can type <code class=inline>echo $SHELL</code> to check which shell is loaded.</td></tr><tr><td><b>Bash</b></td><td>A common <b>shell</b> program.</td></tr><tr><td><b>Command line*</b></td><td>The location where commands are type within the terminal window</td></tr><tr><td><b>Command prompt*</b></td><td>The information displayed on the command line before the cursor</td></tr><tr><td><b>Command</b></td><td>An instruction given to the computer to perform an operation (such as opening a file, adding a row to a data table, etc.). The way a command is given to the computer is often dictated by the programming language in which it is to be interpreted (known as that language's <b>syntax</b>).</td></tr><tr><td><b>Script</b></td><td>A set of commands written in a particular programming language's <b>syntax</b> that are stored as plain text in a file. When interpreted by that programming language, the commands will be executed in order.</td></tr><tr><td><b>Program</b></td><td>A set of code designed for a specific task. Similar to <b>command</b>, but more general (i.e., a program is not limited to the <b>shell's</b> scripting syntax).</td></tr><tr><td><b>Library</b></td><td>Files containing general code blocks that can be used widely by different programs</td></tr><tr><td><b>Dependency</b></td><td>A program or library that is required for another program to run.</td></tr><tr><td><b>Package</b></td><td>A <b>program</b> and all it's dependencies.</td></tr><tr><td><b>Module</b></td><td>Similar to library.</td></tr><tr><td><b>Argument</b></td><td>Options specified in the command line when running a program or command.</td></tr><tr><td><b>Directory</b></td><td>A named location on a computer that contains files and/or other directories.</td></tr><tr><td><b>File</b></td><td>A named location on a computer that contains data, commonly in the form of plain text.</td></tr><tr><td><b>Script</b></td><td>A type of file whose contents are code or commands to be interpreted by the shell or another interpreter (e.g., Python).</td></tr><tr><td><b>Repository/Repo</b></td><td>From git, a directory of files, possibly including code, documentation, or data.</td></tr><tr><td><b>File system</b></td><td>The way in which files and directories are organized in a nesting, tree-like structure.</td></tr><tr><td><b>Root</b></td><td>The lowest level in the file system in which all directories and files are stored. Critical system files are stored close to the <b>root</b>. Usually located at <code class=inline>/</code> and usually only accessible by the computer's administrators.</td></tr><tr><td><b>Home</b></td><td>A user's home directory is where that user has read, write, and execute permissions within the file system.</td></tr><tr><td><b>Path</b></td><td>The location of a file or directory within the file system, with directories separated by slash characters (<code class=inline>/</code>).</td></tr><tr><td><b>Absolute path</b></td><td>The full name of a file or directory that includes all directories and sub-directories starting from the root of the file system to the specified file or directory.</td></tr><tr><td><b>Relative path</b></td><td>The name of a file or directory that includes all directories and sub-directories starting from the user's current location.</td></tr><tr><td><b>Operating system</b></td><td>The software that interfaces between the computer's hardware and other user facing software.</td></tr><tr><td><b>Server</b></td><td>A computer setup to have users connect and work on it remotely, usually with more resources than personal computers to accommodate more resource intensive commands and multiple users.</td></tr><tr><td><b>Cluster</b></td><td>An interconnected collection of <b>servers</b> setup such that users can connect to one and specify high resource commands to run which are distributed to the others based on available resources.</td></tr><tr><td><b>Node</b></td><td>One computer within a cluster.</td></tr><tr><td><b>Login node</b></td><td>The <b>node</b> within the <b>cluster</b> which users connect to and interact with.</td></tr><tr><td><b>Head node</b></td><td>The <b>node</b> within the <b>cluster</b> which handles job scheduling and resource allocation.</td></tr><tr><td><b>Job</b></td><td>A submitted <b>command</b> or set of commands passed from the user to the job scheduler on a <b>cluster</b>.</td></tr><tr><td><b>Text editor</b></td><td>A graphical program on a computer that displays plain text files on the screen and allows them to be edited.</td></tr><tr><td><b>Integrated Development Environment (IDE)</b></td><td>A graphical program on a computer that contains tools to aid development in a specific programming language (e.g. RStudio for R).</td></tr><tr><td><b>RStudio</b></td><td>An IDE built around the R programming language.</td></tr>
+    </table>
+</div>
+
+                            <div id="sep_div"></div>
+
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="internal-links" name="formats"></a>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Common genomics file formats</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+
+                            
+<div class="table-cont">
+    <table class="prog-table">
+        <thead><th>Format</th><th>Use</th><th>Link</th><th>Specs</th></thead><tr><td><b>.txt</b></td><td>General plain text. May be formatted in some way that is unspecified by this extension (i.e., a .txt file could contain comma separated values).</td><td><a href='https://en.wikipedia.org/wiki/Text_file' target='_blank'>Wikipedia</a></td><td>NA</td></tr><tr><td><b>.csv</b></td><td>General data storage with rows and columns. Columns are separated by commas.</td><td><a href='https://en.wikipedia.org/wiki/Comma-separated_values' target='_blank'>Wikipedia</a></td><td><a href='https://datatracker.ietf.org/doc/html/rfc4180' target='_blank'>Link</a></td></tr><tr><td><b>.tab/.tsv</b></td><td>General data storage with rows and columns. Columns are separated by tabs.</td><td><a href='https://en.wikipedia.org/wiki/Tab-separated_values' target='_blank'>Wikipedia</a></td><td>NA</td></tr><tr><td><b>FASTA</b></td><td>Stores sequence data.</td><td><a href='https://en.wikipedia.org/wiki/FASTA_format' target='_blank'>Wikipedia</a></td><td>NA</td></tr><tr><td><b>FASTQ</b></td><td>Stores sequence data and quality scores.</td><td><a href='https://en.wikipedia.org/wiki/FASTQ_format' target='_blank'>Wikipedia</a></td><td><a href='https://doi.org/10.1093/nar/gkp1137' target='_blank'>Link</a></td></tr><tr><td><b>SAM</b></td><td>Sequence Alignment Map format. Stores information about reads mapped to a reference genome.</td><td><a href='https://en.wikipedia.org/wiki/SAM_(file_format)' target='_blank'>Wikipedia</a></td><td><a href='https://samtools.github.io/hts-specs/SAMv1.pdf' target='_blank'>Link</a></td></tr><tr><td><b>BAM</b></td><td>Binary Alignment Map format. The compressed binary version of SAM format.</td><td><a href='https://en.wikipedia.org/wiki/SAM_(file_format)' target='_blank'>Wikipedia</a></td><td><a href='https://samtools.github.io/hts-specs/SAMv1.pdf' target='_blank'>Link</a></td></tr><tr><td><b>CRAM</b></td><td>Another compressed format to store read mapping information.</td><td><a href='https://en.wikipedia.org/wiki/CRAM_(file_format)' target='_blank'>Wikipedia</a></td><td><a href='https://samtools.github.io/hts-specs/CRAMv3.pdf' target='_blank'>Link</a></td></tr><tr><td><b>VCF</b></td><td>Variant Call Format. Used to store information about variants inferred for a given sample(s). .vcf files are a specific type of tab delmited format.</td><td><a href='https://en.wikipedia.org/wiki/Variant_Call_Format' target='_blank'>Wikipedia</a></td><td><a href='https://samtools.github.io/hts-specs/VCFv4.2.pdf' target='_blank'>Link</a></td></tr><tr><td><b>BCF</b></td><td>Binary variant Call Format. The binary compressed verion of a VCF.</td><td><a href='https://en.wikipedia.org/wiki/Variant_Call_Format' target='_blank'>Wikipedia</a></td><td><a href='https://samtools.github.io/hts-specs/VCFv4.2.pdf' target='_blank'>Link</a></td></tr><tr><td><b>BED</b></td><td>Stores coordinates of regions of interest. .bed files are a specific type of tab delimited format.</td><td><a href='https://en.wikipedia.org/wiki/BED_(file_format)' target='_blank'>Wikipedia</a></td><td><a href='https://bedtools.readthedocs.io/en/latest/content/general-usage.html' target='_blank'>Link</a></td></tr><tr><td><b>GFF</b></td><td>Stores annotation information from a genome. .gff files are a specific type of tab delimited format.</td><td><a href='https://en.wikipedia.org/wiki/General_feature_format' target='_blank'>Wikipedia</a></td><td><a href='https://genome.ucsc.edu/FAQ/FAQformat.html#format3' target='_blank'>Link</a></td></tr><tr><td><b>GTF</b></td><td>Stores annotation information from a genome. GTF is an earlier version of GFF, but still commonly used, notably by the Ensembl database. .gtf files are a specific type of tab delmited format.</td><td><a href='https://en.wikipedia.org/wiki/Gene_transfer_format' target='_blank'>Wikipedia</a></td><td><a href='https://genome.ucsc.edu/FAQ/FAQformat.html#format4' target='_blank'>Link</a></td></tr>
+    </table>
+</div>
+
+                            <div id="sep_div"></div>
+
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" id="footer">
+		<div class="col-1">
+			<div id="footer_text">
+				<center>Site designed and maintained by <a href="https://gwct.github.io" target="_blank">Gregg Thomas</a>, Harvard Informatics | © Copyright 2023 | Page built: 11/17/2023 20:31:52 UTC </center>
+			</div>
+		</div>
+	</div>
+</body>

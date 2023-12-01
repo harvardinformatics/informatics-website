@@ -1,2 +1,2 @@
 mkdocs-material==9.4.*
-
+mkdocs-table-reader-plugin==2.0.*
