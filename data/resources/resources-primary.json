@@ -113,8 +113,8 @@
         "Data analysis for the life sciences Harvard EdX course": {
             "id": "12",
             "name": "Data analysis for the life sciences Harvard EdX course",
-            "link": "http://rafalab.dfci.harvard.edu/pages/harvardx.html",
-            "tags": ["data science", "bioinformatics", "statistics", "R", "genomics", "high-performance computer", "RNA seq", "python", "machine learning", "harvard"],
+            "link": "https://rafalab.dfci.harvard.edu/pages/harvardx.html",
+            "tags": ["data science", "bioinformatics", "statistics", "R", "genomics", "high-performance computing", "RNA seq", "python", "machine learning", "harvard"],
             "date-added": "11-28-2023",
             "status" : "active",
             "description": ""
