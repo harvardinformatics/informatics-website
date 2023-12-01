@@ -1,4 +1,5 @@
 site_name: Harvard FAS Informatics Group
+site_url: https://harvardinformatics.github.io/informatics-website/
 nav:
   - Home: index.md
   - About: 
