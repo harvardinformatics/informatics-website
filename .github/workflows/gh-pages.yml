@@ -50,7 +50,7 @@ jobs:
       - name: run htmlproofer
         # keep --swap-urls in sync with mkdocs.yml site_url
         run: |
-          htmlproofer --ignore-missing-alt --cache '{"timeframe": {"external": "30d"}}' --swap-urls /informatics-website/:/
+          htmlproofer --ignore-missing-alt --cache '{"timeframe": {"external": "30d"}}' --ignore-files ./404.html
       # https://github.com/actions/cache/blob/main/save/README.md#always-save-cache
       - uses: actions/cache/save@v3
         id: save-cache-htmlproofer
