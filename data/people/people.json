@@ -1,5 +1,5 @@
 {
-    "director": {    
+    "bioinformatics director": {    
         "Tim Sackton": {
             "id": "1",
             "name": "Tim Sackton",
@@ -15,10 +15,10 @@
             "pubs": "https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate",
             "profile": "Tim runs the Bioinformatics group. His expertise is broadly in genomics, with a focus on genome assembly, comparative and population genomics, making genomic methods scalabile and easy to use, and developing new methods for analyzing genomic data."
         }
-  },
-  "bioinformatics staff": {
+    },
+    "bioinformatics staff": {
         "Adam Freedman": {
-            "id": "8",
+            "id": "10",
             "name": "Adam Freedman",
             "title" : "Senior Bioinformatics Scientist",
             "email" : "afreedman@fas.harvard.edu",
@@ -31,11 +31,175 @@
             "status" : "active",
             "pubs": "https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate",
             "profile": "Adam is a Senior Bioinformatics Scientist in the FAS Informatics Group. He is our resident expert in genome annotation and RNA-seq analysis, particularly in non-model species, and also has a background in population and conservation genetics."
-        }
-  },
-  "bioinformatics postdocs": {
-        "Subir Shakya": {
+        },
+        "Danielle Khost": {
+            "id": "11",
+            "name": "Danielle Khost",
+            "title" : "Senior Bioinformatics Scientist",
+            "email" : "",
+            "office" : "B227.65",
+            "img": "img/people/daniellekhost.png",
+            "link": "",
+            "date-added": "12-05-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "",
+            "profile": ""
+        },
+        "Gregg Thomas": {
             "id": "12",
+            "name": "Gregg Thomas",
+            "title" : "Senior Bioinformatics Scientist",
+            "email" : "",
+            "office" : "B227.65",
+            "img": "img/people/greggthomas.png",
+            "link": "",
+            "date-added": "12-05-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "",
+            "profile": ""
+        },
+        "Lei Ma": {
+            "id": "13",
+            "name": "Lei Ma",
+            "title" : "Senior Bioinformatics Scientist",
+            "email" : "",
+            "office" : "B227.20",
+            "img": "img/people/leima.png",
+            "link": "",
+            "date-added": "12-05-2023",
+            "date-joined": "09-11-2023",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "",
+            "profile": ""
+        },
+        "Rawan Olayan": {
+            "id": "14",
+            "name": "Lei Ma",
+            "title" : "Senior Bioinformatics Scientist",
+            "email" : "",
+            "office" : "B227.40",
+            "img": "img/people/rawanolayan.png",
+            "link": "",
+            "date-added": "12-05-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "",
+            "profile": ""
+        },
+        "Allison Shultz": {
+            "id": "15",
+            "name": "Allison Shultz",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/allisonshultz.png",
+            "link": "https://www.allisonshultz.com/",
+            "date-added": "11-28-2023",
+            "date-joined": "07-01-2017",
+            "date-left": "07-31-2019",
+            "status" : "moved",
+            "pubs": "https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate",
+            "profile": "Allison was a Senior Bioinformatics Scientist in the group from 2017-2019. She is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County."
+        },
+        "Brian Arnold": {
+            "id": "16",
+            "name": "",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "Ming \"Tommy\" Tang": {
+            "id": "17",
+            "name": "",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "Scott Van Buren": {
+            "id": "18",
+            "name": "",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "Juerg Straabhaur": {
+            "id": "19",
+            "name": "",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "John Gaspar": {
+            "id": "20",
+            "name": "",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "Yasin Kaymaz": {
+            "id": "21",
+            "name": "",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "Alexandria D'Souza": {
+            "id": "22",
+            "name": "",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        }
+    },
+    "bioinformatics postdocs": {
+        "Subir Shakya": {
+            "id": "30",
             "name": "Subir Shakya",
             "title" : "Postdoctoral Fellow",
             "email" : "subirshakya@fas.harvard.edu",
@@ -47,22 +211,133 @@
             "date-left": "",
             "status" : "active",
             "pubs": "https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate",
-            "profile": "Subir is a postdoctoral fellow in the FAS Informatics Group. He is working on comparative genomics of morphological traits in birds, as well as developing new approaches for using population genetics to understand the evolution of complex traits."
-        }
-  },
-  "alumni": {
-        "Allison Shultz": {
-            "id": "22",
-            "name": "Allison Shultz",
-            "title" : "Senior Bioinformatics Scientist",
-            "img": "img/people/allisonshultz.png",
-            "link": "https://www.allisonshultz.com/",
+            "profile": "Subir is a postdoctoral fellow in the FAS Informatics Group..."
+        },
+        "Ekaterina Osipova": {
+            "id": "31",
+            "name": "Ekaterina Osipova",
+            "title" : "Postdoctoral Fellow",
+            "email" : "",
+            "office" : "B227.65",
+            "img": "img/people/katyaosipova.png",
+            "link": "",
             "date-added": "11-28-2023",
-            "date-joined": "07-01-2017",
-            "date-left": "07-31-2019",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "",
+            "profile": ""
+        },
+        "Sara Smith Wuitchik": {
+            "id": "32",
+            "name": "",
+            "title" : "Postdoctoral Fellow",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
             "status" : "moved",
-            "pubs": "https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate",
-            "profile": "Allison was a Senior Bioinformatics Scientist in the group. She is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County."
+            "pubs": "",
+            "profile": ""
+        },
+        "Alex Llanos Garrido": {
+            "id": "33",
+            "name": "",
+            "title" : "Postdoctoral Fellow",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "Veronika Laineo": {
+            "id": "34",
+            "name": "",
+            "title" : "Postdoctoral Fellow",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        }
+    },
+    "softwareops director": {    
+        "Aaron Kitzmiller": {
+            "id": "50",
+            "name": "Aaron Kitzmiller",
+            "title" : "Director of Software Operations",
+            "email" : "",
+            "office" : "",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "",
+            "profile": ""
+        }
+    },
+    "softwareops staff": {
+        "Nathan Weeks": {
+            "id": "60",
+            "name": "",
+            "title" : "",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "David D'Antonio": {
+            "id": "61",
+            "name": "",
+            "title" : "",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "Meghan Correa": {
+            "id": "62",
+            "name": "",
+            "title" : "",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
+        },
+        "Andy Bryant": {
+            "id": "63",
+            "name": "",
+            "title" : "",
+            "img": "img/people/.png",
+            "link": "",
+            "date-added": "11-28-2023",
+            "date-joined": "",
+            "date-left": "",
+            "status" : "moved",
+            "pubs": "",
+            "profile": ""
         }
     }
 }
+        
