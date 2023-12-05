@@ -1,0 +1,68 @@
+{
+    "director": {    
+        "Tim Sackton": {
+            "id": "1",
+            "name": "Tim Sackton",
+            "title" : "Director of Bioinformatics",
+            "email" : "tsackton@g.harvard.edu",
+            "office" : "B227.10",
+            "img": "img/people/timsackton.png",
+            "link": "about/people/timsackton.md",
+            "date-added": "11-28-2023",
+            "date-joined": "07-01-2017",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate",
+            "profile": "Tim runs the Bioinformatics group. His expertise is broadly in genomics, with a focus on genome assembly, comparative and population genomics, making genomic methods scalabile and easy to use, and developing new methods for analyzing genomic data."
+        }
+  },
+  "bioinformatics staff": {
+        "Adam Freedman": {
+            "id": "8",
+            "name": "Adam Freedman",
+            "title" : "Senior Bioinformatics Scientist",
+            "email" : "afreedman@fas.harvard.edu",
+            "office" : "B227.30",
+            "img": "img/people/adamfreedman.png",
+            "link": "https://ahfgenomics.com/",
+            "date-added": "11-28-2023",
+            "date-joined": "06-01-2015",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate",
+            "profile": "Adam is a Senior Bioinformatics Scientist in the FAS Informatics Group. He is our resident expert in genome annotation and RNA-seq analysis, particularly in non-model species, and also has a background in population and conservation genetics."
+        }
+  },
+  "bioinformatics postdocs": {
+        "Subir Shakya": {
+            "id": "12",
+            "name": "Subir Shakya",
+            "title" : "Postdoctoral Fellow",
+            "email" : "subirshakya@fas.harvard.edu",
+            "office" : "B227.65",
+            "img": "img/people/subirshakya.png",
+            "link": "https://www.subir.com.np/",
+            "date-added": "11-28-2023",
+            "date-joined": "03-01-2021",
+            "date-left": "",
+            "status" : "active",
+            "pubs": "https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate",
+            "profile": "Subir is a postdoctoral fellow in the FAS Informatics Group. He is working on comparative genomics of morphological traits in birds, as well as developing new approaches for using population genetics to understand the evolution of complex traits."
+        }
+  },
+  "alumni": {
+        "Allison Shultz": {
+            "id": "22",
+            "name": "Allison Shultz",
+            "title" : "Senior Bioinformatics Scientist",
+            "img": "img/people/allisonshultz.png",
+            "link": "https://www.allisonshultz.com/",
+            "date-added": "11-28-2023",
+            "date-joined": "07-01-2017",
+            "date-left": "07-31-2019",
+            "status" : "moved",
+            "pubs": "https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate",
+            "profile": "Allison was a Senior Bioinformatics Scientist in the group. She is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County."
+        }
+    }
+}
