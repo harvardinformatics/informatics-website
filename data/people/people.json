@@ -137,7 +137,7 @@
                 "date-left": "06-16-2022",
                 "status" : "moved",
                 "link": "",
-                "profile": "Scott Van Buren was a Senior Bioinformatics Scientist in the group from 2020-2022, when he worked primarily on analysis of single-cell data with the Dulac lab. He is now a Scientific Investigator in Computational Biology at GSK"
+                "profile": "Scott was a Senior Bioinformatics Scientist in the group from 2020-2022, when he worked primarily on analysis of single-cell data with the Dulac lab. He is now a Scientific Investigator in Computational Biology at GSK."
             },
             "Juerg Straubhaar": {
                 "id": "19",
@@ -151,42 +151,33 @@
             },
             "John Gaspar": {
                 "id": "20",
-                "name": "",
-                "title" : "Senior Bioinformatics Scientist",
-                "img": "img/people/.png",
-                "link": "",
+                "name": "John Gaspar",
                 "date-added": "12-05-2023",
-                "date-joined": "",
-                "date-left": "",
+                "date-joined": "03-01-2017",
+                "date-left": "01-18-2019",
                 "status" : "moved",
-                "pubs": "",
-                "profile": ""
+                "link": "",
+                "profile": "John was a Senior Bioinformatics Scientist in the group from 2017-2019. He is now a Data Science and Bioinformatics Team Lead at Merck."
             },
             "Yasin Kaymaz": {
                 "id": "21",
-                "name": "",
-                "title" : "Senior Bioinformatics Scientist",
-                "img": "img/people/.png",
-                "link": "",
+                "name": "Yasin Kaymaz",
                 "date-added": "12-05-2023",
-                "date-joined": "",
-                "date-left": "",
+                "date-joined": "08-01-2017",
+                "date-left": "09-01-2020",
                 "status" : "moved",
-                "pubs": "",
-                "profile": ""
+                "link": "",
+                "profile": "Yasin was a Senior Bioinformatics Scientist in the group from 2017-2020, funded as part of a collaboration with Boehringer Ingelheim. He is now an Assistant Professor at Ege University in Izmir, Turkey."
             },
             "Alexandria D'Souza": {
                 "id": "22",
-                "name": "",
-                "title" : "Senior Bioinformatics Scientist",
-                "img": "img/people/.png",
-                "link": "",
+                "name": "Alexandria D'Souza",
                 "date-added": "12-05-2023",
-                "date-joined": "",
-                "date-left": "",
+                "date-joined": "09-30-2019",
+                "date-left": "09-19-2022",
                 "status" : "moved",
-                "pubs": "",
-                "profile": ""
+                "link": "",
+                "profile": "Alexandria was a Senior Bioinformatics Scientist in the group from 2019-2022, primarily working with the mass spec core and the Woo lab."
             }
         },
         "postdocs": {
@@ -197,142 +188,130 @@
                 "email" : "subirshakya@fas.harvard.edu",
                 "office" : "B227.65",
                 "img": "img/people/subirshakya.png",
-                "link": "https://www.subir.com.np/",
                 "date-added": "12-05-2023",
                 "date-joined": "03-01-2021",
                 "date-left": "",
                 "status" : "active",
+                "link": "https://www.subir.com.np/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate",
-                "profile": "Subir is a postdoctoral fellow in the FAS Informatics Group..."
+                "github": "",
+                "profile": "Subir is a postdoctoral fellow in the FAS Informatics Group, co-advised by Scott Edwards in the Department of Organismic and Evolutionary Biology..."
             },
             "Ekaterina Osipova": {
                 "id": "31",
-                "name": "Ekaterina Osipova",
+                "name": "Katya Osipova",
                 "title" : "Postdoctoral Fellow",
                 "email" : "",
                 "office" : "B227.65",
                 "img": "img/people/katyaosipova.png",
-                "link": "",
                 "date-added": "12-05-2023",
-                "date-joined": "",
+                "date-joined": "10-01-2022",
                 "date-left": "",
                 "status" : "active",
-                "pubs": "",
-                "profile": ""
+                "link": "",
+                "pubs": "https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate",
+                "github": "",
+                "profile": "Katya is a postdoctoral fellow in the FAS Informatics Group...."
             },
             "Sara Smith Wuitchik": {
                 "id": "32",
                 "name": "",
-                "title" : "Postdoctoral Fellow",
-                "img": "img/people/.png",
-                "link": "",
                 "date-added": "12-05-2023",
-                "date-joined": "",
-                "date-left": "",
+                "date-joined": "05-06-2019",
+                "date-left": "08-31-2021",
                 "status" : "moved",
-                "pubs": "",
-                "profile": ""
+                "link": "https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm",
+                "profile": "Sara was a postdoc from 2019-2021, jointed advised with Mike Sorenson at Boston University, working on our NSF-funded research on convergent evolution of brood parasitic birds. She is now an Assistant Professor at Mount Royal University in Calgary, Canada."
             },
             "Alex Llanos Garrido": {
                 "id": "33",
-                "name": "",
-                "title" : "Postdoctoral Fellow",
-                "img": "img/people/.png",
-                "link": "",
+                "name": "Alex Llanos Garrido",
                 "date-added": "12-05-2023",
-                "date-joined": "",
-                "date-left": "",
+                "date-joined": "09-01-2019",
+                "date-left": "08-31-2021",
                 "status" : "moved",
-                "pubs": "",
-                "profile": ""
+                "link": "",
+                "profile": "Alex was a postdoc from 2019-2021, working on the population genomics of codfish. He is now at the Universidad Complutense Madrid, continuing to work on the genomics of local adaptation."
             },
             "Veronika Laine": {
                 "id": "34",
-                "name": "",
-                "title" : "Postdoctoral Fellow",
-                "img": "img/people/.png",
-                "link": "",
+                "name": "Veronika Laine",
                 "date-added": "12-05-2023",
-                "date-joined": "",
-                "date-left": "",
+                "date-joined": "01-01-2019",
+                "date-left": "06-16-2019",
                 "status" : "moved",
-                "pubs": "",
-                "profile": ""
+                "link": "https://veronikalaine.netlify.app/",
+                "profile": "Veronika was a postdoc working with Matt Meselson on the population genetics of rotifers. She is now at the Finnish Museum of Natural History working on bats."
             }
         }
     },
     "softwareops": {
-            
-        "softwareops director": {    
+        "director": {    
             "Aaron Kitzmiller": {
                 "id": "50",
                 "name": "Aaron Kitzmiller",
                 "title" : "Director of Software Operations",
                 "email" : "",
                 "office" : "B227.70",
-                "img": "img/people/.png",
-                "link": "",
+                "img": "img/people/aaronkitzmiller.png",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
                 "status" : "active",
+                "link": "",
                 "pubs": "",
+                "github": "",
                 "profile": ""
             }
         },
-        "softwareops staff": {
+        "staff": {
             "Nathan Weeks": {
                 "id": "60",
-                "name": "",
+                "name": "Nathan Weeks",
                 "title" : "",
                 "office" : "B227.30",
                 "email" : "", 
-                "img": "img/people/.png",
-                "link": "",
+                "img": "img/people/nathanweek.png",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
-                "status" : "moved",
+                "status" : "active",
+                "link": "",
                 "pubs": "",
+                "github": "",
                 "profile": ""
             },
             "David D'Antonio": {
                 "id": "61",
-                "name": "",
+                "name": "David D'Antonio",
                 "title" : "",
-                "img": "img/people/.png",
-                "link": "",
+                "img": "img/people/ddantonio.png",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
-                "status" : "moved",
+                "status" : "active",
+                "link": "",
                 "pubs": "",
+                "github": "",
                 "profile": ""
             },
             "Meghan Correa": {
                 "id": "62",
-                "name": "",
-                "title" : "",
-                "img": "img/people/.png",
-                "link": "",
+                "name": "Meghan Correa",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
                 "status" : "moved",
-                "pubs": "",
+                "link": "",
                 "profile": ""
             },
             "Andy Bryant": {
                 "id": "63",
-                "name": "",
-                "title" : "",
-                "img": "",
-                "link": "",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
                 "status" : "moved",
-                "pubs": "",
+                "link": "",
                 "profile": ""
             }
         }
