@@ -179,6 +179,207 @@ th, td {
 /* Responsive styles */
 
 /*------------------------------------------------------*/
+/* Profile cards */
+
+.card-row {
+  height:30vh;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  border: 1px solid #333333;
+  background-color: #f3e5d8;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  height:100%;
+  /* padding: 5px; */
+  font-size: 0.85em;
+}
+
+.alum-card-container {
+  display: flex;
+  justify-content: left;
+  align-items: left; 
+  min-height:5vh;
+}
+
+.card-name-container {
+  height: 12.5%;
+}
+
+.card-name {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 1.5em;
+  /* height: 5vh; */
+}
+
+.card-content-container {
+  /* height: 25vh; */
+  height: 60%;
+  }
+
+.card-img-container {
+  height: 100%;
+}
+
+.card-img {
+  width: auto;
+  /* height: 20vh; */
+  height: 100% !important;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+
+.card-content {
+  height: 100%;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+
+.card-sep-div {
+  height: 3vh;
+  /* height: 7.5% */
+}
+
+@media (max-width: 1025px) {
+  .card-row {
+    height: unset !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-container {  
+    display: block !important;
+    /* width: 100vw !important; */
+    width: 70vw !important;
+    /* height: 40vh; */
+
+  }
+
+  .card-content-container {
+    height: unset !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-img-container {
+    /* display: block !important; */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .card-content {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .card-img {
+    width: auto !important;
+    height: 20vh !important;
+  } 
+
+  /* .card-content-container {
+    display: block !important;
+    width: 100% !important;
+    border: 1px solid green; 
+  } */
+  .card-margin-inner {
+    display: block !important;
+    width: 100vw !important;
+    height: 3vh;
+    display: none;
+  }
+  .card-margin-outer {
+    display: block !important;
+    width: 10vw !important;
+  }
+}
+/* Responsive styles */
+
+/*------------------------------------------------------*/
+/* Contact logo grid styles */
+.card-link-row {
+	/* padding-top:20px; */
+  /* height: 8vh; */
+  height: 20%;
+}
+
+.card-link-row a {
+  font-size: 0.85em;
+}
+
+.card-link-container {
+	display: inline-block;
+	margin: 0;
+	list-style: none;
+	line-height: 1em;
+	height:100%;
+}
+
+.icon-link-container {
+	width:100%;
+	text-align:center;
+}
+
+.icon-link {
+	transition: background-color .2s;
+	font-size: 1rem;
+	display: inline-block;
+	padding: 5px 15px;
+	cursor: pointer;
+	text-decoration: none;
+	color:inherit;
+	text-align:center;
+}
+.icon-link:hover {
+	background-color: rgba(182, 173, 184, 0.5);
+	border-radius: 7px;
+}
+.icon-link span {
+	display:none;
+}
+.icon-link:hover span {
+	display:block;
+	color: inherit;
+}
+
+.icon-container {
+	display:flex;
+	justify-content:center;
+  height: 4vh;
+}
+.icon {
+	vertical-align:middle;
+	padding: 5px 15px;
+  /* height: 32px;
+  width: 32px; */
+}
+
+@media (max-width: 1500px) {
+  .card-link-container {  
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1025px) {
+  .card-link-row {
+    height: unset !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+
+/*------------------------------------------------------*/
 /* Grid */
 
 .row { 
@@ -188,6 +389,7 @@ th, td {
   align-items: center;
 }
 
+.col-0-24 { width:0%; display:none; }
 .col-1-24 { width:4.166667%; display:inline-block; }
 .col-2-24 { width:8.333333%; display:inline-block; }
 .col-3-24 { width:12.5%; display:inline-block; }
@@ -217,3 +419,4 @@ th, td {
 .sep-div { height: 1vh;}
 
 /*------------------------------------------------------*/
+

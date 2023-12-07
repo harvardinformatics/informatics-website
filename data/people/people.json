@@ -1,6 +1,6 @@
 {
-    "bioinformatics": {
-        "director": {    
+    "Bioinformatics": {
+        "Director": {    
             "Tim Sackton": {
                 "id": "1",
                 "name": "Tim Sackton",
@@ -18,7 +18,7 @@
                 "profile": "Tim runs the Bioinformatics group. His expertise is broadly in genomics, with a focus on genome assembly, comparative and population genomics, making genomic methods scalabile and easy to use, and developing new methods for analyzing genomic data."
             }
         },
-        "staff": {
+        "Senior Bioinformatics Scientists": {
             "Adam Freedman": {
                 "id": "10",
                 "name": "Adam Freedman",
@@ -55,9 +55,9 @@
                 "id": "12",
                 "name": "Gregg Thomas",
                 "title" : "Senior Bioinformatics Scientist",
-                "email" : "greggwct@gmail.com ",
+                "email" : "gthomas@fas.harvard.edu",
                 "office" : "B227.65",
-                "img": "img/people/greggthomas.png",
+                "img": "img/people/greggthomas.jpg",
                 "date-added": "12-05-2023",
                 "date-joined": "07-06-2021",
                 "date-left": "",
@@ -65,7 +65,7 @@
                 "link": "https://gwct.github.io/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=4pydfEUAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/gwct",
-                "profile": "Gregg..."
+                "profile": "Gregg works on phylogenetic methods and comparative genomics. He has studied convergent evolution, molecular evolution of rodents and insects, and mutation rates in primates."
             },
             "Lei Ma": {
                 "id": "13",
@@ -85,7 +85,7 @@
             },
             "Rawan Olayan": {
                 "id": "14",
-                "name": "Lei Ma",
+                "name": "Rawan Olayan",
                 "title" : "Senior Bioinformatics Scientist",
                 "email" : "",
                 "office" : "B227.40",
@@ -180,7 +180,7 @@
                 "profile": "Alexandria was a Senior Bioinformatics Scientist in the group from 2019-2022, primarily working with the mass spec core and the Woo lab."
             }
         },
-        "postdocs": {
+        "Postdoctoral Researchers": {
             "Subir Shakya": {
                 "id": "30",
                 "name": "Subir Shakya",
@@ -245,8 +245,8 @@
             }
         }
     },
-    "softwareops": {
-        "director": {    
+    "Software Operations": {
+        "Director": {    
             "Aaron Kitzmiller": {
                 "id": "50",
                 "name": "Aaron Kitzmiller",
@@ -264,7 +264,7 @@
                 "profile": ""
             }
         },
-        "staff": {
+        "Staff": {
             "Nathan Weeks": {
                 "id": "60",
                 "name": "Nathan Weeks",
@@ -285,6 +285,8 @@
                 "id": "61",
                 "name": "David D'Antonio",
                 "title" : "",
+                "office" : "",
+                "email" : "",
                 "img": "img/people/ddantonio.png",
                 "date-added": "12-05-2023",
                 "date-joined": "",
@@ -298,20 +300,30 @@
             "Meghan Correa": {
                 "id": "62",
                 "name": "Meghan Correa",
+                "title" : "",
+                "office" : "",
+                "email" : "",                
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
                 "status" : "moved",
                 "link": "",
+                "pubs": "",
+                "github": "",
                 "profile": ""
             },
             "Andy Bryant": {
                 "id": "63",
+                "title" : "",
+                "office" : "",
+                "email" : "",                    
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
                 "status" : "moved",
                 "link": "",
+                "pubs": "",
+                "github": "",
                 "profile": ""
             }
         }

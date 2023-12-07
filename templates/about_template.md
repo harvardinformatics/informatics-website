@@ -1,3 +1,10 @@
+---
+hide:
+    - navigation
+    - toc
+---
+
+
 # About us
 
 ## Our Mission
@@ -8,13 +15,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 (add more mission / services text here)
 
-## Bioinformatics Group 
-
-{{ bioinformatics cards }}
-
-## Software Operations Group
-
-{{ softwareops cards}}
+{profile_cards_table}
 
 ## Where to Find Us
 
