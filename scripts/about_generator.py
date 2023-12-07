@@ -73,7 +73,7 @@ with open(md_output_file, 'w') as md_output:
 
         for sub_section in json_data[section]:
             first_row = True;
-            cards_table += "\n\n### " + sub_section + "\n";
+            # cards_table += "\n\n### " + sub_section + "\n";
             # Write the sub-section header
 
             people_list = sorted(list(json_data[section][sub_section].keys()));
@@ -246,7 +246,12 @@ with open(md_output_file, 'w') as md_output:
             cards_table += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
             cards_table += "</div>\n";
             # Add the outer margin and close the last row
+
+            cards_table += '\n<div class="card-sep-div"></div>\n';
+            # Put a vertical space between the sections
         ## End sub-section loop
+        
+
     ## End section loop
 
 ####################

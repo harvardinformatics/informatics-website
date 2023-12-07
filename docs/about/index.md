@@ -1,13 +1,15 @@
 ---
 hide:
     - navigation
-    - toc
 ---
 
+<style>
+    .md-sidebar--secondary {
+        order: 0;
+    }
+</style>
 
 # About us
-
-## Our Mission
 
 The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group working in the cramped space between faculty, core facilities and high performance computing. We have a number of core responsibilities including first pass analysis for the sequencing core and software/analysis support for the proteomics mass-spectrometry core. We also support the infrastructure for instrument scheduling and invoicing across many FAS facilities.
 
@@ -18,9 +20,6 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 
 ## Bioinformatics
-
-
-### Director
 
 <div class="row card-row">
 
@@ -104,8 +103,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-7-24 card-margin-outer"></div>
 </div>
 
-
-### Senior Bioinformatics Scientists
+<div class="card-sep-div"></div>
 
 <div class="row card-row">
 
@@ -419,8 +417,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-7-24 card-margin-outer"></div>
 </div>
 
-
-### Postdoctoral Researchers
+<div class="card-sep-div"></div>
 
 <div class="row card-row">
 
@@ -536,11 +533,10 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-outer"></div>
 </div>
 
+<div class="card-sep-div"></div>
+
 
 ## Software Operations
-
-
-### Director
 
 <div class="row card-row">
 
@@ -574,8 +570,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-7-24 card-margin-outer"></div>
 </div>
 
-
-### Staff
+<div class="card-sep-div"></div>
 
 <div class="row card-row">
 
@@ -634,6 +629,8 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-1-24 card-margin-outer"></div>
 </div>
+
+<div class="card-sep-div"></div>
 
 
 ## Group Alumni

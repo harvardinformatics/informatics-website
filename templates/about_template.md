@@ -1,13 +1,15 @@
 ---
 hide:
     - navigation
-    - toc
 ---
 
+<style>
+    .md-sidebar--secondary {{
+        order: 0;
+    }}
+</style>
 
 # About us
-
-## Our Mission
 
 The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group working in the cramped space between faculty, core facilities and high performance computing. We have a number of core responsibilities including first pass analysis for the sequencing core and software/analysis support for the proteomics mass-spectrometry core. We also support the infrastructure for instrument scheduling and invoicing across many FAS facilities.
 
