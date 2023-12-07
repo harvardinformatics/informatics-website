@@ -64,6 +64,7 @@ plugins:
   - search
   - table-reader
 hooks:
+  - scripts/about_generator.py 
   - scripts/resources_generator.py 
 extra_css:
   - stylesheets/extra.css

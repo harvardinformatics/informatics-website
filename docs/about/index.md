@@ -30,7 +30,8 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Tim Sackton, Ph.D.
+			<b><a href="about/people/timsackton.md" target="_blank">Tim Sackton, Ph.D.</a></b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
@@ -38,7 +39,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="about/people/timsackton.md" target="_blank">
-				<img class="card-img" src="../img/people/timsackton.png" alt="Tim Sackton">
+				<img class="card-img" src="../img/people/timsackton.jpg" alt="Tim Sackton">
 			</a>
 		</div>
 		<div class="col-1-24 card-margin"></div>
@@ -114,7 +115,8 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Adam Freedman, Ph.D.
+			<b><a href="https://ahfgenomics.com/" target="_blank">Adam Freedman, Ph.D.</a></b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
@@ -189,14 +191,15 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Danielle Khost, Ph.D.
+			<b>Danielle Khost, Ph.D.</b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/daniellekhost.png" alt="Danielle Khost">
+			<img class="card-img" src="../img/people/daniellekhost.jpg" alt="Danielle Khost">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -236,13 +239,14 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="row card-row">
 
-<div class="col-0-24 card-margin-outer"></div>
+<div class="col-1-24 card-margin-outer"></div>
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Gregg Thomas, Ph.D.
+			<b><a href="https://gwct.github.io/" target="_blank">Gregg Thomas, Ph.D.</a></b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
@@ -317,14 +321,15 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Lei Ma, Ph.D.
+			<b>Lei Ma, Ph.D.</b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/leima.png" alt="Lei Ma">
+			<img class="card-img" src="../img/people/leima.jpg" alt="Lei Ma">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -357,7 +362,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 </div>
 
-<div class="col-0-24 card-margin-outer"></div>
+<div class="col-1-24 card-margin-outer"></div>
 </div>
 
 <div class="card-sep-div"></div>
@@ -370,14 +375,15 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Rawan Olayan, Ph.D.
+			<b>Rawan Olayan, Ph.D.</b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/rawanolayan.png" alt="Rawan Olayan">
+			<img class="card-img" src="../img/people/rawanolayan.jpg" alt="Rawan Olayan">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -424,7 +430,8 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Katya Osipova, Ph.D.
+			<b>Katya Osipova, Ph.D.</b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
@@ -469,7 +476,8 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Subir Shakya, Ph.D.
+			<b><a href="https://www.subir.com.np/" target="_blank">Subir Shakya, Ph.D.</a></b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
@@ -477,7 +485,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://www.subir.com.np/" target="_blank">
-				<img class="card-img" src="../img/people/subirshakya.png" alt="Subir Shakya">
+				<img class="card-img" src="../img/people/subirshakya.jpg" alt="Subir Shakya">
 			</a>
 		</div>
 		<div class="col-1-24 card-margin"></div>
@@ -542,14 +550,15 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Aaron Kitzmiller, Ph.D.
+			<b>Aaron Kitzmiller, Ph.D.</b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/aaronkitzmiller.png" alt="Aaron Kitzmiller">
+			<img class="card-img" src="../img/people/aaronkitzmiller.jpg" alt="Aaron Kitzmiller">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -576,14 +585,15 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			David D'Antonio, Ph.D.
+			<b>David D'Antonio, Ph.D.</b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/ddantonio.png" alt="David D'Antonio">
+			<img class="card-img" src="../img/people/ddantonio.jpg" alt="David D'Antonio">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -601,7 +611,8 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 	<div class="row card-name-container">
 		<div class="col-6-24 card-margin"></div>
 		<div class="col-12-24 card-name">
-			Nathan Weeks, Ph.D.
+			<b>Nathan Weeks, Ph.D.</b><br>
+
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
@@ -622,6 +633,158 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 </div>
 
 <div class="col-1-24 card-margin-outer"></div>
+</div>
+
+
+## Group Alumni
+
+<div class="row alum-card-row">
+
+<div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz</a></b><br>
+
+		(2017-2018)<br>
+
+		<p>Allison was a Senior Bioinformatics Scientist in the group from 2017-2018. She is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b><a href="https://brian-arnold.github.io/about/" target="_blank">Brian Arnold</a></b><br>
+
+		(2018-2020)<br>
+
+		<p>Brian was a Senior Bioinformatics Scientist in the group from 2018-2020. He is now a departmental data scientist with the Ecology and Evolutionary Biology department at Princeton.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b><a href="https://tommytang.bio.link/" target="_blank">Ming "Tommy" Tang</a></b><br>
+
+		(2018-2020)<br>
+
+		<p>Tommy was a Senior Bioinformatics Scientist in the group from 2018-2020, when he worked primarily on analysis of single-cell data with the Dulac lab. He is now the Director of Computational Biology at Immunitas Therapeutics.</p>
+</div>
+
+<div class="col-0-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row alum-card-row">
+
+<div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b>Scott Van Buren</b><br>
+
+		(2020-2022)<br>
+
+		<p>Scott was a Senior Bioinformatics Scientist in the group from 2020-2022, when he worked primarily on analysis of single-cell data with the Dulac lab. He is now a Scientific Investigator in Computational Biology at GSK.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b>Juerg Straubhaar</b><br>
+
+		(2017-2021)<br>
+
+		<p>Juerg was a Senior Bioinformatics Scientist in the group from 2017-2021, when he worked primarily on proteomics data with the Mass Spec Core and the Melton Lab.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b>John Gaspar</b><br>
+
+		(2017-2019)<br>
+
+		<p>John was a Senior Bioinformatics Scientist in the group from 2017-2019. He is now a Data Science and Bioinformatics Team Lead at Merck.</p>
+</div>
+
+<div class="col-0-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row alum-card-row">
+
+<div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b>Yasin Kaymaz</b><br>
+
+		(2017-2020)<br>
+
+		<p>Yasin was a Senior Bioinformatics Scientist in the group from 2017-2020, funded as part of a collaboration with Boehringer Ingelheim. He is now an Assistant Professor at Ege University in Izmir, Turkey.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b>Alexandria D'Souza</b><br>
+
+		(2019-2022)<br>
+
+		<p>Alexandria was a Senior Bioinformatics Scientist in the group from 2019-2022, primarily working with the mass spec core and the Woo lab.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik</a></b><br>
+
+		(2019-2021)<br>
+
+		<p>Sara was a postdoc from 2019-2021, jointed advised with Mike Sorenson at Boston University, working on our NSF-funded research on convergent evolution of brood parasitic birds. She is now an Assistant Professor at Mount Royal University in Calgary, Canada.</p>
+</div>
+
+<div class="col-0-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row alum-card-row">
+
+<div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b>Alex Llanos Garrido</b><br>
+
+		(2019-2021)<br>
+
+		<p>Alex was a postdoc from 2019-2021, working on the population genomics of codfish. He is now at the Universidad Complutense Madrid, continuing to work on the genomics of local adaptation.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine</a></b><br>
+
+		(2019)<br>
+
+		<p>Veronika was a postdoc working with Matt Meselson on the population genetics of rotifers. She is now at the Finnish Museum of Natural History working on bats.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b>Meghan Correa</b><br>
+
+</div>
+
+<div class="col-0-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row alum-card-row">
+
+<div class="col-9-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<b>Andy Bryant</b><br>
+
+</div>
+
+<div class="col-9-24 card-margin-outer"></div>
 </div>
 
 

@@ -185,6 +185,11 @@ th, td {
   height:30vh;
 }
 
+.alum-card-row {
+  height: 18vh;
+  font-size: 0.85em;
+}
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -201,14 +206,19 @@ th, td {
 }
 
 .alum-card-container {
-  display: flex;
-  justify-content: left;
-  align-items: left; 
-  min-height:5vh;
+  padding: 10px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.alum-card-container::-webkit-scrollbar {
+  display: none;
 }
 
 .card-name-container {
-  height: 12.5%;
+  height: 14%;
 }
 
 .card-name {
@@ -221,7 +231,7 @@ th, td {
 
 .card-content-container {
   /* height: 25vh; */
-  height: 60%;
+  height: 58.5%;
   }
 
 .card-img-container {
@@ -229,9 +239,11 @@ th, td {
 }
 
 .card-img {
-  width: auto;
+  width: auto !important;
+  max-width: 100% !important;
   /* height: 20vh; */
-  height: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px;
@@ -241,6 +253,13 @@ th, td {
   height: 100%;
   overflow-wrap: break-word;
   overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card-content::-webkit-scrollbar {
+  display: none;
 }
 
 .card-sep-div {
@@ -249,7 +268,7 @@ th, td {
 }
 
 @media (max-width: 1025px) {
-  .card-row {
+  .card-row, .alum-card-row {
     height: unset !important;
     flex-direction: column;
     justify-content: center;
