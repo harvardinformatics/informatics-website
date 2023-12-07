@@ -132,6 +132,8 @@ with open(md_output_file, 'w') as md_output:
                 cards_table += '\t</div>\n';
                 # The card name header div
 
+                cards_table += '\t<div class="card-name-sep-div"></div>\n';
+
                 cards_table += '\t<div class="row card-content-container">\n';
                 cards_table += '\t\t<div class="col-1-24 card-margin"></div>\n';
 
@@ -147,6 +149,7 @@ with open(md_output_file, 'w') as md_output:
 
                 cards_table += '\t\t<div class="col-1-24 card-margin"></div>\n';
                 cards_table += '\t\t<div class="col-13-24 card-content">\n';
+                cards_table += '\t\t\t' + person_data['title'] + '<br>\n';
                 cards_table += '\t\t\t' + person_data['email'] + '<br>\n';
                 cards_table += '\t\t\t Northwest Labs, ' + person_data['office'] + '<br>\n';
                 cards_table += '\t\t\t<p>' + person_data['profile'] + '</p>\n';
@@ -250,8 +253,6 @@ with open(md_output_file, 'w') as md_output:
             cards_table += '\n<div class="card-sep-div"></div>\n';
             # Put a vertical space between the sections
         ## End sub-section loop
-        
-
     ## End section loop
 
 ####################

@@ -34,6 +34,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -43,6 +44,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Director of Bioinformatics<br>
 			tsackton@g.harvard.edu<br>
 			 Northwest Labs, B227.10<br>
 			<p>Tim runs the Bioinformatics group. His expertise is broadly in genomics, with a focus on genome assembly, comparative and population genomics, making genomic methods scalabile and easy to use, and developing new methods for analyzing genomic data.</p>
@@ -118,6 +120,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -127,6 +130,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Senior Bioinformatics Scientist<br>
 			afreedman@fas.harvard.edu<br>
 			 Northwest Labs, B227.30<br>
 			<p>Adam is a Senior Bioinformatics Scientist in the FAS Informatics Group. He is our resident expert in genome annotation and RNA-seq analysis, and also has a background in population and conservation genetics.</p>
@@ -194,6 +198,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -201,6 +206,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Senior Bioinformatics Scientist<br>
 			danielle_khost@fas.harvard.edu<br>
 			 Northwest Labs, B227.65<br>
 			<p>Danielle....</p>
@@ -248,6 +254,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -257,6 +264,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Senior Bioinformatics Scientist<br>
 			gthomas@fas.harvard.edu<br>
 			 Northwest Labs, B227.65<br>
 			<p>Gregg works on phylogenetic methods and comparative genomics. He has studied convergent evolution, molecular evolution of rodents and insects, and mutation rates in primates.</p>
@@ -324,6 +332,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -331,6 +340,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Senior Bioinformatics Scientist<br>
 			lei_ma@g.harvard.edu<br>
 			 Northwest Labs, B227.20<br>
 			<p>Lei...</p>
@@ -378,6 +388,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -385,6 +396,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Senior Bioinformatics Scientist<br>
 			<br>
 			 Northwest Labs, B227.40<br>
 			<p>Rawan...</p>
@@ -432,6 +444,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -439,6 +452,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Postdoctoral Fellow<br>
 			<br>
 			 Northwest Labs, B227.65<br>
 			<p>Katya is a postdoctoral fellow in the FAS Informatics Group....</p>
@@ -478,6 +492,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -487,6 +502,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Postdoctoral Fellow<br>
 			subirshakya@fas.harvard.edu<br>
 			 Northwest Labs, B227.65<br>
 			<p>Subir is a postdoctoral fellow in the FAS Informatics Group, co-advised by Scott Edwards in the Department of Organismic and Evolutionary Biology...</p>
@@ -551,6 +567,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -558,6 +575,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			Director of Software Operations<br>
 			<br>
 			 Northwest Labs, B227.70<br>
 			<p></p>
@@ -585,6 +603,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -592,6 +611,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			<br>
 			<br>
 			 Northwest Labs, <br>
 			<p></p>
@@ -611,6 +631,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-6-24 card-margin"></div>
 	</div>
+	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
@@ -618,6 +639,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
+			<br>
 			<br>
 			 Northwest Labs, B227.30<br>
 			<p></p>

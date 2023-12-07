@@ -229,9 +229,13 @@ th, td {
   /* height: 5vh; */
 }
 
+.card-name-sep-div {
+  height: 1.5%;
+}
+
 .card-content-container {
   /* height: 25vh; */
-  height: 58.5%;
+  height: 57%;
   }
 
 .card-img-container {
