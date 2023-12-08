@@ -15,7 +15,7 @@
                 "link": "about/people/timsackton.md",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/tsackton",
-                "profile": "Tim runs the Bioinformatics group. His expertise is broadly in genomics, with a focus on genome assembly, comparative and population genomics, making genomic methods scalabile and easy to use, and developing new methods for analyzing genomic data."
+                "profile": "Tim runs the Bioinformatics group. While his background is population and comparative genomics, these days he does a little bit of everything."
             }
         },
         "Senior Bioinformatics Scientists": {
@@ -33,7 +33,7 @@
                 "link": "https://ahfgenomics.com/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/adamfreedman",
-                "profile": "Adam is a Senior Bioinformatics Scientist in the FAS Informatics Group. He is our resident expert in genome annotation and RNA-seq analysis, and also has a background in population and conservation genetics."
+                "profile": "Adam is our resident expert in genome annotation and RNA-seq analysis, and also has a background in population and conservation genetics."
             },
             "Danielle Khost": {
                 "id": "11",
@@ -49,7 +49,7 @@
                 "link": "",
                 "pubs": "",
                 "github": "https://github.com/danielle-khost",
-                "profile": "Danielle...."
+                "profile": "Danielle is our resident expert in long read sequencing, and works on a variety of challenging genome assembly problems."
             },
             "Gregg Thomas": {
                 "id": "12",
@@ -81,7 +81,7 @@
                 "link": "",
                 "pubs": "",
                 "github": "https://github.com/microlei",
-                "profile": "Lei..."
+                "profile": "Lei is primarily responsible for developing training and outreach material; she also has a background in metagenomics and microbial ecology."
             },
             "Rawan Olayan": {
                 "id": "14",
@@ -97,87 +97,95 @@
                 "link": "",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=qxUMqP4AAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "",
-                "profile": "Rawan..."
+                "profile": "Rawan is funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods."
             },
             "Allison Shultz": {
                 "id": "15",
                 "name": "Allison Shultz",
+                "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "09-11-2017",
                 "date-left": "09-07-2018",
                 "status" : "moved",
                 "link": "https://www.allisonshultz.com/",
-                "profile": "Allison was a Senior Bioinformatics Scientist in the group from 2017-2018. She is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County."
+                "profile": "Allison is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County."
             },
             "Brian Arnold": {
                 "id": "16",
                 "name": "Brian Arnold",
+                "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "09-24-2018",
                 "date-left": "09-23-2020",
                 "status" : "moved",
                 "link": "https://brian-arnold.github.io/about/",
-                "profile": "Brian was a Senior Bioinformatics Scientist in the group from 2018-2020. He is now a departmental data scientist with the Ecology and Evolutionary Biology department at Princeton."
+                "profile": "Brian is now a departmental data scientist with the Ecology and Evolutionary Biology department at Princeton."
             },
             "Ming Tang": {
                 "id": "17",
                 "name": "Ming \"Tommy\" Tang",
+                "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "10-01-2018",
                 "date-left": "03-27-2020",
                 "status" : "moved",
                 "link": "https://tommytang.bio.link/",
-                "profile": "Tommy was a Senior Bioinformatics Scientist in the group from 2018-2020, when he worked primarily on analysis of single-cell data with the Dulac lab. He is now the Director of Computational Biology at Immunitas Therapeutics."
+                "profile": "Tommy is now the Director of Computational Biology at Immunitas Therapeutics."
             },
             "Scott Van Buren": {
                 "id": "18",
                 "name": "Scott Van Buren",
+                "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "09-01-2020",
                 "date-left": "06-16-2022",
                 "status" : "moved",
                 "link": "",
-                "profile": "Scott was a Senior Bioinformatics Scientist in the group from 2020-2022, when he worked primarily on analysis of single-cell data with the Dulac lab. He is now a Scientific Investigator in Computational Biology at GSK."
+                "profile": "Scott is now a Scientific Investigator in Computational Biology at GSK."
             },
             "Juerg Straubhaar": {
                 "id": "19",
                 "name": "Juerg Straubhaar",
+                "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "01-08-2017",
                 "date-left": "01-08-2021",
                 "status" : "moved",
                 "link": "",
-                "profile": "Juerg was a Senior Bioinformatics Scientist in the group from 2017-2021, when he worked primarily on proteomics data with the Mass Spec Core and the Melton Lab."
+                "profile": "Juerg worked primarily on proteomics data with the Mass Spec Core and the Melton Lab while he was in the group."
             },
             "John Gaspar": {
                 "id": "20",
                 "name": "John Gaspar",
+                "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "03-01-2017",
                 "date-left": "01-18-2019",
                 "status" : "moved",
                 "link": "",
-                "profile": "John was a Senior Bioinformatics Scientist in the group from 2017-2019. He is now a Data Science and Bioinformatics Team Lead at Merck."
+                "profile": "John is now a Data Science and Bioinformatics Team Lead at Merck."
             },
             "Yasin Kaymaz": {
                 "id": "21",
                 "name": "Yasin Kaymaz",
+                "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "08-01-2017",
                 "date-left": "09-01-2020",
                 "status" : "moved",
                 "link": "",
-                "profile": "Yasin was a Senior Bioinformatics Scientist in the group from 2017-2020, funded as part of a collaboration with Boehringer Ingelheim. He is now an Assistant Professor at Ege University in Izmir, Turkey."
+                "profile": "Yasin is now an Assistant Professor at Ege University in Izmir, Turkey."
             },
             "Alexandria D'Souza": {
                 "id": "22",
                 "name": "Alexandria D'Souza",
+                "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "09-30-2019",
                 "date-left": "09-19-2022",
                 "status" : "moved",
                 "link": "",
-                "profile": "Alexandria was a Senior Bioinformatics Scientist in the group from 2019-2022, primarily working with the mass spec core and the Woo lab."
+                "profile": "Alexandria primarily worked with the mass spec core and the Woo lab while she was in the group."
             }
         },
         "Postdoctoral Researchers": {
@@ -195,7 +203,7 @@
                 "link": "https://www.subir.com.np/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "",
-                "profile": "Subir is a postdoctoral fellow in the FAS Informatics Group, co-advised by Scott Edwards in the Department of Organismic and Evolutionary Biology..."
+                "profile": "Subir works on population and comparative genomics of birds, funded by an NIH grant to study enhancer evolution in birds."
             },
             "Ekaterina Osipova": {
                 "id": "31",
@@ -211,37 +219,40 @@
                 "link": "",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "",
-                "profile": "Katya is a postdoctoral fellow in the FAS Informatics Group...."
+                "profile": "Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species."
             },
             "Sara Smith Wuitchik": {
                 "id": "32",
                 "name": "Sara Smith Wuitchik",
+                "title" : "Postdoctoral Fellow",
                 "date-added": "12-05-2023",
                 "date-joined": "05-06-2019",
                 "date-left": "08-31-2021",
                 "status" : "moved",
                 "link": "https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm",
-                "profile": "Sara was a postdoc from 2019-2021, jointed advised with Mike Sorenson at Boston University, working on our NSF-funded research on convergent evolution of brood parasitic birds. She is now an Assistant Professor at Mount Royal University in Calgary, Canada."
+                "profile": "Sara is now an Assistant Professor at Mount Royal University in Calgary, Canada."
             },
             "Alex Llanos Garrido": {
                 "id": "33",
                 "name": "Alex Llanos Garrido",
+                "title" : "Postdoctoral Fellow",
                 "date-added": "12-05-2023",
                 "date-joined": "09-01-2019",
                 "date-left": "08-31-2021",
                 "status" : "moved",
                 "link": "",
-                "profile": "Alex was a postdoc from 2019-2021, working on the population genomics of codfish. He is now at the Universidad Complutense Madrid, continuing to work on the genomics of local adaptation."
+                "profile": "Alex is now at the Universidad Complutense Madrid."
             },
             "Veronika Laine": {
                 "id": "34",
                 "name": "Veronika Laine",
+                "title" : "Postdoctoral Fellow",
                 "date-added": "12-05-2023",
                 "date-joined": "01-01-2019",
                 "date-left": "06-16-2019",
                 "status" : "moved",
                 "link": "https://veronikalaine.netlify.app/",
-                "profile": "Veronika was a postdoc working with Matt Meselson on the population genetics of rotifers. She is now at the Finnish Museum of Natural History working on bats."
+                "profile": "Veronika is now at the Finnish Museum of Natural History working on bats."
             }
         }
     },
