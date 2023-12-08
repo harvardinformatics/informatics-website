@@ -186,7 +186,7 @@ th, td {
 }
 
 .alum-card-row {
-  height: 18vh;
+  height: 15vh;
   font-size: 0.85em;
 }
 
@@ -226,7 +226,6 @@ th, td {
   justify-content: center !important;
   align-items: center !important;
   font-size: 1.5em;
-  /* height: 5vh; */
 }
 
 .card-name-sep-div {
@@ -235,7 +234,7 @@ th, td {
 
 .card-content-container {
   /* height: 25vh; */
-  height: 57%;
+  height: 77%;
   }
 
 .card-img-container {
@@ -271,6 +270,13 @@ th, td {
   /* height: 7.5% */
 }
 
+.icon-note {
+  width: 100%;
+  color: #999999;
+  font-size: 0.6em;
+  align-content: left;
+}
+
 @media (max-width: 1025px) {
   .card-row, .alum-card-row {
     height: unset !important;
@@ -279,10 +285,15 @@ th, td {
   }
   .card-container {  
     display: block !important;
-    /* width: 100vw !important; */
     width: 70vw !important;
-    /* height: 40vh; */
+  }
 
+  .card-name-margin {
+    width: 0 !important;
+    display: none !important;
+  }
+  .card-name {
+    width: 100% !important;   
   }
 
   .card-content-container {
@@ -292,16 +303,17 @@ th, td {
   }
 
   .card-img-container {
-    /* display: block !important; */
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    flex-direction: column !important;
     width: 100% !important;
   }
 
   .card-content {
     display: block !important;
     width: 100% !important;
+    padding: 10px;
   }
 
   .card-img {
@@ -309,11 +321,6 @@ th, td {
     height: 20vh !important;
   } 
 
-  /* .card-content-container {
-    display: block !important;
-    width: 100% !important;
-    border: 1px solid green; 
-  } */
   .card-margin-inner {
     display: block !important;
     width: 100vw !important;
@@ -330,9 +337,7 @@ th, td {
 /*------------------------------------------------------*/
 /* Contact logo grid styles */
 .card-link-row {
-	/* padding-top:20px; */
-  /* height: 8vh; */
-  height: 20%;
+  height: 30%;
 }
 
 .card-link-row a {
@@ -356,7 +361,7 @@ th, td {
 	transition: background-color .2s;
 	font-size: 1rem;
 	display: inline-block;
-	padding: 5px 15px;
+	/* padding: 5px 15px; */
 	cursor: pointer;
 	text-decoration: none;
 	color:inherit;
@@ -382,25 +387,44 @@ th, td {
 .icon {
 	vertical-align:middle;
 	padding: 5px 15px;
-  /* height: 32px;
-  width: 32px; */
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width: 1500px) {
+/* @media (max-width: 1500px) {
   .card-link-container {  
     width: 100% !important;
   }
-}
+} */
 
 @media (max-width: 1025px) {
   .card-link-row {
-    height: unset !important;
-    flex-direction: column;
+    /* height: unset !important; */
+    height: 6vh !important;
     justify-content: center;
+  }
+  .card-link-container { 
+    height: 100% !important;
+    width: 25% !important;
+  }
+  .card-link-container { 
+    height: 100% !important;
+  }
+  .icon-link-container {
+    height: 100% !important;
+  }
+  .icon-link {
+    height: 100% !important;
+    width: auto !important;
+  }
+  .icon-container {
+    height: auto !important;
+  }
+  .icon {
+    height: 100% !important;
   }
 
 }
-
 
 /*------------------------------------------------------*/
 /* Grid */

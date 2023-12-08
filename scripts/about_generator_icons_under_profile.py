@@ -118,7 +118,7 @@ with open(md_output_file, 'w') as md_output:
                 cards_table += '\t<div class="row card-name-container">\n';
                 ## The card container div
 
-                cards_table += '\t\t<div class="col-6-24 card-name-margin"></div>\n';
+                cards_table += '\t\t<div class="col-6-24 card-margin"></div>\n';
                 cards_table += '\t\t<div class="col-12-24 card-name">\n';
 
                 if person_data['link'] != "":
@@ -128,7 +128,7 @@ with open(md_output_file, 'w') as md_output:
                 # Add the person name with or without a link                
 
                 cards_table += '\t\t</div>\n';
-                cards_table += '\t\t<div class="col-6-24 card-name-margin"></div>\n';
+                cards_table += '\t\t<div class="col-6-24 card-margin"></div>\n';
                 cards_table += '\t</div>\n';
                 # The card name header div
 
@@ -144,67 +144,12 @@ with open(md_output_file, 'w') as md_output:
                     cards_table += '\t\t\t</a>\n';
                 else:
                     cards_table += '\t\t\t<img class="card-img" src="../' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
-                # Profile image
-
-                link_types = ['pubs', 'github'];
-                links = { link_type : person_data[link_type] for link_type in link_types if person_data[link_type] != "" };
-                num_links = len(links);
-                # Get the links for the current person
-
-                if num_links > 0:
-                    link_width = "12";
-                    if num_links == 2:
-                        links_outer_margin = "0";
-                        links_inner_margin = "0";
-                    elif num_links == 1:
-                        links_outer_margin = "5";
-                        links_inner_margin = "0";
-                    # Set the margins for the link row depending on the number of links in the profile
-
-                    cards_table += '\t\t\t<div class="row card-link-row">\n\n';
-                    cards_table += '\t\t\t\t<div class="col-' + links_outer_margin + '-24 card-margin"></div>\n\n';
-                    # The link row div and outer margin
-                
-                    if 'pubs' in links:
-                        cards_table += '\t\t\t\t<div class="col-' + link_width + '-24 card-link-container">\n\n';
-                        cards_table += '\t\t\t\t\t<div class="icon-link-container">\n';
-                        cards_table += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['pubs'] + '" target="_blank">\n';
-                        cards_table += '\t\t\t\t\t\t\t<div class="icon-container">\n';
-                        cards_table += '\t\t\t\t\t\t\t\t<img class="icon" src="../img/icons/scholar-logo-black.png">\n';
-                        cards_table += '\t\t\t\t\t\t\t</div>\n';
-                        cards_table += '\t\t\t\t\t\t\t<span>Scholar</span>\n';
-                        cards_table += '\t\t\t\t\t\t</a>\n';
-                        cards_table += '\t\t\t\t\t</div>\n';
-                        cards_table += '\t\t\t\t</div>\n\n';
-                
-                        if num_links > 1:
-                            cards_table += '\t\t\t\t<div class="col-' + links_inner_margin + '-24 card-margin"></div>\n\n';
-                    ## End scholar link block
-                
-                    if 'github' in links:
-                        cards_table += '\t\t\t\t<div class="col-' + link_width + '-24 card-link-container">\n\n';
-                        cards_table += '\t\t\t\t\t<div class="icon-link-container">\n';
-                        cards_table += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['github'] + '" target="_blank">\n';
-                        cards_table += '\t\t\t\t\t\t\t<div class="icon-container">\n';
-                        cards_table += '\t\t\t\t\t\t\t\t<img class="icon" src="../img/icons/github-logo-black.png">\n';
-                        cards_table += '\t\t\t\t\t\t\t</div>\n';
-                        cards_table += '\t\t\t\t\t\t\t<span>GitHub</span>\n';
-                        cards_table += '\t\t\t\t\t\t</a>\n';
-                        cards_table += '\t\t\t\t\t</div>\n';
-                        cards_table += '\t\t\t\t</div>\n\n';
-                    ## End github link block
-                
-                    cards_table += '\t\t\t\t<div class="col-' + links_outer_margin + '-24 card-margin"></div>\n\n';
-                    cards_table += '\t\t\t</div>\n\n';
-                    # Add the end margin and close the link row div
-                ## End links block
-
                 cards_table += '\t\t</div>\n';
-                # Close the image container div
+                # Profile image
 
                 cards_table += '\t\t<div class="col-1-24 card-margin"></div>\n';
                 cards_table += '\t\t<div class="col-13-24 card-content">\n';
-                cards_table += '\t\t\t<b>' + person_data['title'] + '</b><br>\n';
+                cards_table += '\t\t\t' + person_data['title'] + '<br>\n';
                 cards_table += '\t\t\t' + person_data['email'] + '<br>\n';
                 cards_table += '\t\t\t Northwest Labs, ' + person_data['office'] + '<br>\n';
                 cards_table += '\t\t\t<p>' + person_data['profile'] + '</p>\n';
@@ -217,6 +162,77 @@ with open(md_output_file, 'w') as md_output:
 
                 cards_table += '\t<div class="sep-div"></div>\n';
                 # Add a horizontal space between the content and the links     
+
+                link_types = ['link', 'pubs', 'github'];
+                links = { link_type : person_data[link_type] for link_type in link_types if person_data[link_type] != "" };
+                num_links = len(links);
+                # Get the links for the current person
+
+                if num_links > 0:
+                    if num_links == 3:
+                        links_outer_margin = "2";
+                        links_inner_margin = "2";
+                    elif num_links == 2:
+                        links_outer_margin = "6";
+                        links_inner_margin = "2";
+                    elif num_links == 1:
+                        links_outer_margin = "10";
+                        links_inner_margin = "0";
+                    # Set the margins for the link row depending on the number of links in the profile
+
+                    cards_table += '\t<div class="row card-link-row">\n\n';
+                    cards_table += '\t\t<div class="col-' + links_outer_margin + '-24 card-margin"></div>\n\n';
+                    # The link row div and outer margin
+
+                    if 'link' in links:
+                        cards_table += '\t\t<div class="col-4-24 card-link-container">\n\n';
+                        cards_table += '\t\t\t<div class="icon-link-container">\n';
+                        cards_table += '\t\t\t\t<a class="icon-link" href="' + person_data['link'] + '" target="_blank">\n';
+                        cards_table += '\t\t\t\t\t<div class="icon-container">\n';
+                        cards_table += '\t\t\t\t\t\t<img class="icon" src="../img/icons/website-logo-black.png">\n';
+                        cards_table += '\t\t\t\t\t</div>\n';
+                        cards_table += '\t\t\t\t\t<span>Website</span>\n';
+                        cards_table += '\t\t\t\t</a>\n';
+                        cards_table += '\t\t\t</div>\n';
+                        cards_table += '\t\t</div>\n\n';
+                
+                        if num_links > 1:
+                            cards_table += '\t\t<div class="col-' + links_inner_margin + '-24 card-margin"></div>\n\n';
+                    ## End website link block
+                
+                    if 'pubs' in links:
+                        cards_table += '\t\t<div class="col-4-24 card-link-container">\n\n';
+                        cards_table += '\t\t\t<div class="icon-link-container">\n';
+                        cards_table += '\t\t\t\t<a class="icon-link" href="' + person_data['pubs'] + '" target="_blank">\n';
+                        cards_table += '\t\t\t\t\t<div class="icon-container">\n';
+                        cards_table += '\t\t\t\t\t\t<img class="icon" src="../img/icons/scholar-logo-black.png">\n';
+                        cards_table += '\t\t\t\t\t</div>\n';
+                        cards_table += '\t\t\t\t\t<span>Scholar</span>\n';
+                        cards_table += '\t\t\t\t</a>\n';
+                        cards_table += '\t\t\t</div>\n';
+                        cards_table += '\t\t</div>\n\n';
+                
+                        if num_links > 2:
+                            cards_table += '\t\t<div class="col-' + links_inner_margin + '-24 card-margin"></div>\n\n';
+                    ## End scholar link block
+                
+                    if 'github' in links:
+                        cards_table += '\t\t<div class="col-4-24 card-link-container">\n\n';
+                        cards_table += '\t\t\t<div class="icon-link-container">\n';
+                        cards_table += '\t\t\t\t<a class="icon-link" href="' + person_data['github'] + '" target="_blank">\n';
+                        cards_table += '\t\t\t\t\t<div class="icon-container">\n';
+                        cards_table += '\t\t\t\t\t\t<img class="icon" src="../img/icons/github-logo-black.png">\n';
+                        cards_table += '\t\t\t\t\t</div>\n';
+                        cards_table += '\t\t\t\t\t<span>GitHub</span>\n';
+                        cards_table += '\t\t\t\t</a>\n';
+                        cards_table += '\t\t\t</div>\n';
+                        cards_table += '\t\t</div>\n\n';
+                    ## End github link block
+                
+                    cards_table += '\t\t<div class="col-' + links_outer_margin + '-24 card-margin"></div>\n\n';
+                    cards_table += '\t</div>\n\n';
+                    # Add the end margin and close the link row div
+                ## End links block
 
                 cards_table += '</div>\n';
                 ## Close the card container div
@@ -238,12 +254,6 @@ with open(md_output_file, 'w') as md_output:
             # Put a vertical space between the sections
         ## End sub-section loop
     ## End section loop
-
-####################
-
-    cards_table += '<div class="row">\n';
-    cards_table += '<span class="icon-note">Social icons: <a href="https://icons8.com/" target="_blank">Icons8</a></span>\n';
-    cards_table += '</div>\n';
 
 ####################
 
@@ -340,13 +350,12 @@ with open(md_output_file, 'w') as md_output:
         ## End sub-section loop
 
     cards_table += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
-    cards_table += "</div>\n\n";        
+    cards_table += "</div>\n";        
     # Add the outer margin and close the last row
     ## End section loop
 
 ####################
 
-    print("WRITING OUTPUT FILE");
     md_output.write(md_template.format(profile_cards_table=cards_table));
     # Write the resources page using the template
 ## Close the resources output file
