@@ -118,8 +118,8 @@ with open(md_output_file, 'w') as md_output:
                 cards_table += '\t<div class="row card-name-container">\n';
                 ## The card container div
 
-                cards_table += '\t\t<div class="col-6-24 card-name-margin"></div>\n';
-                cards_table += '\t\t<div class="col-12-24 card-name">\n';
+                cards_table += '\t\t<div class="col-0-24 card-name-margin"></div>\n';
+                cards_table += '\t\t<div class="col-24-24 card-name">\n';
 
                 if person_data['link'] != "":
                     cards_table += '\t\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
@@ -128,7 +128,7 @@ with open(md_output_file, 'w') as md_output:
                 # Add the person name with or without a link                
 
                 cards_table += '\t\t</div>\n';
-                cards_table += '\t\t<div class="col-6-24 card-name-margin"></div>\n';
+                cards_table += '\t\t<div class="col-0-24 card-name-margin"></div>\n';
                 cards_table += '\t</div>\n';
                 # The card name header div
 
@@ -307,9 +307,9 @@ with open(md_output_file, 'w') as md_output:
                 ## The card container div 
 
                 if person_data['link'] != "":
-                    cards_table += '\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></b><br>\n\n';
+                    cards_table += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></span><br>\n\n';
                 else:
-                    cards_table += '\t\t<b>' + person_data['name'] + '</b><br>\n\n';
+                    cards_table += '\t\t<span class="alum-name">' + person_data['name'] + '</span><br>\n\n';
                 # Add the person name with or without a link
                 
                 if person_data['date-joined'] != "" and person_data['date-left'] != "":

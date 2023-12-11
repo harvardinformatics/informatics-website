@@ -11,11 +11,15 @@ hide:
 
 # About us
 
-The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group working in the cramped space between faculty, core facilities and high performance computing. We have a number of core responsibilities including first pass analysis for the sequencing core and software/analysis support for the proteomics mass-spectrometry core. We also support the infrastructure for instrument scheduling and invoicing across many FAS facilities.
+The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group of scientists and software developers working to advance research and teaching by facilitiating computational analysis of scientific data, primarily in biology. We work closely with data-generating scientific cores and with students, postdocs, and faculty generating data to help make research and discovery effficient and productive. You can read more about who we are and what we do below. 
 
-A large part of our remit is to smooth the path of scientific discovery by working with faculty, post-docs and grad students to design and analyze sequencing experiments for the most efficient bang for the buck.
+# Bioinformatics
 
-(add more mission / services text here)
+The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, and our research on method development and best practices to meet the needs of the research community. 
+
+# Software Operations
+
+The mission of the Software Operations Core is to support the needs of data generation core facilities by developing software infrastructure. This includes everything from data processing pipelines, to instrument scheduling and training, to billing and invoicing. 
 
 
 
@@ -27,12 +31,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b><a href="about/people/timsackton.md" target="_blank">Tim Sackton, Ph.D.</a></b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -99,12 +103,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b><a href="https://ahfgenomics.com/" target="_blank">Adam Freedman, Ph.D.</a></b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -163,12 +167,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b>Danielle Khost, Ph.D.</b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -219,12 +223,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b><a href="https://gwct.github.io/" target="_blank">Gregg Thomas, Ph.D.</a></b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -283,12 +287,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b>Lei Ma, Ph.D.</b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -339,12 +343,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b>Rawan Olayan, Ph.D.</b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -395,12 +399,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b>Katya Osipova, Ph.D.</b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -443,12 +447,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b><a href="https://www.subir.com.np/" target="_blank">Subir Shakya, Ph.D.</a></b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -504,12 +508,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b>Aaron Kitzmiller, Ph.D.</b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -540,12 +544,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b>David D'Antonio, Ph.D.</b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -568,12 +572,12 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 <div class="col-10-24 card-container">
 	<div class="row card-name-container">
-		<div class="col-6-24 card-name-margin"></div>
-		<div class="col-12-24 card-name">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
 			<b>Nathan Weeks, Ph.D.</b><br>
 
 		</div>
-		<div class="col-6-24 card-name-margin"></div>
+		<div class="col-0-24 card-name-margin"></div>
 	</div>
 	<div class="card-name-sep-div"></div>
 	<div class="row card-content-container">
@@ -609,7 +613,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-0-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz</a></b><br>
+		<span class="alum-name"><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz</a></span><br>
 
 		(2017-2018)<br>
 
@@ -618,7 +622,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b><a href="https://brian-arnold.github.io/about/" target="_blank">Brian Arnold</a></b><br>
+		<span class="alum-name"><a href="https://brian-arnold.github.io/about/" target="_blank">Brian Arnold</a></span><br>
 
 		(2018-2020)<br>
 
@@ -627,7 +631,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b><a href="https://tommytang.bio.link/" target="_blank">Ming "Tommy" Tang</a></b><br>
+		<span class="alum-name"><a href="https://tommytang.bio.link/" target="_blank">Ming "Tommy" Tang</a></span><br>
 
 		(2018-2020)<br>
 
@@ -644,7 +648,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-0-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b>Scott Van Buren</b><br>
+		<span class="alum-name">Scott Van Buren</span><br>
 
 		(2020-2022)<br>
 
@@ -653,7 +657,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b>Juerg Straubhaar</b><br>
+		<span class="alum-name">Juerg Straubhaar</span><br>
 
 		(2017-2021)<br>
 
@@ -662,7 +666,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b>John Gaspar</b><br>
+		<span class="alum-name">John Gaspar</span><br>
 
 		(2017-2019)<br>
 
@@ -679,7 +683,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-0-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b>Yasin Kaymaz</b><br>
+		<span class="alum-name">Yasin Kaymaz</span><br>
 
 		(2017-2020)<br>
 
@@ -688,7 +692,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b>Alexandria D'Souza</b><br>
+		<span class="alum-name">Alexandria D'Souza</span><br>
 
 		(2019-2022)<br>
 
@@ -697,7 +701,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik</a></b><br>
+		<span class="alum-name"><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik</a></span><br>
 
 		(2019-2021)<br>
 
@@ -714,7 +718,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-0-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b>Alex Llanos Garrido</b><br>
+		<span class="alum-name">Alex Llanos Garrido</span><br>
 
 		(2019-2021)<br>
 
@@ -723,7 +727,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine</a></b><br>
+		<span class="alum-name"><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine</a></span><br>
 
 		(2019)<br>
 
@@ -732,7 +736,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b>Meghan Correa</b><br>
+		<span class="alum-name">Meghan Correa</span><br>
 
 </div>
 
@@ -746,7 +750,7 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 <div class="col-9-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<b>Andy Bryant</b><br>
+		<span class="alum-name">Andy Bryant</span><br>
 
 </div>
 
@@ -755,6 +759,6 @@ A large part of our remit is to smooth the path of scientific discovery by worki
 
 
 
-## Where to Find Us
+# Where to Find Us
 
-(directions to our offices, link to contact form)
+We are located in Northwest Labs, on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us here.
