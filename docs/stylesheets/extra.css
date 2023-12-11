@@ -362,6 +362,7 @@ th, td {
 .icon-link-container {
 	width:100%;
 	text-align:center;
+  /* border: 1px solid green; */
 }
 
 .icon-link {
@@ -373,6 +374,8 @@ th, td {
 	text-decoration: none;
 	/* color:inherit; */
 	text-align:center;
+  /* border: 1px solid purple; */
+  width: 100%;
 }
 .icon-link:hover {
 	background-color: rgba(182, 173, 184, 0.5);
@@ -391,12 +394,15 @@ th, td {
 	display:flex;
 	justify-content:center;
   height: 4vh;
+  /* border: 1px solid blue; */
+  width: 100%;
 }
 .icon {
 	vertical-align:middle;
 	padding: 5px 15px;
   width: auto;
   height: auto;
+  /* border: 1px solid red; */
 }
 
 /* @media (max-width: 1500px) {

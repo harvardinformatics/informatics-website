@@ -13,17 +13,10 @@ hide:
 
 The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group of scientists and software developers working to advance research and teaching by facilitiating computational analysis of scientific data, primarily in biology. We work closely with data-generating scientific cores and with students, postdocs, and faculty generating data to help make research and discovery effficient and productive. You can read more about who we are and what we do below. 
 
-# Bioinformatics
+## Bioinformatics
 
 The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, and our research on method development and best practices to meet the needs of the research community. 
 
-# Software Operations
-
-The mission of the Software Operations Core is to support the needs of data generation core facilities by developing software infrastructure. This includes everything from data processing pipelines, to instrument scheduling and training, to billing and invoicing. 
-
-
-
-## Bioinformatics
 
 <div class="row card-row">
 
@@ -502,6 +495,9 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 ## Software Operations
 
+The mission of the Software Operations Core is to support the needs of data generation core facilities by developing software infrastructure. This includes everything from data processing pipelines, to instrument scheduling and training, to billing and invoicing. 
+
+
 <div class="row card-row">
 
 <div class="col-7-24 card-margin-outer"></div>
@@ -607,6 +603,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 
 ## Group Alumni
+
 
 <div class="row alum-card-row">
 
@@ -759,6 +756,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 
 
-# Where to Find Us
+## Where to Find Us
 
 We are located in Northwest Labs, on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us here.
