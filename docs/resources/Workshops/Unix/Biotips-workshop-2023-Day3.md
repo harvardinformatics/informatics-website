@@ -10,7 +10,7 @@ output:
 
 Welcome to the third day of the [FAS Informatics](https://informatics.fas.harvard.edu/) [Bioinformatics Tips and Tricks Workshop](https://harvardinformatics.github.io/workshops/2023-fall/biotips/)!
 
-If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023_Day3-student.Rmd)
+If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day3-student.Rmd)
 
 Today we're going to continue our tour and explanation of common genomics file formats and their associated tools, starting with GFF files, which are typically used to store gene annotations. We'll then talk about VCF files, which are used to store variants. 
 
@@ -54,7 +54,7 @@ The format for encoding information about genic regions (commonly called a **gen
 For more detailed information on **GFF** files, see the following links:
 
 - [UCSC description (GFF2)](https://genome.ucsc.edu/FAQ/FAQformat.html#format3)
-- [Ensembl description (GFF2)](http://www.ensembl.org/info/website/upload/gff.html?redirect=no)
+- [Ensembl description (GFF2)](https://www.ensembl.org/info/website/upload/gff.html?redirect=no)
 - [NCBI description (GFF3)](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/reference-docs/file-formats/annotation-files/about-ncbi-gff3/)
 - [GFF3 Specification](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md)
 

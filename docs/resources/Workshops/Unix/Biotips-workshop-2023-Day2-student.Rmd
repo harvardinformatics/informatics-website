@@ -145,7 +145,7 @@ In addition to this optional fourth column for an ID, **bed** files have several
 For more information on bed files and these extra columns, visit the following links:
 
 - [Description of bed files from bedtools](https://bedtools.readthedocs.io/en/latest/content/general-usage.html)
-- [Description of bed files from UCSC](http://genome.ucsc.edu/FAQ/FAQformat#format1)
+- [Description of bed files from UCSC](https://genome.ucsc.edu/FAQ/FAQformat#format1)
 
 # Summarizing SVs from the command line
 
