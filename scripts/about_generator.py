@@ -76,7 +76,7 @@ with open(md_output_file, 'w') as md_output:
             # cards_table += "\n\n### " + sub_section + "\n";
             # Write the sub-section header
 
-            people_list = sorted(list(json_data[section][sub_section].keys()));
+            people_list = list(json_data[section][sub_section].keys());
             people_list = [ person for person in people_list if json_data[section][sub_section][person]['status'] == "active" ];
             people_left = len(people_list);
             # Get the list of active people in the current sub-section and the number of people
@@ -122,7 +122,11 @@ with open(md_output_file, 'w') as md_output:
                 cards_tables[section] += '\t\t<div class="col-24-24 card-name">\n';
 
                 if person_data['link'] != "":
-                    cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
+                    if person_data['link'].startswith("people/"):
+                        cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
+                    else:
+                        cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
+                    # For internal links, don't open in a new tab (no target="_blank")
                 else:
                     cards_tables[section] += '\t\t\t<b>' + person_data['name'] + ', Ph.D.</b><br>\n\n';
                 # Add the person name with or without a link                
@@ -139,7 +143,10 @@ with open(md_output_file, 'w') as md_output:
 
                 cards_tables[section] += '\t\t<div class="col-8-24 card-img-container">\n';
                 if person_data['link'] != "":
-                    cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '" target="_blank">\n';
+                    if person_data['link'].startswith("people/"):
+                        cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '">\n';
+                    else:
+                        cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '" target="_blank">\n';
                     cards_tables[section] += '\t\t\t\t<img class="card-img" src="../' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
                     cards_tables[section] += '\t\t\t</a>\n';
                 else:
@@ -303,11 +310,17 @@ with open(md_output_file, 'w') as md_output:
                     # Add the new row divs
                 ## If the current row is full, close it and add a new one
 
-                cards_tables["alum"] += '\n<div class="col-' + alum_width + '-24 card-container alum-card-container">\n';
+                if person_data['profile'] == "":
+                    cards_tables["alum"] += '\n<div class="col-' + alum_width + '-24 card-container alum-card-container-no-profile">\n';
+                else:
+                    cards_tables["alum"] += '\n<div class="col-' + alum_width + '-24 card-container alum-card-container">\n';
                 ## The card container div 
 
                 if person_data['link'] != "":
-                    cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></span><br>\n\n';
+                    if person_data['link'].startswith("people/"):
+                        cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '">' + person_data['name'] + '</a></span><br>\n\n';
+                    else:
+                        cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></span><br>\n\n';
                 else:
                     cards_tables["alum"] += '\t\t<span class="alum-name">' + person_data['name'] + '</span><br>\n\n';
                 # Add the person name with or without a link

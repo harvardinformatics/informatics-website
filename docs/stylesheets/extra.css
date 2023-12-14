@@ -183,11 +183,13 @@ th, td {
 
 .card-row {
   height:30vh;
+  max-height: 300px;
 }
 
 .alum-card-row {
   height: 15vh;
   font-size: 0.85em;
+  max-height: 175px;
 }
 
 .card-container {
@@ -214,6 +216,19 @@ th, td {
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .alum-card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.alum-card-container-no-profile {
+  padding: 10px;
+  height: 30%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.alum-card-container-no-profile::-webkit-scrollbar {
   display: none;
 }
 
@@ -285,6 +300,7 @@ th, td {
 @media (max-width: 1025px) {
   .card-row, .alum-card-row {
     height: unset !important;
+    max-height: unset;
     flex-direction: column;
     justify-content: center;
   }
@@ -401,7 +417,9 @@ th, td {
 	vertical-align:middle;
 	padding: 5px 15px;
   width: auto;
+  max-width: 40px;
   height: auto;
+  max-height: 40px;
   /* border: 1px solid red; */
 }
 

@@ -26,7 +26,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b><a href="about/people/timsackton.md" target="_blank">Tim Sackton, Ph.D.</a></b><br>
+			<b><a href="people/timsackton/">Tim Sackton, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -35,7 +35,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<a href="about/people/timsackton.md" target="_blank">
+			<a href="people/timsackton/">
 				<img class="card-img" src="../img/people/timsackton.jpg" alt="Tim Sackton">
 			</a>
 			<div class="row card-link-row">
@@ -394,54 +394,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>Katya Osipova, Ph.D.</b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/katyaosipova.png" alt="Katya Osipova">
-			<div class="row card-link-row">
-
-				<div class="col-5-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
-							<div class="icon-container">
-								<img class="icon" src="../img/icons/scholar-logo-black.png">
-							</div>
-							<span>Scholar</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-5-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Postdoctoral Fellow</b><br>
-			<br>
-			 Northwest Labs, B227.65<br>
-			<p>Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-<div class="col-2-24 card-margin-inner"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
 			<b><a href="https://www.subir.com.np/" target="_blank">Subir Shakya, Ph.D.</a></b><br>
 
 		</div>
@@ -481,6 +433,54 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 			subirshakya@fas.harvard.edu<br>
 			 Northwest Labs, B227.65<br>
 			<p>Subir works on population and comparative genomics of birds, funded by an NIH grant to study enhancer evolution in birds.</p>
+		</div>
+		<div class="col-1-24 card-margin"></div>
+	</div>
+	<div class="sep-div"></div>
+</div>
+<div class="col-2-24 card-margin-inner"></div>
+
+<div class="col-10-24 card-container">
+	<div class="row card-name-container">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
+			<b>Katya Osipova, Ph.D.</b><br>
+
+		</div>
+		<div class="col-0-24 card-name-margin"></div>
+	</div>
+	<div class="card-name-sep-div"></div>
+	<div class="row card-content-container">
+		<div class="col-1-24 card-margin"></div>
+		<div class="col-8-24 card-img-container">
+			<img class="card-img" src="../img/people/katyaosipova.png" alt="Katya Osipova">
+			<div class="row card-link-row">
+
+				<div class="col-5-24 card-margin"></div>
+
+				<div class="col-12-24 card-link-container">
+
+					<div class="icon-link-container">
+						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+							<div class="icon-container">
+								<img class="icon" src="../img/icons/scholar-logo-black.png">
+							</div>
+							<span>Scholar</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-5-24 card-margin"></div>
+
+			</div>
+
+		</div>
+		<div class="col-1-24 card-margin"></div>
+		<div class="col-13-24 card-content">
+			<b>Postdoctoral Fellow</b><br>
+			<br>
+			 Northwest Labs, B227.65<br>
+			<p>Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species.</p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
@@ -732,7 +732,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 </div>
 <div class="col-1-24 card-margin-inner"></div>
 
-<div class="col-6-24 card-container alum-card-container">
+<div class="col-6-24 card-container alum-card-container-no-profile">
 		<span class="alum-name">Meghan Correa</span><br>
 
 </div>
@@ -746,7 +746,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 <div class="col-9-24 card-margin-outer"></div>
 
-<div class="col-6-24 card-container alum-card-container">
+<div class="col-6-24 card-container alum-card-container-no-profile">
 		<span class="alum-name">Andy Bryant</span><br>
 
 </div>

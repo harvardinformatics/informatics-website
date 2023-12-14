@@ -4,6 +4,7 @@ nav:
   - Home: index.md
   - About: 
     - about/index.md
+    - about/people/timsackton.md
   - Resources: 
     - resources/index.md
     - Workshops:

@@ -12,7 +12,7 @@
                 "date-joined": "07-01-2017",
                 "date-left": "",
                 "status" : "active",
-                "link": "about/people/timsackton.md",
+                "link": "people/timsackton/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/tsackton",
                 "profile": "Tim runs the Bioinformatics group. While his background is population and comparative genomics, these days he does a little bit of everything."
@@ -276,13 +276,13 @@
             }
         },
         "Staff": {
-            "Nathan Weeks": {
+            "David D'Antonio": {
                 "id": "60",
-                "name": "Nathan Weeks",
+                "name": "David D'Antonio",
                 "title" : "",
-                "office" : "B227.30",
-                "email" : "", 
-                "img": "img/people/nathanweek.png",
+                "office" : "",
+                "email" : "",
+                "img": "img/people/ddantonio.jpg",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
@@ -291,14 +291,14 @@
                 "pubs": "",
                 "github": "",
                 "profile": ""
-            },
-            "David D'Antonio": {
+            },            
+            "Nathan Weeks": {
                 "id": "61",
-                "name": "David D'Antonio",
+                "name": "Nathan Weeks",
                 "title" : "",
-                "office" : "",
-                "email" : "",
-                "img": "img/people/ddantonio.jpg",
+                "office" : "B227.30",
+                "email" : "", 
+                "img": "img/people/nathanweek.png",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
