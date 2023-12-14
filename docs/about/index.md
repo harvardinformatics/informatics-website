@@ -453,7 +453,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/katyaosipova.png" alt="Katya Osipova">
+			<img class="card-img" src="../img/people/person-icon.png" alt="Katya Osipova">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -579,7 +579,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/nathanweek.png" alt="Nathan Weeks">
+			<img class="card-img" src="../img/people/nathanweeks.jpg" alt="Nathan Weeks">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">

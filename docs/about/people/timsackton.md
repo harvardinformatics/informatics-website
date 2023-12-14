@@ -6,5 +6,5 @@ Tim did his undergraduate studies at Brown University, where he was immediately 
 
 Tim joined the informatics group in 2015, and was promoted to the Director position in July 2017.
 
-[CV(pdf)](about/people/Sackton-CV-current.pdf)
+[CV(pdf)](Sackton-CV-current.pdf)
 [Publications](https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate)
