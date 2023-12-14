@@ -3,6 +3,7 @@ nav:
   - Home: index.md
   - About: 
     - about/index.md
+    - about/people/timsackton.md
   - Resources: 
     - resources/index.md
     - Workshops:
@@ -63,6 +64,7 @@ plugins:
   - search
   - table-reader
 hooks:
+  - scripts/about_generator.py 
   - scripts/resources_generator.py 
 extra_css:
   - stylesheets/extra.css

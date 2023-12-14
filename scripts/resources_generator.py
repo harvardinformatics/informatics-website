@@ -7,18 +7,17 @@
 import sys, os
 import json
 import csv
-import json
 
 ############################################################
 
 print("-" * 20);
 print("RUNNING scripts/resources_generatory.py TO GENERATE TAG PAGES")
 
-resources_template_file = "templates/resources_template.md";
+md_template_file = "templates/resources_template.md";
 tag_template_file = "templates/tag_table_template.md";
 # Markdown templates
 
-resources_json_file = "data/resources/resources-primary.json";
+json_file = "data/resources/resources-primary.json";
 # JSON file with links and tags
 
 resources_output_file = "docs/resources/index.md";
@@ -27,13 +26,13 @@ resources_output_file = "docs/resources/index.md";
 ####################
 
 print("READING TEMPLATES");
-resources_template = open(resources_template_file, 'r').read();
+md_template = open(md_template_file, 'r').read();
 tag_template = open(tag_template_file, 'r').read();
 # Read the templates
 
 print("READING RESOURCES JSON");
-with open(resources_json_file, 'r') as resources_json:
-    resources = json.load(resources_json)
+with open(json_file, 'r') as json_file_stream:
+    resources = json.load(json_file_stream)
 
 links = resources["links"];
 tags = resources["tags"];
@@ -41,6 +40,10 @@ tags = resources["tags"];
 
 tag_list = sorted(list(tags.keys()), key=lambda x: x.lower());
 # Get a list of the active tags, sorted alphabetically
+
+if not os.path.isdir("data/resources/tag-csv"):
+    os.mkdir("data/resources/tag-csv");
+# Make the directory for the tag tables if it doesn't exist
 
 ####################
 
@@ -146,7 +149,7 @@ with open(resources_output_file, 'w') as resources_output:
         tags_table += "</div>\n";
     # If the last row isn't full, close it
 
-    resources_output.write(resources_template.format(tags_table=tags_table));
+    resources_output.write(md_template.format(tags_table=tags_table));
     # Write the resources page using the template
 ## Close the resources output file
 
