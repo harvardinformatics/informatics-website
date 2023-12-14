@@ -270,7 +270,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 			<b>Senior Bioinformatics Scientist</b><br>
 			gthomas@fas.harvard.edu<br>
 			 Northwest Labs, B227.65<br>
-			<p>Gregg works on phylogenetic methods and comparative genomics. He has studied convergent evolution, molecular evolution of rodents and insects, and mutation rates in primates.</p>
+			<p>Gregg develops phylogenetic methods and has studied convergent evolution, molecular evolution of rodents and insects, and mutation rates in primates.</p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
