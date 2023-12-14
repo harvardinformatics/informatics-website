@@ -41,6 +41,10 @@ tags = resources["tags"];
 tag_list = sorted(list(tags.keys()), key=lambda x: x.lower());
 # Get a list of the active tags, sorted alphabetically
 
+if not os.path.isdir("data/resources/tag-csv"):
+    os.mkdir("data/resources/tag-csv");
+# Make the directory for the tag tables if it doesn't exist
+
 ####################
 
 tag_counts = { tag : 0 for tag in tag_list };
