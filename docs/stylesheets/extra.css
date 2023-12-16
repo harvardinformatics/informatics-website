@@ -182,7 +182,8 @@ th, td {
 /* Profile cards */
 
 .card-row {
-  height:30vh;
+  min-height:275px;
+  height: 30vh;
   max-height: 300px;
 }
 
@@ -263,7 +264,8 @@ th, td {
 
 .card-img {
   width: auto !important;
-  max-width: 100% !important;
+  /* height: 150px !important; */
+  /* max-width: 100% !important; */
   /* height: 20vh; */
   height: auto !important;
   max-height: 100% !important;
@@ -339,7 +341,7 @@ th, td {
 
   .card-img {
     width: auto !important;
-    height: 20vh !important;
+    height: 150px !important;
   } 
 
   .card-margin-inner {
@@ -378,7 +380,6 @@ th, td {
 .icon-link-container {
 	width:100%;
 	text-align:center;
-  /* border: 1px solid green; */
 }
 
 .icon-link {
@@ -390,8 +391,8 @@ th, td {
 	text-decoration: none;
 	/* color:inherit; */
 	text-align:center;
-  /* border: 1px solid purple; */
   width: 100%;
+  min-height: 50px;
 }
 .icon-link:hover {
 	background-color: rgba(182, 173, 184, 0.5);
@@ -409,8 +410,7 @@ th, td {
 .icon-container {
 	display:flex;
 	justify-content:center;
-  height: 4vh;
-  /* border: 1px solid blue; */
+  height: 100%;
   width: 100%;
 }
 .icon {
@@ -420,6 +420,7 @@ th, td {
   max-width: 40px;
   height: auto;
   max-height: 40px;
+  min-height: 32px;
   /* border: 1px solid red; */
 }
 
@@ -432,7 +433,7 @@ th, td {
 @media (max-width: 1025px) {
   .card-link-row {
     /* height: unset !important; */
-    height: 6vh !important;
+    min-height: 6vh !important;
     justify-content: center;
   }
   .card-link-container { 
