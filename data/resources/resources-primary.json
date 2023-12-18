@@ -84,7 +84,7 @@
             "id": "9",
             "name": "Harvard library data services",
             "link": "https://hlrdm.library.harvard.edu/",
-            "tags": ["data sciecne", "harvard"],
+            "tags": ["data science", "harvard"],
             "date-added": "11-28-2023",
             "status" : "active",
             "description": ""
@@ -186,6 +186,26 @@
             "link": "https://statistics.fas.harvard.edu/harvard-statistics-consulting-service",
             "tags": ["statistics", "harvard"],
             "date-added": "11-28-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Rosalind bioinformatics coding practice": {
+            "id": "20",
+            "name": "Rosalind bioinformatics coding practice",
+            "link": "https://rosalind.info/problems/locations/",
+            "tags": ["python", "R", "bioinformatics", "unix"],
+            "date-added": "12-18-2023",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Good enough practices in scientific computing": {
+            "id": "21",
+            "name": "Good enough practices in scientific computing",
+            "link": "https://doi.org/10.1371/journal.pcbi.1005510",
+            "tags": ["data science", "bioinformatics", "reproducibility"],
+            "date-added": "12-18-2023",
             "status" : "active",
             "description": ""
         },
@@ -352,6 +372,14 @@
             "date-added": "11-28-2023",
             "status" : "active",
             "description": "Links to resources related variant calling"
+        },
+
+        "reproducibility": {
+            "id": "20",
+            "tag": "reproducibility",
+            "date-added": "12-18-2023",
+            "status" : "active",
+            "description": "Links to resources related to reproducibility and open access"
         },
 
         "template": {
