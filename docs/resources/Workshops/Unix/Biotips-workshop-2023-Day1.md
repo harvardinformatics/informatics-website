@@ -29,7 +29,7 @@ pre code {
 
 Welcome to the first day of the [FAS Informatics](https://informatics.fas.harvard.edu/) [Bioinformatics Tips & Tricks workshop](https://harvardinformatics.github.io/workshops/2023-fall/biotips/)!
 
-If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023_Day1-student.Rmd)
+If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day1-student.Rmd)
 
 This is the workshop file that should be opened in RStudio. This is an RMarkdown file, meaning that both formatted text and code blocks can be added to it, and the code blocks can be executed from the RStudio interface. RStudio also has an easy to access **Terminal** tab which is how one would normally execute **Unix** commands. For this workshop, we will be going through this document and copy-pasting code blocks within it to run in the terminal to demonstrate some basic concepts. We will also be doing exercises directly in the terminal panel of RStudio. Once you've got the correct command, you can paste it into the RMarkdown document to keep a record.
 
@@ -641,7 +641,7 @@ Let's take a look at a SAM file. We could use the typical bash commands like `ca
 
 ## SAMtools
 
-[SAMtools](http://www.htslib.org/doc/samtools.html) is a suite of programs that are extremely useful for processing mapped reads and for downstream analysis. As stated above, SAM/BAM files from different programs are (mostly) interchangeable, so `samtools` will work with a file SAM/BAM file no matter what program produced it. It has a ton of functions (which you can check out on the [manual page](http://www.htslib.org/doc/samtools.html)), but we will go through several of the most common uses.
+[SAMtools](https://www.htslib.org/doc/samtools.html) is a suite of programs that are extremely useful for processing mapped reads and for downstream analysis. As stated above, SAM/BAM files from different programs are (mostly) interchangeable, so `samtools` will work with a file SAM/BAM file no matter what program produced it. It has a ton of functions (which you can check out on the [manual page](https://www.htslib.org/doc/samtools.html)), but we will go through several of the most common uses.
 
 ### samtools view
 

@@ -26,7 +26,7 @@ pre code {
 
 Welcome to the second day of the [FAS Informatics](https://informatics.fas.harvard.edu/) [Bioinformatics Tips & Tricks workshop](https://harvardinformatics.github.io/workshops/2023-fall/biotips/)!
 
-If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023_Day2-student.Rmd)
+If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day2-student.Rmd)
 
 Today we're going to continue our tour and explanation of common genomics file formats and their associated tools by talking about interval files, that is files which indicate regions of a genome (.bed files, .gff files).
 
@@ -149,7 +149,7 @@ In addition to this optional fourth column for an ID, **bed** files have several
 For more information on bed files and these extra columns, visit the following links:
 
 - [Description of bed files from bedtools](https://bedtools.readthedocs.io/en/latest/content/general-usage.html)
-- [Description of bed files from UCSC](http://genome.ucsc.edu/FAQ/FAQformat#format1)
+- [Description of bed files from UCSC](https://genome.ucsc.edu/FAQ/FAQformat#format1)
 
 # Summarizing SVs from the command line
 

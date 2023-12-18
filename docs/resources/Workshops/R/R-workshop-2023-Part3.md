@@ -74,7 +74,7 @@ Furthermore, while these basic plots are easy to generate, more complex plots, s
 
 ## Introduction to ggplot
 
-[ggplot](https://ggplot2.tidyverse.org/) is a **package** (library of code with various functions) that is part of the **tidyverse**. It uses a somewhat standardized 'grammar of graphics' ([book](http://id.lib.harvard.edu/alma/990138412570203941/catalog); [paper](https://hollis.harvard.edu/permalink/f/1mdq5o5/TN_cdi_informaworld_taylorfrancis_310_1198_jcgs_2009_07098)) in its syntax to make almost every aspect of a plot customizable. Using ggplot it is easy to make reproducible scientific figures that look nice and are easily understandable. With ggplot, I rarely need to tweak my figures outside of R.
+[ggplot](https://ggplot2.tidyverse.org/) is a **package** (library of code with various functions) that is part of the **tidyverse**. It uses a somewhat standardized 'grammar of graphics' ([book](https://id.lib.harvard.edu/alma/990138412570203941/catalog); [paper](https://hollis.harvard.edu/permalink/f/1mdq5o5/TN_cdi_informaworld_taylorfrancis_310_1198_jcgs_2009_07098)) in its syntax to make almost every aspect of a plot customizable. Using ggplot it is easy to make reproducible scientific figures that look nice and are easily understandable. With ggplot, I rarely need to tweak my figures outside of R.
 
 This workshop is also heavily influenced by the book [Fundamentals of Data Visualization](https://hollis.harvard.edu/permalink/f/1s5nto6/01HVD_ALMA512300276480003941) by [Claus Wilke](https://clauswilke.com/).
 

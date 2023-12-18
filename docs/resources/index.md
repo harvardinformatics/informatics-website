@@ -50,7 +50,7 @@ We have compiled a list of external resources and tagged them with the categorie
 </div>
 <div class='col-1-24'></div>
 <div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/data-science/'>data science (9)</a></div>
+<div class='res-tag-link'><a href='tags/data-science/'>data science (10)</a></div>
 </div>
 <div class='col-1-24'></div>
 <div class='col-5-24 res-tag-link-cont'>

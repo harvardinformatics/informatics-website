@@ -10,7 +10,7 @@ output:
 
 Welcome to the fourth day of the [FAS Informatics](https://informatics.fas.harvard.edu/) [Bioinformatics Tips and Tricks Workshop](https://harvardinformatics.github.io/workshops/2023-fall/biotips/)!
 
-If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit the file while executing code in the terminal*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-spring/biotips/Biotips-workshop-2023_Day4-student.Rmd)
+If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit the file while executing code in the terminal*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/biotips/Biotips-workshop-2023-Day4-student.Rmd)
 
 Today you'll learn more about how to write scripts, control the behavior of your scripts using loops and conditional statements, and more!
 
