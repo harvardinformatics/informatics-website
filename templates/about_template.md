@@ -15,7 +15,7 @@ The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is 
 
 ## Bioinformatics
 
-The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, and our research on method development and best practices to meet the needs of the research community. 
+The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, with a general focus on method development and best practices investigations to meet the needs of the research community. 
 
 {bio_profiles}
 
