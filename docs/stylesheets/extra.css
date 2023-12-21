@@ -506,3 +506,14 @@ th, td {
 
 /*------------------------------------------------------*/
 
+
+.banner-content-row {
+  border: 1px solid green;
+}
+
+.banner-title {
+  color: #eeeeee;
+}
+.banner-title h1 {
+  color: #eeeeee;
+}
