@@ -15,7 +15,7 @@ The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is 
 
 ## Bioinformatics
 
-The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, and our research on method development and best practices to meet the needs of the research community. 
+The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, with a general focus on method development and best practices investigations to meet the needs of the research community. 
 
 
 <div class="row card-row">
@@ -453,10 +453,10 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/person-icon.png" alt="Katya Osipova">
+			<img class="card-img" src="../img/people/katyaosipova.jpg" alt="Katya Osipova">
 			<div class="row card-link-row">
 
-				<div class="col-5-24 card-margin"></div>
+				<div class="col-0-24 card-margin"></div>
 
 				<div class="col-12-24 card-link-container">
 
@@ -470,7 +470,21 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					</div>
 				</div>
 
-				<div class="col-5-24 card-margin"></div>
+				<div class="col-0-24 card-margin"></div>
+
+				<div class="col-12-24 card-link-container">
+
+					<div class="icon-link-container">
+						<a class="icon-link" href="https://github.com/osipovarev" target="_blank">
+							<div class="icon-container">
+								<img class="icon" src="../img/icons/github-logo-black.png">
+							</div>
+							<span>GitHub</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-0-24 card-margin"></div>
 
 			</div>
 
@@ -520,9 +534,9 @@ The mission of the Software Operations Core is to support the needs of data gene
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Director of Software Operations</b><br>
-			<br>
+			aaron_kitzmiller@harvard.edu<br>
 			 Northwest Labs, B227.70<br>
-			<p></p>
+			<p>Journeyman wrangler of science adjacent software projects</p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
@@ -555,10 +569,10 @@ The mission of the Software Operations Core is to support the needs of data gene
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
-			<b></b><br>
-			<br>
-			 Northwest Labs, <br>
-			<p></p>
+			<b>Applications Professional</b><br>
+			dcdantonio@fas.harvard.edu<br>
+			 Northwest Labs, Remote<br>
+			<p>Front end developer for instrument facility applications</p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
@@ -583,10 +597,10 @@ The mission of the Software Operations Core is to support the needs of data gene
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
-			<b></b><br>
+			<b>Applications Professional</b><br>
 			<br>
 			 Northwest Labs, B227.30<br>
-			<p></p>
+			<p>Scientific applications specialist</p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
@@ -594,6 +608,42 @@ The mission of the Software Operations Core is to support the needs of data gene
 </div>
 
 <div class="col-1-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row card-row">
+
+<div class="col-7-24 card-margin-outer"></div>
+
+<div class="col-10-24 card-container">
+	<div class="row card-name-container">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
+			<b>Jared Vessella-Smith, Ph.D.</b><br>
+
+		</div>
+		<div class="col-0-24 card-name-margin"></div>
+	</div>
+	<div class="card-name-sep-div"></div>
+	<div class="row card-content-container">
+		<div class="col-1-24 card-margin"></div>
+		<div class="col-8-24 card-img-container">
+			<img class="card-img" src="../" alt="Jared Vessella-Smith">
+		</div>
+		<div class="col-1-24 card-margin"></div>
+		<div class="col-13-24 card-content">
+			<b>Applications Professional</b><br>
+			jsmith1@fas.harvard.edu<br>
+			 Northwest Labs, B227.40<br>
+			<p>Full stack developer for instrument facility applications</p>
+		</div>
+		<div class="col-1-24 card-margin"></div>
+	</div>
+	<div class="sep-div"></div>
+</div>
+
+<div class="col-7-24 card-margin-outer"></div>
 </div>
 
 <div class="card-sep-div"></div>
@@ -732,9 +782,10 @@ The mission of the Software Operations Core is to support the needs of data gene
 </div>
 <div class="col-1-24 card-margin-inner"></div>
 
-<div class="col-6-24 card-container alum-card-container-no-profile">
+<div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name">Meghan Correa</span><br>
 
+		<p>Former full stack developer currently at Cisco</p>
 </div>
 
 <div class="col-0-24 card-margin-outer"></div>
@@ -746,9 +797,10 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 <div class="col-9-24 card-margin-outer"></div>
 
-<div class="col-6-24 card-container alum-card-container-no-profile">
+<div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name">Andy Bryant</span><br>
 
+		<p>Former front end developer for instrument facility applications</p>
 </div>
 
 <div class="col-9-24 card-margin-outer"></div>
