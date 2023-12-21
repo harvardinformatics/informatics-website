@@ -810,4 +810,4 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 ## Where to Find Us
 
-We are located in Northwest Labs, on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us here.
+We are located in Northwest Labs, on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](../contact.md).
