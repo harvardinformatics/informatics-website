@@ -49,6 +49,8 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
+  favicon: img/Icon_favicon.png
+  logo: img/Icon_bw.png
   palette:
   - scheme: default
     toggle:
