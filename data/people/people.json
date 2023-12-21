@@ -1,6 +1,6 @@
 {
     "Bioinformatics": {
-        "Director": {    
+        "Director": {
             "Tim Sackton": {
                 "id": "1",
                 "name": "Tim Sackton",
@@ -257,63 +257,79 @@
         }
     },
     "Software Operations": {
-        "Director": {    
+        "Director": {
             "Aaron Kitzmiller": {
                 "id": "50",
                 "name": "Aaron Kitzmiller",
                 "title" : "Director of Software Operations",
-                "email" : "",
+                "email" : "aaron_kitzmiller@harvard.edu",
                 "office" : "B227.70",
                 "img": "img/people/aaronkitzmiller.jpg",
                 "date-added": "12-05-2023",
-                "date-joined": "",
+                "date-joined": "08",
                 "date-left": "",
                 "status" : "active",
                 "link": "",
                 "pubs": "",
                 "github": "",
-                "profile": ""
+                "profile": "Journeyman wrangler of science adjacent software projects"
             }
         },
         "Staff": {
             "David D'Antonio": {
                 "id": "60",
                 "name": "David D'Antonio",
-                "title" : "",
-                "office" : "",
-                "email" : "",
+                "title" : "Applications Professional",
+                "office" : "Remote",
+                "email" : "dcdantonio@fas.harvard.edu",
                 "img": "img/people/ddantonio.jpg",
                 "date-added": "12-05-2023",
-                "date-joined": "",
+                "date-joined": "08-09-2021",
                 "date-left": "",
                 "status" : "active",
                 "link": "",
                 "pubs": "",
                 "github": "",
-                "profile": ""
-            },            
+                "profile": "Front end developer for instrument facility applications"
+            },
             "Nathan Weeks": {
                 "id": "61",
                 "name": "Nathan Weeks",
-                "title" : "",
+                "title" : "Applications Professional",
                 "office" : "B227.30",
-                "email" : "", 
+                "email" : "",
                 "img": "img/people/nathanweeks.jpg",
                 "date-added": "12-05-2023",
-                "date-joined": "",
+                "date-joined": "04-01-2012",
                 "date-left": "",
                 "status" : "active",
                 "link": "",
                 "pubs": "",
                 "github": "",
-                "profile": ""
+                "profile": "Scientific applications specialist"
+            },
+            "Jared Vessella-Smith": {
+                "id": "64",
+                "name": "Jared Vessella-Smith",
+                "title" : "Applications Professional",
+                "office" : "B227.40",
+                "email" : "jsmith1@fas.harvard.edu",
+                "img": "",
+                "date-added": "12-05-2023",
+                "date-joined": "12-18-2023",
+                "date-left": "",
+                "status" : "active",
+                "link": "",
+                "pubs": "",
+                "github": "",
+                "profile": "Full stack developer for instrument facility applications"
             },
             "Meghan Correa": {
                 "id": "62",
                 "name": "Meghan Correa",
-                "title" : "",
+                "title" : "Applications Professional",
                 "office" : "",
-                "email" : "",                
+                "email" : "",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
@@ -321,14 +337,14 @@
                 "link": "",
                 "pubs": "",
                 "github": "",
-                "profile": ""
+                "profile": "Former full stack developer currently at Cisco"
             },
             "Andy Bryant": {
                 "id": "63",
                 "name": "Andy Bryant",
-                "title" : "",
+                "title" : "Applications Professional",
                 "office" : "",
-                "email" : "",                    
+                "email" : "",
                 "date-added": "12-05-2023",
                 "date-joined": "",
                 "date-left": "",
@@ -336,9 +352,9 @@
                 "link": "",
                 "pubs": "",
                 "github": "",
-                "profile": ""
+                "profile": "Former front end developer for instrument facility applications"
             }
         }
     }
 }
-        
+
