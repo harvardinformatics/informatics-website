@@ -22,10 +22,13 @@ nav:
         - Part 4: resources/Workshops/Unix/Biotips-workshop-2023-Day4.md
   - Research: research/index.md
   - Software: software/index.md
+  - FAQ: faq/index.md
   - Contact Us: contact.md
   - Events: events.md
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
