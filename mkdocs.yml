@@ -1,4 +1,38 @@
 site_name: Harvard FAS Informatics Group
+
+### Example Configuration ###
+
+# Custom Homepage Elements
+home_cover_image: ../img/fas-info-logo-old.png # This path starts at your root mkdocs directory.
+home_tagline: FAS Informatics
+home_description: |
+  Bioinformatics training, collaboration, and research
+
+# Gradient Color
+home_gradient_hsla: hsla(1deg,82%,20%,1) # Default Green: hsla(160deg,47%,55%,1)
+
+# Custom Homepage Button(s)
+home_button1_name: Research                  # Comment this parameter out to remove the button.
+home_button1_url: ../research/                       # This path starts at your root mkdocs directory.
+home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
+home_button1_icon: people                        # Options: "people", "gear", "image"
+home_button1_blurb: |                            # Short description of this button / section.
+  Learn about our group's goals and the people who make up the FAS Informatics Group
+
+home_button2_name: Resources   # Comment this parameter out to remove the button.
+home_button2_url: ../resources/    # This path starts at your root mkdocs directory.
+home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
+home_button2_icon: gear       # Options: "people", "gear", "image"
+home_button2_blurb: |         # Short description of this button / section.
+  Workshops, tutorials, and other resources for learning bioinformatics
+
+home_button3_name: Software   # Comment this parameter out to remove the button.
+home_button3_url: ../software/    # This path starts at your root mkdocs directory.
+home_button3_theme: md-button # Options: "md-button", "md-button md-button--primary"
+home_button3_icon: gear      # Options: "people", "gear", "image"
+home_button3_blurb: |         # Short description of this button / section.
+  Software developed by the FAS Informatics Group
+
 nav:
   - Home: index.md
   - About: 
@@ -37,8 +71,10 @@ markdown_extensions:
       alternate_style: true
 theme: 
   name: material
+  custom_dir: docs/assets
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -68,3 +104,4 @@ hooks:
   - scripts/resources_generator.py 
 extra_css:
   - stylesheets/extra.css
+

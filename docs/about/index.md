@@ -1,4 +1,5 @@
 ---
+template: home.html
 hide:
     - navigation
 ---
@@ -15,7 +16,7 @@ The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is 
 
 ## Bioinformatics
 
-The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, and our research on method development and best practices to meet the needs of the research community. 
+The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, with a general focus on method development and best practices investigations to meet the needs of the research community. 
 
 
 <div class="row card-row">
@@ -453,10 +454,10 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/person-icon.png" alt="Katya Osipova">
+			<img class="card-img" src="../img/people/katyaosipova.jpg" alt="Katya Osipova">
 			<div class="row card-link-row">
 
-				<div class="col-5-24 card-margin"></div>
+				<div class="col-0-24 card-margin"></div>
 
 				<div class="col-12-24 card-link-container">
 
@@ -470,7 +471,21 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					</div>
 				</div>
 
-				<div class="col-5-24 card-margin"></div>
+				<div class="col-0-24 card-margin"></div>
+
+				<div class="col-12-24 card-link-container">
+
+					<div class="icon-link-container">
+						<a class="icon-link" href="https://github.com/osipovarev" target="_blank">
+							<div class="icon-container">
+								<img class="icon" src="../img/icons/github-logo-black.png">
+							</div>
+							<span>GitHub</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-0-24 card-margin"></div>
 
 			</div>
 

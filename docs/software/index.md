@@ -13,7 +13,7 @@ The informatics group develops methods and software for various genomics tasks w
     <div class="col-6-24 software-logo-cont">
         <div class="inner-container">
             <a href="https://phyloacc.github.io/" target="_blank">
-                <img class="software-logo" src="../img/phyloacc-link-logo.png">
+                <img class="software-logo" src="../img/software-logos/phyloacc-link-logo.png">
             </a>
         </div>
     </div>
@@ -32,7 +32,7 @@ The informatics group develops methods and software for various genomics tasks w
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
         <a href="https://github.com/harvardinformatics/snpArcher" target="_blank">
-            <img class="software-logo" src="../img/snparcher-link-logo.png">
+            <img class="software-logo" src="../img/software-logos/snparcher-link-logo.png">
         </a>
     </div>
 
@@ -48,7 +48,7 @@ The informatics group develops methods and software for various genomics tasks w
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
         <a href="https://github.com/harvardinformatics/degenotate" target="_blank">
-            <img class="software-logo" src="../img/degenotate-link-logo.png">
+            <img class="software-logo" src="../img/software-logos/degenotate-link-logo.png">
         </a>
     </div>
 
@@ -67,7 +67,7 @@ The informatics group develops methods and software for various genomics tasks w
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
         <a href="https://github.com/harvardinformatics/scclusteval" target="_blank">
-            <img class="software-logo" src="../img/scclusteval-link-logo.png">
+            <img class="software-logo" src="../img/software-logos/scclusteval-link-logo.png">
         </a>
     </div>
 
@@ -82,7 +82,7 @@ The informatics group develops methods and software for various genomics tasks w
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
         <a href="https://github.com/harvardinformatics/HieRFIT" target="_blank">
-            <img class="software-logo" src="../img/hierfit-link-logo.png">
+            <img class="software-logo" src="../img/software-logos/hierfit-link-logo.png">
         </a>
     </div>
 
