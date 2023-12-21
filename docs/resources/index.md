@@ -43,11 +43,11 @@ We have compiled a list of external resources and tagged them with the categorie
 
 <div class='row res-tag-table'>
 <div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/bioinformatics/'>bioinformatics (6)</a></div>
+<div class='res-tag-link'><a href='tags/bioinformatics/'>bioinformatics (8)</a></div>
 </div>
 <div class='col-1-24'></div>
 <div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/data-science/'>data science (10)</a></div>
+<div class='res-tag-link'><a href='tags/data-science/'>data science (11)</a></div>
 </div>
 <div class='col-1-24'></div>
 <div class='col-5-24 res-tag-link-cont'>
@@ -100,34 +100,37 @@ We have compiled a list of external resources and tagged them with the categorie
 <div class='sep-div'></div>
 <div class='row res-tag-table'>
 <div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/python/'>python (4)</a></div>
+<div class='res-tag-link'><a href='tags/python/'>python (5)</a></div>
 </div>
 <div class='col-1-24'></div>
 <div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/R/'>R (6)</a></div>
+<div class='res-tag-link'><a href='tags/R/'>R (7)</a></div>
+</div>
+<div class='col-1-24'></div>
+<div class='col-5-24 res-tag-link-cont'>
+<div class='res-tag-link'><a href='tags/reproducibility/'>reproducibility (1)</a></div>
 </div>
 <div class='col-1-24'></div>
 <div class='col-5-24 res-tag-link-cont'>
 <div class='res-tag-link'><a href='tags/RNA-seq/'>RNA seq (3)</a></div>
 </div>
 <div class='col-1-24'></div>
+</div>
+<div class='sep-div'></div>
+<div class='row res-tag-table'>
 <div class='col-5-24 res-tag-link-cont'>
 <div class='res-tag-link'><a href='tags/single-cell/'>single cell (1)</a></div>
 </div>
 <div class='col-1-24'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
 <div class='col-5-24 res-tag-link-cont'>
 <div class='res-tag-link'><a href='tags/statistics/'>statistics (3)</a></div>
 </div>
 <div class='col-1-24'></div>
 <div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/unix/'>unix (4)</a></div>
+<div class='res-tag-link'><a href='tags/unix/'>unix (5)</a></div>
 </div>
 <div class='col-1-24'></div>
 <div class='col-5-24 res-tag-link-cont'>
 <div class='res-tag-link'><a href='tags/variant-calling/'>variant calling (1)</a></div>
 </div>
 <div class='col-1-24'></div>
-</div>
