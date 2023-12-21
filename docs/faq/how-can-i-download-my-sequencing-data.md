@@ -24,7 +24,7 @@ Each transfer mechanism downloads the entire sequencing run directory by default
 ## Verifying downloaded .fastq.gz files
 
 Occasionally, large files become corrupted during download, causing errors during decompression or when using the .fastq.gz files directly in a workflow.
-You can determine whether this has occurred by comparing the [checksum](http://en.wikipedia.org/wiki/Checksum) of a file before and after download.
+You can determine whether this has occurred by comparing the [checksum](https://en.wikipedia.org/wiki/Checksum) of a file before and after download.
 !!! note
 
     Globus automatically verifies file checksums after transfer by default, unless explicitly disabled before transfer (by checking the "do NOT verify file integrity after transfer" in the Globus web interface Transfer settings).
@@ -226,7 +226,7 @@ Add the `--exclude='Data/**'` option:
 
 _**What**_
 
-If downloading to your local computer, [wget](https://www.gnu.org/software/wget/) (installed by default on some Linux distributions, and available for [Windows](http://gnuwin32.sourceforge.net/packages/wget.htm), as well as macOS through package managers such as [conda](https://anaconda.org/conda-forge/wget) and [brew](https://formulae.brew.sh/formula/wget)) can be used to transfer files over HTTPS:
+If downloading to your local computer, [wget](https://www.gnu.org/software/wget/) (installed by default on some Linux distributions, and available for Windows using [WSL](https://learn.microsoft.com/en-us/windows/wsl/), as well as macOS through package managers such as [conda](https://anaconda.org/conda-forge/wget) and [brew](https://formulae.brew.sh/formula/wget)) can be used to transfer files over HTTPS:
 
 _**Who**_
 
