@@ -14,7 +14,7 @@
             "id": "2",
             "name": "Software carpentry novice git lesson",
             "link": "https://swcarpentry.github.io/git-novice/",
-            "tags": ["git", "unix"],
+            "tags": ["git", "unix", "reproducibility"],
             "date-added": "11-28-2023",
             "status" : "active",
             "description": ""
@@ -84,7 +84,7 @@
             "id": "9",
             "name": "Harvard library data services",
             "link": "https://hlrdm.library.harvard.edu/",
-            "tags": ["data science", "harvard"],
+            "tags": ["data science", "harvard", "reproducibility"],
             "date-added": "11-28-2023",
             "status" : "active",
             "description": ""
@@ -94,7 +94,7 @@
             "id": "10",
             "name": "Harvard library data services youtube series on data management",
             "link": "https://www.youtube.com/playlist?list=PLWIsV2soJK-VaW7IhxYyyOwiamjVV_FuB",
-            "tags": ["data science", "harvard"],
+            "tags": ["data science", "harvard", "reproducibility"],
             "date-added": "11-28-2023",
             "status" : "active",
             "description": ""
