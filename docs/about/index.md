@@ -1,5 +1,5 @@
 ---
-<<<<<<< HEAD
+template: home.html
 hide:
     - navigation
 ---
@@ -27,7 +27,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b><a href="about/people/timsackton/">Tim Sackton, Ph.D.</a></b><br>
+			<b><a href="people/timsackton/">Tim Sackton, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -36,8 +36,8 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<a href="about/people/timsackton/">
-				<img class="card-img" src="img/people/timsackton.jpg" alt="Tim Sackton">
+			<a href="people/timsackton/">
+				<img class="card-img" src="../img/people/timsackton.jpg" alt="Tim Sackton">
 			</a>
 			<div class="row card-link-row">
 
@@ -48,7 +48,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="../img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -62,7 +62,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/tsackton" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="../img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -109,7 +109,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://ahfgenomics.com/" target="_blank">
-				<img class="card-img" src="img/people/adamfreedman.png" alt="Adam Freedman">
+				<img class="card-img" src="../img/people/adamfreedman.png" alt="Adam Freedman">
 			</a>
 			<div class="row card-link-row">
 
@@ -120,7 +120,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="../img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -134,7 +134,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/adamfreedman" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="../img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -172,7 +172,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/daniellekhost.jpg" alt="Danielle Khost">
+			<img class="card-img" src="../img/people/daniellekhost.jpg" alt="Danielle Khost">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -182,7 +182,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/danielle-khost" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="../img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -229,7 +229,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://gwct.github.io/" target="_blank">
-				<img class="card-img" src="img/people/greggthomas.jpg" alt="Gregg Thomas">
+				<img class="card-img" src="../img/people/greggthomas.jpg" alt="Gregg Thomas">
 			</a>
 			<div class="row card-link-row">
 
@@ -240,7 +240,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=4pydfEUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="../img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -254,7 +254,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/gwct" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="../img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -292,7 +292,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/leima.jpg" alt="Lei Ma">
+			<img class="card-img" src="../img/people/leima.jpg" alt="Lei Ma">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -302,7 +302,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/microlei" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="../img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -348,7 +348,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/rawanolayan.jpg" alt="Rawan Olayan">
+			<img class="card-img" src="../img/people/rawanolayan.jpg" alt="Rawan Olayan">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -358,7 +358,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=qxUMqP4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="../img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -405,7 +405,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://www.subir.com.np/" target="_blank">
-				<img class="card-img" src="img/people/subirshakya.jpg" alt="Subir Shakya">
+				<img class="card-img" src="../img/people/subirshakya.jpg" alt="Subir Shakya">
 			</a>
 			<div class="row card-link-row">
 
@@ -416,7 +416,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="../img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -454,7 +454,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/katyaosipova.jpg" alt="Katya Osipova">
+			<img class="card-img" src="../img/people/katyaosipova.jpg" alt="Katya Osipova">
 			<div class="row card-link-row">
 
 				<div class="col-0-24 card-margin"></div>
@@ -464,7 +464,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="../img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -478,7 +478,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/osipovarev" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="../img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -530,14 +530,14 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/aaronkitzmiller.jpg" alt="Aaron Kitzmiller">
+			<img class="card-img" src="../img/people/aaronkitzmiller.jpg" alt="Aaron Kitzmiller">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Director of Software Operations</b><br>
-			aaron_kitzmiller@harvard.edu<br>
+			<br>
 			 Northwest Labs, B227.70<br>
-			<p>Journeyman wrangler of science adjacent software projects</p>
+			<p></p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
@@ -557,7 +557,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>David D'Antonio</b><br>
+			<b>David D'Antonio, Ph.D.</b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -566,14 +566,14 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/ddantonio.jpg" alt="David D'Antonio">
+			<img class="card-img" src="../img/people/ddantonio.jpg" alt="David D'Antonio">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
-			<b>Senior Web Developer</b><br>
-			dcdantonio@fas.harvard.edu<br>
-			 Northwest Labs, Remote<br>
-			<p>Front end developer for instrument facility applications</p>
+			<b></b><br>
+			<br>
+			 Northwest Labs, <br>
+			<p></p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
@@ -585,7 +585,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>Nathan Weeks</b><br>
+			<b>Nathan Weeks, Ph.D.</b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -594,14 +594,14 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/nathanweeks.jpg" alt="Nathan Weeks">
+			<img class="card-img" src="../img/people/nathanweeks.jpg" alt="Nathan Weeks">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
-			<b>Applications Professional</b><br>
+			<b></b><br>
 			<br>
 			 Northwest Labs, B227.30<br>
-			<p>Scientific applications specialist</p>
+			<p></p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
@@ -609,42 +609,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 </div>
 
 <div class="col-1-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row card-row">
-
-<div class="col-7-24 card-margin-outer"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b>Jared Vessella-Smith</b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="" alt="Jared Vessella-Smith">
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Applications Professional</b><br>
-			jsmith1@fas.harvard.edu<br>
-			 Northwest Labs, B227.40<br>
-			<p>Full stack developer for instrument facility applications</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-7-24 card-margin-outer"></div>
 </div>
 
 <div class="card-sep-div"></div>
@@ -783,10 +747,9 @@ The mission of the Software Operations Core is to support the needs of data gene
 </div>
 <div class="col-1-24 card-margin-inner"></div>
 
-<div class="col-6-24 card-container alum-card-container">
+<div class="col-6-24 card-container alum-card-container-no-profile">
 		<span class="alum-name">Meghan Correa</span><br>
 
-		<p>Former full stack developer currently at Cisco</p>
 </div>
 
 <div class="col-0-24 card-margin-outer"></div>
@@ -798,10 +761,9 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 <div class="col-9-24 card-margin-outer"></div>
 
-<div class="col-6-24 card-container alum-card-container">
+<div class="col-6-24 card-container alum-card-container-no-profile">
 		<span class="alum-name">Andy Bryant</span><br>
 
-		<p>Former front end developer for instrument facility applications</p>
 </div>
 
 <div class="col-9-24 card-margin-outer"></div>
@@ -811,14 +773,4 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 ## Where to Find Us
 
-We are located in [Northwest Science Building](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560), on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
-
-Harvard FAS Informatics Group
-Northwest Building B227
-52 Oxford Street
-Cambridge, MA 02138
-=======
-template: home.html
-title: Home
----
->>>>>>> 564bf34 (work in progress for about page with banner as home page)
+We are located in Northwest Labs, on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us here.
