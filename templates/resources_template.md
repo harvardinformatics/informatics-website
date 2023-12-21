@@ -36,10 +36,6 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 - [Part 3: Bioinformatics tools and file formats 3: GFF, VCF, bcftools](Workshops/Unix/Biotips-workshop-2023-Day3.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2023-Day3-student.Rmd)
 - [Part 4: Shell scripting](Workshops/Unix/Biotips-workshop-2023-Day4.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2023-Day4-student.Rmd)
 
-## Want to learn about Python? Start here
-
-This is a link to a page about [python](python.md)
-
 ## External resources
 
 We have compiled a list of external resources and tagged them with the categories below. Click on each tag to see the links!
