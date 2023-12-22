@@ -167,3 +167,4 @@ cython_debug/
 docs/about/index.md
 docs/resources/index.md
 docs/resources/tags/*
+.python-version
