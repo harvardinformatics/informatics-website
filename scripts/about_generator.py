@@ -121,14 +121,21 @@ with open(md_output_file, 'w') as md_output:
                 cards_tables[section] += '\t\t<div class="col-0-24 card-name-margin"></div>\n';
                 cards_tables[section] += '\t\t<div class="col-24-24 card-name">\n';
 
+                degree = "";
+                if 'degree' in person_data:
+                    if person_data['degree'] != "":
+                # Get the degree for the current person if it is available
+                        degree = ', ' + person_data['degree'];
+                else:
+                    degree = ", Ph.D.";
                 if person_data['link'] != "":
                     if person_data['link'].startswith("people/"):
-                        cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
+                        cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '">' + person_data['name'] + degree + '</a></b><br>\n\n';
                     else:
-                        cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
+                        cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + degree + '</a></b><br>\n\n';
                     # For internal links, don't open in a new tab (no target="_blank")
                 else:
-                    cards_tables[section] += '\t\t\t<b>' + person_data['name'] + ', Ph.D.</b><br>\n\n';
+                    cards_tables[section] += '\t\t\t<b>' + person_data['name'] + degree + '</b><br>\n\n';
                 # Add the person name with or without a link                
 
                 cards_tables[section] += '\t\t</div>\n';
