@@ -462,8 +462,8 @@ th, td {
   .icon {
     height: 100% !important;
   }
-
 }
+/* Responsive styles */
 
 /*------------------------------------------------------*/
 /* Grid */
@@ -505,15 +505,119 @@ th, td {
 .sep-div { height: 1vh;}
 
 /*------------------------------------------------------*/
+/* Home banner styles */
 
+.banner-content-col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .banner-content-row {
-  border: 1px solid green;
+  height: 100%;
+}
+
+.banner-content {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
 }
 
 .banner-title {
   color: #eeeeee;
 }
-.banner-title h1 {
-  color: #eeeeee;
+
+.home-tagline {
+  font-size: 2.5em !important;
+
 }
+
+.banner-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.banner-buttons .md-button {
+  margin-top: .5rem;
+  margin-right: .5rem;
+  color: var(--md-primary-bg-color);
+  /* width: 100%; */
+}
+
+.banner-buttons .md-button--primary {
+  background-color: var(--md-primary-bg-color);
+  color: hsla(280deg, 37%, 48%, 1);
+  border-color: var(--md-primary-bg-color)
+}
+
+.banner-buttons .md-button:focus,
+.banner-buttons .md-button:hover {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-default-bg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+.banner-button {
+  width: 100%;
+  max-width: 190px;
+}
+
+.banner-button .md-button {
+  width: 100%;
+  max-width: 175px;
+  text-align: center;
+  padding: 0.25rem 0 !important;
+}
+
+.banner-img-container {
+  height: 75%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.banner-img {
+  height: 100%;
+  max-height: 300px;
+  width: auto;
+}
+
+@media (max-width: 1025px) {
+
+  .banner-content-col .margin {
+    display: none;
+    width: 0;
+  }
+
+  .banner-content {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .banner-buttons {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .banner-button {
+    width: 100%;
+    max-width: unset;
+  }
+  .banner-button .md-button {
+    width: 100%;
+    max-width: unset;
+    text-align: center;
+  }
+  .banner-img-container {
+    display: none;
+  }
+}
+/* Responsive styles */
+
+/*------------------------------------------------------*/
