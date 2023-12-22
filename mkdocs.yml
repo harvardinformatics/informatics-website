@@ -1,9 +1,9 @@
 site_name: Harvard FAS Informatics Group
+copyright: © 2023 | Harvard FAS Informatics
+
 nav:
-  - Home: index.md
-  - About: 
-    - about/index.md
-    - about/people/timsackton.md
+  - Home: 
+    - index.md
   - Resources: 
     - resources/index.md
     - Workshops:
@@ -42,6 +42,7 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -52,18 +53,19 @@ theme:
   favicon: img/Icon_favicon.png
   logo: img/Icon_bw.png
   palette:
-  - scheme: default
-    toggle:
-      icon: material/toggle-switch-off-outline 
-      name: Switch to dark mode
+    scheme: default
     primary: red
-    accent: grey 
-  - scheme: slate 
-    toggle:
-      icon: material/toggle-switch
-      name: Switch to light mode    
-    primary: salmon
-    accent: black
+    accent: grey   
+    # toggle:
+    #   icon: material/toggle-switch-off-outline 
+    #   name: Switch to dark mode
+
+  # - scheme: slate 
+  #   toggle:
+  #     icon: material/toggle-switch
+  #     name: Switch to light mode    
+  #   primary: salmon
+  #   accent: black
 plugins:
   - search
   - table-reader
@@ -72,3 +74,11 @@ hooks:
   - scripts/resources_generator.py 
 extra_css:
   - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/harvardinformatics/
+    - icon: fontawesome/brands/slack
+      link: https://fas-bioinformaticspub.slack.com/
+    - icon: material/email-outline
+      link: https://forms.office.com/r/qwXEPbBvFK    
