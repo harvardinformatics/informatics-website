@@ -279,7 +279,7 @@
             "David D'Antonio": {
                 "id": "60",
                 "name": "David D'Antonio",
-                "title" : "Applications Professional",
+                "title" : "Senior Web Developer",
                 "office" : "Remote",
                 "email" : "dcdantonio@fas.harvard.edu",
                 "img": "img/people/ddantonio.jpg",
@@ -306,6 +306,7 @@
                 "link": "",
                 "pubs": "",
                 "github": "",
+                "degree": "",
                 "profile": "Scientific applications specialist"
             },
             "Jared Vessella-Smith": {
@@ -322,6 +323,7 @@
                 "link": "",
                 "pubs": "",
                 "github": "",
+                "degree": "",
                 "profile": "Full stack developer for instrument facility applications"
             },
             "Meghan Correa": {
