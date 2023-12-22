@@ -18,6 +18,7 @@ During the Fall and Spring semesters, we hold office hours every week on Wednesd
 
 This google calendar will show all our upcoming office hours as well as any workshops we have scheduled.
 
+<center>
 <iframe 
 src="https://calendar.google.com/calendar/embed?src=c_3e2d956bb1940f61290f956a9f93bdf89237b8134433608498b1761b53996772%40group.calendar.google.com&ctz=America%2FNew_York" 
 style="border: 0" 
@@ -29,3 +30,4 @@ filter="invert(.9) saturate(0.5) hue-rotate(145deg)"
 >
 
 </iframe>
+</center>

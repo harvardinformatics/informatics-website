@@ -39,7 +39,8 @@ md_template_file = "templates/about_template.md";
 json_file = "data/people/people.json";
 # JSON file with profiles
 
-md_output_file = "docs/about/index.md";
+md_output_file = "docs/index.md";
+#md_output_file2 = "docs/index.md";
 # The output file for the about page
 
 ####################
@@ -122,7 +123,7 @@ with open(md_output_file, 'w') as md_output:
                 cards_tables[section] += '\t\t<div class="col-24-24 card-name">\n';
 
                 if person_data['link'] != "":
-                    if person_data['link'].startswith("people/"):
+                    if person_data['link'].startswith("about/people/"):
                         cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
                     else:
                         cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
@@ -143,14 +144,14 @@ with open(md_output_file, 'w') as md_output:
 
                 cards_tables[section] += '\t\t<div class="col-8-24 card-img-container">\n';
                 if person_data['link'] != "":
-                    if person_data['link'].startswith("people/"):
+                    if person_data['link'].startswith("about/people/"):
                         cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '">\n';
                     else:
                         cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '" target="_blank">\n';
-                    cards_tables[section] += '\t\t\t\t<img class="card-img" src="../' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
+                    cards_tables[section] += '\t\t\t\t<img class="card-img" src="' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
                     cards_tables[section] += '\t\t\t</a>\n';
                 else:
-                    cards_tables[section] += '\t\t\t<img class="card-img" src="../' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
+                    cards_tables[section] += '\t\t\t<img class="card-img" src="' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
                 # Profile image
 
                 link_types = ['pubs', 'github'];
@@ -177,7 +178,7 @@ with open(md_output_file, 'w') as md_output:
                         cards_tables[section] += '\t\t\t\t\t<div class="icon-link-container">\n';
                         cards_tables[section] += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['pubs'] + '" target="_blank">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<div class="icon-container">\n';
-                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="../img/icons/scholar-logo-black.png">\n';
+                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="img/icons/scholar-logo-black.png">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t</div>\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<span>Scholar</span>\n';
                         cards_tables[section] += '\t\t\t\t\t\t</a>\n';
@@ -193,7 +194,7 @@ with open(md_output_file, 'w') as md_output:
                         cards_tables[section] += '\t\t\t\t\t<div class="icon-link-container">\n';
                         cards_tables[section] += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['github'] + '" target="_blank">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<div class="icon-container">\n';
-                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="../img/icons/github-logo-black.png">\n';
+                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="img/icons/github-logo-black.png">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t</div>\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<span>GitHub</span>\n';
                         cards_tables[section] += '\t\t\t\t\t\t</a>\n';
@@ -317,7 +318,7 @@ with open(md_output_file, 'w') as md_output:
                 ## The card container div 
 
                 if person_data['link'] != "":
-                    if person_data['link'].startswith("people/"):
+                    if person_data['link'].startswith("about/people/"):
                         cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '">' + person_data['name'] + '</a></span><br>\n\n';
                     else:
                         cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></span><br>\n\n';
