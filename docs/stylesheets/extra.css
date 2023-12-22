@@ -2,6 +2,12 @@
   max-width: 1440px; 
 }
 
+/* :root {
+  --md-primary-fg-color:        #A51C30;
+  --md-primary-fg-color--light: #ec8f9c;
+  --md-primary-fg-color--dark:  #6d1220;
+} */
+
 /*------------------------------------------------------*/
 /* Software logo styles */
 

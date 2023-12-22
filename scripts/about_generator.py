@@ -39,7 +39,8 @@ md_template_file = "templates/about_template.md";
 json_file = "data/people/people.json";
 # JSON file with profiles
 
-md_output_file = "docs/about/index.md";
+md_output_file = "docs/index.md";
+#md_output_file2 = "docs/index.md";
 # The output file for the about page
 
 ####################
@@ -122,7 +123,7 @@ with open(md_output_file, 'w') as md_output:
                 cards_tables[section] += '\t\t<div class="col-24-24 card-name">\n';
 
                 if person_data['link'] != "":
-                    if person_data['link'].startswith("people/"):
+                    if person_data['link'].startswith("about/people/"):
                         cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
                     else:
                         cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + ', Ph.D.</a></b><br>\n\n';
@@ -143,7 +144,7 @@ with open(md_output_file, 'w') as md_output:
 
                 cards_tables[section] += '\t\t<div class="col-8-24 card-img-container">\n';
                 if person_data['link'] != "":
-                    if person_data['link'].startswith("people/"):
+                    if person_data['link'].startswith("about/people/"):
                         cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '">\n';
                     else:
                         cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '" target="_blank">\n';
@@ -317,7 +318,7 @@ with open(md_output_file, 'w') as md_output:
                 ## The card container div 
 
                 if person_data['link'] != "":
-                    if person_data['link'].startswith("people/"):
+                    if person_data['link'].startswith("about/people/"):
                         cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '">' + person_data['name'] + '</a></span><br>\n\n';
                     else:
                         cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></span><br>\n\n';
