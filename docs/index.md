@@ -1,4 +1,5 @@
 ---
+template: home.html
 hide:
     - navigation
 ---
@@ -812,7 +813,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 We are located in [Northwest Science Building](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560), on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
 
-Harvard FAS Informatics Group
-Northwest Building B227
-52 Oxford Street
+Harvard FAS Informatics Group  
+Northwest Building B227  
+52 Oxford Street  
 Cambridge, MA 02138
