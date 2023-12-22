@@ -148,10 +148,10 @@ with open(md_output_file, 'w') as md_output:
                         cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '">\n';
                     else:
                         cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '" target="_blank">\n';
-                    cards_tables[section] += '\t\t\t\t<img class="card-img" src="../' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
+                    cards_tables[section] += '\t\t\t\t<img class="card-img" src="' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
                     cards_tables[section] += '\t\t\t</a>\n';
                 else:
-                    cards_tables[section] += '\t\t\t<img class="card-img" src="../' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
+                    cards_tables[section] += '\t\t\t<img class="card-img" src="' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
                 # Profile image
 
                 link_types = ['pubs', 'github'];

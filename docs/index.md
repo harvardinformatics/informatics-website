@@ -36,7 +36,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="about/people/timsackton/">
-				<img class="card-img" src="../img/people/timsackton.jpg" alt="Tim Sackton">
+				<img class="card-img" src="img/people/timsackton.jpg" alt="Tim Sackton">
 			</a>
 			<div class="row card-link-row">
 
@@ -108,7 +108,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://ahfgenomics.com/" target="_blank">
-				<img class="card-img" src="../img/people/adamfreedman.png" alt="Adam Freedman">
+				<img class="card-img" src="img/people/adamfreedman.png" alt="Adam Freedman">
 			</a>
 			<div class="row card-link-row">
 
@@ -171,7 +171,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/daniellekhost.jpg" alt="Danielle Khost">
+			<img class="card-img" src="img/people/daniellekhost.jpg" alt="Danielle Khost">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -228,7 +228,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://gwct.github.io/" target="_blank">
-				<img class="card-img" src="../img/people/greggthomas.jpg" alt="Gregg Thomas">
+				<img class="card-img" src="img/people/greggthomas.jpg" alt="Gregg Thomas">
 			</a>
 			<div class="row card-link-row">
 
@@ -291,7 +291,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/leima.jpg" alt="Lei Ma">
+			<img class="card-img" src="img/people/leima.jpg" alt="Lei Ma">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -347,7 +347,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/rawanolayan.jpg" alt="Rawan Olayan">
+			<img class="card-img" src="img/people/rawanolayan.jpg" alt="Rawan Olayan">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -404,7 +404,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://www.subir.com.np/" target="_blank">
-				<img class="card-img" src="../img/people/subirshakya.jpg" alt="Subir Shakya">
+				<img class="card-img" src="img/people/subirshakya.jpg" alt="Subir Shakya">
 			</a>
 			<div class="row card-link-row">
 
@@ -453,7 +453,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/katyaosipova.jpg" alt="Katya Osipova">
+			<img class="card-img" src="img/people/katyaosipova.jpg" alt="Katya Osipova">
 			<div class="row card-link-row">
 
 				<div class="col-0-24 card-margin"></div>
@@ -529,7 +529,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/aaronkitzmiller.jpg" alt="Aaron Kitzmiller">
+			<img class="card-img" src="img/people/aaronkitzmiller.jpg" alt="Aaron Kitzmiller">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -565,7 +565,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/ddantonio.jpg" alt="David D'Antonio">
+			<img class="card-img" src="img/people/ddantonio.jpg" alt="David D'Antonio">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -593,7 +593,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../img/people/nathanweeks.jpg" alt="Nathan Weeks">
+			<img class="card-img" src="img/people/nathanweeks.jpg" alt="Nathan Weeks">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -629,7 +629,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="../" alt="Jared Vessella-Smith">
+			<img class="card-img" src="" alt="Jared Vessella-Smith">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
