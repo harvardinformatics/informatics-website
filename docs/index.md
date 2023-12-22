@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 hide:
     - navigation
 ---
@@ -817,8 +816,3 @@ Harvard FAS Informatics Group
 Northwest Building B227
 52 Oxford Street
 Cambridge, MA 02138
-=======
-template: home.html
-title: Home
----
->>>>>>> 564bf34 (work in progress for about page with banner as home page)
