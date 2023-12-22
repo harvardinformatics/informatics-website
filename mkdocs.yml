@@ -1,8 +1,9 @@
 site_name: Harvard FAS Informatics Group
+copyright: © 2023 | Harvard FAS Informatics
+
 nav:
   - Home: 
     - index.md
-    - about/people/timsackton.md
   - Resources: 
     - resources/index.md
     - Workshops:
@@ -73,3 +74,11 @@ hooks:
   - scripts/resources_generator.py 
 extra_css:
   - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/harvardinformatics/
+    - icon: fontawesome/brands/slack
+      link: https://fas-bioinformaticspub.slack.com/
+    - icon: material/email-outline
+      link: https://forms.office.com/r/qwXEPbBvFK    
