@@ -47,7 +47,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -61,7 +61,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/tsackton" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -119,7 +119,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -133,7 +133,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/adamfreedman" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -181,7 +181,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/danielle-khost" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -239,7 +239,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=4pydfEUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -253,7 +253,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/gwct" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -301,7 +301,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/microlei" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -357,7 +357,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=qxUMqP4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -415,7 +415,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -463,7 +463,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -477,7 +477,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 					<div class="icon-link-container">
 						<a class="icon-link" href="https://github.com/osipovarev" target="_blank">
 							<div class="icon-container">
-								<img class="icon" src="../img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -810,7 +810,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 ## Where to Find Us
 
-We are located in [Northwest Science Building](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560), on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](../contact.md).
+We are located in [Northwest Science Building](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560), on the B2 floor, near the Bauer Sequencing Core. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
 
 Harvard FAS Informatics Group
 Northwest Building B227

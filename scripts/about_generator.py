@@ -178,7 +178,7 @@ with open(md_output_file, 'w') as md_output:
                         cards_tables[section] += '\t\t\t\t\t<div class="icon-link-container">\n';
                         cards_tables[section] += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['pubs'] + '" target="_blank">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<div class="icon-container">\n';
-                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="../img/icons/scholar-logo-black.png">\n';
+                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="img/icons/scholar-logo-black.png">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t</div>\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<span>Scholar</span>\n';
                         cards_tables[section] += '\t\t\t\t\t\t</a>\n';
@@ -194,7 +194,7 @@ with open(md_output_file, 'w') as md_output:
                         cards_tables[section] += '\t\t\t\t\t<div class="icon-link-container">\n';
                         cards_tables[section] += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['github'] + '" target="_blank">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<div class="icon-container">\n';
-                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="../img/icons/github-logo-black.png">\n';
+                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="img/icons/github-logo-black.png">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t</div>\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<span>GitHub</span>\n';
                         cards_tables[section] += '\t\t\t\t\t\t</a>\n';
