@@ -1,3 +1,7 @@
+---
+title: Harvard FAS Informatics Group
+---
+
 # {tag_name} resources
 
 {description}

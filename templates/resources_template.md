@@ -1,4 +1,5 @@
 ---
+title: Resources
 hide:
     - navigation
 ---

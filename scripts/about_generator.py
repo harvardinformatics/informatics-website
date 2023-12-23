@@ -220,7 +220,7 @@ with open(md_output_file, 'w') as md_output:
                 cards_tables[section] += '\t\t<div class="col-1-24 card-margin"></div>\n';
                 cards_tables[section] += '\t\t<div class="col-13-24 card-content">\n';
                 cards_tables[section] += '\t\t\t<b>' + person_data['title'] + '</b><br>\n';
-                cards_tables[section] += '\t\t\t' + person_data['email'] + '<br>\n';
+                # cards_tables[section] += '\t\t\t' + person_data['email'] + '<br>\n';
                 cards_tables[section] += '\t\t\t Northwest Labs, ' + person_data['office'] + '<br>\n';
                 cards_tables[section] += '\t\t\t<p>' + person_data['profile'] + '</p>\n';
                 cards_tables[section] += '\t\t</div>\n';

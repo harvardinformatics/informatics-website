@@ -1,0 +1,125 @@
+<!-- Homepage styles/formats heavily modified from https://github.com/tylerdotrar/mkdocs-coverpage -->
+<!-- Elements added to "home.html" will only be displayed on the home page -->
+
+{% extends "base.html" %}
+
+
+
+{% block hero %}
+
+<!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
+<!-- .tx-container Original Green Gradient: hsla(160deg,47%,55%,1) -->
+<style>
+    /* .md-tabs {
+        background-color: hsla(1deg,82%,20%,1);
+    } */
+
+    .md-main {
+        flex-grow: 0;
+    }
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .banner-row-container {
+        max-width: unset !important;
+        margin: 0 !important;
+        padding-top: .0rem !important;
+        height: 40vh !important;
+        min-height: 300px !important;
+        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.home_gradient_hsla }} 99%, {{ config.home_gradient_hsla }} 99%); */
+        /* This is used for the background gradient */
+
+        /* background-image: url(img/bg08.jpg); */
+        background-image: url(img/banners/IMG_7404.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-clip: border-box;
+        background-origin: padding-box;
+        -moz-background-size: cover;
+        background-size: cover;
+        /* This stuff is used for the background image */
+    }
+
+    .banner-row {
+        height:100%;
+        background-color: rgba(0,0,0,0.5);
+        /* Should be uncommented for background image */
+
+        /* background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1) 99%, rgba(0,0,0,1) 99%); */
+        /* Should be uncommented for background image for neat gradient effect */
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+
+<!-- Main site entry button descriptions -->
+<div class="banner-row-container">
+    <div class="row banner-row">
+
+        <div class="col-24-24 banner-content-col">
+
+            <div class="row banner-content-row">
+
+                <div class="col-6-24 margin"></div>
+
+                <div class="col-8-24 banner-content">
+                    <div class="banner-title md-typeset">
+                        <span class="home-tagline">{{ config.home_tagline }}</span><br/>
+                        {{ config.home_description }}
+                    </div>
+
+                    <div class="row banner-buttons md-typeset">
+                        
+                        <div class="col-6-24 banner-button">
+                            {%- if config.home_button1_name -%}
+                            <!-- For each of these buttons, the link checker will fail when using the jinja(?) variables, so I've hardcoded them for now -->
+                            <!-- <a href="{{ config.home_button1_url }}" title="View resources we've compiled, including workshops" class="{{ config.home_button1_theme }}"> -->
+                            <a href="resources/" title="View resources we've compiled, including workshops" class="{{ config.home_button1_theme }}">
+                                {{ config.home_button1_name }}
+                            </a>
+                            {%- endif -%}
+                        </div>
+                    
+                        <div class="col-6-24 banner-button">
+                            {%- if config.home_button2_name -%}
+                            <!-- <a href="{{ config.home_button2_url }}" title="Check out some answers to frequently asked questions" class="{{ config.home_button2_theme }}"> -->
+                            <a href="faq/" title="Check out some answers to frequently asked questions" class="{{ config.home_button2_theme }}">
+                                {{ config.home_button2_name }}
+                            </a>
+                            {%- endif -%}
+                        </div>                    
+                    
+                        <div class="col-6-24 banner-button">
+                            {%- if config.home_button3_name -%}
+                            <!-- <a href="{{ config.home_button3_url }}" title="Different ways to get in touch with us" class="{{ config.home_button3_theme }}"> -->
+                            <a href="contact" title="Different ways to get in touch with us" class="{{ config.home_button3_theme }}">
+                                {{ config.home_button3_name }}
+                            </a>
+                            {%- endif -%}
+                        </div>
+                        <div class="col-6-24 margin"></div>
+                    </div>
+                </div>
+
+                <div class="col-6-24 banner-img-container">
+                    <!-- <img class="banner-img" src="{{ config.home_cover_image }}" draggable="false"> -->
+                </div>
+
+                <div class="col-4-24 margin"></div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
+
