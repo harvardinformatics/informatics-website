@@ -48,7 +48,6 @@ markdown_extensions:
 theme: 
   name: material
   custom_dir: docs/assets
-  custom_dir: docs/assets
   features:
     - navigation.tabs
     - navigation.tabs.sticky
