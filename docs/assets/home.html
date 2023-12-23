@@ -79,7 +79,9 @@
                         
                         <div class="col-6-24 banner-button">
                             {%- if config.home_button1_name -%}
-                            <a href="{{ config.home_button1_url }}" title="View resources we've compiled, including workshops" class="{{ config.home_button1_theme }}">
+                            <!-- For each of these buttons, the link checker will fail when using the jinja(?) variables, so I've hardcoded them for now -->
+                            <!-- <a href="{{ config.home_button1_url }}" title="View resources we've compiled, including workshops" class="{{ config.home_button1_theme }}"> -->
+                            <a href="resources/" title="View resources we've compiled, including workshops" class="{{ config.home_button1_theme }}">
                                 {{ config.home_button1_name }}
                             </a>
                             {%- endif -%}
@@ -87,7 +89,8 @@
                     
                         <div class="col-6-24 banner-button">
                             {%- if config.home_button2_name -%}
-                            <a href="{{ config.home_button2_url }}" title="Check out some answers to frequently asked questions" class="{{ config.home_button2_theme }}">
+                            <!-- <a href="{{ config.home_button2_url }}" title="Check out some answers to frequently asked questions" class="{{ config.home_button2_theme }}"> -->
+                            <a href="faq/" title="Check out some answers to frequently asked questions" class="{{ config.home_button2_theme }}">
                                 {{ config.home_button2_name }}
                             </a>
                             {%- endif -%}
@@ -95,7 +98,8 @@
                     
                         <div class="col-6-24 banner-button">
                             {%- if config.home_button3_name -%}
-                            <a href="{{ config.home_button3_url }}" title="Different ways to get in touch with us" class="{{ config.home_button3_theme }}">
+                            <!-- <a href="{{ config.home_button3_url }}" title="Different ways to get in touch with us" class="{{ config.home_button3_theme }}"> -->
+                            <a href="contact" title="Different ways to get in touch with us" class="{{ config.home_button3_theme }}">
                                 {{ config.home_button3_name }}
                             </a>
                             {%- endif -%}
