@@ -78,6 +78,12 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - assets/.icons
 theme: 
   name: material
   custom_dir: docs/assets
@@ -94,10 +100,10 @@ theme:
     - content.code.copy
   language: en
   favicon: img/Icon_favicon.png
-  logo: img/Icon_bw.png
+  logo: img/fas-shield-logo.png
   palette:
     scheme: default
-    primary: red
+    primary: custom
     accent: grey   
     # toggle:
     #   icon: material/toggle-switch-off-outline 
@@ -121,13 +127,16 @@ extra_css:
   - stylesheets/extra.css
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/harvardinformatics/
+    - icon: material/email-outline
+      link: https://forms.office.com/r/qwXEPbBvFK
     - icon: fontawesome/brands/slack
       link: https://fas-bioinformaticspub.slack.com/
-    - icon: material/email-outline
-      link: https://forms.office.com/r/qwXEPbBvFK    
-
+    - icon: fontawesome/brands/github
+      link: https://github.com/harvardinformatics/
+    - icon: custom/fas-rc-logo
+      link: https://www.rc.fas.harvard.edu/
+    - icon: custom/fas-shield-logo
+      link: https://www.fas.harvard.edu/
 
 ### The following configures the buttons and image on the home page ###
 ### Modified from https://github.com/tylerdotrar/mkdocs-coverpage ###
@@ -144,7 +153,7 @@ home_gradient_hsla: hsla(1deg,82%,20%,1) # Default Green: hsla(160deg,47%,55%,1)
 # Custom Homepage Button(s)
 home_button1_name: Resources                  # Comment this parameter out to remove the button.
 home_button1_url: resources/                       # This path starts at your root mkdocs directory.
-home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
+home_button1_theme: md-button # Options: "md-button", "md-button md-button--primary"
 #home_button1_icon: people                        # Options: "people", "gear", "image"
 #home_button1_blurb: |                            # Short description of this button / section.
 #  Learn about our group's goals and the people who make up the FAS Informatics Group
