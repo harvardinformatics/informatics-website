@@ -78,7 +78,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Director of Bioinformatics</b><br>
-			tsackton@g.harvard.edu<br>
 			 Northwest Labs, B227.10<br>
 			<p>Tim runs the Bioinformatics group. While his background is population and comparative genomics, these days he does a little bit of everything.</p>
 		</div>
@@ -150,7 +149,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Senior Bioinformatics Scientist</b><br>
-			afreedman@fas.harvard.edu<br>
 			 Northwest Labs, B227.30<br>
 			<p>Adam is our resident expert in genome annotation and RNA-seq analysis, and also has a background in population and conservation genetics.</p>
 		</div>
@@ -198,7 +196,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Senior Bioinformatics Scientist</b><br>
-			danielle_khost@fas.harvard.edu<br>
 			 Northwest Labs, B227.65<br>
 			<p>Danielle is our resident expert in long read sequencing, and works on a variety of challenging genome assembly problems.</p>
 		</div>
@@ -270,7 +267,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Senior Bioinformatics Scientist</b><br>
-			gthomas@fas.harvard.edu<br>
 			 Northwest Labs, B227.65<br>
 			<p>Gregg develops phylogenetic methods and has studied convergent evolution, molecular evolution of rodents and insects, and mutation rates in primates.</p>
 		</div>
@@ -318,7 +314,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Senior Bioinformatics Scientist</b><br>
-			lei_ma@g.harvard.edu<br>
 			 Northwest Labs, B227.20<br>
 			<p>Lei is primarily responsible for developing training and outreach material; she also has a background in metagenomics and microbial ecology.</p>
 		</div>
@@ -374,7 +369,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Senior Bioinformatics Scientist</b><br>
-			<br>
 			 Northwest Labs, B227.40<br>
 			<p>Rawan is funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods.</p>
 		</div>
@@ -432,7 +426,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Postdoctoral Fellow</b><br>
-			subirshakya@fas.harvard.edu<br>
 			 Northwest Labs, B227.65<br>
 			<p>Subir works on population and comparative genomics of birds, funded by an NIH grant to study enhancer evolution in birds.</p>
 		</div>
@@ -494,7 +487,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Postdoctoral Fellow</b><br>
-			<br>
 			 Northwest Labs, B227.65<br>
 			<p>Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species.</p>
 		</div>
@@ -536,7 +528,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Director of Software Operations</b><br>
-			aaron_kitzmiller@harvard.edu<br>
 			 Northwest Labs, B227.70<br>
 			<p>Journeyman wrangler of science adjacent software projects</p>
 		</div>
@@ -572,7 +563,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Applications Professional</b><br>
-			dcdantonio@fas.harvard.edu<br>
 			 Northwest Labs, Remote<br>
 			<p>Front end developer for instrument facility applications</p>
 		</div>
@@ -600,7 +590,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Applications Professional</b><br>
-			<br>
 			 Northwest Labs, B227.30<br>
 			<p>Scientific applications specialist</p>
 		</div>
@@ -636,7 +625,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
 			<b>Applications Professional</b><br>
-			jsmith1@fas.harvard.edu<br>
 			 Northwest Labs, B227.40<br>
 			<p>Full stack developer for instrument facility applications</p>
 		</div>
