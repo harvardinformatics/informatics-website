@@ -47,7 +47,7 @@ jobs:
       - name: Run lychee
         uses: lycheeverse/lychee-action@v1.8.0
         with:
-          args: "--base . --cache --max-cache-age 30d --require-https --timeout 5 --exclude 'assets/home.html' --exclude 'fonts.gstatic.com' --exclude 'www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage' --exclude-path 404.html -- './**/*.html' './**/*.css'"
+          args: "--base . --cache --max-cache-age 30d --require-https --timeout 5 --exclude-path 'assets/home.html' --exclude 'fonts.gstatic.com' --exclude 'www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage' --exclude-path 404.html -- './**/*.html' './**/*.css'"
           fail: true
       - name: Save lychee cache
         uses: actions/cache/save@v3
