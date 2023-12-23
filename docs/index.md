@@ -1,10 +1,6 @@
 ---
 title: Harvard FAS Informatics Group
 template: home.html
-title: Home
----
-
-template: home.html
 hide:
     - navigation
 ---
@@ -553,7 +549,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>David D'Antonio, Ph.D.</b><br>
+			<b>David D'Antonio</b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -566,7 +562,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
-			<b>Applications Professional</b><br>
+			<b>Senior Web Developer</b><br>
 			 Northwest Labs, Remote<br>
 			<p>Front end developer for instrument facility applications</p>
 		</div>
@@ -580,7 +576,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>Nathan Weeks, Ph.D.</b><br>
+			<b>Nathan Weeks</b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -615,7 +611,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>Jared Vessella-Smith, Ph.D.</b><br>
+			<b>Jared Vessella-Smith</b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
