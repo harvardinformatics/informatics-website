@@ -99,7 +99,7 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
-  favicon: img/Icon_favicon.png
+  favicon: img/Icon_bw.png
   logo: img/fas-shield-logo.png
   palette:
     scheme: default

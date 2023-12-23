@@ -3,7 +3,7 @@
 
 {% extends "base.html" %}
 
-{% block tabs %}{{ super() }}{% endblock %}
+
 
 {% block hero %}
 
@@ -31,7 +31,8 @@
         /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.home_gradient_hsla }} 99%, {{ config.home_gradient_hsla }} 99%); */
         /* This is used for the background gradient */
 
-        background-image: url(img/bg08.jpg);
+        /* background-image: url(img/bg08.jpg); */
+        background-image: url(img/image2.png);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center center;
@@ -103,7 +104,7 @@
                 </div>
 
                 <div class="col-6-24 banner-img-container">
-                    <img class="banner-img" src="{{ config.home_cover_image }}" draggable="false">
+                    <!-- <img class="banner-img" src="{{ config.home_cover_image }}" draggable="false"> -->
                 </div>
 
                 <div class="col-4-24 margin"></div>
@@ -114,6 +115,6 @@
     </div>
 </div>
 
-{{ super() }}
+
 {% endblock %}
 
