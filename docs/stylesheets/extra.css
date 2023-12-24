@@ -556,7 +556,7 @@ th, td {
 
 .banner-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
@@ -586,6 +586,10 @@ th, td {
   color: #ffffff !important;
   border-color: #EF5552 !important;
   border-radius: 10px;
+}
+
+.banner-buttons .btn-margin {
+  max-width: 20px;
 }
 
 .banner-button {
