@@ -567,7 +567,10 @@ th, td {
   color: #EF5552;
   border-color: #ffffff !important;
   background-color: #ffffff;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
   /* width: 100%; */
+  
 }
 
 /* .banner-buttons .md-button--primary {
@@ -579,9 +582,10 @@ th, td {
 
 .banner-buttons .md-button:focus,
 .banner-buttons .md-button:hover {
-  background-color: #999999 !important;
+  background-color: #EF5552 !important;
   color: #ffffff !important;
-  border-color: #ffffff !important;
+  border-color: #EF5552 !important;
+  border-radius: 10px;
 }
 
 .banner-button {
