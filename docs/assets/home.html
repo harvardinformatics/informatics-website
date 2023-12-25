@@ -44,6 +44,10 @@
         /* This stuff is used for the background image */
     }
 
+    @media (max-width: 1025px) {
+        .banner-row-container { background-attachment: scroll; }
+    }
+
     .banner-row {
         height:100%;
         background-color: rgba(0,0,0,0.5);
@@ -86,7 +90,7 @@
                             </a>
                             {%- endif -%}
                         </div>
-                    
+                        <div class="col-1-24 margin btn-margin"></div>
                         <div class="col-6-24 banner-button">
                             {%- if config.home_button2_name -%}
                             <!-- <a href="{{ config.home_button2_url }}" title="Check out some answers to frequently asked questions" class="{{ config.home_button2_theme }}"> -->
@@ -95,7 +99,7 @@
                             </a>
                             {%- endif -%}
                         </div>                    
-                    
+                        <div class="col-1-24 margin btn-margin"></div>
                         <div class="col-6-24 banner-button">
                             {%- if config.home_button3_name -%}
                             <!-- <a href="{{ config.home_button3_url }}" title="Different ways to get in touch with us" class="{{ config.home_button3_theme }}"> -->
@@ -104,7 +108,7 @@
                             </a>
                             {%- endif -%}
                         </div>
-                        <div class="col-6-24 margin"></div>
+                        <div class="col-4-24 margin"></div>
                     </div>
                 </div>
 
