@@ -93,10 +93,14 @@ extra:
       link: https://fas-bioinformaticspub.slack.com/
     - icon: fontawesome/brands/github
       link: https://github.com/harvardinformatics/
+    - icon: material/dna
+      link: https://bauercore.fas.harvard.edu/  
     - icon: custom/fas-rc-logo
       link: https://www.rc.fas.harvard.edu/
     - icon: custom/fas-shield-logo
       link: https://www.fas.harvard.edu/
+    ## Paths to bundled icons: https://github.com/squidfunk/mkdocs-material/tree/cca090bebb14e9f762984d88abb3707c3ea203d8/material/templates/.icons
+
 
 ### The following configures the buttons and image on the home page ###
 ### Modified from https://github.com/tylerdotrar/mkdocs-coverpage ###
