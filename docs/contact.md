@@ -18,7 +18,7 @@ If you want to join a bioinformatics discussion group and get quick help from us
 
 ## [:fontawesome-solid-users-line:{ .contact-icon } Office hours](events.md)
 
-You can drop in to our office hours without an appointment. We hold office hours during the semester on Wednesdays 1:30 - 4:00 PM in the Northwest Building B227.45. Check the [events](events.md) page for an up to date schedule. 
+You can drop in to our office hours without an appointment. We hold office hours during the semester on Wednesdays 1:30 - 4:00 PM in the [Northwest Building](https://nw.fas.harvard.edu/) ([map](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560)) B227.45. Check the [events](events.md) page for an up to date schedule. 
 
 ---
 
