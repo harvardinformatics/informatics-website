@@ -39,12 +39,13 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
-          - assets/.icons
+          - docs/assets/.icons
 theme: 
   name: material
   custom_dir: docs/assets
@@ -93,10 +94,14 @@ extra:
       link: https://fas-bioinformaticspub.slack.com/
     - icon: fontawesome/brands/github
       link: https://github.com/harvardinformatics/
+    - icon: material/dna
+      link: https://bauercore.fas.harvard.edu/  
     - icon: custom/fas-rc-logo
       link: https://www.rc.fas.harvard.edu/
     - icon: custom/fas-shield-logo
       link: https://www.fas.harvard.edu/
+    ## Paths to bundled icons: https://github.com/squidfunk/mkdocs-material/tree/cca090bebb14e9f762984d88abb3707c3ea203d8/material/templates/.icons
+
 
 ### The following configures the buttons and image on the home page ###
 ### Modified from https://github.com/tylerdotrar/mkdocs-coverpage ###

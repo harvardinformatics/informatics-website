@@ -23,14 +23,16 @@ hide:
 
 # FAQ
 
-### Bauer Core Sequencing
-??? "Bauer Core Sequencing"
+### General
+??? General
 
-    ??? question "How can I download my sequencing data?"
+    ??? question "What's the difference between Informatics and Research Computing?"
 
-        ##### How can I download my sequencing data?
+        ##### What's the difference between Informatics and Research Computing?
 
-        See a list of recommended software tools for downloading sequencing data [here](./how-can-i-download-my-sequencing-data.md).
+        [Research Computing](https://www.rc.fas.harvard.edu/) manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing support for core facility software via the Software Operations group, and providing training, consultation, and collaborative project work for bioinformatics needs through the Bioinformatics group. 
+
+        You can contact Research Computing via their [contact page](https://www.rc.fas.harvard.edu/about/contact/) for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact.md).
 
 ### Bioinformatics
 ??? Bioinformatics
@@ -65,13 +67,12 @@ hide:
 
         For all questions, you can use the [contact form](../contact.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events](../events.md) for times).
 
-### General
-??? General
+### Bauer Core Sequencing
+??? "Bauer Core Sequencing"
 
-    ??? question "What's the difference between Informatics and Research Computing?"
+    ??? question "How can I download my sequencing data?"
 
-        ##### What's the difference between Informatics and Research Computing?
+        ##### How can I download my sequencing data?
 
-        [Research Computing](https://www.rc.fas.harvard.edu/) manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing support for core facility software via the Software Operations group, and providing training, consultation, and collaborative project work for bioinformatics needs through the Bioinformatics group. 
+        See a list of recommended software tools for downloading sequencing data [here](./how-can-i-download-my-sequencing-data.md).
 
-        You can contact Research Computing via their [contact page](https://www.rc.fas.harvard.edu/about/contact/) for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact.md).
