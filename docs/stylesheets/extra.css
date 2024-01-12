@@ -9,7 +9,8 @@
 } */
 
 :root {
-  --md-primary-fg-color:        #262626;
+  /* --md-primary-fg-color:        #262626; */
+  --md-primary-fg-color:        #1e1e1e;
   --md-primary-fg-color--light: #ec8f9c;
   --md-primary-fg-color--dark:  #6d1220;
   /* --md-primary-bg-color:        #ffffff;
