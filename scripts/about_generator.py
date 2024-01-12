@@ -155,10 +155,10 @@ with open(md_output_file, 'w') as md_output:
                         cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '">\n';
                     else:
                         cards_tables[section] += '\t\t\t<a href="' + person_data['link'] + '" target="_blank">\n';
-                    cards_tables[section] += '\t\t\t\t<img class="card-img" src="' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
+                    cards_tables[section] += '\t\t\t\t<img class="card-img" src="' + person_data['img'] + '" alt="Profile picture of ' + person_data['name'] + '">\n';
                     cards_tables[section] += '\t\t\t</a>\n';
                 else:
-                    cards_tables[section] += '\t\t\t<img class="card-img" src="' + person_data['img'] + '" alt="' + person_data['name'] + '">\n';
+                    cards_tables[section] += '\t\t\t<img class="card-img" src="' + person_data['img'] + '" alt="Profile picture of ' + person_data['name'] + '">\n';
                 # Profile image
 
                 link_types = ['pubs', 'github'];
@@ -183,9 +183,9 @@ with open(md_output_file, 'w') as md_output:
                     if 'pubs' in links:
                         cards_tables[section] += '\t\t\t\t<div class="col-' + link_width + '-24 card-link-container">\n\n';
                         cards_tables[section] += '\t\t\t\t\t<div class="icon-link-container">\n';
-                        cards_tables[section] += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['pubs'] + '" target="_blank">\n';
+                        cards_tables[section] += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['pubs'] + '" target="_blank" title="Google Scholar link for ' + person_data['name'] + '">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<div class="icon-container">\n';
-                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="img/icons/scholar-logo-black.png">\n';
+                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for ' + person_data['name'] + '">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t</div>\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<span>Scholar</span>\n';
                         cards_tables[section] += '\t\t\t\t\t\t</a>\n';
@@ -199,9 +199,9 @@ with open(md_output_file, 'w') as md_output:
                     if 'github' in links:
                         cards_tables[section] += '\t\t\t\t<div class="col-' + link_width + '-24 card-link-container">\n\n';
                         cards_tables[section] += '\t\t\t\t\t<div class="icon-link-container">\n';
-                        cards_tables[section] += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['github'] + '" target="_blank">\n';
+                        cards_tables[section] += '\t\t\t\t\t\t<a class="icon-link" href="' + person_data['github'] + '" target="_blank" title="GitHub profile link for ' + person_data['name'] + '">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<div class="icon-container">\n';
-                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="img/icons/github-logo-black.png">\n';
+                        cards_tables[section] += '\t\t\t\t\t\t\t\t<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for ' + person_data['name'] + '">\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t</div>\n';
                         cards_tables[section] += '\t\t\t\t\t\t\t<span>GitHub</span>\n';
                         cards_tables[section] += '\t\t\t\t\t\t</a>\n';
