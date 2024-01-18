@@ -1,5 +1,5 @@
 site_name: Harvard FAS Informatics Group
-copyright: © 2023 | Harvard FAS Informatics
+copyright: © 2023-2024 | Harvard FAS Informatics | <a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Digital Accessibility</a>
 ## Site info
 
 nav:
@@ -90,16 +90,22 @@ extra:
   social:
     - icon: material/email-outline
       link: https://forms.office.com/r/qwXEPbBvFK
+      name: FAS Informatics Contact Form
     - icon: fontawesome/brands/slack
       link: https://fas-bioinformaticspub.slack.com/
+      name: FAS Informatics Slack channel
     - icon: fontawesome/brands/github
       link: https://github.com/harvardinformatics/
+      name: FAS Informatics GitHub
     - icon: material/dna
       link: https://bauercore.fas.harvard.edu/  
+      name: FAS Bauer Core Facility
     - icon: custom/fas-rc-logo
       link: https://www.rc.fas.harvard.edu/
+      name: FAS Research Computing
     - icon: custom/fas-shield-logo
       link: https://www.fas.harvard.edu/
+      name: Harvard FAS
     ## Paths to bundled icons: https://github.com/squidfunk/mkdocs-material/tree/cca090bebb14e9f762984d88abb3707c3ea203d8/material/templates/.icons
 
 

@@ -13,7 +13,7 @@ The informatics group develops methods and software for various genomics tasks w
     <div class="col-6-24 software-logo-cont">
         <div class="inner-container">
             <a href="https://phyloacc.github.io/" target="_blank">
-                <img class="software-logo" src="../img/software-logos/phyloacc-link-logo.png">
+                <img class="software-logo" src="../img/software-logos/phyloacc-link-logo.png" alt="PhyloAcc logo. A stack of overlapping phylogenetic trees in different colors.">
             </a>
         </div>
     </div>
@@ -31,7 +31,7 @@ The informatics group develops methods and software for various genomics tasks w
 
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
-        <a href="https://github.com/harvardinformatics/snpArcher" target="_blank">
+        <a href="https://github.com/harvardinformatics/snpArcher" target="_blank" alt="SNP Archer logo. A logo that spells out SNP in large letters and the word Archer below. The S is styled as an abstract snake logo in the style of Snakemake and the P is crossed by an image of an arrow and a bowstring, making it look like a drawn bow and arrow. There is a small image of a bird atop the S.">
             <img class="software-logo" src="../img/software-logos/snparcher-link-logo.png">
         </a>
     </div>
@@ -47,7 +47,7 @@ The informatics group develops methods and software for various genomics tasks w
 ##
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
-        <a href="https://github.com/harvardinformatics/degenotate" target="_blank">
+        <a href="https://github.com/harvardinformatics/degenotate" target="_blank" alt="degenotate logo. A square logo with with the word degenotate written, a sequence of numbers and letters below it, and a representation of DNA below that.">
             <img class="software-logo" src="../img/software-logos/degenotate-link-logo.png">
         </a>
     </div>
@@ -67,7 +67,7 @@ The informatics group develops methods and software for various genomics tasks w
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
         <a href="https://github.com/harvardinformatics/scclusteval" target="_blank">
-            <img class="software-logo" src="../img/software-logos/scclusteval-link-logo.png">
+            <img class="software-logo" src="../img/software-logos/scclusteval-link-logo.png" alt="scclusteval logo. A hexagonal logo with the word scclusteval written in the top portion and clusters of points of different colors below.">
         </a>
     </div>
 
@@ -82,7 +82,7 @@ The informatics group develops methods and software for various genomics tasks w
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
         <a href="https://github.com/harvardinformatics/HieRFIT" target="_blank">
-            <img class="software-logo" src="../img/software-logos/hierfit-link-logo.png">
+            <img class="software-logo" src="../img/software-logos/hierfit-link-logo.png" alt="HieRFIT logo. A hexagonal logo with points in a circle on the left, various arrows and icons in the middle, and the same points now colored on the right.">
         </a>
     </div>
 

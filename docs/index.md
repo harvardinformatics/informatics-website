@@ -38,7 +38,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="about/people/timsackton/">
-				<img class="card-img" src="img/people/timsackton.jpg" alt="Tim Sackton">
+				<img class="card-img" src="img/people/timsackton.jpg" alt="Profile picture of Tim Sackton">
 			</a>
 			<div class="row card-link-row">
 
@@ -47,9 +47,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Tim Sackton">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Tim Sackton">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -61,9 +61,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/tsackton" target="_blank">
+						<a class="icon-link" href="https://github.com/tsackton" target="_blank" title="GitHub profile link for Tim Sackton">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Tim Sackton">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -109,7 +109,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://ahfgenomics.com/" target="_blank">
-				<img class="card-img" src="img/people/adamfreedman.png" alt="Adam Freedman">
+				<img class="card-img" src="img/people/adamfreedman.png" alt="Profile picture of Adam Freedman">
 			</a>
 			<div class="row card-link-row">
 
@@ -118,9 +118,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Adam Freedman">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Adam Freedman">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -132,9 +132,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/adamfreedman" target="_blank">
+						<a class="icon-link" href="https://github.com/adamfreedman" target="_blank" title="GitHub profile link for Adam Freedman">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Adam Freedman">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -171,7 +171,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/daniellekhost.jpg" alt="Danielle Khost">
+			<img class="card-img" src="img/people/daniellekhost.jpg" alt="Profile picture of Danielle Khost">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -179,9 +179,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/danielle-khost" target="_blank">
+						<a class="icon-link" href="https://github.com/danielle-khost" target="_blank" title="GitHub profile link for Danielle Khost">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Danielle Khost">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -227,7 +227,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://gwct.github.io/" target="_blank">
-				<img class="card-img" src="img/people/greggthomas.jpg" alt="Gregg Thomas">
+				<img class="card-img" src="img/people/greggthomas.jpg" alt="Profile picture of Gregg Thomas">
 			</a>
 			<div class="row card-link-row">
 
@@ -236,9 +236,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=4pydfEUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=4pydfEUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Gregg Thomas">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Gregg Thomas">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -250,9 +250,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/gwct" target="_blank">
+						<a class="icon-link" href="https://github.com/gwct" target="_blank" title="GitHub profile link for Gregg Thomas">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Gregg Thomas">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -289,7 +289,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/leima.jpg" alt="Lei Ma">
+			<img class="card-img" src="img/people/leima.jpg" alt="Profile picture of Lei Ma">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -297,9 +297,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/microlei" target="_blank">
+						<a class="icon-link" href="https://github.com/microlei" target="_blank" title="GitHub profile link for Lei Ma">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Lei Ma">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -344,7 +344,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/rawanolayan.jpg" alt="Rawan Olayan">
+			<img class="card-img" src="img/people/rawanolayan.jpg" alt="Profile picture of Rawan Olayan">
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -352,9 +352,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=qxUMqP4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=qxUMqP4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Rawan Olayan">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Rawan Olayan">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -400,7 +400,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
 			<a href="https://www.subir.com.np/" target="_blank">
-				<img class="card-img" src="img/people/subirshakya.jpg" alt="Subir Shakya">
+				<img class="card-img" src="img/people/subirshakya.jpg" alt="Profile picture of Subir Shakya">
 			</a>
 			<div class="row card-link-row">
 
@@ -409,9 +409,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Subir Shakya">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Subir Shakya">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -448,7 +448,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/katyaosipova.jpg" alt="Katya Osipova">
+			<img class="card-img" src="img/people/katyaosipova.jpg" alt="Profile picture of Katya Osipova">
 			<div class="row card-link-row">
 
 				<div class="col-0-24 card-margin"></div>
@@ -456,9 +456,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Katya Osipova">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png">
+								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Katya Osipova">
 							</div>
 							<span>Scholar</span>
 						</a>
@@ -470,9 +470,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 				<div class="col-12-24 card-link-container">
 
 					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/osipovarev" target="_blank">
+						<a class="icon-link" href="https://github.com/osipovarev" target="_blank" title="GitHub profile link for Katya Osipova">
 							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png">
+								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Katya Osipova">
 							</div>
 							<span>GitHub</span>
 						</a>
@@ -523,7 +523,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/aaronkitzmiller.jpg" alt="Aaron Kitzmiller">
+			<img class="card-img" src="img/people/aaronkitzmiller.jpg" alt="Profile picture of Aaron Kitzmiller">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -558,7 +558,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/ddantonio.jpg" alt="David D'Antonio">
+			<img class="card-img" src="img/people/ddantonio.jpg" alt="Profile picture of David D'Antonio">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -585,7 +585,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/nathanweeks.jpg" alt="Nathan Weeks">
+			<img class="card-img" src="img/people/nathanweeks.jpg" alt="Profile picture of Nathan Weeks">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
@@ -620,7 +620,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="" alt="Jared Vessella-Smith">
+			<img class="card-img" src="" alt="Profile picture of Jared Vessella-Smith">
 		</div>
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-13-24 card-content">
