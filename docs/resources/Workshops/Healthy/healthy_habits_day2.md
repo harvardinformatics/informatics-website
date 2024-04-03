@@ -1,4 +1,4 @@
-# Review of paper and get everyone caught up
+## Review of paper and get everyone caught up
 
 For those of us who may not have been here on day 1, we're going to be working on reproducing a paper that looked at evolution of E. coli transcription over the course of 22 years. We're going to be going through this general workflow which runs from acquiring the raw data to cleaning the data, and then analyzing and finishing with visualization. 
 

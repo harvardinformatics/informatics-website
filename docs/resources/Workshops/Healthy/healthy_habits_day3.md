@@ -1,4 +1,4 @@
-# Introductions
+## Introductions
 
 Welcome to day 3 of Healthy Habits. Today we're going to learn about version control using git/GitHub. While the central concept of git and its use is designed to integrate smoothly into your workflow, it can be unintuitive at first. To start off with let's do introductions and this time let's say your name and say where you primarily get your scripts/code from. For example, I write a lot of my own scripts but sometimes I follow a tutorial online and copy-paste it from there. 
 

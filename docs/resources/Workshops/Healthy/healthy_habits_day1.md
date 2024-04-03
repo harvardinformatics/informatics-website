@@ -1,4 +1,4 @@
-# Introductions
+## Introductions
 
 Hi everyone! As you're coming in please fill out the attendance trackers. I'm also going to ask you to sit next to someone that's in a different lab than you. 
 

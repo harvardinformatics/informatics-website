@@ -1,4 +1,4 @@
-# Introductions
+## Introductions
 Good morning and welcome to day 4 of Healthy Habits. Today we're going to talk about how to use scripts and loops to be able to "scale up" analysis, how to deploy these scaled-up analyses on the Cannon cluster, and how to track work with "notebooks". In previous days of the workshop, you've submitted scripts to generate data necessary to produce Figure 1 from our example paper on patterns of expression parallelism of gene expression in *E. coli*. But today we will take a finer-grained look at SLURM scripts, and explain best practices for quickly and efficiently performing analysis on large numbers of files. In short, we will be explaining, with examples, practical "how tos" for doing with your data, what you've been doing with our example data.
 
 
@@ -66,9 +66,7 @@ The SLURM script identifies which specific resources are being requested, and wh
 
 ## Nodes, CPUs, and cores
 What's in a node? CPUs and cores!
-<p align="center">
-<img src="https://github.com/harvardinformatics/workshops/blob/main/2024-spring/healthy_habits/img/nodesummary.png" width=75% height=75%>
-</p>
+![](nodesummary.png)
 
 While this distinction between CPUs and cores is meaningful with respect to the actual hardware architecture, from the perspective of end-users of Cannon resources, there is no meaningful distinction. SLURM command line arguments that specify the number of CPUs are actually specifying the number of cores, because they are specifying the indiviual resources that are executing code that gets invoked by command lines. 99%, perhaps more, will fall into one of two categories:
 
@@ -136,6 +134,7 @@ done
 ```
 
 > **Exercise**:
+>
 >* Copy *kallisto_index.sh* that you grabbed with *cp* at the start of today's workshop, and rename that copy *kallisto_index_noloop.sh*
 >* Add a SLURM header so that the script runs for 5 minutes with 1Gb of memory on serial requeue
 >* Change log files and job name accordingly, and have log files write into a directory called index_logs.
@@ -153,7 +152,7 @@ done
 
 ### Introducting ... job arrays!
 With a limited number of input files, or variations on a command line argument you are permuting to investigate its effects on output, it may be straightforward to feed input arguments in a loop (as above). As the number of files or inputs increases, this becomes a less ideal way of doing things. A (frequently better) alternative is to submit a set of related jobs that use the same general command structure, as a job array. In a SLURM job array there is a parent job (with its own id) and a series of associated child jobs subsumed by it: one for each command line execution with the specific inputs you have provided. If you check the job status of an array with *sacct*, it will return something like this:
-`
+
 |JobID | JobName | Partition | Account | AllocCPUS | State |ExitCode| 
 |------------|----------|----------|----------|----------|----------|--------|
 | <parent_id>_1 | test | serial_requeue | <username> | 1 | RUNNING | 0:0 |
