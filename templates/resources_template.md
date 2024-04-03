@@ -28,7 +28,7 @@ This workshop aims to introduce first-time users to the [R programming language]
 - [Part 2: Introduction to data manipulation with the tidyverse](Workshops/R/R-workshop-2023-Part2.md) - [Download student RMD file](Workshops/R/R-workshop-2023-Part2-student.Rmd)
 - [Part 3: Introduction to data visualization with ggplot](Workshops/R/R-workshop-2023-Part3.md) - [Download student RMD file](Workshops/R/R-workshop-2023-Part3-student.Rmd)
 
-### Unix tips and tricks for bioinformatics (currently updating for Spring 2024)
+### Unix tips and tricks for bioinformatics
 
 This workshop aims to introduce students to some basic bioinformatics file formats, tools, and general best practices. The first two days of the workshop will be dedicated to introductions of bioinformatics file formats and the command line tools that we use to view, manipulate, and analyze them. After that, we will begin to shift from using individual commands to writing shell scripts and constructing bioinformatics workflows.
 
@@ -40,6 +40,17 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 - [Part 3: Bioinformatics tools and file formats 3: GFF, VCF, bcftools](Workshops/Unix/Biotips-workshop-2024-Day3.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2024-Day3-student.Rmd)
 - [Part 4: Shell scripting](Workshops/Unix/Biotips-workshop-2024-Day4.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2024-Day4-student.Rmd)
 
+### Healthy Habits for Data Science
+
+This workshop aims to teach students how to be more effective at working on their projects using reproducible habits. We learn how to organize projects on the local machine as well as the Cannon cluster, how to manage software environments, how to use git and GitHub to track code changes, and how to write and scale scripts on an HPC. Loose transcripts of the lectures are available below. Download the pdfs of the slides (if applicable) to follow along with the lecture. 
+
+- [Workshop Information](https://harvardinformatics.github.io/workshops/2024-spring/healthy_habits/)
+- [Get started](https://harvardinformatics.github.io/workshops/2024-spring/healthy_habits/start.html)
+
+- [Day 1: Reproducibility, and project organization](Workshops/Healthy/healthy_habits_day1.md) - [Download pdf of slides](Workshops/Healthy/healthy_habits_day1_ppt.pdf)
+- [Day 2: Software environments](Workshops/Healthy/healthy_habits_day2.md)
+- [Day 3: Version control with git and GitHub](Workshops/Healthy/healthy_habits_day3.md) - [Download pdf of slides](Workshops/Healthy/healthy_habits_day3_ppt.pdf)
+- [Day 4: Running scripts on the Cannon cluster](Workshops/Healthy/healthy_habits_day4.md)
 
 ## External resources
 

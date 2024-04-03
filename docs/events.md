@@ -8,12 +8,7 @@ hide:
 
 ## Current workshops
 
-We will be running two workshops this spring, sign up link is [here](https://forms.gle/3Hj1E425p9W3PcCD6). The workshops are open to all FAS students/postdocs/staff on a first-come first-serve basis. Full description below:
-
-1. **Bioinformatics Tips and Tricks (2/21, 2/22, 2/28, 2/29).** An introduction to the power of command line tools for bioinformatics, as well as standard bioinformatics file types such as sam, bam, fasta, bed, gff/gtf, and vcf. Will include both general purpose tools like awk, and specific tools for manipulation of standard bioinformatics file formats (e.g. bedtools, samtools, seqtk, bcftools). Basic knowledge of the command line will be assumed (e.g., ls, cd, cp, mv), but we will introduce all more advanced topics.
- 
-2. **Healthy Habits for Data Science (3/13, 3/14\*, 3/20, 3/21, 3/27, 3/28\*).** A new course designed to teach project and data management skills with a backdrop of bioinformatics. We will be learning how to organize your data project on your computer and on the Cannon cluster, management of software environments, how to use git and GitHub for reproducibility, and how to write and scale scripts on an HPC. This course has 4 main days that build on each other around the concept of improving reproducibility (and your own sanity) plus 2 "bonus" days (indicated by asterisk) which are optional and will mostly cover specific software or workflows that relate to customizing/streamlining a person's working environment.
- 
+We will be offering workshops in the summer. Stay tuned for more information!
 
 ## Office hours
 
