@@ -2,9 +2,7 @@
 
 For those of us who may not have been here on day 1, we're going to be working on reproducing a paper that looked at evolution of E. coli transcription over the course of 22 years. We're going to be going through this general workflow which runs from acquiring the raw data to cleaning the data, and then analyzing and finishing with visualization. 
 
-<div style="text-align:center">
-  <img src="img/day2/favate-fig.png" alt="figure from Favate et al. 2022"  style="max-height:800px;">
-</div>
+![Figure from Favate paper](favate_fig1.png)
 
 However, all ths scripts and some of the intermediate files will be provided for you so you can focus on the project management side and have the data analysis as a backdrop. To that end, to make sure we're on the same page, let's make sure we all have our project directory set up.
 
@@ -87,7 +85,7 @@ Ok, well why does any of this matter when we want to install software?
 We showed you this the other day:
 
 <div align="center">
-    <img src="img/day2/fs1.png" alt="Tree diagram of typical Cannon cluster users's network mounted storage" style="max-height:500px;">
+    <img src="./img/fs1.png" alt="Tree diagram of typical Cannon cluster users's network mounted storage" style="max-height:500px;">
 </div>
 
 This show's a cluster users typical view of the file system. The `home` directory is where you have a small amount of space for your personal files. The `holyscratch01` directory is where you have a large amount of space for temporary files. The `holylfs` is where each lab group has a large amount of space for their files. The directory where we have put the data for this workshop is in `holyscratch01/<USERNAME>/healthy-habits/`.
