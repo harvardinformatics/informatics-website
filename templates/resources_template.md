@@ -34,10 +34,12 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 
 - [Workshop information](https://harvardinformatics.github.io/workshops/2024-spring/biotips/)
 - [Get started](https://harvardinformatics.github.io/workshops/2024-spring/biotips/start.html)
-<!-- - [Part 1: Bioinformatics tools and file formats 1: FASTA, FASTQ, grep, BAM/SAM, samtools](Workshops/Unix/Biotips-workshop-2023-Day1.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2023-Day1-student.Rmd) -->
-<!-- - [Part 2: Bioinformatics tools and file formats 2: bed, awk, bedtools](Workshops/Unix/Biotips-workshop-2023-Day2.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2023-Day2-student.Rmd) -->
-<!-- - [Part 3: Bioinformatics tools and file formats 3: GFF, VCF, bcftools](Workshops/Unix/Biotips-workshop-2023-Day3.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2023-Day3-student.Rmd) -->
-<!-- - [Part 4: Shell scripting](Workshops/Unix/Biotips-workshop-2023-Day4.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2023-Day4-student.Rmd) -->
+
+- [Part 1: Bioinformatics tools and file formats 1: FASTA, FASTQ, grep, BAM/SAM, samtools](Workshops/Unix/Biotips-workshop-2024-Day1.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2024-Day1-student.Rmd) 
+- [Part 2: Bioinformatics tools and file formats 2: bed, awk, bedtools](Workshops/Unix/Biotips-workshop-2024-Day2.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2024-Day2-student.Rmd)
+- [Part 3: Bioinformatics tools and file formats 3: GFF, VCF, bcftools](Workshops/Unix/Biotips-workshop-2024-Day3.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2024-Day3-student.Rmd)
+- [Part 4: Shell scripting](Workshops/Unix/Biotips-workshop-2024-Day4.md) - [Download student RMD file](Workshops/Unix/Biotips-workshop-2024-Day4-student.Rmd)
+
 
 ## External resources
 
