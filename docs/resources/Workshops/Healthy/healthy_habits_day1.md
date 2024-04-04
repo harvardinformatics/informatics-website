@@ -1,3 +1,25 @@
+---
+title: "Harvard Informatics Healthy Habits for Data Science Workshop"
+subtitle: "Day 1: Reproducibility and Project Management"
+date: "March 13, 2024"
+author: "Lei Ma"
+output: 
+  md_document:
+    variant: gfm
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style type="text/css">
+    pre { overflow-x: scroll }
+    pre code { white-space: pre; }
+    /* This makes the output blocks scroll horizontally in HTML renders */
+
+    .md-sidebar--secondary { order: 0; }
+    .md-sidebar--primary { display: none; }
+    /* This hides the Navigation sidebar and moves the TOC sidebar to the left in HTML renders */
+</style>
+
 ## Introductions
 
 Hi everyone! As you're coming in please fill out the attendance trackers. I'm also going to ask you to sit next to someone that's in a different lab than you. 
@@ -108,11 +130,16 @@ FAIR principles apply to both the data and the metadata, so  I would say that th
 
 
 # Overview of paper
-The paper we're reproducing is "The landscape of transcriptional and translational changes over 22 years of bacterial adaptation" by Favate et al. The basic premise is that 12 lines of E. coli have been evolving in the lab for 22 years and the authors are interested in finding out whether transcriptional changes have happened over that time period compared to the ancestor strain. Transcription is the creation of mRNA from DNA, so the genetic changes of these lines are well characterized but the authors are curious of the actual expression of these genes are different. 
+The paper we're reproducing is ["The landscape of transcriptional and translational changes over 22 years of bacterial adaptation" by Favate et al. (2022)](https://doi.org/10.7554/eLife.81979). The basic premise is that 12 lines of E. coli have been evolving in the lab for 22 years and the authors are interested in finding out whether transcriptional changes have happened over that time period compared to the ancestor strain. Transcription is the creation of mRNA from DNA, so the genetic changes of these lines are well characterized but the authors are curious of the actual expression of these genes are different. 
 
 All these lines have been frozen in glycerol stock so that they can preserve the exact genetic makeup of each time point in this long term evolution experiment and resuscitate the cells at any time. The authors revive the lines and sequence their RNA to assess transcriptional activity. They also did something called ribo-seq to assess translation, but we're not going to be analyzing that data. We'll be recreating a few panels from figure one of the paper. 
 
-![](schematic_figure.png)
+<div align="center">
+    <figure>
+        <img src="../img/schematic_figure.png" alt="schematic_figure" style="max-height:500px;">
+        <figcaption>Schematic figure</figcaption>
+    </figure>
+</div>
 
 But we're not that interested in interpreting the results. We're interested in the process of generating the results and how to do it reproducibly and with less headache.
 
@@ -173,7 +200,9 @@ Every one of you also has access to your **lab's directory**. This LAB directory
 
 There's also the **scratch directory**, which is a very fast drive in terms of reading and writing files, but files there get deleted if they are >90 days old. It's a good place to run large analyses, but you have to remember to copy the final results over to your lab directory. For this workshop, we'll put everything in the scratch directory since we don't know for sure that your respective lab directories are full. Scratch space is shared by everyone and the limit is very high so you'll always have room there. 
 
-> **IMAGE of directory structure of the cluster**
+<div align="center">
+    <img src="../img/fs1.png" alt="Tree diagram of typical Cannon cluster users's network mounted storage" style="max-height:500px;">
+</div>
 
 > **ACTIVITY: Have students log on to the cluster and make a new project folder in their scratch directory. Then copy the day 1 files over and organize them**
 

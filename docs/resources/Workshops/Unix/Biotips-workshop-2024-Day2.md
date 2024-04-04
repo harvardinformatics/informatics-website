@@ -9,15 +9,16 @@ output:
 editor_options: 
   chunk_output_type: inline
 ---
+
 <style type="text/css">
-&#10;pre {
-  overflow-x: scroll
-}
-&#10;pre code {
-  white-space: pre;
-}
-&#10;/* This makes the output blocks scroll horizontally in HTML renders */
-&#10;</style>
+    pre { overflow-x: scroll }
+    pre code { white-space: pre; }
+    /* This makes the output blocks scroll horizontally in HTML renders */
+
+    .md-sidebar--secondary { order: 0; }
+    .md-sidebar--primary { display: none; }
+    /* This hides the Navigation sidebar and moves the TOC sidebar to the left in HTML renders */
+</style>
 
 Welcome to the second day of the [FAS
 Informatics](https://informatics.fas.harvard.edu/) [Bioinformatics Tips

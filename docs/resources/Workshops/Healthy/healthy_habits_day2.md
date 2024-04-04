@@ -1,8 +1,35 @@
+---
+title: "Harvard Informatics Healthy Habits for Data Science Workshop"
+subtitle: "Day 2: Installing and Managing Software"
+date: "March 20, 2024"
+author: "Gregg Thomas"
+output: 
+  md_document:
+    variant: gfm
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style type="text/css">
+    pre { overflow-x: scroll }
+    pre code { white-space: pre; }
+    /* This makes the output blocks scroll horizontally in HTML renders */
+
+    .md-sidebar--secondary { order: 0; }
+    .md-sidebar--primary { display: none; }
+    /* This hides the Navigation sidebar and moves the TOC sidebar to the left in HTML renders */
+</style>
+
 ## Review of paper and get everyone caught up
 
 For those of us who may not have been here on day 1, we're going to be working on reproducing a paper that looked at evolution of E. coli transcription over the course of 22 years. We're going to be going through this general workflow which runs from acquiring the raw data to cleaning the data, and then analyzing and finishing with visualization. 
 
-![Figure from Favate paper](favate_fig1.png)
+<div align="center">
+    <figure>
+        <img src="../img/favate-fig.png" alt="Figure from Favate paper" style="max-height:500px;">
+        <figcaption>Figure 1 from <a href="https://doi.org/10.7554/eLife.81979" target="_blank">Favate et al. 2022</a></figcaption>
+    </figure>
+</div>
 
 However, all ths scripts and some of the intermediate files will be provided for you so you can focus on the project management side and have the data analysis as a backdrop. To that end, to make sure we're on the same page, let's make sure we all have our project directory set up.
 
@@ -85,7 +112,10 @@ Ok, well why does any of this matter when we want to install software?
 We showed you this the other day:
 
 <div align="center">
-    <img src="./img/fs1.png" alt="Tree diagram of typical Cannon cluster users's network mounted storage" style="max-height:500px;">
+    <figure>
+        <img src="../img/fs1.png" alt="Tree diagram of typical Cannon cluster users's network mounted storage" style="max-height:500px;">
+        <figcaption>Tree diagram of typical Cannon cluster users's network mounted storage</figcaption>
+    </figure>
 </div>
 
 This show's a cluster users typical view of the file system. The `home` directory is where you have a small amount of space for your personal files. The `holyscratch01` directory is where you have a large amount of space for temporary files. The `holylfs` is where each lab group has a large amount of space for their files. The directory where we have put the data for this workshop is in `holyscratch01/<USERNAME>/healthy-habits/`.
@@ -93,7 +123,10 @@ This show's a cluster users typical view of the file system. The `home` director
 However, this is not the entire file system for the remote computer you're operating on. Typically, the **ROOT** directory of a computer, that is the start of the file system, is `/` for Unix systems and `C:\` for Windows systems. The root directory contains all the files and directories on the computer, including the files and programs necessary for the computer to run. If we take a look at the root directory of any given login node on the cluster, it will look something like this:
 
 <p align="center">
-    <img src="img/day2/fs2.png" alt="Tree diagram of typical Cannon cluster login node root directory" style="max-height:800px;">
+    <figure>
+        <img src="../img/fs2.png" alt="Tree diagram of typical Cannon cluster login node root directory" style="max-height:800px;">
+        <figcaption>Tree diagram of typical Cannon cluster login node root directory</figcaption>
+    </figure>    
 </p>
 
 You almost never want to modify files or install software in the root directory because this can cause the computer to malfunction. Even experienced system administrators are careful about what they do in the root directory. Needless to say then, on a cluster with many users, the best practice is to make the root directory read-only.

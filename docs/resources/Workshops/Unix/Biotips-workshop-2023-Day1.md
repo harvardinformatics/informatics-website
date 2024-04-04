@@ -12,17 +12,12 @@ editor_options:
 
 
 <style type="text/css">
+    pre { overflow-x: scroll }
+    pre code { white-space: pre; }
+    /* This makes the output blocks scroll horizontally in HTML renders */
 
-pre {
-  overflow-x: scroll
-}
-
-pre code {
-  white-space: pre;
-}
-
-/* This makes the output blocks scroll horizontally in HTML renders */
-
+    .md-sidebar--secondary { order: 0; }
+    .md-sidebar--primary { display: none; border: 1px solid red; }
 </style>
 
 

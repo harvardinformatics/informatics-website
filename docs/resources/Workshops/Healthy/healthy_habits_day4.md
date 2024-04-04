@@ -1,6 +1,28 @@
-## Introductions
-Good morning and welcome to day 4 of Healthy Habits. Today we're going to talk about how to use scripts and loops to be able to "scale up" analysis, how to deploy these scaled-up analyses on the Cannon cluster, and how to track work with "notebooks". In previous days of the workshop, you've submitted scripts to generate data necessary to produce Figure 1 from our example paper on patterns of expression parallelism of gene expression in *E. coli*. But today we will take a finer-grained look at SLURM scripts, and explain best practices for quickly and efficiently performing analysis on large numbers of files. In short, we will be explaining, with examples, practical "how tos" for doing with your data, what you've been doing with our example data.
+---
+title: "Harvard Informatics Healthy Habits for Data Science Workshop"
+subtitle: "Day 4: Running Scripts on the Cluster"
+date: "March 27, 2024"
+author: "Adam Freedman"
+output: 
+  md_document:
+    variant: gfm
+editor_options: 
+  chunk_output_type: inline
+---
 
+<style type="text/css">
+    pre { overflow-x: scroll }
+    pre code { white-space: pre; }
+    /* This makes the output blocks scroll horizontally in HTML renders */
+
+    .md-sidebar--secondary { order: 0; }
+    .md-sidebar--primary { display: none; }
+    /* This hides the Navigation sidebar and moves the TOC sidebar to the left in HTML renders */
+</style>
+
+## Introductions
+
+Good morning and welcome to day 4 of Healthy Habits. Today we're going to talk about how to use scripts and loops to be able to "scale up" analysis, how to deploy these scaled-up analyses on the Cannon cluster, and how to track work with "notebooks". In previous days of the workshop, you've submitted scripts to generate data necessary to produce Figure 1 from our example paper on patterns of expression parallelism of gene expression in *E. coli*. But today we will take a finer-grained look at SLURM scripts, and explain best practices for quickly and efficiently performing analysis on large numbers of files. In short, we will be explaining, with examples, practical "how tos" for doing with your data, what you've been doing with our example data.
 
 ## Preliminaries ... workshop data
 In case you haven't already done this, please go to the directory you created for running data processing and analysis on the Cannon cluster and do the following:
@@ -66,7 +88,13 @@ The SLURM script identifies which specific resources are being requested, and wh
 
 ## Nodes, CPUs, and cores
 What's in a node? CPUs and cores!
-![](nodesummary.png)
+
+<div align="center">
+    <figure>
+        <img src="../img/nodesummary.png" alt="Schematic of compute node on Cannon cluster" style="max-height:500px;">
+        <figcaption>Schematic of compute node on Cannon cluster</a></figcaption>
+    </figure>
+</div>
 
 While this distinction between CPUs and cores is meaningful with respect to the actual hardware architecture, from the perspective of end-users of Cannon resources, there is no meaningful distinction. SLURM command line arguments that specify the number of CPUs are actually specifying the number of cores, because they are specifying the indiviual resources that are executing code that gets invoked by command lines. 99%, perhaps more, will fall into one of two categories:
 
@@ -150,7 +178,7 @@ do sbatch kallisto_index_noloop.sh $file
 done
 ```
 
-### Introducting ... job arrays!
+### Introducing ... job arrays!
 With a limited number of input files, or variations on a command line argument you are permuting to investigate its effects on output, it may be straightforward to feed input arguments in a loop (as above). As the number of files or inputs increases, this becomes a less ideal way of doing things. A (frequently better) alternative is to submit a set of related jobs that use the same general command structure, as a job array. In a SLURM job array there is a parent job (with its own id) and a series of associated child jobs subsumed by it: one for each command line execution with the specific inputs you have provided. If you check the job status of an array with *sacct*, it will return something like this:
 
 |JobID | JobName | Partition | Account | AllocCPUS | State |ExitCode| 
@@ -397,5 +425,3 @@ Just a reminder regarding what we requested per array job:
 ```
 
 Jobs that requested 8 hours per array execution took a few seconds ... and certainly DID NOT use 24Gb! Overall ... it seems pretty clear that we could request far less memory, fewer cores, and far less time to run the jobs!
-
-!

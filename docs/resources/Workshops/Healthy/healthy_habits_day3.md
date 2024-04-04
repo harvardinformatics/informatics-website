@@ -1,7 +1,27 @@
+---
+title: "Harvard Informatics Healthy Habits for Data Science Workshop"
+subtitle: "Day 3: Version Control with git and GitHub"
+date: "March 21, 2024"
+author: "Lei Ma"
+output: 
+  md_document:
+    variant: gfm
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style type="text/css">
+    pre { overflow-x: scroll }
+    pre code { white-space: pre; }
+    /* This makes the output blocks scroll horizontally in HTML renders */
+
+    .md-sidebar--secondary { order: 0; }
+    .md-sidebar--primary { display: none; }
+</style>
+
 ## Introductions
 
 Welcome to day 3 of Healthy Habits. Today we're going to learn about version control using git/GitHub. While the central concept of git and its use is designed to integrate smoothly into your workflow, it can be unintuitive at first. To start off with let's do introductions and this time let's say your name and say where you primarily get your scripts/code from. For example, I write a lot of my own scripts but sometimes I follow a tutorial online and copy-paste it from there. 
-
 
 # Why version control is important
 
