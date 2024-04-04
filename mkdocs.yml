@@ -11,9 +11,9 @@ nav:
       - R: 
         - Introduction: resources/Workshops/R/index.html
         - Get started: resources/Workshops/R/start.html
-        - Part 1: resources/Workshops/R/R-workshop-2024-Part1.md
-        - Part 2: resources/Workshops/R/R-workshop-2024-Part2.md
-        - Part 3: resources/Workshops/R/R-workshop-2024-Part3.md
+        - Part 1: resources/Workshops/R/R-workshop-2023-Part1.md
+        - Part 2: resources/Workshops/R/R-workshop-2023-Part2.md
+        - Part 3: resources/Workshops/R/R-workshop-2023-Part3.md
       - Unix: 
         - Introduction: resources/Workshops/Unix/index.html
         - Get started: resources/Workshops/Unix/start.html
