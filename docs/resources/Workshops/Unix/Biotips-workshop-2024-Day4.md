@@ -29,7 +29,7 @@ If you’re viewing this file on the website, you are viewing the final,
 formatted version of the workshop. The workshop itself will take place
 in the RStudio program and you will *edit the file while executing code
 in the terminal*. Please download the raw file
-[here](https://harvardinformatics.github.io/workshops/2024-spring/biotips/Biotips-workshop-2024_Day4-student.Rmd)
+[here](Biotips-workshop-2024-Day4-student.Rmd).
 
 Today you’ll learn more about how to write scripts, control the behavior
 of your scripts using loops and conditional statements, and more!

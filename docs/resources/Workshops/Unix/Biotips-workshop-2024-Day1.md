@@ -30,7 +30,7 @@ If you’re viewing this file on the website, you are viewing the final,
 formatted version of the workshop. The workshop itself will take place
 in the RStudio program and you will *edit and execute the code in this
 file*. Please download the raw file
-[here](https://harvardinformatics.github.io/workshops/2024-spring/biotips/Biotips-workshop-2024_Day1-student.Rmd)
+[here](Biotips-workshop-2024-Day1-student.Rmd).
 
 This is the workshop file that should be opened in RStudio. This is an
 RMarkdown file, meaning that both formatted text and code blocks can be

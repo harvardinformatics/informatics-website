@@ -29,7 +29,7 @@ If you’re viewing this file on the website, you are viewing the final,
 formatted version of the workshop. The workshop itself will take place
 in the RStudio program and you will *edit and execute the code in this
 file*. Please download the raw file
-[here](https://harvardinformatics.github.io/workshops/2024-spring/biotips/Biotips-workshop-2024_Day2-student.Rmd)
+[here](Biotips-workshop-2024-Day2-student.Rmd).
 
 Today we’re going to continue our tour and explanation of common
 genomics file formats and their associated tools by talking about
