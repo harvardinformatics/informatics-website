@@ -201,7 +201,10 @@ Every one of you also has access to your **lab's directory**. This LAB directory
 There's also the **scratch directory**, which is a very fast drive in terms of reading and writing files, but files there get deleted if they are >90 days old. It's a good place to run large analyses, but you have to remember to copy the final results over to your lab directory. For this workshop, we'll put everything in the scratch directory since we don't know for sure that your respective lab directories are full. Scratch space is shared by everyone and the limit is very high so you'll always have room there. 
 
 <div align="center">
-    <img src="../img/fs1.png" alt="Tree diagram of typical Cannon cluster users's network mounted storage" style="max-height:500px;">
+    <figure>
+        <img src="../img/fs1.png" alt="Tree diagram of typical Cannon cluster users's network mounted storage" style="max-height:500px;">
+        <figcaption>Tree diagram of typical Cannon cluster users's network mounted storage</figcaption>
+    </figure>
 </div>
 
 > **ACTIVITY: Have students log on to the cluster and make a new project folder in their scratch directory. Then copy the day 1 files over and organize them**
