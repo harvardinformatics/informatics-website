@@ -942,13 +942,13 @@ our next bioinformatic tool, `samtools`!
 
 ### SAMtools
 
-[SAMtools](http://www.htslib.org/doc/samtools.html) is a suite of
+[SAMtools](https://www.htslib.org/doc/samtools.html) is a suite of
 programs that are extremely useful for processing mapped reads and for
 downstream analysis. As stated above, SAM/BAM files from different
 programs are (mostly) interchangeable, so `samtools` will work with a
 file SAM/BAM file no matter what program produced it. It has a ton of
 functions (which you can check out on the [manual
-page](http://www.htslib.org/doc/samtools.html)), but we will go through
+page](https://www.htslib.org/doc/samtools.html)), but we will go through
 several of the most common uses.
 
 #### samtools view

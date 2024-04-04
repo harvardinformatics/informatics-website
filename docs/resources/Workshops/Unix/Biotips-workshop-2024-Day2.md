@@ -252,7 +252,7 @@ following links:
 - [Description of bed files from
   bedtools](https://bedtools.readthedocs.io/en/latest/content/general-usage.html)
 - [Description of bed files from
-  UCSC](http://genome.ucsc.edu/FAQ/FAQformat#format1)
+  UCSC](https://genome.ucsc.edu/FAQ/FAQformat#format1)
 
 # Summarizing SVs from the command line
 

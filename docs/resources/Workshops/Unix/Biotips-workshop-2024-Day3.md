@@ -105,7 +105,7 @@ For more detailed information on **GFF** files, see the following links:
 - [UCSC description
   (GFF2)](https://genome.ucsc.edu/FAQ/FAQformat.html#format3)
 - [Ensembl description
-  (GFF2)](http://www.ensembl.org/info/website/upload/gff.html?redirect=no)
+  (GFF2)](https://www.ensembl.org/info/website/upload/gff.html?redirect=no)
 - [NCBI description
   (GFF3)](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/reference-docs/file-formats/annotation-files/about-ncbi-gff3/)
 - [GFF3
