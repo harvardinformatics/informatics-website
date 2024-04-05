@@ -33,7 +33,7 @@ Using git and GitHub for version control also facilitate working with others, be
 
 <div align="center">
     <figure>
-        <img src="../img/healthy_habits_day3/Slide2.png" alt="Basic git workflow" style="width: 75%;">
+        <img src="../img/healthy_habits_day3/Slide2.png" alt="Basic git workflow" style="max-height:500px">
         <figcaption>Basic git workflow</figcaption>
     </figure>
 </div>
@@ -46,7 +46,7 @@ When you want to time travel to a previous commit, that is called "checking out"
 
 <div align="center">
     <figure>
-        <img src="../img/healthy_habits_day3/Slide3.png" alt="Relationship between your local repo and GitHub" style="width: 75%;">
+        <img src="../img/healthy_habits_day3/Slide3.png" alt="Relationship between your local repo and GitHub" style="max-height:500px">
         <figcaption>Relationship between your git repo and GitHub</figcaption>
     </figure>
 </div>
@@ -61,7 +61,7 @@ When you want to collaborate with others, you can "fork" their repository, which
 
 <div align="center">
     <figure>
-        <img src="../img/healthy_habits_day3/Slide4.png" alt="Example of working from a forked repo with multiple local copies" style="width: 75%;">
+        <img src="../img/healthy_habits_day3/Slide4.png" alt="Example of working from a forked repo with multiple local copies" style="max-height:500px">
         <figcaption>Example of working from a forked repo with multiple local copies</figcaption>
     </figure>
 </div>
@@ -107,12 +107,14 @@ git status
 Observe that all your files are currently "untracked". You don't want to add all of them to the staging area. This is because git is not a data management system, it's a version control system. Which means it's designed to track changes in plain-text files that contain code. It's not designed to backup binary files or track changes in large files. GitHub has an upload limit of 100 MB so if you accidentally stage a large file, you won't be able to push it to the remote. 
 
 Here's what you should use git for:
+
 - Scripts
 - Notebooks
 - READMEs
 - Configuration files (yamls, config files)
 
 Here's what you should NOT use git for:
+
 - Data
 - Software (conda envs, containers)
 - Non-plaintext files (pdfs, images, videos, binary files)
@@ -190,7 +192,7 @@ gitGraph
     commit
 ```
 
-Git history can be viewed as a "gitflow" diagram (image above), with commits as nodes and branches as lines. You can see the history of your project with using command line options such as: `git log`, `git log --graph --oneline --all`, or by clicking on the "commits" link on GitHub. In VSCode, you can use the extension "Git Graph" to visualize your git history. Commits are identified by a unique **hash**, which is a long string of letters and numbers. Commits also always have a message, which the user writes at the moment they commit. There is a pointer called "HEAD" which points to the current commit you're one. Usually, this is the most recent commit, but HEAD can change if you switch to a different branch or checkout a different commit. 
+Git history can be viewed as a "gitflow" diagram (image above), with commits as nodes and branches as lines. You can see the history of your project using command line options such as: `git log`, `git log --graph --oneline --all`, or by clicking on the "commits" link on GitHub. In VSCode, you can use the extension "Git Graph" to visualize your git history. Commits are identified by a unique **hash**, which is a long string of letters and numbers. Commits also always have a message, which the user writes at the moment they commit. There is a pointer called "HEAD" which points to the current commit you're one. Usually, this is the most recent commit, but HEAD can change if you switch to a different branch or checkout a different commit. 
 
 Below are some slides that illustrate how HEAD moves around as you make commits and branches
 
@@ -198,7 +200,7 @@ Below are some slides that illustrate how HEAD moves around as you make commits 
 
     <div align="center">
         <figure>
-            <img src="../img/healthy_habits_day3/Slide10.png" alt="Slide10" style="width: 75%;">
+            <img src="../img/healthy_habits_day3/Slide10.png" alt="Slide10" style="max-height:500px">
         </figure>
     </div>
 
@@ -206,7 +208,7 @@ Below are some slides that illustrate how HEAD moves around as you make commits 
 
     <div align="center">
         <figure>
-            <img src="../img/healthy_habits_day3/Slide11.png" alt="Slide11" style="width: 75%;">
+            <img src="../img/healthy_habits_day3/Slide11.png" alt="Slide11" style="max-height:500px">
         </figure>
     </div>
 
@@ -214,7 +216,7 @@ Below are some slides that illustrate how HEAD moves around as you make commits 
 
     <div align="center">
         <figure>
-            <img src="../img/healthy_habits_day3/Slide12.png" alt="Slide12" style="width: 75%;">
+            <img src="../img/healthy_habits_day3/Slide12.png" alt="Slide12" style="max-height:500px">
         </figure>
     </div>
 
@@ -222,7 +224,7 @@ Below are some slides that illustrate how HEAD moves around as you make commits 
 
     <div align="center">
         <figure>
-            <img src="../img/healthy_habits_day3/Slide13.png" alt="Slide13" style="width: 75%;">
+            <img src="../img/healthy_habits_day3/Slide13.png" alt="Slide13" style="max-height:500px">
         </figure>
     </div>
 
@@ -230,7 +232,7 @@ Below are some slides that illustrate how HEAD moves around as you make commits 
 
 <div align="center">
     <figure>
-        <img src="../img/healthy_habits_day3/Slide14.png" alt="Slide of git checkout" style="width: 75%;">
+        <img src="../img/healthy_habits_day3/Slide14.png" alt="Slide of git checkout" style="max-height:500px">
         <figcaption>git checkout</figcaption>
     </figure>
 </div>
@@ -243,7 +245,7 @@ When you use the `git checkout` command, you can move the HEAD to a different co
 
 <div align="center">
     <figure>
-        <img src="../img/healthy_habits_day3/Slide15.png" alt="Slide of git revert" style="width: 75%;">
+        <img src="../img/healthy_habits_day3/Slide15.png" alt="Slide of git revert" style="max-height:500px">
         <figcaption>git revert</figcaption>
     </figure>
 </div>
@@ -283,7 +285,7 @@ Three
 
 <div align="center">
     <figure>
-        <img src="../img/healthy_habits_day3/Slide16.png" alt="Slide of git reset" style="width: 75%;">
+        <img src="../img/healthy_habits_day3/Slide16.png" alt="Slide of git reset" style="max-height:500px">
         <figcaption>git reset</figcaption>
     </figure>
 </div>
@@ -325,7 +327,9 @@ Use `git log` to see the history of your project. Use the arrow keys to navigate
 ## Useful resources
 
 [Learn git branching](https://learngitbranching.js.org/) is a visually interactive way to learn git commands. You can use it as a sandbox or follow the tutorials.
+
 [Atlassian git tutorials](https://www.atlassian.com/git/tutorials/) have detailed explanations in simple language accompanied by visual diagrams.
+
 [Oh shit git](https://ohshitgit.com/) is a good quick reference for panic-finding a git solution to common situations.
 
 
