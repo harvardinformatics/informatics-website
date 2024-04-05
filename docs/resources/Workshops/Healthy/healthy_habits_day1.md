@@ -136,14 +136,19 @@ All these lines have been frozen in glycerol stock so that they can preserve the
 
 <div align="center">
     <figure>
-        <img src="../img/schematic_figure.png" alt="schematic_figure" style="max-height:500px;">
-        <figcaption>Schematic figure</figcaption>
+        <img src="../img/favate-fig.png" alt="Figure 1 from Favate eta l" style="max-height:500px;">
+        <figcaption>Figure 1 from Favate et al</figcaption>
     </figure>
 </div>
 
 But we're not that interested in interpreting the results. We're interested in the process of generating the results and how to do it reproducibly and with less headache.
 
-> **IMAGE of paper bioinformatics workflow**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day1/Slide10.png" alt="Workflow of Favate paper" style="width: 75%;">
+        <figcaption>Workflow of Favate paper</figcaption>
+    </figure>
+</div>
 
 Here's a simplified outline of the bioinformatic workflow that the authors took for the analysis of the RNA-seq portion of their paper. The workflow can be split into four parts, which are summarized as Sequencing, Clean-up, Analysis, and Plotting. Below each of those steps is shown the files that are generated at each part. The sequencing part kind of straddles the line between bench work and computer work. How you design your sequencing project will inevitably affect how you process the data downstream. So decisions like whether to include standards, how many replicates, how you prepare you library, etc will all come home to roost in the bioinformatics. If you have a sequencing project in mind and want help planning it, the Bauer Core (which is the sequencing core facility at FAS) can consult with you for free. And you can also have one of us (the informatics group) sit in on those meetings to help you anticipate the bioinformatics needs. In the case of the paper, the authors generated short single-end reads of the cDNA of each E coli evolved line and the ancestor using the Illumina platform. The raw data is in the form of 4 fastq files between 5 and 12 GB in size. 
 
@@ -153,7 +158,12 @@ The third part of the workflow is analysis, which is comprised of quantifying re
 
 The final part of the workflow is plotting. This is the part where you take the tables and make them into figures. This is usually done in R or python, and the products are figures in the form of image files.
 
-> **IMAGE: generic bioinformatics workflow**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day1/Slide11.png" alt="Simplified workflow of a generic bioinformatics project" style="width: 75%;">
+        <figcaption>Simplified workflow of a generic bioinformatics project</figcaption>
+    </figure>
+</div>
 
 Zooming out, if you ignore the texts in this workflow, this image illustrates that bioinformatics fundamentally is about transforming raw data to processed data to summary tables, and then finally figures using code. 
 
@@ -167,15 +177,30 @@ We'll be coming back to this workflow in a minute, but first, let's talk about w
 
 The reason we talk about workflow first is because it feeds directly into the organization of the project. The healthy habit that inspired the idea of this workshop is the idea of a project directory. On computers, files are organized into folders or directories and this is both for the user's benefit as well as for the computer to know where things are. The minimum amount of organizing one can do is put all the files related to a project into a single directory. 
 
-> **IMAGE of bad directory organization**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day1/Slide12.png" alt="Screenshot of bad directory organization" style="width: 75%;">
+        <figcaption>Example of bad directory organization</figcaption>
+    </figure>
+</div>
 
 This is a common organizational method. There's 1 folder with all figures, scripts, and data. Perhaps you rely on renaming files to keep track of different versions of scripts or different versions of data. It's unclear how each figure is generated, or with what script. This is a lot of cognitive overhead that must be overcome every time you start doing your work on this project! How can it be better?
 
-> **IMAGE of expanded workflow to include code and products of each step, circle each type of file**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day1/Slide13.png" alt="Generic workflow modified to include code and products of each step, circled by each type of file" style="width: 75%;">
+        <figcaption>Each aspect of workflow is its own file type</figcaption>
+    </figure>
+</div>
 
 Going back to the workflow from the paper, one can see that bioinformatics is essentially the transformation of raw data to processed data to figures. And that transformation happens using code/scripts.
 
-> **IMAGE of good directory organization**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day1/Slide14.png" alt="Screenshot of better directory organization, with folders for each file type" style="width: 75%;">
+        <figcaption>Example of better directory organization</figcaption>
+    </figure>
+</div>
 
 A better system for folder organization is to separate each of these types of files into its own subfolder. In this example, all the raw data is in one folder, never touched. Processed data is in a separate folder. Scripts and figures have their own separate folders too. Additionally, a readme file at each level or at least the top level of the directory can help make this a self-documented folder structure. And finally, it would be helpful to have a file that describes the softwares that are required to run the code, in this case it's a yaml file for a conda environment.
 
@@ -229,8 +254,6 @@ Let's put that into action and have everyone choose a method they prefer to tran
 
 ## Making backups, what to save and how?
 
-> **IMAGE on the workflow which backup strategies apply to which types of files**
-
 Our last topic for today is how to make backups and what to save. We kind of touched on this during the data management life cycle part, and now we're going to be more specific. We all know file backups are important, but it's not always clear what needs to be backed up and what doesn't. The general rule is that if you can regenerate the file easily, you don't need to back it up. For example, if you have a script that generates a figure, you don't need to back up the figure, you just need to back up the script. If you have a raw data file that you've processed into a different file, you don't need to back up the processed file, you just need to back up the raw data file and the script. Of course, if it look a really long time to generate the processed file, it might be worth backing up. There's a lot of options for backing things up, depending on file type, what stage the research is in, and the sensitivity of the file. 
 
 Let's start with data. One place is a public repository. [PlosOne](https://journals.plos.org/plosone/s/recommended-repositories) has a handy list of common repositories to report your data. These include Figshare, NCBI, and EBI. Oftentimes, people deposit their sequencing data in these places as a requirement for publication in a journal or due to a grant/funding requirement. But nobody's preventing you from putting your data there as soon as you get it! You can put an embargo on the data as you work on it and then only click the publish button when you're ready to submit. Doing so saves some hassle when you've already got your hands full preparing the manuscript. 
@@ -240,8 +263,6 @@ More locally, you also have options. If you want the lab to ultimately own your 
 Backing up code and other small files is fairly straightforward. One option is to set up rsync between your computer and the cluster to always keep a mirror of your project's "scripts" folder. That way you can write your code on your computer and rsync it to the cluster to run. However, one of the problems with this is that there's not record of past versions of your code. And that can be important if you're experimenting or want to do similar analysis with slight tweaks and you want to go back to a version that worked. This is where git and GitHub come in. We're going to do a full day on learning to use git and GitHub to do version control on day 3, so stay tuned. 
 
 # Structure of the rest of the workshop
-
-> **IMAGE of the schedule**
 
 Here's a summary of the topics we'll be covering in the next few days. The next day we'll be having a bonus day where we'll be talking about how to optimize and customize your coding/working environment. These topics will help streamline some frustrating aspects of working with code or on the cluster. Bonus days are more informal and probably won't last the full 3 hours. 
 

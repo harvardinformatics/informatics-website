@@ -31,7 +31,12 @@ Using git and GitHub for version control also facilitate working with others, be
 
 # Basics of git
 
-> **IMAGE of git workflow**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day3/Slide2.png" alt="Basic git workflow" style="width: 75%;">
+        <figcaption>Basic git workflow</figcaption>
+    </figure>
+</div>
 
 Git is a program for version control that takes snapshots of your files at different points in time. These snapshots are called "commits". You can use these commits to go back to previous versions of your code, compare different versions, and even work on multiple versions at the same time, without them interfering with each other. 
 
@@ -39,7 +44,12 @@ This is the central concept of git: You have a working directory where you are i
 
 When you want to time travel to a previous commit, that is called "checking out" a commit. You can check out a whole commit or just a single file from a commit. Checking out a commit/file will change your working directory. We'll go more into detail on checking out commits later. Right now, let's focus on the arrows going to the right, which save your changes to git.
 
-> **IMAGE git vs GitHub**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day3/Slide3.png" alt="Relationship between your local repo and GitHub" style="width: 75%;">
+        <figcaption>Relationship between your git repo and GitHub</figcaption>
+    </figure>
+</div>
 
 Now that you know what git is, this is how GitHub relates. GitHub is a website that hosts git repositories. It's a place where you can share your code with the general public, or just to back up your code. The jargon for this is called a "remote", while the version of your repository on your computer is called the "local" version. You can have multiple local versions (clones) but it's up to you to keep them up to date. 
 
@@ -49,7 +59,12 @@ When you want to collaborate with others, you can "fork" their repository, which
 
 ## Side note: A potential use-case for git/GitHub in your lab
 
-> **IMAGE of working with multiple local git repos**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day3/Slide4.png" alt="Example of working from a forked repo with multiple local copies" style="width: 75%;">
+        <figcaption>Example of working from a forked repo with multiple local copies</figcaption>
+    </figure>
+</div>
 
 One of the best things about GitHub is that it allows you to share code with others. Raise your hand if you've ever been handed code from a previous student or lab member, but it didn't work for whatever reason. Or perhaps there are just loose scripts floating around, each version slightly different from the last but nobody knows which one is current or which one is the best. One way to avoid this is to have a lab GitHub account where known working versions of scripts are posted and users can fork the repo of helpful scripts to adjust to their own needs. Then, if a user fixes a bug or adds a feature, they can make a pull request and update the lab's version. This way, everyone in the lab can benefit from the work of others and the lab's scripts are always up to date.
 
@@ -58,6 +73,25 @@ The above image illustrates the relationship between a forked repo, the original
 Let's practice all these concepts together on a demo repo.
 
 > **ACTIVITY GitHub demo repo [link](https://github.com/harvardinformatics/github-intro)**
+
+## Vocab part 1
+
+Here are some terms that are useful to know when working with git:
+
+| Term           | Definition                                               |
+|----------------|----------------------------------------------------------|
+| repository     | a folder tracked by git                                  |
+| fork           | copy someone else’s GitHub repo into your own account     |
+| clone          | copy a repo from a remote onto your local computer        |
+| add            | add file to staging area (start tracking it)             |
+| commit         | make a snapshot of staging area to repository            |
+| push           | upload changes to remote repo                            |
+| remote         | a repository hosted on a server (e.g. GitHub)            |
+| staging area   | intermediate area where files are tracked before they are added to git |
+| pull           | fetch changes from a remote and merge into existing branch |
+| branch         | an isolated development path that was diverted from the main line at a specific commit |
+| status         | check the status of your git repo                        |
+
 
 # .gitignore, pushing to GitHub
 
@@ -72,7 +106,6 @@ git status
 
 Observe that all your files are currently "untracked". You don't want to add all of them to the staging area. This is because git is not a data management system, it's a version control system. Which means it's designed to track changes in plain-text files that contain code. It's not designed to backup binary files or track changes in large files. GitHub has an upload limit of 100 MB so if you accidentally stage a large file, you won't be able to push it to the remote. 
 
-> **IMAGE of what to use git for and what not to use git for**
 Here's what you should use git for:
 - Scripts
 - Notebooks
@@ -159,11 +192,48 @@ gitGraph
 
 Git history can be viewed as a "gitflow" diagram (image above), with commits as nodes and branches as lines. You can see the history of your project with using command line options such as: `git log`, `git log --graph --oneline --all`, or by clicking on the "commits" link on GitHub. In VSCode, you can use the extension "Git Graph" to visualize your git history. Commits are identified by a unique **hash**, which is a long string of letters and numbers. Commits also always have a message, which the user writes at the moment they commit. There is a pointer called "HEAD" which points to the current commit you're one. Usually, this is the most recent commit, but HEAD can change if you switch to a different branch or checkout a different commit. 
 
-> **IMAGE or SLIDES of how HEAD moves around**
+Below are some slides that illustrate how HEAD moves around as you make commits and branches
+
+=== "Tab 1"
+
+    <div align="center">
+        <figure>
+            <img src="../img/healthy_habits_day3/Slide10.png" alt="Slide10" style="width: 75%;">
+        </figure>
+    </div>
+
+=== "Tab 2"
+
+    <div align="center">
+        <figure>
+            <img src="../img/healthy_habits_day3/Slide11.png" alt="Slide11" style="width: 75%;">
+        </figure>
+    </div>
+
+=== "Tab 3"
+
+    <div align="center">
+        <figure>
+            <img src="../img/healthy_habits_day3/Slide12.png" alt="Slide12" style="width: 75%;">
+        </figure>
+    </div>
+
+=== "Tab 4"
+
+    <div align="center">
+        <figure>
+            <img src="../img/healthy_habits_day3/Slide13.png" alt="Slide13" style="width: 75%;">
+        </figure>
+    </div>
 
 ## Checkout
 
-> **IMAGE of git checkout**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day3/Slide14.png" alt="Slide of git checkout" style="width: 75%;">
+        <figcaption>git checkout</figcaption>
+    </figure>
+</div>
 
 When you use the `git checkout` command, you can move the HEAD to a different commit, either using the hash or a relative reference like "HEAD^" for the commit before the current one or "HEAD~2" for the commit two before the current one. Using `git checkout` will change the files in your working directory to match the commit you checked out. This is useful for comparing different versions of your code, or for working on different versions of your code at the same time. When you move the head to a different commit, git enters "detached HEAD" state, which is a warning that you're not on a branch and that if you make any commits and switch to a branch, your work may be lost. 
 
@@ -171,7 +241,12 @@ When you use the `git checkout` command, you can move the HEAD to a different co
 
 ## Revert
 
-> **IMAGE of git revert**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day3/Slide15.png" alt="Slide of git revert" style="width: 75%;">
+        <figcaption>git revert</figcaption>
+    </figure>
+</div>
 
 The command `git revert` is used to undo a single commit or a series of commits. It creates a new commit that undoes the changes made in the commit(s) you specify. This is useful if you've made some helpful commits since then and just want to undo changes from a specific time. Git revert is the way to go if you want to undo a commit that has already been pushed to the remote because it preserves the history. When you do a `git revert`, you will make a new commit that undoes the changes from the commit you specify. [This](https://stackoverflow.com/a/46275419) answer from stackoverflow explains it with a simple example, quoted below: 
 
@@ -206,7 +281,12 @@ Three
 
 ## Reset
 
-> **IMAGE of git reset**
+<div align="center">
+    <figure>
+        <img src="../img/healthy_habits_day3/Slide16.png" alt="Slide of git reset" style="width: 75%;">
+        <figcaption>git reset</figcaption>
+    </figure>
+</div>
 
 The command `git reset` is used to undo multiple commits. It will reset your working directory to the state of the commit you specify and also remove all the commits that came after that commit. There are different options you can pass to `git reset` to specify how you want to reset your working directory.
 * `--soft` will not alter the working directory or the staged area, but will point HEAD to the commit you specify.
@@ -218,6 +298,20 @@ For an in depth explanation of git reset, see this documentation from [git-scm.c
 When you do a `git reset --hard`, you will need to force push `git push --force` to the remote to update the remote's git history. Typically, you want to git reset when you haven't yet pushed the commits you want to reset.
 
 `git reset` is also helpful if you want to unstage a file that you've added to the staging area. You can use `git reset <filename>` to unstage a file. (You can also do this with `git restore --stage <filename>`, which is apparently the safer way to do it.)
+
+## Vocab part 2
+
+Here are some of the more advanced git commands/terms relevant to this section:
+
+| Term     | Definition                                                     |
+|----------|----------------------------------------------------------------|
+| HEAD     | Pointer to current location in your repository, typically the latest commit |
+| checkout | Switch your working directory to a different commit or branch by moving the HEAD |
+| revert   | Undo a specific commit and make a new commit                    |
+| reset    | Rewrite commit history since a specific commit                  |
+| diff     | See differences between staged/committed and working directory files |
+| log      | See all commit history                                         |
+| reflog   | See all git command history that made changes                  |
 
 
 # Good git practice
