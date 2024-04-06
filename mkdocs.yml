@@ -17,10 +17,10 @@ nav:
       - Unix: 
         - Introduction: resources/Workshops/Unix/index.html
         - Get started: resources/Workshops/Unix/start.html
-        - Part 1: resources/Workshops/Unix/Biotips-workshop-2023-Day1.md
-        - Part 2: resources/Workshops/Unix/Biotips-workshop-2023-Day2.md
-        - Part 3: resources/Workshops/Unix/Biotips-workshop-2023-Day3.md
-        - Part 4: resources/Workshops/Unix/Biotips-workshop-2023-Day4.md
+        - Part 1: resources/Workshops/Unix/Biotips-workshop-2024-Day1.md
+        - Part 2: resources/Workshops/Unix/Biotips-workshop-2024-Day2.md
+        - Part 3: resources/Workshops/Unix/Biotips-workshop-2024-Day3.md
+        - Part 4: resources/Workshops/Unix/Biotips-workshop-2024-Day4.md
   - Research: research/index.md
   - Software: software/index.md
   - FAQ: faq/index.md
@@ -36,7 +36,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list

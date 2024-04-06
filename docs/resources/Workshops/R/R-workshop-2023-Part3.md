@@ -8,6 +8,12 @@ output:
       keep_md: true
 ---
 
+<style>
+    .md-sidebar--secondary { order: 0; }
+    .md-sidebar--primary { display: none; }
+    /* This hides the Navigation sidebar and moves the TOC sidebar to the left in HTML renders */
+</style>
+
 Welcome to the Part 3 of the [FAS Informatics](https://informatics.fas.harvard.edu/) [Intro to R workshop](https://harvardinformatics.github.io/workshops/2023-fall/r/)! 
 
 If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part3-student.Rmd).
