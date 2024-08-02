@@ -37,7 +37,7 @@ We have a full semester of workshops planned for the Fall 2024 semester. We will
 </details>
 
 <details>
-<summary>Running SLURM scripts on the HPC introduction</summary>
+<summary>Submitting your first SLURM script or job array</summary>
 
 - Tuesday Oct 15 9:30-10:30 AM
 - Wednesday Oct 16 12:15-1:15 PM
