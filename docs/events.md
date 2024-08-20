@@ -12,93 +12,67 @@ We have a full semester of workshops planned for the Fall 2024 semester. We will
 
 [**Click here to register for the workshops**](https://docs.google.com/forms/d/e/1FAIpQLSf5XKLtkNBzO-ZtwCmIi5fvMSRNcdu7y8XmXdoSNxdVFYF80w/viewform?usp=sf_link) 
 
-<details>
-<summary>Project organization & Data management</summary>
+??? "Intro to Python Intensive"
 
-- Tuesday Sept 24 9:30-10:30 AM
-- Wednesday Sept 25 12:15-1:15 PM
+    - Wednesday August 28 10:00 AM - 1:00 PM
+    - Thursday September 5 2:00 - 5:00 PM
+    - Thursday September 12 2:00 - 5:00 PM
+    - Thursday September 19 2:00 - 5:00 PM
 
-</details>
+??? "Project organization & Data management"
 
-<details>
-<summary>Git & GitHub introduction</summary>
+    - Tuesday Sept 24 9:30-10:30 AM
+    - Wednesday Sept 25 12:15-1:15 PM
 
-- Tuesday Oct 1 9:30-10:30 AM
-- Wednesday Oct 2 12:15-1:15 PM
+??? "Git & GitHub introduction"
 
-</details>
+    - Tuesday Oct 1 9:30-10:30 AM
+    - Wednesday Oct 2 12:15-1:15 PM
 
-<details>
-<summary>Installing & Managing software (Conda, Containers)</summary>
+??? "Installing & Managing software (Conda, Containers)"
 
-- Tuesday Oct 8 9:30-10:30 AM
-- Wednesday Oct 9 12:15-1:15 PM
+    - Tuesday Oct 8 9:30-10:30 AM
+    - Wednesday Oct 9 12:15-1:15 PM
 
-</details>
+??? "Submitting your first SLURM script or job array"
 
-<details>
-<summary>Submitting your first SLURM script or job array</summary>
+    - Tuesday Oct 15 9:30-10:30 AM
+    - Wednesday Oct 16 12:15-1:15 PM
 
-- Tuesday Oct 15 9:30-10:30 AM
-- Wednesday Oct 16 12:15-1:15 PM
+??? "Data Transformation with R Tidyverse"
 
-</details>
+    - Tuesday Oct 22 9:30-10:30 AM
+    - Wednesday Oct 23 12:15-1:15 PM
 
-<details>
-<summary>Data Transformation with R Tidyverse</summary>
+??? "Plotting with R ggplot"
 
-- Tuesday Oct 22 9:30-10:30 AM
-- Wednesday Oct 23 12:15-1:15 PM
+    - Tuesday Oct 29 9:30-10:30 AM
+    - Wednesday Oct 30 12:15-1:15 PM
 
-</details>
+??? "Introduction to Genome Annotation"
 
-<details>
-<summary>Plotting with R ggplot</summary>
+    - Tuesday Nov 5 9:30-10:30 AM
+    - Wednesday Nov 6 12:15-1:15 PM
 
-- Tuesday Oct 29 9:30-10:30 AM
-- Wednesday Oct 30 12:15-1:15 PM
+??? "Workflow Management, nextflow demonstration"
 
-</details>
+    - Tuesday Nov 12 9:30-10:30 AM
+    - Wednesday Nov 13 12:15-1:15 PM
 
-<details>
-<summary>Introduction to Genome Annotation</summary>
+??? "scRNA analysis introduction"
 
-- Tuesday Nov 5 9:30-10:30 AM
-- Wednesday Nov 6 12:15-1:15 PM
+    - Tuesday Nov 19 9:30-10:30 AM
+    - Wednesday Nov 20 12:15-1:15 PM
 
-</details>
+??? "Scaling SLURM scripts on the HPC and benchmarking"
 
-<details>
-<summary>Workflow Management, nextflow demonstration</summary>
+    - Tuesday Dec 3 9:30-10:30 AM
+    - Wednesday Dec 4 12:15-1:15 PM
 
-- Tuesday Nov 12 9:30-10:30 AM
-- Wednesday Nov 13 12:15-1:15 PM
+??? "SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms"
 
-</details>
-
-<details>
-<summary>scRNA analysis introduction</summary>
-
-- Tuesday Nov 19 9:30-10:30 AM
-- Wednesday Nov 20 12:15-1:15 PM
-
-</details>
-
-<details>
-<summary>Scaling SLURM scripts on the HPC and benchmarking</summary>
-
-- Tuesday Dec 3 9:30-10:30 AM
-- Wednesday Dec 4 12:15-1:15 PM
-
-</details>
-
-<details>
-<summary>SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms</summary>
-
-- Tuesday Dec 10 9:30-10:30 AM
-- Wednesday Dec 11 12:15-1:15 PM
-
-</details>
+    - Tuesday Dec 10 9:30-10:30 AM
+    - Wednesday Dec 11 12:15-1:15 PM
 
 ## Office hours
 
