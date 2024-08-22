@@ -24,6 +24,7 @@ This is a four-day workshop that will introduce students to python as a data sci
 
 - Day 1: Whirlwind tour of Python, covering the basic concepts of data types, data structures, functions, and plotting in a broad overview 
     - [Download the student jupyter notebook file](Workshops/Python/Python-Day1-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/Python/Python-Day1.ipynb)
 - Day 2: Deep dive into python functions, with more about how to write functions in python with additional practice exercises
     - [Download the student jupyter notebook file](Workshops/Python/Python-Day2-student.ipynb)
 - Day 3: Data transformation and plotting with pandas, matplotlib, and seaborn. 
