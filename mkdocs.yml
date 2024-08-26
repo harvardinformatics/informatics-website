@@ -9,7 +9,7 @@ nav:
     - resources/index.md
     - Workshops:
       - Python:
-        - Day 1: resources/Workshops/python/Python-Day1.ipynb
+        - Day 1: resources/Workshops/Python/Python-Day1.ipynb
       - R: 
         - Introduction: resources/Workshops/R/index.html
         - Get started: resources/Workshops/R/start.html
