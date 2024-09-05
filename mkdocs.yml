@@ -87,7 +87,8 @@ theme:
 plugins:
   - search
   - table-reader
-  - mkdocs-jupyter
+  - mkdocs-jupyter:
+      ignore: ['resources/Workshops/Python/*student.ipynb']
 hooks:
   - scripts/about_generator.py 
   - scripts/resources_generator.py 
