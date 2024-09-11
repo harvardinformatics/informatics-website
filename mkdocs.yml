@@ -10,6 +10,7 @@ nav:
     - Workshops:
       - Python:
         - Day 1: resources/Workshops/Python/Python-Day1.ipynb
+        - Day 2: resources/Workshops/Python/Python-Day2.ipynb
       - R: 
         - Introduction: resources/Workshops/R/index.html
         - Get started: resources/Workshops/R/start.html
