@@ -30,6 +30,7 @@ This is a four-day workshop that will introduce students to python as a data sci
     - [View the completed jupyter notebook](Workshops/Python/Python-Day2.ipynb)
 - Day 3: Data transformation and plotting with pandas, matplotlib, and seaborn. 
     - [Download the student jupyter notebook file](Workshops/Python/Python-Day3-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/Python/Python-Day3.ipynb)
 - Day 4: Putting it all together: We will cover some meta-cognitive tips & tricks as well as work through a longer exercise that combines the previous 3 days of concepts. Plus time for additional Q&A. 
     - **Download the student jupyter notebook file** (coming soon)
 
