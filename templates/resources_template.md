@@ -41,7 +41,7 @@ This is a four-day workshop that will introduce students to python as a data sci
 - Git & GitHub introduction
 - Installing & Managing software (Conda, Containers)
 - Submitting your first SLURM script or job array
-- Data Transformation with R Tidyverse
+- [Data Transformation with R Tidyverse](Workshops/R/R_tidyverse_revised.md) - [Download RMD file](Workshops/R/R_tidyverse_revised.Rmd)
 - Plotting with R ggplot
 - Introduction to Genome Annotation
 - Workflow Management, nextflow demonstration
