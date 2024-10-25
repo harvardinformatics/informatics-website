@@ -398,14 +398,11 @@ with open(md_output_file, 'w') as md_output:
         cur_card_num += 1;
         people_left -= 1;
         # Increment the card number and decrement the number of people left
-
-            ## End person loop
-        ## End sub-section loop
+    ## End alumni loop
 
     cards_tables["alum"] += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
     cards_tables["alum"] += "</div>\n\n";        
     # Add the outer margin and close the last row
-    ## End section loop
 
 ####################
 
