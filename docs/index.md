@@ -515,7 +515,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 		(2021-2024)<br>
 
-		<p>Former postdoc, Subir works on population and comparative genomics of birds. He is now as postdoc at LMU Munich.</p>
+		<p>Former postdoc, Subir works on population and comparative genomics of birds. He is now a postdoc at LMU Munich.</p>
 </div>
 <div class="col-1-24 card-margin-inner"></div>
 
