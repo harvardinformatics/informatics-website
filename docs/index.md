@@ -335,110 +335,6 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>Rawan Olayan, Ph.D.</b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/rawanolayan.jpg" alt="Profile picture of Rawan Olayan">
-			<div class="row card-link-row">
-
-				<div class="col-5-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=qxUMqP4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Rawan Olayan">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Rawan Olayan">
-							</div>
-							<span>Scholar</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-5-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Senior Bioinformatics Scientist</b><br>
-			 Northwest Labs, B227.40<br>
-			<p>Rawan is funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-7-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row card-row">
-
-<div class="col-1-24 card-margin-outer"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b><a href="https://www.subir.com.np/" target="_blank">Subir Shakya, Ph.D.</a></b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<a href="https://www.subir.com.np/" target="_blank">
-				<img class="card-img" src="img/people/subirshakya.jpg" alt="Profile picture of Subir Shakya">
-			</a>
-			<div class="row card-link-row">
-
-				<div class="col-5-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Subir Shakya">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Subir Shakya">
-							</div>
-							<span>Scholar</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-5-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Postdoctoral Fellow</b><br>
-			 Northwest Labs, B227.65<br>
-			<p>Subir works on population and comparative genomics of birds, funded by an NIH grant to study enhancer evolution in birds.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-<div class="col-2-24 card-margin-inner"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
 			<b>Katya Osipova, Ph.D.</b><br>
 
 		</div>
@@ -495,7 +391,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="sep-div"></div>
 </div>
 
-<div class="col-1-24 card-margin-outer"></div>
+<div class="col-7-24 card-margin-outer"></div>
 </div>
 
 <div class="card-sep-div"></div>
@@ -602,41 +498,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 </div>
 
 <div class="card-sep-div"></div>
-
-<div class="row card-row">
-
-<div class="col-7-24 card-margin-outer"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b>Jared Vessella-Smith</b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="" alt="Profile picture of Jared Vessella-Smith">
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Applications Professional</b><br>
-			 Northwest Labs, B227.40<br>
-			<p>Full stack developer for instrument facility applications</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-7-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
 <div class="row">
 <span class="icon-note">Social icons: <a href="https://icons8.com/" target="_blank">Icons8</a></span>
 </div>
@@ -650,13 +511,107 @@ The mission of the Software Operations Core is to support the needs of data gene
 <div class="col-0-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz</a></span><br>
+		<span class="alum-name"><a href="https://www.subir.com.np/" target="_blank">Subir Shakya</a></span><br>
 
-		(2017-2018)<br>
+		(2021-2024)<br>
 
-		<p>Allison is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County.</p>
+		<p>Former postdoc, Subir works on population and comparative genomics of birds. He is now as postdoc at LMU Munich.</p>
 </div>
 <div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Rawan Olayan</span><br>
+
+		(2021-2024)<br>
+
+		<p>Rawan was funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Jared Vessella-Smith</span><br>
+
+		(2023-2024)<br>
+
+		<p>Former full stack developer for instrument facility applications</p>
+</div>
+
+<div class="col-0-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row alum-card-row">
+
+<div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Alexandria D'Souza</span><br>
+
+		(2019-2022)<br>
+
+		<p>Alexandria primarily worked with the mass spec core and the Woo lab while she was in the group.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Scott Van Buren</span><br>
+
+		(2020-2022)<br>
+
+		<p>Scott is now a Scientific Investigator in Computational Biology at GSK.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Meghan Correa</span><br>
+
+		<p>Former full stack developer currently at Cisco</p>
+</div>
+
+<div class="col-0-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row alum-card-row">
+
+<div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name"><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik</a></span><br>
+
+		(2019-2021)<br>
+
+		<p>Sara is now an Assistant Professor at Mount Royal University in Calgary, Canada.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Alex Llanos Garrido</span><br>
+
+		(2019-2021)<br>
+
+		<p>Alex is now at the Universidad Complutense Madrid.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Juerg Straubhaar</span><br>
+
+		(2017-2021)<br>
+
+		<p>Juerg worked primarily on proteomics data with the Mass Spec Core and the Melton Lab while he was in the group.</p>
+</div>
+
+<div class="col-0-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row alum-card-row">
+
+<div class="col-0-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name"><a href="https://brian-arnold.github.io/about/" target="_blank">Brian Arnold</a></span><br>
@@ -664,6 +619,15 @@ The mission of the Software Operations Core is to support the needs of data gene
 		(2018-2020)<br>
 
 		<p>Brian is now a departmental data scientist with the Ecology and Evolutionary Biology department at Princeton.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Yasin Kaymaz</span><br>
+
+		(2017-2020)<br>
+
+		<p>Yasin is now an Assistant Professor at Ege University in Izmir, Turkey.</p>
 </div>
 <div class="col-1-24 card-margin-inner"></div>
 
@@ -685,20 +649,11 @@ The mission of the Software Operations Core is to support the needs of data gene
 <div class="col-0-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Scott Van Buren</span><br>
+		<span class="alum-name"><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine</a></span><br>
 
-		(2020-2022)<br>
+		(2019)<br>
 
-		<p>Scott is now a Scientific Investigator in Computational Biology at GSK.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Juerg Straubhaar</span><br>
-
-		(2017-2021)<br>
-
-		<p>Juerg worked primarily on proteomics data with the Mass Spec Core and the Melton Lab while he was in the group.</p>
+		<p>Veronika is now at the Finnish Museum of Natural History working on bats.</p>
 </div>
 <div class="col-1-24 card-margin-inner"></div>
 
@@ -709,73 +664,14 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 		<p>John is now a Data Science and Bioinformatics Team Lead at Merck.</p>
 </div>
-
-<div class="col-0-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row alum-card-row">
-
-<div class="col-0-24 card-margin-outer"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Yasin Kaymaz</span><br>
-
-		(2017-2020)<br>
-
-		<p>Yasin is now an Assistant Professor at Ege University in Izmir, Turkey.</p>
-</div>
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Alexandria D'Souza</span><br>
+		<span class="alum-name"><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz</a></span><br>
 
-		(2019-2022)<br>
+		(2017-2018)<br>
 
-		<p>Alexandria primarily worked with the mass spec core and the Woo lab while she was in the group.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik</a></span><br>
-
-		(2019-2021)<br>
-
-		<p>Sara is now an Assistant Professor at Mount Royal University in Calgary, Canada.</p>
-</div>
-
-<div class="col-0-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row alum-card-row">
-
-<div class="col-0-24 card-margin-outer"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Alex Llanos Garrido</span><br>
-
-		(2019-2021)<br>
-
-		<p>Alex is now at the Universidad Complutense Madrid.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine</a></span><br>
-
-		(2019)<br>
-
-		<p>Veronika is now at the Finnish Museum of Natural History working on bats.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Meghan Correa</span><br>
-
-		<p>Former full stack developer currently at Cisco</p>
+		<p>Allison is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County.</p>
 </div>
 
 <div class="col-0-24 card-margin-outer"></div>

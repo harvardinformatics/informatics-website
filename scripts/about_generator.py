@@ -4,6 +4,7 @@
 ############################################################
 
 import sys, os
+from datetime import datetime
 import json
 
 ############################################################
@@ -27,6 +28,18 @@ def getAlumCardMargins(people_left, cards_per_row):
     else:
         return ["0", "1"];
         # [outer row margin, inner margin]
+
+def parse_date(date_str):
+    if date_str in [None, "", "unknown"]:
+        return datetime.min  # Use a min date to push entries without a valid date to the end
+    if date_str.startswith("NA-NA-"):
+        year = date_str.split("-")[-1]
+        return datetime.strptime(f"01-01-{year}", "%m-%d-%Y")
+    try:
+        return datetime.strptime(date_str, "%m-%d-%Y")
+    except ValueError:
+        return datetime.min  # Use a min date to push entries without a valid date to the end
+# Sort the moved people by "date-left" in descending order, placing those without "date-left" at the end
 
 ############################################################
 
@@ -67,6 +80,19 @@ with open(md_output_file, 'w') as md_output:
     # Initialize variables for the card table
     # Some of these control the width of the cards and the space between them
     # NOTE: that some margins depend on the number of cards in the row, and are set later on
+
+    # Initialize counters
+    counts = {
+        "Senior Bioinformatics Scientists": 0,
+        "Postdoctoral Researchers": 0
+    };
+
+    # Loop through the entries and count active people
+    for sub_section in counts.keys():
+        if sub_section in json_data:
+            for person, details in json_data[sub_section].items():
+                if details.get("status") == "active":
+                    counts[sub_section] += 1;
 
     for section in json_data:
         cards_tables[section] = "";
@@ -250,7 +276,7 @@ with open(md_output_file, 'w') as md_output:
             # Add the outer margin and close the last row
 
             cards_tables[section] += '\n<div class="card-sep-div"></div>\n';
-            # Put a vertical space between the sections
+            # Put a horizontal space between the sections
         ## End sub-section loop
     ## End section loop
 
@@ -273,90 +299,106 @@ with open(md_output_file, 'w') as md_output:
     # Some of these control the width of the cards and the space between them
     # NOTE: that some margins depend on the number of cards in the row, and are set later on
 
-    for section in json_data:
-        for sub_section in json_data[section]:
-            people_left += len([ person for person in json_data[section][sub_section] if json_data[section][sub_section][person]['status'] != "active" ]);
-    ## Since the alumni cards will be in one table, we need to count the total number of people instead of doing it by section like above 
-
-    first_row = True;
-    # Since this is one table, we don't need to reset the first row variable for each section
+    alumni_list = [];
 
     for section in json_data:
         for sub_section in json_data[section]:
             for person in json_data[section][sub_section]:
-                
-                person_data = json_data[section][sub_section][person];
-                # Lookup the profile data for the current person
+                person_data = json_data[section][sub_section][person]
+                if person_data['status'] != "active":
+                    alumni_list.append(person_data);
+                    people_left += 1;
+    ## Get the list of alumni and the number of people
+    ## Since the alumni cards will be in one table, we need to count the total number of people instead of doing it by section like above 
 
-                if person_data['status'] == "active":
-                    continue;
-                # Skip the current person if they are active
+    alumni_list.sort(key=lambda x: parse_date(x.get("date-left", "")), reverse=True)
+    # Sort the alumni by "date-left" in descending order, placing those without "date-left" at the end
 
-                if first_row:
-                    row_margin, alum_inner_margin = getAlumCardMargins(people_left, cards_per_row);
-                    # Get the row margins for the current row depending on how many cards are in the row
+    for person_data in alumni_list:
+        print(person_data.get('name'))
 
-                    cards_tables["alum"] += '\n<div class="row alum-card-row">\n';
-                    cards_tables["alum"] += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
-                    first_row = False;
-                ## Get the margins and add a div for the first row
+    first_row = True;
+    # Since this is one table, we don't need to reset the first row variable for each section
 
-                if cur_card_num > cards_per_row:
-                    cards_tables["alum"] += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
-                    cards_tables["alum"] += '</div>\n';
-                    # Close the current row
+    # for section in json_data:
+    #     for sub_section in json_data[section]:
+    #         for person in json_data[section][sub_section]:
 
-                    cards_tables["alum"] += '\n<div class="card-sep-div"></div>\n';
-                    # Put a vertical space between the two rows
-                    
-                    row_margin, alum_inner_margin = getAlumCardMargins(people_left, cards_per_row);
-                    # Get the row margins for the current row depending on how many cards are in the row
+    for person_data in alumni_list:
+        
+        #person_data = json_data[section][sub_section][person];
+        # Lookup the profile data for the current person
 
-                    cards_tables["alum"] += '\n<div class="row alum-card-row">\n';
-                    cards_tables["alum"] += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
-                    cur_card_num = 1;
-                    # Add the new row divs
-                ## If the current row is full, close it and add a new one
+        if person_data['status'] == "active":
+            continue;
+        # Skip the current person if they are active
 
-                if person_data['profile'] == "":
-                    cards_tables["alum"] += '\n<div class="col-' + alum_width + '-24 card-container alum-card-container-no-profile">\n';
-                else:
-                    cards_tables["alum"] += '\n<div class="col-' + alum_width + '-24 card-container alum-card-container">\n';
-                ## The card container div 
+        if first_row:
+            row_margin, alum_inner_margin = getAlumCardMargins(people_left, cards_per_row);
+            # Get the row margins for the current row depending on how many cards are in the row
 
-                if person_data['link'] != "":
-                    if person_data['link'].startswith("about/people/"):
-                        cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '">' + person_data['name'] + '</a></span><br>\n\n';
-                    else:
-                        cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></span><br>\n\n';
-                else:
-                    cards_tables["alum"] += '\t\t<span class="alum-name">' + person_data['name'] + '</span><br>\n\n';
-                # Add the person name with or without a link
-                
-                if person_data['date-joined'] != "" and person_data['date-left'] != "":
-                    start_year = person_data['date-joined'].split("-")[2];
-                    end_year = person_data['date-left'].split("-")[2];
+            cards_tables["alum"] += '\n<div class="row alum-card-row">\n';
+            cards_tables["alum"] += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
+            first_row = False;
+        ## Get the margins and add a div for the first row
 
-                    if start_year == end_year:
-                        cards_tables["alum"] += '\t\t(' + start_year + ')<br>\n\n';
-                    else:
-                        cards_tables["alum"] += '\t\t(' + start_year + '-' + end_year + ')<br>\n\n';
-                # Lookup the start and end years for the current person and add them to the card if they are available
+        if cur_card_num > cards_per_row:
+            cards_tables["alum"] += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
+            cards_tables["alum"] += '</div>\n';
+            # Close the current row
 
-                if person_data['profile'] != "":
-                    cards_tables["alum"] += '\t\t<p>' + person_data['profile'] + '</p>\n';
-                # Add the person profile if it is available
+            cards_tables["alum"] += '\n<div class="card-sep-div"></div>\n';
+            # Put a vertical space between the two rows
+            
+            row_margin, alum_inner_margin = getAlumCardMargins(people_left, cards_per_row);
+            # Get the row margins for the current row depending on how many cards are in the row
 
-                cards_tables["alum"] += '</div>\n';
-                ## Close the card container div
+            cards_tables["alum"] += '\n<div class="row alum-card-row">\n';
+            cards_tables["alum"] += '\n<div class="col-' + row_margin + '-24 card-margin-outer"></div>\n';
+            cur_card_num = 1;
+            # Add the new row divs
+        ## If the current row is full, close it and add a new one
 
-                if cur_card_num != cards_per_row and people_left != 1:
-                    cards_tables["alum"] += '<div class="col-' + alum_inner_margin + '-24 card-margin-inner"></div>\n';
-                # Add the inner margin if the current card isn't the last one in the row
+        if person_data['profile'] == "":
+            cards_tables["alum"] += '\n<div class="col-' + alum_width + '-24 card-container alum-card-container-no-profile">\n';
+        else:
+            cards_tables["alum"] += '\n<div class="col-' + alum_width + '-24 card-container alum-card-container">\n';
+        ## The card container div 
 
-                cur_card_num += 1;
-                people_left -= 1;
-                # Increment the card number and decrement the number of people left
+        if person_data['link'] != "":
+            if person_data['link'].startswith("about/people/"):
+                cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '">' + person_data['name'] + '</a></span><br>\n\n';
+            else:
+                cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></span><br>\n\n';
+        else:
+            cards_tables["alum"] += '\t\t<span class="alum-name">' + person_data['name'] + '</span><br>\n\n';
+        # Add the person name with or without a link
+        
+        if person_data['date-joined'] != "" and person_data['date-left'] != "":
+            start_year = person_data['date-joined'].split("-")[2];
+            end_year = person_data['date-left'].split("-")[2];
+
+            if start_year == end_year:
+                cards_tables["alum"] += '\t\t(' + start_year + ')<br>\n\n';
+            else:
+                cards_tables["alum"] += '\t\t(' + start_year + '-' + end_year + ')<br>\n\n';
+        # Lookup the start and end years for the current person and add them to the card if they are available
+
+        if person_data['profile'] != "":
+            cards_tables["alum"] += '\t\t<p>' + person_data['profile'] + '</p>\n';
+        # Add the person profile if it is available
+
+        cards_tables["alum"] += '</div>\n';
+        ## Close the card container div
+
+        if cur_card_num != cards_per_row and people_left != 1:
+            cards_tables["alum"] += '<div class="col-' + alum_inner_margin + '-24 card-margin-inner"></div>\n';
+        # Add the inner margin if the current card isn't the last one in the row
+
+        cur_card_num += 1;
+        people_left -= 1;
+        # Increment the card number and decrement the number of people left
+
             ## End person loop
         ## End sub-section loop
 
