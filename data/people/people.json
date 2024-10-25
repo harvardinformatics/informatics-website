@@ -86,12 +86,12 @@
                 "img": "img/people/rawanolayan.jpg",
                 "date-added": "12-05-2023",
                 "date-joined": "05-17-2021",
-                "date-left": "",
-                "status" : "active",
+                "date-left": "07-31-2024",
+                "status" : "moved",
                 "link": "",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=qxUMqP4AAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "",
-                "profile": "Rawan is funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods."
+                "profile": "Rawan was funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods."
             },
             "Allison Shultz": {
                 "id": "15",
@@ -191,12 +191,12 @@
                 "img": "img/people/subirshakya.jpg",
                 "date-added": "12-05-2023",
                 "date-joined": "03-01-2021",
-                "date-left": "",
-                "status" : "active",
+                "date-left": "08-23-2024",
+                "status" : "moved",
                 "link": "https://www.subir.com.np/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "",
-                "profile": "Subir works on population and comparative genomics of birds, funded by an NIH grant to study enhancer evolution in birds."
+                "profile": "Former postdoc, Subir works on population and comparative genomics of birds. He is now a postdoc at LMU Munich."
             },
             "Ekaterina Osipova": {
                 "id": "31",
@@ -307,13 +307,13 @@
                 "img": "",
                 "date-added": "12-05-2023",
                 "date-joined": "12-18-2023",
-                "date-left": "",
-                "status" : "active",
+                "date-left": "NA-NA-2024",
+                "status" : "moved",
                 "link": "",
                 "pubs": "",
                 "github": "",
                 "degree": "",
-                "profile": "Full stack developer for instrument facility applications"
+                "profile": "Former full stack developer for instrument facility applications"
             },
             "Meghan Correa": {
                 "id": "62",
@@ -322,7 +322,7 @@
                 "office" : "",
                 "date-added": "12-05-2023",
                 "date-joined": "",
-                "date-left": "",
+                "date-left": "NA-NA-2022",
                 "status" : "moved",
                 "link": "",
                 "pubs": "",
