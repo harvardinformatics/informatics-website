@@ -208,7 +208,7 @@
                 "date-joined": "11-01-2022",
                 "date-left": "",
                 "status" : "active",
-                "link": "",
+                "link": "https://osipovarev.github.io/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/osipovarev",
                 "profile": "Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species."
@@ -245,6 +245,24 @@
                 "status" : "moved",
                 "link": "https://veronikalaine.netlify.app/",
                 "profile": "Veronika is now at the Finnish Museum of Natural History working on bats."
+            }
+        },
+        "Visiting Scholars": {
+            "Abhratanu Saha": {
+                "id": "40",
+                "name": "Abhratanu Saha",
+                "title" : "Visiting Student",
+                "office" : "B227.65",
+                "img": "img/people/abhratanusaha.jpg",
+                "date-added": "11-04-2024",
+                "date-joined": "10-21-2024",
+                "date-left": "",
+                "status" : "active",
+                "link": "",
+                "pubs": "",
+                "github": "",
+                "degree": "",
+                "profile": "Abhro is a visiting student from the Curie Institute in France, using comparative genomics to study Hi-C maps in Lepidoptera."
             }
         }
     },

@@ -335,7 +335,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>Katya Osipova, Ph.D.</b><br>
+			<b><a href="https://osipovarev.github.io/" target="_blank">Katya Osipova, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -344,7 +344,9 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/katyaosipova.jpg" alt="Profile picture of Katya Osipova">
+			<a href="https://osipovarev.github.io/" target="_blank">
+				<img class="card-img" src="img/people/katyaosipova.jpg" alt="Profile picture of Katya Osipova">
+			</a>
 			<div class="row card-link-row">
 
 				<div class="col-0-24 card-margin"></div>
@@ -385,6 +387,41 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 			<b>Postdoctoral Fellow</b><br>
 			 Northwest Labs, B227.65<br>
 			<p>Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species.</p>
+		</div>
+		<div class="col-1-24 card-margin"></div>
+	</div>
+	<div class="sep-div"></div>
+</div>
+
+<div class="col-7-24 card-margin-outer"></div>
+</div>
+
+<div class="card-sep-div"></div>
+
+<div class="row card-row">
+
+<div class="col-7-24 card-margin-outer"></div>
+
+<div class="col-10-24 card-container">
+	<div class="row card-name-container">
+		<div class="col-0-24 card-name-margin"></div>
+		<div class="col-24-24 card-name">
+			<b>Abhratanu Saha</b><br>
+
+		</div>
+		<div class="col-0-24 card-name-margin"></div>
+	</div>
+	<div class="card-name-sep-div"></div>
+	<div class="row card-content-container">
+		<div class="col-1-24 card-margin"></div>
+		<div class="col-8-24 card-img-container">
+			<img class="card-img" src="img/people/abhratanusaha.jpg" alt="Profile picture of Abhratanu Saha">
+		</div>
+		<div class="col-1-24 card-margin"></div>
+		<div class="col-13-24 card-content">
+			<b>Visiting Student</b><br>
+			 Northwest Labs, B227.65<br>
+			<p>Abhro is a visiting student from the Curie Institute in France, using comparative genomics to study Hi-C maps in Lepidoptera.</p>
 		</div>
 		<div class="col-1-24 card-margin"></div>
 	</div>
