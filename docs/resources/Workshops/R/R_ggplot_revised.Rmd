@@ -39,7 +39,7 @@ We'll guide you in depth in creating a single type of plot (scatter plot) while 
 
 # Introduction to ggplot
 
-[ggplot](https://ggplot2.tidyverse.org/) is a **package** (library of code with various functions) that is part of the **tidyverse**. It uses a somewhat standardized 'grammar of graphics' ([book](http://id.lib.harvard.edu/alma/990138412570203941/catalog); [paper](https://hollis.harvard.edu/permalink/f/1mdq5o5/TN_cdi_informaworld_taylorfrancis_310_1198_jcgs_2009_07098)) in its syntax to make almost every aspect of a plot customizable. The input to ggplot are **data frames** and **tibbles**, and the best way to organize your data so that it is easily plotted is by ggplot is following the **tidy** principles, which is why it's part of the tidyverse.
+[ggplot](https://ggplot2.tidyverse.org/) is a **package** (library of code with various functions) that is part of the **tidyverse**. It uses a somewhat standardized 'grammar of graphics' ([book](https://id.lib.harvard.edu/alma/990082021020203941/catalog); [paper](https://hollis.harvard.edu/permalink/f/1mdq5o5/TN_cdi_informaworld_taylorfrancis_310_1198_jcgs_2009_07098)) in its syntax to make almost every aspect of a plot customizable. The input to ggplot are **data frames** and **tibbles**, and the best way to organize your data so that it is easily plotted is by ggplot is following the **tidy** principles, which is why it's part of the tidyverse.
 
 If you haven't already, download and install the tidyverse bundle of packages and load it. ggplot2 is one of the packages bundled with it. We'll also install and load the `palmerpenguins` package, which contains the sample dataset we're working with.
 
