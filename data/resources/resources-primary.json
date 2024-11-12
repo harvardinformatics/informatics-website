@@ -220,6 +220,106 @@
             "description": ""
         },
 
+        "Nextflow training from nextflow":{
+            "id": "23",
+            "name": "Nextflow training",
+            "link": "https://training.nextflow.io/",
+            "tags": ["nextflow", "high-performance computing"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Nextflow training variant calling": {
+            "id": "24",
+            "name": "Nextflow training for variant calling",
+            "link": "https://sateeshperi.github.io/nextflow_varcal/nextflow/",
+            "tags": ["nextflow", "variant calling"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Nextflow training compilation": {
+            "id": "25",
+            "name": "Where to learn nextflow in 2023",
+            "link": "https://seqera.io/blog/learn-nextflow-in-2023/",
+            "tags": ["nextflow"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Snakemake tutorial from docs": {
+            "id": "26",
+            "name": "Snakemake tutorial",
+            "link": "https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html",
+            "tags": ["snakemake"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Snakemake 8 slurm plugin": {
+            "id": "27",
+            "name": "Snakemake 8 slurm plugin",
+            "link": "https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html",
+            "tags": ["snakemake", "high-performance computing"],    
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Uppsala University snakemake tutorial": {
+            "id": "28",
+            "name": "Uppsala University snakemake tutorial",
+            "link": "https://uppsala.instructure.com/courses/51980/pages/snakemake-1-introduction?module_item_id=243089",
+            "tags": ["snakemake"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Uppsala University Tools for Reproducible Research": {
+            "id": "29",
+            "name": "Uppsala University Tools for Reproducible Research",
+            "link": "https://uppsala.instructure.com/courses/51980",
+            "tags": ["reproducibility", "git", "nextflow", "snakemake", "conda", "R", "python"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Optimizing Nextflow for HPC": {
+            "id": "30",
+            "name": "Optimizing Nextflow for HPC and Cloud at Scale",
+            "link": "https://seqera.io/blog/optimizing-nextflow-for-hpc-and-cloud-at-scale/",
+            "tags": ["nextflow", "high-performance computing"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Carpentries snakemake training": {
+            "id": "31",
+            "name": "Carpentries snakemake training",
+            "link": "https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/index.html",
+            "tags": ["snakemake", "bioinformatics"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
+        "Carpentries nextflow training": {
+            "id": "32",
+            "name": "Carpentries nextflow training",
+            "link": "https://carpentries-incubator.github.io/workflows-nextflow/index.html",
+            "tags": ["nextflow", "bioinformatics"],
+            "date-added": "11-12-2024",
+            "status": "active",
+            "description": ""
+        },
+
         "Template": {
             "id": "999",
             "name": "template",
@@ -390,6 +490,14 @@
             "date-added": "12-18-2023",
             "status" : "active",
             "description": "Links to resources related to reproducibility and open access"
+        },
+
+        "snakemake": {
+            "id": "21",
+            "tag": "snakemake",
+            "date-added": "11-12-2024",
+            "status" : "active",
+            "description": "Links to resources related to the snakemake workflow management system"
         },
 
         "template": {
