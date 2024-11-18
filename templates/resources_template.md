@@ -45,7 +45,7 @@ This is a four-day workshop that will introduce students to python as a data sci
 - [Plotting with R ggplot](Workshops/R/R_ggplot_revised.md) - [Download RMD file](Workshops/R/R_ggplot_revised.Rmd)
 - Introduction to Genome Annotation
 - Workflow Management, nextflow demonstration - pdf of slides available [here](Workshops/Workflow_managers.pdf)
-- scRNA analysis introduction
+- scRNA analysis introduction - [Download the RMD file](Workshops/SinglecellRNAseq.Rmd)
 - Scaling SLURM scripts on the HPC and benchmarking
 - SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms
 
