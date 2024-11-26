@@ -500,6 +500,14 @@
             "description": "Links to resources related to the snakemake workflow management system"
         },
 
+        "conda": {
+            "id": "22",
+            "tag": "conda",
+            "date-added": "11-26-2024",
+            "status" : "active",
+            "description": "Links to resources related to the conda package manager"
+        },
+
         "template": {
             "id": "999",
             "tag": "template",
