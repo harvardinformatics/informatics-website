@@ -32,7 +32,6 @@
         /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.home_gradient_hsla }} 99%, {{ config.home_gradient_hsla }} 99%); */
         /* This is used for the background gradient */
 
-        /* background-image: url(); */
         background-image: url(img/banners/IMG_7404.jpg);
         background-position: center center;
         /* The default background if javascript is disabled */
@@ -53,8 +52,15 @@
         .banner-row-container { background-attachment: scroll; }
     }
 
+    @media (max-width: 800px) {
+    .banner-row-container {
+        background-size: cover !important;
+        -moz-background-size: cover !important;
+        }
+    }    
+
     .banner-row {
-        height:100%;
+        height:100% !important;
         background-color: rgba(0,0,0,0.5);
         /* Should be uncommented for background image */
 

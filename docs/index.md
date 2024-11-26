@@ -217,7 +217,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b><a href="https://gwct.github.io/" target="_blank">Gregg Thomas, Ph.D.</a></b><br>
+			<b><a href="https://gwct.bio/" target="_blank">Gregg Thomas, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -226,7 +226,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<a href="https://gwct.github.io/" target="_blank">
+			<a href="https://gwct.bio/" target="_blank">
 				<img class="card-img" src="img/people/greggthomas.jpg" alt="Profile picture of Gregg Thomas">
 			</a>
 			<div class="row card-link-row">

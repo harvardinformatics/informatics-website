@@ -314,8 +314,8 @@ with open(md_output_file, 'w') as md_output:
     alumni_list.sort(key=lambda x: parse_date(x.get("date-left", "")), reverse=True)
     # Sort the alumni by "date-left" in descending order, placing those without "date-left" at the end
 
-    for person_data in alumni_list:
-        print(person_data.get('name'))
+    # for person_data in alumni_list:
+    #     print(person_data.get('name'))
 
     first_row = True;
     # Since this is one table, we don't need to reset the first row variable for each section
