@@ -8,71 +8,23 @@ hide:
 
 ## Current workshops
 
-We have a full semester of workshops planned for the Fall 2024 semester. We will be offering standalone 1 hour in person workshops on a different topic every week. For your convenience, each topic will meet twice, on Tuesday from 9:30-10:30 and on Wednesday from 12:15-1:15. You can attend either session. **All 1 hour workshops will meet in Northwest Building Room 453**
+We are running a python intensive workshop this January 2025 term. This will be a 3 week workshop that runs twice per week for 3 hours each session. **The workshop will be held in person in Northwest Building 453. We will meet Tuesdays and Thursdays 9:30 AM - 12:30 PM from January 7 - January 22.**
 
-[**Click here to register for the workshops**](https://docs.google.com/forms/d/e/1FAIpQLSf5XKLtkNBzO-ZtwCmIi5fvMSRNcdu7y8XmXdoSNxdVFYF80w/viewform?usp=sf_link) 
+Broadly, this workshop intends to be both an introduction to the concept of programming using python and an introduction to using python as a data science language. The first three days will be able the concept of programming while the last 3 days will be focused on introductory data analysis. You are welcome to jump in at any point, although we've intentionally made Days 1, 2, and 4 good starting points.
 
-??? "Intro to Python Intensive"
+[**Click here to register for the python intensive**](https://docs.google.com/forms/d/e/1FAIpQLSdYltf4wHbfH4su0cufqJhS6oHd7-23Z95WSwPQgS3CuWqMmg/viewform?usp=sf_link) 
 
-    - Wednesday August 28 10:00 AM - 1:00 PM
-    - Thursday September 5 2:00 - 5:00 PM
-    - Thursday September 12 2:00 - 5:00 PM
-    - Thursday September 19 2:00 - 5:00 PM
+Schedule for python intensive:
 
-??? "Project organization & Data management"
+- Tuesday, January 7, 9:30 AM - 12:30 PM: Day 1: Python basics and intro to control flow
+- Thursday, January 9, 9:30 AM - 12:30 PM: Day 2: Intro to writing functions
+- Tuesday, January 14, 9:30 AM - 12:30 PM: Day 3: Metaprogramming tips and more advanced function writing
+- Thursday, January 16, 9:30 AM - 12:30 PM: Day 4: Numpy arrays, reading and writing files
+- Tuesday, January 21, 9:30 AM - 12:30 PM: Day 5: Pandas dataframes and plotting
+- Thursday, January 23, 9:30 AM - 12:30 PM: Day 6: Using the internet & LLMs and a longer data analysis exercise
 
-    - Tuesday Sept 24 9:30-10:30 AM
-    - Wednesday Sept 25 12:15-1:15 PM
-
-??? "Git & GitHub introduction"
-
-    - Tuesday Oct 1 9:30-10:30 AM
-    - Wednesday Oct 2 12:15-1:15 PM
-
-??? "Installing & Managing software (Conda, Containers)"
-
-    - Tuesday Oct 8 9:30-10:30 AM
-    - Wednesday Oct 9 12:15-1:15 PM
-
-??? "Submitting your first SLURM script or job array"
-
-    - Tuesday Oct 15 9:30-10:30 AM
-    - Wednesday Oct 16 12:15-1:15 PM
-
-??? "Data Transformation with R Tidyverse"
-
-    - Tuesday Oct 22 9:30-10:30 AM
-    - Wednesday Oct 23 12:15-1:15 PM
-
-??? "Plotting with R ggplot"
-
-    - Tuesday Oct 29 9:30-10:30 AM
-    - Wednesday Oct 30 12:15-1:15 PM
-
-??? "Introduction to Genome Annotation"
-
-    - Tuesday Nov 5 9:30-10:30 AM
-    - Wednesday Nov 6 12:15-1:15 PM
-
-??? "Workflow Management, nextflow demonstration"
-
-    - Tuesday Nov 12 9:30-10:30 AM
-    - Wednesday Nov 13 12:15-1:15 PM
-
-??? "scRNA analysis introduction"
-
-    - Tuesday Nov 19 9:30-10:30 AM
-    - Wednesday Nov 20 12:15-1:15 PM
-
-??? "Scaling SLURM scripts on the HPC and benchmarking"
-
-    - Tuesday Dec 3 9:30-10:30 AM
-    - Wednesday Dec 4 12:15-1:15 PM
-
-??? "SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms"
-
-    - Tuesday Dec 10 9:30-10:30 AM
-    - Wednesday Dec 11 12:15-1:15 PM
+!!! Note
+    To add these sessions to your calendar, click on the event on the Google Calendar below and click "copy to my calendar"
 
 ## Office hours
 

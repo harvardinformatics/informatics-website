@@ -18,37 +18,16 @@ The FAS Informatics Group creates resources for bioinformatics analysis in the f
 
 Below is a list of all current workshops the Informatics Group runs. Workshop files may be temporarily unavailable as we update them during ongoing sessions.
 
-### Intro to Python Intensive
+### Introduction to Python Intensive V 2.0 (January 2025)
 
-This is a four-day workshop that will introduce students to python as a data science language. This assumes no prior knowledge of python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
+This workshop intends to be both an introduction to the concept of programming using python and an introduction to using python as a data science language. The first three days will be able the concept of programming while the last 3 days will be focused on introductory data analysis. During the course, you can find the jupyter notebooks below. 
 
-- Day 1: Whirlwind tour of Python, covering the basic concepts of data types, data structures, functions, and plotting in a broad overview 
-    - [Download the student jupyter notebook file](Workshops/Python/Python-Day1-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/Python/Python-Day1.ipynb)
-- Day 2: Deep dive into python functions, with more about how to write functions in python with additional practice exercises
-    - [Download the student jupyter notebook file](Workshops/Python/Python-Day2-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/Python/Python-Day2.ipynb)
-- Day 3: Data structures with numpy and pandas, with some plotting with matplotlib
-    - [Download the student jupyter notebook file](Workshops/Python/Python-Day3-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/Python/Python-Day3.ipynb)
-- Day 4: Putting it all together: We will cover some meta-cognitive tips & tricks as well as work through a longer exercise that combines the previous 3 days of concepts. Plus time for additional Q&A. 
-    - [Download the student jupyter notebook file](Workshops/Python/Python-Day4-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/Python/Python-Day4.ipynb)
-
-### One hour workshops:
-
-- Project organization & Data management
-- Git & GitHub introduction
-- Installing & Managing software (Conda, Containers)
-- Submitting your first SLURM script or job array
-- [Data Transformation with R Tidyverse](Workshops/R/R_tidyverse_revised.md) - [Download RMD file](Workshops/R/R_tidyverse_revised.Rmd)
-- [Plotting with R ggplot](Workshops/R/R_ggplot_revised.md) - [Download RMD file](Workshops/R/R_ggplot_revised.Rmd)
-- Introduction to Genome Annotation
-- Workflow Management, nextflow demonstration - pdf of slides available [here](Workshops/Workflow_managers.pdf)
-- scRNA analysis introduction - [Download the RMD file](Workshops/SinglecellRNAseq.Rmd)
-- Scaling SLURM scripts on the HPC and benchmarking
-- SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms
-
+- Day 1: Python basics and intro to control flow
+- Day 2: Intro to writing functions
+- Day 3: Metaprogramming tips and more advanced function writing
+- Day 4: Numpy arrays, reading and writing files
+- Day 5: Pandas dataframes and plotting
+- Day 6: Using the internet & LLMs and a longer data analysis exercise
 
 ## Past Workshops
 
@@ -86,6 +65,36 @@ This workshop aims to teach students how to be more effective at working on thei
 - [Day 3: Version control with git and GitHub](Workshops/Healthy/healthy_habits_day3.md) - [Download pdf of slides](Workshops/Healthy/healthy_habits_day3_ppt.pdf)
 - [Day 4: Running scripts on the Cannon cluster](Workshops/Healthy/healthy_habits_day4.md)
 
+### Intro to Python Intensive (Fall 2024)
+
+This is a four-day workshop that will introduce students to python as a data science language. This assumes no prior knowledge of python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
+
+- Day 1: Whirlwind tour of Python, covering the basic concepts of data types, data structures, functions, and plotting in a broad overview 
+    - [Download the student jupyter notebook file](Workshops/Python/Python-Day1-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/Python/Python-Day1.ipynb)
+- Day 2: Deep dive into python functions, with more about how to write functions in python with additional practice exercises
+    - [Download the student jupyter notebook file](Workshops/Python/Python-Day2-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/Python/Python-Day2.ipynb)
+- Day 3: Data structures with numpy and pandas, with some plotting with matplotlib
+    - [Download the student jupyter notebook file](Workshops/Python/Python-Day3-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/Python/Python-Day3.ipynb)
+- Day 4: Putting it all together: We will cover some meta-cognitive tips & tricks as well as work through a longer exercise that combines the previous 3 days of concepts. Plus time for additional Q&A. 
+    - [Download the student jupyter notebook file](Workshops/Python/Python-Day4-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/Python/Python-Day4.ipynb)
+
+### One hour workshops: (Fall 2024)
+
+- Project organization & Data management
+- Git & GitHub introduction
+- Installing & Managing software (Conda, Containers)
+- Submitting your first SLURM script or job array
+- [Data Transformation with R Tidyverse](Workshops/R/R_tidyverse_revised.md) - [Download RMD file](Workshops/R/R_tidyverse_revised.Rmd)
+- [Plotting with R ggplot](Workshops/R/R_ggplot_revised.md) - [Download RMD file](Workshops/R/R_ggplot_revised.Rmd)
+- Introduction to Genome Annotation
+- Workflow Management, nextflow demonstration - pdf of slides available [here](Workshops/Workflow_managers.pdf)
+- scRNA analysis introduction - [Download the RMD file](Workshops/SinglecellRNAseq.Rmd)
+- Scaling SLURM scripts on the HPC and benchmarking
+- SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms
 
 ## External resources
 
