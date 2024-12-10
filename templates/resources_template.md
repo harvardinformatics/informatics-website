@@ -94,7 +94,7 @@ This is a four-day workshop that will introduce students to python as a data sci
 - Workflow Management, nextflow demonstration - pdf of slides available [here](Workshops/Workflow_managers.pdf)
 - scRNA analysis introduction - [Download the RMD file](Workshops/SinglecellRNAseq.Rmd)
 - Scaling SLURM scripts on the HPC and benchmarking
-- SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms
+- <a href="Workshops/snparcher-tutorial-202412.pdf" target="_blank">SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms</a>
 
 ## External resources
 
