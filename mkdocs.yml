@@ -5,27 +5,7 @@ copyright: © 2023-2024 | Harvard FAS Informatics | <a href="https://accessibili
 nav:
   - Home: 
     - index.md
-  - Resources: 
-    - resources/index.md
-    - Workshops:
-      - Python:
-        - Day 1: resources/Workshops/Python/Python-Day1.ipynb
-        - Day 2: resources/Workshops/Python/Python-Day2.ipynb
-        - Day 3: resources/Workshops/Python/Python-Day3.ipynb
-        - Day 4: resources/Workshops/Python/Python-Day4.ipynb
-      - R: 
-        - Introduction: resources/Workshops/R/index.html
-        - Get started: resources/Workshops/R/start.html
-        - Part 1: resources/Workshops/R/R-workshop-2023-Part1.md
-        - Part 2: resources/Workshops/R/R-workshop-2023-Part2.md
-        - Part 3: resources/Workshops/R/R-workshop-2023-Part3.md
-      - Unix: 
-        - Introduction: resources/Workshops/Unix/index.html
-        - Get started: resources/Workshops/Unix/start.html
-        - Part 1: resources/Workshops/Unix/Biotips-workshop-2024-Day1.md
-        - Part 2: resources/Workshops/Unix/Biotips-workshop-2024-Day2.md
-        - Part 3: resources/Workshops/Unix/Biotips-workshop-2024-Day3.md
-        - Part 4: resources/Workshops/Unix/Biotips-workshop-2024-Day4.md
+  - Resources: resources/index.md
   - Research: research/index.md
   - Software: software/index.md
   - FAQ: faq/index.md
@@ -91,7 +71,7 @@ plugins:
   - search
   - table-reader
   - mkdocs-jupyter:
-      ignore: ['resources/Workshops/Python/*student.ipynb']
+      ignore: ['*student.ipynb']
 hooks:
   - scripts/about_generator.py 
   - scripts/resources_generator.py 
