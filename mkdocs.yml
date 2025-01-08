@@ -5,7 +5,9 @@ copyright: © 2023-2024 | Harvard FAS Informatics | <a href="https://accessibili
 nav:
   - Home: 
     - index.md
-  - Resources: resources/index.md
+  - Resources: 
+    - resources/index.md
+    - Terms: resources/terms.md
   - Research: research/index.md
   - Software: software/index.md
   - FAQ: faq/index.md
