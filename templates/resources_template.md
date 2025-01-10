@@ -33,6 +33,8 @@ This workshop intends to be both an introduction to the concept of programming u
     - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day2-student.ipynb)
     - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day2.ipynb)
 - Day 3: Metaprogramming tips and more advanced function writing
+    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day3-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day3.ipynb)
 - Day 4: Numpy arrays, reading and writing files
 - Day 5: Pandas dataframes and plotting
 - Day 6: Using the internet & LLMs and a longer data analysis exercise
