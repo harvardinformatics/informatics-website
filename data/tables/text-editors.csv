@@ -1,0 +1,13 @@
+Editor,Type,Platform,Link,Used
+nano,Command line,Linux/Unix,https://www.nano-editor.org/,N
+vi/vim,Command line,Linux/Mac/Windows,https://www.vim.org/,N
+Emacs,Command line,Linux/Mac/Windows,https://www.gnu.org/software/emacs/,N
+Visual Studio Code,GUI,Linux/Mac/Windows,https://code.visualstudio.com/,N
+BBEdit,GUI,Mac,https://www.barebones.com/products/bbedit/,N
+gedit,GUI,Linux/Mac/Windows,,N
+Sublime text,GUI,Linux/Mac/Windows,https://www.sublimetext.com/,N
+Atom,GUI,Linux/Mac/Windows,https://atom.io/,N
+TextMate,GUI,Mac,https://macromates.com/,N
+Notepad++,GUI,Windows,https://notepad-plus-plus.org/,N
+Rstudio,IDE,Linux/Mac/Windows,https://www.rstudio.com/,Y
+Visual Studio,IDE,Windows,https://visualstudio.microsoft.com/,N

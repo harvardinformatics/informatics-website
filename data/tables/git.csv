@@ -1,0 +1,15 @@
+﻿Term,Definition
+<a href="https://git-scm.com/" target="_blank">Git</a>,"Software for **version control**, which keeps track of changes to files in a given directory."
+Version control,"The process of tracking changes to files over time, allowing you to recall specific versions later."
+<a href="https://github.com/" target="_blank">Github</a>,"A web-based platform that facilitates **Git**'s use for collaboration between individuals. Other web-based platforms include <a href="https://about.gitlab.com/" target="_blank">GitLab<a> and <a href="https://bitbucket.org/" target="_blank">BitBucket</a>."
+Repository/Repo,"A **directory** of files that has been initialized by Git for syncing, possibly including code, documentation, or data."
+init,"The process of initializing a directory as a Git repository."
+clone,A copy of a repository or the process of copying a repository. Typically used when downloading a repository from Github or one of the other web-based Git platforms.
+fork,"Git repositories are created by a single user or organization, however other user's can make copies of them on their own accounts so they can edit them without affecting the original files. This is called a fork: a copy of a repository between users."
+branch,"A copy of a repository from a certain point within that repository's history. Typically a repository has a ""main"" branch and other branches are created off of it. Changes on the main branch are not reflected in the split branch unless explicitly synced and vice versa."
+pull,"The process of integrating changes from one version of a repository to another (*e.g.* from a fork back to the original repo, or from a branch back to the main branch). There are two general use cases: 1) When the owner of a repository makes changes to it, you **pull** those changes into your local copy. 2) When you make changes to a forked repository or a branch of a repository and want to incorporate the changes back to the original repo or branch, you initiate a **pull request**, and then whoever is in charge of the original repository can **pull** those changes in."
+pull request,"When someone has made changes to a fork or a branch that they wish the owner's or the original repository to incorporate, they initiate a **pull request** so the owner can review and potentially **pull** the changes."
+staging area,"When a user changes or adds files to a repository, they must first add them to an intermediate **staging area** where they can be reviewed."
+add,"The process of adding new/edited files to the staging area."
+commit,"The process of saving changes to the repository. This is done after adding files to the staging area."
+push,"The process of uploading committed changes from a local repository to a remote repository to a remote platform (*e.g.* Github)."

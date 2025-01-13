@@ -1,0 +1,6 @@
+Program,Author,Year,Link,Paper,Used
+GATK,McKenna,2010,https://gatk.broadinstitute.org/hc/en-us,https://doi.org/10.1101/gr.107524.110,Y
+FreeBayes,Garrison and Marth,2012,https://github.com/wadeschulz/freebayes,https://arxiv.org/abs/1207.3907v2,N
+Discovar,Weisenfeld,2014,https://software.broadinstitute.org/software/discovar/blog/,https://dx.doi.org/10.1038%2Fng.3121,N
+MAQ,Li,2008,http://maq.sourceforge.net/,https://dx.doi.org/10.1101%2Fgr.078212.108,N
+DeepVariant,Poplin,2018,https://github.com/google/deepvariant,https://doi.org/10.1038/nbt.4235,N

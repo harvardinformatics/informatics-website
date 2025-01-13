@@ -1,0 +1,7 @@
+Program,Type,Platform,Protocol,Link
+WinSCP,GUI,Windows,FTP/SFTP,https://winscp.net/eng/index.php
+FileZilla,GUI,Linux/Mac/Windows,FTP/SFTP,https://filezilla-project.org/
+Cyberduck,GUI,Mac/Windows,FTP/SFTP,https://cyberduck.io/
+scp,Command line,Linux/Mac/Windows,SSH,https://en.wikipedia.org/wiki/Secure_copy_protocol
+rsync,Command line,Linux/Mac,SSH/rsync,https://rsync.samba.org/
+sftp,Command line,Linux/Mac/Windows,SFTP,https://en.wikipedia.org/wiki/Secure_file_transfer_program
