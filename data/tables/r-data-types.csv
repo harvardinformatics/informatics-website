@@ -1,0 +1,6 @@
+Data Type,Description,Example,Mutability,Iterability
+Numeric,"Represents numbers that can be integers or decimals. Plainly typed as numbers with or without decimal points, and hyphens to indicate negative numbers","`42`, `3.14`, `-7`, `0`","Immutable","Not Iterable"
+Integer,"Represents whole numbers, explicitly defined with `L` at the end of the number or by using the `as.integer()` function.","`42L`, `as.integer(42)`","Immutable","Not Iterable"
+Character,"Text or string data, defined within quotation marks, single or double.","`'hello'`, `'99'`, `'a string'`","Immutable","Not Iterable"
+Logical,"Boolean values representing `TRUE` or `FALSE`.","`TRUE`, `FALSE`, `T`, `F`","Immutable","Not Iterable"
+Complex,"Numbers with real and imaginary parts, defined with `i` or `I` at the end of the imaginary part.","`1+4i`, `2+0i`, `3+1i`","Immutable","Not Iterable"

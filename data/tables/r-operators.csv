@@ -1,0 +1,12 @@
+Operator,Description,Example
+"`<-` or `=`","Assignment operator used to assign values to variables.","`x <- 5`"
+"`==`","Equality operator used to test if two values are equal.","`x == y`"
+"`!`","Logical NOT operator used to negate a Boolean expression.","`!TRUE`"
+"`&`","Logical AND operator used to test multiple conditions.","`TRUE & FALSE`"
+"`|`","Logical OR operator used to test if at least one condition is TRUE.","`TRUE | FALSE`"
+"`+`","Arithmetic operator used for addition.","`x + y`"
+"`-`","Arithmetic operator used for subtraction.","`x - y`"
+"`*`","Arithmetic operator used for multiplication.","`x * y`"
+"`/`","Arithmetic operator used for division.","`x / y`"
+"`^`","Arithmetic operator used for exponentiation.","`x ^ y`"
+"`%>%` (from tidyverse)","Pipe operator used to chain operations.","`data %>% filter(x > 5)`"

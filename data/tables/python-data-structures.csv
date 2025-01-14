@@ -1,0 +1,5 @@
+Data Structure,Description,Example,Mutability,Iterability,Boolean False Value
+"List (`list`)","An ordered, mutable collection of items that can contain mixed data types. Defined with square brackets. Commas separate individual elements.","[1, 'hello', 3.14]","Mutable","Iterable","`[]`"
+"Tuple (`tuple`)","An ordered, immutable collection of items that can contain mixed data types. Defined with parentheses. Commas separate individual elements.","(1, 'hello', 3.14)","Immutable","Iterable","`()`"
+"Set (`set`)","An unordered collection of **unique** items. Defined with curly brackets. Commas separate individual elements.","{1, 2, 3}, {'apple', 'banana'}","Mutable","Iterable","`set()`"
+"Dictionary (`dict`)","A collection of key-value pairs, where keys are unique. Defined with curly brackets, colons to indicate key-value pairs, and commas to separate individual key-value pairs.","{'name': 'Alice', 'age': 25}","Mutable","Iterable","`{}`"

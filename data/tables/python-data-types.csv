@@ -1,0 +1,6 @@
+Data Type,Description,Example,Mutability,Iterability,Boolean False Value
+"Integers (`int`)","Whole numbers, both positive and negative. Typed plainly as just numbers and the hyphen to indicate negative numbers.","`42`, `-7`, `0`","Immutable","Not Iterable","`0`"
+"Floating point numbers (`float`)","Decimal numbers. Typed plainly as just numbers, the decimal point, and the hyphen to indicate negative numbers","`3.14`, `-0.001`, `2.0`","Immutable","Not Iterable","`0.0`"
+"Strings (`str`)","Text, stored as a sequence of any character on your keyboard. Strings must be enclosed within quotation marks, single or double.","`'hello'`, `'99'`, `'a string'`","Immutable","Iterable","`''`"
+"Booleans (`bool`)","Boolean values, commonly used in control structures.","`True`, `False`","Immutable","Not Iterable","`False`"
+"NoneType","Represents the absence of a value.","`None`","Immutable","Not Iterable","`None`"

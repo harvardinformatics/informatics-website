@@ -39,17 +39,41 @@ They also provide a <a href="https://docs.rc.fas.harvard.edu/kb/glossary/" targe
 
 ## General programming terms
 
-{{ read_csv('data/tables/programming.csv') }}          
+{{ read_csv('data/tables/programming.csv') }}
 
 ## Python terms
 
 *Note that while we give some examples of syntax, the format of this table does not lend itself to exact typing, so please read further documentation if needed.* 
 
+### Python data types
+
+{{ read_csv('data/tables/python-data-types.csv') }}
+
+### Python data structures
+
+{{ read_csv('data/tables/python-data-structures.csv') }}
+
+### Python operators
+
+{{ read_csv('data/tables/python-operators.csv') }}
+
 ## R terms
 
 *Note that while we give some examples of syntax, the format of this table does not lend itself to exact typing, so please read further documentation if needed.*
 
-{{ read_csv('data/tables/r.csv') }}      
+{{ read_csv('data/tables/r.csv') }}
+
+### R data types
+
+{{ read_csv('data/tables/r-data-types.csv') }}
+
+### R data structures
+
+{{ read_csv('data/tables/r-data-structures.csv') }}
+
+### R operators
+
+{{ read_csv('data/tables/r-operators.csv') }}
 
 ## Git terms
 
@@ -57,4 +81,4 @@ They also provide a <a href="https://docs.rc.fas.harvard.edu/kb/glossary/" targe
 However, there are many terms associated with Git that may be confusing. In essence, many of these terms are simply other words for "a copy" or "copying" a directory, however with slight distinctions.
 This table tries to define these terms clearly.
 
-{{ read_csv('data/tables/git.csv') }}    
+{{ read_csv('data/tables/git.csv') }}
