@@ -13,6 +13,7 @@ nav:
   - FAQ: faq/index.md
   - Contact Us: contact.md
   - Events: events.md
+  #- Glossary: glossary.md
 markdown_extensions:
   - admonition
   - pymdownx.details

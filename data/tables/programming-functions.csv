@@ -1,0 +1,7 @@
+Term,Definition,Python example,R example
+Function,"A generalized chunk of code that can be easily be called (run) by other code. Functions usually take input **arguments** and **return** output to the main program.","`print()`, `len()`","`mean()`, `sd()`"
+Method,"A **function** that is associated with a **class** and can only be used on **objects** of that class.","`.append()` for **lists**","`summary()`, `plot()`"
+Argument,"A value passed to a function or program when it is called.","`len(x)`, where `x` is an **iterable** object (*e.g.* string, list)","`mean(x)`, where `x` is a vector of numbers"
+Parameter,"A variable that is used in a function to represent an argument that is passed to it.","In `def my_func(x):`, `x` is a parameter","In `my_func <- function(x)`, `x` is a parameter"
+Return value,"The value that a function or program gives back after it is called.","`len(x)` returns the length of the iterable object `x`","`mean(x)` returns the average of the vector `x`"
+Library,"A collection of **functions** that can be imported and used in other programs.","`math`, `os`","`dplyr`, `ggplot2`"
