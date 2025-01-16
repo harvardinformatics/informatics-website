@@ -1,0 +1,7 @@
+Program,Author,Year,Use cases,Link,Paper,Used
+BWA,Li and Durbin,2010,Short read alignment,http://bio-bwa.sourceforge.net/,https://doi.org/10.1093/bioinformatics/btp324,Y
+TopHat2,Kim,2013,Mapping RNA-seq reads,https://ccb.jhu.edu/software/tophat/index.shtml,https://doi.org/10.1186/gb-2013-14-4-r36,N
+Minimap2,Li,2018,Long read mapping and whole genome alignment,https://github.com/lh3/minimap2,https://doi.org/10.1093/bioinformatics/bty191,Y
+bbmap,Bushnell,2014,Short and long read mapper with many extras,https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/,https://www.osti.gov/biblio/1241166,N
+Bowtie2,Langmead and Salzberg,2012,Short read alignment,http://bowtie-bio.sourceforge.net/bowtie2/index.shtml,https://dx.doi.org/10.1038%2Fnmeth.1923,N
+SOAP2,Li,2009,Short read alignment,https://sourceforge.net/projects/soapdenovo2/,https://doi.org/10.1093/bioinformatics/btp336,N

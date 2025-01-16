@@ -1,0 +1,16 @@
+Layer function name,Category,Description
+geom_point(),Main,plot the x and y aesthetics as points on the grid (a scatter plot)
+geom_line(),Main,plot the x and y aesthetics as connected lines on the grid
+geom_bar(),Main,plot the quantities of the y aesthetic as bars with the x aesthetic being the categories (bar labels or positions)
+geom_histogram(),Main,bin data in the x aesthetic and plot the number of data points in each bin as a bar of that height on the y axis
+geom_density(),Main,plot a contiuous line along the x axis whose height on the y axis depends on the estimated probability of that value occurring in the data
+geom_boxplot(),Main,"summarize the distribution of the data in the y aesthetic, using the x aesthetic as the grouping or position if provided"
+geom_violin(),Main,"similar to geom_density(), except the continuous line is flipped and mirrored"
+geom_smooth(),Main,fit a model to describe the relationship of the x and y aesthetics (like a linear regression) and plot a line that best fits that model
+ggtitle(),Secondary,add a title to the graphical object panel
+xlab(),Secondary,provide a title for the x-axis
+ylab(),Secondary,provide a title for the y-axis
+scale_x_[continuous/discrete](),Secondary,"control the range, breaks, and labels of the x-axis for either continuous or discrete data"
+scale_y_[continuous/discrete](),Secondary,"control the range, breaks, and labels of the y-axis for either continuous or discrete data"
+scale_[color/fill]_[continuous/gradient/discrete/manual],Secondary,"control the color and fill of the data displayed, on continuous or discrete scales, or manually provide color information"
+theme(),Secondary,fine control over text size and layout of axes and grids

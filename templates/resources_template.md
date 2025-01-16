@@ -14,9 +14,9 @@ hide:
 
 The FAS Informatics Group creates resources for bioinformatics analysis in the form of tutorials, walkthroughs, and both online and in-person workshops. We have also compiled links to other online resources.
 
-## Terms
+## Glossary
 
-[Here's](terms.md) some helpful terminology that we use throughout our trainings. Let us know if there is something we should add!
+[Here's](glossary.md) some terminology that we may use throughout our trainings. Let us know if there is something we should add!
 
 ## Current workshops
 

@@ -1,0 +1,20 @@
+Term,Definition
+Sequence libraries,A sample of DNA that has been processed to be sequenced.
+Reads,Fragmented and overlapping pieces of a DNA strand that are sequenced.
+Phred quality scores,"A scaled probability that a given inference (usually a called base) is incorrect. The probabilty of error, P(e), scaled by -10 log P(e)."
+Short reads,"Reads from first and second generation sequencing such as Sanger, Illumina, IonTorrent, etc. Short reads can range from 30-1000bp long."
+Read pair,"Many short read sequencing technologies sequence from both ends of a DNA fragment, resulting in a pair of sequenced reads that come from said fragment."
+Adapter,A short piece of DNA that is ligated to the short fragment to be sequenced. The adapter allows the fragment to be affixed to a physical medium (such as a flow cell) to facilitate amplification and sequencing.
+Insert size,The size of the DNA fragment between the adapter sequences.
+Mate pairs,Long-insert paired end reads prepared by circularizing longer DNA fragments.
+Jumping libraries,Junction-fragment libraries. Mate pair libraries.
+Long reads,Reads from single-molecule sequencing technology such as PacBio SMRT and Oxford Nanopore. Long reads can range from 1000-100000+bp long.
+"""Genome assembly, Assembly, de novo Assembly""","""1. The process by which small overlapping parts of the genome are reconstructed into longer contiguous sequences, 2. A sequence that has undergone the assembly process."""
+Contigs,Assembled reads. Contig assembly is usually done with a graph-based representation (i.e. de Bruijn graphs) of overlapping sequence reads.
+Scaffolds,Contigs that have been joined together to form longer sequences. Scaffolding is usually done using read pair information or long reads.
+Reference genome,An already assembled genome to which you can compare newly sequenced reads or genomes.
+Read mapping,The process of aligning reads from a newly sequenced genome to a reference genome
+Mapping quality,A usually Phred scaled probability that a given read has mapped incorrectly.
+Reference-guided assembly,"""1. The process of using read mapping to reconstruct the genome from a set of reads, 2. A sequence that has undergone the reference-guided assembly process."""
+Reference bias,The phenomenon of a set of mapped reads appearing to resembe (through lower divergence) the reference genome more closely than they actually do because reads containing the most variation were not mapped.
+Iterative mapping,"The process of mapping reads to a reference genome, generating a reference-guided assembly, and then repeating the process this time mapping to the new reference guided assembly. Done to reduce reference bias."

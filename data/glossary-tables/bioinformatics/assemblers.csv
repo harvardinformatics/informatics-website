@@ -1,0 +1,23 @@
+Program,Author,Year,Contig assembly method,Scaffolding method,Use cases,Link,Paper,Used
+ALLPATHS-LG,Gnerre,2011,de Bruijn graph and sequence graphs,Read pairs,Large genomes with both short and long reads,http://software.broadinstitute.org/allpaths-lg/blog/?page_id=12,https://doi.org/10.1073/pnas.1017351108,N
+hifiasm,Cheng,2020,Error corrected overlap-layout to preserve haplotypes,NA,PacBio Hifi reads,https://github.com/chhylp123/hifiasm,https://arxiv.org/abs/2008.01237,N
+Spades,Bankevich,2012,de Bruijn graph,Read pairs and small gap repeat resolution; can also use long reads or previously inferred contigs,Good for small genomes or targeted sequencing (e.g. exomes),https://github.com/ablab/spades,https://doi.org/10.1089/cmb.2012.0021,Y
+Discovar de novo,Weisenfeld,2014,de Bruijn graph and lines,NA,Single 2x250bp library,https://software.broadinstitute.org/software/discovar/blog/,https://dx.doi.org/10.1038%2Fng.3121,N
+Supernova,Weisenfeld,2017,de Bruijn graph and lines,Read pairs and linked read barcodes,Large genomes with linked reads for phased genome assemblies,https://github.com/10XGenomics/supernova,https://doi.org/10.1101/gr.235812.118,N
+Canu,Koren,2017,Overlap-layout-consensus,NA,Long reads,https://github.com/marbl/canu,https://dx.doi.org/10.1101/gr.215087.116,N
+HiCanu,Nurk,2020,Overlap-layout-consensus,NA,PacBio Hifi reads,,https://doi.org/10.1101/gr.263566.120 ,N
+Flye,Kolmogorov,2019,Repeat graph,NA,Long reads,https://github.com/fenderglass/Flye/,https://doi.org/10.1038/s41587-019-0072-8,Y
+platanus,Kajitani,2014,de Bruijn graph,Read pairs,Short reads for genomes with high heterozygosity,https://dx.doi.org/10.1101%2Fgr.170720.113,http://platanus.bio.titech.ac.jp/,N
+opera-lg,Gao,2016,NA,Paired reads and long reads,Scaffolding of repeat-rich genomes,https://sourceforge.net/p/operasf/wiki/The%20OPERA%20wiki/,https://doi.org/10.1186/s13059-016-0951-y,N
+agouti,Zhang,2016,NA,RNA-seq reads,Scaffolding of large genomes,https://github.com/svm-zhang/AGOUTI,https://doi.org/10.1186/s13742-016-0136-3,N
+Abyss,Jackman,2017,de Bruijn graph; all possible k-mers,"""Mate pairs, linked reads, or long reads""",Short read libraries for genomes up to 100Mb; Transcriptomes with Trans-ABySS,https://github.com/bcgsc/abyss,https://doi.org/10.1101/gr.214346.116 ,N
+Velvet,Zerbino and Birney,2008,de Bruijn graph,Read pairs,Short read assembly,https://github.com/dzerbino/velvet,https://doi.org/10.1101/gr.074492.107,N
+SOAPdenovo2,Luo,2012,de Bruijn graph,Read pairs,Short read assembly,https://github.com/aquaskyline/SOAPdenovo2,https://doi.org/10.1186/2047-217X-1-18,N
+MaSuRCA,Zimin,2013,Overlap-layout-consensus on unique super-reads,"""Mate pairs, linked reads, or long reads""",Mixed short read libraries of large genomes,https://github.com/alekseyzimin/masurca,https://doi.org/10.1093/bioinformatics/btt476,N
+CABOG,NA,NA,NA,NA,NA,http://wgs-assembler.sourceforge.net/wiki/index.php?title=Main_Page,NA,N
+Falcon,Chin,2016,String graph,NA,PacBio long reads for diploid genome assembly,https://github.com/PacificBiosciences/pb-assembly,https://dx.doi.org/10.1038%2Fnmeth.4035,N
+Miniasm,Li,2016,Overlap-layout,NA,Long reads,https://github.com/lh3/miniasm,https://doi.org/10.1093/bioinformatics/btw152,N
+HINGE,Kamath,2017,Overlap-layout-consensus with hinging,NA,Long reads,https://hingeassembler.github.io/,https://doi.org/10.1101/gr.216465.116 ,N
+Abruijn,Lin,2016,A-Bruijn graph,NA,Long reads,https://github.com/bioreps/ABruijn,https://doi.org/10.1073/pnas.1604560113,N
+MEGAHIT,Li,2015,de Bruijn graph,,Short read assembly of metagenomes,https://github.com/voutcn/megahit,https://doi.org/10.1093/bioinformatics/btv033,N
+Peregrine,Chin and Khalak,2020,Overlap-layout-consensus with shimmer indexing,NA,Fast long reads assembly,https://github.com/cschin/Peregrine,https://doi.org/10.1101/705616 ,N

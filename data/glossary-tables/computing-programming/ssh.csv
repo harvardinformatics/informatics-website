@@ -1,0 +1,3 @@
+Program,Type,Platform,Link,Used
+openSSH,Command line,Linux/Mac/Windows,https://www.openssh.com/,N
+PuTTY,GUI,Windows,https://www.chiark.greenend.org.uk/~sgtatham/putty/,N
