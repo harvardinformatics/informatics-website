@@ -1,6 +1,8 @@
 Term,Definition,Python example,R example
 Literal,"A literal is a notation for representing a fixed value in code. For example, `5` is a literal for the integer 5, and `'hello'` is a literal for the string 'hello'.","`5` is a literal for the integer 5","`5` is a literal for the integer 5"
 Variable,"The name of a piece of information stored into memory in a computer program. This name can be referred to later in the program and be used to access the information.","In `x = 5`, `x` is the variable","In `x <- 5`, `x` is the variable"
+Assignment,"The process of storing a value into a variable. In many programming languages, the assignment operator is `=`.","In `x = 5`, `x` is assigned the value `5`","In `x <- 5`, `x` is assigned the value `5`"
+Hard coding,"The practice of directly inserting fixed values into the code, rather than using variables. Hard coding can make code harder to maintain and reuse.","In `total = 5 + 3`, `5` and `3` are hard-coded values","In `total <- 5 + 3`, `5` and `3` are hard-coded values"
 Data type,"The way data is encoded on the computer. Different operations can be performed on different data types.","integer, string","numeric, character"
 Type casting,"The process of converting data from one **data type** to another. This is often necessary when performing operations on data of different types.","In Python, `str(5)` converts the integer `5` to the string `'5'`","In R, `as.character(5)` converts the integer `5` to the string `'5'`"
 Boolean,"A universal data type that can only have one of two values, usually `TRUE` or `FALSE`. Booleans are often used in programming to make and evaluate complex logical statements.","`True` or `False`","`TRUE` or `FALSE`"
