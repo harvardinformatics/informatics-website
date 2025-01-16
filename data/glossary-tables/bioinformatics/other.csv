@@ -1,0 +1,8 @@
+Program,Author,Year,Use cases,Link,Paper,Used
+bedtools,Quinnlan and Hall,2010,Perform operations on sets of genomic coordinates.,https://bedtools.readthedocs.io/en/latest/,https://doi.org/10.1093/bioinformatics/btq033,Y
+bcftools,NA,NA,Perform opterions on VCF and BCF formatted files.,http://samtools.github.io/bcftools/,NA,Y
+samtools,Li,2009,Perform operations on SAM/BAM/CRAM formatted files.,http://www.htslib.org/download/,https://doi.org/10.1093/bioinformatics/btp352,Y
+Picard tools,Broad Institute,2019,Performs many operations on SAM/BAM/CRAM and VCF files.,https://github.com/broadinstitute/picard,http://broadinstitute.github.io/picard/,Y
+mosdepth,Pedersen and Quinlan,2018,Calculates read depth from mapped reads.,https://github.com/brentp/mosdepth,https://doi.org/10.1093/bioinformatics/btx699,N
+pseudo-it,Sarver,2017,Iterative read mapping for pseudo-reference assembly.,https://github.com/goodest-goodlab/pseudo-it,https://doi.org/10.1093/gbe/evx034,Y
+Referee,Thomas and Hahn,2018,Assign per-base quality scores to genome assemblies.,https://gwct.github.io/referee/,https://doi.org/10.1093/gbe/evz088,N

@@ -1,0 +1,9 @@
+Format,Use,Link,Specs
+FASTA,Stores sequence data.,https://en.wikipedia.org/wiki/FASTA_format,NA
+FASTQ,Stores sequence data and quality scores.,https://en.wikipedia.org/wiki/FASTQ_format,https://doi.org/10.1093/nar/gkp1137
+SAM,Sequence Alignment Map format. Stores information about reads mapped to a reference genome.,https://en.wikipedia.org/wiki/SAM_(file_format),https://samtools.github.io/hts-specs/SAMv1.pdf
+BAM,Binary Alignment Map format. The compressed binary version of SAM format.,https://en.wikipedia.org/wiki/SAM_(file_format),https://samtools.github.io/hts-specs/SAMv1.pdf
+CRAM,Another compressed format to store read mapping information.,https://en.wikipedia.org/wiki/CRAM_(file_format),https://samtools.github.io/hts-specs/CRAMv3.pdf
+VCF,Variant Call Format. Used to store information about variants inferred for a given sample(s).,https://en.wikipedia.org/wiki/Variant_Call_Format,https://samtools.github.io/hts-specs/VCFv4.2.pdf
+BCF,Binary variant Call Format. The binary compressed verion of a VCF.,https://en.wikipedia.org/wiki/Variant_Call_Format,https://samtools.github.io/hts-specs/VCFv4.2.pdf
+BED,Stores coordinates of regions of interest,https://en.wikipedia.org/wiki/BED_(file_format),https://bedtools.readthedocs.io/en/latest/content/general-usage.html

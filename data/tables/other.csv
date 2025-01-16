@@ -1,7 +1,0 @@
-Program,Author,Year,Use cases,Link,Paper,Used
-bedtools,Quinnlan and Hall,2010,Perform operations on sets of genomic coordinates.,https://bedtools.readthedocs.io/en/latest/,https://doi.org/10.1093/bioinformatics/btq033,Y
-bcftools,NA,NA,Perform operations on VCF and BCF formatted files.,http://samtools.github.io/bcftools/bcftools.html,NA,Y
-samtools,Li,2009,Perform operations on SAM/BAM/CRAM formatted files.,http://www.htslib.org/download/,https://doi.org/10.1093/bioinformatics/btp352,Y
-Picard tools,Broad Institute,2019,Performs many operations on SAM/BAM/CRAM and VCF files.,https://github.com/broadinstitute/picard,http://broadinstitute.github.io/picard/,N
-gffread,Pertea & Pertea,2020,General purpose GFF file manipulation,https://github.com/gpertea/gffread,http://dx.doi.org/10.12688/f1000research.23297.1,N
-seqtk,Li,NA,A fast and lightweight tool for processing sequences in the FASTA or FASTQ format,https://github.com/lh3/seqtk,NA,N
