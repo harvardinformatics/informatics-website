@@ -1,0 +1,1355 @@
+---
+title: "Harvard FAS: introduction to R"
+subtitle: "Day 2: data manipulation with tidyverse"
+date: "October 20, 2023"
+author: "Adam Freedman, Lei Ma, Gregg Thomas"
+output: 
+    html_document: 
+      keep_md: true
+---
+
+<style>
+    .md-sidebar--secondary { order: 0; }
+    .md-sidebar--primary { display: none; }
+    /* This hides the Navigation sidebar and moves the TOC sidebar to the left in HTML renders */
+</style>
+
+Welcome to Day 2 of our Introduction to R workshop! If you're viewing this file on the website, you are viewing the final, formatted version of the workshop. The workshop itself will take place in the RStudio program and you will *edit and execute the code in this file*. Please download the raw file [here](https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part2-student.Rmd)
+
+## Introduction to tidyverse
+
+## What is tidy data?
+
+The notion of tidy data has been around in various incarnations for a while but has more recently been formalized in this [paper](https://vita.had.co.nz/papers/tidy-data.pdf) by Hadley Wickham, the developer of *tidyverse*. Tidy data are, in short, data that have been organized in a consistent way that makes data exploration and visualization easier. Two key principles are that:
+
+* Each variable forms a column
+* Each observation forms a row
+
+Organized this way, for analysis with software such as R, values for different variables can be linked within observations, e.g. rows of our example data from day 1 are observations of individual trout or salamanders, and columns contain information about each individual (the habitat they were found in, body weight, etc.) such that one could explore how the weight or body size varies by habitat and species. Often times data that one pulls down from a repository (or that is provided by a collaborator) are not tidy! For example, multiple variables may be stored in the same column, such as when two different treatment types are concatenated into a single string. Tidying such data would require separating each treatment into a separate column.
+
+## What is *tidyverse*?
+
+*Tidyverse* is a collection of **R packages** designed to be used together to clean up data sets and make data exploration and visualization easier, and to make data "tidy". Because all of the R commands and exercises below will involve functions available in tidyverse, you need to have tidyverse installed.
+
+### What are packages?
+
+R packages are extensions to the base R environment. They typically contain code consisting of functions available in the package, documentation, and in some cases data sets. R packages are built following a standard format so R will interact with them in a reliable, consistent way.
+
+### Downloading and installing R packages
+
+Some packages are included with the base R installation. You can see the packages that come with R by default (or that you may have installed) if you click over to the *Packages* tab in your Rstudio window. However, many packages you will want to use for data analysis need to be downloaded. R packages generally come from one of two places:
+
+* [CRAN](https://cran.r-project.org/): default source for "official" R packages
+* [Bioconductor](https://www.bioconductor.org/): specialized packages for analyses of biological data
+
+How you install packages will depend on where you are getting the package from. For *CRAN*, you can use the R function `install.packages()` or the Rstudio Tools -> Install Packages menu. For example, if you wanted to install the *abc* package for doing Approximate Bayesian Computation, in the R console you would simply type: *install.packages("abc")*. 
+
+To install *Bioconductor* packages, you will need to first install the Bioconductor package manager (BUT DON"T DO THIS NOW!):
+```if (!require("BiocManager", quietly = TRUE))
+install.packages("BiocManager")
+BiocManager::install(version = "3.16")```
+
+Once the package manager is installed, you can install a Bioconductor project packages with the following syntax: ```BiocManager::install(<name of Bioconductor R package>)```. We won't discuss Bioconductor more in this workshop, but it is a useful resource to be aware of. 
+
+Packages frequently have other R packages as dependencies, and so you will often get the prompt from R asking if you want to update (the dependencies) to their current version, and if you want to compile packages that require compilation from source. Packages compiled from source can be particularly prone to installation failures, especially on M1/M2 Macs, and often require some searching to decode how to proceed. But today we will only use packages that are simple and easy to install. 
+
+So we mentioned that *tidyverse* is a collection of R packages. You can conveniently install all these related packages with one install command. 
+
+> If you haven't already installed *tidyverse*, do that now by executing the following code block. 
+
+
+```r
+install.packages("tidyverse")
+```
+
+Note that installing a package is not the same thing as loading it into your current R session. Once the package is installed, you have the functions on your computer, but in order to use them in your R session, you need to load the package, which we usually do with the `library` function. 
+
+> Then load *tidyverse* by running the following code block
+
+
+```r
+library(tidyverse)
+```
+
+```
+## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.3     ✔ readr     2.1.4
+## ✔ forcats   1.0.0     ✔ stringr   1.5.0
+## ✔ ggplot2   3.4.3     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+## ✔ purrr     1.0.2     
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+```
+
+For more information, go to [tidyverse](https://www.tidyverse.org/).
+
+Packages usually come with *vignettes*, which give you short introductions and tutorials for their use. You can find these on the web, but you can also browse them in R.
+
+> Run the following code block to see the vignettes for the **dplyr** package, which is part of the tidyverse
+
+
+```r
+browseVignettes(package = "dplyr")
+```
+
+## Loading files the *tidyverse* way
+
+Now, back to data manipulation. 
+
+As the entire point of of *tidyverse* is to facilitate data analysis, let's load data the *tidyverse* way, using the `read_csv()` function.
+
+> Run the following code block to load the csv data file:
+
+
+```r
+vertebrates <- read_csv(file="https://harvardinformatics.github.io/workshops/2023-fall/r/data/LTER_andvertebrates.csv")
+```
+
+```
+## Rows: 32209 Columns: 16
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr  (7): sitecode, section, reach, unittype, species, clip, notes
+## dbl  (8): year, pass, unitnum, vert_index, pitnumber, length_1_mm, length_2_...
+## date (1): sampledate
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+```
+
+Note that there are some key differences between `read_csv` or `read_table` and their base R equivalents (`read.csv` and `read.table`). One important one is that the default for `read_csv` is to assume the first row of your data contains column names, which is the opposite of `read.csv` as we saw yesterday. These functions also produce *tibbles*, which are effectively just *data.frames* with some improvements to how they are displayed and a few other minor, subtle differences. But you can think of them as pretty data.frames. 
+
+> Run the following code block to see some basic information about this data.
+
+
+```r
+vertebrates
+```
+
+```
+## # A tibble: 32,209 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKCC-L CC      L         1       1 R                 1        NA
+##  2  1987 MACKCC-L CC      L         1       1 R                 2        NA
+##  3  1987 MACKCC-L CC      L         1       1 R                 3        NA
+##  4  1987 MACKCC-L CC      L         1       1 R                 4        NA
+##  5  1987 MACKCC-L CC      L         1       1 R                 5        NA
+##  6  1987 MACKCC-L CC      L         1       1 R                 6        NA
+##  7  1987 MACKCC-L CC      L         1       1 R                 7        NA
+##  8  1987 MACKCC-L CC      L         1       1 R                 8        NA
+##  9  1987 MACKCC-L CC      L         1       1 R                 9        NA
+## 10  1987 MACKCC-L CC      L         1       1 R                10        NA
+## # ℹ 32,199 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+One theme of tidyverse is that it provides replacements for a lot of base R functions with better formatting. A tibble is one example of this; the `glimpse()` function is another; it is basically a pretty version of `str()`.
+
+> Run the following code block to get a "glimpse" of the data:
+
+
+```r
+glimpse(vertebrates)
+```
+
+```
+## Rows: 32,209
+## Columns: 16
+## $ year        <dbl> 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987…
+## $ sitecode    <chr> "MACKCC-L", "MACKCC-L", "MACKCC-L", "MACKCC-L", "MACKCC-L"…
+## $ section     <chr> "CC", "CC", "CC", "CC", "CC", "CC", "CC", "CC", "CC", "CC"…
+## $ reach       <chr> "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L"…
+## $ pass        <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ unitnum     <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2…
+## $ unittype    <chr> "R", "R", "R", "R", "R", "R", "R", "R", "R", "R", "R", "R"…
+## $ vert_index  <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1, …
+## $ pitnumber   <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+## $ species     <chr> "Cutthroat trout", "Cutthroat trout", "Cutthroat trout", "…
+## $ length_1_mm <dbl> 58, 61, 89, 58, 93, 86, 107, 131, 103, 117, 100, 127, 99, …
+## $ length_2_mm <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+## $ weight_g    <dbl> 1.75, 1.95, 5.60, 2.15, 6.90, 5.90, 10.50, 20.60, 9.55, 13…
+## $ clip        <chr> "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "N…
+## $ sampledate  <date> 1987-10-07, 1987-10-07, 1987-10-07, 1987-10-07, 1987-10-0…
+## $ notes       <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+```
+
+We can of course use all our non-tidyverse (base R) functions to look at data, like `head` and `View`, since tibbles are just pretty data frames. 
+
+> To get the first 10 lines of vertebrates, run the following code block:
+
+
+```r
+head(vertebrates, 10)
+```
+
+```
+## # A tibble: 10 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKCC-L CC      L         1       1 R                 1        NA
+##  2  1987 MACKCC-L CC      L         1       1 R                 2        NA
+##  3  1987 MACKCC-L CC      L         1       1 R                 3        NA
+##  4  1987 MACKCC-L CC      L         1       1 R                 4        NA
+##  5  1987 MACKCC-L CC      L         1       1 R                 5        NA
+##  6  1987 MACKCC-L CC      L         1       1 R                 6        NA
+##  7  1987 MACKCC-L CC      L         1       1 R                 7        NA
+##  8  1987 MACKCC-L CC      L         1       1 R                 8        NA
+##  9  1987 MACKCC-L CC      L         1       1 R                 9        NA
+## 10  1987 MACKCC-L CC      L         1       1 R                10        NA
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+## A simple tidyverse function: sorting a tibble on a column value
+
+Today we'll talk about a bunch of functions that are part of tidyverse and provide convenient ways to manipulate tibbles. While we'll discuss this in the context of tibbles, everything here works on data frames too - remember a tibble is just a pretty data frame. 
+
+Tidyverse functions can get very complex, but they share a common grammar. We'll see the real power of this on day 3 when we talk about the grammar of graphics using *ggplot*, but getting a handle on the basic grammar of the tidyverse can help you a lot with data manipulation as well. 
+
+We'll start with something really simple: sorting a data frame. We do this with the `arrange()` function. 
+
+> To sort the tibble by species, run the following code block:
+
+
+```r
+arrange(vertebrates, species)
+```
+
+```
+## # A tibble: 32,209 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1994 MACKCC-L CC      L         1       3 SC               20        NA
+##  2  1994 MACKCC-L CC      L         1       3 SC               21        NA
+##  3  2002 MACKCC-L CC      L         2       2 SC               13        NA
+##  4  2003 MACKCC-L CC      L         1       2 SC               48        NA
+##  5  2003 MACKCC-L CC      L         2       2 SC               20        NA
+##  6  2003 MACKOG-U OG      U         1      18 P                21        NA
+##  7  2004 MACKCC-L CC      L         1       2 SC               33        NA
+##  8  2012 MACKCC-L CC      L         1       2 SC               49        NA
+##  9  2012 MACKOG-U OG      U         1      16 SC                1        NA
+## 10  2012 MACKOG-U OG      U         1      16 SC                2        NA
+## # ℹ 32,199 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+All tidyverse functions take the tibble or data frame to operate on as their first argument. The second argument ('species') is what makes tidyverse special. Note that we are using the syntax we've used before to refer to objects, here: a simple unquoted word or variable name.
+
+What happens if we just type `species` in the **Console**?
+
+Tidyverse allows you to treat the **variables in your current data frame** as if they were **objects**. That is, within the arrange function (or almost any tidyverse function), you can reference the names of columns in your data frame and magically the function understands what you mean.
+
+What if we want to sort by multiple values? For example, first sort by section, and then sort by year? 
+
+Many tidyverse functions have a special second argument that you will see listed in the help pages as `...`. You can look at `?arrange` as an example. This means that the second argument to these functions can be any number of columns, and the function will work on those columns in order. So to sort by section and then year:
+
+> To sort the tibble by section, then by year, run the following code block:
+
+
+```r
+arrange(vertebrates, section, year)
+```
+
+```
+## # A tibble: 32,209 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKCC-L CC      L         1       1 R                 1        NA
+##  2  1987 MACKCC-L CC      L         1       1 R                 2        NA
+##  3  1987 MACKCC-L CC      L         1       1 R                 3        NA
+##  4  1987 MACKCC-L CC      L         1       1 R                 4        NA
+##  5  1987 MACKCC-L CC      L         1       1 R                 5        NA
+##  6  1987 MACKCC-L CC      L         1       1 R                 6        NA
+##  7  1987 MACKCC-L CC      L         1       1 R                 7        NA
+##  8  1987 MACKCC-L CC      L         1       1 R                 8        NA
+##  9  1987 MACKCC-L CC      L         1       1 R                 9        NA
+## 10  1987 MACKCC-L CC      L         1       1 R                10        NA
+## # ℹ 32,199 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+In this case, sorting is done first by *section*, and then *year*. Alternately, you could sort section in ascending order and year in descending order:
+
+> To sort the tibble in ascending order by section, and descending order by year, run the following code block:
+
+
+```r
+arrange(vertebrates, section, desc(year))
+```
+
+```
+## # A tibble: 32,209 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  2019 MACKCC-L CC      L         1       1 C                 1        NA
+##  2  2019 MACKCC-L CC      L         1       1 C                 2        NA
+##  3  2019 MACKCC-L CC      L         1       1 C                 3        NA
+##  4  2019 MACKCC-L CC      L         1       1 C                 4        NA
+##  5  2019 MACKCC-L CC      L         1       1 C                 5   1044073
+##  6  2019 MACKCC-L CC      L         1       1 C                 6   1044084
+##  7  2019 MACKCC-L CC      L         1       1 C                 7   1044043
+##  8  2019 MACKCC-L CC      L         1       1 C                 8        NA
+##  9  2019 MACKCC-L CC      L         1       1 C                 9        NA
+## 10  2019 MACKCC-L CC      L         1       1 C                10        NA
+## # ℹ 32,199 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+`desc()` here is a helper function that turns year into a descending sort instead of ascending. Tidyverse has a lot of these, although not many are applicable to `arrange()` we'll introduce more as we work through today. 
+
+Note that so far we haven't stored the sorted data. Let's try that now.
+
+> **Sorting exercise**. Sort the vertebrates tibble by species, then by year, then by sample date, and store the output in a new tibble called `sorted_verts`.
+
+=== "Exercise"
+
+    ```r
+    # Your code here
+    ```
+
+=== "Solution"
+
+    ```r
+    sorted_verts <- arrange(vertebrates, species, sampledate)
+    ```
+
+
+## Selecting a subset of columns
+
+Sometimes in a big data set, there are a lot of columns that are not germane to the analysis at hand, such that one can simply select columns that represent the variables you want to work with. To do this we use the ```select()``` function. 
+
+For example, let's say we are interested in body size and weight as a function of habitat type adjacent to the watercourse that was sampled for trout and salamanders. The *section* variable has values for clear cut forest (CC) and old growth (OG). At some point, we might also be interested in looking at inter-annual variation. So, we are going to select the *year*,*section*,*species*,*length_1_mm*, and *weight_g* variables and assign the selected columns to a new tibble
+
+> To select these variables from the *vertebrates* tibble, run the following code block:
+
+=== "Exercise"
+  
+      ```r
+      # Your code here
+      ```
+=== "Solution"
+      ```r
+      select(vertebrates, year, section, species, length_1_mm, weight_g)
+      ```
+
+```
+## # A tibble: 32,209 × 5
+##     year section species         length_1_mm weight_g
+##    <dbl> <chr>   <chr>                 <dbl>    <dbl>
+##  1  1987 CC      Cutthroat trout          58     1.75
+##  2  1987 CC      Cutthroat trout          61     1.95
+##  3  1987 CC      Cutthroat trout          89     5.6 
+##  4  1987 CC      Cutthroat trout          58     2.15
+##  5  1987 CC      Cutthroat trout          93     6.9 
+##  6  1987 CC      Cutthroat trout          86     5.9 
+##  7  1987 CC      Cutthroat trout         107    10.5 
+##  8  1987 CC      Cutthroat trout         131    20.6 
+##  9  1987 CC      Cutthroat trout         103     9.55
+## 10  1987 CC      Cutthroat trout         117    13   
+## # ℹ 32,199 more rows
+```
+
+The first argument to ```select()``` is the tibble one is subsetting from, and the rest of the arguments are the columns we wanted to keep. We see that ```select``` produced a tibble with the same number of rows as the *vertebrates* tibble, but only with the columns we chose to include. Note that, the above implementation of ```select()``` **DOES NOT** produce a new tibble: it simply prints the result to the screen. If we want to store the output, we need to redirect to a new tibble.
+
+> To produce a new tibbble consisting of *year*, *section*, *length_1_mm*, and *weight_g*, run the following code block:
+
+
+```r
+size_data <- select(vertebrates, year, section, species, length_1_mm, weight_g)
+size_data
+```
+
+```
+## # A tibble: 32,209 × 5
+##     year section species         length_1_mm weight_g
+##    <dbl> <chr>   <chr>                 <dbl>    <dbl>
+##  1  1987 CC      Cutthroat trout          58     1.75
+##  2  1987 CC      Cutthroat trout          61     1.95
+##  3  1987 CC      Cutthroat trout          89     5.6 
+##  4  1987 CC      Cutthroat trout          58     2.15
+##  5  1987 CC      Cutthroat trout          93     6.9 
+##  6  1987 CC      Cutthroat trout          86     5.9 
+##  7  1987 CC      Cutthroat trout         107    10.5 
+##  8  1987 CC      Cutthroat trout         131    20.6 
+##  9  1987 CC      Cutthroat trout         103     9.55
+## 10  1987 CC      Cutthroat trout         117    13   
+## # ℹ 32,199 more rows
+```
+
+The `select` function, you should notice, works kind of like indexes we talked about yesterday. But it is a lot easier to use, because you can refer to the column names as variables in your command. Tidyverse magic at work!
+
+
+As another example,let's say we plan on doing a bunch of analyses only on salamanders, and we want, as our first step in data processing to get rid of all column variables that are exclusively related to trout: *clip*. Let's say we also don't care about which electroshock pass number the observation was made on (*pass*), and we don't really care about the *notes* column as it isn't data we can realistically analyze. How do we dump columns rather than selection *for* them? We can do this by applying a logical "NOT" by placing a *!* in front of a vector of variables we want to filter out.
+
+> To exclude the *clip*, *pass*, and *notes* variables, run the following code block:
+
+
+```r
+select(vertebrates, !c(clip, pass, notes))
+```
+
+```
+## # A tibble: 32,209 × 13
+##     year sitecode section reach unitnum unittype vert_index pitnumber species   
+##    <dbl> <chr>    <chr>   <chr>   <dbl> <chr>         <dbl>     <dbl> <chr>     
+##  1  1987 MACKCC-L CC      L           1 R                 1        NA Cutthroat…
+##  2  1987 MACKCC-L CC      L           1 R                 2        NA Cutthroat…
+##  3  1987 MACKCC-L CC      L           1 R                 3        NA Cutthroat…
+##  4  1987 MACKCC-L CC      L           1 R                 4        NA Cutthroat…
+##  5  1987 MACKCC-L CC      L           1 R                 5        NA Cutthroat…
+##  6  1987 MACKCC-L CC      L           1 R                 6        NA Cutthroat…
+##  7  1987 MACKCC-L CC      L           1 R                 7        NA Cutthroat…
+##  8  1987 MACKCC-L CC      L           1 R                 8        NA Cutthroat…
+##  9  1987 MACKCC-L CC      L           1 R                 9        NA Cutthroat…
+## 10  1987 MACKCC-L CC      L           1 R                10        NA Cutthroat…
+## # ℹ 32,199 more rows
+## # ℹ 4 more variables: length_1_mm <dbl>, length_2_mm <dbl>, weight_g <dbl>,
+## #   sampledate <date>
+```
+
+> To convince yourself those variables actually got filtered out, run ```glimpse()``` in the code block below:
+
+
+```r
+glimpse(select(vertebrates, !c(clip, pass, notes)))
+```
+
+```
+## Rows: 32,209
+## Columns: 13
+## $ year        <dbl> 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987…
+## $ sitecode    <chr> "MACKCC-L", "MACKCC-L", "MACKCC-L", "MACKCC-L", "MACKCC-L"…
+## $ section     <chr> "CC", "CC", "CC", "CC", "CC", "CC", "CC", "CC", "CC", "CC"…
+## $ reach       <chr> "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L"…
+## $ unitnum     <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2…
+## $ unittype    <chr> "R", "R", "R", "R", "R", "R", "R", "R", "R", "R", "R", "R"…
+## $ vert_index  <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1, …
+## $ pitnumber   <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+## $ species     <chr> "Cutthroat trout", "Cutthroat trout", "Cutthroat trout", "…
+## $ length_1_mm <dbl> 58, 61, 89, 58, 93, 86, 107, 131, 103, 117, 100, 127, 99, …
+## $ length_2_mm <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+## $ weight_g    <dbl> 1.75, 1.95, 5.60, 2.15, 6.90, 5.90, 10.50, 20.60, 9.55, 13…
+## $ sampledate  <date> 1987-10-07, 1987-10-07, 1987-10-07, 1987-10-07, 1987-10-0…
+```
+
+Again, in this example we have NOT yet created a new tibble for downstream data analysis, we have simply printed the result of ```select()``` to the screen. We would have to redirect the output of this function to a new tibble to save the result.
+
+
+> To generate the new tibble, run the following code block:
+
+
+```r
+no_trout_or_clip_stuff <- select(vertebrates, !c(clip, pass, notes))
+```
+
+Of course, if we aren't interested in trout, we would want to filter on the *species* column variable, so as to only include salamanders. We will show you how to do this in the next section. But before we do that, let's try and exercise:
+
+> **Column selection exercise:**
+>
+> 1. As a prelude to quantifying sampling effort across habitats and years, construct a new tibble called *sampling_data* that includes the following variables: *year*, *sitecode*, *section*, *reach*, and *species*:
+
+=== "Exercise"
+
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+
+    ```r
+    sampling_data <- select(vertebrates, year, sitecode, section, reach, species)
+    ```
+
+With large data frames with many columns, it can often be difficult to type out a list of everything you want. Conveniently, select comes with its own helper functions to allow you to pick columns. For example, the `starts_with()` function generates a list of all the columns that start with a particular word in the current data frame. 
+
+> To see how ```starts_with```, works, run the following code block:
+
+
+```r
+select(vertebrates, species, year, starts_with("length"))
+```
+
+```
+## # A tibble: 32,209 × 4
+##    species          year length_1_mm length_2_mm
+##    <chr>           <dbl>       <dbl>       <dbl>
+##  1 Cutthroat trout  1987          58          NA
+##  2 Cutthroat trout  1987          61          NA
+##  3 Cutthroat trout  1987          89          NA
+##  4 Cutthroat trout  1987          58          NA
+##  5 Cutthroat trout  1987          93          NA
+##  6 Cutthroat trout  1987          86          NA
+##  7 Cutthroat trout  1987         107          NA
+##  8 Cutthroat trout  1987         131          NA
+##  9 Cutthroat trout  1987         103          NA
+## 10 Cutthroat trout  1987         117          NA
+## # ℹ 32,199 more rows
+```
+
+There are lots more of these: `?select` is your friend here. 
+
+## Selecting a subset of rows based upon values of variables
+Up until now, we have been selecting columns to remove or keep. Often times, one wants to restrict analysis and visualization to a subset of the observations, that is, to select particular **rows**. In the case of our data set, perhaps you are only interested in cutthroat trout, and only those that occur in old growth forest. The `filter()` function allows you to select **rows** based upon values in multiple columns, similar to how we talked about logical vectors yesterday. This function works by only returning values where the condition is true. It not only excludes those for which it is FALSE, it also filters out rows where there is missing data (i.e. NA) for the column evaluated (because any logical test evaluates to false when given NA).
+
+Let us try creating a new tibble, with data restricted to trout.
+
+> Create a new tibble, with data restricted to trout by running the code block below:
+
+
+```r
+trout <- filter(vertebrates, species=="Cutthroat trout")
+trout
+```
+
+```
+## # A tibble: 20,433 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKCC-L CC      L         1       1 R                 1        NA
+##  2  1987 MACKCC-L CC      L         1       1 R                 2        NA
+##  3  1987 MACKCC-L CC      L         1       1 R                 3        NA
+##  4  1987 MACKCC-L CC      L         1       1 R                 4        NA
+##  5  1987 MACKCC-L CC      L         1       1 R                 5        NA
+##  6  1987 MACKCC-L CC      L         1       1 R                 6        NA
+##  7  1987 MACKCC-L CC      L         1       1 R                 7        NA
+##  8  1987 MACKCC-L CC      L         1       1 R                 8        NA
+##  9  1987 MACKCC-L CC      L         1       1 R                 9        NA
+## 10  1987 MACKCC-L CC      L         1       1 R                10        NA
+## # ℹ 20,423 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+Note the `==`, as we discussed yesterday for logical operations. We can add additional logical conditions for other variables if we want to make more complex selections. For example, we might only want to look at trout in old growth forest (i.e. where the *section* variable value is "OG"). Let's do this:
+
+> To select rows for trout in old growth forest, run the following code block:
+
+
+```r
+trout_OG <- filter(vertebrates, species=="Cutthroat trout", section =="OG")
+trout_OG
+```
+
+```
+## # A tibble: 9,360 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKOG-L OG      L         1       1 R                 1        NA
+##  2  1987 MACKOG-L OG      L         1       1 R                 2        NA
+##  3  1987 MACKOG-L OG      L         1       1 R                 3        NA
+##  4  1987 MACKOG-L OG      L         1       1 R                 4        NA
+##  5  1987 MACKOG-L OG      L         1       1 R                 5        NA
+##  6  1987 MACKOG-L OG      L         1       1 R                 6        NA
+##  7  1987 MACKOG-L OG      L         1       1 R                 7        NA
+##  8  1987 MACKOG-L OG      L         1       1 R                 8        NA
+##  9  1987 MACKOG-L OG      L         1       2 P                 1        NA
+## 10  1987 MACKOG-L OG      L         1       2 P                 2        NA
+## # ℹ 9,350 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+When we provide more than one filtering criterion, the commas between those criteria are equivalent of *AND* in a logical statement. The filter command above effectively says: return rows where species == "Cutthroat trout" AND section == "OG".
+
+Similarly, we can use "|" to specify *OR* in a logical filtering step. For example if we wanted records with either Cutthroat trout OR Coastal giant salamander we can specify two acceptable values for *species*.
+
+> To make this type of *OR* selection, run the code block below:
+
+
+```r
+trout_cgs<- filter(vertebrates, species=="Cutthroat trout" | species == "Coastal giant salamander")
+trout_cgs
+```
+
+```
+## # A tibble: 32,191 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKCC-L CC      L         1       1 R                 1        NA
+##  2  1987 MACKCC-L CC      L         1       1 R                 2        NA
+##  3  1987 MACKCC-L CC      L         1       1 R                 3        NA
+##  4  1987 MACKCC-L CC      L         1       1 R                 4        NA
+##  5  1987 MACKCC-L CC      L         1       1 R                 5        NA
+##  6  1987 MACKCC-L CC      L         1       1 R                 6        NA
+##  7  1987 MACKCC-L CC      L         1       1 R                 7        NA
+##  8  1987 MACKCC-L CC      L         1       1 R                 8        NA
+##  9  1987 MACKCC-L CC      L         1       1 R                 9        NA
+## 10  1987 MACKCC-L CC      L         1       1 R                10        NA
+## # ℹ 32,181 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+> **Row selection exercise:** Create a new tibble that only contains Cutthroat trout, in old growth forest, and before the year 2000)
+
+=== "Exercise"
+
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+    ```r
+    trout_OG_early <- filter(vertebrates, species=="Cutthroat trout", section =="OG", year < 2000)
+    trout_OG_early
+    ```
+
+```
+## # A tibble: 3,398 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKOG-L OG      L         1       1 R                 1        NA
+##  2  1987 MACKOG-L OG      L         1       1 R                 2        NA
+##  3  1987 MACKOG-L OG      L         1       1 R                 3        NA
+##  4  1987 MACKOG-L OG      L         1       1 R                 4        NA
+##  5  1987 MACKOG-L OG      L         1       1 R                 5        NA
+##  6  1987 MACKOG-L OG      L         1       1 R                 6        NA
+##  7  1987 MACKOG-L OG      L         1       1 R                 7        NA
+##  8  1987 MACKOG-L OG      L         1       1 R                 8        NA
+##  9  1987 MACKOG-L OG      L         1       2 P                 1        NA
+## 10  1987 MACKOG-L OG      L         1       2 P                 2        NA
+## # ℹ 3,388 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+Remember that in order to select a set of rows, one is performing a logical operation, effectively seeing if the values of a column or a set of columns in a row meets the specified criterion, constructing a logical vector of TRUEs and FALSEs depending upon whether the criterion is met, and then printing (or redirecting to a new tibble) all columns but only the rows that are TRUE, i.e. where the criterion is met.
+
+Let's try another, more complex example where we only want salamanders and combinations of upper reach and old growth forest or lower reach and clear-cut forest.
+
+> To do this, run the following code block:
+
+
+```r
+filter(vertebrates, species %in% c("Coastal giant salamander", "Cascade torrent salamander"), (section == "OG" &  reach == "U") | (section == "CC" & reach=="L"))
+```
+
+```
+## # A tibble: 4,360 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1993 MACKCC-L CC      L         1       1 P                16        NA
+##  2  1993 MACKCC-L CC      L         1       2 C                36        NA
+##  3  1993 MACKCC-L CC      L         1       2 C                37        NA
+##  4  1993 MACKCC-L CC      L         1       2 C                38        NA
+##  5  1993 MACKCC-L CC      L         1       2 C                39        NA
+##  6  1993 MACKCC-L CC      L         1       2 C                40        NA
+##  7  1993 MACKCC-L CC      L         1       2 C                41        NA
+##  8  1993 MACKCC-L CC      L         1       2 C                42        NA
+##  9  1993 MACKCC-L CC      L         1       2 C                43        NA
+## 10  1993 MACKCC-L CC      L         1       2 C                44        NA
+## # ℹ 4,350 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+The ```%in%``` is a way to construct a logical statment meaning "IN the following vector". In this case, in the construction of a logical criterion for rows, *&* is used to specify *AND* and *|* is used to specify *OR*. It is *VERY IMPORTANT* to understand how R interprets these logical operators. In general, *AND* is *stronger* than *OR*, meaning the ANDs get interpreted first. 
+
+To clarify what we mean by this, imagine the following vector:
+
+
+```r
+test <- c(1,2,3)
+```
+
+Now look at the result of the following two logical operations:
+
+
+```r
+3 %in% test | 5 %in% test & 4 %in% test 
+```
+
+```
+## [1] TRUE
+```
+
+```r
+3 %in% test & 5 %in% test | 4 %in% test
+```
+
+```
+## [1] FALSE
+```
+
+In the first statement, the part after the "|" , i.e the *AND* gets done first, and it is FALSE. The part before, evaluting whether 3 is in *test* is TRUE. So, the logical statement is saying TRUE | FALSE, and in logical statments, if one of the options in an OR statment is TRUE, the statement returns TRUE. In the second statment, the condition before the "|" has an AND, so it is evaluated first. Both numbers aren't in *test* so it is FALSE. The part to the right of the "|" is also FALSE, thus FALSE OR FALSE returns FALSE.
+
+For purposes of making our R code clearer -- and it is a good idea to do this in your R code -- when writing complex tibble filtering operations, we put the criteria joined by *AND* inside parentheses. Thus the statement is saying: "select rows for which species is in the vector of salamander names (that only includes salamanders), and for which either section equals OG *AND* reach equals U... *OR* ... section equals CC and reach equals L.
+
+Another way we could run the same command would be to use an *OR* statement instead of the ```%in%```. 
+
+> To use the *OR* statement to achieve this filtering, run the code block below:
+
+
+```r
+filter(vertebrates, (species == "Coastal giant salamander" | species == "Cascade torrent salamander"), (section == "OG" &  reach == "U") | (section == "CC" & reach=="L"))
+```
+
+```
+## # A tibble: 4,360 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1993 MACKCC-L CC      L         1       1 P                16        NA
+##  2  1993 MACKCC-L CC      L         1       2 C                36        NA
+##  3  1993 MACKCC-L CC      L         1       2 C                37        NA
+##  4  1993 MACKCC-L CC      L         1       2 C                38        NA
+##  5  1993 MACKCC-L CC      L         1       2 C                39        NA
+##  6  1993 MACKCC-L CC      L         1       2 C                40        NA
+##  7  1993 MACKCC-L CC      L         1       2 C                41        NA
+##  8  1993 MACKCC-L CC      L         1       2 C                42        NA
+##  9  1993 MACKCC-L CC      L         1       2 C                43        NA
+## 10  1993 MACKCC-L CC      L         1       2 C                44        NA
+## # ℹ 4,350 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+> **Complex row selection exercise** Can you select only observations generated after the year 2000, where the species is Cutthroat trout, and where the reach is lower (L) or middle (M) but not upper (U). 
+
+=== "Exercise"
+
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+    ```r
+    filter(vertebrates,species == "Cutthroat trout", reach != "U", year > 2000)
+    ```
+
+```
+## # A tibble: 7,884 × 16
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  2001 MACKCC-L CC      L         1       1 C                 1        NA
+##  2  2001 MACKCC-L CC      L         1       1 C                 2        NA
+##  3  2001 MACKCC-L CC      L         1       1 C                 3        NA
+##  4  2001 MACKCC-L CC      L         1       1 C                 4        NA
+##  5  2001 MACKCC-L CC      L         1       1 C                 5        NA
+##  6  2001 MACKCC-L CC      L         1       1 C                 6        NA
+##  7  2001 MACKCC-L CC      L         1       1 C                 7        NA
+##  8  2001 MACKCC-L CC      L         1       1 C                 8        NA
+##  9  2001 MACKCC-L CC      L         1       1 C                 9        NA
+## 10  2001 MACKCC-L CC      L         1       1 C                10        NA
+## # ℹ 7,874 more rows
+## # ℹ 7 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>
+```
+
+
+## Creating new variables with mutate()
+Often times, we want to perform analyses on synthetic variables that are derived from the original variables in a data set. For example, one might want to look at one variable normalized by the mean value of that variable, or one variable divided by another.
+
+In this data set, we have both weight (weight_g) and body size (length_1_mm). Let's add a column variable to our tibble that is weight divided by body size (length), which might be viewed as an index of body condition. We'll do this with the `mutate()` function.
+
+> To add a *body_condition* variable to *vertebrates*, run the code block below:
+
+
+```r
+vertebrates <- mutate(vertebrates, body_condition = weight_g/length_1_mm)
+```
+
+In redirecting back to the *vertebrates* tibble, we are changing the input data rather than writing a new tibble with this variable added. Note also that this command will **overwrite** the body condition column, if it exists. This is often what is desired, but be aware of this behavior. 
+
+> **New variables creation exercise 1:**
+> For Coastal giant salamanders, *length_1_mm* represents snout to vent length and  *length_2_mm* represents snout to tail length. By subtracting the former from the latter, we can get the tail length. Use filter to select only Coastal giant salamanders (the only species for which *length_2_mm* was taken), then create a new column for tail length. Then use the ```mean()``` and ```sd()``` functions to calculate mean and standard deviation of tail length. Once you've done that, create a new column that is the variable *tail_outlier* which is a boolean variable that indicates whether tail length is greater than or less than 2 standard deviations away from the mean, and add this to the *coastal* tibble. Finally, creat e a new tibble called *outliers* that only contains Coastal salamanders with outlier-classified tail lengths.
+
+This is a complicated exercise, but there are hints in the comments below. Note there are many ways to do this exercise, and the hints are just one way. You might find ways to combined steps, for example. 
+
+=== "Exercise"
+
+    ```r
+    ## Create a new tibble that contains just coastal giant salamander observations
+
+    ## Create a new variable called tail_length equal to length_2_mm minus length_1_mm
+
+    ## Create a new variable called tail_mean that stores the mean of tail_length column; remember that you need to include the argument na.rm = TRUE to tell the mean function to remove missing values first
+
+    ## Create a new variable called tail_sd that stores the standard deviation of tail_length column. The function for this is sd(); like mean() you need to include the argument na.rm = TRUE to tell the sd function to remove missing values first
+
+    ## Create a new column in the coastal tibble that is TRUE if tail_length more than two standard deviations from the mean
+
+    ## Filter the coastal tibble to keep only rows where outlier is TRUE
+
+    ## You should have 522 observations in your outliers tibble. If you don't and you aren't sure what went wrong, put up your orange sticky.
+    ```
+=== "Solution"
+
+    ```r
+    ## Create a new tibble that contains just coastal giant salamander observations
+    coastal <- filter(vertebrates, species=="Coastal giant salamander")
+
+    ## Create a new variable called tail_length equal to length_2_mm minus length_1_mm
+    coastal <- mutate(coastal, tail_length = length_2_mm - length_1_mm)
+
+    ## Create a new variable called tail_mean that stores the mean of tail_length column; remember that you need to include the argument na.rm = TRUE to tell the mean function to remove missing values first
+    tail_mean <- mean(coastal$tail_length, na.rm=TRUE)
+
+    ## Create a new variable called tail_sd that stores the standard deviation of tail_length column. The function for this is sd(); like mean() you need to include the argument na.rm = TRUE to tell the sd function to remove missing values first
+    tail_sd <- sd(coastal$tail_length, na.rm=TRUE)
+
+    ## Create a new column in the coastal tibble that is TRUE if tail_length more than two standard deviations from the mean
+    coastal <- mutate(coastal, tail_outlier=(tail_length > (tail_mean+2*tail_sd) | (tail_length<tail_mean-2*tail_sd)))
+
+    ## Filter the coastal tibble to keep only rows where outlier is TRUE
+    outliers <- filter(coastal, tail_outlier == TRUE)
+
+    ## You should have 522 observations in your outliers tibble. If you don't and you aren't sure what went wrong, put up your red sticky.
+    ```
+
+
+### Using ```mutate()``` to reformat missing values
+
+Another important use of `mutate()` is to convert missing values. Data sets are frequently not constructed with R in mind, such that missing values might be formatted differently, e.g. -999 or "N/A". Of course, one wouldn't want to generate plots that included the value -999. While our example data already have missing data formatted in an R-compliant way, here is an example of how one would convert -999 to NA. We use `mutate()` combined with the `na_if()` function for this. 
+
+The `na_if()` function is a tidyverse function that converts the specified value to NA. 
+
+> As an example of `na_if()`, run the code block below:
+
+
+```r
+vertebrates <- mutate(vertebrates, length_1_mm = na_if(length_1_mm, -999))
+```
+
+In other circumstances, one might want to replace a missing data point with an expected value of that data point (assuming the dispersion of that variable is not too large). For example, there are 17 NAs in *length_1_mm*. We can use the `replace_na()` function to do this, which is basically the inverse of `na_if()`. 
+
+> To replace NAs for *length_1_mm* with the median value in a new tibble, run the following code block:
+
+
+```r
+nolengthNAs <- mutate(vertebrates, length_1_mm = replace_na(length_1_mm, median(length_1_mm, na.rm = TRUE)))
+```
+
+In this case, we have created a new tibble, as we probably don't want to overwrite the original data, in case we want to undo the conversion of missing data to the median value. Notice, as with earlier use of summary statistics functions, we include the ```na.rm=TRUE``` statement. Otherwise, we would be replacing NA with NA, as applying ```median()``` to a vector containing NAs returns NA as its value! Of course, the calculation we just performed doesn't make much actual biological sense, because we are taking the median of *length_1_mm" across all species in the tibble, when what we should really do is a more complex operation (which we won't do right now), which would be to replace NAs for any species with a median calculated only from values for that species.
+
+Let's try to create a new variable that represents a Z score, i.e. a transformation of a set of measurements that represents the number of standard deviations it is away from the mean (and in what direction). Above, we have seen the ```mean()``` and ```sd()``` functions. A Z-score for an observation is simply (observation - mean of observations) / standard deviation of observations, with the distribution of Z being standard normal, i.e. mean == 0 and standard deviation == 1. Using the *coastal* tibble, we can create a new variable *length_1_mm_Z* that represents a Z-transformation of snout-vent length for the Coastal giant salamander. We will write the output to a new tibble *coastalZ*. There are really three  ways to generate the new Z-score variable. The first, is to write the calculation of the Z-score from inside of the ```mutate()``` function. To do this ...
+
+> Run the code block below to create the Z-score variable:
+
+
+```r
+coastalZ <- mutate(coastal, length_1_mm_Z = (length_1_mm - mean(length_1_mm, na.rm=TRUE)) / sd(length_1_mm, na.rm=TRUE))
+```
+
+So, we are calculating the mean and sd of *length_1_mm* once, and using those values to apply the Z-score equation to each row of the *length_1_mm* vector and storing the output in the new variable *length_1_mm_Z*.
+
+To convince yourself that Z is in fact a standard normal distribution, check the mean and standard deviation of this new variable. Also, remember, statistical operations need to filter out missing values otherwise they will return *NA*.
+
+> To get those summary statistics, run the code block below. Note that due to floating point errors, 0 may instead show up as a very small number.
+
+
+```r
+mean(coastalZ$length_1_mm_Z, na.rm=TRUE)
+```
+
+```
+## [1] -2.725246e-14
+```
+
+```r
+sd(coastalZ$length_1_mm_Z, na.rm=TRUE)
+```
+
+```
+## [1] 1
+```
+
+> **New variables creation exercise 2:**
+> Can you think of another way to generate the Z-score column? Hint: you can create new variables for the constituent parts of the Z-score function, and then perform the calculation using those constituent parts. Try doing that, updating *coastalZ* with the new variables. It should take three separate mutate commands. Write the Z-score to the new variable *z2*
+
+=== "Exercise"
+
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+
+    ```r
+    coastalZ <- mutate(coastalZ, meanlength =  mean(length_1_mm, na.rm=TRUE))
+    coastalZ <- mutate(coastalZ, sdlength =  sd(length_1_mm, na.rm=TRUE))
+    coastalZ <- mutate(coastalZ, z2 = (length_1_mm - meanlength) / sdlength)
+    ```
+ 
+To confirm this produces the same output as the first implementation, calculate the mean and standard deviation of *z2* (these should also be 0 and 1, respectively).
+ 
+
+```r
+mean(coastalZ$z2, na.rm=TRUE)
+```
+
+```
+## [1] -2.725246e-14
+```
+
+```r
+sd(coastalZ$z2, na.rm=TRUE)
+```
+
+```
+## [1] 1
+```
+
+The distinction between these two approaches is that, in the first case, one is recycling the mean and standard deviation values (effectively vectors of size 1 each) in applying them to every element of *length_1_mm* in calculating the Z-score values in the respective rows. In the second case, because we have constructed mean and standard deviation variables of equal length to *length_1_mm*, we are doing mathematical operations on same-sized vectors. Of course, one might not want to store the same (e.g.mean) value over thousands of rows. The point here is to reinforce the idea that the same result can be achieved by constructing vectors of different lengths.
+
+### Tibbles won't recycle vectors of length > 1 
+
+As a side note to this, it is important to know that mutate requires that the object passed to the new column name argument is a vector of length 1 or a vector of length equal to the number of rows in the tibble. If you try to recycle a vector of length 2 in a mutate command, you'll get an error:
+
+
+```r
+mutate(vertebrates, error = c(1,2))
+```
+
+## Using variable names to merge tables
+
+Often at the beginning of a project, you have data from multiple sources that you want to merge, but are stored in different tables. For example, you might have visual measurements like color for a group of animals in one table and quantitative measurements like weight for the same animals in another table. In the best case, every animal is represented in both tables, i.e. each row in one table is associated with a row in the other table. Of course, it is also possible that one table has missing data for some observations - maybe the weight measurements wasn't taken for some animals - and that breaks the one-to-one relationship. In either case, we can merge tables by performing "mutating joins". In tidyverse, joins are performed one pair of tables at a time, such that, if you have tables x,y, and z, you must first join x and y to produce a new table xy, then join xy and z to create xyz. As we shall see below, a requirement of such joins is that any two tables to be joined contain unique observations on the same variable.
+
+### Left joins
+
+Left joins are a common operation, where given tables x and y, you only want to retain all rows in x, regardless if there is matching data in y: missing data in y will get returned as NAs in the new table. This sort of join is called left join, because the 1st table (the one on your left) is having data added to it from the table on the right. Before we try a join, we need to tweak the vertebrates table, because it currently does not have any unique identifier per row. To fix this:
+
+
+```r
+vertebrates <- mutate(vertebrates, obs_number=row.names(vertebrates))
+```
+
+Now, we'll create some sub-tables with *select*
+
+
+```r
+x <- select(vertebrates, obs_number, year)
+y <- select(vertebrates, obs_number, species, length_1_mm)
+xy <- left_join(x,y)
+```
+
+```
+## Joining with `by = join_by(obs_number)`
+```
+
+```r
+glimpse(xy)
+```
+
+```
+## Rows: 32,209
+## Columns: 4
+## $ obs_number  <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "…
+## $ year        <dbl> 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987…
+## $ species     <chr> "Cutthroat trout", "Cutthroat trout", "Cutthroat trout", "…
+## $ length_1_mm <dbl> 58, 61, 89, 58, 93, 86, 107, 131, 103, 117, 100, 127, 99, …
+```
+
+Tidyverse determines on the fly that the two tables share a column name, and assumes that they contain the same data. If your collaborator used a different column name for *observation_number*, one will need to tell the join function which columns match. So, if we change the column name for the observation in table x, we can still perform the join as follows:
+
+
+```r
+x <- rename(x,obs = obs_number)
+xy <- left_join(x, y, by = join_by(obs == obs_number))
+glimpse(xy)
+```
+
+```
+## Rows: 32,209
+## Columns: 4
+## $ obs         <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "…
+## $ year        <dbl> 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987, 1987…
+## $ species     <chr> "Cutthroat trout", "Cutthroat trout", "Cutthroat trout", "…
+## $ length_1_mm <dbl> 58, 61, 89, 58, 93, 86, 107, 131, 103, 117, 100, 127, 99, …
+```
+
+Other useful flavors of join are *inner_join*, which only keep observations observed in both tables, and *full_join*, which keeps all observations in both tables: data in x, but missing in y; data in y, but missing in x, data in both x and y.
+
+## Converting wide to long format
+
+It can often be the case that a data table was created with different column variables that represent different types of the same class of measurement. For example, repeated weight measurements of a laboratory organism undergoing an experimental treatment might be recorded with a separate column for each measurement date. From a statistical and plotting perspective, date is a factor, and it can be more convenient to have all the weights in a single column, and a separate column for measurement date. In addition, it can make it easier to inspect data if there are fewer columns to look at ... otherwise, you are panning back and forth.
+
+While converting from wide to long is often a step for tidying untidy data, we will show how to do this with some already tidied data on ... wait for it ... penguins!  The [Palmer penguins](https://allisonhorst.github.io/palmerpenguins/) data set contains measurement data for 3 species of penguins collected on three islands at the LTER site in the Palmer Archipelago, Antarctica. 
+
+While the data are available as an R package, we have converted the data to a tsv file that can be easily loaded into Rstudio:
+
+
+```r
+penguins <- read_table(file="https://harvardinformatics.github.io/workshops/2023-fall/r/data/palmerpenguins.tsv")
+```
+
+```
+## 
+## ── Column specification ────────────────────────────────────────────────────────
+## cols(
+##   species = col_character(),
+##   island = col_character(),
+##   bill_length_mm = col_double(),
+##   bill_depth_mm = col_double(),
+##   flipper_length_mm = col_double(),
+##   body_mass_g = col_double(),
+##   sex = col_character(),
+##   year = col_double()
+## )
+```
+
+Let's take a quick look at the data:
+
+
+```r
+glimpse(penguins)
+```
+
+```
+## Rows: 344
+## Columns: 8
+## $ species           <chr> "Adelie", "Adelie", "Adelie", "Adelie", "Adelie", "A…
+## $ island            <chr> "Torgersen", "Torgersen", "Torgersen", "Torgersen", …
+## $ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
+## $ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
+## $ flipper_length_mm <dbl> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
+## $ body_mass_g       <dbl> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
+## $ sex               <chr> "male", "female", "female", NA, "female", "male", "f…
+## $ year              <dbl> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…
+```
+
+As we can see, each row is an observation of a single penguin, with information on sex, the island on which it was observed, the species, the year it was observed, as well as three morphological measurements. As we shall see in Part 3 of this workshop, having the actual measurements aggregated into a single column can make for easier plotting, if we also have an additional column that consists of a factor that describes which measurement it is. So, we are going to combine those 3 columns into one column, making the table less wide and more long. Admittedly, with three columns converted to two, it isn't a big gain in ease of viewing, but it demonstrates the principles that can be applied when far more columns need to be merged.
+
+
+```r
+# First, we need to make each row have a unique ID. This is another way to do it
+penguins <- mutate(penguins, id = row_number())
+# Then, we use the function pivot_longer() to merge columns together
+penguins_long <- pivot_longer(penguins, c(bill_length_mm, bill_depth_mm, flipper_length_mm), names_to="morphtype", values_to="mm")
+```
+
+In this operation, we specify the data frame being transformed, as well as a vector of column names for the columns we wish to merge. *names_to* is the new column that we are creating that will contain the old column name (of those column names merged), while *values_to* is the name of the new column that will store the actual measurement data.
+
+Again, let's take a look and see that it worked!
+
+
+```r
+glimpse(penguins_long)
+```
+
+```
+## Rows: 1,032
+## Columns: 8
+## $ species     <chr> "Adelie", "Adelie", "Adelie", "Adelie", "Adelie", "Adelie"…
+## $ island      <chr> "Torgersen", "Torgersen", "Torgersen", "Torgersen", "Torge…
+## $ body_mass_g <dbl> 3750, 3750, 3750, 3800, 3800, 3800, 3250, 3250, 3250, NA, …
+## $ sex         <chr> "male", "male", "male", "female", "female", "female", "fem…
+## $ year        <dbl> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…
+## $ id          <int> 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7…
+## $ morphtype   <chr> "bill_length_mm", "bill_depth_mm", "flipper_length_mm", "b…
+## $ mm          <dbl> 39.1, 18.7, 181.0, 39.5, 17.4, 186.0, 40.3, 18.0, 195.0, N…
+```
+
+One thing we can see is that the new values in *morphtype* are unnecessarily long, because they all contain "_mm" embedded in the label ... but we know the data are measured in millimeters, hence the name of the new column *mm*. So, we can use `mutate()` and `str_replace()` to strip that suffix off of the values:            
+
+
+```r
+penguins_long <- mutate(penguins_long, morphtype = str_replace(morphtype, "_mm", ""))
+```
+
+It should be noted, that there are other, more complicated ways of performing wide-to-long operations. For more information, see the tidyverse documentation for [pivot_longer](https://tidyr.tidyverse.org/reference/pivot_longer.html), or use R help to get more information displayed inside Rstudio.
+
+## Multi-step data processing with pipes
+
+Thus far, we have demonstrated how to execute particular *tidyverse* functions as distinct data-processing steps. However, most of the time one wants to perform a sequence of data-processing operations that require more than one R function. Without a means to chain these steps together, one would have to deploy a particular R function on a tibble, redirect the output to a new (or the same input) tibble, then deploy the next R function on the new tibble, etc. Or, one could try to nest sequential function executions within other function executions, e.g. ```new_tibble <-(function2(function1(original_tibble)))``` which can get unwieldy and error-prone very quickly. The good news is, *tidyverse* had a way of chaining together data processing steps that is analogous to pipes in the bash shell ... and guess what? They are also called pipes. The general syntax of using pipes is:
+
+
+```
+tidy_data <- function1(data, args) %>% function2(args)
+```
+
+The ```%>%``` is the pipe, and it redirects the output of function1 to function2. 
+
+The pipe implicitly fills the first unnamed argument of the right hand function with the output of the left hand function. So in this case, the output of function1 is implicitly assigned to the first argument of function2. Because tidyverse functions always take the input data as their first argument, this is very convenient. 
+
+In the above command structure the final output of data processing with ```function1``` and ```function2``` gets directed to *tidy_data*, a new cleaned tibble.
+
+Now, as a more concrete example, let's see how we can use ```select()``` and ```filter()``` together with a pipe.
+
+> To combine ```select()``` and  ```filter()``` operations to creata new tibble called *new_data*, run the code block below:
+
+
+```r
+new_data <- select(vertebrates, year, section, species, length_1_mm, weight_g) %>% filter(species=="Cutthroat trout", year < 2000, section =="OG")
+```
+
+In this example, we pipe together the two function calls we executed earlier, but all in one command line.
+
+> **pipe exercise:**
+>
+> 1. Try creating a more complex piped workflow, calling in sequence the ```filter()``` and ```select()``` commands above, followed by using ```mutate()``` to normalize all weights by the maximum value of all cutthroat trout weights.
+
+
+=== "Exercise"
+
+    ```r
+    # Your code here
+    ```
+=== "Solution"
+
+    ```r
+    wnorm <- select(vertebrates, year, section, species, length_1_mm, weight_g) %>% filter(species=="Cutthroat trout", year < 2000, section =="OG") %>% mutate(normalized_weight = weight_g / max(weight_g, na.rm=TRUE))
+    ```
+
+> 2. Try experimenting with different row and column selections, and new variable creations with these three functions. You can even switch the order, e.g. create a new synthetic variable then applying ```filter()``` to it.
+
+As a side note, you sometimes want to pipe the output of one function to the input of another function when the second function DOESN'T use the first argument for data. A common example of this is the function `lm()`, which is used to fit a linear model to data. The first argument to lm is the formula you want to fit, and the second argument is the data. There are two common options to still use a pipe here:
+
+Because the output of the left hand function is piped to the first *unnamed* argument, if you name every argument before data, you'll be okay:
+`vertebrates %>% filter_command() %>% lm(formula = x ~ y)`
+
+You can reference the piped output via the special variable `.` in the right hand function: 
+`vertebrates %>% filter_command() %>% lm(x ~ y, data = .)
+
+## Finding unique values
+There are *tidyverse* flavors of standard R functions. For example, to get the unique values for a column, instead of using ```unique()```, we can use the ```dplyr``` function ``` distinct()```.
+
+> To get the unique values for year, run the command below:
+
+
+```r
+distinct(vertebrates, year)
+```
+
+```
+## # A tibble: 33 × 1
+##     year
+##    <dbl>
+##  1  1987
+##  2  1988
+##  3  1989
+##  4  1990
+##  5  1991
+##  6  1992
+##  7  1993
+##  8  1994
+##  9  1995
+## 10  1996
+## # ℹ 23 more rows
+```
+
+This function requires that you supply a tibble and column name for which you want to get the unique values. It does not behave as you would like if you simply supply the vector ```vertebrates$year```.
+
+## *Tidyverse* functions for getting data summaries
+
+Yesterday, we showed you how the ```summary``` function will print out basic summary statistics for all columns in a data frame. Today, we introduce the ```dyplr``` function ```summarize()``` for generating specific statistics on one or more variables. For example, to get the number of individuals for which unique, individual ids are available (derived from pit tagging that started only in 2007).
+
+> To generate this data summary, run the command below:
+
+
+```r
+summarize(vertebrates, n=n_distinct(pitnumber))
+```
+
+```
+## # A tibble: 1 × 1
+##       n
+##   <int>
+## 1  4531
+```
+
+This function call returns a 1x1 tibble *n*.
+
+Ignoring the fact for the moment that the data set is comprised of three different species, one could also obtain a summary statistic on variables, for example, mean size and weight.
+
+> To generate a summary of mean weight and size, run the command below:
+
+
+```r
+summarize(vertebrates, meanweight=mean(weight_g, na.rm=TRUE), meansize=mean(length_1_mm, na.rm=TRUE))
+```
+
+```
+## # A tibble: 1 × 2
+##   meanweight meansize
+##        <dbl>    <dbl>
+## 1       8.90     73.8
+```
+
+Perhaps we are getting tired of always typing `na.rm = TRUE`, and instead want to first filter our dataset to remove rows that contain missing values. Tidyverse contains a nice function, called `drop_na()`, that does just this. By default it looks for missing values in *every* column in in our tibble, but if you look at `?drop_na` you'll see it has one of those `...` arguments, so we can pass it column names to check. 
+
+As an exercise, can you rewrite the summarize function above, but remove missing values before piping to summarize. Leave off the `na.rm=TRUE` to make sure it worked!
+
+
+```r
+drop_na(vertebrates) %>% summarize(meanweight=mean(weight_g), meansize=mean(length_1_mm))
+```
+
+```
+## # A tibble: 1 × 2
+##   meanweight meansize
+##        <dbl>    <dbl>
+## 1       21.0     93.5
+```
+
+You may have noticed that these two ways of handling NAs lead to different results from summarize. This is due to the fact that the first approach will compute statistics from all values that aren't NAs, regardless if other variables for that observation have missing data. In the second, we drop all observations that have missing data for any variable. Depending upon the particular data set and planned downstream analyses, there may be good reasons for choosing one approach over the other. 
+
+### Using ```group_by()``` with ```summarize()```
+
+In most data sets, summarizing across all observations (rows) may not be particularly informative, because what one usually wants to do is to get information specific to different groups of observations, e.g. those in different habitats, exposed to different experimental treatments, etc. Thus, in most circumstances one will want to define those groups for a tibble. One can do this using the ```group_by()``` function, which takes as it's first argument the name of the data frame, and the following arguments are variables to group by; these can then be followed by other keyword arguments. An obvious grouping for the *vertebrates* tibble is species.
+
+> To obtain this grouping, run the command block below:
+
+
+```r
+by_species <- group_by(vertebrates, species)
+by_species
+```
+
+```
+## # A tibble: 32,209 × 18
+## # Groups:   species [4]
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKCC-L CC      L         1       1 R                 1        NA
+##  2  1987 MACKCC-L CC      L         1       1 R                 2        NA
+##  3  1987 MACKCC-L CC      L         1       1 R                 3        NA
+##  4  1987 MACKCC-L CC      L         1       1 R                 4        NA
+##  5  1987 MACKCC-L CC      L         1       1 R                 5        NA
+##  6  1987 MACKCC-L CC      L         1       1 R                 6        NA
+##  7  1987 MACKCC-L CC      L         1       1 R                 7        NA
+##  8  1987 MACKCC-L CC      L         1       1 R                 8        NA
+##  9  1987 MACKCC-L CC      L         1       1 R                 9        NA
+## 10  1987 MACKCC-L CC      L         1       1 R                10        NA
+## # ℹ 32,199 more rows
+## # ℹ 9 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>,
+## #   body_condition <dbl>, obs_number <chr>
+```
+
+Notice that in the header of the *by_species* tibble there is now an indication that there are four groups. It is important to note that ```group_by()``` does not change the data in the tibble: there is no column that specifies the groups. But wait, we know there are only three species in the data set. Let's check to see what the values are for species.
+
+> To get the unique values for species, run the command below:
+
+
+```r
+distinct(vertebrates, species)
+```
+
+```
+## # A tibble: 4 × 1
+##   species                   
+##   <chr>                     
+## 1 Cutthroat trout           
+## 2 <NA>                      
+## 3 Coastal giant salamander  
+## 4 Cascade torrent salamander
+```
+
+It seems that there are some entries for which the species is unknown. So, let's discard those entries with filter and regroup our data. 
+
+> To generate grouped data after removing rows with no species information, run the following code block:
+
+
+```r
+by_species <- filter(vertebrates, is.na(species)==FALSE) %>% group_by(species)
+by_species
+```
+
+```
+## # A tibble: 32,206 × 18
+## # Groups:   species [3]
+##     year sitecode section reach  pass unitnum unittype vert_index pitnumber
+##    <dbl> <chr>    <chr>   <chr> <dbl>   <dbl> <chr>         <dbl>     <dbl>
+##  1  1987 MACKCC-L CC      L         1       1 R                 1        NA
+##  2  1987 MACKCC-L CC      L         1       1 R                 2        NA
+##  3  1987 MACKCC-L CC      L         1       1 R                 3        NA
+##  4  1987 MACKCC-L CC      L         1       1 R                 4        NA
+##  5  1987 MACKCC-L CC      L         1       1 R                 5        NA
+##  6  1987 MACKCC-L CC      L         1       1 R                 6        NA
+##  7  1987 MACKCC-L CC      L         1       1 R                 7        NA
+##  8  1987 MACKCC-L CC      L         1       1 R                 8        NA
+##  9  1987 MACKCC-L CC      L         1       1 R                 9        NA
+## 10  1987 MACKCC-L CC      L         1       1 R                10        NA
+## # ℹ 32,196 more rows
+## # ℹ 9 more variables: species <chr>, length_1_mm <dbl>, length_2_mm <dbl>,
+## #   weight_g <dbl>, clip <chr>, sampledate <date>, notes <chr>,
+## #   body_condition <dbl>, obs_number <chr>
+```
+
+Now, let's calculate the mean by species for *weight* and *length_1_mm*. If you're unsure whether there are NA values in these two columns, you can use the `drop_na()` function to remove rows which contain ANY NA values. To see how you might do this in one command using pipes, we'll start from vertebrates.
+
+> Run the following code block:
+
+
+```r
+# starting with the vertebrates table
+vertebrates %>% 
+  # select only the columns we want
+  select(species, weight_g, length_1_mm) %>%
+  # drop the rows with NA in ANY selected column
+  drop_na() %>%
+  # group table by species
+  group_by(species) %>%
+  # summarize the mean weight, size, and number of observations in each group
+  summarize(mean_weight=mean(weight_g), mean_size=mean(length_1_mm), num=n())
+```
+
+```
+## # A tibble: 3 × 4
+##   species                    mean_weight mean_size   num
+##   <chr>                            <dbl>     <dbl> <int>
+## 1 Cascade torrent salamander        1.08      34.1     9
+## 2 Coastal giant salamander          9.01      56.1  6329
+## 3 Cutthroat trout                   8.84      83.0 12592
+```
+
+We have now produced mean statistic by species. 
+
+> ```group_by()``` **exercise:**
+>
+> Try building a tibble grouped by *species* and  *section*, then use summarize to get the mean and standard deviation of weight. But first, get rid of missing values for both of these variables (hint: use `drop_na()`) and **DON'T** make changes to the *vertebrates* tibble.
+
+=== "Exercise"
+
+    ```r
+    # start with the vertebrates table
+
+      # we only want the columns species, section, and weight_g
+
+      # remove NAs
+
+      # group by species and section
+
+      # summarize mean weight, standard deviation of weight, and number of observations in each group
+
+    ```
+=== "Solution"
+
+    ```r
+    # start with the vertebrates table
+    vertebrates %>%
+      # we only want the columns species, section, and weight_g
+      select(species, section, weight_g) %>%
+      # remove NAs
+      drop_na() %>%
+      # group by species and section
+      group_by(species, section) %>%
+      # summarize mean weight, standard deviation of weight, and number of observations in each group
+      summarize(mean_weight=mean(weight_g), std_weight=sd(weight_g), num=n())
+    ```
+
+```
+## `summarise()` has grouped output by 'species'. You can override using the
+## `.groups` argument.
+```
+
+```
+## # A tibble: 6 × 5
+## # Groups:   species [3]
+##   species                    section mean_weight std_weight   num
+##   <chr>                      <chr>         <dbl>      <dbl> <int>
+## 1 Cascade torrent salamander CC            1.32       0.472     5
+## 2 Cascade torrent salamander OG            0.788      0.301     4
+## 3 Coastal giant salamander   CC            9.81      11.5    3028
+## 4 Coastal giant salamander   OG            8.32      12.6    3310
+## 5 Cutthroat trout            CC            9.38      10.5    6798
+## 6 Cutthroat trout            OG            8.21       9.08   5796
+```
+
+You will notice that this has produced a warning message : `summarize()` has grouped output by 'species'. You can override using the `.groups` argument. The output of summarize is itself a tibble, which is grouped. However, we can't group it by both species and section, since these are now unique combinations with only one row per pair. So summarize() is telling us it has chosen to group the output tibble by the `species` variable not the `section` variable. 
+
+## End of Part 2
