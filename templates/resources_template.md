@@ -39,6 +39,8 @@ This workshop intends to be both an introduction to the concept of programming u
     - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day4-student.ipynb)
     - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day4.ipynb)
 - Day 5: Pandas dataframes and plotting
+    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day5-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day5.ipynb)
 - Day 6: Using the internet & LLMs and a longer data analysis exercise
 
 ## Past Workshops
