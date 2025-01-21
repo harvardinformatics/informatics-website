@@ -16,7 +16,7 @@ Here we have compiled resources related to bioinformatics and computing in gener
 
 ## Tutorials
 
-**We will develop tutorials to put here.**
+**We are developing tutorials for some bioinformatics tasks. Check back soon!**
 
 ## [Computing glossary](glossary.md)
 
@@ -29,6 +29,10 @@ don't understand a term that they heard or read.
 
 Let us know if there is something we should add!
 
+**[View the glossary](glossary.md)**
+
+<! --
+
 ## Bioinformatics glossary
 
 **Click here to go to the full glossary**
@@ -36,6 +40,8 @@ Let us know if there is something we should add!
 ## Bioinformatics tools & software for sequence analysis
 
 **Click here to go to the full list**
+
+-->
 
 ## External resources
 
