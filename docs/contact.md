@@ -23,6 +23,8 @@ You can drop in to our office hours without an appointment. We hold office hours
 ## [ :material-newspaper-plus:{ .contact-icon } Subscribe to our newsletter](https://mailchi.mp/g/informatics-newsletter)
 We will send you emails notifying you about upcoming workshops and other events. 
 
+(Alt link) [Subscribe to our newsletter](newsletter.md)
+
 ---
 
 ### Links to related groups
