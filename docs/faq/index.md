@@ -33,7 +33,17 @@ hide:
         [Research Computing](https://www.rc.fas.harvard.edu/) manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing support for core facility software via the Software Operations group, and providing training, consultation, and collaborative project work for bioinformatics needs through the Bioinformatics group. 
 
         You can contact Research Computing via their [contact page](https://www.rc.fas.harvard.edu/about/contact/) for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact.md).
+    ??? question "How can I know about future workshops?"
+    
+        ##### How can I know about future workshops?
 
+        We post upcoming workshops on our [Events page](../events.md). You can also subscribe to our [newsletter](https://mailchi.mp/g/informatics-newsletter) to receive updates on upcoming workshops and events.
+    
+    ??? question "Can you run a workshop on X?"
+    
+        ##### Can you run a workshop on X?
+
+        We are always looking to run workshops that people are interested in! Please [contact us](../contact.md) with your suggestions. We can also run a workshop just for your lab group or department if you have a specific need.
 ### Bioinformatics
 ??? Bioinformatics
 
