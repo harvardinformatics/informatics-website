@@ -8,23 +8,66 @@ hide:
 
 ## Current workshops
 
-We are running a python intensive workshop this January 2025 term. This will be a 3 week workshop that runs twice per week for 3 hours each session. **The workshop will be held in person in Northwest Building 453. We will meet Tuesdays and Thursdays 9:30 AM - 12:30 PM from January 7 - January 22.**
+### :heart::bar_chart:Love Data Month:bar_chart::heart:
 
-Broadly, this workshop intends to be both an introduction to the concept of programming using python and an introduction to using python as a data science language. The first three days will be able the concept of programming while the last 3 days will be focused on introductory data analysis. You are welcome to jump in at any point, although we've intentionally made Days 1, 2, and 4 good starting points.
+February is Love Data Month! We are offering 3 different activities in the spirit of data management.
 
-[**Click here to register for the python intensive**](https://docs.google.com/forms/d/e/1FAIpQLSdYltf4wHbfH4su0cufqJhS6oHd7-23Z95WSwPQgS3CuWqMmg/viewform?usp=sf_link) 
+**:heart: Data Visualization Spa**
 
-Schedule for python intensive:
+We are opening a **Data Visualization Spa** from **February 10th - 14th**. [Sign up](https://calendar.app.google/YqfghHzuymnVHN1y6) for a 30-minute consultation with our team to give your tired and frazzled data visualization code (in R or python) a refreshing spa treatment! We will help you write more readable and efficient figure-generating code, annotate and organize your scripts to improve reproducibility, and more! 
 
-- Tuesday, January 7, 9:30 AM - 12:30 PM: Day 1: Python basics and intro to control flow
-- Thursday, January 9, 9:30 AM - 12:30 PM: Day 2: Intro to writing functions
-- Tuesday, January 14, 9:30 AM - 12:30 PM: Day 3: Metaprogramming tips and more advanced function writing
-- Thursday, January 16, 9:30 AM - 12:30 PM: Day 4: Numpy arrays, reading and writing files
-- Tuesday, January 21, 9:30 AM - 12:30 PM: Day 5: Pandas dataframes and plotting
-- Thursday, January 23, 9:30 AM - 12:30 PM: Day 6: Using the internet & LLMs and a longer data analysis exercise
+---
+
+**:heart: Publishing your data analysis on GitHub**
 
 !!! Note
-    To add these sessions to your calendar, click on the event on the Google Calendar below and click "copy to my calendar"
+    This will be offered in person and virtually. Pick which day works best for you!
+
+    **February 18th, 10 AM - 12 PM in person room #LL03 in Cabot Library**
+
+    **February 20th, 10AM - 12 PM virtual** Zoom registration here
+
+Do you need to share your data analysis code but don't know where to start? Is the GitHub website too confusing to navigate? We can help! Join us for a 2 hour seminar in which we will learn about what git/GitHub is, what is good to share of your analysis, how to organize your project code before publishing it, and of course, how to use GitHub as a publishing platform. We recommend this talk for those who would like to improve their open science practices. No coding background is required. 
+
+---
+
+**:heart: Version Control and Collaboration using git/GitHub**
+
+!!! Note
+    This will be offered in person and virtually. Pick which day works best for you!
+
+    **February 25th 10 AM - 12 PM in person room #LL03 in Cabot Library**
+
+    **February 27th 10 AM - 12 PM virtual** Zoom registration here
+
+Do you want to keep track of changes in your code, collaborate with others, or share your code with the world? Join us for a 2 hour hands-on workshop in which that aims to teach the basics of using the git/GitHub for version control of your project code. We will also cover collaborating on the same project with other people and how to manage conflicts. This workshop is recommended for researchers who want to integrate git into their coding or data analysis practice. Some familiarity with command line tools will be helpful, but we will primarily use GUI tools. 
+
+---
+
+### 1 hour seminars
+
+We will be offering three 1-hour seminars on Wednesdays in March. *All seminars will be hybrid on zoom an in person in the Northwest Building meeting room B253*
+
+**March 5 11AM-12PM - Introduction to Genome Annotation** 
+
+The seminar will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool. Zoom registration
+
+[Zoom Registration](https://harvard.zoom.us/meeting/register/GgK-wEDwSwe9_n0Dh4cizg){ .md-button}
+
+**March 12 11AM-12PM - Introduction to scRNA analysis**
+
+This seminar provides a gentle introduction to the motivations for scRNAseq, the current technologies available from to design your single-cell experiment, the distinct data processing challenges that scRNAseq presents (compared to bulk RNAseq), and basic data processing and analysis steps that are the foundation for performing downstream analyses aimed at generating deeper biological insights.
+
+[Zoom registration](https://harvard.zoom.us/meeting/register/ok0H00HnRHqIUy-mWKNykA){ .md-button}
+
+**March 26 11AM-12PM - Installing & Managing software (Conda, Containers)** 
+
+This seminar is intended for people who use (or may use) command line softwares and programs and assumes basic command line knowledge. We will learn about why software management is challenging, how to create and share conda environments, and how to use docker/singularity containers. We will be using the command line on the Cannon cluster, but these concepts can be translated to working on your local computer as well.
+
+[Zoom Registration](https://harvard.zoom.us/meeting/register/ntL9ai9RTleRPkKuM1NKlA){ .md-button}
+
+
+---
 
 ## Office hours
 
