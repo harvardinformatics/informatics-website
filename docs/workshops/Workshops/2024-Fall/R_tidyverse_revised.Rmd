@@ -1,0 +1,511 @@
+---
+title: "Harvard Informatics R Tidyverse Workshop"
+date: "Fall, 2024"
+author: "Lei Ma, Adam Freedman, Gregg Thomas"
+output: html_document
+---
+
+# R, RStudio, and R Markdown
+
+Hello everyone. Let's get oriented to how today's tidyverse workshop is going to run. I will be sharing my screen in RStudio as I demonstrate the package tidyverse and various concepts. You all should also open up your RStudio and download and open this document, which you can find on our website (TBD Short link to download) and follow along. There will be exercises during the workshop to practice! 
+
+For those who are not familiar with this file format, this is an RMarkdown file, which is a mixture of formatted text and **code blocks**. Code is written and executed in these code blocks, which are delineated by the backtick character (\`). Each code block can have a language specified (in our case we will exclusively use `r`) as well as options specific to that block. Here is an example of an R code block in this R Markdown file:
+
+```{r}
+getwd()
+print("hello world")
+```
+
+We will have exercises that are demarcated with a ">" symbol, like the one coming up!
+
+> In the code block above, find the green triangle in the upper right hand corner and click it.
+
+What happened? The output appeared right below the code block!
+
+We can also use keyboard shortcuts to run code
+
+> Run the code block above by placing your cursor in the code block and typing the *ctrl+shift+enter* (windows) or *cmd+shift+enter* (mac) key combination.
+
+Using *ctrl+enter*/*cmd+enter* we can run only the line that the cursor is on.
+
+# Tidy data
+
+> Tabular data is tidy if each value is placed in its own “cell”, each variable in its own column, and each observation in its own row.
+>
+> -   Hadley Wickham (R for Data Science 2nd Edition)
+
+In general tidy data is the format that is most conducive to data analysis and visualization. To that end, the "Tidyverse" is actually a collection of packages that share a similar design philosophy around how data and visualization is represented and interacted with in R. Let's load some data sets that are already tidy and see what kinds of transformations we can do using the tidyverse library.
+
+## Downloading and loading tidyverse package
+
+If you haven't already, you will need to install and load the tidyverse package. Once you load it, you will see all the libraries that are included. 
+
+```{r, message = FALSE}
+if(!require(tidyverse)){install.packages("tidyverse", quiet=TRUE)}
+library(tidyverse)
+```
+
+## The tibble data structure
+
+Today we will be working with the data structure known as tibble. A tibble is a data structure that is suitable for storing heterogenous data, that is, data that is a mix of numerical and categorical. Tibbles are 2D and you can think of them as similar to a spreadsheet in Excel. Below is a table comparing some different data structures in R and the types of data you can store in it. While we focus on tibbles, the functions we'll be using today can be used in any of the data structures that are listed alongside tibbles (e.g. data.frame, data.table).
+
+| **Dimensions** | **Homogeneous** | **Heterogeneous**                |
+|----------------|-----------------|----------------------------------|
+| 1-D            | atomic vector   | list                             |
+| 2-D            | matrix          | data.frame / tibble / data.table |
+| n-D            | array           | ---                              |
+
+Here is an example of a tibble:
+
+```{r}
+mpg
+```
+
+This tibble of different car specifications has 11 columns and each column holds either numerical or categorical data. The columns all have names, but the rows do not. You can access a column by using the `$` operator, like so:
+
+```{r}
+mpg$manufacturer
+```
+
+You can index a tibble by row and column using square brackets, like so:
+
+```{r}
+# mpg[ROW, COLUMN]
+# Get the first row and first two columns
+# : is used to create a range of values
+mpg[1, 1:2]
+```
+
+```{r}
+# mpg[ROW, COLUMNS]
+# Use the c() function to create a vector of column names
+mpg[1:10, c("manufacturer", "model", "year")]
+```
+
+## Tidyverse syntax/conventions
+
+If you have used R previously, you may be familiar with the typical way to call functions in R. For example, to call the `mean()` function, you would write `mean(x)`. This is a completely fine way of calling functions in tidyverse as well, but there is a new way to pass arguments to functions that helps with readability. This concept is called "piping" and is done using the `%>%` operator. When you "pipe" an object to a function `object %>% function()`, the object is passed as the first argument to the function. Because tidyverse functions are designed to do things with data objects, the first argument is typically the data you are working with. Additionally, because many of these functions **return** a data object, you can chain functions together to create a pipeline of operations. This makes the code more readable and easier to understand.
+
+Below is the historical "base R" way of calling functions in R:
+
+```{r}
+# filter some dataset
+mpg_audi <- filter(mpg, manufacturer == "audi")
+# count number of rows
+nrow(mpg_audi)
+```
+
+If we use pipes ` %>% `, we can rewrite the code in one line and avoid saving extra variables:
+
+```{r}
+mpg %>% 
+  filter(manufacturer == "audi") %>% 
+  nrow()
+```
+
+We will be using the pipe operator throughout the workshop to make our code more readable and concise.
+
+## What makes data tidy?
+
+Our definition of a tidy dataset is one in which all data is in a 2D table with rows representing observations and columns representing variables.
+
+Here is an example of tidy data:
+
+```{r}
+mpg
+```
+
+In the dataset mpg, each row is a different model of car, and the columns are different variables that describe each car. By having data in this format, we can easily answer questions such as "What is the number of different car classes that each manufacturer creates?". Run the code below for a demonstration of the readability of tidy data analysis. (Don't worry about the actual functions for now, we'll cover them later)
+
+```{r}
+mpg %>% 
+  group_by(manufacturer) %>% 
+  summarize(n_distinct(class))
+
+```
+
+Here is an example of data that is not tidy:
+
+```{r}
+billboard
+```
+
+In this billboard dataset example, each row is a different track, but the columns represent observations of their rank on the billboard chart in different weeks. So multiple observations are stored across multiple columns. Why is this a problem? It makes it difficult to analyze the data. For example, if we wanted to know how many weeks each song was on the billboard chart, we would have to write a lot of code to parse out the columns and count the number of weeks. Below is the code that is required to create a new data frame that counts the number of weeks each song was on the billboard chart.
+
+```{r}
+# first we need to get just the columns for week
+# it's messy because we need to use regular expression to parse out the columns
+week_columns <- grep("^wk", names(billboard), value = TRUE)
+print(week_columns)
+
+# Make a new data frame that counts the number of weeks each song was on the billboard chart
+# This is difficult to read and interpret
+number_of_weeks <- apply(billboard[week_columns], 1, function(x) sum(!is.na(x)))
+print(number_of_weeks)
+
+# merge the number of weeks to the columns for the song
+songs_week <- cbind(billboard[,c("artist", "track")], number_of_weeks)
+
+head(songs_week)
+```
+
+Here is the same code after we've tidied the data. We use one line to tidy the data and then one line to extract the information we want. We'll go over exactly how to tidy the data shortly; this is just to compare the readability of this code vs the previous block. 
+
+```{r}
+# This tidies the data
+billboard_tidy <- billboard %>% 
+  pivot_longer(cols = starts_with("wk"),
+               names_to = "week",
+               values_to = "ranking",
+               values_drop_na = TRUE)
+
+print(billboard_tidy)
+
+# Once data is tidied, we just need two function calls to get the info we need
+# This is much easier to read and interpret
+billboard_tidy %>% 
+  group_by(artist, track) %>% 
+  summarize(number_of_weeks = n())
+
+```
+
+>**Exercise**: Load the `relig_income` dataset. Is this data tidy? Why or why not?
+
+```{r}
+relig_income
+```
+
+>**Exercise**: Load the `ChickWeight` dataset. Is this data tidy? Why or why not?
+
+```{r}
+tibble(ChickWeight)
+```
+
+In the two code blocks above, `relig_income` is not tidy because the income brackets are spread out across the column. In the `ChickWeight` dataset, these data **are** tidy. Each row is a different chick, observed at a different time. 
+
+The type of "untidy" data we've demonstrated so far is untidy because it is what we call "wide" data. In wide data, multiple observations are stored across multiple columns. Tidy data is typically "long" data, where each observation is stored in a single row. An important skill in using tidyverse is to pivot data from wide to long format.
+
+## Pivoting tables between wide and long
+
+To convert this data to a **long** format, we can use the `pivot_longer()` function. The syntax for `pivot_longer()` is as follows:
+
+```
+pivot_longer(data, cols, names_to, values_to)
+```
+
+* cols = the columns that you want to collapse into a single column
+* names_to = the name of the new column that will hold the names of the columns you gathered
+* values_to = the name of the new column that will hold the data of the columns you gathered
+
+We start with the `data`, then specify the `cols` we want to gather together (the "wk" columns). This will then take all those column names and put it under a new variable named `names_to`. The values of those weeks, aka the rankings, we're going to pass to `values_to`. So all the data from the "wk" columns will be collapsed into two columns, one for "week" and one for "ranking". The rest of the data will be duplicated as needed to uniquely identify each observation.
+
+```{r}
+billboard %>% pivot_longer(cols = starts_with("wk"),
+                           names_to = "week",
+                           values_to = "ranking")
+```
+
+This looks a bit better, but we created a lot of extraneous columns due to the default behavior of `pivot_longer()` creating a row for every combination of the gathered variable (week) and the song. We can have it drop the NA values by adding the argument `values_drop_na = TRUE`. Run the below code and you'll see that our number of rows drops from 24 thousand to 5 thousand by excluding the empty weeks. 
+
+```{r}
+billboard %>% pivot_longer(cols = starts_with("wk"),
+                           names_to = "week",
+                           values_to = "ranking",
+                           values_drop_na = TRUE)
+```
+
+>**Exercise**: Look at the `relig_income` dataset. How would you pivot this data to make it tidy? Think of the function `pivot_longer(data, cols, names_to, values_to)`. What would be cols, names_to, and values_to?
+
+```{r}
+# cols is every column except religion
+# names_to would be income bracket, which we can shorten to "income"
+# values_to would be the "count" of people in that religion and income bracket
+relig_income %>% pivot_longer(cols = !religion,
+                             names_to = "income",
+                             values_to = "count")
+
+```
+
+In the above example, there are a few other ways to select the columns you want, such as `"<$10k":"Don't know/refused"` or listing them each out `c("<$10k", "$10-20k", ...)`.
+
+>**Exercise**: Look at the dataset `table2`. Is this tidy data? 
+
+```{r}
+table2
+```
+
+The table2 dataset is an example of data that is not tidy. Although the data is in a "long" format, it is not tidy because the unit of observation here is the country in a specific year And the thing we are observing are the population and the cases (of disease). More specifically, a column should contain measurements of the same sort of observation, but in this case there are two types of measurements in the same column. This is true even though both measurements are on a count scale. To clean this up, we will need to `pivot` this data from "long" to "wide" using the `pivot_wider()` function. The syntax for `pivot_wider()` looks like this:
+
+```r
+pivot_wider(data, names_from, values_from)
+```
+
+* names_from = the column that contains the names of the new columns
+* values_from = the column that contains the data for these new columns
+
+```{r}
+table2 %>% pivot_wider(names_from = type, values_from = count)
+```
+
+How does this help us analyze the data? Think about the question "What is the rate of disease in each country?" The rate of the disease is the number of cases divided by the total population. In the long version of the data, we would need to divide rows against each other. In this version, we just need to divide the columns, which are easily accessed by the column names.
+
+```{r}
+# long version of table2 disease incidence
+table2 %>% 
+  group_by(country) %>% 
+  summarize(rate = sum(count[type == "cases"]) / sum(count[type == "population"]))
+```
+
+This is the wide version of `table2`. 
+
+```{r}
+# wide version of table2 disease incidence
+table2_wider <- table2 %>% pivot_wider(names_from = type, values_from = count)
+
+# just use the cases and population to calculate the rate
+table2_wider$cases / table2_wider$population
+
+# calculate the rate but tack it on to the parent dataset
+table2_wider %>% 
+  mutate(rate = cases / population)
+```
+Of course, this approach generates the disease incidence rate for each country for each year. To obtain overall rate across years, you would need to use `group_by()` and `summarize()`.
+
+## Data spread out across multiple files
+
+Another way in which data can be "untidy" is if you have observations spread out across multiple files. It's rare that all our data is already in one single table. Often, we take one type of measurement on one table and have another set of data in another table. For example, you might have visual measurements like color for a group of animals in one table and quantitative measurements like weight for the same animals in another table. 
+
+We can merge tables by performing "mutating joins". In tidyverse, joins are performed one pair of tables at a time, such that, if you have tables x, y, and z, you must first join x and y to produce a new table xy, then join xy and z to create xyz. As we shall see below, a requirement of such joins is that any two tables to be joined contain unique observations on the same variable.
+
+```{r}
+df1 <- tibble(
+  name = c("Daffy", "Donald", "Mickey", "Goofy", "Tweety"),
+  species = c("duck", "duck", "mouse", "dog", "bird")
+)
+df2 <- tibble(
+  name = c("Daffy", "Donald", "Mickey", "Goofy", "Minnie"),
+  weight = c(5, 6, 3, 10, 4)
+)
+
+df3 <- tibble(
+  animal = c("duck", "mouse", "dog", "cat"),
+  sound = c("quack", "squeak", "bark", "meow")
+)
+```
+
+In the code block below, we have tables that relate Disney characters to the animal species they are, Disney characters and their weight, and animal species to the sound they make. We want to merge these tables together to get a table that has the Disney characters, their weight, and the sound they make. The set of functions do to this are called **joins**. There are 3 types of joins, inner, left/right, and full joins.
+
+The syntax for all the joins we will be using is the same:
+
+```r
+join_function(df1, df2, by = "column_name")
+```
+
+The join function takes two tibbles, `df1` and `df2`, and joins them on the column `column_name`. The column name must be present in both tibbles.
+
+
+### Inner joins
+
+The inner join only preserves rows that have matching data in both tables. 
+
+```{r}
+inner_join(df1, df2, by = "name")
+```
+
+Here's what the three tables would look like if we chain joined them with `inner_join()`:
+
+```{r}
+df1 %>% 
+  inner_join(df2, by = "name") %>% 
+  inner_join(df3, by = c("species" = "animal")) # this is what to do if the column names are different
+```
+
+### Left/right joins
+
+In a `left_join()`, when given tables x and y, the result is to retain all rows in x, regardless if there is matching data in y: missing data in y will get returned as NAs in the new table.
+
+```{r}
+left_join(df1, df2, by = "name")
+```
+
+Here's the result of chaining the three tables with `left_join()`:
+
+```{r}
+df1 %>% 
+  left_join(df2, by = "name") %>% 
+  left_join(df3, by = c("species" = "animal"))
+```
+
+### Full joins
+
+In full joins, you keep all the data from both tables, and fill in missing data with NAs. Here's what a full join of all three tables looks like. 
+
+```{r}
+df1 %>% 
+  full_join(df2, by = "name") %>% 
+  full_join(df3, by = c("species" = "animal"))
+```
+
+You can also join by multiple columns, in cases where it takes two or more columns to uniquely identify an observation.
+
+The key concept to understanding joins is the idea of **relational data**. In relational data, you have multiple tables that are related to each other by common variables/columns. In the examples above, one of the common columns was the name of the Disney character. Some sets of data might have multiple columns that are related to each other. 
+
+Here is a more advanced example of joining multiple datasets together. The `nycflights13` package contains a set of tables relating to flights out of the three NYC airports. 
+
+```{r, message=FALSE}
+if(!require(nycflights13)){install.packages("nycflights13", quiet=TRUE)}
+library(nycflights13)
+```
+
+```{r}
+glimpse(flights)
+```
+
+```{r}
+glimpse(airlines)
+```
+
+```{r}
+glimpse(planes)
+```
+
+```{r}
+glimpse(airports)
+```
+
+```{r}
+glimpse(weather)
+```
+
+In this complex dataset, we have a table of flights, airlines, planes, airports, and weather. They all share some common columns, though the columns may not be named the same. For example, the `flights` table has `carrier` column that directly corresponds to the `airlines` table's `carrier` column. But the `origin` and `dest` columns in the `flights` table correspond to the `faa` column in the `airports` table.
+
+[Here](https://r4ds.hadley.nz/joins.html#fig-flights-relationships) is a graphic of how these tables are related. (This is from the R4DS book, which is a great resource for learning tidyverse).
+
+>**Exercise**: By looking at this table, can you see how we would go about joining these tables together? If you wanted to know which airlines were the most delayed, which tables would you need to join together? What if you want to know the relationship between the age of a plane and its delay time?
+
+
+>**Exercise**: Compare the two code blocks below. What is different between the results?
+
+```{r}
+flights %>% 
+  left_join(planes) %>% 
+  glimpse()
+  
+```
+
+```{r}
+flights %>% 
+  left_join(planes, by="tailnum") %>% 
+  glimpse()
+```
+
+In the first code block the tables were joined by "year" and "tailnum". But this is **incorrect** because the `year` column in the `flights` table is the year of the flight, while the `year` column in the `planes` table is the year the plane was manufactured. In the second code block, the tables were joined only by `tailnum` and the two columns for year were renamed `year.x` and `year.y`, corresponding to the year of the flight and the year the plane was manufactured, respectively. It's important to be aware of the columns you are joining on and what they represent. 
+
+# Data transformation with tidyverse
+
+Now that we've covered the two major aspects of tidying data, that is, transforming data from wide to long and merging data from multiple tables, we can talk briefly about data transformation. In this section, we will be working with already tidy data and using various functions to pull out different information from the table. This is not meant as an exhaustive list of functions, but rather a demonstration of the types of things you can do with tidy data. 
+
+## Filtering data
+
+You can select certain rows of a table based on boolean conditions using the `filter()` function. 
+
+```{r}
+mpg %>% filter(manufacturer == "audi")
+```
+
+You can use multiple conditions by separating them with a comma. This is equivalent to using & to join two boolean expressions together. 
+
+```{r}
+mpg %>% filter(manufacturer == "audi", year < 2000)
+```
+
+## Selecting columns
+
+You can select a subset of the columns in a table using the `select()` function and specifying the columns you want. 
+
+```{r}
+mpg %>% select(manufacturer, model, year)
+```
+
+Another way to get the columns you want is to use the `starts_with()`, `ends_with()`, `contains()`, and `matches()` functions. 
+
+```{r}
+weather %>% select(starts_with("wind"))
+billboard %>% select(contains("wk"))
+```
+
+## Adding new columns/variables with `mutate()`
+
+The `mutate()` function is a useful tool for adding a new column to the end of your table, usually after performing some operation where you calculate a value from existing variables. The syntax is as follows:
+
+```r
+mutate(data, new_column_name = operation)
+```
+
+When you perform operations on existing columns, you don't need to use the `$` operator to access the columns. 
+
+```{r}
+flights %>% 
+  mutate(avg_speed = distance / air_time * 60,
+         gain = dep_delay - arr_delay)
+```
+
+>**Exercise**: Read the code below and see if you can work out what each line is doing
+
+```{r}
+mpg %>% 
+  filter(manufacturer == "audi") %>% 
+  mutate(avg_mpg = (cty + hwy) / 2) %>%
+  select(manufacturer, model, year, avg_mpg)
+```
+
+## Grouping and summarizing data
+
+One of the most common things we want to do is summarize data by groups. For example, we might want to know the number of car models for each manufacturer. We will use a combination of the functions `group_by()` and `summarize()` to do this. The `group_by` function adds metadata to the table that indicates which group each row belongs to. Then, when we apply operations using the `summarize()` function, those operations are performed separately for each group. In this way, we can calculate summary statistics for each unique value of a variable. 
+
+In the code below, we want to calculate for each unique value of `manufacturer`, the number of unique values of `model`. So we group by `manufacturer` and then summarize the number of distinct values of `model`. The operation we perform inside the `summarize` function is `n_distinct()`, which counts the number of unique values in a column. 
+
+```{r}
+mpg %>% 
+  group_by(manufacturer) %>%
+  summarize(n_distinct(model))
+```
+
+This is what it would look like if we didn't group_by first. We get the total number of unique values of `model` in the entire dataset. 
+
+```{r}
+mpg %>% summarise(n_distinct(model))
+```
+
+Here is another example where we calculate the average departure delay for each airline. We also use the `left_join()` function to merge the `airlines` table with the `flights` table. 
+
+```{r}
+flights %>% 
+  group_by(carrier) %>% 
+  summarize(avg_delay = mean(dep_delay, na.rm = TRUE)) %>% 
+  left_join(airlines, by = c("carrier" = "carrier"))
+```
+
+>**Exercise**: Assuming that any flight with `NA` in the `dep_time` column is a cancelled flight, how would you calculate the number of cancelled flights for each airport? What would you group by and what would you summarize? (don't worry about the actual function names)
+
+```{r}
+flights %>% 
+  group_by(origin) %>% 
+  summarize(n_cancelled = sum(is.na(dep_time))) %>% 
+  left_join(airports, by = c("origin" = "faa"))
+```
+
+# Putting it all together
+
+As a summary, here is an example of how you might use all the functions we've learned today to find out differences in weather conditions for cancelled flights out of JFK. 
+
+```{r}
+# Find out the weather condition of cancelled flights from JFK
+flights %>% 
+  filter(origin=="JFK") %>% 
+  left_join(weather, by = c("origin", "time_hour")) %>% 
+  mutate(cancelled = is.na(dep_time)) %>%
+  group_by(cancelled) %>% 
+  summarize(n = n(), wind_speed = mean(wind_speed, na.rm = TRUE), wind_gust = mean(wind_gust, na.rm = TRUE), precip = mean(precip, na.rm = TRUE))
+```
+
