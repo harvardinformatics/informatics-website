@@ -5,6 +5,7 @@
 ############################################################
 
 import sys, os
+# import random
 import json
 import csv
 
@@ -16,6 +17,11 @@ print("RUNNING scripts/resources_generatory.py TO GENERATE TAG PAGES")
 md_template_file = "templates/resources_template.md";
 tag_template_file = "templates/tag_table_template.md";
 # Markdown templates
+
+# computing_glossary_dir = "data/glossary-tables/computing-programming/";
+# computing_files = os.listdir(computing_glossary_dir)
+# random_computing_table = random.choice(computing_files)
+# # Select a random computing glossary table to display on the resources page
 
 json_file = "data/resources/resources-primary.json";
 # JSON file with links and tags
