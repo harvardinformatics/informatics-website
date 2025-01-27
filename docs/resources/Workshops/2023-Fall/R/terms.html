@@ -1,0 +1,169 @@
+
+<!doctype html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+    <link type="text/css" rel="stylesheet" href="css/grid.css"  media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/global.css"  media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"> 
+    <title>Harvard IFX R Intro - Fall 2023</title>
+</head>
+
+<body>
+    <div class="row" id="desktop_nav">
+		<div class="col-2-24" id="margin"></div>
+		<div class="col-5-24" id="nav_link_cell"><a class="nav_link" href="index.html">Intro</a></div>
+		<!-- <div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="start.html">Workshop</a></div> -->
+		<div class="col-5-24 dropdown" id="nav_link_cell">
+			<a href="start.html" class="nav_link">Workshop</a>
+			<div class="dropdown_container desktop_drop">
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="start.html" id="dropdown_nav_link">Get Started</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part1.html" id="dropdown_nav_link">Part 1: Introduction to R</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part2.html" id="dropdown_nav_link">Part 2: Data wrangling and the tidyverse</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part3.html" id="dropdown_nav_link">Part 3: Visualization and plotting with ggplot</a></li>
+
+					<!-- <li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-spring/r/R-workshop-2023-Day4.html" id="dropdown_nav_link">Day 4: Custom functions</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-spring/r/R-workshop-2023-Day4-data-analysis.html" id="dropdown_nav_link">Day 4: Analysis practice</a></li> -->
+				</ul>
+			</div>
+		</div>
+		<div class="col-5-24" id="nav_link_cell_active"><a class="nav_link" id="active" href="#">Terminology</a></div>
+		<!-- <div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="programs.html">Programs</a></div> -->
+		<div class="col-5-24" id="nav_link_cell"><a class="nav_link" href="links.html">Links</a></div>
+		<div class="col-u-2-24" id="margin"></div>
+	</div>
+
+	<div class="row" id="mobile_nav">
+		<div class="col-24-24 dropdown" id="nav_link_cell">
+			<a href="#" class="nav_link"><img id="mobile_logo_nav" src="img/nav.png"></a>
+			<div class="dropdown_container mobile_drop">
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="index.html" id="mobile_nav_link">Intro</a></li>
+					<li class="dropdown_list_item"><a href="start.html" id="mobile_nav_link">Workshop</a></li>
+					<li class="dropdown_list_item"><a href="terms.html" id="mobile_nav_link">Terminology</a></li>
+					<!-- <li class="dropdown_list_item"><a href="programs.html" id="mobile_nav_link">Programs</a></li> -->
+					<li class="dropdown_list_item"><a href="links.html" id="mobile_nav_link">Links</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+    <a class="internal-link" name="general"></a>
+    <div class="row" id="header">Terminology & File Formats</div>
+
+    <div class="row" id="body-row">
+        <div class="col-3-24" id="side-nav-cont">
+            <div id="side-nav">
+                <span id="side-header">Page contents</span>
+                <ul>
+                    <li><a href="terms.html#general">General terms</a></li>
+                    <li><a href="terms.html#programming">Programming terms</a></li>
+                    <li><a href="terms.html#r">R terms</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-21-24" id="main-cont">
+            <div class="row" id="top-row-cont">
+                <div class="col-24-24" id="top-row"></div>
+            </div>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Definitions of general data science terms relatee to this workshop</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+
+                            <p>
+                                Sometimes the hardest part of learning a new topic is learning the terminology or jargon that those within
+                                the community commonly use. Here is a table of some terms that are common, but may be unfamiliar to someone new to R. 
+                                Some of these are my attempt to define abstract terms. If you want any terms defined or added to 
+                                the list, or you feel the definitions are inaccurate, please contact <a href="https://gwct.github.io/" target="_blank">me</a>.
+                            </p>
+
+                            
+<div class="table-cont">
+    <table class="prog-table">
+        <thead><th>﻿Term</th><th>Definition</th></thead><tr><td><b>Command</b></td><td>An instruction given to the computer to perform an operation (such as opening a file, adding a row to a data table, etc.). The way a command is given to the computer is often dictated by the programming language in which it is to be interpreted (known as that language's <b>syntax</b>).</td></tr><tr><td><b>Script</b></td><td>A set of commands written in a particular programming language's <b>syntax</b> that are stored as plain text in a file. When interpreted by that programming language, the commands will be executed in order.</td></tr><tr><td><b>Text editor</b></td><td>A graphical program on a computer that displays plain text files on the screen and allows them to be edited.</td></tr><tr><td><b>Integrated Development Environment (IDE)</b></td><td>A graphical program on a computer that contains tools to aid development in a specific programming language (e.g. RStudio for R).</td></tr>
+    </table>
+</div>
+
+                            <div id="sep_div"></div>
+
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="internal-links" name="programming"></a>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Definitions of general programming terms</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+
+                            
+<div class="table-cont">
+    <table class="prog-table">
+        <thead><th>﻿Term</th><th>Definition</th></thead><tr><td><b>Syntax</b></td><td>The way a particular programming language expects its code to be written.</td></tr><tr><td><b>Variable</b></td><td>The name of a piece of information stored into memory in a computer program. This name can be referred to later in the program and used to manipulate the information.</td></tr><tr><td><b>Data type</b></td><td>The way data is encoded on the computer. Different operations can be performed on different data types.</td></tr><tr><td><b>Data structure</b></td><td>The way data is organized within a programming language. Different operations can be performed on different data structures.</td></tr><tr><td><b>Function</b></td><td>A generalized chunk of code that can be easily inserted into new code. In R, functions can also be run as commands, and are passed <b>arguments</b> (data or variables) within parentheses (e.g. <code>my_function(parameter=2)</code> will execute the code in my_function with the parameter variable set to 2).</td></tr><tr><td><b>Operator</b></td><td>In programming, operators are special functions that are denoted by specific symbols and can be used to manipulate and compare information in the program. Sometimes the way an operator works depends on the <b>data type</b> being used with it.</td></tr><tr><td><b>Assignment operator</b></td><td>In many programming language, a <em>variable</em> can be ASSIGNED a value with the equals sign (<code>=</code>); e.g.<code>var_name = 1</code>. <b>Note that in R, <code>&lt;-</code> is also an assignment operator</b>.</td></tr><tr><td><b>Algebraic operators</b></td><td>Many programming language have basic algebraic operators to manipulate numeric data types, like <code>+</code> for ADDITION, <code>-</code> for SUBTRACTION, <code>*</code> for MULTIPLICATION, and <code>/</code> for DIVISION. Note that in some programming languages, these symbols can be used as operators for other data types with different outcomes, for example in Python, the + operator can also concatenate two strings together.</td></tr><tr><td><b>Logical operators</b></td><td>Logical operators allow comparisons of CONDITIONS. Common logical operators are AND (represented as <code>&&</code> or <code>&</code>) and OR (represented as <code>||</code> or <code>|</code>). </td></tr><tr><td><b>Comparative operators</b></td><td>Logical comparisons of numbers include EQUALITY (<code>==</code>), GREATER THAN (<code>&gt;</code>), GREATER THAN OR EQUAL TO (<code>&gt;=</code>), LESS THAN (<code>&lt;</code>), LESS THAN OR EQUAL TO (<code>&lt;=</code>).</td></tr><tr><td><b>Inclusion operators</b></td><td>Some languages use another operator to check whether a certain value is INCLUDED within a larger data structure, sometimes denoted as <code>in</code> or <code>%in%</code>.</td></tr><tr><td><b>Negation operator</b></td><td>For any comparison or logical operation, a NEGATION can be made, represented in many programming languages as <code>!</code> or <code>not</code>, e.g. <code>!TRUE</code> is equivalent to <code>FALSE</code>.</td></tr>
+    </table>
+</div>
+
+                            <div id="sep_div"></div>
+
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="internal-links" name="r"></a>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Definitions of terms related to R and RStudio</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+
+                            
+<div class="table-cont">
+    <table class="prog-table">
+        <thead><th>﻿Term</th><th>Definition</th></thead><tr><td><b>R</b></td><td>A functional programming language with an emphasis on statistical analysis and data visualization.</td></tr><tr><td><b>Rstudio</b></td><td>An IDE for R.</td></tr><tr><td><b>Environment</b></td><td>The set of scripts, packages, and data currently loaded into memory in RStudio.</td></tr><tr><td><b>Console</b></td><td>An interactive command line in RStudio that accepts one R command at a time to be executed when the ENTER key is pressed.</td></tr><tr><td><b>Package</b></td><td>A set of code available to be installed to perform specific tasks.</td></tr><tr><td><b>Markdown</b></td><td>A syntax for formatting plain text and interleaving code blocks that can be run when the document is generated.</td></tr><tr><td><b>Code block</b></td><td>In a markdown document, separate blocks of text that are interpreted as code when the document is generated.</td></tr><tr><td><b>&lt;-</b></td><td>An <b>assignment operator</b> in R that can be used to assign values to operators, e.g. <code>x &lt;- 10</code> assigns the variable x the value of 10.</td></tr><tr><td><b>Object</b></td><td>Data of any type that has been stored as a variable in the current environment.</td></tr><tr><td><b>Character</b></td><td>A data type of one or more alpha-numeric characters.</td></tr><tr><td><b>Numeric</b></td><td>A data type of numbers.</td></tr><tr><td><b>Logical</b></td><td>A data type with two possible values, either TRUE or FALSE.</td></tr><tr><td><b>Vector</b></td><td>A data structure that contains multiple objects stored as a collection.</td></tr><tr><td><b>Data frame</b></td><td>A data structure that is a collection of vectors stored as a table with rows and columns, with the columns being the vector names.</td></tr><tr><td><b>Tibble</b></td><td>A data structure that is the tidyverse implementation of a data frame.</td></tr><tr><td><b>List</b></td><td>A data structure made up of a collection of any type of objects.</td></tr>
+    </table>
+</div>
+
+                            <div id="sep_div"></div>
+
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" id="footer">
+		<div class="col-1">
+			<div id="footer_text">
+				<center>Site designed and maintained by <a href="https://gwct.github.io" target="_blank">Gregg Thomas</a>, Harvard Informatics | © Copyright 2023 | Page built: 10/30/2023 10:43:07 Eastern Daylight Time </center>
+			</div>
+		</div>
+	</div>
+</body>

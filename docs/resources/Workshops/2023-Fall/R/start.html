@@ -1,0 +1,412 @@
+
+<!doctype html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+    <link type="text/css" rel="stylesheet" href="css/grid.css"  media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/global.css"  media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"> 
+    <title>Harvard IFX R Intro - Fall 2023</title>
+</head>
+
+<body>
+    <div class="row" id="desktop_nav">
+		<div class="col-2-24" id="margin"></div>
+		<div class="col-5-24" id="nav_link_cell"><a class="nav_link" href="index.html">Intro</a></div>
+		<!-- <div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="#">Workshop</a></div> -->
+		<div class="col-5-24 dropdown" id="nav_link_cell_active">
+			<a href="#" class="nav_link" id="active">Workshop</a>
+			<div class="dropdown_container desktop_drop">
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="#" id="dropdown_nav_link">Get Started</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part1.html" id="dropdown_nav_link">Part 1: Introduction to R</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part2.html" id="dropdown_nav_link">Part 2: Data wrangling and the tidyverse</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part3.html" id="dropdown_nav_link">Part 3: Visualization and plotting with ggplot</a></li>
+
+					<!-- <li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-spring/r/R-workshop-2023-Day4.html" id="dropdown_nav_link">Day 4: Custom functions</a></li>
+					<li class="dropdown_list_item"><a href="https://harvardinformatics.github.io/workshops/2023-spring/r/R-workshop-2023-Day4-data-analysis.html" id="dropdown_nav_link">Day 4: Analysis practice</a></li> -->
+				</ul>
+			</div>
+		</div>
+		<div class="col-5-24" id="nav_link_cell"><a class="nav_link" href="terms.html">Terminology</a></div>
+		<!-- <div class="col-4-24" id="nav_link_cell"><a class="nav_link" href="programs.html">Programs</a></div> -->
+		<div class="col-5-24" id="nav_link_cell"><a class="nav_link" href="links.html">Links</a></div>
+		<div class="col-u-2-24" id="margin"></div>
+	</div>
+
+	<div class="row" id="mobile_nav">
+		<div class="col-24-24 dropdown" id="nav_link_cell">
+			<a href="#" class="nav_link"><img id="mobile_logo_nav" src="img/nav.png"></a>
+			<div class="dropdown_container mobile_drop">
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="index.html" id="mobile_nav_link">Intro</a></li>
+					<li class="dropdown_list_item"><a href="start.html" id="mobile_nav_link">Workshop</a></li>
+					<li class="dropdown_list_item"><a href="terms.html" id="mobile_nav_link">Terminology</a></li>
+					<!-- <li class="dropdown_list_item"><a href="programs.html" id="mobile_nav_link">Programs</a></li> -->
+					<li class="dropdown_list_item"><a href="links.html" id="mobile_nav_link">Links</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+    <a class="internal-link" name="start"></a>
+   	<div class="row" id="header">Getting Started</div>
+
+    <div class="row" id="body-row">
+        <div class="col-3-24" id="side-nav-cont">
+            <div id="side-nav">
+                <span id="side-header">Page contents</span>
+                <ul>
+                    <li><a href="start.html#start">Before class</a></li>
+                    <li><a href="start.html#rstudio">Opening RStudio</a></li>
+                    <li><a href="start.html#packages">Installing Packages</a></li>
+                    <!--<li><a href="start.html#day4">Day 4 Options</a></li>-->
+                    <li><a href="start.html#today">Today's workshop</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-21-24" id="main-cont">
+
+            <!-- ------- BEGIN SECTION ------- -->
+
+            <div class="row" id="top-row-cont">
+                <div class="col-24-24" id="top-row"></div>
+            </div>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Before class</div>
+                </div>
+            </div>
+
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+                            <p>
+                                Hello! Today we'll be going through some hands-on activities to help you get familiar with the R programming language and working with your data in RStudio.
+                            </p>
+
+                            <p>
+                                First of all, before class, it is important that you have R and RStudio installed and are able to open RStudio. These are two programs necessary for our workshop.
+                                We'll get into their details later, but for now know that R is the programming language and RStudio is the development environment from which we will run R
+                                commands.
+                            </p>
+
+                            <h3>Note that R and RStudio are different programs and need to be installed separately, with R being installed first</h3>
+
+                            <h2>Installing R</h2>
+
+                            <h3>Please follow the instructions on <a href="https://cloud.r-project.org/" target="_blank">this page to install R</a>.</h3>
+                            
+                            <p>
+                                To begin, click the link for your operating system to bring up a list of files to download.
+                            </p>
+
+                            <p>
+                                For <b>Windows</b> you will want to download the <b>base</b> install files.
+                            </p>
+
+                            <p>
+                                For <b>Macs</b>, the file you download will depend on the processor in your computer.
+                                <ul>
+                                    <li>If you have an <b>M1 Mac</b> or higher, you will want the file <b>R-4.2.2-arm64.pkg</b></li>
+                                    <li>If you have an <b>Intel</b> Mac, you will want the file <b>R-4.2.2.pkg</b></li>
+                                </ul>
+                            </p>
+                                
+                            <p>
+                                For <b>Linux</b>, please download the package appropriate for your distro.
+                            </p>
+
+                            <p>
+                                After you have downloaded the file appropriate for your operating system, navigate to them and install the program as you would any other program on
+                                your computer.
+                            </p>
+
+                            <h2>Installing RStudio</h2>
+
+                            <h3>Please follow the instructions on <a href="https://posit.co/download/rstudio-desktop/" target="_blank">this page to install RStudio</a>.</h3>
+                            
+                            <p>
+                                On the Rstudio install page, scroll down and select the file appropriate for your operating system and click to download.
+                            </p>
+
+                            <p>
+                                After you have downloaded the file appropriate for your operating system, navigate to them and install the program as you would any other program on
+                                your computer.
+                            </p>           
+
+                            <p>
+                                If you have any trouble installing these programs, or experience any errors that prevent you from completing the installation, please <b>let us know
+                                before class</b> by replying to the email that you got with information about this workshop.
+                            </p>                                                     
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------- END SECTION -------- -->
+
+            <!-- ------- BEGIN SECTION ------- -->
+
+            <a class="internal-link" name="rstudio"></a>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Opening RStudio</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+
+                            <p>
+                                Once you have <b>both R and RStudio</b> installed, navigate to the RStudio program on your computer and open the program. This should 
+                                open an interface that looks something like this:
+                            </p>
+
+                            <div class="row" id="img-row">
+                                <div class="col-5-24" id="margin"></div>
+                                <div class="col-14-24" id="img-col">
+                                    <img id="res-img" src="img/RStudio.png">
+                                    <center><span class="fig-caption">Figure 1.1: A fresh RStudio session with no script open</span></center>
+                                </div>
+                                <div class="col-5-24" id="margin"></div>
+                            </div>
+
+                            <p>
+                                If you have any trouble opening RStudio, or experience any errors that prevent you from opening the program, please <b>let us know
+                                before class</b> by replying to the email that you got with information about this workshop.
+                            </p>                               
+
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------- END SECTION -------- -->
+
+            <!-- ------- BEGIN SECTION ------- -->
+
+            <a class="internal-link" name="packages"></a>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Installing Packages</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+
+                            <p>
+                                For Days 2-4, we will use several <b>packages</b> that may not already be installed in your RStudio environment. You can try to install them
+                                before class to troubleshoot any issues or get help beforehand. Otherwise, we will walk you through installing them in class. If you already have
+                                these packages installed, it may be beneficial to make sure they are updated to the latest version.
+                            </p>
+                            
+                            <p>
+                                In general, packages can be installed from the <b>Packages</b> tab in the RStudio panel in the lower right hand corner (default location). Once you 
+                                click on this tab, you will see a list of packages already installed in your RStudio environment. To INSTALL a new package, click the "Install"
+                                button on the top left corner of the panel and search for the package name. To UPDATE an already installed package, click the "Update" button,
+                                also on the top of the panel, and again search for the package name.
+                            </p>
+
+                            <h3>Package Requirements by workshop day</h3>
+
+                            <h4>Part 1 (Day 1)</h4>
+                            <ul>
+                                <li>No package requirements</li>
+                            </ul>
+                            
+                            <h4>Part 2 (Days 2 & 3)</h4>
+                            <ul>
+                                <li><a href="https://www.tidyverse.org/" target="_blank">tidyverse</a></li>
+                            </ul>
+
+                            <h4>Part 3 (Days 3 & 4)</h4>
+                            <ul>
+                                <li><a href="https://www.tidyverse.org/" target="_blank">tidyverse</a></li>
+                                <li><a href="https://wilkelab.org/cowplot/articles/introduction.html" target="_blank">cowplot</a></li>
+                                <li><a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html" target="_blank">viridis</a></li>
+                            </ul>
+
+                            <!--
+                            <h4>Day 4</h4>
+                            <ul>
+                                <li><a href="https://www.tidyverse.org/" target="_blank">tidyverse</a></li>
+                                <li><a href="https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html" target="_blank">janitor</a></li>
+                            </ul>
+                            -->                                             
+
+                            <h3>Package Installation - Common Problems</h3>
+
+                            <p>
+                                Installing packages can be fraught with problems because everyone has different versions of things on their own computer. We are happy 
+                                to help troubleshoot with you on the day of the workshop. If you experience problems installing packages before class, try to come a few
+                                minutes early for help. Otherwise, we will help you as best we can during the workshop.
+                            </p>
+
+                            <p>
+                                Some common problems you may encounter:
+                            </p>
+
+                            <ol>
+                                <li>
+                                    The <code class="inline">rlang</code> package is a dependency for many other packages and cannot be updated from within RStudio since
+                                    it is always in use. To update this package, open the R interface (NOT RStudio) and use the <code class="inline">update.packages()</code>
+                                    command. Again we will be happy to help with this if it is an issue.
+                                </li>
+
+                                <li>
+                                    On Windows machines, you may be prompted to install the <code class="inline">RTools</code> dependency. Note that in most cases this can
+                                    be ignored since we are using common packages that don't need to be built from source. But on the off-chance this needs to be installed
+                                    it is done OUTSIDE of RStudio. We will be happy to help with this if it is an issue.
+                                </li>
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------- END SECTION -------- -->
+
+            <!-- ------- BEGIN SECTION ------- -->
+
+            <!--
+            <a class="internal-link" name="day4"></a>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Day 4 Outline</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">
+
+                            <p>
+                                During Day 4 we will cover some advanced topics and then try to guide you through a complete workflow with a given dataset using the skills
+                                you've learned during the workshop. Since this is can be a bit more open-ended we want to give you some options so you can analyze data
+                                that may be of interest to you. On Day 4, you can use data from one of the following sources: 
+                            </p>
+
+                            <ol>
+                                <li>
+                                    We will structure an analysis around the dataset from <a href="https://doi.org/10.1098/rspb.2019.0364" target="_blank">this paper (Winger et al. 2019)</a>
+                                    that analyzes data on bird collisions with skyscrapers in Chicago and Cleveland. You will be able to use the data in this paper to try to re-create one of
+                                    their analyses and figures.
+                                </li>
+
+                                <li>
+                                    You can pick any dataset from the <a href="https://github.com/rfordatascience/tidytuesday" target="_blank">tidytuesday</a> project and explore and analyze
+                                    it in any way you'd using the skills you've learned in the workshop.
+                                </li>
+
+                                <li>
+                                    Bring your own dataset and we can try and help you use your new R skills to analyze it!
+                                </li>
+
+                            </ol>
+
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <!-- -------- END SECTION -------- -->
+
+            <!-- ------- BEGIN SECTION ------- -->
+
+            <a class="internal-link" name="today"></a>
+            <div class="row" id="section-header-cont">
+                <div class="col-24-24" id="section-header-row">
+                    <div id="section-header">Accessing workshops</div>
+                </div>
+            </div>
+            <div class="row" id="section-cont">
+                <div class="col-24-24" id="section-col">
+                    <div class="row" id="section-row">
+                        <div class="col-2-24" id="inner-margin"></div>
+                        <div class="col-20-24" id="section-content">                       
+                            <h2>Click the link(s) below to download each day's workshop.</h2>
+
+                            <h3>Once the .Rmd file is downloaded, open the file in RStudio</h3>
+
+                            <p>
+                                These links will become available as the date of the workshop approaches.
+                            </p>
+
+                            <div class="row" id="link-row">
+                                <div class="col-3-24" id="inner-margin"></div>
+                                <div class="col-4-24" id="btm-link"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part1.html">Part 1 - Intro to R</a></div>
+                                <div class="col-3-24" id="inner-margin"></div>
+                                <div class="col-4-24" id="btm-link"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part2.html">Part 2 - tidyverse</a></div>
+                                <div class="col-3-24" id="inner-margin"></div>
+                                <div class="col-4-24" id="btm-link"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part3.html">Part 3 - ggplot</a></div>
+                                <div class="col-3-24" id="inner-margin"></div>                          
+
+                            </div>
+                            
+                            <div id="sep_div_small"></div>
+
+                            <div class="row" id="link-row-dl">
+                                <div class="col-3-24" id="inner-margin"></div>
+                                <div class="col-4-24" id="btm-link-dl"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part1-student.Rmd">Part 1 Download</a></div>
+                                <div class="col-3-24" id="inner-margin"></div>
+                                <div class="col-4-24" id="btm-link-dl"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part2-student.Rmd">Part 2 Download</a></div>
+                                <div class="col-3-24" id="inner-margin"></div>
+                                <div class="col-4-24" id="btm-link-dl"><a href="https://harvardinformatics.github.io/workshops/2023-fall/r/R-workshop-2023-Part3-student.Rmd">Part 3 Download</a></div>
+                                <div class="col-3-24" id="inner-margin"></div>
+                            </div>
+
+                            <div id="sep_div"></div>
+
+                        </div>
+                        <div class="col-2-24" id="inner-margin"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------- END SECTION -------- -->
+
+        </div>
+    </div>
+
+    <!--
+    <div class="row" id="btm-nav">
+        <div class="col-3-24" id="nav-bnt-margin"></div>
+        <div class="col-6-24" id="nav-btn-cont">
+            <div class="nav-btn">
+                <a href="index.html">&lt;&nbsp;Previous</a>    
+            </div>
+        </div>
+        <div class="col-6-24" id="nav-margin"></div>
+        <div class="col-6-24" id="nav-btn-cont">
+            <div class="nav-btn">
+                <a href="#">Next&nbsp;&gt;</a>
+            </div>
+        </div>
+        <div class="col-3-24" id="nav-btn-margin"></div>
+    </div>
+    -->
+
+    <div class="row" id="footer">
+		<div class="col-1">
+			<div id="footer_text">
+				<center>Site designed and maintained by <a href="https://gwct.github.io" target="_blank">Gregg Thomas</a>, Harvard Informatics | © Copyright 2023 | Page built: 10/30/2023 10:43:06 Eastern Daylight Time </center>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
