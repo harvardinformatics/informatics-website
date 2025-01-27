@@ -89,6 +89,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/harvardinformatics/
       name: FAS Informatics GitHub
+    - icon: material/newspaper-plus
+      link: /newsletter/
+      name: FAS Informatics Newsletter      
     - icon: material/dna
       link: https://bauercore.fas.harvard.edu/  
       name: FAS Bauer Core Facility
