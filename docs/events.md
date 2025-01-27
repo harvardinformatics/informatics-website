@@ -44,6 +44,18 @@ Do you want to keep track of changes in your code, collaborate with others, or s
 
 ---
 
+Check out other "[Love Data Week](https://osrds.library.harvard.edu/love-data-week-february/)" events from the Harvard Library!
+
+
+* Monday, February 10, 1:00 pm | [Navigating Data Ownership Policies at Harvard](https://libcal.library.harvard.edu/calendar/main/ldw25_policy)
+
+* Tuesday, February 11, 1:00 pm | [Data Management Offboarding for Research Projects at Harvard](https://libcal.library.harvard.edu/calendar/main/ldw25_offboarding)
+
+* Thursday, February 13, 12:30 pm | [Practice into Action: Tools to Confidently Plan, Manage, and Share Research Data at Harvard](https://libcal.library.harvard.edu/calendar/main/ldw25_tools)
+
+
+---
+
 ### 1 hour seminars
 
 We will be offering three 1-hour seminars on Wednesdays in March. *All seminars will be hybrid on zoom an in person in the Northwest Building meeting room B253*
@@ -65,7 +77,6 @@ This seminar provides a gentle introduction to the motivations for scRNAseq, the
 This seminar is intended for people who use (or may use) command line softwares and programs and assumes basic command line knowledge. We will learn about why software management is challenging, how to create and share conda environments, and how to use docker/singularity containers. We will be using the command line on the Cannon cluster, but these concepts can be translated to working on your local computer as well.
 
 [Zoom Registration](https://harvard.zoom.us/meeting/register/ntL9ai9RTleRPkKuM1NKlA){ .md-button}
-
 
 ---
 
