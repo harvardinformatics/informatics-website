@@ -23,9 +23,9 @@ We are opening a **Data Visualization Spa** from **February 10th - 14th**. [Sign
 !!! Note
     This will be offered in person and virtually. Pick which day works best for you!
 
-    **February 18th, 10 AM - 12 PM in person room #LL03 in Cabot Library**
+    **[February 18th, 10 AM - 12 PM in person room #LL03 in Cabot Library](https://libcal.library.harvard.edu/event/14066629)**
 
-    **February 20th, 10AM - 12 PM virtual** Zoom registration here
+    **[February 20th, 10AM - 12 PM virtual](https://libcal.library.harvard.edu/event/14068907)**
 
 Do you need to share your data analysis code but don't know where to start? Is the GitHub website too confusing to navigate? We can help! Join us for a 2 hour seminar in which we will learn about what git/GitHub is, what is good to share of your analysis, how to organize your project code before publishing it, and of course, how to use GitHub as a publishing platform. We recommend this talk for those who would like to improve their open science practices. No coding background is required. 
 
@@ -36,9 +36,9 @@ Do you need to share your data analysis code but don't know where to start? Is t
 !!! Note
     This will be offered in person and virtually. Pick which day works best for you!
 
-    **February 25th 10 AM - 12 PM in person room #LL03 in Cabot Library**
+    **[February 25th 10 AM - 12 PM in person room #LL03 in Cabot Library](https://libcal.library.harvard.edu/event/14067087)**
 
-    **February 27th 10 AM - 12 PM virtual** Zoom registration here
+    **[February 27th 10 AM - 12 PM virtual](https://libcal.library.harvard.edu/event/14068912)**
 
 Do you want to keep track of changes in your code, collaborate with others, or share your code with the world? Join us for a 2 hour hands-on workshop in which that aims to teach the basics of using the git/GitHub for version control of your project code. We will also cover collaborating on the same project with other people and how to manage conflicts. This workshop is recommended for researchers who want to integrate git into their coding or data analysis practice. Some familiarity with command line tools will be helpful, but we will primarily use GUI tools. 
 

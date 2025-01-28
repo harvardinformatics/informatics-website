@@ -18,29 +18,7 @@ The FAS Informatics Group creates resources for bioinformatics analysis in the f
 
 Below is a list of all current workshops the Informatics Group runs. Workshop files may be temporarily unavailable as we update them during ongoing sessions.
 
-### Introduction to Python Intensive V 2.0 (January 2025)
-
-This workshop intends to be both an introduction to the concept of programming using python and an introduction to using python as a data science language. The first three days will be able the concept of programming while the last 3 days will be focused on introductory data analysis. During the course, you can find the jupyter notebooks below. 
-
-- Day 1: Python basics and intro to control 
-    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day1-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day1.ipynb)
-- Day 2: Intro to writing functions
-    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day2-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day2.ipynb)
-- Day 3: Metaprogramming tips and more advanced function writing
-    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day3-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day3.ipynb)
-- Day 4: Numpy arrays, reading and writing files
-    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day4-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day4.ipynb)
-- Day 5: Pandas dataframes and plotting
-    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day5-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day5.ipynb)
-- Day 6: Using the internet & LLMs and a longer data analysis exercise
-    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day6-student.ipynb)
-    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day6.ipynb)
-
+Check our [events](../events.md) page for upcoming workshops and events.
 
 ## Past Workshops
 
@@ -108,3 +86,27 @@ This is a four-day workshop that will introduce students to python as a data sci
 - scRNA analysis introduction - [Download the RMD file](Workshops/2024-Fall/SinglecellRNAseq.Rmd)
 - Scaling SLURM scripts on the HPC and benchmarking
 - <a href="Workshops/2024-Fall/snparcher-tutorial-202412.pdf" target="_blank">SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms</a>
+
+### Introduction to Python Intensive V 2.0 (January 2025)
+
+This workshop intends to be both an introduction to the concept of programming using python and an introduction to using python as a data science language. The first three days will be able the concept of programming while the last 3 days will be focused on introductory data analysis. During the course, you can find the jupyter notebooks below. 
+
+- Day 1: Python basics and intro to control 
+    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day1-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day1.ipynb)
+- Day 2: Intro to writing functions
+    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day2-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day2.ipynb)
+- Day 3: Metaprogramming tips and more advanced function writing
+    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day3-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day3.ipynb)
+- Day 4: Numpy arrays, reading and writing files
+    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day4-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day4.ipynb)
+- Day 5: Pandas dataframes and plotting
+    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day5-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day5.ipynb)
+- Day 6: Using the internet & LLMs and a longer data analysis exercise
+    - [Download the student jupyter notebook file](Workshops/2025-Spring/Python/Python-Day6-student.ipynb)
+    - [View the completed jupyter notebook](Workshops/2025-Spring/Python/Python-Day6.ipynb)
+
