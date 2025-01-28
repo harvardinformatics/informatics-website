@@ -4,9 +4,6 @@ hide:
 ---
 
 <style>
-    .md-sidebar--secondary {
-        order: 0;
-    }
 /* FAQ styles */
     details > h5 {
         display: none;
@@ -17,8 +14,6 @@ hide:
     summary {
         font-size: larger;
     }
-
-/*------------------------------------------------------*/
 </style>
 
 # FAQ

@@ -4,12 +4,6 @@ hide:
     - navigation
 ---
 
-<style>
-    .md-sidebar--secondary {
-        order: 0;
-    }
-</style>
-
 # Helpful terminology
 
 Here's some helpful terminology that we use throughout our trainings. Let us know if there is something we should add!

@@ -4,12 +4,6 @@ hide:
     - navigation
 ---
 
-<style>
-    .md-sidebar--secondary {
-        order: 0;
-    }
-</style>
-
 # Workshops
 
 The FAS Informatics Group creates resources for bioinformatics analysis in the form of tutorials, walkthroughs, and both online and in-person workshops. We have also compiled links to other online resources.
