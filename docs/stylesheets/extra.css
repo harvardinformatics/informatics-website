@@ -202,7 +202,8 @@ th, td {
   background-color: #ef5552;
   /* background-color: #ececec; */
   transition: .2s ease-in-out;
-  /* border: 1px solid black; */
+  /* border: 1px solid #333333; */
+  max-width: 200px;
 }
 
 .res-tag-link a {
@@ -231,6 +232,12 @@ th, td {
     /* flex-direction: column; */
     width: 45% !important;
     padding: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .res-tag-sep {
+    width: 0% !important;
   }
 }
 /* Responsive styles */

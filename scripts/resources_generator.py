@@ -145,7 +145,7 @@ with open(resources_output_file, 'w') as resources_output:
             tags_table += "<div class='col-5-24 res-tag-link-cont'>\n"
             tags_table += "<div class='res-tag-link'><a href='tags/" + tag.replace(" ", "-") + "/'>" + tag + " (" + cur_tag_count + ")</a></div>\n";
             tags_table += "</div>\n";
-            tags_table += "<div class='col-1-24'></div>\n";
+            tags_table += "<div class='col-1-24 res-tag-sep'></div>\n";
             tags_in_row += 1;
             # Add the current tag button to the table
         ## End active tag block
