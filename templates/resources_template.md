@@ -4,12 +4,6 @@ hide:
     - navigation
 ---
 
-<style>
-    .md-sidebar--secondary {{
-        order: 0;
-    }}
-</style>
-
 # Resources
 
 Here we have compiled resources related to bioinformatics and computing in general. These resources may be general or related to our [trainings](../workshops). We have also compiled links to other online resources.
