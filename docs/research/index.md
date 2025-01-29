@@ -3,12 +3,6 @@ hide:
     - navigation
 ---
 
-<style>
-    .md-sidebar--secondary {
-        order: 0;
-    }
-</style>
-
 # Research
 
 Research in the Bioinformatics Group is primarily driven by collaborative projects with faculty on campus, and by grant-funded internal projects. We also conduct some best practices and methdological research to fill gaps in current knowledge and solve challenging bioinformatics problems. 

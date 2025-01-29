@@ -2,26 +2,6 @@
 title: Glossary
 ---
 
-<style>
-    .md-sidebar--secondary {
-        order: 0;
-    }
-	.md-main {
-		width: 100% !important;
-	}
-	.md-main__inner {
-		width: 66% !important;
-		max-width: 66% !important;
-	}
-    .md-sidebar--primary {
-        display: none;
-    }
-    code {
-        color:#000099 !important;
-        /* font-weight:bold; */
-    }
-</style>
-
 Like any specific domain, the way we talk about computing and programming is almost its own language. Words in this context may have different meaning than in other contexts. 
 As programmers ourselves, we are so used to using words in the context of programming that we sometimes forget others aren't used to it. This is one of the biggest roadblocks
 to teaching and learning.

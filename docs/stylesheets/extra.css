@@ -1,5 +1,51 @@
-.md-grid {
-  max-width: 1440px; 
+/*------------------------------------------------------*/
+/* Content layout styles */
+
+.md-sidebar--primary {
+  display: none;
+}
+/* Removes the Navigation sidebar */
+
+.md-sidebar--secondary {
+  order: 0;
+}
+/* Moves the Table of contents sidebar to the left */
+
+.md-main {
+  width: 100% !important;
+}
+/* Sets main grid to take up full screen width */
+
+.md-main__inner { 
+  width: 80% !important;
+  max-width: 80% !important;
+}
+/* Sets main content grid to take of 80% of its parent (.md-main) */
+
+@media (max-width: 1600px) {
+  .md-main__inner {
+    width: 95% !important;
+    max-width: 95% !important;
+  }
+}
+/* For screens smaller than 1600px: Sets main content grid to take of 95% of its parent (.md-main) */
+
+
+
+/*------------------------------------------------------*/
+/* Base color scheme */
+
+:root {
+  /* --md-primary-fg-color:        #262626; */
+  --md-primary-fg-color:        #1e1e1e;
+  --md-primary-fg-color--light: #ec8f9c;
+  --md-primary-fg-color--dark:  #6d1220;
+  /* Main color scheme */
+
+  /* --md-primary-bg-color:        #ffffff;
+  --md-default-bg-color:        #ffffff;
+  --md-accent-fg-color:         #ffffff; */
+  /* Other color styles - saving just to remember their names */
 }
 
 /* :root {
@@ -7,16 +53,7 @@
   --md-primary-fg-color--light: #ec8f9c;
   --md-primary-fg-color--dark:  #6d1220;
 } */
-
-:root {
-  /* --md-primary-fg-color:        #262626; */
-  --md-primary-fg-color:        #1e1e1e;
-  --md-primary-fg-color--light: #ec8f9c;
-  --md-primary-fg-color--dark:  #6d1220;
-  /* --md-primary-bg-color:        #ffffff;
-  --md-default-bg-color:        #ffffff;
-  --md-accent-fg-color:         #ffffff; */
-}
+/* Old color scheme */
 
 .md-typeset a {
   color: #EF5552 !important;
@@ -176,7 +213,8 @@ th, td {
   background-color: #ef5552;
   /* background-color: #ececec; */
   transition: .2s ease-in-out;
-  /* border: 1px solid black; */
+  /* border: 1px solid #333333; */
+  max-width: 200px;
 }
 
 .res-tag-link a {
@@ -205,6 +243,12 @@ th, td {
     /* flex-direction: column; */
     width: 45% !important;
     padding: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .res-tag-sep {
+    width: 0% !important;
   }
 }
 /* Responsive styles */
