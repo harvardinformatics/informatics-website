@@ -1,10 +1,28 @@
 /*------------------------------------------------------*/
 /* Content layout styles */
 
+@media (max-width: 1220px) {
+  .md-tabs {
+    display: block !important;
+  }
+}
+
+@media (max-width: 959px) {
+  .md-tabs {
+    display: none !important;
+  }
+}
+
 .md-sidebar--primary {
   display: none;
 }
 /* Removes the Navigation sidebar */
+
+@media (max-width: 1220px) {
+  .md-sidebar--primary {
+    display: block;
+  }
+}
 
 .md-sidebar--secondary {
   order: 0;

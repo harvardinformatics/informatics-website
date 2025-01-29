@@ -73,7 +73,7 @@ plugins:
   - table-reader
   - mkdocs-jupyter:
       ignore: ['*student.ipynb']
-      #ignore: ['*.ipynb']
+      ignore: ['*.ipynb']
 hooks:
   - scripts/about_generator.py 
   - scripts/resources_generator.py 
