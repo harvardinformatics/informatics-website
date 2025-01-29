@@ -14,7 +14,7 @@ February is Love Data Month! We are offering 3 different activities in the spiri
 
 **:heart: Data Visualization Spa**
 
-We are opening a **Data Visualization Spa** from **February 10th - 14th**. [Sign up](https://calendar.app.google/YqfghHzuymnVHN1y6) for a 30-minute consultation with our team to give your tired and frazzled data visualization code (in R or python) a refreshing spa treatment! We will help you write more readable and efficient figure-generating code, annotate and organize your scripts to improve reproducibility, and more! 
+We are opening a **Data Visualization Spa** from **February 10th - 14th**. [Sign up](https://calendar.app.google/YqfghHzuymnVHN1y6) for a 30-minute consultation with our team to give your tired and frazzled data visualization code (in R or python) a refreshing spa treatment! We will help you write more readable and efficient figure-generating code, annotate and organize your scripts to improve reproducibility, and more! Click *"Jump to the next available date"* on the calendar signup to see all available slots.
 
 ---
 
@@ -27,7 +27,7 @@ We are opening a **Data Visualization Spa** from **February 10th - 14th**. [Sign
 
     **[February 20th, 10AM - 12 PM virtual](https://libcal.library.harvard.edu/event/14068907)**
 
-Do you need to share your data analysis code but don't know where to start? Is the GitHub website too confusing to navigate? We can help! Join us for a 2 hour seminar in which we will learn about what git/GitHub is, what is good to share of your analysis, how to organize your project code before publishing it, and of course, how to use GitHub as a publishing platform. We recommend this talk for those who would like to improve their open science practices. No coding background is required. 
+Do you need to share your data analysis code but don't know where to start? Is the GitHub website too confusing to navigate? We can help! Join us for a 2 hour seminar in which we will learn about what git/GitHub is, what is good to share of your analysis, how to organize your project code before publishing it, and of course, how to use GitHub as a publishing platform. We recommend this talk for those who would like to improve their open science practices. No coding background is expected. 
 
 ---
 
@@ -40,7 +40,7 @@ Do you need to share your data analysis code but don't know where to start? Is t
 
     **[February 27th 10 AM - 12 PM virtual](https://libcal.library.harvard.edu/event/14068912)**
 
-Do you want to keep track of changes in your code, collaborate with others, or share your code with the world? Join us for a 2 hour hands-on workshop in which that aims to teach the basics of using the git/GitHub for version control of your project code. We will also cover collaborating on the same project with other people and how to manage conflicts. This workshop is recommended for researchers who want to integrate git into their coding or data analysis practice. Some familiarity with command line tools will be helpful, but we will primarily use GUI tools. 
+Do you want to keep track of changes in your code, collaborate with others, or share your code with the world? Join us for a 2 hour hands-on workshop in that aims to teach the basics of using git/GitHub for version control of your project code. We will also cover collaborating on the same project with other people and how to manage conflicts. This workshop is recommended for researchers who want to integrate git into their coding or data analysis practice. Some familiarity with command line tools will be helpful, but is not required.  
 
 ---
 
@@ -58,11 +58,11 @@ Check out other "[Love Data Week](https://osrds.library.harvard.edu/love-data-we
 
 ### 1 hour seminars
 
-We will be offering three 1-hour seminars on Wednesdays in March. *All seminars will be hybrid on zoom an in person in the Northwest Building meeting room B253*
+We will be offering three 1-hour seminars on Wednesdays in March. *All seminars will be hybrid on zoom and in person in the Northwest Building meeting room B253*
 
 **March 5 11AM-12PM - Introduction to Genome Annotation** 
 
-The seminar will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool. Zoom registration
+The seminar will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool.
 
 [Zoom Registration](https://harvard.zoom.us/meeting/register/GgK-wEDwSwe9_n0Dh4cizg){ .md-button}
 
