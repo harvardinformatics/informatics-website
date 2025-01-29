@@ -1,31 +1,51 @@
-/* .md-grid {
-  max-width: 1440px; 
-} */
+/*------------------------------------------------------*/
+/* Content layout styles */
+
+.md-sidebar--primary {
+  display: none;
+}
+/* Removes the Navigation sidebar */
 
 .md-sidebar--secondary {
   order: 0;
 }
-.md-sidebar--primary {
-  display: none;
-}
+/* Moves the Table of contents sidebar to the left */
 
 .md-main {
-width: 100% !important;
+  width: 100% !important;
 }
-.md-main__inner {
-width: 80% !important;
-max-width: 80% !important;
-}
+/* Sets main grid to take up full screen width */
 
+.md-main__inner { 
+  width: 80% !important;
+  max-width: 80% !important;
+}
+/* Sets main content grid to take of 80% of its parent (.md-main) */
 
 @media (max-width: 1600px) {
-  .md-main {
-    width: 95% !important;
-  }
   .md-main__inner {
     width: 95% !important;
     max-width: 95% !important;
   }
+}
+/* For screens smaller than 1600px: Sets main content grid to take of 95% of its parent (.md-main) */
+
+
+
+/*------------------------------------------------------*/
+/* Base color scheme */
+
+:root {
+  /* --md-primary-fg-color:        #262626; */
+  --md-primary-fg-color:        #1e1e1e;
+  --md-primary-fg-color--light: #ec8f9c;
+  --md-primary-fg-color--dark:  #6d1220;
+  /* Main color scheme */
+
+  /* --md-primary-bg-color:        #ffffff;
+  --md-default-bg-color:        #ffffff;
+  --md-accent-fg-color:         #ffffff; */
+  /* Other color styles - saving just to remember their names */
 }
 
 /* :root {
@@ -33,16 +53,7 @@ max-width: 80% !important;
   --md-primary-fg-color--light: #ec8f9c;
   --md-primary-fg-color--dark:  #6d1220;
 } */
-
-:root {
-  /* --md-primary-fg-color:        #262626; */
-  --md-primary-fg-color:        #1e1e1e;
-  --md-primary-fg-color--light: #ec8f9c;
-  --md-primary-fg-color--dark:  #6d1220;
-  /* --md-primary-bg-color:        #ffffff;
-  --md-default-bg-color:        #ffffff;
-  --md-accent-fg-color:         #ffffff; */
-}
+/* Old color scheme */
 
 .md-typeset a {
   color: #EF5552 !important;
