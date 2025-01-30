@@ -1,34 +1,6 @@
 /*------------------------------------------------------*/
 /* Content layout styles */
 
-@media (max-width: 1220px) {
-  .md-tabs {
-    display: block !important;
-  }
-}
-
-@media (max-width: 959px) {
-  .md-tabs {
-    display: none !important;
-  }
-}
-
-.md-sidebar--primary {
-  display: none;
-}
-/* Removes the Navigation sidebar */
-
-@media (max-width: 1220px) {
-  .md-sidebar--primary {
-    display: block;
-  }
-}
-
-.md-sidebar--secondary {
-  order: 0;
-}
-/* Moves the Table of contents sidebar to the left */
-
 .md-main {
   width: 100% !important;
 }
@@ -48,10 +20,63 @@
 }
 /* For screens smaller than 1600px: Sets main content grid to take of 95% of its parent (.md-main) */
 
+/*------------------------------------------------------*/
+/* Navigation and sidebar styles */
 
+.md-sidebar--primary {
+  display: none;
+}
+/* Removes the Navigation sidebar */
+
+.md-sidebar--secondary {
+  order: 0;
+}
+/* Moves the Table of contents sidebar to the left */
+
+@media (max-width: 1220px) {
+  .md-tabs {
+    display: block !important;
+  }
+  /* Shows the links at the top of the page */
+
+  .md-header__button.md-logo {
+    display: inline-block !important;
+  }
+  /* Shows the shield logo in the header */
+
+  .md-header__button.md-icon[for="__drawer"] {
+    display: none !important;
+  }
+  /* Hides the mobile navigation menu in the header */
+}
+/* By default, Material switches to the mobile navigation at 1220px.
+/* This keeps the regular nav tabs and logo on the header for screens smaller than 1220px */
+
+@media (max-width: 959px) {
+  .md-sidebar--primary {
+    display: block;
+  }
+  /* Enables the navigation sidebar so the mobile nav menu works as expected */
+
+  .md-tabs {
+    display: none !important;
+  }
+  /* Hides the links at the top of the page */
+
+  .md-header__button.md-logo {
+    display: none !important;
+  }
+  /* Hides the shield logo in the header */
+
+  .md-header__button.md-icon[for="__drawer"] {
+    display: inline-block !important;
+  }
+  /* Shows the mobile navigation menu in the header */
+}
+/* This reverts to the mobile navigation at 959px */ 
 
 /*------------------------------------------------------*/
-/* Base color scheme */
+/* Base color schemes */
 
 :root {
   /* --md-primary-fg-color:        #262626; */
@@ -255,7 +280,7 @@ th, td {
   /* background-color: #ef5552; */
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 959px) {
   .res-tag-link-cont {  
     display: block;           
     /* flex-direction: column; */
@@ -392,7 +417,7 @@ th, td {
   align-content: left;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 959px) {
   .card-row, .alum-card-row {
     height: unset !important;
     max-height: unset;
@@ -523,7 +548,7 @@ th, td {
   }
 } */
 
-@media (max-width: 1025px) {
+@media (max-width: 959px) {
   .card-link-row {
     /* height: unset !important; */
     min-height: 6vh !important;
@@ -685,7 +710,7 @@ th, td {
   width: auto;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 959px) {
 
   .banner-content-col .margin {
     display: none;
@@ -704,7 +729,7 @@ th, td {
     max-width: 100%;
   }
   .banner-button {
-    width: 100%;
+    width: 50%;
     max-width: unset;
   }
   .banner-button .md-button {
@@ -716,6 +741,11 @@ th, td {
     display: none;
   }
 }
+
+@media (max-width: 650px) {
+  .banner-button {
+    width: 75%;
+  }
 /* Responsive styles */
 
 /*------------------------------------------------------*/

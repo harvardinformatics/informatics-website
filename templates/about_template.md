@@ -1,8 +1,6 @@
 ---
 title: Harvard FAS Informatics Group
 template: home.html
-hide:
-    - navigation
 ---
 
 # About us

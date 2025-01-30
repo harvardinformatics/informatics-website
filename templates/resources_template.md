@@ -1,7 +1,5 @@
 ---
 title: Resources
-hide:
-    - navigation
 ---
 
 # Resources

@@ -1,7 +1,5 @@
 ---
 title: Workshops
-hide:
-    - navigation
 ---
 
 # Workshops

@@ -4,6 +4,18 @@ hide:
     - toc
 ---
 
+<style>
+    .md-nav__icon.md-icon {
+        display: none;
+    }
+    /* Hides the menu icon for the toc in the mobile nav sidebar */
+    li.md-nav__item.md-nav__item--active nav.md-nav.md-nav--secondary {
+        display: none;
+    }
+    /* Necessary to hide the pop-up table of contents on clicking the same-page link in
+    mobile nav sidebar */
+</style>
+
 # Software
 
 The informatics group develops methods and software for various genomics tasks with an emphasis on reproducibility and ease of use. We aim to provide tools that fill gaps in the current genomics software ecosystem. We also collaborate both within and outside of Harvard to develop new methods.
@@ -53,7 +65,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/degenotate" target="_blank">degenotate</a> degenotate takes as input either a genome FASTA file and a corresponding annotation file (GFF or GTF) OR file or directory of files that contain coding sequences in FASTA format and outputs a bed-like file that contains the degeneracy score (0-, 2-, 3-, or 4-fold) of every coding site.
+        <a href="https://github.com/harvardinformatics/degenotate" target="_blank">degenotate</a> takes as input either a genome FASTA file and a corresponding annotation file (GFF or GTF) OR file or directory of files that contain coding sequences in FASTA format and outputs a bed-like file that contains the degeneracy score (0-, 2-, 3-, or 4-fold) of every coding site.
 
         If given a corresponding VCF file with specified outgroup samples, degenotate can also count synonymous and non-synonymous polymorphisms and fixed differences for use in MK tests (McDonald and Kreitman 1991).
 
