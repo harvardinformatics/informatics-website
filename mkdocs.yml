@@ -3,8 +3,7 @@ copyright: © 2023-2025 | Harvard FAS Informatics | <a href="https://accessibili
 ## Site info
 
 nav:
-  - Home: 
-    - index.md
+  - Home: index.md
   - Workshops: workshops/index.md
   - Research: research/index.md
   - Software: software/index.md
@@ -42,7 +41,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -73,7 +71,7 @@ plugins:
   - table-reader
   - mkdocs-jupyter:
       ignore: ['*student.ipynb']
-      #ignore: ['*.ipynb']
+      # ignore: ['*.ipynb']
 hooks:
   - scripts/about_generator.py 
   - scripts/resources_generator.py 
@@ -118,15 +116,15 @@ home_description: Bioinformatics training, collaboration, and research
 home_gradient_hsla: hsla(1deg,82%,20%,1) # Default Green: hsla(160deg,47%,55%,1)
 
 # Custom Homepage Button(s)
-home_button1_name: FAQ                  # Comment this parameter out to remove the button.
-home_button1_url: faq/                       # This path starts at your root mkdocs directory.
+home_button1_name: Events                  # Comment this parameter out to remove the button.
+home_button1_url: events/                       # This path starts at your root mkdocs directory.
 home_button1_theme: md-button # Options: "md-button", "md-button md-button--primary"
 #home_button1_icon: people                        # Options: "people", "gear", "image"
 #home_button1_blurb: |                            # Short description of this button / section.
 #  Learn about our group's goals and the people who make up the FAS Informatics Group
 
-home_button2_name: Workshops   # Comment this parameter out to remove the button.
-home_button2_url: workshops/    # This path starts at your root mkdocs directory.
+home_button2_name: FAQ   # Comment this parameter out to remove the button.
+home_button2_url: faq/    # This path starts at your root mkdocs directory.
 home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
 #home_button2_icon: gear       # Options: "people", "gear", "image"
 #home_button2_blurb: |         # Short description of this button / section.

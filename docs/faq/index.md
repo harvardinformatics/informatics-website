@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 <style>
 /* FAQ styles */
     details > h5 {
