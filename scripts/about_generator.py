@@ -100,7 +100,7 @@ with open(md_output_file, 'w') as md_output:
 
         for sub_section in json_data[section]:
             first_row = True;
-            # cards_table += "\n\n### " + sub_section + "\n";
+            #cards_tables[section] += "\n\n### " + sub_section + "\n";
             # Write the sub-section header
 
             people_list = list(json_data[section][sub_section].keys());
