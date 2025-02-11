@@ -11,68 +11,77 @@
     }
 </style>
 
-# FAQ
+!!! tip "Click on each question to reveal the answer"
 
-### General
-??? General
+## General
 
-    ??? question "What's the difference between Informatics and Research Computing?"
+??? question "What's the difference between Informatics and Research Computing?"
 
-        ##### What's the difference between Informatics and Research Computing?
+    ##### What's the difference between Informatics and Research Computing?
 
-        [Research Computing](https://www.rc.fas.harvard.edu/) manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing support for core facility software via the Software Operations group, and providing training, consultation, and collaborative project work for bioinformatics needs through the Bioinformatics group. 
+    [Research Computing](https://www.rc.fas.harvard.edu/) manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing support for core facility software via the Software Operations group, and providing training, consultation, and collaborative project work for bioinformatics needs through the Bioinformatics group. 
 
-        You can contact Research Computing via their [contact page](https://www.rc.fas.harvard.edu/about/contact/) for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact.md).
-    ??? question "How can I know about future workshops?"
-    
-        ##### How can I know about future workshops?
+    You can contact Research Computing via their [contact page](https://www.rc.fas.harvard.edu/about/contact/) for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact.md).
+??? question "How can I know about future workshops?"
 
-        We post upcoming workshops on our [Events page](../events.md). You can also subscribe to our [newsletter](https://mailchi.mp/g/informatics-newsletter) to receive updates on upcoming workshops and events.
-    
-    ??? question "Can you run a workshop on X?"
-    
-        ##### Can you run a workshop on X?
+    ##### How can I know about future workshops?
 
-        We are always looking to run workshops that people are interested in! Please [contact us](../contact.md) with your suggestions. We can also run a workshop just for your lab group or department if you have a specific need.
-### Bioinformatics
-??? Bioinformatics
+    We post upcoming workshops on our [Events page](../events.md). You can also subscribe to our [newsletter](https://mailchi.mp/g/informatics-newsletter) to receive updates on upcoming workshops and events.
 
-    ??? question "Do you charge for services?"
+??? question "Can you run a workshop on X?"
 
-        ##### Do you charge for services?
+    ##### Can you run a workshop on X?
 
-        Training and consultations are provided free-of-charge to the Harvard FAS community. While we do not require funding for short-term collaborations with the Harvard FAS community on a trial basis, extended projects do require a funding arrangment if staff time will be devoted to the collaboration. Please [contact us](../contact.md) to discuss your needs.
+    We are always looking to run workshops that people are interested in! Please [contact us](../contact.md) with your suggestions. We can also run a workshop just for your lab group or department if you have a specific need.
 
-    ??? question "How do I arrange a consultation?"
+??? question "Can I install command line software on Windows?"
 
-        ##### How do I arrange a consultation?
+    ##### Can I install command line software on Windows?
 
-        Consultations involving sequencing at the Bauer Core should be requested [here](https://bauercore.fas.harvard.edu/consultation-request-form). For other projects, please use our [contact form](../contact.md)
+    While its true that most command line software for scientific computing is built for Linux (and therefore Mac) operating systems, it's now actually very easy to install and run such software on Windows as well.
 
-    ??? question "What trainings are available?"
+    Newer versions of Windows can install the **Windows Subsystem for Linux (WSL)**, which basically installs a Linux file system and shell (bash) within Windows. Installing WSL should be relatively easy (one command in PowerShell). Follow the instructions here: [Microsoft: How to install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-        ##### What trainings are available?
+    With WSL installed, you can run a Linux shell by finding the WSL app in your list of programs, or by starting the shell from within PowerShell with the command `wsl` or `bash`.
 
-        We post trainings on our [Events page](../events.md). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
+## Bioinformatics
 
-    ??? question "How do I join the FAS Bioinformatics Slack?"
+??? question "Do you charge for services?"
 
-        ##### How do I join the FAS Bioinformatics Slack?
+    ##### Do you charge for services?
 
-        Go to [fas-bioinformaticspub.slack.com](https://fas-bioinformaticspub.slack.com) and click "Request Invite."
+    Training and consultations are provided free-of-charge to the Harvard FAS community. While we do not require funding for short-term collaborations with the Harvard FAS community on a trial basis, extended projects do require a funding arrangment if staff time will be devoted to the collaboration. Please [contact us](../contact.md) to discuss your needs.
 
-    ??? question "What's the best way to contact the Bioinformatics team?"
+??? question "How do I arrange a consultation?"
 
-        ##### What's the best way to contact the Bioinformatics team?
+    ##### How do I arrange a consultation?
 
-        For all questions, you can use the [contact form](../contact.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events](../events.md) for times).
+    Consultations involving sequencing at the Bauer Core should be requested [here](https://bauercore.fas.harvard.edu/consultation-request-form). For other projects, please use our [contact form](../contact.md)
 
-### Bauer Core Sequencing
-??? "Bauer Core Sequencing"
+??? question "What trainings are available?"
 
-    ??? question "How can I download my sequencing data?"
+    ##### What trainings are available?
 
-        ##### How can I download my sequencing data?
+    We post trainings on our [Events page](../events.md). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
 
-        See a list of recommended software tools for downloading sequencing data [here](./how-can-i-download-my-sequencing-data.md).
+??? question "How do I join the FAS Bioinformatics Slack?"
 
+    ##### How do I join the FAS Bioinformatics Slack?
+
+    Go to [fas-bioinformaticspub.slack.com](https://fas-bioinformaticspub.slack.com) and click "Request Invite."
+
+??? question "What's the best way to contact the Bioinformatics team?"
+
+    ##### What's the best way to contact the Bioinformatics team?
+
+    For all questions, you can use the [contact form](../contact.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events](../events.md) for times).
+
+<!--
+## Bauer Core Sequencing
+
+??? question "How can I download my sequencing data?"
+
+    ##### How can I download my sequencing data?
+
+    See a list of recommended software tools for downloading sequencing data [here](./how-can-i-download-my-sequencing-data.md).
+-->
