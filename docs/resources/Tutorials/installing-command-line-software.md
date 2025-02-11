@@ -164,6 +164,32 @@ Then, you should be able to run the software! Usually, the package name and the 
 
     A **dependency** is a piece of software or code that is used by another program. Traditionally, ensuring one had all the dependencies to run a given program was a big challenge when installing software. Conda negates this by automatically installing dependencies for any package you install! This is why you may see a long list of software when you run `mamba install`.
 
+## 4. Exporting and re-creating environments
+
+### Exporting an environment to a file
+
+It may sometimes be necessary to share your environment in its current state with others, or to back up the environment at a certain point in a project.  This can be done by **exporting your environment to a file**. This means that the packages currently installed and the versions that are being used are recorded in a text file that can be used later to create an identical environment. This ensures reproducible code and results.
+
+To export a conda environment, make sure the desired environment is activated and run:
+
+```bash
+mamba env export > environment.yml
+```
+
+The `>` operator redirects the output to the file `environment.yml`. You could name this file whatever you want, but it should be something descriptive so you remember what it is -- maybe it would be a good idea to use the same name as the environment you just exported along with the date!
+
+### Creating an environment from a file
+
+If you ever want to re-create an environment you exported previously to a file or that has been shared with you, run the command:
+
+```bash
+mamba env create -f environment.yml -n env-recreated
+```
+
+Here, we use `mamba env create` instead of just `mamba create` since we are loading an environment from a file. We then specify the file that contains the exported environment with `-f` and we can name our environment something descriptive with `-n`.
+
+This should create and automatically install all the software that was in the exported environment. Depending on the size of the environment, this may take some time. Don't forget to `mamba activate` your new environment to use the software installed within it!
+
 ## Troubleshooting
 
 ### 1. `mamba: command not found`
@@ -199,7 +225,13 @@ conda update -n base -c defaults conda
 
 ### 3. `[package name]: command not found`
 
-If you see a `command not found` error for a package you successfully ran `mamba install` on previously, it likely means you aren't in the same environmeny as where you installed the package. Make sure you [activate the correct environment](#activating-environments)
+If you see a `command not found` error for a package you successfully ran `mamba install` on previously, it likely means you aren't in the same environmeny as where you installed the package. Make sure you [activate the correct environment](#activating-environments).
+
+### 4. The package I want to install isn't available through conda :(
+
+There are other software managers out there, so you should check their repositories. For Python packages (though most of these should be on conda), there is the [PyPI repository](https://pypi.org/) which uses the [pip](https://pypi.org/project/pip/) command line tool to install packages. pip should be installed with Python. For R packages, [CRAN](https://cran.r-project.org/) is the repository, and these packages can be installed within R with the `install.packages()` command. Depending on your OS or what programming language you want to install software from, there is likely a repository to search and associated command line tool. For example, MacOS has [Homebrew](https://brew.sh/), run with the `brew` command, and JavaScript packages can be found in the [npm registry](https://www.npmjs.com/).
+
+If you've searched repositories for your OS or programming language of interest and haven't found the program you want available on any of them, you may be stuck **building from source**. This can be as simple as downloading a script from github with no dependencies. But this can also be a very difficult task: it means you are also usually responsible for installing any dependencies and specifying paths to libraries, which, on shared compute systems (like clusters) where one doesn't have full access to all folders, can be unmanageable. Hopefully the authors of the program have left very good documentation about how to handle these things...
 
 
 
