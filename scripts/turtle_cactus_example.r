@@ -1,15 +1,14 @@
-
 library(tidyverse)
 library(ggbeeswarm)
 library(cowplot)
 
 this.dir = dirname(parent.frame(2)$ofile)
 setwd(this.dir)
-source("lib/design.r")
+source("design.r")
 # Set the working directory to be the directory of the script and source
 # the design functions for the plots. Only works when sourcing the script.
 
-turtle_file_url = "../data/etc/turtles-include-cactus.csv"
+turtle_file_url = "../data/tutorials/turtles-include-cactus.csv"
 turtle_data = read.csv(turtle_file_url, header=T, comment.char="#")
 # Read in the turtle data
 # From https://github.com/gwct/turtle-genomics
@@ -93,7 +92,7 @@ mem_p = ggplot(data = turtle_res_long, aes(x = step, y = maxmem, group = step)) 
   geom_quasirandom(size = 1.5, width = 0.25, alpha = 0.40, color = corecol(numcol = 1, offset = 2)) +
   geom_boxplot(outlier.shape = NA, alpha = 0.15, width = 0.5, color = "#666666") +
   xlab("Cactus step") +
-  ylab("Max mem usage (MB)") +
+  ylab("Max mem usage (GB)") +
   bartheme_web()
 print(mem_p)
 # Display the figure

@@ -27,7 +27,7 @@ Let us know if there is something we should add!
 
 **[View the glossary](glossary.md)**
 
-<! --
+<!--
 
 ## Bioinformatics glossary
 
