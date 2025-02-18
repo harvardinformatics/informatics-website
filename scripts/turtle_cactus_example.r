@@ -2,9 +2,11 @@ library(tidyverse)
 library(ggbeeswarm)
 library(cowplot)
 
+# library(tidyplots)
+
 this.dir = dirname(parent.frame(2)$ofile)
 setwd(this.dir)
-source("design.r")
+source("lib/design.r")
 # Set the working directory to be the directory of the script and source
 # the design functions for the plots. Only works when sourcing the script.
 
@@ -56,6 +58,12 @@ size_p = ggplot(data=turtle_data, aes(x="", y=Size..Mb.)) +
 print(size_p)
 # Display the figure
 
+# turtle_data |>
+#   tidyplot(x=1, y=Size..Mb.) |>
+#   add_boxplot() |>
+#   add_data_points_beeswarm() |>
+#   adjust_y_axis_title("Genome size (Mb)")
+
 ####################
 
 turtle_res_long <- turtle_data %>%
@@ -69,6 +77,14 @@ turtle_res_long <- turtle_data %>%
   mutate(step = str_to_title(step)) %>% # Capitalize the first letter of the step names
   mutate(step = factor(step, levels = c("Mask", "Blast", "Align"))) # Ensure the factor levels are set correctly if needed
 
+# turtle_res_long |>
+#   tidyplot(x=step, y=runtime, color=step) |>
+#   add_boxplot() |>
+#   add_data_points_beeswarm() |>
+#   remove_legend() |>
+#   adjust_x_axis_title("") |>
+#   adjust_y_axis_title("Runtime (hours)")
+  
 time_p = ggplot(data = turtle_res_long, aes(x = step, y = runtime, group = step)) +
   geom_quasirandom(size = 1.5, width = 0.25, alpha = 0.40, color = corecol(numcol = 1, offset = 1)) +
   geom_boxplot(outlier.shape = NA, alpha = 0.15, width = 0.5, color = "#666666") +

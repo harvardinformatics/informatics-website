@@ -170,3 +170,4 @@ docs/resources/tags/*
 .python-version
 
 *.Rhistory*
+!scripts/lib/
