@@ -78,10 +78,10 @@ With that, you should be ready to set-up your data for the pipeline!
 
 To run this pipeline, you will need:
 
-1. A **rooted** phylogenetic tree of all species to align, with or without branch lengths, in [Newick format](https://en.wikipedia.org/wiki/Newick_format).
-2. The **softmasked** genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each species.
+1. A [**rooted**](#3-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format](https://en.wikipedia.org/wiki/Newick_format).
+2. The [**softmasked**](#4-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each species.
 
-You will use these to creat the input file for Cactus.
+You will use these to create the input file for Cactus.
 
 ### Preparing the Cactus input file
 
@@ -160,13 +160,11 @@ mask_mem: 25000
 mask_time: 30
 ```
 
-!!! warning "Allocate the proper partitions based on `use_gpu`"
+!!! warning "Notes on resource allocation"
 
-    If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rules **mask**, **blast**, and **align** must be GPU enabled. If not, the pipeline will fail to run.
-
-!!! info "The `gpu:` options will be ignored if `use_gpu: False` is set."
-
-!!! info "**mem is in MB** and **time is in minutes**."
+    * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rules **mask**, **blast**, and **align** must be GPU enabled. If not, the pipeline will fail to run.
+    * The `gpu:` options will be ignored if `use_gpu: False` is set.
+    * **mem is in MB** and **time is in minutes**.
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.
 
@@ -292,13 +290,21 @@ This will start submitting jobs to SLURM. On your screen, you will see continuou
 
 Depending on the number of genomes, their sizes, and your wait in the queue, you will hopefully have your whole genome alignment within a few days!
 
+??? example "The cactus-snakemake pipeline's rulegraph"
+
+    Here is the rulegraph for the pipeline. It works in rounds based on the shape of the input phylogeny (hence the cycle). First, genomes at the tips are masked and then all internal nodes are aligned.
+
+    <center>
+        <img src="../../img/cactus-snakemake-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
+    </center>
+
 ## Questions/troubleshooting
 
 ??? question "1. I want to use a specific version of the Cactus singularity image. How can I do so?"
 
-    ##### 1. I want to use a specific version of the Cactus singularity image. How can I do so?
+    ##### 1. Using a specific Cactus version
 
-    If you want to use a specific Cactus version, search [the available versions in the repository](https://quay.io/repository/comparative-genomics-toolkit/cactus?tab=tags) and run the following command, substitution `<desired version>` for the string of the version you want, *e.g.* "v2.9.3":
+    If you want to use a specific Cactus version, search [the available versions in the repository](https://quay.io/repository/comparative-genomics-toolkit/cactus?tab=tags) and run the following command, substituting `<desired version>` for the string of the version you want, *e.g.* "v2.9.3":
 
     ```bash
     singularity pull --disable-cache docker://quay.io/comparative-genomics-toolkit/cactus:<desired version>
@@ -308,15 +314,15 @@ Depending on the number of genomes, their sizes, and your wait in the queue, you
 
 ??? question "2. My jobs were running but my Snakemake process crashed because of connection issues/server maintenance! What do I do?"
 
-    ##### 2. My jobs were running but my Snakemake process crashed because of connection issues/server maintenance! What do I do?
+    ##### 2. Snakemake crashes
 
-    As long as there wasn't an error with one of the jobs, Snakemake is designed to be able to resume and resubmit jobs pretty seamlessly. You just need to run the same command you ran to being with and it should pickup submitting jobs where it left off. You could also run a `--dryrun` first and it should tell you which jobs are left to be done.
+    As long as there wasn't an error with one of the jobs, Snakemake is designed to be able to resume and resubmit jobs pretty seamlessly. You just need to run the same command you ran to begin with and it should pickup submitting jobs where it left off. You could also run a `--dryrun` first and it should tell you which jobs are left to be done.
 
 ??? question "3. How can I tell if my input Newick tree is rooted? If it isn't rooted, how can I root it? Or if it is rooted, how can I re-root it?"
 
-    ##### 3. How can I tell if my input Newick tree is rooted? If it isn't rooted, how can I root it? Or if it is rooted, how can I re-root it
+    ##### 3. How can I tell if my input Newick tree is rooted?
 
-    The easiest way to check if your tree is rooted is probably to load the tree into R with the `ape` package. This can be done with the following commands:
+    The easiest way to check if your tree is rooted is probably to load the tree into [R](https://www.r-project.org/) with the `ape` package. This can be done with the following commands:
 
     ```r
     install.packages("ape") # Only if you don't have it installed already
@@ -351,12 +357,12 @@ Depending on the number of genomes, their sizes, and your wait in the queue, you
     After the tree has been rooted/re-rooted, you can write it to a file:
 
     ```r
-     write.tree(tree, file="your-rooted-tree.nwk)
+     write.tree(tree, file="your-rooted-tree.nwk")
     ```
 
 ??? question "4. How can I tell if my genome FASTA files are softmasked? How can I mask them if they aren't already?"
 
-    ##### 4. How can I tell if my genome FASTA files are softmasked? How can I mask them if they aren't already?
+    ##### 4. How can I tell if my genome FASTA files are softmasked?
 
     Cactus requires the input genomes to be softmasked. This means that masked bases appear as lower case letters: a, t, c, g. Hopefully the source of your genome FASTA file has given you some information about how it was prepared, including how it was masked. If not, a very quick method to check for the occurrence of any lower case letter in the sequence is:
 
@@ -376,7 +382,7 @@ Depending on the number of genomes, their sizes, and your wait in the queue, you
 
 ??? question "5. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?"
 
-    ##### 5. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?
+    ##### 5. Clusters other than SLURM?
 
     Generally, it should be relatively easy to update the cluster profile (`profiles/slurm_profile/config.yaml`) and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
 
@@ -384,7 +390,7 @@ Depending on the number of genomes, their sizes, and your wait in the queue, you
 
 ??? question "6. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
 
-    ##### 6. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?
+    ##### 6. Encountering errors
 
     Please [search for or create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
@@ -392,6 +398,6 @@ Depending on the number of genomes, their sizes, and your wait in the queue, you
 
 ??? question "7. I have an idea to improve or add to the pipeline. What do I do?"
 
-    ##### 7. I have an idea to improve or add to the pipeline. What do I do?
+    ##### 7. Pipeline improvements
     
     Great! Please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) describing your idea so we can discuss its implementation!
