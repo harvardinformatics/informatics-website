@@ -8,7 +8,11 @@ Here we have compiled resources related to bioinformatics and computing in gener
 
 ## Tutorials
 
-**We are developing tutorials for some bioinformatics tasks. Check back soon!**
+### [:material-application-brackets-outline:{{ .contact-icon }} [ Installing command line software ]](Tutorials/installing-command-line-software.md)
+### [:material-dna:{{ .contact-icon }} [ Downloading sequencing data from the Bauer Core ]](Tutorials/how-can-i-download-my-sequencing-data.md)
+### [:material-format-align-top:{{ .contact-icon }} [ Whole genome alignment with Cactus ]](Tutorials/whole-genome-alignment-cactus.md)
+
+**We are developing tutorials for other bioinformatics tasks. Check back soon!**
 
 ## [Computing glossary](glossary.md)
 
@@ -23,7 +27,7 @@ Let us know if there is something we should add!
 
 **[View the glossary](glossary.md)**
 
-<! --
+<!--
 
 ## Bioinformatics glossary
 
