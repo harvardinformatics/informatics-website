@@ -128,8 +128,6 @@ For more information about the Cactus input file, see their [official documentat
 Besides the sequence input, the pipeline needs some extra configuration to know where to look for files and write output. That is done in the Snakemake configuration file for a given run. It contains 2 sections, one for specifying the input and output options, and one for specifying resources for the various rules (see [below](#specifying-resources-for-each-rule)). The first part should look something like this:
 
 ```
-working_dir: <path/to/working-directory/>
-
 cactus_path: <path/to/cactus-singularity-image OR download>
 
 input_file: <path/to/cactus-input-file>
@@ -149,7 +147,6 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 
 | Option               | Description                                                                 |
 |----------------------|-----------------------------------------------------------------------------|
-| `working_dir`        | Directory where cactus will be downloaded and run                           |
 | `cactus_path`        | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. |
 | `input_file`         | Path to the input file containing the species tree and genome paths (described above) |
 | `output_dir`         | Directory where the all output will be written                            |
