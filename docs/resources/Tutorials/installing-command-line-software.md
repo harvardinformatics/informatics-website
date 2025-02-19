@@ -178,6 +178,27 @@ mamba env export > environment.yml
 
 The `>` operator redirects the output to the file `environment.yml`. You could name this file whatever you want, but it should be something descriptive so you remember what it is -- maybe it would be a good idea to use the same name as the environment you just exported along with the date!
 
+??? example "An example conda environment yml file"
+
+    `.yml` or `.yaml` stands for "[YAML ain't markup language](https://en.wikipedia.org/wiki/YAML)" files, and is a basic nested text format that is easily parseable. In the context of conda, it may look something like this:
+
+    ```
+    name: example_env
+    channels:
+    - defaults
+    - conda-forge
+    dependencies:
+    - python=3.8
+    - numpy=1.21
+    - pandas=1.3
+    - scipy=1.7
+    - matplotlib=3.4
+    - pip:
+        - some-package==0.1.0
+    ```
+
+    This outlines the name of the environment, the channels in which to look for the specified packages, as well as the packages to install (here listed as "dependencies"). Note also that another package is installed instead with the `pip` package manager for Python.
+
 ### Creating an environment from a file
 
 If you ever want to re-create an environment you exported previously to a file or that has been shared with you, run the command:
@@ -225,7 +246,7 @@ conda update -n base -c defaults conda
 
 ### 3. `[package name]: command not found`
 
-If you see a `command not found` error for a package you successfully ran `mamba install` on previously, it likely means you aren't in the same environmeny as where you installed the package. Make sure you [activate the correct environment](#activating-environments).
+If you see a `command not found` error for a package you successfully ran `mamba install` on previously, it likely means you aren't in the same environment as where you installed the package. Make sure you [activate the correct environment](#activating-environments).
 
 ### 4. The package I want to install isn't available through conda :(
 

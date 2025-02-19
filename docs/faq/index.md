@@ -76,12 +76,12 @@
 
     For all questions, you can use the [contact form](../contact.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events](../events.md) for times).
 
-<!--
+
 ## Bauer Core Sequencing
 
 ??? question "How can I download my sequencing data?"
 
     ##### How can I download my sequencing data?
 
-    See a list of recommended software tools for downloading sequencing data [here](./how-can-i-download-my-sequencing-data.md).
--->
+    See our tutorial [here](../resources/Tutorials/how-can-i-download-my-sequencing-data.md).
+
