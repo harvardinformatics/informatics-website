@@ -24,7 +24,7 @@ Comparative genomics requires alignments between sequences from different popula
 You will need several things to be able to run this pipeline:
 
 1. A computing cluster that uses [SLURM](https://slurm.schedmd.com/overview.html), though it should be possible to extend it to [any job scheduler that Snakemake supports](https://github.com/snakemake?q=executor&type=all&language=&sort=).
-2. conda or mamba to install software. See [Installing command line software](installing-command-line-software.md) if you don't have conda/mamba installed.
+2. conda or mamba to install software. See [Installing command line software](installing-command-line-software-conda-mamba.md) if you don't have conda/mamba installed.
 2. [Snakemake](https://snakemake.readthedocs.io/en/stable/) and the [Snakemake SLURM plugin](https://anaconda.org/bioconda/snakemake-executor-plugin-slurm)
 3. Singularity - **The pipeline itself will automatically download the latest version of the Cactus singularity container for you.**
 4. The [Harvard Informatics cactus-snakemake pipeline](https://github.com/harvardinformatics/cactus-snakemake/)
