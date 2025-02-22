@@ -1,3 +1,15 @@
+---
+title: Installing command line software with conda/mamba
+---
+
+<style>
+/* FAQ styles */
+    details > h5 {
+        display: none;
+    }
+</style>
+
+
 Many scientific software packages are run by text commands via the **command line**. For installing command line software and managing environments, either on your local computer or on a remote server, we recommend **conda** and **mamba**.
 
 **conda** is a cross-platform package manager, as well as the name of the command-line tool to access conda channels.
@@ -213,46 +225,56 @@ This should create and automatically install all the software that was in the ex
 
 ## Troubleshooting
 
-### 1. `mamba: command not found`
+??? question "1. What if I encounter an error like `mamba: command not found`?"
 
-If you see the `mamba: command not found` error when trying to install software or run any of the above commands, it likely means one of two things:
+    ##### 1. `mamba: command not found`
 
-1. mamba isn't yet installed on the computer you're using. Follow the instructions in [1. Installing mamba](#1-installing-mamba)
-2. mamba hasn't been initialized. If you didn't indicate Yes to the final prompt when installing Miniforge, your shell hasn't been setup yet. You may need to run `mamba init` and restart your shell. If you try to run `mamba init` and get the same error, you'll have to provide the full path to the mamba executable, which should be something like: `/where/you/installed/miniforge3/bin/mamba`.
+    If you see the `mamba: command not found` error when trying to install software or run any of the above commands, it likely means one of two things:
 
-### 2. mamba cannot solve the environment or is taking a very long time to install a package
+    1. mamba isn't yet installed on the computer you're using. Follow the instructions in [1. Installing mamba](#1-installing-mamba)
+    2. mamba hasn't been initialized. If you didn't indicate Yes to the final prompt when installing Miniforge, your shell hasn't been setup yet. You may need to run `mamba init` and restart your shell. If you try to run `mamba init` and get the same error, you'll have to provide the full path to the mamba executable, which should be something like: `/where/you/installed/miniforge3/bin/mamba`.
 
-If `mamba install` fails or hangs for a long time, the program might be struggling with installing dependencies given the current settings. This can happen if your dependence graph is too large because you have too many packages installed in one environment. To solve this, try the following:
+??? question "2. What if mamba cannot solve the environment or is taking a very long time to install a package?"
 
-1. Make sure mamba and conda are up to date. First, ensure that you are in the **(base)** environment by running the command:
+    ##### 2. mamba cannot solve the environment or is taking a long time to install a package
 
-```bash
-mamba activate base
-```
+    If `mamba install` fails or hangs for a long time, the program might be struggling with installing dependencies given the current settings. This can happen if your dependency graph is too large because you have too many packages installed in one environment. **The easiest solution to this problem is to try to install your package in a fresh environment.** If that still doesn't work, or you need to install it in the current environment, try to update mamba and conda:
 
-Then, to update mamba, run the command:
+    1. Make sure mamba and conda are up to date. First, ensure that you are in the **(base)** environment by running the command:
 
-```bash
-mamba update mamba
-```
+    ```bash
+    mamba activate base
+    ```
 
-In this case you may also want to update conda (recall that mamba is installed on top of conda, so conda is still there in the background):
+    Then, to update mamba, run the command:
 
-```bash
-conda update -n base -c defaults conda
-```
+    ```bash
+    mamba update mamba
+    ```
 
-2. If you're using bioconda, make sure your [channels are set up to give bioconda priority](#channels).
+    In this case you may also want to update conda (recall that mamba is installed on top of conda, so conda is still there in the background):
 
-### 3. `[package name]: command not found`
+    ```bash
+    conda update -n base -c defaults conda
+    ```
 
-If you see a `command not found` error for a package you successfully ran `mamba install` on previously, it likely means you aren't in the same environment as where you installed the package. Make sure you [activate the correct environment](#activating-environments).
+    2. If you're using bioconda, make sure your [channels are set up to give bioconda priority](#channels).
 
-### 4. The package I want to install isn't available through conda :(
+??? question "3. What if, after I install the package, I try to run it and see `[package name]: command not found`?"
 
-There are other software managers out there, so you should check their repositories. For Python packages (though most of these should be on conda), there is the [PyPI repository](https://pypi.org/) which uses the [pip](https://pypi.org/project/pip/) command line tool to install packages. pip should be installed with Python. For R packages, [CRAN](https://cran.r-project.org/) is the repository, and these packages can be installed within R with the `install.packages()` command. Depending on your OS or what programming language you want to install software from, there is likely a repository to search and associated command line tool. For example, MacOS has [Homebrew](https://brew.sh/), run with the `brew` command, and JavaScript packages can be found in the [npm registry](https://www.npmjs.com/).
+    ##### 3. `[package name]: command not found`
 
-If you've searched repositories for your OS or programming language of interest and haven't found the program you want available on any of them, you may be stuck **building from source**. This can be as simple as downloading a script from github with no dependencies. But this can also be a very difficult task: it means you are also usually responsible for installing any dependencies and specifying paths to libraries, which, on shared compute systems (like clusters) where one doesn't have full access to all folders, can be unmanageable. Hopefully the authors of the program have left very good documentation about how to handle these things...
+    If you see a `command not found` error for a package you successfully ran `mamba install` on previously, it likely means you aren't in the same environment as where you installed the package. Make sure you [activate the correct environment](#activating-environments).
+
+    Otherwise, read the package's documentation on how to call the program. In most cases it will be the same as the package name, but for some reason others choose to name their package something different than their executable.
+
+??? question "4. What can I do if the package I want to install isn't available through conda? :("
+
+    ##### 4. The package I want to install isn't available through conda
+
+    First, search for your package on other software repositories. For Python packages (though most of these should be on conda), there is the [PyPI repository](https://pypi.org/) which uses the [pip](https://pypi.org/project/pip/) command line tool to install packages. pip should be installed with Python. For R packages, [CRAN](https://cran.r-project.org/) is the repository, and these packages can be installed within R with the `install.packages()` command. Depending on your OS or what programming language you want to install software from, there is likely a repository to search and associated command line tool. For example, MacOS has [Homebrew](https://brew.sh/), run with the `brew` command, and JavaScript packages can be found in the [npm registry](https://www.npmjs.com/). There are many other repositories out there, and the program you're interested in should have documentation telling you where it can be found.
+
+    If you've searched repositories for your OS or programming language of interest and haven't found the program you want available on any of them, you may be stuck **building from source**. This can be as simple as downloading a script from github with no dependencies. But this can also be a very difficult task: it means you are also responsible for installing any dependencies and specifying paths to libraries that the program uses, which, on shared compute systems (like institutional clusters) where one doesn't have full access to all folders, can be unmanageable. Hopefully the authors of the program have left very good documentation about how to handle these things...
 
 
 

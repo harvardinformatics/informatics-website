@@ -8,7 +8,7 @@ Here we have compiled resources related to bioinformatics and computing in gener
 
 ## Tutorials
 
-### [:material-application-brackets-outline:{{ .contact-icon }} [ Installing command line software ]](Tutorials/installing-command-line-software.md)
+### [:material-application-brackets-outline:{{ .contact-icon }} [ Installing command line software with conda/mamba ]](Tutorials/installing-command-line-software-conda-mamba.md)
 ### [:material-dna:{{ .contact-icon }} [ Downloading sequencing data from the Bauer Core ]](Tutorials/how-can-i-download-my-sequencing-data.md)
 ### [:material-format-align-top:{{ .contact-icon }} [ Whole genome alignment with Cactus ]](Tutorials/whole-genome-alignment-cactus.md)
 
