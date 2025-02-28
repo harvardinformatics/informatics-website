@@ -182,30 +182,36 @@ Click below to take a look at an example to get a sense for how many resources y
 
     ##### Example: Resource usage on a dataset of 22 turtle genomes
 
-    We have run an earlier version of the pipeline on 22 turtle genomes. The average genome size is 2200 Mb (2.2 Gb). We allocated the following resources for the Cactus rules:
+    We have run the pipeline on 22 turtle genomes. The average genome size is 2210 Mb (2.2 Gb):
+    
+    <center>
+        <img src="../../img/turtles-genome-sizes.png" alt="A boxplot showing a distribution of genome sizes for 22 turtles">
+    </center>    
+    
+    We allocated the following resources for the Cactus rules:
+
+    <center>
 
     | Step    | Partition | Memory | CPUs | GPUs | Time |
     |---------|-----------|--------|------|------|------|
-    | Mask    | gpu       | 100g   | 64   | 4    | 2h   |
-    | Blast   | gpu       | 400g   | 64   | 4    | 48h  |
-    | Align   | bigmem    | 450g   | 64   | NA   | 48h  |
+    | Mask    | gpu       | 100g   | 8    | 2    | 1h   |
+    | Blast   | gpu       | 400g   | 64   | 1    | 12h  |
+    | Align   | gpu       | 450g   | 64   | 2    | 12h  |
 
-    !!! note "**Note: At the time we ran this dataset, the Align step was not GPU enabled.**"
-
-        That has changed in the current version, so the align step probably won't take as long or require as much memory.
+    </center>
 
     This resulted in the following real run times:
 
     <center>
-        <img src="../../img/cactus-runtime-turtles.png" alt="A figure with multiple boxplots titled 'Cactus run time on 22 turtle genomes'">
+        <img src="../../img/turtles-cactus-runtime.png" alt="A figure with multiple boxplots showing  the distribution of run time on 22 turtle genomes">
     </center>
 
-    In general, increasing or decreasing CPUs GPUs available will decrease runtime.
+    In general, increasing or decreasing CPUs or GPUs available will decrease runtime.
 
     And max memory usages:
 
     <center>
-        <img src="../../img/cactus-maxmem-turtles.png" alt="A figure with multiple boxplots titled 'Cactus max memory usage on 22 turtle genomes'">
+        <img src="../../img/turtles-cactus-maxmem.png" alt="A figure with multiple boxplots showing the distribution of max memory usage on 22 turtle genomes">
     </center>
 
     Increasing available memory may also decrease runtime.

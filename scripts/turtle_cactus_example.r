@@ -10,6 +10,8 @@ source("lib/design.r")
 # Set the working directory to be the directory of the script and source
 # the design functions for the plots. Only works when sourcing the script.
 
+saveplots = FALSE
+
 turtle_file_url = "../data/tutorials/turtles-include-cactus.csv"
 turtle_data = read.csv(turtle_file_url, header=T, comment.char="#")
 # Read in the turtle data
@@ -100,7 +102,9 @@ title_grob <- ggdraw() +
 final_time_p = plot_grid(title_grob, full_time_p, ncol=1, rel_heights = c(0.1, 1) )
 
 print(final_time_p)
-ggsave("../docs/resources/img/cactus-runtime-turtles.png", final_time_p, width=7, height=3, units="in")
+if(saveplots){
+  ggsave("../docs/resources/img/cactus-runtime-turtles.png", final_time_p, width=7, height=3, units="in")
+}
 
 ####################
 
@@ -119,4 +123,6 @@ title_grob <- ggdraw() +
 final_mem_p = plot_grid(title_grob, full_mem_p, ncol=1, rel_heights = c(0.1, 1) )
 
 print(final_mem_p)
-ggsave("../docs/resources/img/cactus-maxmem-turtles.png", final_mem_p, width=7, height=3, units="in")
+if(saveplots){
+  ggsave("../docs/resources/img/cactus-maxmem-turtles.png", final_mem_p, width=7, height=3, units="in")
+}
