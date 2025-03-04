@@ -128,6 +128,8 @@ Cactus-minigraph requires that you select one sample as a reference sample [for 
 
     The config for the Cactus-minigraph test data can be found at [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeast-minigraph-cfg.yaml) or at `tests/yeast-minigraph/yeast-minigraph-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
 
+    Additionally, a blank template file is located [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/minigraph-config-template.yaml) or at `minigraph-config-template.yaml` in your downloaded cactus-snakemake repo.
+
 Besides the sequence input, the pipeline needs some extra configuration to know where to look for files and write output. That is done in the Snakemake configuration file for a given run. It contains 2 sections, one for specifying the input and output options, and one for specifying resources for the various rules (see [below](#specifying-resources-for-each-rule)). The first part should look something like this:
 
 ```
