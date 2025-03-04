@@ -205,7 +205,7 @@ snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactu
     | `-p`                                              | Print out the commands that will be executed. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
     | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started). |
-    | `-s </path/to/cactus_minigraph.smk>               | The path to the workflow file. |
+    | `-s </path/to/cactus_minigraph.smk>`               | The path to the workflow file. |
     | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file). |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
 
@@ -288,7 +288,7 @@ After that, run a dryrun of the test dataset by changing into the `tests/` direc
 
 ```bash
 cd tests/yeast-minigraph/
-snakemake -p -j 10 -e slurm -s ../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml --dryurun
+snakemake -p -j 10 -e slurm -s ../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml --dryrun
 ```
 
 If this completes without error, run the pipeline by removing the `--dryrun` option:
