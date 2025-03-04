@@ -16,7 +16,7 @@ Comparative genomics requires alignments between sequences from different popula
     Here is the rulegraph for the pipeline. It works in rounds based on the shape of the input phylogeny (hence the cycle). First, genomes at the tips are masked and then all internal nodes are aligned.
 
     <center>
-        <img src="../../img/cactus-snakemake-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
+        <img src="../../img/cactus-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
     </center>
 
 ## Getting started
@@ -114,14 +114,14 @@ D   seqdir/d.fa
 E   seqdir/e.fa
 ```
 
-For more information about the Cactus input file, see their [official documentation](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#interface). There is also an example input file for a small test dataset [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals.txt) or at `tests/evolverMammals.txt`. For more info, see section: [Test dataset](#test-dataset).
+For more information about the Cactus input file, see their [official documentation](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#interface). There is also an example input file for a small test dataset [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/evolverMammals.txt) or at `tests/evolverMammals/evolverMammals.txt`. For more info, see section: [Test dataset](#test-dataset).
 
 
 ### Preparing the Snakemake config file
 
 !!! tip "Be sure to start with the example config file as a template!"
 
-    The config for the Cactus test data can be found at [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals-cfg.yaml) or at `tests/evolverMammals-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
+    The config for the Cactus test data can be found at [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/evolverMammals-cfg.yaml) or at `tests/evolverMammals/evolverMammals-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
 
     Additionally, a blank template file is located [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-template.yaml) or at `config-template.yaml` in your downloaded cactus-snakemake repo.
 
@@ -160,17 +160,17 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 Below these options in the config file are further options for specifying resource usage for each rule that the pipeline will run. For example:
 
 ```
-mask_partition: "gpu_test"
-mask_gpu: 1
-mask_cpu: 8
-mask_mem: 25000
-mask_time: 30
+preprocess_partition: "gpu_test"
+preprocess_gpu: 1
+preprocess_cpu: 8
+preprocess_mem: 25000
+preprocess_time: 30
 ```
 
 !!! warning "Notes on resource allocation"
 
     * Be sure to use partition names appropriate your cluster. Several examples in this tutorial have partition names that are specific to the Harvard cluster, so be sure to change them.
-    * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rules **mask**, **blast**, and **align** must be GPU enabled. If not, the pipeline will fail to run.
+    * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rules **preprocess**, **blast**, and **align** must be GPU enabled. If not, the pipeline will fail to run.
     * The `gpu:` options will be ignored if `use_gpu: False` is set.
     * **mem is in MB** and **time is in minutes**.
 
@@ -192,11 +192,11 @@ Click below to take a look at an example to get a sense for how many resources y
 
     <center>
 
-    | Step    | Partition | Memory | CPUs | GPUs | Time |
-    |---------|-----------|--------|------|------|------|
-    | Mask    | gpu       | 100g   | 8    | 2    | 1h   |
-    | Blast   | gpu       | 400g   | 64   | 1    | 12h  |
-    | Align   | gpu       | 450g   | 64   | 2    | 12h  |
+    | Step       | Partition | Memory | CPUs | GPUs | Time |
+    |------------|-----------|--------|------|------|------|
+    | Preprocess | gpu       | 100g   | 8    | 2    | 1h   |
+    | Blast      | gpu       | 400g   | 64   | 1    | 12h  |
+    | Align      | gpu       | 450g   | 64   | 2    | 12h  |
 
     </center>
 
@@ -227,7 +227,7 @@ First, we want to make sure everything is setup properly by using the `--dryrun`
 This is done with the following command, changing the snakefile `-s` and `--configfile` paths to the one you have created for your project:
 
 ```bash
-snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_gpu.smk> --configfile <path/to/your/snakmake-config.yml> --dryrun
+snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus.smk> --configfile <path/to/your/snakmake-config.yml> --dryrun
 ```
 
 ??? info "Command breakdown"
@@ -238,7 +238,7 @@ snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactu
     | `-p`                                              | Print out the commands that will be executed. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
     | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started) |
-    | `-s </path/to/cactus_gpu.smk>                     | The path to the workflow file. |
+    | `-s </path/to/cactus.smk>                     | The path to the workflow file. |
     | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file) |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
 
@@ -258,7 +258,7 @@ append          1
 blast           4
 convert         4
 copy_hal        1
-mask            5
+preprocess      5
 total          20
 
 Reasons:
@@ -266,7 +266,7 @@ Reasons:
     input files updated by another job:
         align, all, append, blast, convert, copy_hal
     output files have to be generated:
-        align, append, blast, convert, copy_hal, mask
+        align, append, blast, convert, copy_hal, preprocess
 
 This was a dry-run (flag -n). The order of jobs does not reflect the order of execution.
 ```
@@ -278,7 +278,7 @@ If you see any red text, that likely means an error has occurred that must be ad
 If you're satisfied that the `--dryrun` has completed successfully and you are ready to start submitting Cactus jobs to the cluster, you can do so by simply removing the `--dryrun` option from the command above:
 
 ```bash
-snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_gpu.smk> --configfile <path/to/your/snakmake-config.yml>
+snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus.smk> --configfile <path/to/your/snakmake-config.yml>
 ```
 
 This will start submitting jobs to SLURM. On your screen, you will see continuous updates regarding job status in blue text. In another terminal, you can also check on the status of your jobs by running `squeue -u <your user id>`. 
@@ -311,19 +311,19 @@ Here is a breakdown of the files so you can investigate them and prepare similar
 
 We recommend running this test dataset before setting up your own project.
 
-First, open the config file, `tests/evolverMammals-cfg.yaml` and make sure the partitions are set appropriately for your cluster. For this small test dataset, it is appropriate to use any "test" partitions you may have. Then, update the path to `tmp_dir` to point to a location where you have a lot of temporary space. Even this small dataset will fail if this directory does not have enough space.
+First, open the config file, `tests/evolverMammals/evolverMammals-cfg.yaml` and make sure the partitions are set appropriately for your cluster. For this small test dataset, it is appropriate to use any "test" partitions you may have. Then, update the path to `tmp_dir` to point to a location where you have a lot of temporary space. Even this small dataset will fail if this directory does not have enough space.
 
 After that, run a dryrun of the test dataset by changing into the `tests/` directory and running:
 
 ```bash
-cd tests/
-snakemake -p -j 10 -e slurm -s ../cactus_gpu.smk --configfile evolverMammals-cfg.yaml --dryurun
+cd tests/evolverMammals/
+snakemake -p -j 10 -e slurm -s ../cactus.smk --configfile evolverMammals-cfg.yaml --dryurun
 ```
 
 If this completes without error, run the pipeline by removing the `--dryrun` option:
 
 ```bash
-snakemake -p -j 10 -e slurm -s ../cactus_gpu.smk --configfile evolverMammals-cfg.yaml
+snakemake -p -j 10 -e slurm -s ../cactus.smk --configfile evolverMammals-cfg.yaml
 ```
 
 ## Questions/troubleshooting

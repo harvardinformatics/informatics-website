@@ -44,7 +44,7 @@ if(saveplots){
 ####################
 
 lines_data <- data.frame(
-  Rule = c("Mask", "Blast", "Align"),
+  Rule = c("Preprocess", "Blast", "Align"),
   runtime_y = c(720, 720, 60),     # Hypothetical y-intercepts for the lines
   maxmem_y = c(450, 400, 100),
   x = c(0.75, 1.75, 2.75),   # Start slightly left of each category center
@@ -55,9 +55,9 @@ lines_data <- data.frame(
 ####################
 
 runtime_p = turtle_data %>%
-  filter(Rule %in% c("mask", "blast", "align")) %>%
+  filter(Rule %in% c("preprocess", "blast", "align")) %>%
   mutate(Rule = str_to_title(Rule)) %>%
-  mutate(Rule = factor(Rule, levels = c("Mask", "Blast", "Align"))) %>%
+  mutate(Rule = factor(Rule, levels = c("Preprocess", "Blast", "Align"))) %>%
   ggplot(aes(x=Rule, y=runtime.minutes)) +
     geom_quasirandom(size = 0.75, width = 0.25, alpha = 0.40, color = corecol(numcol = 1, offset = 1)) +
     geom_boxplot(outlier.shape = NA, alpha = 0.15, width = 0.5, color = "#666666", size=0.25) +
@@ -83,9 +83,9 @@ if(saveplots){
 ####################
               
 maxmem_p = turtle_data %>%
-  filter(Rule %in% c("mask", "blast", "align")) %>%
+  filter(Rule %in% c("preprocess", "blast", "align")) %>%
   mutate(Rule = str_to_title(Rule)) %>%
-  mutate(Rule = factor(Rule, levels = c("Mask", "Blast", "Align"))) %>%
+  mutate(Rule = factor(Rule, levels = c("Preprocess", "Blast", "Align"))) %>%
   ggplot(aes(x=Rule, y=MaxMemory.GB.)) +
     geom_quasirandom(size = 0.75, width = 0.25, alpha = 0.40, color = corecol(numcol = 1, offset = 2)) +
     geom_boxplot(outlier.shape = NA, alpha = 0.15, width = 0.5, color = "#666666", size=0.25) +
