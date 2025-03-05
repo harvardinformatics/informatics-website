@@ -19,6 +19,10 @@ Comparative genomics requires alignments between sequences from different popula
         <img src="../../img/cactus-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
     </center>
 
+!!! tip "This pipeline is suitable for aligning genomes from different species"
+
+    For pangenome inference and whole genome alignment between samples of the same species, see our [Cactus-minigraph tutorial](pangenome-cactus-minigraph.md)
+
 ## Getting started
 
 You will need several things to be able to run this pipeline:
@@ -148,12 +152,12 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 | Option               | Description                                                                 |
 |----------------------|-----------------------------------------------------------------------------|
 | `cactus_path`        | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. |
-| `input_file`         | Path to the input file containing the species tree and genome paths (described above) |
-| `output_dir`         | Directory where the all output will be written                            |
-| `overwrite_output_dir` | Whether to overwrite the output directory if it already exists (True/False) |
-| `final_hal`          | The name of the final .hal file with all aligned genomes appended. Will be placed within `output_dir` |
-| `tmp_dir`            | A temporary directory for Snakemake and Cactus to use. Should have lots of space.|
-| `use_gpu`            | Whether to use the GPU version of Cactus for the alignment (True/False)     |
+| `input_file`         | Path to the input file containing the species tree and genome paths (described above). |
+| `output_dir`         | Directory where the all output will be written. |
+| `overwrite_output_dir` | Whether to overwrite the output directory if it already exists (True/False). |
+| `final_hal`          | The name of the final .hal file with all aligned genomes appended. Will be placed within `output_dir`. |
+| `tmp_dir`            | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
+| `use_gpu`            | Whether to use the GPU version of Cactus for the alignment (True/False). |
 
 #### Specifying resources for each rule
 
@@ -237,9 +241,9 @@ snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactu
     | `snakemake`                                       | The call to the snakemake workflow program to execute the workflow. |
     | `-p`                                              | Print out the commands that will be executed. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
-    | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started) |
+    | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started). |
     | `-s </path/to/cactus.smk>                     | The path to the workflow file. |
-    | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file) |
+    | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file). |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
 
 !!! info "This command won't actually submit the pipeline jobs!"
@@ -299,7 +303,7 @@ Depending on the number of genomes, their sizes, and your wait in the queue, you
 
 ### Test dataset
 
-Cactus provides a test dataset which we have setup to run in the `tests/` folder. 
+Cactus provides a test dataset which we have setup to run in the `tests/evolverMammals/` folder. 
 
 Here is a breakdown of the files so you can investigate them and prepare similar ones for your project:
 
@@ -307,7 +311,7 @@ Here is a breakdown of the files so you can investigate them and prepare similar
 | ------------------------- | ----------- |
 | `evolverMammals-seq/`     | This directory contains the input sequence files for the test dataset in FASTA format. |
 | `evolverMammals-cfg.yaml` | This is the config file for Snakemake and has all of the options you would need to setup for your own project. |
-| `evolverMammals.txt`      | This is the input file as required by Cactus. It has the rooted Newick tree on the first line, followed by lines containing the location of the sequence files for each tip in the tree |
+| `evolverMammals.txt`      | This is the input file as required by Cactus. It has the rooted Newick tree on the first line, followed by lines containing the location of the sequence files for each tip in the tree. |
 
 We recommend running this test dataset before setting up your own project.
 
