@@ -92,6 +92,7 @@ To run this pipeline, you will need:
 
 1. A [**rooted**](#3-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format](https://en.wikipedia.org/wiki/Newick_format).
 2. The [**softmasked**](#4-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each species.
+3. A reference genome to project the alignment to MAF format.
 
 You will use these to create the input file for Cactus.
 
@@ -120,6 +121,9 @@ E   seqdir/e.fa
 
 For more information about the Cactus input file, see their [official documentation](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#interface). There is also an example input file for a small test dataset [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/evolverMammals.txt) or at `tests/evolverMammals/evolverMammals.txt`. For more info, see section: [Test dataset](#test-dataset).
 
+### Reference sample
+
+In order to run the last step of the workflow that converts the HAL format to a readable MAF format (See [pipeline outputs](#pipeline-outputs) for more info), you will need to select one assembly as a reference assembly. The reference assembly's coordinate system will be used for projection to MAF format. You should indicate the reference assembly in the Snakemake config file (outlined below). For instance, if I wanted my reference sample in the above file to be **C**, I would put the string `C` in the `maf_reference:` line of the Snakemake config file.
 
 ### Preparing the Snakemake config file
 
@@ -140,7 +144,9 @@ output_dir: <path/to/desired/output-directory>
 
 overwrite_output_dir: <True/False>
 
-final_hal: <desired name of final .hal file with all genomes appended>
+final_prefix: <desired name of final .hal and .maf files with all genomes appended>
+
+maf_reference: <Genome ID from input_file>
 
 tmp_dir: <path/to/tmp-dir/>
 
@@ -149,15 +155,15 @@ use_gpu: <True/False>
 
 Simply replace the string surrounded by <> with the path or option desired. Below is a table summarizing these options:
 
-| Option               | Description                                                                 |
-|----------------------|-----------------------------------------------------------------------------|
-| `cactus_path`        | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. |
-| `input_file`         | Path to the input file containing the species tree and genome paths (described above). |
-| `output_dir`         | Directory where the all output will be written. |
+| Option                 | Description                                                                 |
+|----------------------- | ----------------------------------------------------------------------------|
+| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. |
+| `input_file`           | Path to the input file containing the species tree and genome paths (described above). |
+| `output_dir`           | Directory where the all output will be written. |
 | `overwrite_output_dir` | Whether to overwrite the output directory if it already exists (True/False). |
-| `final_hal`          | The name of the final .hal file with all aligned genomes appended. Will be placed within `output_dir`. |
-| `tmp_dir`            | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
-| `use_gpu`            | Whether to use the GPU version of Cactus for the alignment (True/False). |
+| `final_prefix`         | The name of the final .hal and .maf files with all aligned genomes appended. The final files will be `<final_prefix>.hal` and `<final_prefix>.maf`. These files will be placed within `output_dir`. |
+| `tmp_dir`              | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
+| `use_gpu`              | Whether to use the GPU version of Cactus for the alignment (True/False). |
 
 #### Specifying resources for each rule
 
@@ -329,6 +335,14 @@ If this completes without error, run the pipeline by removing the `--dryrun` opt
 ```bash
 snakemake -p -j 10 -e slurm -s ../cactus.smk --configfile evolverMammals-cfg.yaml
 ```
+
+## Pipeline outputs
+
+The pipeline will output a [.paf](https://github.com/lh3/miniasm/blob/master/PAF.md), a [.hal](https://github.com/ComparativeGenomicsToolkit/hal/blob/master/README.md), and a [.fa](https://en.wikipedia.org/wiki/FASTA_format) file for every node in the input tree (including ancestral sequences). The final alignment file will be `<final_prefix>.hal`, where `<final_prefix>` is whatever you specified in the Snakemake config file. 
+
+The final alignment will also be presented in MAF format as `<final_prefix>.<maf_reference>.maf`, again where `<maf_reference>` is whatever you set in the Snakemake config. This file will include all sequences. Another MAF file, `<final_prefix>.<maf_reference>.nodupes.maf` will also be generated, which is the alignment in MAF format with no duplicate sequences. The de-dupplicated MAF file is generated with `--dupeMode single`. See the [Cactus documentation regarding MAF export](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#maf-export) for more info.
+
+A suit of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit/Hal) is included with the Cactus singularity image if you need to manipulate or analyze .hal files. There are many tools for manipulating MAF files, though they are not always easy to use. The makers of Cactus also develop [taffy](https://github.com/ComparativeGenomicsToolkit/taffy), which can manipulate MAF files by converting them to TAF files.
 
 ## Questions/troubleshooting
 
