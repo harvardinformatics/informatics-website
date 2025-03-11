@@ -68,7 +68,7 @@ When working on a project one may install all the software for that project in a
 
 !!! warning "Don't install software in the (base) environment"
 
-    It is important to manage enviornments cleanly. Because the `(base)` environment contains software related to the functioning of mamba, do not install other software while it is active because the dependencies for those programs may conflict with the base programs. Additionally, larger `(base)` environments will take longer to load on start-up.
+    It is important to manage environments cleanly. Because the `(base)` environment contains software related to the functioning of mamba, do not install other software while it is active because the dependencies for those programs may conflict with the base programs. Additionally, larger `(base)` environments will take longer to load on start-up.
 
 ### Creating environments
 
@@ -90,7 +90,7 @@ mamba activate project-env
 
 !!! note "Activating your first environment with mamba"
 
-    The first time you activate an environment with `mamba` after installing it, you may get a message that `mamba` needs to be initialized. Run the command it suggests and restart your terminal and you should be able to use `mamba` to activate enviornments going forward.
+    The first time you activate an environment with `mamba` after installing it, you may get a message that `mamba` needs to be initialized. Run the command it suggests and restart your terminal and you should be able to use `mamba` to activate environments going forward.
 
 Here, you use the name specified after `-n` when you created the environment to activate it. In case you end up creating a lot of environments, you can see a list of all of them with the command:
 
