@@ -297,6 +297,12 @@ If this completes without error, run the pipeline by removing the `--dryrun` opt
 snakemake -p -j 10 -e slurm -s ../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml
 ```
 
+## Pipeline outputs
+
+The pipeline produces many output files including `.hal`, the Cactus alignment format, `.gfa`, the graphical fragment assembly format, `.vcf`, the variant call format, and `.vg`, the variation graph format.
+
+For more information about all outputs, see [Cactus's minigraph documentation section about output](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#output).
+
 ## Questions/troubleshooting
 
 ??? question "1. I want to use a specific version of the Cactus singularity image. How can I do so?"
