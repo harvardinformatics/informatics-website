@@ -62,7 +62,7 @@ Once you have followed the above instructions and **restarted your terminal or r
 ![A screenshot of a command prompt with (base) prepended to it](../img/prompt1.png)
 </center>
 
-mamba can be used to manage environments. **Environments** modify aspects of a user's file system that make it easier to install and run software, essentially giving the user full control over their own software and negating the need to access critcal parts of the file system.
+mamba can be used to manage environments. **Environments** modify aspects of a user's file system that make it easier to install and run software, essentially giving the user full control over their own software and negating the need to access critical parts of the file system.
 
 When working on a project one may install all the software for that project in a particular environement, or one may have multiple environments for a given project, especially if a single environment becomes to big.
 
