@@ -64,7 +64,7 @@ Once you have followed the above instructions and **restarted your terminal or r
 
 mamba can be used to manage environments. **Environments** modify aspects of a user's file system that make it easier to install and run software, essentially giving the user full control over their own software and negating the need to access critical parts of the file system.
 
-When working on a project one may install all the software for that project in a particular environement, or one may have multiple environments for a given project, especially if a single environment becomes to big.
+When working on a project one may install all the software for that project in a particular environement, or one may have multiple environments for a given project, especially if a single environment becomes too big.
 
 !!! warning "Don't install software in the (base) environment"
 
@@ -142,7 +142,7 @@ This ensures that when you install a package, both the conda-forge and bioconda 
 
 ### Searching for packages
 
-While it is certainly possible to type "<software name> conda package" into your favorite search engine and get results, it may be better to directly search the websites of each channel:
+While it is certainly possible to type "[software name] conda package" into your favorite search engine and get results, it may be better to directly search the websites of each channel:
 
 * [bioconda](https://bioconda.github.io/)
 * [conda-forge](https://conda-forge.org/packages/)
@@ -240,7 +240,7 @@ This should create and automatically install all the software that was in the ex
 
     If `mamba install` fails or hangs for a long time, the program might be struggling with installing dependencies given the current settings. This can happen if your dependency graph is too large because you have too many packages installed in one environment. **The easiest solution to this problem is to try to install your package in a fresh environment.** If that still doesn't work, or you need to install it in the current environment, try to update mamba and conda:
 
-    1. Make sure mamba and conda are up to date. First, ensure that you are in the **(base)** environment by running the command:
+    Make sure mamba and conda are up to date. First, ensure that you are in the **(base)** environment by running the command:
 
     ```bash
     mamba activate base
@@ -258,7 +258,7 @@ This should create and automatically install all the software that was in the ex
     conda update -n base -c defaults conda
     ```
 
-    2. If you're using bioconda, make sure your [channels are set up to give bioconda priority](#channels).
+    Also, if you're using bioconda, make sure your [channels are set up to give bioconda priority](#channels).
 
 ??? question "3. What if, after I install the package, I try to run it and see `[package name]: command not found`?"
 
