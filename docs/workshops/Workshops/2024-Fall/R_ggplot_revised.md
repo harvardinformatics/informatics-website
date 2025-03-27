@@ -426,7 +426,7 @@ g +
 
 BONUS: Read about pre-made color palettes
 
-We can use `scale_color_brewer` to take advantage of pre-made discrete color palettes. To see all the options type `RColorBrewer::display.brewer.all()` in your console. For more information on how to generate custom palettes, use rgb values to specify colors, and more, see chapter 12 "Using Colors in Plots" in the [R Graphics Cookbook](https://r-graphics.org/chapter-colors).
+We can use `scale_color_brewer` to take advantage of pre-made discrete color palettes. To see all the options type `RColorBrewer::display.brewer.all()` in your console. For more information on how to generate custom palettes, use rgb values to specify colors, and more, see chapter 12 "Using Colors in Plots" in the [R Graphics Cookbook](https://r-graphics.org/CHAPTER-COLORS).
 
 
 ``` r
