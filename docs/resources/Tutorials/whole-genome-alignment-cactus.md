@@ -138,6 +138,8 @@ Besides the sequence input, the pipeline needs some extra configuration to know 
 ```
 cactus_path: <path/to/cactus-singularity-image OR download>
 
+cactus_gpu_path: <path/to/cactus-GPU-singularity-image OR download>
+
 input_file: <path/to/cactus-input-file>
 
 output_dir: <path/to/desired/output-directory>
@@ -157,7 +159,8 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 
 | Option                 | Description                                                                 |
 |----------------------- | ----------------------------------------------------------------------------|
-| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. |
+| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. This will be used whether `use_gpu` is True or False. |
+| `cactus_gpu_path`      | Path to the Cactus GPU Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. This will only be used if `use_gpu` is True. |
 | `input_file`           | Path to the input file containing the species tree and genome paths (described above). |
 | `output_dir`           | Directory where the all output will be written. |
 | `overwrite_output_dir` | Whether to overwrite the output directory if it already exists (True/False). |
@@ -170,18 +173,27 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 Below these options in the config file are further options for specifying resource usage for each rule that the pipeline will run. For example:
 
 ```
-preprocess_partition: "gpu_test"
-preprocess_gpu: 1
+preprocess_partition: "shared" 
 preprocess_cpu: 8
-preprocess_mem: 25000
-preprocess_time: 30
+preprocess_mem: 25000             # in MB
+preprocess_time: 30               # in minutes
+
+##########################
+
+blast_partition: "gpu_test" # If use_gpu is True, this must be a partition with GPUs
+blast_gpu: 1                # If use_gpu is False, this will be ignored
+blast_cpu: 48
+blast_mem: 50000            # in MB
+blast_time: 120             # in minutes
 ```
+
+**The rule _blast_ is the only one that uses GPUs if `use_gpu` is True.**
 
 !!! warning "Notes on resource allocation"
 
     * Be sure to use partition names appropriate your cluster. Several examples in this tutorial have partition names that are specific to the Harvard cluster, so be sure to change them.
-    * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rules **preprocess**, **blast**, and **align** must be GPU enabled. If not, the pipeline will fail to run.
-    * The `gpu:` options will be ignored if `use_gpu: False` is set.
+    * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rule **blast** must be GPU enabled. If not, the pipeline will fail to run.
+    * The `blast_gpu:` option will be ignored if `use_gpu: False` is set.
     * **mem is in MB** and **time is in minutes**.
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.

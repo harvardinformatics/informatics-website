@@ -146,8 +146,6 @@ reference: <Sample ID from input_file>
 prefix: <string>
 
 tmp_dir: <path/to/tmp-dir/>
-
-use_gpu: <True/False>
 ```
 
 Simply replace the string surrounded by <> with the path or option desired. Below is a table summarizing these options:
@@ -161,7 +159,6 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 | `reference`            | The sample ID from the input file to serve as the reference for pangenome creation. |
 | `prefix`               | A string that will be appended to all files created by the pipeline. |
 | `tmp_dir`              | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
-| `use_gpu`              | Whether to use the GPU version of Cactus for the alignment (True/False). |
 
 #### Specifying resources for each rule
 
@@ -177,11 +174,10 @@ minigraph_time: 30
 !!! warning "Notes on resource allocation"
 
     * Be sure to use partition names appropriate your cluster. Several examples in this tutorial have partition names that are specific to the Harvard cluster, so be sure to change them.
-    * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rule **align** must be GPU enabled. If not, the pipeline will fail to run.
-    * The `gpu:` option for rule **align** will be ignored if `use_gpu: False` is set.
+    * The steps in the cactus-minigraph pipeline are not GPU compatible, so there are no GPU options in this pipeline.
     * **mem is in MB** and **time is in minutes**.
 
-You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.
+You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs.
 
 ## Running the pipeline
 
