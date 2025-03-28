@@ -64,7 +64,7 @@ Check out other "[Love Data Week](https://osrds.library.harvard.edu/love-data-we
 - Workflow Management, nextflow demonstration - pdf of slides available [here](Workshops/2024-Fall/Workflow_managers.pdf)
 - scRNA analysis introduction - [Download the RMD file](Workshops/2024-Fall/SinglecellRNAseq.Rmd)
 - Scaling SLURM scripts on the HPC and benchmarking
-- <a href="Workshops/2024-Fall/snparcher-tutorial-202412.pdf" target="_blank">SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms</a>
+- <a href="../Workshops/2024-Fall/snparcher-tutorial-202412.pdf" target="_blank">SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms</a>
 
 ### Intro to Python Intensive (Fall 2024)
 
