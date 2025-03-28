@@ -1,0 +1,393 @@
+---
+title: "Harvard Informatics scRNA-seq workshop"
+author: "Adam Freedman and Tim Sackton"
+date: "Fall, 2024"
+output:
+  html_document:
+    keep_md: true
+  pdf_document: default
+---
+
+# Introduction to single-cell RNAseq
+
+Welcome to today's workshop on single-cell RNA-seq. Single cell genomics is nothing if not a field moving at warp speed: papers on new data analysis methods and tools are being published all the times, not the mention the myriad empirical papers. In short, don't pay attention for a few months, and you may find yourself racing to play catch up. This workshop is not intended--nor would it be possible in an hour--to cover current methodology. Instead, it is intended to be a gentle introduction to scRNA-seq technology and to impart a broad understanding of the foundations for scRNA-seq analysis. Specifically we will cover:
+
+* Potential benefits of scRNAseq over bulk RNAseq analysis
+* Current sequencing technologies (all available at the Bauer Core)
+* Artefacts requiring data cleaning
+* Base-level QC metrics: stuff reported from instrument-associated software
+* scRNAseq data structures
+  * sparse matrices, cell barcode and feature tableszero-inflation
+* Loading data with the R package Seurat
+* Data processing,filtering, and clustering
+* Bonus materials: 
+  * Finding variable genes
+  * Cell type marker gene discovery
+
+## What is and why choose single-cell RNAseq?
+
+Single-cell RNA-seq (scRNAseq) is a powerful new approach that has arisen and matured over the last decade. In contrast to bulk RNAseq-- in which sequencing libraries are constructed from tissues or cell populations in a manner that is entirely agnostic to the identities of and expression variation among the constituent cells--scRNAseq involved isolating and labelling individual cells and their constituent RNA molecules. This enables the association of inidiviual cDNAs or RNAs with their cell of origin, such that cell level expression profiles can be constructed. Early scRNAseq technologies were relatively low throughput, producing expression profiles for dozens to hundreds of cell. In contrast, contemprary methodologies now enable the sequencing of thousands to hundreds of thousands of cells.  
+
+A standard scRNAseq workflow involves several data cleaning steps, that then enable a variety of downstream analyses. A broad view of the steps in an analysis is exemplified by:  
+
+<p align="center">
+
+<img src="img/heumos_overview.png" width="50%" height="50%"/>
+
+</p>
+Adapted from [Heumos et al. 2023, *Nature Biotechnology"](https://www.nature.com/articles/s41576-023-00586-w)
+
+
+scRNA-seq has the potential to offer deeper insights into a number of research areas including:
+
+* the impact rare cell populations on phenotypes including genetic diseases.
+* the role of cell composition change during development.\
+* cellular responses to environmental perturbations and drug treatment.
+
+While these examples highlight the potential value of scRNAseq in biomedical research and developmental/cell biology, scRNA-seq also has considerable potential for organismal biologists who have historically used bulk RNA-seq to understand expression variation across enviornments and populations, and even among species. Phenotypes observed in laboratory organisms and natural populations are, with the exception of single-celled organism, the product of an assortment of cell types. As a result, both the statistical power of bulk RNA-seq studies and the generality of biological inference are constrained by the inability to account for cell composition variation among samples, even if they are derived from the same tissue. Contrasting differential expression (DE) analysis for bulk and scRNAseq is a useful demonstration of this principle:
+
+<p align="center">
+
+<img src="img/scrnaseq_vs_bulk_de.png" width="75%" height="75%"/>
+
+</p>
+
+## Current sequencing technologies
+### 10x 3' gene-level analysis with Illumina sequencing
+The 10x Genomics 3'assay has become an industry standard, using a gel-droplet technology that allows isolation of indiviual cells in droplets, so that cDNA fragments can be associated with a cell barcode reflecting the cell of origin, and individual RNAs can be associated with unique molecular barcodes (UMIs), which enable computational deduplication to avoid PCR amplification bias.
+
+<p align="center">
+
+<img src="img/10x3prime_schema.png" width="75%" height="75%"/>
+
+</p>
+Adapted from ["10x 3' library construction user guide"](https://cdn.10xgenomics.com/image/upload/v1710230393/support-documents/CG000731_ChromiumGEM-X_SingleCell3_ReagentKits_v4_UserGuide_RevA.pdf)
+
+Because the cDNA sequence readout is only from the 3' end, a workflow based upon this technology is only able to produce expression estimates (per cell) at the gene-level. In other words, there is not enough unique sequence to enable alignment of a particular sequencing fragment to a particular alternatively spliced isoform.
+
+### High throughput whole-transcript sequencing
+Pacific Biosciences (PacBio) and Oxford Nanopore Technologies (ONT) have recently released competing technologies to achieve high throughput full-length isoform sequencing at single cell resolution. Generally speaking, both approaches take 10x 3' scRNA-seq libraries as input, concatenate the sequencing fragments into larger library fragments, then sequence those fragments on their respective instruments. These approaches embed sequences between the ligated 10x reads, such that after sequencing, the long reads can be computationally segmented into the original (putatively full length) transcript fragments. 
+* The PacBio MAS-Seq method is described in [Al'Khafaji et al. 2024, Nature Biotechnology](https://www.nature.com/articles/s41587-023-01815-7), with workflow instructions for generating expression matrices can be found [here](https://isoseq.how/).
+* Similarly, ONT has a nextflow workflow that we have implemented successfully on the Cannon cluster that is detailed [here](https://github.com/epi2me-labs/wf-single-cell). 
+
+### Which method works the best?
+I am currently conducting an internal study for the Bauer Core comparing the performance of these two technologies with outputs from Illumina sequencing of 10x 3' scRNAseq libraries ... stay tuned for more information regarding that! Ultimately, which approach is best for your research needs may hinge on whether you aim to produce isoform-resolved expression information.
+
+## Artefacts requiring data cleaning
+Despite major advances in scRNA-seq library preparation and sequencing, there remain technical aspects of the technology that generate artefacts and noise that need to be cleaned up prior to conducting any downstream analyses. In an ideal world, each gel droplet from which a sequencing library is constructed will contain a single intact cell and no contaminant RNA. In reality, there are common deviations from that ideal world:
+
+<p align="center">
+
+<img src="img/cell_quality_figure.png" width="40%" height="40%"/>
+
+</p>
+
+In summary one can observe:  
+
+* Droplets with a single, high-quality cell (and some degree of ambient RNA)  
+* Empty wells without a cell, with the cell-level library component built from free RNA  
+* Droplets containing > 1 cell: 2 cells = "doublets", > 2 cells = "multiplets"  
+  * doublets and multiplets with > 1 cell type are more problematic than same-type multiplets  
+* Degraded low-quality cells will lead to elevated mtDNA sequence fractions
+
+**An ideal workflow would thus, filter out empty "cells", remove ambient RNA contamination effects from counts, and remove doublets/multiplets before proceeding with any downstream normalization, clustering, marker gene identification or other biologically informative analyses.**
+
+## Base-level QC metrics
+Typical metrics reported as part of *cellranger count* or other instrument-related software include:  
+
+* **the overall read alignment rate.** a low read alignment rate suggests a number of possible problems, e.g. problem with the library construction process, or a mismatch between the taxonomic origin of the sample compared to the reference genome.  
+* **the proportion of reads mapping to the transcriptome.** If this rate is low, this suggests possible DNA contamination or an incomplete genome annotation.  
+* **sequence saturation.**   
+* **knee plots.** Knee plots plot, in descending order cells ranked by the number of UMIs in that cell, where the cell with the largest number of UMIs has a rank of one, etc. Plotting the rank on the x-axis, ans the number of UMIs on the y-axis leads, pre-filtering, to a sterotypic "knee" pattern, with a steep drop-off in number of UMIs being indicative of a threshold between high-quality cells and low quality cells or empty droplets. This threshold is estimate internally and used to produce the filtered expression matrices.  
+
+<p align="center">
+
+<img src="img/kneeplot.png" width="50%" height="50%"/>
+
+</p>
+
+
+##scRNAseq data structures
+Because sequencing effort is spread across thousands of cells for which expression is estimated for tens of thousands of features, scRNAseq matrices are sparse, meaning that there are lots of small counts, and more importantly, lots of zero counts. The resulting count matrices are often referred to as "zero-inflated", leading to debate about the sources of zero-inflation, and whether the counts are in fact zero-inflated. Relevant papers to look at are [Jiang et al. 2022, *Genome Biology*](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02601-5), and [Svensson 2022, *Nature Biotechnology*](https://www.nature.com/articles/s41587-019-0379-5). Wherever the consensus ultimately lands on the statistical front, pratically speaking, the count matrices are comprised of rows that represent features (either gene ids or isoform ids), and columns that represent cells.
+
+## Constructing a workflow (at least the initial part of it!)
+
+### 1. Setup
+### automated package install
+```{r}
+installed_packages <- rownames(installed.packages())
+for (pkg in c("tidyverse", "patchwork", "sctransform","SoupX",
+                "cowplot")) {
+  if (!pkg %in% installed_packages) {
+    install.packages(pkg, quiet = TRUE)
+  }
+  library(pkg, character.only = TRUE)
+}
+
+for (pkg in c("DoubletFinder")) {
+  if (!pkg %in% installed_packages) {
+    remotes::install_github("chris-mcginnis-ucsf/DoubletFinder")
+  }
+  library(pkg, character.only = TRUE)
+  }
+  
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("glmGamPoi")  
+```
+#### library load
+```{r,echo=FALSE}
+library(Seurat)
+library(patchwork)
+library(sctransform)
+library(tidyverse)
+library(SoupX)
+library(cowplot)
+library(glmGamPoi)
+
+
+data_dir=getwd()
+```
+
+```{r,echo=FALSE}
+download.file("https://cf.10xgenomics.com/samples/cell-exp/2.1.0/pbmc4k/pbmc4k_raw_gene_bc_matrices.tar.gz", 
+    destfile = file.path(data_dir, "tod.tar.gz"))
+download.file("https://cf.10xgenomics.com/samples/cell-exp/2.1.0/pbmc4k/pbmc4k_filtered_gene_bc_matrices.tar.gz", 
+    destfile = file.path(data_dir, "toc.tar.gz"))
+untar(file.path(data_dir, "tod.tar.gz"), exdir = data_dir)
+untar(file.path(data_dir, "toc.tar.gz"), exdir = data_dir)
+```
+
+### Load data with Seurat 10x data loader
+```{r}
+sc_data_raw <- Seurat::Read10X(file.path(data.dir = data_dir,"raw_gene_bc_matrices","GRCh38"))
+sc_data_filtered <- Seurat::Read10X(file.path(data.dir = data_dir,"filtered_gene_bc_matrices","GRCh38"))                              
+```
+
+If we take a quick look at the dimensions of the filtered matrix, we see that:
+```{r}
+dim(sc_data_filtered)
+```
+there are 33694 genes an 4340 cells in the data set.
+
+### Preliminary setup of Seurat data structures
+We are using [SoupX]() to detect and correct counts for contamination for ambient RNA. Because SoupX requires information on clusters, we must perform a provisional clustering analysis, knowing that we will re-cluster the data once all filtering and cleanup of the data has been finished. Another important thing to note is that rather than the traditional way of normalizing count data, were are using a new and improved normalization method called *SCtransform*, described in [Hafemeister and Satija 2019, *Genome Biology*](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1), conveniently available in Seurat.
+
+#### Initialzing the Seurat object, and performing clustering analysis
+```{r}
+seurat_obj <- CreateSeuratObject(counts = sc_data_filtered)
+seurat_obj <- PercentageFeatureSet(seurat_obj, pattern = "^MT-", col.name = "percent.mt")
+seurat_obj <- SCTransform(seurat_obj, vars.to.regress = "percent.mt", verbose = FALSE)
+seurat_obj <- RunPCA(seurat_obj, verbose = FALSE)
+seurat_obj <- RunUMAP(seurat_obj, dims = 1:30)
+seurat_obj <- FindNeighbors(seurat_obj, dims = 1:30)
+seurat_obj <- FindClusters(seurat_obj)
+```
+#### make UMAP plot of data without ambient RNA decontamination
+```{r}
+withambient_umap_plot<-DimPlot(seurat_obj, label = TRUE) + ggtitle("Unfiltered")
+withambient_umap_plot
+```
+
+
+#### A quick note about metadata
+Metadata in a Seurat object comprise information regarding the cells, i.e. barcodes recovered in the sequencing experiment. 
+Default metadata are:  
+1. nCount_RNA, the number of unique RNAs in the cell (equivalent to the number of UMIs), and  
+2. nFeature_RNA, which is the number of genes for 3' 10x sequencing.  
+
+One can add additional metadata such as the percent of UMIs that originate from mtDNA, which we will do later, but there is no need since this isn't the final version of the data. But, notice that normalization and clustering has led to additional metadata being added:  
+
+```{r}
+head(seurat_obj@meta.data)
+```
+
+Note: one can also access the metadata with `seurat_obj[[]]`.
+
+### Running SoupX
+```{r}
+soup_channel <- SoupX::SoupChannel(tod = sc_data_raw,toc=sc_data_filtered,
+                is10X = TRUE)
+soup_channel$tod<-sc_data_raw
+soup_channel <- SoupX::setClusters(soup_channel, 
+                                   clusters = as.factor(Idents(seurat_obj)))
+soup_channel <- setDR(soup_channel, 
+                DR=Seurat::Embeddings(seurat_obj, "umap"))
+soup_channel <- autoEstCont(soup_channel)
+```
+
+#### Create new Seurat object with corrected counts
+We can update the counts to the corrected ones, then save the raw counts to a raw_counts attribute.
+```{r}
+corrected_counts <- adjustCounts(soup_channel,roundToInt=TRUE)
+seurat_obj_filt <- CreateSeuratObject(counts = corrected_counts)
+```
+
+### Re-process corrected count data
+```{r}
+seurat_obj_filt <- PercentageFeatureSet(seurat_obj_filt, pattern = "^MT-", col.name = "percent.mt")
+```
+
+#### Visualize QC metrics as a violin plot
+Because clustering information is now embedded in the seurat object, it is not possible using default Seurat functions to produce a global violin plot without it being grouped by cluster id. Therefore, we can just use tidyverse functions to make some prettier plots!
+
+```{r}
+violindata<-tibble(nCount_RNA = seurat_obj_filt@meta.data$nCount_RNA, nFeature_RNA = seurat_obj_filt@meta.data$nFeature_RNA, percent.mt = seurat_obj_filt@meta.data$percent.mt)
+colnames(violindata)<-c("nCount_RNA","nFeature_RNA","percent.mt")
+ncount_violin<- violindata %>% ggplot(aes(x=1,y=nCount_RNA)) + geom_violin() + xlab("")
+nfeat_violin<- violindata %>% ggplot(aes(x=1,y=nFeature_RNA)) + geom_violin() + xlab("")
+mt_violin<- violindata %>% ggplot(aes(x=1,y=percent.mt)) + geom_violin() + xlab("")
+plot_grid(ncount_violin,nfeat_violin,mt_violin, ncol=3, nrow=1)
+```
+                  
+#### Bi-plots of metadata relevant to QC
+```{r}
+mtvsnc<- violindata %>% ggplot(aes(x=log10(nCount_RNA),y=percent.mt)) + geom_point(alpha=0.2,size=1)
+nfvsnc<- violindata %>% ggplot(aes(x=log10(nCount_RNA),y=nFeature_RNA)) + geom_point(alpha=0.2,size=1)
+plot_grid(mtvsnc,nfvsnc, ncol=2, nrow=1)
+```
+
+While it might take more thought to figure out where one should truly set thresholds for particular values, we can calculate the 5% and 95% quantiles for the number of features, and the 95% quantile for percent of mtDNA RNAs to set thresholds for filtering. Remember, prior to any filtering on  these cell-level statistics, our expression object contained 49105 features across 4340 cells.
+```{r}
+nfeatures_lower<-quantile(violindata$nFeature_RNA, 0.05)
+nfeatures_upper<-quantile(violindata$nFeature_RNA, 0.95)
+mtdna_upper<-quantile(violindata$percent.mt, 0.95)
+nfeatures_upper
+nfeatures_lower
+mtdna_upper
+seurat_obj_filt<-subset(seurat_obj_filt, subset = nFeature_RNA > nfeatures_lower & nFeature_RNA < nfeatures_upper & percent.mt < mtdna_upper)
+seurat_obj_filt
+```
+We reduced the data set to 3721 cells,filtering out approximately 14% of the input cells. We can now perform clustering on the filtered data.
+
+### Re-running clustering with corrected data
+
+```{r}
+seurat_obj_filt <- SCTransform(seurat_obj_filt, vars.to.regress = "percent.mt", verbose = FALSE)
+seurat_obj_filt <- RunPCA(seurat_obj_filt, verbose = FALSE)
+seurat_obj_filt <- RunUMAP(seurat_obj_filt, dims = 1:30)
+seurat_obj_filt <- FindNeighbors(seurat_obj_filt, dims = 1:30)
+seurat_obj_filt <- FindClusters(seurat_obj_filt)
+```
+#### make UMAP plot of data without and with ambient RNA decontamination
+```{r}
+withoutambient_umap_plot<-DimPlot(seurat_obj_filt, label = TRUE) + ggtitle("Filtered")
+plot_grid(withambient_umap_plot,withoutambient_umap_plot,ncol=2,nrow=1)
+```
+
+#### construct heatmap of jaccard distances between clustering results
+```{r}
+clusters_unfiltered<-tibble(cellbarcode=row.names(seurat_obj@meta.data),clusterid_unfiltered=seurat_obj@meta.data$seurat_clusters)
+clusters_filtered<-tibble(cellbarcode=row.names(seurat_obj_filt@meta.data),clusterid_filtered=seurat_obj_filt@meta.data$seurat_clusters)
+clusters_merged <- full_join(clusters_unfiltered,clusters_filtered,by="cellbarcode")
+
+unique_unfilt <- unique(clusters_merged$clusterid_unfiltered)
+unique_filt <- unique(clusters_merged$clusterid_filtered)
+```
+
+```{r}
+# Define the Jaccard similarity function
+jaccard_similarity <- function(set1, set2) {
+  intersect_length <- length(intersect(set1, set2))
+  union_length <- length(set1) + length(set2) - intersect_length
+  return((intersect_length / union_length))
+}
+
+# Precompute indices for each cluster to avoid recalculating
+unfilt_indices <- split(1:nrow(clusters_merged), clusters_merged$clusterid_unfiltered)
+filt_indices <- split(1:nrow(clusters_merged), clusters_merged$clusterid_filtered)
+
+# Create an empty list to store results
+jaccard_list <- list()
+
+# Calculate Jaccard distances and store them directly in a list
+for (i in names(unfilt_indices)) {
+  for (j in names(filt_indices)) {
+    set1 <- unfilt_indices[[i]]
+    set2 <- filt_indices[[j]]
+    similarity <- jaccard_similarity(set1, set2)
+    
+    # Append result as a named list
+    jaccard_list[[length(jaccard_list) + 1]] <- list(
+      unfiltered = i,
+      filtered = j,
+      jaccard_similarity = similarity
+    )
+  }
+}
+
+# Convert the list to a data frame
+jaccard_df <- do.call(rbind, lapply(jaccard_list, as.data.frame))
+
+# Convert columns to appropriate types
+jaccard_df <- type.convert(jaccard_df, as.is = TRUE)
+
+# Display the resulting data frame
+print(jaccard_df)
+
+# make heatmap of jaccard similarities
+jaccard_heatmap_plot<- ggplot(data = jaccard_df, aes(unfiltered, filtered, fill = jaccard_similarity)) +
+  geom_tile() +
+  theme_classic() +
+  scale_fill_gradient(low = "white", high = "red") +
+  scale_y_continuous(breaks=seq(0,13,1)) +
+  scale_x_continuous(breaks=seq(0,15,1)) +
+  labs(title = "Jaccard Similarity Heatmap",
+       x = "Clusters in unfiltered data",
+       y = "Clusters in filtered data",
+       fill = "Jaccard Similarity") +
+  theme_minimal() +
+  theme(panel.grid.major = element_blank())
+jaccard_heatmap_plot
+```
+
+### Looking into variable features
+The `SCTransform()` function wraps `NormalizeData()`, `ScaleData()`, and `FindVariableFeatures()`, functions that had to be called separately as part of the orignal, standard Seurat workflow. Thus one can directly go to looking at marker genes. 
+
+#### Get top 10 variable features and plot by cluster distributions
+```{r}
+top10<-VariableFeatures(seurat_obj_filt,nfeatures=10)
+top10
+VlnPlot(seurat_obj_filt, features =top10, pt.size = 0.2,stack=TRUE)
+```
+#### Similarly, one can select a priori known marker genes
+```{r}
+VlnPlot(seurat_obj_filt, features = c("CD8A", "GZMK", "CCL5", "S100A4", "ANXA1", "CCR7", "ISG15", "CD3D"),pt.size = 0.2, ncol = 4)
+```
+
+**Note**: when > 2 rows, as with the top 10 genes, the individual get compressed and the violins can't be easily seen. It would be fairly simple to extract the SCTransform-ed counts to a data frame, and left join that data to the meta.data table that specifies cluster id for each cell barcode, and built your own plot with ggplot.
+
+
+### Finding marker genes
+Of course, when you don't have or don't want to rely on prior information, it is useful to identify marker genes from the data. This essentially performs differential expression tests that look for differential expression between specified clusters. A few examples are illustrative:
+
+##### Find all markers for cluster 5
+In this case, marker genes are identified by looking for DE between cluster 5 and the aggregation of all other clusters
+```{r}
+cluster2.markers <- FindMarkers(seurat_obj_filt, ident.1 = 5)
+head(cluster2.markers, n = 5)
+```
+In this case, *pct.1* and *pct.2* are the percentage of cells expressing the gene in the two clusters: the target cluster, specified by `ident.1`, and the cells from all other clusters. 
+
+##### Find marker genes that distinguish the the two large groups of clusters in the UMAP plot
+```{r}
+clustergroup_markers <- FindMarkers(seurat_obj_filt, ident.1 = c(1,2,3,4,5,10,11), ident.2 = c(6, 8,9))
+head(clustergroup_markers, n = 5)
+```
+In this case, the first 5 reported genes are down-regulated in clusters 1,2,3,4,5,10,and 11 relative to clusters 6, 8 and 9.
+
+##### Find all cell-type specific markers
+We can add `only.pos=TRUE` to indicate we only want to see genes that are up-regulated in the cell type of interest, and we can also filter the table downstream to only include genes with logfold change < 1. We won't run this today as it will take a bit of time, but at least you can see the underlying logic of it.
+
+```{r,eval=FALSE}
+celltype.markers <- FindAllMarkers(seurat_obj_filt, only.pos = TRUE)
+lfcGthan1_celltype.markers <- celltype.markers %>%
+    group_by(cluster) %>%
+    filter(avg_log2FC > 1)
+head(lfcGthan1_celltype.markers)
+```
+
+## Future directions
+For many researchers, there will be an interest in comparing multiple samples that represent different treatments or environmental. conditions to which the organism from which the scRNA-seq library was constructed is exposed. Check out the Seurat tutorial on multi-sample integration [here](https://satijalab.org/seurat/articles/integration_introduction). Secondly, we also suggest checking out the Heumos et al. paper (link above) which integrates information from various tool performance studies and highlights in great detail steps and options for constructing an scRNA-seq workflow. While we did not include doublet detection and removal in this workflow example, it should be integrated into your workflows, so again, consult Heumos et al. for a summary of the best tools for the task. It is worth noting that [DoubletFinder](https://github.com/chris-mcginnis-ucsf/DoubletFinder) is implemented to work with Seurat.
+
