@@ -446,16 +446,32 @@ A suit of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit
 
     If you need help or run into problems, please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) and we'll try and help - though it will likely be up to you to test on your own cluster, since we only have easy access to a cluster running SLURM.
 
-??? question "6. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
+??? question "6. I got an error related to InsufficientSystemResources regarding GPUs during run_lastz in the `blast` rule. What do I do?"
 
-    ##### 6. Encountering errors
+    ##### 6. `blast` GPU error
+
+    If the text of the error is somewhat similar to:
+
+    ```bash
+    toil.batchSystems.abstractBatchSystem.InsufficientSystemResources: The job 'run_lastz' kind-run_lastz/instance-tqdjs4tj v1 is requesting [{'count': 4, 'kind': 'gpu', 'api': 'cuda', 'brand': 'nvidia'}] accelerators, more than the maximum of [{'kind': 'gpu', 'brand': 'nvidia', 'api': 'cuda', 'count': 1}, {'kind': 'gpu', 'brand': 'nvidia', 'api': 'cuda', 'count': 1}] accelerators that SingleMachineBatchSystem was configured with. The accelerator {'count': 4, 'kind': 'gpu', 'api': 'cuda', 'brand': 'nvidia'} could not be provided. Scale is set to 1.
+    ```
+
+    it may be because your GPU partition is set up to use [MIGs (Multi-instance GPUs)](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/). This is essentially like a multi-core CPU, except for GPUs. The problem is that Cactus isn't setup to recognize these as of the last update of this tutorial. It only recognizes physical GPU devices. For instance, let's say you've requested 4 GPUs for your `blast` rule by setting `blast_gpu: 4` in your config file. The BLAST job is submitted to your GPU node, which allocates 2 physical GPUs set up as MIGs, each with 2 instances, which is the equivalent of 4 GPUs. However, cactus only sees the 2 physical GPUs and thinks there aren't enough to accomodate your request for 4, resulting in the error.
+
+    To resolve this, check your cluster documentation to see if there is a way to use only physical GPUs instead of MIGs. If not, you will have to set `blast_gpu: 1` in your config. That is the only way to guarantee that the number of physical GPUs aligns with your request.
+
+    Read more about this [here](https://github.com/harvardinformatics/cactus-snakemake/issues/2) and [here](https://github.com/ComparativeGenomicsToolkit/cactus/issues/1618).
+
+??? question "7. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
+
+    ##### 7. Encountering errors
 
     Please [search for or create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
     Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
 
-??? question "7. I have an idea to improve or add to the pipeline. What do I do?"
+??? question "8. I have an idea to improve or add to the pipeline. What do I do?"
 
-    ##### 7. Pipeline improvements
+    ##### 8. Pipeline improvements
     
     Great! Please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) describing your idea so we can discuss its implementation!
