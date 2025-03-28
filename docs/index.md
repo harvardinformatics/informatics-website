@@ -3,13 +3,15 @@ title: Harvard FAS Informatics Group
 template: home.html
 ---
 
-# About us
+## About us
 
-The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group of scientists and software developers working to advance research and teaching by facilitiating computational analysis of scientific data, primarily in biology. We work closely with data-generating scientific cores and with students, postdocs, and faculty generating data to help make research and discovery efficient and productive. You can read more about who we are and what we do below. 
-
-## Bioinformatics
+The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group of scientists and software developers working to advance research and teaching by facilitiating computational analysis of scientific data, primarily in biology. We work closely with data-generating scientific cores and with students, postdocs, and faculty generating data to help make research and discovery efficient and productive. 
 
 The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, with a general focus on method development and best practices investigations to meet the needs of the research community. 
+
+Read more about the people in our group below:
+
+## People
 
 
 <div class="row card-row">
@@ -390,154 +392,26 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 
 <div class="card-sep-div"></div>
 
-<div class="row card-row">
 
-<div class="col-7-24 card-margin-outer"></div>
+Prior to 2025, the group also included the Software Operations Core. Their mission is to support the needs of data generation core facilities by developing software infrastructure. This includes everything from data processing pipelines, to instrument scheduling and training, to billing and invoicing.
 
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b>Abhratanu Saha</b><br>
+As of February 2025, Software Operations has moved to [Research Computing](https://www.rc.fas.harvard.edu/)!
 
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/abhratanusaha.jpg" alt="Profile picture of Abhratanu Saha">
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Visiting Student</b><br>
-			 Northwest Labs, B227.65<br>
-			<p>Abhro is a visiting student from the Curie Institute in France, using comparative genomics to study Hi-C maps in Lepidoptera.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-7-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-
-## Software Operations
-
-The mission of the Software Operations Core is to support the needs of data generation core facilities by developing software infrastructure. This includes everything from data processing pipelines, to instrument scheduling and training, to billing and invoicing. 
-
-
-<div class="row card-row">
-
-<div class="col-7-24 card-margin-outer"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b>Aaron Kitzmiller, Ph.D.</b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/aaronkitzmiller.jpg" alt="Profile picture of Aaron Kitzmiller">
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Director of Software Operations</b><br>
-			 Northwest Labs, B227.70<br>
-			<p>Journeyman wrangler of science adjacent software projects</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-7-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row card-row">
-
-<div class="col-1-24 card-margin-outer"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b>David D'Antonio</b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/ddantonio.jpg" alt="Profile picture of David D'Antonio">
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Senior Web Developer</b><br>
-			 Northwest Labs, Remote<br>
-			<p>Front end developer for instrument facility applications</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-<div class="col-2-24 card-margin-inner"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b>Nathan Weeks</b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/nathanweeks.jpg" alt="Profile picture of Nathan Weeks">
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Applications Professional</b><br>
-			 Northwest Labs, B227.30<br>
-			<p>Scientific applications specialist</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-1-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-<div class="row">
-<span class="icon-note">Social icons: <a href="https://icons8.com/" target="_blank">Icons8</a></span>
-</div>
-
-
-## Group Alumni
+### Group Alumni
 
 
 <div class="row alum-card-row">
 
 <div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Abhratanu Saha</span><br>
+
+		(2024)<br>
+
+		<p>Abhro was a visiting student from the Curie Institute in France. He used comparative genomics to study Hi-C maps in Lepidoptera.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name"><a href="https://www.subir.com.np/" target="_blank">Subir Shakya</a></span><br>
@@ -555,15 +429,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 		<p>Rawan was funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods.</p>
 </div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Jared Vessella-Smith</span><br>
-
-		(2023-2024)<br>
-
-		<p>Former full stack developer for instrument facility applications</p>
-</div>
 
 <div class="col-0-24 card-margin-outer"></div>
 </div>
@@ -573,6 +438,15 @@ The mission of the Software Operations Core is to support the needs of data gene
 <div class="row alum-card-row">
 
 <div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Jared Vessella-Smith</span><br>
+
+		(2023-2024)<br>
+
+		<p>Former full stack developer for instrument facility applications</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name">Alexandria D'Souza</span><br>
@@ -590,13 +464,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 		<p>Scott is now a Scientific Investigator in Computational Biology at GSK.</p>
 </div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Meghan Correa</span><br>
-
-		<p>Former full stack developer currently at Cisco</p>
-</div>
 
 <div class="col-0-24 card-margin-outer"></div>
 </div>
@@ -606,6 +473,13 @@ The mission of the Software Operations Core is to support the needs of data gene
 <div class="row alum-card-row">
 
 <div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Meghan Correa</span><br>
+
+		<p>Former full stack developer currently at Cisco</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name"><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik</a></span><br>
@@ -623,15 +497,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 		<p>Alex is now at the Universidad Complutense Madrid.</p>
 </div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Juerg Straubhaar</span><br>
-
-		(2017-2021)<br>
-
-		<p>Juerg worked primarily on proteomics data with the Mass Spec Core and the Melton Lab while he was in the group.</p>
-</div>
 
 <div class="col-0-24 card-margin-outer"></div>
 </div>
@@ -641,6 +506,15 @@ The mission of the Software Operations Core is to support the needs of data gene
 <div class="row alum-card-row">
 
 <div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name">Juerg Straubhaar</span><br>
+
+		(2017-2021)<br>
+
+		<p>Juerg worked primarily on proteomics data with the Mass Spec Core and the Melton Lab while he was in the group.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name"><a href="https://brian-arnold.github.io/about/" target="_blank">Brian Arnold</a></span><br>
@@ -658,15 +532,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 		<p>Yasin is now an Assistant Professor at Ege University in Izmir, Turkey.</p>
 </div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://tommytang.bio.link/" target="_blank">Ming "Tommy" Tang</a></span><br>
-
-		(2018-2020)<br>
-
-		<p>Tommy is now the Director of Computational Biology at Immunitas Therapeutics.</p>
-</div>
 
 <div class="col-0-24 card-margin-outer"></div>
 </div>
@@ -676,6 +541,15 @@ The mission of the Software Operations Core is to support the needs of data gene
 <div class="row alum-card-row">
 
 <div class="col-0-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name"><a href="https://tommytang.bio.link/" target="_blank">Ming "Tommy" Tang</a></span><br>
+
+		(2018-2020)<br>
+
+		<p>Tommy is now the Director of Computational Biology at Immunitas Therapeutics.</p>
+</div>
+<div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name"><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine</a></span><br>
@@ -693,15 +567,6 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 		<p>John is now a Data Science and Bioinformatics Team Lead at Merck.</p>
 </div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz</a></span><br>
-
-		(2017-2018)<br>
-
-		<p>Allison is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County.</p>
-</div>
 
 <div class="col-0-24 card-margin-outer"></div>
 </div>
@@ -710,7 +575,16 @@ The mission of the Software Operations Core is to support the needs of data gene
 
 <div class="row alum-card-row">
 
-<div class="col-9-24 card-margin-outer"></div>
+<div class="col-7-24 card-margin-outer"></div>
+
+<div class="col-6-24 card-container alum-card-container">
+		<span class="alum-name"><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz</a></span><br>
+
+		(2017-2018)<br>
+
+		<p>Allison is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County.</p>
+</div>
+<div class="col-2-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
 		<span class="alum-name">Andy Bryant</span><br>
@@ -718,7 +592,7 @@ The mission of the Software Operations Core is to support the needs of data gene
 		<p>Former front end developer for instrument facility applications</p>
 </div>
 
-<div class="col-9-24 card-margin-outer"></div>
+<div class="col-7-24 card-margin-outer"></div>
 </div>
 
 

@@ -108,6 +108,11 @@ with open(md_output_file, 'w') as md_output:
             people_left = len(people_list);
             # Get the list of active people in the current sub-section and the number of people
 
+            #print(section, sub_section, people_left);
+            if people_left == 0:
+                continue;
+            # Skip the current sub-section if there are no active people
+
             for person in people_list:
                 person_data = json_data[section][sub_section][person];
                 # Get the profile data for the current person
@@ -305,7 +310,7 @@ with open(md_output_file, 'w') as md_output:
         for sub_section in json_data[section]:
             for person in json_data[section][sub_section]:
                 person_data = json_data[section][sub_section][person]
-                if person_data['status'] != "active":
+                if person_data['status'] not in ["active", "moved-internal"]:
                     alumni_list.append(person_data);
                     people_left += 1;
     ## Get the list of alumni and the number of people
@@ -329,7 +334,7 @@ with open(md_output_file, 'w') as md_output:
         #person_data = json_data[section][sub_section][person];
         # Lookup the profile data for the current person
 
-        if person_data['status'] == "active":
+        if person_data['status'] in ["active", "moved-internal"]:
             continue;
         # Skip the current person if they are active
 
