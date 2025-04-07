@@ -12,7 +12,7 @@ Here we have compiled resources related to bioinformatics and computing in gener
 ### [:material-dna:{ .contact-icon } [ Downloading sequencing data from the Bauer Core ]](Tutorials/how-can-i-download-my-sequencing-data.md)
 ### [:material-format-align-top:{ .contact-icon } [ Whole genome alignment with Cactus ]](Tutorials/whole-genome-alignment-cactus.md)
 ### [:curly_loop:{ .contact-icon } [ Pangenome inference with Cactus-minigraph ]](Tutorials/pangenome-cactus-minigraph.md)
-### [:material-application-brackets-outline:{ .contact-icon } [ How to annotate a genome ]](Tutorials/how-to-annotate-a-genome.md)
+### [:material-dna:{ .contact-icon } [ How to annotate a genome ]](Tutorials/how-to-annotate-a-genome.md)
 
 **We are developing tutorials for other bioinformatics tasks. Check back soon!**
 
@@ -150,3 +150,4 @@ We have compiled a list of external resources and tagged them with the categorie
 </div>
 <div class='col-1-24 res-tag-sep'></div>
 </div>
+
