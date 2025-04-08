@@ -23,7 +23,12 @@ You can drop in to our office hours without an appointment. We hold office hours
 ## [ :material-newspaper-plus:{ .contact-icon } Subscribe to our newsletter](newsletter.md)
 We will send you emails notifying you about upcoming workshops and other events. 
 
+## :material-poll:{ .contact-icon} Fill out our user needs survey
+We're interested in hearing from you about your needs! 
 
+[If you are a PI, please fill out this survey.](https://docs.google.com/forms/d/e/1FAIpQLSd_xF1Gdh9048lb99cgma1Cs1yMTW6Alb_boCSyVBif7Ofmcg/viewform?usp=dialog)
+
+[If you are a researcher, please fill out this survey.](https://docs.google.com/forms/d/e/1FAIpQLSc-Qhhfyfj4X1ZzZQZVWQyyyhwnfCA4o35-WocEdF97c-ZoLg/viewform)
 ---
 
 ### Links to related groups
