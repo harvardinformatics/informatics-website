@@ -61,7 +61,7 @@ While the first of these points is dependent upon your research program, the sec
 
 The dashed lines that indicate "optional integration" refer to the combining of more than one genome annotation method, which we elaborate upon below.
 
-
+A few examples are worthwhile to understand how to read the annotation tool decision tree.
 
 ### Integrating methods: a work in progress
 If, after testing a few different methods, you might discover that there is some degree of complementarity in the recovery of conserved single-copy orthologs, i.e. BUSCOs [see this paper](https://academic.oup.com/bioinformatics/article/31/19/3210/211866) for more details. The current challenge is *how* to go about doing this. There are few currently maintained tools for combining an arbitrary number of gtf/gff3 files into a unified annotation. One example is [Mikado](https://github.com/EI-CoreBioinformatics/mikado) although our initial exploration of it a few years ago indicated that the scoring scheme for picking high quality transcripts may lead to the erroneous removal of real transcripts, and a subsequent loss of BUSCOs. At a future date we will explore the integration problem more deeply, and perhaps even come up with a solution! In the meantime, Mikado is worth looking at. A simpler, different approach that will not lead to any data loss would be to add annotations from one method that are non-overlapping with a "base" annotation (the entirety of which you will retain) to that base annotation
