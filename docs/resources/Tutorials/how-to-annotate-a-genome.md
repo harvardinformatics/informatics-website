@@ -53,7 +53,17 @@ How to choose a genome annotation method should be based upon three factors:
 
 4. Annotation method performance, with respect to your research objectives 
 
-While the first of these points is dependent upon your research program, the second depends upon the feasibility of obtaining RNA-seq data, and the third depends upon the history of past genomic research in the portion of the tree of life where your research program is focused. We have answered the fourth of these with a comprehesive review of genome annotation method performance. An earlier version of the manuscript resulting from this work is on bioRxiv at ["Building better genome annotations across the tree of life"](https://www.biorxiv.org/content/10.1101/2024.04.12.589245v1), and the final version (that includes two additional methods) will appear in the May 2025 issue of *Genome Research*. Our findings have led us to recommend the following decision tree for picking an annotation method.
+While the first of these points is dependent upon your research program, the second depends upon the feasibility of obtaining RNA-seq data, and the third depends upon the history of past genomic research in the portion of the tree of life where your research program is focused. We have answered the fourth of these with a comprehesive review of genome annotation method performance. An earlier version of the manuscript resulting from this work is on bioRxiv at ["Building better genome annotations across the tree of life"](https://www.biorxiv.org/content/10.1101/2024.04.12.589245v1), and the final version (that includes two additional methods) will appear in the May 2025 issue of *Genome Research*. Our findings have led us to recommend the following tools depending upon the factors described above:
+
+| Tool | Approach | Genomic compartment | Evidence/input type |
+| ---- | -------- | ------------------- | ------------------- |
+| Stringtie-TransDecoder | transcriptome | RNA-seq assembly | paired-end RNA-seq reads, and a protein BLAST database | 
+| BRAKER3 | HMM |proteome | OrthoDB protein fasta and paired-end RNA-seq reads |
+| BRAKER2 | HMM | proteome | OrthoDB protein fasta |
+| TOGA  | annotation transfer | proteome | high quality genome and annotation from related species |
+| Liftoff  | annotation transfer | transcriptome | high quality genome and annotation from related species |
+
+Below is a decision tree for picking an annotation method, based upon our evaluation of the performance of 12 different methods in our forthcoming paper in *Genome Research.
    
 <center>
 ![Genome annotation method decision tree](../img/genome_annotation_decision_chart.png)
@@ -63,6 +73,15 @@ The dashed lines that indicate "optional integration" refer to the combining of 
 
 A few examples are worthwhile to understand how to read the annotation tool decision tree.
 
+#### EXAMPLE 1: RNA-seq data available and whole transcriptome desired
+This represents a fairly straightforward path through the decision tree. You should run our Snakemake workflow (see below) for assembling transcripts with Stringtie and annotating CDS and UTRs with TransDecoder.
+
+#### EXAMPLE 2: no closely related genome with annotation and no RNA-seq data
+This represents another straightforward path through the decision tree, leading you to use BRAKER2, an implementation of the ab initio tool suite that only uses proteins from OrthDB to estimate HMM model parameters and provide hints for locations of splice sites for CDS. Note that, without a closely related genome or RNA-seq data, there is no way to annotate ncRNAs, i.e. you are restricted to predicting protein-coding features, hence why "None available" is the terminus of the path on the left side of the graph.
+
+### Caveats: plants!
+For plant genomes, especially larger ones with high repeat content, obtaining a high-quality  whole-genome alignment with other species (even those closely related to it) can be challenging. This can lead to poorer performance in annotation transfer tools (TOGA, Liftoff) than other approaches. Thus, for any path through the decision tree that ends with an annotation transfer method, one should confirm through a number of quality assessment metrics, in particular BUSCO scores (see below) that the annotation is of reasonably good quality.
+
 ### Integrating methods: a work in progress
 If, after testing a few different methods, you might discover that there is some degree of complementarity in the recovery of conserved single-copy orthologs, i.e. BUSCOs [see this paper](https://academic.oup.com/bioinformatics/article/31/19/3210/211866) for more details. The current challenge is *how* to go about doing this. There are few currently maintained tools for combining an arbitrary number of gtf/gff3 files into a unified annotation. One example is [Mikado](https://github.com/EI-CoreBioinformatics/mikado) although our initial exploration of it a few years ago indicated that the scoring scheme for picking high quality transcripts may lead to the erroneous removal of real transcripts, and a subsequent loss of BUSCOs. At a future date we will explore the integration problem more deeply, and perhaps even come up with a solution! In the meantime, Mikado is worth looking at. A simpler, different approach that will not lead to any data loss would be to add annotations from one method that are non-overlapping with a "base" annotation (the entirety of which you will retain) to that base annotation
 
@@ -70,6 +89,13 @@ If, after testing a few different methods, you might discover that there is some
 2. Use [bedtools](https://bedtools.readthedocs.io/en/latest/) to identify unique annotations in your second annotation method, i.e. those that do not overlap the genomic coordinates of your "base" annotation. 
 3. Add those non-overlapping annotations to the "base". In principle, one does this at the gene-level, adding non-overlapping genes and their respective child features to the "base" annotation. 
 4. If you have more than two annotations to integrate, set the initially integrated annotation as your base, and follow the steps above with the next annotation.
+
+Whichever method you use for integrating annotations from multiple methods, a closer look at the decision tree to understand recommended combinations of tools to integrate. These decisions reflect a desire to avoid redundancy between tools that either use the same type of evidence, or make the same sort of predictions yet with one tools clearly having poorer performance at achieving the same task. Options are as follows:
+
+* If your goal was to annotate the entire transcriptome, and have RNA-seq data, you would generate annotations with TransDecoder. However, BUSCO scores may indicate you are missing a non-trivial fraction of them. If that is the case, it also means you are also missing many features that are less conserved. One reason why features may be missing is if your RNA-seq data are only derived from a small subset of tissues, e.g. if you only have libraries from muscle, chances are you will fail to properly assemble (or assemble at all) genes whose expression is restricted to the brain. If a closely related genome (and annotation were available), you could then integrate annotations from TOGA to your Stringtie-TransDecoder annotation. In the absence of closely related genome, one could add BRAKER3 annotations, with the caveat that the BRAKER annotation would need to be heavily filtered to avoid a potentially high rate of intergenic false positive predictions. As an annotation transfer tool, we have found that TOGA outperforms Liftoff, and since you would have already recovered non-coding features with your Stringtie annotations, choosing Liftoff over TOGA as a second method would not be the best choice.
+
+* If your primary focus was the proteome, and you had access to a genome and annotation of a closely related species, you would consider supplementing a TOGA annotation with Stringtie-TransDecoder. We found that, in comparing 12 different annotation methods, the recovery and accuracy of protein-coding predictions was usually highest for TOGA, which justifies using it as the base annotation, to which to add annotations from Stringtie-TransDecoder.  
+
 
 ## Workflows for generating individual annotations.
 We have developed Snakemake workflows for *TOGA*, *BRAKER*, and assembly of genes and transcripts directly from RNA-seq reads with *Stringtie* and *TransDecoder*. Those workflows can be found here: 
