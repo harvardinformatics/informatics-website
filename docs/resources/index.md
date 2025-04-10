@@ -2,6 +2,12 @@
 title: Resources
 ---
 
+<style>
+    h4 {
+        font-weight: normal !important;
+    }
+</style>
+
 # Resources
 
 Here we have compiled resources related to bioinformatics and computing in general. These resources may be general or related to our [trainings](../workshops). We have also compiled links to other online resources.
@@ -11,6 +17,7 @@ Here we have compiled resources related to bioinformatics and computing in gener
 ### [:material-application-brackets-outline:{ .contact-icon } [ Installing command line software with conda/mamba ]](Tutorials/installing-command-line-software-conda-mamba.md)
 ### [:material-dna:{ .contact-icon } [ Downloading sequencing data from the Bauer Core ]](Tutorials/how-can-i-download-my-sequencing-data.md)
 ### [:material-format-align-top:{ .contact-icon } [ Whole genome alignment with Cactus ]](Tutorials/whole-genome-alignment-cactus.md)
+####  &nbsp;&nbsp;:material-arrow-right-bottom:[:material-filter-variant-plus:{ .contact-icon } [ Adding a genome to a whole genome alignment ]](Tutorials/add-to-whole-genome-alignment-cactus.md)
 ### [:curly_loop:{ .contact-icon } [ Pangenome inference with Cactus-minigraph ]](Tutorials/pangenome-cactus-minigraph.md)
 ### [:material-dna:{ .contact-icon } [ How to annotate a genome ]](Tutorials/how-to-annotate-a-genome.md)
 
