@@ -120,7 +120,7 @@ While we do not provide a Snakemake workflow for Liftoff, it is a straightforwar
 
 ## Assesing genome annotation quality
 
-For a new genome assembly, quality metrics will need to be used that don't rely on a "truth set", such as aa well-curated set of protein sequences for the species whose genome you have just assembled. Relevant metrics should be able to assess sensitivity (the ability to recover the real underlying transcripts in a genome) and accuracy, i.e. how well the predicted features recapitulate the true sequences. Again, in the absence of a truth set for one's species, there are metrics that employ useful proxies. A few of these are as follows:
+For a new genome assembly, quality metrics will need to be used that don't rely on a "truth set", such as aa well-curated set of protein sequences for the species whose genome you have just assembled. Relevant metrics should be able to assess sensitivity (the ability to recover the real underlying transcripts in a genome) and accuracy, *i.e.* how well the predicted features recapitulate the true sequences. Again, in the absence of a truth set for one's species, there are metrics that employ useful proxies. A few of these are as follows:
 
 * BUSCO score, which is simply (1 - number of recovered BUSCOs)/total number of BUSCOs in the searched database. The best way for obtaining the count of recovered BUSCOs is to use [compleasm](https://github.com/huangnengCSU/compleasm) to perform sequence searches.
 
