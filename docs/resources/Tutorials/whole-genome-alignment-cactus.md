@@ -257,7 +257,7 @@ snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactu
     | `-p`                                              | Print out the commands that will be executed. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
     | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started). |
-    | `-s </path/to/cactus.smk>                     | The path to the workflow file. |
+    | `-s </path/to/cactus.smk>`                        | The path to the workflow file. |
     | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file). |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
 

@@ -151,12 +151,9 @@ Once you have the 5 pieces of information from the tree listed above, you're rea
 
     Cactus doesn't strictly require branch lengths on the input tree. In that case, it arbitrarily gives every branch a length of 1. If your input tree to cactus didn't have branch lengths or the output of `halStats --tree` shows only branch lengths of 1.0, then you don't need to specify the top-most branch length or the new branch length. These will automatically be set to 1.0.
 
-
-
-
 ### Reference sample
 
-In order to run the last step of the workflow that converts the HAL format to a readable MAF format (See [pipeline outputs](#pipeline-outputs) for more info), you will need to select one assembly as a reference assembly. The reference assembly's coordinate system will be used for projection to MAF format. You should indicate the reference assembly in the Snakemake config file (outlined below). For instance, if I wanted my reference sample in the above file to be **C**, I would put the string `C` in the `maf_reference:` line of the Snakemake config file.
+In order to run the last step of the workflow that converts the HAL format to a readable MAF format (See [pipeline outputs](#pipeline-outputs) for more info), you will need to select one assembly as a reference assembly. The reference assembly's coordinate system will be used for projection to MAF format. You should indicate the reference assembly in the Snakemake config file (outlined below). For instance, if I wanted my reference sample in the above tree to be the genome labeled **1** in the tree, I would put the string `1` in the `maf_reference:` line of the Snakemake config file.
 
 ### Preparing the Snakemake config file
 
@@ -193,9 +190,9 @@ new_anc_node: <label for new ancestral node connected to new genome>
 
 parent_node: <parent node of existing branch>
 
-child_node:
+child_node: <child node of existing branch>
 
-top_branch_length:
+top_branch_length: <length of branch created by parent_node and new_anc_node>
 
 output_dir: <path/to/desired/output-directory>
 
@@ -259,11 +256,11 @@ blast_time: 120             # in minutes
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.
 
-We have an [example of resource allocation and usage for creation of a new HAL file](whole-genome-alignment-cactus/example-resource-usage-on-a-dataset-of-22-turtle-genomes). Since updating a HAL file uses the same steps, just with fewer rounds, you can gauge resource usage with this example.
+We have an [example of resource allocation and usage for creation of a new HAL file](whole-genome-alignment-cactus.md/#example-resource-usage-on-a-dataset-of-22-turtle-genomes). Since updating a HAL file uses the same steps, just with fewer rounds, you can gauge resource usage with this example.
 
 ## Running the pipeline
 
-With [everything installed](#getting-started), the [Cactus input file](#preparing-the-cactus-input-file), and the [Snakemake configuration file](#preparing-the-snakemake-config-file) setup, you are now ready to run the pipeline.
+With [everything installed](#getting-started) and the [Snakemake configuration file](#preparing-the-snakemake-config-file) setup, you are now ready to run the pipeline.
 
 ### Do a `--dryrun` first
 
@@ -283,13 +280,13 @@ snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactu
     | `-p`                                              | Print out the commands that will be executed. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
     | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started). |
-    | `-s </path/to/cactus_update.smk>                  | The path to the workflow file. |
+    | `-s </path/to/cactus_update.smk>`                 | The path to the workflow file. |
     | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file). |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
 
 !!! info "This command won't actually submit the pipeline jobs!"
 
-    However even during a `--dryrun` some pre-processing steps will be run, including creation of the output directory if it doesn't exist, downloading the Cactus Singularity image if `cactus_path: download` is set in the config file, and running `cactus-prepare`. These should all be relatively fast and not resource intensive tasks.
+    However even during a `--dryrun` some pre-processing steps will be run, including creation of the output directory if it doesn't exist, downloading the Cactus Singularity image if `cactus_path: download` is set in the config file, and running `cactus-update-prepare`. These should all be relatively fast and not resource intensive tasks.
 
 If this completes successfully, you should see a bunch of blue, yellow, and green text on the screen, ending with something like this (the number of jobs and Reasons: may differ for your project):
 
@@ -340,7 +337,7 @@ This will start submitting jobs to SLURM. On your screen, you will see continuou
 
     4. Use a [terminal multiplexer](https://en.wikipedia.org/wiki/Terminal_multiplexer) like [GNU Screen](https://en.wikipedia.org/wiki/GNU_Screen) or [tmux](https://en.wikipedia.org/wiki/Tmux). These programs allow you to open a sub-terminal within your currently connected terminal that remains even after you disconnect from the server. This is also a good solution.
 
-Depending on the number of genomes, their sizes, and your wait in the queue, you will hopefully have your whole genome alignment within a few days!
+Depending on the number of genomes, their sizes, and your wait in the queue, you will hopefully have your updated whole genome alignment within a few hours!
 
 ### Test dataset
 
