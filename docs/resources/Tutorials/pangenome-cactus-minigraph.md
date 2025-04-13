@@ -139,8 +139,6 @@ input_file: <path/to/cactus-input-file>
 
 output_dir: <path/to/desired/output-directory>
 
-overwrite_output_dir: <True/False>
-
 reference: <Sample ID from input_file>
 
 prefix: <string>
@@ -152,10 +150,9 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 
 | Option                 | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
-| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. |
+| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. If a version string is provided (e.g. 2.9.5), then that version will be downloaded and used. |
 | `input_file`           | Path to the input file containing the species tree and genome paths (described above). |
 | `output_dir`           | Directory where the all output will be written. |
-| `overwrite_output_dir` | Whether to overwrite the output directory if it already exists (True/False). |
 | `reference`            | The sample ID from the input file to serve as the reference for pangenome creation. |
 | `prefix`               | A string that will be appended to all files created by the pipeline. |
 | `tmp_dir`              | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
@@ -284,13 +281,13 @@ After that, run a dryrun of the test dataset by changing into the `tests/` direc
 
 ```bash
 cd tests/yeast-minigraph/
-snakemake -p -j 10 -e slurm -s ../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml --dryrun
+snakemake -p -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml --dryrun
 ```
 
 If this completes without error, run the pipeline by removing the `--dryrun` option:
 
 ```bash
-snakemake -p -j 10 -e slurm -s ../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml
+snakemake -p -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml
 ```
 
 ## Pipeline outputs
@@ -301,48 +298,36 @@ For more information about all outputs, see [Cactus's minigraph documentation se
 
 ## Questions/troubleshooting
 
-??? question "1. I want to use a specific version of the Cactus singularity image. How can I do so?"
+??? question "1. My jobs were running but my Snakemake process crashed because of connection issues/server maintenance! What do I do?"
 
-    ##### 1. Using a specific Cactus version
-
-    If you want to use a specific Cactus version, search [the available versions in the repository](https://quay.io/repository/comparative-genomics-toolkit/cactus?tab=tags) and run the following command, substituting `<desired version>` for the string of the version you want, *e.g.* "v2.9.3":
-
-    ```bash
-    singularity pull --disable-cache docker://quay.io/comparative-genomics-toolkit/cactus:<desired version>
-    ```
-
-    Then, in the [Snakemake config file](#preparing-the-snakemake-config-file), set `cactus_path:` to be the path to the `.sif` file that was downloaded.
-
-??? question "2. My jobs were running but my Snakemake process crashed because of connection issues/server maintenance! What do I do?"
-
-    ##### 2. Snakemake crashes
+    ##### 1. Snakemake crashes
 
     As long as there wasn't an error with one of the jobs, Snakemake is designed to be able to resume and resubmit jobs pretty seamlessly. You just need to run the same command you ran to begin with and it should pickup submitting jobs where it left off. You could also run a `--dryrun` first and it should tell you which jobs are left to be done.
 
-??? question "3. The Cactus-minigraph docs say to not use hardmasked gneomes. How can I tell if my genome FASTA files are hardmasked?"
+??? question "2. The Cactus-minigraph docs say to not use hardmasked genomes. How can I tell if my genome FASTA files are hardmasked?"
 
-    ##### 3. How can I tell if my genome FASTA files are hardmasked?
+    ##### 2. How can I tell if my genome FASTA files are hardmasked?
 
     Hardmasking means you replace low quality or low confidence bases in your assembly with N characters. Unfortunately, there are many reasons for Ns to appear in a genome fasta file, so it is difficult to tell if it is because it is hardmasked based on the presence of Ns alone. Hopefully the source of the file has left some documentation describing how it was prepared...
 
-??? question "4. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?"
+??? question "3. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?"
 
-    ##### 4. Clusters other than SLURM?
+    ##### 3. Clusters other than SLURM?
 
-    Generally, it should be relatively easy to update the cluster profile (`profiles/slurm_profile/config.yaml`) and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
+    Generally, it should be relatively easy install and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
 
     If you need help or run into problems, please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) and we'll try and help - though it will likely be up to you to test on your own cluster, since we only have easy access to a cluster running SLURM.
 
-??? question "5. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
+??? question "4. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
 
-    ##### 5. Encountering errors
+    ##### 4. Encountering errors
 
     Please [search for or create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
     Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
 
-??? question "6. I have an idea to improve or add to the pipeline. What do I do?"
+??? question "5. I have an idea to improve or add to the pipeline. What do I do?"
 
-    ##### 6. Pipeline improvements
+    ##### 5. Pipeline improvements
     
     Great! Please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) describing your idea so we can discuss its implementation!
