@@ -350,7 +350,7 @@ Here is a breakdown of the files so you can investigate them and prepare similar
 | `evolverMammals-seq/`              | This directory contains the input sequence files for the test dataset in FASTA format. |
 | `evolverMammals-update-cfg.yaml`   | This is the config file for Snakemake and has all of the options you would need to setup for your own project. |
 
-You will first need to [run the test to generate the HAL file](whole-genome-alignment-cactus#test-dataset). Then, you can add the Gorilla sequence to it using this pipeline. We recommend running this test dataset before setting up your own project.
+You will first need to [run the test to generate the HAL file](whole-genome-alignment-cactus.md#test-dataset). Then, you can add the Gorilla sequence to it using this pipeline. We recommend running this test dataset before setting up your own project.
 
 First, open the config file, `tests/evolverMammals/evolverMammals-update-cfg.yaml` and make sure the partitions are set appropriately for your cluster. For this small test dataset, it is appropriate to use any "test" partitions you may have. Then, update the path to `tmp_dir` to point to a location where you have a lot of temporary space. Even this small dataset will fail if this directory does not have enough space.
 
