@@ -136,15 +136,13 @@ In order to run the last step of the workflow that converts the HAL format to a 
 Besides the sequence input, the pipeline needs some extra configuration to know where to look for files and write output. That is done in the Snakemake configuration file for a given run. It contains 2 sections, one for specifying the input and output options, and one for specifying resources for the various rules (see [below](#specifying-resources-for-each-rule)). The first part should look something like this:
 
 ```
-cactus_path: <path/to/cactus-singularity-image OR download>
+cactus_path: <path/to/cactus-singularity-image OR download OR version string>
 
 cactus_gpu_path: <path/to/cactus-GPU-singularity-image OR download>
 
 input_file: <path/to/cactus-input-file>
 
 output_dir: <path/to/desired/output-directory>
-
-overwrite_output_dir: <True/False>
 
 final_prefix: <desired name of final .hal and .maf files with all genomes appended>
 
@@ -159,11 +157,10 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 
 | Option                 | Description                                                                 |
 |----------------------- | ----------------------------------------------------------------------------|
-| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. This will be used whether `use_gpu` is True or False. |
-| `cactus_gpu_path`      | Path to the Cactus GPU Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. This will only be used if `use_gpu` is True. |
+| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. If a version string is provided (e.g. 2.9.5), then that version will be downloaded and used. This will be used whether `use_gpu` is True or False. |
+| `cactus_gpu_path`      | Path to the Cactus GPU Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. If a version string is provided (e.g. 2.9.5), then that version will be downloaded and used. This will only be used if `use_gpu` is True. |
 | `input_file`           | Path to the input file containing the species tree and genome paths (described above). |
 | `output_dir`           | Directory where the all output will be written. |
-| `overwrite_output_dir` | Whether to overwrite the output directory if it already exists (True/False). |
 | `final_prefix`         | The name of the final .hal and .maf files with all aligned genomes appended. The final files will be `<final_prefix>.hal` and `<final_prefix>.maf`. These files will be placed within `output_dir`. |
 | `tmp_dir`              | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
 | `use_gpu`              | Whether to use the GPU version of Cactus for the alignment (True/False). |
@@ -249,7 +246,7 @@ First, we want to make sure everything is setup properly by using the `--dryrun`
 This is done with the following command, changing the snakefile `-s` and `--configfile` paths to the one you have created for your project:
 
 ```bash
-snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus.smk> --configfile <path/to/your/snakmake-config.yml> --dryrun
+snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus.smk> --configfile <path/to/your/snakmake-config.yml> --dryrun
 ```
 
 ??? info "Command breakdown"
@@ -257,10 +254,9 @@ snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactu
     | Command-line option                               | Description |
     | ------------------------------------------------- | ----------- |
     | `snakemake`                                       | The call to the snakemake workflow program to execute the workflow. |
-    | `-p`                                              | Print out the commands that will be executed. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
     | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started). |
-    | `-s </path/to/cactus.smk>                     | The path to the workflow file. |
+    | `-s </path/to/cactus.smk>`                        | The path to the workflow file. |
     | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file). |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
 
@@ -300,7 +296,7 @@ If you see any red text, that likely means an error has occurred that must be ad
 If you're satisfied that the `--dryrun` has completed successfully and you are ready to start submitting Cactus jobs to the cluster, you can do so by simply removing the `--dryrun` option from the command above:
 
 ```bash
-snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus.smk> --configfile <path/to/your/snakmake-config.yml>
+snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus.smk> --configfile <path/to/your/snakmake-config.yml>
 ```
 
 This will start submitting jobs to SLURM. On your screen, you will see continuous updates regarding job status in blue text. In another terminal, you can also check on the status of your jobs by running `squeue -u <your user id>`. 
@@ -339,13 +335,13 @@ After that, run a dryrun of the test dataset by changing into the `tests/` direc
 
 ```bash
 cd tests/evolverMammals/
-snakemake -p -j 10 -e slurm -s ../cactus.smk --configfile evolverMammals-cfg.yaml --dryurun
+snakemake -j 10 -e slurm -s ../../cactus.smk --configfile evolverMammals-cfg.yaml --dryurun
 ```
 
 If this completes without error, run the pipeline by removing the `--dryrun` option:
 
 ```bash
-snakemake -p -j 10 -e slurm -s ../cactus.smk --configfile evolverMammals-cfg.yaml
+snakemake -j 10 -e slurm -s ../../cactus.smk --configfile evolverMammals-cfg.yaml
 ```
 
 ## Pipeline outputs
@@ -358,27 +354,15 @@ A suit of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit
 
 ## Questions/troubleshooting
 
-??? question "1. I want to use a specific version of the Cactus singularity image. How can I do so?"
+??? question "1. My jobs were running but my Snakemake process crashed because of connection issues/server maintenance! What do I do?"
 
-    ##### 1. Using a specific Cactus version
-
-    If you want to use a specific Cactus version, search [the available versions in the repository](https://quay.io/repository/comparative-genomics-toolkit/cactus?tab=tags) and run the following command, substituting `<desired version>` for the string of the version you want, *e.g.* "v2.9.3":
-
-    ```bash
-    singularity pull --disable-cache docker://quay.io/comparative-genomics-toolkit/cactus:<desired version>
-    ```
-
-    Then, in the [Snakemake config file](#preparing-the-snakemake-config-file), set `cactus_path:` to be the path to the `.sif` file that was downloaded.
-
-??? question "2. My jobs were running but my Snakemake process crashed because of connection issues/server maintenance! What do I do?"
-
-    ##### 2. Snakemake crashes
+    ##### 1. Snakemake crashes
 
     As long as there wasn't an error with one of the jobs, Snakemake is designed to be able to resume and resubmit jobs pretty seamlessly. You just need to run the same command you ran to begin with and it should pickup submitting jobs where it left off. You could also run a `--dryrun` first and it should tell you which jobs are left to be done.
 
-??? question "3. How can I tell if my input Newick tree is rooted? If it isn't rooted, how can I root it? Or if it is rooted, how can I re-root it?"
+??? question "2. How can I tell if my input Newick tree is rooted? If it isn't rooted, how can I root it? Or if it is rooted, how can I re-root it?"
 
-    ##### 3. How can I tell if my input Newick tree is rooted?
+    ##### 2. How can I tell if my input Newick tree is rooted?
 
     The easiest way to check if your tree is rooted is probably to load the tree into [R](https://www.r-project.org/) with the `ape` package. This can be done with the following commands:
 
@@ -418,9 +402,9 @@ A suit of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit
      write.tree(tree, file="your-rooted-tree.nwk")
     ```
 
-??? question "4. How can I tell if my genome FASTA files are softmasked? How can I mask them if they aren't already?"
+??? question "3. How can I tell if my genome FASTA files are softmasked? How can I mask them if they aren't already?"
 
-    ##### 4. How can I tell if my genome FASTA files are softmasked?
+    ##### 3. How can I tell if my genome FASTA files are softmasked?
 
     Cactus requires the input genomes to be softmasked. This means that masked bases appear as lower case letters: a, t, c, g. Hopefully the source of your genome FASTA file has given you some information about how it was prepared, including how it was masked. If not, a very quick method to check for the occurrence of any lower case letter in the sequence is:
 
@@ -438,17 +422,17 @@ A suit of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit
 
     If your genomes are not softmasked and you wish to do so, you will have to run a program like [RepeatMasker](https://www.repeatmasker.org/) or [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler) on it. Please consult the documentation for these tools.
 
-??? question "5. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?"
+??? question "4. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?"
 
-    ##### 5. Clusters other than SLURM?
+    ##### 4. Clusters other than SLURM?
 
-    Generally, it should be relatively easy to update the cluster profile (`profiles/slurm_profile/config.yaml`) and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
+    Generally, it should be relatively easy install and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
 
     If you need help or run into problems, please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) and we'll try and help - though it will likely be up to you to test on your own cluster, since we only have easy access to a cluster running SLURM.
 
-??? question "6. I got an error related to InsufficientSystemResources regarding GPUs during run_lastz in the `blast` rule. What do I do?"
+??? question "5. I got an error related to InsufficientSystemResources regarding GPUs during run_lastz in the `blast` rule. What do I do?"
 
-    ##### 6. `blast` GPU error
+    ##### 5. `blast` GPU error
 
     If the text of the error is somewhat similar to:
 
@@ -462,16 +446,16 @@ A suit of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit
 
     Read more about this [here](https://github.com/harvardinformatics/cactus-snakemake/issues/2) and [here](https://github.com/ComparativeGenomicsToolkit/cactus/issues/1618).
 
-??? question "7. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
+??? question "6. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
 
-    ##### 7. Encountering errors
+    ##### 6. Encountering errors
 
     Please [search for or create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
     Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
 
-??? question "8. I have an idea to improve or add to the pipeline. What do I do?"
+??? question "7. I have an idea to improve or add to the pipeline. What do I do?"
 
-    ##### 8. Pipeline improvements
+    ##### 7. Pipeline improvements
     
     Great! Please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) describing your idea so we can discuss its implementation!
