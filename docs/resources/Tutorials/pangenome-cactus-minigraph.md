@@ -187,7 +187,7 @@ First, we want to make sure everything is setup properly by using the `--dryrun`
 This is done with the following command, changing the snakefile `-s` and `--configfile` paths to the one you have created for your project:
 
 ```bash
-snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_minigraph.smk> --configfile <path/to/your/snakmake-config.yml> --dryrun
+snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_minigraph.smk> --configfile <path/to/your/snakmake-config.yml> --dryrun
 ```
 
 ??? info "Command breakdown"
@@ -195,7 +195,6 @@ snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactu
     | Command-line option                               | Description |
     | ------------------------------------------------- | ----------- |
     | `snakemake`                                       | The call to the snakemake workflow program to execute the workflow. |
-    | `-p`                                              | Print out the commands that will be executed. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
     | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started). |
     | `-s </path/to/cactus_minigraph.smk>`              | The path to the workflow file. |
@@ -242,7 +241,7 @@ If you see any red text, that likely means an error has occurred that must be ad
 If you're satisfied that the `--dryrun` has completed successfully and you are ready to start submitting Cactus jobs to the cluster, you can do so by simply removing the `--dryrun` option from the command above:
 
 ```bash
-snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_minigraph.smk> --configfile <path/to/your/snakmake-config.yml>
+snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_minigraph.smk> --configfile <path/to/your/snakmake-config.yml>
 ```
 
 This will start submitting jobs to SLURM. On your screen, you will see continuous updates regarding job status in blue text. In another terminal, you can also check on the status of your jobs by running `squeue -u <your user id>`. 
@@ -281,13 +280,13 @@ After that, run a dryrun of the test dataset by changing into the `tests/` direc
 
 ```bash
 cd tests/yeast-minigraph/
-snakemake -p -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml --dryrun
+snakemake -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml --dryrun
 ```
 
 If this completes without error, run the pipeline by removing the `--dryrun` option:
 
 ```bash
-snakemake -p -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml
+snakemake -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml
 ```
 
 ## Pipeline outputs
