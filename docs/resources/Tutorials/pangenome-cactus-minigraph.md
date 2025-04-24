@@ -133,7 +133,7 @@ Cactus-minigraph requires that you select one sample as a reference sample [for 
 Besides the sequence input, the pipeline needs some extra configuration to know where to look for files and write output. That is done in the Snakemake configuration file for a given run. It contains 2 sections, one for specifying the input and output options, and one for specifying resources for the various rules (see [below](#specifying-resources-for-each-rule)). The first part should look something like this:
 
 ```
-cactus_path: <path/to/cactus-singularity-image OR download>
+cactus_path: <path/to/cactus-singularity-image OR download OR version string>
 
 input_file: <path/to/cactus-input-file>
 
@@ -162,17 +162,19 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 Below these options in the config file are further options for specifying resource usage for each rule that the pipeline will run. For example:
 
 ```
-minigraph_partition: "shared"
-minigraph_cpu: 8
-minigraph_mem: 25000
-minigraph_time: 30
+rule_resources:
+  minigraph:
+    partition: shared
+    mem_mb: 25000
+    cpus: 8
+    time: 30
 ```
 
 !!! warning "Notes on resource allocation"
 
     * Be sure to use partition names appropriate your cluster. Several examples in this tutorial have partition names that are specific to the Harvard cluster, so be sure to change them.
     * The steps in the cactus-minigraph pipeline are not GPU compatible, so there are no GPU options in this pipeline.
-    * **mem is in MB** and **time is in minutes**.
+    * **mem_mb is in MB** and **time is in minutes**.
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs.
 
