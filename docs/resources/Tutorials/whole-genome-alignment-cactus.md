@@ -138,7 +138,7 @@ Besides the sequence input, the pipeline needs some extra configuration to know 
 ```
 cactus_path: <path/to/cactus-singularity-image OR download OR version string>
 
-cactus_gpu_path: <path/to/cactus-GPU-singularity-image OR download>
+cactus_gpu_path: <path/to/cactus-GPU-singularity-image OR download OR version string>
 
 input_file: <path/to/cactus-input-file>
 
@@ -162,6 +162,7 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 | `input_file`           | Path to the input file containing the species tree and genome paths (described above). |
 | `output_dir`           | Directory where the all output will be written. |
 | `final_prefix`         | The name of the final .hal and .maf files with all aligned genomes appended. The final files will be `<final_prefix>.hal` and `<final_prefix>.maf`. These files will be placed within `output_dir`. |
+| `maf_reference`        | The label for the genome to use when converting from HAL to MAF. This means that the MAF alignment will be projected on to that genome's coordinate system. |
 | `tmp_dir`              | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
 | `use_gpu`              | Whether to use the GPU version of Cactus for the alignment (True/False). |
 
@@ -170,18 +171,19 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 Below these options in the config file are further options for specifying resource usage for each rule that the pipeline will run. For example:
 
 ```
-preprocess_partition: "shared" 
-preprocess_cpu: 8
-preprocess_mem: 25000             # in MB
-preprocess_time: 30               # in minutes
+rule_resources:
+  preprocess:
+    partition: shared
+    mem_mb: 25000
+    cpus: 8
+    time: 30
 
-##########################
-
-blast_partition: "gpu_test" # If use_gpu is True, this must be a partition with GPUs
-blast_gpu: 1                # If use_gpu is False, this will be ignored
-blast_cpu: 48
-blast_mem: 50000            # in MB
-blast_time: 120             # in minutes
+  blast:
+    partition: shared  # If use_gpu is True, this must be a partition with GPUs
+    mem_mb: 50000
+    cpus: 48
+    gpus: 2            # If use_gpu is False, this will be ignored
+    time: 120
 ```
 
 **The rule _blast_ is the only one that uses GPUs if `use_gpu` is True.**
@@ -190,8 +192,8 @@ blast_time: 120             # in minutes
 
     * Be sure to use partition names appropriate your cluster. Several examples in this tutorial have partition names that are specific to the Harvard cluster, so be sure to change them.
     * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rule **blast** must be GPU enabled. If not, the pipeline will fail to run.
-    * The `blast_gpu:` option will be ignored if `use_gpu: False` is set.
-    * **mem is in MB** and **time is in minutes**.
+    * The `blast: gpus:` option will be ignored if `use_gpu: False` is set.
+    * **mem_mb is in MB** and **time is in minutes**.
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.
 
@@ -350,7 +352,7 @@ The pipeline will output a [.paf](https://github.com/lh3/miniasm/blob/master/PAF
 
 The final alignment will also be presented in MAF format as `<final_prefix>.<maf_reference>.maf`, again where `<maf_reference>` is whatever you set in the Snakemake config. This file will include all sequences. Another MAF file, `<final_prefix>.<maf_reference>.nodupes.maf` will also be generated, which is the alignment in MAF format with no duplicate sequences. The de-duplicated MAF file is generated with `--dupeMode single`. See the [Cactus documentation regarding MAF export](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#maf-export) for more info.
 
-A suit of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit/Hal) is included with the Cactus singularity image if you need to manipulate or analyze .hal files. There are many tools for manipulating MAF files, though they are not always easy to use. The makers of Cactus also develop [taffy](https://github.com/ComparativeGenomicsToolkit/taffy), which can manipulate MAF files by converting them to TAF files.
+A suite of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit/Hal) is included with the Cactus singularity image if you need to manipulate or analyze .hal files. There are many tools for manipulating MAF files, though they are not always easy to use. The makers of Cactus also develop [taffy](https://github.com/ComparativeGenomicsToolkit/taffy), which can manipulate MAF files by converting them to TAF files.
 
 ## Questions/troubleshooting
 

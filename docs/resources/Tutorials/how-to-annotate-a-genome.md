@@ -74,7 +74,7 @@ While the first of these points is dependent upon your research program, the sec
 Below is a decision tree for picking an annotation method, based upon our evaluation of the performance of 12 different methods in our forthcoming paper in *Genome Research.
    
 <center>
-![Genome annotation method decision tree](../img/genome_annotation_decision_chart.png)
+    <img src="../../img/genome_annotation_decision_chart.png" alt="Genome annotation method decision tree" />
 </center>
 
 The dashed lines that indicate "optional integration" refer to the combining of more than one genome annotation method, which we elaborate upon below.
