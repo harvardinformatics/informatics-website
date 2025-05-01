@@ -1,6 +1,8 @@
 #!/bin/sh
 # .githooks/pre-commit
 
+echo "Running pre-commit hook via sh..."
+
 FILE="mkdocs.yml"
 TEMP_FILE="$(mktemp)"
 
@@ -15,7 +17,10 @@ fi
 MODIFIED=0
 while IFS= read -r LINE; do
   if echo "$LINE" | grep -q "^\s*ignore: \['\*\.ipynb'\]"; then
-    echo "${LINE/#/    #}" >> "$TEMP_FILE"
+    # Extract indent and recomment cleanly
+    INDENT=$(printf "%s" "$LINE" | sed -E 's/^(\s*).*$/\1/')
+    BODY=$(printf "%s" "$LINE" | sed -E 's/^\s*(.*)$/\1/')
+    echo "${INDENT}# ${BODY}" >> "$TEMP_FILE"
     MODIFIED=1
   else
     echo "$LINE" >> "$TEMP_FILE"
