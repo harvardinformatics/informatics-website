@@ -44,6 +44,9 @@ jobs:
           path: .lycheecache
           key: cache-lychee-${{ github.sha }}
           restore-keys: cache-lychee-
+      - name: Ensure no stale .lycheecache is present
+        if: steps.restore-cache.outputs.cache-hit != 'true'
+        run: rm -f .lycheecache
       - name: Run lychee
         uses: lycheeverse/lychee-action@v1.8.0
         with:
