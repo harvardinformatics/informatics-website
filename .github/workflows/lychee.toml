@@ -9,7 +9,6 @@ timeout = 5
 
 # Exclude full URLs (exact matches)
 exclude = [
-    "file://*/docs/assets/*",
     "https://scholar.google.com",
     "https://academic.oup.com/bioinformatics/",
     "https://useast.ensembl.org",
@@ -23,7 +22,6 @@ exclude = [
 
 # Exclude files or paths from checking
 exclude_path = [
-    "templates/cards.html",
     "assets/home.html",
     "404.html"
 ]
