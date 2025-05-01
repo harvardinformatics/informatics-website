@@ -72,7 +72,7 @@ plugins:
   - table-reader
   - mkdocs-jupyter:
       ignore: ['*student.ipynb']
-      #ignore: ['*.ipynb'] # for development, uncomment this line to prevent building all notebooks with each change. be sure to recomment before pushing to remote.
+      ignore: ['*.ipynb'] # for development, uncomment this line to prevent building all notebooks with each change. be sure to re-comment before pushing to remote.
 hooks:
   - scripts/about_generator.py 
   - scripts/resources_generator.py 
