@@ -31,11 +31,17 @@ jobs:
       actions: read
     steps:
       # Cache lychee external URL results for 30 days
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Download site
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-      - run: tar -xf artifact.tar && rm artifact.tar
+
+      - name: Extract artifact
+        run: tar -xf artifact.tar && rm artifact.tar      
+
       # https://github.com/lycheeverse/lychee-action#utilising-the-cache-feature
       - name: Restore lychee cache
         id: restore-cache
@@ -44,11 +50,13 @@ jobs:
           path: .lycheecache
           key: cache-lychee-${{ github.sha }}
           restore-keys: cache-lychee-
+
       - name: Run lychee
         uses: lycheeverse/lychee-action@v1.8.0
         with:
-          args: "--base . --cache --config lychee.toml -- './**/*.html' './**/*.css'"
+          args: "--base . --cache --config .github/workflows/lychee.toml -- './**/*.html' './**/*.css'"
           fail: true
+          
       - name: Save lychee cache
         uses: actions/cache/save@v3
         if: always()
