@@ -23,6 +23,6 @@ exclude = [
 # Exclude files or paths from checking
 exclude_path = [
     "templates/cards.html",
-    "docs/assets/home.html",
+    "assets/home.html",
     "404.html"
 ]
