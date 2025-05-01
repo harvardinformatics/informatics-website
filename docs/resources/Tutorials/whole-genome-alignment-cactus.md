@@ -88,11 +88,11 @@ With that, you should be ready to set-up your data for the pipeline!
 
 ## Inputs you need to prepare
 
-To run this pipeline, you will need:
+To run this pipeline, you will need (corresponding Snakemake config option given in parentheses):
 
-1. A [**rooted**](#3-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format](https://en.wikipedia.org/wiki/Newick_format).
-2. The [**softmasked**](#4-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each species.
-3. A reference genome to project the alignment to MAF format.
+1. A [**rooted**](#3-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format](https://en.wikipedia.org/wiki/Newick_format) (specified in `input_file`).
+2. The [**softmasked**](#4-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each species (specified in `input_file`).
+3. A reference genome to project the alignment to MAF format (`maf_reference`).
 
 You will use these to create the input file for Cactus.
 
@@ -131,7 +131,7 @@ In order to run the last step of the workflow that converts the HAL format to a 
 
     The config for the Cactus test data can be found at [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/evolverMammals-cfg.yaml) or at `tests/evolverMammals/evolverMammals-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
 
-    Additionally, a blank template file is located [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-template.yaml) or at `config-template.yaml` in your downloaded cactus-snakemake repo.
+    Additionally, a blank template file is located [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-templates/config-template.yaml) or at `config-templates/config-template.yaml` in your downloaded cactus-snakemake repo.
 
 Besides the sequence input, the pipeline needs some extra configuration to know where to look for files and write output. That is done in the Snakemake configuration file for a given run. It contains 2 sections, one for specifying the input and output options, and one for specifying resources for the various rules (see [below](#specifying-resources-for-each-rule)). The first part should look something like this:
 

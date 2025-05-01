@@ -1,0 +1,39 @@
+#!/bin/sh
+# .githooks/pre-commit
+
+echo "Running pre-commit hook via sh..."
+
+FILE="mkdocs.yml"
+TEMP_FILE="$(mktemp)"
+
+# Check if the file exists
+if [ ! -f "$FILE" ]; then
+  echo "Warning: mkdocs.yml not found"
+  exit 0
+fi
+
+# Recomment the development-only ignore line
+# Matches exactly any uncommented line saying "ignore: ['*.ipynb']"
+MODIFIED=0
+while IFS= read -r LINE; do
+  if echo "$LINE" | grep -q "^\s*ignore: \['\*\.ipynb'\]"; then
+    # Extract indent and recomment cleanly
+    INDENT=$(printf "%s" "$LINE" | sed -E 's/^(\s*).*$/\1/')
+    BODY=$(printf "%s" "$LINE" | sed -E 's/^\s*(.*)$/\1/')
+    echo "${INDENT}# ${BODY}" >> "$TEMP_FILE"
+    MODIFIED=1
+  else
+    echo "$LINE" >> "$TEMP_FILE"
+  fi
+done < "$FILE"
+
+if [ "$MODIFIED" -eq 1 ]; then
+  echo "Detected uncommented development-only ignore line in mkdocs.yml"
+  echo "Re-commenting it:       ignore: ['*.ipynb'] → # ignore: ['*.ipynb']"
+  mv "$TEMP_FILE" "$FILE"
+  git add "$FILE"
+else
+  rm "$TEMP_FILE"
+fi
+
+exit 0
