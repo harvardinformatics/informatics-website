@@ -54,7 +54,7 @@ jobs:
       - name: Run lychee
         uses: lycheeverse/lychee-action@v1.8.0
         with:
-          args: "--base . --cache --config .github/workflows/lychee.toml -- '.site/**/*.html' '.site/**/*.css'"
+          args: "--base . --cache --config .github/workflows/lychee.toml -- 'site/**/*.html' 'site/**/*.css'"
           fail: true
 
       - name: Save lychee cache
