@@ -57,6 +57,18 @@ If the help menu displays, you already have Singularity installed. If not, you w
 mamba install conda-forge::singularity
 ```
 
+!!! tip "Cannon cluster Snakemake plugin"
+
+    If you are on the Harvard Cannon cluster, instead of the generic snakemake-executor-plugin-slurm, you can use our specific plugin for the Cannon cluster: [snakemake-executor-plugin-cannon](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html). This facilitates *automatic partition selection* based on requested resources. Install this in your environment with:
+
+    ```bash
+    mamba install bioconda::snakemake-executor-plugin-cannon
+    ```
+
+    Then, when running the workflow, specify the cannon executor with `-e cannon` instead of `-e slurm`.
+
+    If you are not on the Harvard Cannon cluster, stick with the generic SLURM plugin. You will just need to directly specify the partitions for each rule in the config file ([see below](#specifying-resources-for-each-rule)).
+
 ### Downloading the cactus-snakemake pipeline
 
 The [pipeline](https://github.com/harvardinformatics/cactus-snakemake/) is currently available on github. You can install it on the Harvard cluster or any computer that has `git` installed by navigating to the directory in which you want to download it and doing one of the following:
@@ -194,6 +206,7 @@ rule_resources:
     * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rule **blast** must be GPU enabled. If not, the pipeline will fail to run.
     * The `blast: gpus:` option will be ignored if `use_gpu: False` is set.
     * **mem_mb is in MB** and **time is in minutes**.
+    * **If using the [snakemake-executor-plugin-cannon](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html) specifically for the Harvard Cannon cluster, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.
 
@@ -257,7 +270,7 @@ snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus.s
     | ------------------------------------------------- | ----------- |
     | `snakemake`                                       | The call to the snakemake workflow program to execute the workflow. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
-    | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started). |
+    | `-e slurm`                                        | Specify to use the SLURM executor plugin, or use `-e cannon` if using the Cannon specific plugin.  See: [Getting started](#getting-started) |
     | `-s </path/to/cactus.smk>`                        | The path to the workflow file. |
     | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file). |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
