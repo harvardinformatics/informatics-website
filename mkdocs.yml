@@ -1,4 +1,4 @@
-site_name: Harvard FAS Informatics Group
+﻿site_name: Harvard FAS Informatics Group
 copyright: © 2023-2025 | Harvard FAS Informatics | <a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Digital Accessibility</a>
 ## Site info
 
@@ -73,7 +73,7 @@ plugins:
   - table-reader
   - mkdocs-jupyter:
       ignore: ['*student.ipynb']
-      #ignore: ['*.ipynb'] # for development, uncomment this line to prevent building all notebooks with each change. be sure to recomment before pushing to remote.
+      # ignore: ['*.ipynb'] # for development, uncomment this line to prevent building all notebooks with each change. be sure to re-comment before pushing to remote (though re-commenting now handled with pre-commit hooks).
 hooks:
   - scripts/about_generator.py 
   - scripts/resources_generator.py 

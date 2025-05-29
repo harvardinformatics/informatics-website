@@ -1,0 +1,27 @@
+# lychee.toml
+
+# Optional: where to store cache
+cache = true
+max_cache_age = "30d"
+max_concurrency = 1
+require_https = true
+timeout = 5
+
+# Exclude full URLs (exact matches)
+exclude = [
+    "https://scholar.google.com",
+    "https://academic.oup.com/bioinformatics/",
+    "https://useast.ensembl.org",
+    "https://doi.org",
+    "https://academic.oup.com/nar",
+    "https://www.gnu.org",
+    "https://anaconda.org",
+    "https://fonts.gstatic.com",
+    "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+]
+
+# Exclude files or paths from checking
+exclude_path = [
+    "assets/home.html",
+    "404.html"
+]

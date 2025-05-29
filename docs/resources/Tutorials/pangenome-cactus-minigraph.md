@@ -58,6 +58,18 @@ If the help menu displays, you already have Singularity installed. If not, you w
 mamba install conda-forge::singularity
 ```
 
+!!! tip "Cannon cluster Snakemake plugin"
+
+    If you are on the Harvard Cannon cluster, instead of the generic snakemake-executor-plugin-slurm, you can use our specific plugin for the Cannon cluster: [snakemake-executor-plugin-cannon](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html). This facilitates *automatic partition selection* based on requested resources. Install this in your environment with:
+
+    ```bash
+    mamba install bioconda::snakemake-executor-plugin-cannon
+    ```
+
+    Then, when running the workflow, specify the cannon executor with `-e cannon` instead of `-e slurm`.
+
+    If you are not on the Harvard Cannon cluster, stick with the generic SLURM plugin. You will just need to directly specify the partitions for each rule in the config file ([see below](#specifying-resources-for-each-rule)).
+
 ### Downloading the cactus-snakemake pipeline
 
 The [pipeline](https://github.com/harvardinformatics/cactus-snakemake/) is currently available on github. You can install it on the Harvard cluster or any computer that has `git` installed by navigating to the directory in which you want to download it and doing one of the following:
@@ -89,10 +101,10 @@ With that, you should be ready to set-up your data for the pipeline!
 
 ## Inputs you need to prepare
 
-To run this pipeline, you will need:
+To run this pipeline, you will need (corresponding Snakemake config option given in parentheses):
 
-1. The assembled genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each sample.
-2. A reference sample.
+1. The assembled genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each sample (specified in `input_file`).
+2. A reference sample (`reference`).
 
 You will use these to create the input file for Cactus-minigraph.
 
@@ -128,18 +140,16 @@ Cactus-minigraph requires that you select one sample as a reference sample [for 
 
     The config for the Cactus-minigraph test data can be found at [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeast-minigraph-cfg.yaml) or at `tests/yeast-minigraph/yeast-minigraph-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
 
-    Additionally, a blank template file is located [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/minigraph-config-template.yaml) or at `minigraph-config-template.yaml` in your downloaded cactus-snakemake repo.
+    Additionally, a blank template file is located [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-templates/minigraph-config-template.yaml) or at `config-templates/minigraph-config-template.yaml` in your downloaded cactus-snakemake repo.
 
 Besides the sequence input, the pipeline needs some extra configuration to know where to look for files and write output. That is done in the Snakemake configuration file for a given run. It contains 2 sections, one for specifying the input and output options, and one for specifying resources for the various rules (see [below](#specifying-resources-for-each-rule)). The first part should look something like this:
 
 ```
-cactus_path: <path/to/cactus-singularity-image OR download>
+cactus_path: <path/to/cactus-singularity-image OR download OR version string>
 
 input_file: <path/to/cactus-input-file>
 
 output_dir: <path/to/desired/output-directory>
-
-overwrite_output_dir: <True/False>
 
 reference: <Sample ID from input_file>
 
@@ -152,10 +162,9 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 
 | Option                 | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
-| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. |
+| `cactus_path`          | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. If a version string is provided (e.g. 2.9.5), then that version will be downloaded and used. |
 | `input_file`           | Path to the input file containing the species tree and genome paths (described above). |
 | `output_dir`           | Directory where the all output will be written. |
-| `overwrite_output_dir` | Whether to overwrite the output directory if it already exists (True/False). |
 | `reference`            | The sample ID from the input file to serve as the reference for pangenome creation. |
 | `prefix`               | A string that will be appended to all files created by the pipeline. |
 | `tmp_dir`              | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
@@ -165,17 +174,20 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 Below these options in the config file are further options for specifying resource usage for each rule that the pipeline will run. For example:
 
 ```
-minigraph_partition: "shared"
-minigraph_cpu: 8
-minigraph_mem: 25000
-minigraph_time: 30
+rule_resources:
+  minigraph:
+    partition: shared
+    mem_mb: 25000
+    cpus: 8
+    time: 30
 ```
 
 !!! warning "Notes on resource allocation"
 
     * Be sure to use partition names appropriate your cluster. Several examples in this tutorial have partition names that are specific to the Harvard cluster, so be sure to change them.
     * The steps in the cactus-minigraph pipeline are not GPU compatible, so there are no GPU options in this pipeline.
-    * **mem is in MB** and **time is in minutes**.
+    * **mem_mb is in MB** and **time is in minutes**.
+    * **If using the [snakemake-executor-plugin-cannon](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html) specifically for the Harvard Cannon cluster, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**    
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs.
 
@@ -190,7 +202,7 @@ First, we want to make sure everything is setup properly by using the `--dryrun`
 This is done with the following command, changing the snakefile `-s` and `--configfile` paths to the one you have created for your project:
 
 ```bash
-snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_minigraph.smk> --configfile <path/to/your/snakmake-config.yml> --dryrun
+snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_minigraph.smk> --configfile <path/to/your/snakmake-config.yml> --dryrun
 ```
 
 ??? info "Command breakdown"
@@ -198,10 +210,9 @@ snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactu
     | Command-line option                               | Description |
     | ------------------------------------------------- | ----------- |
     | `snakemake`                                       | The call to the snakemake workflow program to execute the workflow. |
-    | `-p`                                              | Print out the commands that will be executed. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
-    | `-e slurm`                                        | Specify to use the SLURM executor plugin. See: [Getting started](#getting-started). |
-    | `-s </path/to/cactus_minigraph.smk>`               | The path to the workflow file. |
+    | `-e slurm`                                        | Specify to use the SLURM executor plugin, or use `-e cannon` if using the Cannon specific plugin.  See: [Getting started](#getting-started) |
+    | `-s </path/to/cactus_minigraph.smk>`              | The path to the workflow file. |
     | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file). |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
 
@@ -245,7 +256,7 @@ If you see any red text, that likely means an error has occurred that must be ad
 If you're satisfied that the `--dryrun` has completed successfully and you are ready to start submitting Cactus jobs to the cluster, you can do so by simply removing the `--dryrun` option from the command above:
 
 ```bash
-snakemake -p -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_minigraph.smk> --configfile <path/to/your/snakmake-config.yml>
+snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_minigraph.smk> --configfile <path/to/your/snakmake-config.yml>
 ```
 
 This will start submitting jobs to SLURM. On your screen, you will see continuous updates regarding job status in blue text. In another terminal, you can also check on the status of your jobs by running `squeue -u <your user id>`. 
@@ -284,13 +295,13 @@ After that, run a dryrun of the test dataset by changing into the `tests/` direc
 
 ```bash
 cd tests/yeast-minigraph/
-snakemake -p -j 10 -e slurm -s ../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml --dryrun
+snakemake -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml --dryrun
 ```
 
 If this completes without error, run the pipeline by removing the `--dryrun` option:
 
 ```bash
-snakemake -p -j 10 -e slurm -s ../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml
+snakemake -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigraph-cfg.yaml
 ```
 
 ## Pipeline outputs
@@ -301,48 +312,36 @@ For more information about all outputs, see [Cactus's minigraph documentation se
 
 ## Questions/troubleshooting
 
-??? question "1. I want to use a specific version of the Cactus singularity image. How can I do so?"
+??? question "1. My jobs were running but my Snakemake process crashed because of connection issues/server maintenance! What do I do?"
 
-    ##### 1. Using a specific Cactus version
-
-    If you want to use a specific Cactus version, search [the available versions in the repository](https://quay.io/repository/comparative-genomics-toolkit/cactus?tab=tags) and run the following command, substituting `<desired version>` for the string of the version you want, *e.g.* "v2.9.3":
-
-    ```bash
-    singularity pull --disable-cache docker://quay.io/comparative-genomics-toolkit/cactus:<desired version>
-    ```
-
-    Then, in the [Snakemake config file](#preparing-the-snakemake-config-file), set `cactus_path:` to be the path to the `.sif` file that was downloaded.
-
-??? question "2. My jobs were running but my Snakemake process crashed because of connection issues/server maintenance! What do I do?"
-
-    ##### 2. Snakemake crashes
+    ##### 1. Snakemake crashes
 
     As long as there wasn't an error with one of the jobs, Snakemake is designed to be able to resume and resubmit jobs pretty seamlessly. You just need to run the same command you ran to begin with and it should pickup submitting jobs where it left off. You could also run a `--dryrun` first and it should tell you which jobs are left to be done.
 
-??? question "3. The Cactus-minigraph docs say to not use hardmasked gneomes. How can I tell if my genome FASTA files are hardmasked?"
+??? question "2. The Cactus-minigraph docs say to not use hardmasked genomes. How can I tell if my genome FASTA files are hardmasked?"
 
-    ##### 3. How can I tell if my genome FASTA files are hardmasked?
+    ##### 2. How can I tell if my genome FASTA files are hardmasked?
 
     Hardmasking means you replace low quality or low confidence bases in your assembly with N characters. Unfortunately, there are many reasons for Ns to appear in a genome fasta file, so it is difficult to tell if it is because it is hardmasked based on the presence of Ns alone. Hopefully the source of the file has left some documentation describing how it was prepared...
 
-??? question "4. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?"
+??? question "3. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?"
 
-    ##### 4. Clusters other than SLURM?
+    ##### 3. Clusters other than SLURM?
 
-    Generally, it should be relatively easy to update the cluster profile (`profiles/slurm_profile/config.yaml`) and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
+    Generally, it should be relatively easy install and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
 
     If you need help or run into problems, please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) and we'll try and help - though it will likely be up to you to test on your own cluster, since we only have easy access to a cluster running SLURM.
 
-??? question "5. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
+??? question "4. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
 
-    ##### 5. Encountering errors
+    ##### 4. Encountering errors
 
     Please [search for or create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
     Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
 
-??? question "6. I have an idea to improve or add to the pipeline. What do I do?"
+??? question "5. I have an idea to improve or add to the pipeline. What do I do?"
 
-    ##### 6. Pipeline improvements
+    ##### 5. Pipeline improvements
     
     Great! Please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) describing your idea so we can discuss its implementation!
