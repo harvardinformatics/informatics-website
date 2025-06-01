@@ -21,6 +21,44 @@
 /* For screens smaller than 1600px: Sets main content grid to take of 95% of its parent (.md-main) */
 
 /*------------------------------------------------------*/
+/* Button styles */
+
+.md-button {
+  transition: all 0.4s ease !important;
+}
+
+.md-button:hover, .md-button:focus {
+  background-color: #ce4d4b !important;
+  color: #ffffff !important;
+  border-color: #ce4d4b !important;
+  border-radius: 10px;
+}
+
+.md-button.md-button--primary {
+  background-color: #ce4d4b !important;
+  border-color: #ce4d4b !important;
+  color: #ffffff !important;
+  border-radius: 5px !important;
+  transition: all 0.4s ease !important;
+}
+
+.md-button.md-button--primary:hover,
+.md-button.md-button--primary:focus {
+  background-color: #e66b69 !important;
+  border-color: #ce4d4b !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+}
+
+.centered {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: max-content !important;   /* button fits its text */
+}
+
+
+/*------------------------------------------------------*/
 /* Navigation and sidebar styles */
 
 .md-sidebar--primary {
