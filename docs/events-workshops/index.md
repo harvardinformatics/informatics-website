@@ -34,15 +34,36 @@ filter="invert(.9) saturate(0.5) hue-rotate(145deg)"
 
 ## Latest workshop content
 
-This section contains the most up-to-date content for our workshops!
+This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is listed after each one.
 
-### Introduction to Python Intensive (January 2025)
+### :fontawesome-brands-python: Introduction to Python Intensive (January 2025)
 
 This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
-[Python Intensive Landing Page](Workshops/workshops-python/index.md){ .md-button .md-button--primary .centered }
+[Python Intensive Landing Page :material-arrow-right:](Workshops/workshops-python/index.md){ .md-button .md-button--primary .centered }
 
-### One hour workshops & Seminars: (Fall 2024)
+
+### :material-food-apple-outline: Healthy Habits for Data Science (Spring 2024)
+
+This workshop aims to teach students how to be more effective at working on their projects using reproducible habits. We learn how to organize projects on the local machine as well as the Cannon cluster, how to manage software environments, how to use git and GitHub to track code changes, and how to write and scale scripts on an HPC.
+
+[Healthy Habits Landing Page :material-arrow-right:](Workshops/Healthy-habits/index.md){ .md-button .md-button--primary .centered }
+
+### :material-application-brackets-outline: Unix tips and tricks for bioinformatics (Spring 2024)
+
+This workshop aims to introduce students to some basic bioinformatics file formats, tools, and general best practices. The first two days of the workshop will be dedicated to introductions of bioinformatics file formats and the command line tools that we use to view, manipulate, and analyze them. After that, we will begin to shift from using individual commands to writing shell scripts and constructing bioinformatics workflows.
+
+[Biotips Landing Page ](Workshops/Biotips/index.md){ .md-button .md-button--primary .centered }
+
+### :material-language-r: Introduction to R (Fall 2023)
+
+This workshop aims to introduce first-time users to the [R programming language](https://www.r-project.org/) and the [RStudio](https://posit.co/download/rstudio-desktop/) development environment. We will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse](https://www.tidyverse.org/), a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot](https://ggplot2.tidyverse.org/). You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
+
+[Intro to R Landing Page](Workshops/R/index.md){ .md-button .md-button--primary .centered }
+
+---
+
+### :material-monitor-account: Short online trainings
 
 We Piloted a series of short one hour workshops and seminars in the Fall of 2024. These workshops are designed to be quick introductions to topics that we think are useful for researchers. Many of these were live demonstrations, but, if applicable, the content is available below. If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
 
@@ -58,26 +79,8 @@ We Piloted a series of short one hour workshops and seminars in the Fall of 2024
 - Scaling SLURM scripts on the HPC and benchmarking
 - <a href="Workshops/Standalone/snparcher-tutorial-202412.pdf" target="_blank">SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms</a>
 
-### Healthy Habits for Data Science (Spring 2024)
+## :material-archive-check-outline: Event and workshop archive
 
-This workshop aims to teach students how to be more effective at working on their projects using reproducible habits. We learn how to organize projects on the local machine as well as the Cannon cluster, how to manage software environments, how to use git and GitHub to track code changes, and how to write and scale scripts on an HPC.
+To view a list of previous events and workshops, click the button below.
 
-[Healthy Habits Landing Page](Workshops/Healthy-habits/index.md){ .md-button .md-button--primary .centered }
-
-### Unix tips and tricks for bioinformatics (Spring 2024)
-
-This workshop aims to introduce students to some basic bioinformatics file formats, tools, and general best practices. The first two days of the workshop will be dedicated to introductions of bioinformatics file formats and the command line tools that we use to view, manipulate, and analyze them. After that, we will begin to shift from using individual commands to writing shell scripts and constructing bioinformatics workflows.
-
-[Biotips Landing Page](Workshops/Biotips/index.md){ .md-button .md-button--primary .centered }
-
-### Introduction to R (Fall 2023)
-
-This workshop aims to introduce first-time users to the [R programming language](https://www.r-project.org/) and the [RStudio](https://posit.co/download/rstudio-desktop/) development environment. We will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse](https://www.tidyverse.org/), a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot](https://ggplot2.tidyverse.org/). You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
-
-[Intro to R Landing Page](Workshops/R/index.md){ .md-button .md-button--primary .centered }
-
-## [:material-tools:{ .contact-icon } Previous workshop topics & content :material-tools:{ .contact-icon }](previous-events.md)
-
-To view an archive of previous events and workshops, click the button below.
-
-[Previous Events & Workshops](previous-events.md){ .md-button .md-button--primary .centered }
+[Previous Events & Workshops :material-arrow-right:](previous-events.md){ .md-button .md-button--primary .centered }

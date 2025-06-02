@@ -14,5 +14,10 @@ These are topics of previous workshops with no attached contents (seminars), or 
 * **Data Visualization Spa** - February 10-14, 2025 (In person, 30 minute consultations), part of Love Data Month
 * **Publishing your data analysis on GitHub** - February 18, 2025, 10AM-12PM (In person) and February 20, 2025, 10AM-12PM (Virtual), part of Love Data Month
 * **Version Control and Collaboration using git/GitHub** - February 25, 2025, 10AM-12PM (In person) and February 27, 2025, 10AM-12PM (Virtual), part of Love Data Month
+* **Introduction to Python Intensive** - August/September 2024 (In person)
+* **Bioinformatics tips and tricks** - November 2023 (In person)
+* **Bioinformatics tips and tricks** - March 2023 (In person)
+* **Introduction to R** - March 2023 (In person)
+
 
 
