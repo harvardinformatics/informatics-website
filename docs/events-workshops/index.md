@@ -40,7 +40,7 @@ This section contains the most up-to-date content for our workshops! The date we
 
 This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
-[Python Intensive Landing Page :material-arrow-right:](Workshops/workshops-python/index.md){ .md-button .md-button--primary .centered }
+[Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/){ .md-button .md-button--primary .centered }
 
 
 ### :material-food-apple-outline: Healthy Habits for Data Science (Spring 2024)

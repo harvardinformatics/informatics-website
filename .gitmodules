@@ -1,0 +1,3 @@
+[submodule "docs/workshops/python-intensive"]
+	path = docs/workshops/python-intensive
+	url = git@github.com:harvardinformatics/python-intensive.git
