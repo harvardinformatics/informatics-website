@@ -1,3 +1,30 @@
+This Spring we are offering a series of workshop on the theme of research data management.
+
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSe5dXZuB6Y_UaS-mazh1XS12hhdcRTspHoKGjXstvEXwr79bA/viewform){ .md-button }
+
+### The Baton Pass: preparing your data for the hand-off TWO PART SERIES
+
+**Part 1 April 21, 1 - 2 PM in person in Northwest Building 453**
+
+**Part 2 April 28, 1 - 2 PM in person in Northwest Building 425**
+
+In this two part hands-on workshop, we will provide you with the tools and procedures to make your research data self-documenting, saving yourself and future colleagues the headache of retracing your steps. In the first session, we will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data. In the second session, we will look at a real example use case for these documents and also provide one-on-one assistance with filling out your own. By the end of this workshop, students will be able to identify key institutional knowledge they need to pass on and will come away with a ready to use documentation workflow that works for them. 
+
+### Dataverse step-by-step for biology: how to archive & publish your data
+
+**May 12, 1 - 3 PM in person in Northwest Building 453**
+
+In this seminar + Q&A, guest speaker Katie Mika (MLS, Data Services Librarian) will be presenting a step-by-step guide for archiving & publishing your biological data in the Harvard Dataverse. Harvard Dataverse is a generalist repository for any kind of research data, big or small.
+
+---
+
+## :pizza: Programming and Pizza :pizza:
+**April 9th 4 PM - 6 PM Northwest Building B227.45**
+
+New for this month, we are going to start having extended office hours hangouts every second Wednesday of the month with free pizza! Come hang out and work on your code or data analysis while eating pizza! Meet w/other folks who also code, ask our expert bioinformaticians for advice, or solve a programming puzzle for practice!
+
+Our first one is on April 9th! Come chat, work, and hang out! Register above!
+
 ### 1 hour seminars
 
 We will be offering three 1-hour seminars on Wednesdays in March. *All seminars will be hybrid on zoom and in person in the Northwest Building meeting room B253*

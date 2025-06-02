@@ -2,11 +2,13 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming events & workshops
 
-### Programming and Pizza
+### :pizza: Programming and Pizza :pizza:
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building](https://maps.app.goo.gl/1MqNswcVaTYcCx68A) room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-### Introduction to Python Intensive (Fall 2025) - Check back for more details!
+:material-arrow-right-bottom: Next up: June 11, 2025, 4-6PM (Northwest Building B227.45)
+
+### Introduction to Python Intensive (September 2025) - Check back for more details!
 
 ### Office hours
 
@@ -34,19 +36,15 @@ filter="invert(.9) saturate(0.5) hue-rotate(145deg)"
 
 This section contains the most up-to-date content for our workshops!
 
-### Submodule test
-
-[Python Intensive Landing Page](Workshops/workshop-test/index.md){ .md-button .md-button--primary .centered }
-
 ### Introduction to Python Intensive (January 2025)
 
 This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
-[Python Intensive Landing Page](Workshops/Python/index.md){ .md-button .md-button--primary .centered }
+[Python Intensive Landing Page](Workshops/workshops-python/index.md){ .md-button .md-button--primary .centered }
 
 ### One hour workshops & Seminars: (Fall 2024)
 
-We Piloted a series of short one hour workshops and seminars in the Fall of 2024. These workshops are designed to be quick introductions to topics that we think are useful for researchers. The content is available below, and the the workshop content can be downloaded  (if applicable). If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
+We Piloted a series of short one hour workshops and seminars in the Fall of 2024. These workshops are designed to be quick introductions to topics that we think are useful for researchers. Many of these were live demonstrations, but, if applicable, the content is available below. If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
 
 - Project organization & Data management
 - Git & GitHub introduction
