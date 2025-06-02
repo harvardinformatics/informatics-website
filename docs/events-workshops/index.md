@@ -34,6 +34,10 @@ filter="invert(.9) saturate(0.5) hue-rotate(145deg)"
 
 This section contains the most up-to-date content for our workshops!
 
+### Submodule test
+
+[Python Intensive Landing Page](Workshops/workshop-test/index.md){ .md-button .md-button--primary .centered }
+
 ### Introduction to Python Intensive (January 2025)
 
 This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
