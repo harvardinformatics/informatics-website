@@ -34,7 +34,7 @@ filter="invert(.9) saturate(0.5) hue-rotate(145deg)"
 
 ## Latest workshop content
 
-This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is listed after each one.
+This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is noted.
 
 ### :fontawesome-brands-python: Introduction to Python Intensive (January 2025)
 
@@ -47,37 +47,55 @@ This is a four-day workshop that will introduce students to Python as a data sci
 
 This workshop aims to teach students how to be more effective at working on their projects using reproducible habits. We learn how to organize projects on the local machine as well as the Cannon cluster, how to manage software environments, how to use git and GitHub to track code changes, and how to write and scale scripts on an HPC.
 
-[Healthy Habits Landing Page :material-arrow-right:](Workshops/Healthy-habits/index.md){ .md-button .md-button--primary .centered }
+[Healthy Habits Landing Page :material-arrow-right:](../workshops/healthy-habits/){ .md-button .md-button--primary .centered }
 
 ### :material-application-brackets-outline: Unix tips and tricks for bioinformatics (Spring 2024)
 
 This workshop aims to introduce students to some basic bioinformatics file formats, tools, and general best practices. The first two days of the workshop will be dedicated to introductions of bioinformatics file formats and the command line tools that we use to view, manipulate, and analyze them. After that, we will begin to shift from using individual commands to writing shell scripts and constructing bioinformatics workflows.
 
-[Biotips Landing Page ](Workshops/Biotips/index.md){ .md-button .md-button--primary .centered }
+[Biotips Landing Page :material-arrow-right:](../workshops/biotips/){ .md-button .md-button--primary .centered }
 
 ### :material-language-r: Introduction to R (Fall 2023)
 
 This workshop aims to introduce first-time users to the [R programming language](https://www.r-project.org/) and the [RStudio](https://posit.co/download/rstudio-desktop/) development environment. We will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse](https://www.tidyverse.org/), a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot](https://ggplot2.tidyverse.org/). You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
 
-[Intro to R Landing Page](Workshops/R/index.md){ .md-button .md-button--primary .centered }
+[Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/){ .md-button .md-button--primary .centered }
 
 ---
 
-### :material-monitor-account: Short online trainings
+### :material-monitor-account: Short trainings
 
-We Piloted a series of short one hour workshops and seminars in the Fall of 2024. These workshops are designed to be quick introductions to topics that we think are useful for researchers. Many of these were live demonstrations, but, if applicable, the content is available below. If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
+We piloted a series of short one hour short trainings in the Fall of 2024. These sessions are designed to be quick introductions to topics that we think are useful for researchers. Sessions with content are listed below. See our [previous events page](previous-events.md) to view topics that were live demonstrations with no attached content (look for the short trainings icon: :material-monitor-account:). If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
 
-- Project organization & Data management
-- Git & GitHub introduction
-- Installing & Managing software (Conda, Containers)
-- Submitting your first SLURM script or job array
-- [Data Transformation with R Tidyverse](Workshops/Standalone/R_tidyverse_revised.md) - [Download RMD file](Workshops/Standalone/R_tidyverse_revised.Rmd)
-- [Plotting with R ggplot](Workshops/Standalone/R_ggplot_revised.md) - [Download RMD file](Workshops/Standalone/R_ggplot_revised.Rmd)
-- Introduction to Genome Annotation
-- Workflow Management, nextflow demonstration - pdf of slides available [here](Workshops/Standalone/Workflow_managers.pdf)
-- scRNA analysis introduction - [Download the RMD file](Workshops/Standalone/SinglecellRNAseq.Rmd)
-- Scaling SLURM scripts on the HPC and benchmarking
-- <a href="Workshops/Standalone/snparcher-tutorial-202412.pdf" target="_blank">SNPArcher tutorial: A snakemake workflow for variant calling in non-model organisms</a>
+#### Data transformation in R with Tidyverse
+    
+October 22, 2024, 9:30-10:30AM and October 23, 2024, 12:15-1:15PM (Northwest Building 453)
+
+[Traning page :material-arrow-right:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.Rmd){ .md-button }
+
+#### Plotting in R with ggplot
+
+October 29, 2024, 9:30-10:30AM and October 30, 2024, 12:15-1:15PM (Northwest Building 453)
+
+[Training page :material-arrow-right:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.Rmd){ .md-button }
+
+#### Workflow managers and Nextflow demo
+
+November 12, 2024, 9:30-10:30AM and November 13, 2024, 12:15-1:15PM (Northwest Building 453)
+
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/workflow-managers/Workflow_managers.pdf){ .md-button }
+
+#### Introduction to single-cell RNA-seq analysis
+
+November 19, 2024, 9:30-10:30AM and November 20, 2024, 12:15-1:15PM (Northwest Building 453)
+
+[Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.Rmd){ .md-button }
+
+#### Population Genomics: Getting started with SNPArcher
+
+December 10, 2024, 9:30-10:30AM and December 11, 2024, 12:15-1:15PM (Northwest Building 453)
+
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial-202412.pdf){ .md-button }
 
 ## :material-archive-check-outline: Event and workshop archive
 
