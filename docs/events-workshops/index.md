@@ -9,43 +9,47 @@ _Check back for more details and registration links!_
 !!! warning "This is a Tentative Schedule"
     **Until registration links appear, dates and topics are subject to change.**
 
-#### The Baton Pass: Data Onboarding and Offboarding (week of August 25)
+#### :material-tools: Workshops
 
-This workshop will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
-
-#### Introduction to Python Intensive (September 2025)
+##### Introduction to Python Intensive (September 2025)
 
 Our annual Introduction to Python Intensive workshop will be held in September 2025. This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content.
 
-#### Basics of git and GitHub (week of Septermber 22)
-
-Short training on the basics of git and GitHub for project sharing and backup.
-
-#### Introduction to Snakemake (weeks of September 29 and October 6)
+##### Introduction to Snakemake (weeks of September 29 and October 6)
 
 This 2 part workshop will introduce students to Snakemake, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Snakemake workflow. In the second session, we will build on the first session and learn how to **write** a Snakemake workflow from scratch. Some familiarity with the command line and Python is recommended, but not required.
 
-#### Introduction to R (weeks of October 13 and October 20)
+##### Introduction to R (weeks of October 13 and October 20)
 
 An updated version of our Introduction to R workshop. [See below](#introduction-to-r-fall-2023) for more details.
 
-#### Introduction to single-cell RNA-seq (weeks of October 27 and November 3)
-
-This 2 part workshop will introduce students to the basics of single-cell RNA-seq analysis. In the first session, we'll go over basic quality control of scRNA data. In the second session, we'll go over some downstream analysis of scRNA data.
-
-#### Introduction to Nextflow (weeks of November 10 and November 17)
+##### Introduction to Nextflow (weeks of November 10 and November 17)
 
 This 2 part workshop will introduce students to Nextflow, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Nextflow workflow. In the second session, we will build on the first session and learn how to **write** a Nextflow workflow from scratch.
 
-#### DNA sequencing with long reads (week of November 17)
+#### :material-monitor-account: Short trainings (virtual)
+
+##### The Baton Pass: Data Onboarding and Offboarding (week of August 25)
+
+This workshop will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
+
+##### Basics of git and GitHub (week of Septermber 22)
+
+Short training on the basics of git and GitHub for project sharing and backup.
+
+##### Introduction to single-cell RNA-seq (weeks of October 27 and November 3)
+
+This 2 part workshop will introduce students to the basics of single-cell RNA-seq analysis. In the first session, we'll go over basic quality control of scRNA data. In the second session, we'll go over some downstream analysis of scRNA data.
+
+##### DNA sequencing with long reads (week of November 17)
 
 In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a workshop on DNA sequencing with long reads. This workshop will cover the basics of long-read sequencing technologies.
 
-#### Introduction to Genome Annotation (week of December 1)
+##### Introduction to Genome Annotation (week of December 1)
 
 The short training will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool.
 
-#### Population Genomics: Getting started with SNPArcher (week of December 8)
+##### Population Genomics: Getting started with SNPArcher (week of December 8)
 
 This short training will introduce students to SNPArcher, a tool for population genomics analysis. We will cover the basics of how to use SNPArcher to analyze population genomics data, including how to run the tool and interpret the results.
 
