@@ -31,7 +31,7 @@ This 2 part workshop will introduce students to Nextflow, a workflow management 
 
 ##### The Baton Pass: Data Onboarding and Offboarding (week of August 25)
 
-This workshop will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
+This training will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
 
 ##### Basics of git and GitHub (week of Septermber 22)
 
@@ -39,11 +39,11 @@ Short training on the basics of git and GitHub for project sharing and backup.
 
 ##### Introduction to single-cell RNA-seq (weeks of October 27 and November 3)
 
-This 2 part workshop will introduce students to the basics of single-cell RNA-seq analysis. In the first session, we'll go over basic quality control of scRNA data. In the second session, we'll go over some downstream analysis of scRNA data.
+This 2 part training will introduce students to the basics of single-cell RNA-seq analysis. In the first session, we'll go over basic quality control of scRNA data. In the second session, we'll go over some downstream analysis of scRNA data.
 
 ##### DNA sequencing with long reads (week of November 17)
 
-In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a workshop on DNA sequencing with long reads. This workshop will cover the basics of long-read sequencing technologies.
+In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies.
 
 ##### Introduction to Genome Annotation (week of December 1)
 

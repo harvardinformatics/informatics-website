@@ -5,6 +5,7 @@ title: Past events and workshops
 <style>
     .md-typeset__table {
         width: 100% !important;
+        max-width: 1280px !important;
     }
     /* Ensure table takes full width */
     
