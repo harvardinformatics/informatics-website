@@ -27,7 +27,7 @@
 
     ##### How can I know about future workshops?
 
-    We post upcoming workshops on our [Events page](../events.md). You can also subscribe to our [newsletter](https://mailchi.mp/g/informatics-newsletter) to receive updates on upcoming workshops and events.
+    We post upcoming workshops on our [Events & Workshops page](/events-workshops/). You can also subscribe to our [newsletter](https://mailchi.mp/g/informatics-newsletter) to receive updates on upcoming workshops and events.
 
 ??? question "Can you run a workshop on X?"
 
