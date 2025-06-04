@@ -63,7 +63,7 @@
 
     ##### What trainings are available?
 
-    We post trainings on our [Events page](../events.md). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
+    We post trainings on our [Events & Workshops page](/events-workshops/). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
 
 ??? question "How do I join the FAS Bioinformatics Slack?"
 
