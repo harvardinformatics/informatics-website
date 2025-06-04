@@ -50,7 +50,7 @@
   border-radius: 10px !important;
 }
 
-.centered {
+.md-button.centered {
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
