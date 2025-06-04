@@ -1,0 +1,7 @@
+- indiana storm data (wget)* 
+- all biotips download and data links (wget)*
+- all intro to r downoad and data links (read_csv lines)*
+
+
+* can't do until the refactored site is live
+

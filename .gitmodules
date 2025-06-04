@@ -1,0 +1,15 @@
+[submodule "docs/workshops/python-intensive"]
+	path = docs/workshops/python-intensive
+	url = git@github.com:harvardinformatics/python-intensive.git
+[submodule "docs/workshops/healthy-habits"]
+	path = docs/workshops/healthy-habits
+	url = git@github.com:harvardinformatics/healthy-habits.git
+[submodule "docs/workshops/biotips"]
+	path = docs/workshops/biotips
+	url = git@github.com:harvardinformatics/biotips.git
+[submodule "docs/workshops/intro-r"]
+	path = docs/workshops/intro-r
+	url = git@github.com:harvardinformatics/intro-r.git
+[submodule "docs/workshops/short-trainings"]
+	path = docs/workshops/short-trainings
+	url = git@github.com:harvardinformatics/short-trainings.git

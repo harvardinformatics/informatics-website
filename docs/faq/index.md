@@ -27,7 +27,7 @@
 
     ##### How can I know about future workshops?
 
-    We post upcoming workshops on our [Events page](../events.md). You can also subscribe to our [newsletter](https://mailchi.mp/g/informatics-newsletter) to receive updates on upcoming workshops and events.
+    We post upcoming workshops on our [Events & Workshops page](/events-workshops/). You can also subscribe to our [newsletter](https://mailchi.mp/g/informatics-newsletter) to receive updates on upcoming workshops and events.
 
 ??? question "Can you run a workshop on X?"
 
@@ -63,7 +63,7 @@
 
     ##### What trainings are available?
 
-    We post trainings on our [Events page](../events.md). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
+    We post trainings on our [Events & Workshops page](/events-workshops/). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
 
 ??? question "How do I join the FAS Bioinformatics Slack?"
 

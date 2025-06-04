@@ -4,13 +4,14 @@ copyright: © 2023-2025 | Harvard FAS Informatics | <a href="https://accessibili
 
 nav:
   - Home: index.md
-  - Workshops: workshops/index.md
+  - Events & Workshops: events-workshops/index.md
+  #- Workshops: workshops/index.md
   - Research: research/index.md
   - Software: software/index.md
   - Resources: resources/index.md
   - FAQ: faq/index.md
   - Contact Us: contact.md
-  - Events: events.md
+  #- Events: events.md
 markdown_extensions:
   - admonition
   - pymdownx.details
