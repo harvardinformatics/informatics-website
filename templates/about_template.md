@@ -17,7 +17,7 @@ Read more about the people in our group below:
 
 Prior to 2025, the group also included the Software Operations Core. Their mission is to support the needs of data generation core facilities by developing software infrastructure. This includes everything from data processing pipelines, to instrument scheduling and training, to billing and invoicing.
 
-As of February 2025, Software Operations has moved to [Research Computing](https://www.rc.fas.harvard.edu/)!
+As of February 2025, Software Operations has moved to [Research Computing :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){{:target="_blank"}}!
 
 ### Group Alumni
 
@@ -25,10 +25,10 @@ As of February 2025, Software Operations has moved to [Research Computing](https
 
 ## Where to Find Us
 
-We are located in [Northwest Science Building](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560), on the B2 floor, near the [Bauer Sequencing Core](https://bauercore.fas.harvard.edu/). Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
+We are located in [Northwest Science Building :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){{:target="_blank"}}, on the B2 floor, near the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){{:target="_blank"}}. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
 
 Harvard FAS Informatics Group  
-[Northwest Building](https://nw.fas.harvard.edu/) B227  
+[Northwest Building :octicons-link-external-24:](https://nw.fas.harvard.edu/){{:target="_blank"}} B227  
 52 Oxford Street  
 Cambridge, MA 02138  
-[Map](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560)
+[Map :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){{:target="_blank"}}
