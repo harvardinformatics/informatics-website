@@ -7,7 +7,7 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 _Check back for more details and registration links!_
 
 !!! warning "This is a Tentative Schedule"
-    **Until registraition links appear, dates and topics are subject to change.**
+    **Until registration links appear, dates and topics are subject to change.**
 
 #### The Baton Pass: Data Onboarding and Offboarding (week of August 25)
 
@@ -39,7 +39,7 @@ This 2 part workshop will introduce students to Nextflow, a workflow management 
 
 #### DNA sequencing with long reads (week of November 17)
 
-In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/), we'll be hosting a workshop on DNA sequencing with long reads. This workshop will cover the basics of long-read sequencing technologies.
+In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a workshop on DNA sequencing with long reads. This workshop will cover the basics of long-read sequencing technologies.
 
 #### Introduction to Genome Annotation (week of December 1)
 
@@ -53,7 +53,7 @@ This short training will introduce students to SNPArcher, a tool for population 
 
 ### :pizza: Programming and Pizza :pizza:
 
-We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A) room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
+We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
 :material-arrow-right-bottom: Next up: June 11, 2025, 4-6PM (Northwest Building B227.45)
 
@@ -101,7 +101,7 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 
 ### :material-language-r: Introduction to R (Fall 2023)
 
-This workshop aims to introduce first-time users to the [R programming language :octicons-link-external-24:](https://www.r-project.org/) and the [RStudio :octicons-link-external-24:](https://posit.co/download/rstudio-desktop/) development environment. We will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse :octicons-link-external-24:](https://www.tidyverse.org/), a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot :octicons-link-external-24:](https://ggplot2.tidyverse.org/). You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
+This workshop aims to introduce first-time users to the [R programming language :octicons-link-external-24:](https://www.r-project.org/){:target="_blank"} and the [RStudio :octicons-link-external-24:](https://posit.co/download/rstudio-desktop/){:target="_blank"} development environment. We will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse :octicons-link-external-24:](https://www.tidyverse.org/){:target="_blank"}, a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot :octicons-link-external-24:](https://ggplot2.tidyverse.org/){:target="_blank"}. You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
 
 [Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/){ .md-button .md-button--primary .centered }
 
