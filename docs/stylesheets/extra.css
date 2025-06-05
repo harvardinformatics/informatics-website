@@ -627,6 +627,7 @@ th, td {
   -webkit-mask-size: cover;
   background-color: currentColor;
 }
+/* Custom icon for external links that are embedded in html */
 
 /*------------------------------------------------------*/
 /* Grid */

@@ -16,7 +16,7 @@ To set up a meeting with us to discuss a consult on your project, please fill ou
 
 If you want to join a bioinformatics discussion group and get quick help from us or the community, please join our [slack channel :octicons-link-external-24:](https://fas-bioinformaticspub.slack.com){:target="_blank"}.
 
-## [:fontawesome-solid-users-line:{ .contact-icon } Office hours](events.md)
+## [:fontawesome-solid-users-line:{ .contact-icon } Office hours](/events-workshops/#office-hours)
 
 You can drop in to our office hours without an appointment. We hold office hours during the semester on Wednesdays 1:30 - 4:00 PM in the [Northwest Building :octicons-link-external-24:](https://nw.fas.harvard.edu/){:target="_blank"} ([map :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){:target="_blank"}) B227.45. Check the [Events & Workshops](/events-workshops/#office-hours) page for an up to date schedule. 
 
