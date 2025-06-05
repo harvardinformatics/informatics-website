@@ -1,32 +1,32 @@
 ﻿Term,Definition
 Hardware,"The physical components of the computer (*e.g.* the hard drive, motherboard, monitor, etc.)"
-Software,"The programs stored on the computer that the user interacts with."
+Software,The programs stored on the computer that the user interacts with.
 Operating system (OS),"The software that interfaces between the computer's hardware and other user facing software. Common operating systems for desktop computers are Windows, macOS, and Linux. Common operating systems for mobile devices are iOS and Android."
 Unix,"An early operating system that many modern 'Unix-like OS's, such as Linux and macOS, are based upon."
 Program,"A collection of code designed for the user to perform a specific task (*e.g. write a document, analyze some data, play a game, send a message*). Perhaps also called an application or app."
 Command,"An instruction given to the computer to perform an operation (such as opening a file, adding a row to a data table, etc.). The way a command is given to the computer is often dictated by the programming language in which it is to be interpreted (known as that language's **syntax**)."
-Argument,"Options specified in the command line when running a program or command."
+Argument,Options specified in the command line when running a program or command.
 Script,"A set of commands written in a particular programming language's **syntax** that are stored as plain text in a file. When interpreted by that programming language, the commands will be executed in order."
-Terminal*,"The window in which you type commands in to be interpreted by the shell. Also known as a **command line interface**."
+Terminal*,The window in which you type commands in to be interpreted by the shell. Also known as a **command line interface**.
 Console*,"Similar to terminal, but full screen with no graphical component, only text."
-Command line*,"The text interface within a terminal where commands are typed."
-Command prompt*,"The information displayed on the command line before the cursor."
+Command line*,The text interface within a terminal where commands are typed.
+Command prompt*,The information displayed on the command line before the cursor.
 Shell*,"The program that interprets commands typed into a terminal. In your (Unix-like) terminal you can type `echo $SHELL` to check which shell is loaded. It can also execute a **shell script**, which is a collection of commands in a text file."
-Bash,"A common **shell** program for Unix-like systems. It is the default shell for most Linux distributions."
-Environment variable,"A piece of information that is stored in the shell and can be accessed by commands run in it."
-`PATH`,"An **environment variable** that lists directories where the shell looks for programs to run."
-Library,"Files containing general code blocks that can be used widely by different programs."
-Dependency,"A program or library that is required for another program to run."
+Bash,A common **shell** program for Unix-like systems. It is the default shell for most Linux distributions.
+Environment variable,A piece of information that is stored in the shell and can be accessed by commands run in it.
+`PATH`,An **environment variable** that lists directories where the shell looks for programs to run.
+Library,Files containing general code blocks that can be used widely by different programs.
+Dependency,A program or library that is required for another program to run.
 Package,"A bundle of **software** containing **programs** and their accompanying **libraries** and **dependencies**, often with scripts for installation."
-Module,"Similar to library."
+Module,Similar to library.
 File system,"The way in which files and directories are organized in a nesting, tree-like structure."
-Directory,"A named location on a computer that contains files and/or other directories."
+Directory,A named location on a computer that contains files and/or other directories.
 File,"A named location on a computer that contains data, commonly in the form of plain text."
-User,"Every person that uses a computer has an account on that computer and is then called a user."
+User,Every person that uses a computer has an account on that computer and is then called a user.
 Group,"User accounts may be placed into groups (e.g. a lab group, or other working group) so that relevant files may be easily accessed by anyone in that group"
-Permissions,"User accounts on a computer may have different permissions set for them that dictate which files they can read, write to, and execute (i.e. run like a command). You may check your permissions on a file or directory with `ls -l`, which returns a <a href=""https://www.redhat.com/en/blog/linux-file-permissions-explained"">permissions string</a>. The owner of a particular file can change its permissions with <code class=""inline-code"">chmod</code> (see previous link)."
-Root,"The lowest level in the file system in which all directories and files are stored. Critical system files are stored close to the **root**. Usually located at `/` and usually only accessible by the computer's administrators. Root may also refer to the user account with the highest permissions on Unix-like systems."
+Permissions,"User accounts on a computer may have different permissions set for them that dictate which files they can read, write to, and execute (i.e. run like a command). You may check your permissions on a file or directory with `ls -l`, which returns a <a href=""https://www.redhat.com/en/blog/linux-file-permissions-explained"" target=""_blank"">permissions string <span class=""icon-external""></span></a>. The owner of a particular file can change its permissions with <code class=""inline-code"">chmod</code> (see previous link)."
+Root,The lowest level in the file system in which all directories and files are stored. Critical system files are stored close to the **root**. Usually located at `/` and usually only accessible by the computer's administrators. Root may also refer to the user account with the highest permissions on Unix-like systems.
 Home,"A user's home directory is where that user has read, write, and execute permissions within the file system."
 Path,"The location of a file or directory within the file system, with directories separated by slash characters (`/`)."
-Absolute path,"The full name of a file or directory that includes all directories and sub-directories starting from the root of the file system to the specified file or directory."
-Relative path,"The name of a file or directory that includes all directories and sub-directories starting from the user's current location."
+Absolute path,The full name of a file or directory that includes all directories and sub-directories starting from the root of the file system to the specified file or directory.
+Relative path,The name of a file or directory that includes all directories and sub-directories starting from the user's current location.

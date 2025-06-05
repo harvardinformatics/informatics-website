@@ -31,13 +31,15 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://phyloacc.github.io/" target="_blank">PhyloAcc</a> is a program to detect shifts of DNA substitution rates in noncoding, conserved genomic regions. It can be used to identify genomic elements that have experienced accelerated rates along certain lineages in a phylogeny. This can be used, for example, to identify convergent rate shifts that coincide with phenotypic convergence. 
+        <a href="https://phyloacc.github.io/" target="_blank">PhyloAcc <span class="icon-external"></span></a> is a program to detect shifts of DNA substitution rates in noncoding, conserved genomic regions. It can be used to identify genomic elements that have experienced accelerated rates along certain lineages in a phylogeny. This can be used, for example, to identify convergent rate shifts that coincide with phenotypic convergence. 
 
-        We have developed this in conjunction with the <a href="https://edwards.oeb.harvard.edu/" target="_blank">Edwards Lab</a> in the Organismic and Evolutionary Biology department and the Museum of Comparative Zoology and the <a href="https://sites.harvard.edu/junliu/" target="_blank">Liu Lab</a> in the Department of Statistics.
+        We have developed this in conjunction with the <a href="https://edwards.oeb.harvard.edu/" target="_blank">Edwards Lab <span class="icon-external"></span></a> in the Organismic and Evolutionary Biology department and the Museum of Comparative Zoology and the <a href="https://sites.harvard.edu/junliu/" target="_blank">Liu Lab <span class="icon-external"></span></a> in the Department of Statistics.
     </div>
 </div>
 
 ---
+
+
 
 ##
 
@@ -49,7 +51,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/snpArcher" target="_blank">snpArcher</a> is a reproducible workflow optimized for nonmodel organisms and comparisons across datasets, built on the <a href="https://snakemake.readthedocs.io/en/stable/index.html#" target="_blank">Snakemake</a> workflow management system. It provides a streamlined approach to dataset acquisition, variant calling, quality control, and downstream analysis.
+        <a href="https://github.com/harvardinformatics/snpArcher" target="_blank">snpArcher <span class="icon-external"></span></a> is a reproducible workflow optimized for nonmodel organisms and comparisons across datasets, built on the <a href="https://snakemake.readthedocs.io/en/stable/index.html#" target="_blank">Snakemake <span class="icon-external"></span></a> workflow management system. It provides a streamlined approach to dataset acquisition, variant calling, quality control, and downstream analysis.
     </div>
 
 </div>
@@ -65,7 +67,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/degenotate" target="_blank">degenotate</a> takes as input either a genome FASTA file and a corresponding annotation file (GFF or GTF) OR file or directory of files that contain coding sequences in FASTA format and outputs a bed-like file that contains the degeneracy score (0-, 2-, 3-, or 4-fold) of every coding site.
+        <a href="https://github.com/harvardinformatics/degenotate" target="_blank">degenotate <span class="icon-external"></span></a> takes as input either a genome FASTA file and a corresponding annotation file (GFF or GTF) OR file or directory of files that contain coding sequences in FASTA format and outputs a bed-like file that contains the degeneracy score (0-, 2-, 3-, or 4-fold) of every coding site.
 
         If given a corresponding VCF file with specified outgroup samples, degenotate can also count synonymous and non-synonymous polymorphisms and fixed differences for use in MK tests (McDonald and Kreitman 1991).
 
@@ -84,7 +86,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/scclusteval" target="_blank">scclusteval</a> (Single Cell Cluster Evaluation) evaluates the single cell clustering stability by subsampling the cells and provide many visualization methods for comparing clusters.
+        <a href="https://github.com/harvardinformatics/scclusteval" target="_blank">scclusteval <span class="icon-external"></span></a> (Single Cell Cluster Evaluation) evaluates the single cell clustering stability by subsampling the cells and provide many visualization methods for comparing clusters.
     </div>
 </div>
 
@@ -99,7 +101,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/HieRFIT" target="_blank">HieRFIT</a> is a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. HieRFIT stands for Hierarchical Random Forest for Information Transfer.
+        <a href="https://github.com/harvardinformatics/HieRFIT" target="_blank">HieRFIT <span class="icon-external"></span></a> is a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. HieRFIT stands for Hierarchical Random Forest for Information Transfer.
     </div>
 </div>
 
@@ -114,7 +116,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/Genrich" target="_blank">Genrich</a> is a peak-caller for genomic enrichment assays (e.g. ChIP-seq, ATAC-seq). It analyzes alignment files generated following the assay and produces a file detailing peaks of significant enrichment.
+        <a href="https://github.com/harvardinformatics/Genrich" target="_blank">Genrich <span class="icon-external"></span></a> is a peak-caller for genomic enrichment assays (e.g. ChIP-seq, ATAC-seq). It analyzes alignment files generated following the assay and produces a file detailing peaks of significant enrichment.
     </div>
 </div>
 
@@ -129,7 +131,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/NGmerge" target="_blank">NGmerge</a> merges paired-end reads and removing sequencing adapters. In the default stitch mode, NGmerge combines paired-end reads that overlap into a single read that spans the full length of the original DNA fragment. The alternative adapter-removal mode returns the original reads as pairs, removing the 3' overhangs of those reads whose valid stitched alignment has this characteristic.
+        <a href="https://github.com/harvardinformatics/NGmerge" target="_blank">NGmerge <span class="icon-external"></span></a> merges paired-end reads and removing sequencing adapters. In the default stitch mode, NGmerge combines paired-end reads that overlap into a single read that spans the full length of the original DNA fragment. The alternative adapter-removal mode returns the original reads as pairs, removing the 3' overhangs of those reads whose valid stitched alignment has this characteristic.
     </div>
 </div>
 

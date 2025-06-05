@@ -15,12 +15,19 @@ Here we have compiled resources related to bioinformatics and computing in gener
 ## Tutorials
 
 ### [:material-application-brackets-outline:{{ .contact-icon }} [ Installing command line software with conda/mamba ]](Tutorials/installing-command-line-software-conda-mamba.md)
+
 ### [:material-dna:{{ .contact-icon }} [ Downloading sequencing data from the Bauer Core ]](Tutorials/how-can-i-download-my-sequencing-data.md)
+
 ### [:material-format-align-top:{{ .contact-icon }} [ Whole genome alignment with Cactus ]](Tutorials/whole-genome-alignment-cactus.md)
+
 ####  &nbsp;&nbsp;:material-arrow-right-bottom:[:material-filter-variant-plus:{{ .contact-icon }} [ Adding a genome to a whole genome alignment ]](Tutorials/add-to-whole-genome-alignment-cactus.md)
+
 ####  &nbsp;&nbsp;:material-arrow-right-bottom:[:material-vector-polyline-plus:{{ .contact-icon }} [ Adding an outgroup to a whole genome alignment ]](Tutorials/add-outgroup-to-whole-genome-alignment-cactus.md)
+
 ####  &nbsp;&nbsp;:material-arrow-right-bottom:[:material-file-replace-outline:{{ .contact-icon }} [ Replacing a genome in a whole genome alignment ]](Tutorials/replace-genome-whole-genome-alignment-cactus.md)
+
 ### [:curly_loop:{{ .contact-icon }} [ Pangenome inference with Cactus-minigraph ]](Tutorials/pangenome-cactus-minigraph.md)
+
 ### [:material-dna:{{ .contact-icon }} [ How to annotate a genome ]](Tutorials/how-to-annotate-a-genome.md)
 
 **We are developing tutorials for other bioinformatics tasks. Check back soon!**
@@ -36,7 +43,7 @@ don't understand a term that they heard or read.
 
 Let us know if there is something we should add!
 
-**[View the glossary](glossary.md)**
+[View the Computing Glossary:material-arrow-right:](glossary.md){{ .md-button .md-button--primary .centered }}
 
 <!--
 
