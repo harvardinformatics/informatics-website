@@ -16,3 +16,15 @@
  :octicons-download-24:
 
 :material-arrow-top-right:
+
+
+
+output: 
+  md_document:
+    pandoc_args: ["--wrap=preserve"]
+    md_extensions: -smart
+    preserve_yaml: TRUE    
+
+output: 
+  html_document:
+    keep_md: true
