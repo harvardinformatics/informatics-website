@@ -89,25 +89,25 @@ This section contains the most up-to-date content for our workshops! The date we
 
 This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
-[Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/){ .md-button .md-button--primary .centered }
+[Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
 
 ### :material-food-apple-outline: Healthy Habits for Data Science (Spring 2024)
 
 This workshop aims to teach students how to be more effective at working on their projects using reproducible habits. We learn how to organize projects on the local machine as well as the Cannon cluster, how to manage software environments, how to use git and GitHub to track code changes, and how to write and scale scripts on an HPC.
 
-[Healthy Habits Landing Page :material-arrow-right:](../workshops/healthy-habits/){ .md-button .md-button--primary .centered }
+[Healthy Habits Landing Page :material-arrow-right:](../workshops/healthy-habits/index.md){ .md-button .md-button--primary .centered }
 
 ### :material-application-brackets-outline: Unix tips and tricks for bioinformatics (Spring 2024)
 
 This workshop aims to introduce students to some basic bioinformatics file formats, tools, and general best practices. The first two days of the workshop will be dedicated to introductions of bioinformatics file formats and the command line tools that we use to view, manipulate, and analyze them. After that, we will begin to shift from using individual commands to writing shell scripts and constructing bioinformatics workflows.
 
-[Biotips Landing Page :material-arrow-right:](../workshops/biotips/){ .md-button .md-button--primary .centered }
+[Biotips Landing Page :material-arrow-right:](../workshops/biotips/index.md){ .md-button .md-button--primary .centered }
 
 ### :material-language-r: Introduction to R (Fall 2023)
 
 This workshop aims to introduce first-time users to the [R programming language :octicons-link-external-24:](https://www.r-project.org/){:target="_blank"} and the [RStudio :octicons-link-external-24:](https://posit.co/download/rstudio-desktop/){:target="_blank"} development environment. We will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse :octicons-link-external-24:](https://www.tidyverse.org/){:target="_blank"}, a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot :octicons-link-external-24:](https://ggplot2.tidyverse.org/){:target="_blank"}. You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
 
-[Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/){ .md-button .md-button--primary .centered }
+[Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/index.md){ .md-button .md-button--primary .centered }
 
 ---
 

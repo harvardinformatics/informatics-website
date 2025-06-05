@@ -10,7 +10,7 @@ title: Resources
 
 # Resources
 
-Here we have compiled resources related to bioinformatics and computing in general. These resources may be general or related to our [trainings](/events-workshops/). We have also compiled links to other online resources.
+Here we have compiled resources related to bioinformatics and computing in general. These resources may be general or related to our [trainings](../events-workshops/index.md). We have also compiled links to other online resources.
 
 ## Tutorials
 

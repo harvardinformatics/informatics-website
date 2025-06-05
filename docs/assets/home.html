@@ -52,7 +52,7 @@
         padding-top: .0rem !important;
         height: 40vh !important;
         min-height: 300px !important;
-        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.home_gradient_hsla }} 99%, {{ config.home_gradient_hsla }} 99%); */
+        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.extra.home_gradient_hsla }} 99%, {{ config.extra.home_gradient_hsla }} 99%); */
         /* This is used for the background gradient */
 
         background-image: url(img/banners/IMG_7404.jpg);
@@ -109,36 +109,32 @@
 
                 <div class="col-8-24 banner-content">
                     <div class="banner-title md-typeset">
-                        <span class="home-tagline">{{ config.home_tagline }}</span><br/>
-                        {{ config.home_description }}
+                        <span class="home-tagline">{{ config.extra.home_tagline }}</span><br/>
+                        {{ config.extra.home_description }}
                     </div>
 
                     <div class="row banner-buttons md-typeset">
                         
                         <div class="col-6-24 banner-button">
-                            {%- if config.home_button1_name -%}
-                            <!-- For each of these buttons, the link checker will fail when using the jinja(?) variables, so I've hardcoded them for now -->
-                            <!-- <a href="{{ config.home_button1_url }}" title="View resources we've compiled, including workshops" class="{{ config.home_button1_theme }}"> -->
-                            <a href="events-workshops/" title="Upcoming events and workshops" class="{{ config.home_button1_theme }}">
-                                {{ config.home_button1_name }}
+                            {%- if config.extra.home_button1_name -%}
+                            <a href="events-workshops/" title="Upcoming events and workshops" class="{{ config.extra.home_button1_theme }}">
+                                {{ config.extra.home_button1_name }}
                             </a>
                             {%- endif -%}
                         </div>
                         <div class="col-1-24 margin btn-margin"></div>
                         <div class="col-6-24 banner-button">
-                            {%- if config.home_button2_name -%}
-                            <!-- <a href="{{ config.home_button2_url }}" title="Check out some answers to frequently asked questions" class="{{ config.home_button2_theme }}"> -->
-                            <a href="faq" title="Check out some answers to frequently asked questions" class="{{ config.home_button2_theme }}">
-                                {{ config.home_button2_name }}
+                            {%- if config.extra.home_button2_name -%}
+                            <a href="faq" title="Check out some answers to frequently asked questions" class="{{ config.extra.home_button2_theme }}">
+                                {{ config.extra.home_button2_name }}
                             </a>
                             {%- endif -%}
                         </div>                    
                         <div class="col-1-24 margin btn-margin"></div>
                         <div class="col-6-24 banner-button">
-                            {%- if config.home_button3_name -%}
-                            <!-- <a href="{{ config.home_button3_url }}" title="Different ways to get in touch with us" class="{{ config.home_button3_theme }}"> -->
-                            <a href="contact" title="Different ways to get in touch with us" class="{{ config.home_button3_theme }}">
-                                {{ config.home_button3_name }}
+                            {%- if config.extra.home_button3_name -%}
+                            <a href="contact" title="Different ways to get in touch with us" class="{{ config.extra.home_button3_theme }}">
+                                {{ config.extra.home_button3_name }}
                             </a>
                             {%- endif -%}
                         </div>
@@ -147,7 +143,6 @@
                 </div>
 
                 <div class="col-6-24 banner-img-container">
-                    <!-- <img class="banner-img" src="{{ config.home_cover_image }}" draggable="false"> -->
                 </div>
 
                 <div class="col-4-24 margin"></div>

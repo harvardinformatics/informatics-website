@@ -27,7 +27,7 @@
 
     ##### How can I know about future workshops?
 
-    We post upcoming workshops on our [Events & Workshops page](/events-workshops/). You can also subscribe to our [newsletter :octicons-link-external-24:](https://mailchi.mp/g/informatics-newsletter){:target="_blank"} to receive updates on upcoming workshops and events.
+    We post upcoming workshops on our [Events & Workshops page](../events-workshops/index.md). You can also subscribe to our [newsletter :octicons-link-external-24:](https://mailchi.mp/g/informatics-newsletter){:target="_blank"} to receive updates on upcoming workshops and events.
 
 ??? question "Can you run a workshop on X?"
 
@@ -63,7 +63,7 @@
 
     ##### What trainings are available?
 
-    We post trainings on our [Events & Workshops page](/events-workshops/). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
+    We post trainings on our [Events & Workshops page](../events-workshops/index.md). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
 
 ??? question "How do I join the FAS Bioinformatics Slack?"
 
@@ -75,7 +75,7 @@
 
     ##### What's the best way to contact the Bioinformatics team?
 
-    For all questions, you can use the [contact form](../contact.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events & Workshops](/events-workshops/#office-hours) for times).
+    For all questions, you can use the [contact form](../contact.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events & Workshops](../events-workshops/index.md#office-hours) for times).
 
 ??? question "How can I run a Snakemake workflow on the Cannon cluster?"
 
