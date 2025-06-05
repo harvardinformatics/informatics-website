@@ -17,6 +17,8 @@ git commit -m "Remove repo2 submodule"
 # 4. Clone a repo with its submodules (all at once)
 git clone --recurse-submodules <repo1-url>        # Clone main repo and all submodules
 
+git pull --recurse-submodules
+
 #    OR: Initialize and update submodules after cloning
 git submodule update --init --recursive           # Fetch and checkout submodule code
 
