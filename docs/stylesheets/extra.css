@@ -621,8 +621,8 @@ th, td {
   width: 1em;
   height: 1em;
   vertical-align: -.15em;
-  mask: url('assets/.icons/link-external-24.svg') no-repeat center center;
-  -webkit-mask: url('assets/.icons/link-external-24.svg') no-repeat center center;
+  mask: url('../assets/.icons/link-external-24.svg') no-repeat center center;
+  -webkit-mask: url('../assets/.icons/link-external-24.svg') no-repeat center center;
   mask-size: cover;
   -webkit-mask-size: cover;
   background-color: currentColor;
