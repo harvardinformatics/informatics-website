@@ -26,7 +26,7 @@ Many scientific software packages are run by text commands via the **command lin
 
     If you are on an institutional server or cluster, it is possible they already have mamba (or conda) installed and activated. You can check this by running the command `mamba --version`. If you see the text **mamba X.X.X**, with each X being a number, then mamba is already installed and you can skip to step 2! If you see some form of the error message **Command not found**, then you will have to install mamba.
 
-To install mamba, first navigate to the [Miniforge3 repository page](https://github.com/conda-forge/miniforge). Miniforge is a minimal installer for conda and mamba. On this page, scroll down to the **Install** section and follow the instructions for your operating system.
+To install mamba, first navigate to the [Miniforge3 repository page :octicons-link-external-24:](https://github.com/conda-forge/miniforge){:target="_blank"}. Miniforge is a minimal installer for conda and mamba. On this page, scroll down to the **Install** section and follow the instructions for your operating system.
 
 ### Mac/Linux
 
@@ -34,7 +34,7 @@ To install mamba, first navigate to the [Miniforge3 repository page](https://git
   <img src="../../img/mamba-install1.png" alt="A screenshot of the miniforge repository's installation instructions" />
 </center>
 
-On Mac and Linux machines (the [Harvard cluster runs a version of Linux](https://www.rc.fas.harvard.edu/about/cluster-architecture/)), you'll want to open your Terminal or login to the server to type the download and install commands.
+On Mac and Linux machines (the [Harvard cluster runs a version of Linux :octicons-link-external-24:](https://www.rc.fas.harvard.edu/about/cluster-architecture/){:target="_blank"}), you'll want to open your Terminal or login to the server to type the download and install commands.
 
 #### Download the installation script
 
@@ -50,7 +50,7 @@ After the installation process is complete, restart your terminal or reconnect t
 
 For windows, we recommend installing the **Windows Subsystem for Linux (WSL)**. This will install a Linux environment within your Windows machine that can run concurrently with Windows. Importantly, it will install a Linux shell program called **bash** that will allow you to run the commands above.
 
-* **[Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)**
+* **[Install WSL :octicons-link-external-24:](https://learn.microsoft.com/en-us/windows/wsl/install){:target="_blank"}**
 
 If necessary, Miniforge does provide an explicit Windows installer for conda/mamba that you may install instead per the instructions on their page.
 
@@ -130,7 +130,7 @@ With mamba installed and within an activted environment, we are almost ready to 
 
 The conda package repository has various **channels** in which software packages can be found. A channel is essentially a sub-repository for similarly themed software. For example, **bioconda** is used for software related to bioinformatics. **conda-forge** is also a popular channel that offers more general software (in fact Miniforge which we used to install conda/mamba is a part of conda-forge).
 
-In the likely event that you'll be using the [bioconda](https://bioconda.github.io/) channel, they provide additional commands to set-up your conda configuration for ease of use:
+In the likely event that you'll be using the [bioconda :octicons-link-external-24:](https://bioconda.github.io/){:target="_blank"} channel, they provide additional commands to set-up your conda configuration for ease of use:
 
 ```bash
 conda config --add channels bioconda
@@ -144,15 +144,15 @@ This ensures that when you install a package, both the conda-forge and bioconda 
 
 While it is certainly possible to type "[software name] conda package" into your favorite search engine and get results, it may be better to directly search the websites of each channel:
 
-* [bioconda](https://bioconda.github.io/)
-* [conda-forge](https://conda-forge.org/packages/)
-* [Anaconda](https://anaconda.org/)
+* [bioconda :octicons-link-external-24:](https://bioconda.github.io/){:target="_blank"}
+* [conda-forge :octicons-link-external-24:](https://conda-forge.org/packages/){:target="_blank"}
+* [Anaconda :octicons-link-external-24:](https://anaconda.org/){:target="_blank"}
 
 Anaconda will search all conda channels so it may be the most direct way to search, but be wary of false positives (anyone can create a channel). Additionally, each page should give a short summary of the software and relevant links and, importantly, installation commands for software packages.
 
 ### Installation commands
 
-After you've searched the links above for your software of interest, you should be able to copy and paste the command into your terminal, *e.g.* if you're interested in the software [GRAMPA](https://bioconda.github.io/recipes/grampa/README.html#package-package%20&#x27;grampa&#x27;):
+After you've searched the links above for your software of interest, you should be able to copy and paste the command into your terminal, *e.g.* if you're interested in the software [GRAMPA :octicons-link-external-24:](https://bioconda.github.io/recipes/grampa/README.html#package-package%20&#x27;grampa&#x27;){:target="_blank"}:
 
 ```bash
 mamba install grampa
@@ -192,7 +192,7 @@ The `>` operator redirects the output to the file `environment.yml`. You could n
 
 ??? example "An example conda environment yml file"
 
-    `.yml` or `.yaml` stands for "[YAML ain't markup language](https://en.wikipedia.org/wiki/YAML)" files, and is a basic nested text format that is easily parseable. In the context of conda, it may look something like this:
+    `.yml` or `.yaml` stands for "[YAML ain't markup language :octicons-link-external-24:](https://en.wikipedia.org/wiki/YAML){:target="_blank"}" files, and is a basic nested text format that is easily parseable. In the context of conda, it may look something like this:
 
     ```
     name: example_env
@@ -272,7 +272,7 @@ This should create and automatically install all the software that was in the ex
 
     ##### 4. The package I want to install isn't available through conda
 
-    First, search for your package on other software repositories. For Python packages (though most of these should be on conda), there is the [PyPI repository](https://pypi.org/) which uses the [pip](https://pypi.org/project/pip/) command line tool to install packages. pip should be installed with Python. For R packages, [CRAN](https://cran.r-project.org/) is the repository, and these packages can be installed within R with the `install.packages()` command. Depending on your OS or what programming language you want to install software from, there is likely a repository to search and associated command line tool. For example, MacOS has [Homebrew](https://brew.sh/), run with the `brew` command, and JavaScript packages can be found in the [npm registry](https://www.npmjs.com/). There are many other repositories out there, and the program you're interested in should have documentation telling you where it can be found.
+    First, search for your package on other software repositories. For Python packages (though most of these should be on conda), there is the [PyPI repository :octicons-link-external-24:](https://pypi.org/){:target="_blank"} which uses the [pip :octicons-link-external-24:](https://pypi.org/project/pip/){:target="_blank"} command line tool to install packages. pip should be installed with Python. For R packages, [CRAN :octicons-link-external-24:](https://cran.r-project.org/){:target="_blank"} is the repository, and these packages can be installed within R with the `install.packages()` command. Depending on your OS or what programming language you want to install software from, there is likely a repository to search and associated command line tool. For example, MacOS has [Homebrew :octicons-link-external-24:](https://brew.sh/){:target="_blank"}, run with the `brew` command, and JavaScript packages can be found in the [npm registry :octicons-link-external-24:](https://www.npmjs.com/){:target="_blank"}. There are many other repositories out there, and the program you're interested in should have documentation telling you where it can be found.
 
     If you've searched repositories for your OS or programming language of interest and haven't found the program you want available on any of them, you may be stuck **building from source**. This can be as simple as downloading a script from github with no dependencies. But this can also be a very difficult task: it means you are also responsible for installing any dependencies and specifying paths to libraries that the program uses, which, on shared compute systems (like institutional clusters) where one doesn't have full access to all folders, can be unmanageable. Hopefully the authors of the program have left very good documentation about how to handle these things...
 

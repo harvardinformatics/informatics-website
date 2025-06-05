@@ -87,7 +87,7 @@ for tag in tag_list:
                     tag_counts[tag] += 1;
                     # Increment the count for the current tag
 
-                    cur_link = "<a href='" + links[link]['link'] + "' target='_blank'>" + link + "</a>";
+                    cur_link = "<a href='" + links[link]['link'] + "' target='_blank'>" + link + " <span class=\"icon-external\"></span></a>";
                     # HTML for the current resource link
 
                     links[link]['tags'].sort(key=lambda x: x.lower());

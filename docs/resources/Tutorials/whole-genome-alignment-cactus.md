@@ -9,7 +9,7 @@ title: Whole genome alignment with Cactus
     }
 </style>
 
-Comparative genomics requires alignments between sequences from different populations or species. While alignment of small chunks of sequence (e.g. genes) between many species is relatively straightforward, whole genome alignment has been challenging. The [Cactus genome alignment software](https://github.com/ComparativeGenomicsToolkit/cactus) and its [associated tools](https://github.com/ComparativeGenomicsToolkit) has made this task feasible for up to hundreds of genomes. However, this can still be technically difficult to run. Here we have developed a [Snakemake](https://snakemake.readthedocs.io/en/stable/) pipeline to facilitate running Cactus on a computing cluster. This is done by first running the `cactus-prepare` command to generate the Cactus labeled phylogeny, which is used to guide the submission of jobs to the cluster. For more details on how Snakemake breaks up Cactus's steps, expand the box below.
+Comparative genomics requires alignments between sequences from different populations or species. While alignment of small chunks of sequence (e.g. genes) between many species is relatively straightforward, whole genome alignment has been challenging. The [Cactus genome alignment software :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus){:target="_blank"} and its [associated tools :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit){:target="_blank"} has made this task feasible for up to hundreds of genomes. However, this can still be technically difficult to run. Here we have developed a [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} pipeline to facilitate running Cactus on a computing cluster. This is done by first running the `cactus-prepare` command to generate the Cactus labeled phylogeny, which is used to guide the submission of jobs to the cluster. For more details on how Snakemake breaks up Cactus's steps, expand the box below.
 
 ??? example "The cactus-snakemake pipeline's rulegraph"
 
@@ -27,11 +27,11 @@ Comparative genomics requires alignments between sequences from different popula
 
 You will need several things to be able to run this pipeline:
 
-1. A computing cluster that uses [SLURM](https://slurm.schedmd.com/overview.html), though it should be possible to extend it to [any job scheduler that Snakemake supports](https://github.com/snakemake?q=executor&type=all&language=&sort=).
+1. A computing cluster that uses [SLURM :octicons-link-external-24:](https://slurm.schedmd.com/overview.html){:target="_blank"}, though it should be possible to extend it to [any job scheduler that Snakemake supports :octicons-link-external-24:](https://github.com/snakemake?q=executor&type=all&language=&sort=){:target="_blank"}.
 2. conda or mamba to install software. See [Installing command line software](installing-command-line-software-conda-mamba.md) if you don't have conda/mamba installed.
-2. [Snakemake](https://snakemake.readthedocs.io/en/stable/) and the [Snakemake SLURM plugin](https://anaconda.org/bioconda/snakemake-executor-plugin-slurm)
+2. [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} and the [Snakemake SLURM plugin :octicons-link-external-24:](https://anaconda.org/bioconda/snakemake-executor-plugin-slurm){:target="_blank"}
 3. Singularity - **The pipeline itself will automatically download the latest version of the Cactus singularity container for you.**
-4. The [Harvard Informatics cactus-snakemake pipeline](https://github.com/harvardinformatics/cactus-snakemake/)
+4. The [Harvard Informatics cactus-snakemake pipeline :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/){:target="_blank"}
 
 Below we walk you through our recommended way for getting this all set up.
 
@@ -59,7 +59,7 @@ mamba install conda-forge::singularity
 
 !!! tip "Cannon cluster Snakemake plugin"
 
-    If you are on the Harvard Cannon cluster, instead of the generic snakemake-executor-plugin-slurm, you can use our specific plugin for the Cannon cluster: [snakemake-executor-plugin-cannon](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html). This facilitates *automatic partition selection* based on requested resources. Install this in your environment with:
+    If you are on the Harvard Cannon cluster, instead of the generic snakemake-executor-plugin-slurm, you can use our specific plugin for the Cannon cluster: [snakemake-executor-plugin-cannon :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html){:target="_blank"}. This facilitates *automatic partition selection* based on requested resources. Install this in your environment with:
 
     ```bash
     mamba install bioconda::snakemake-executor-plugin-cannon
@@ -71,7 +71,7 @@ mamba install conda-forge::singularity
 
 ### Downloading the cactus-snakemake pipeline
 
-The [pipeline](https://github.com/harvardinformatics/cactus-snakemake/) is currently available on github. You can install it on the Harvard cluster or any computer that has `git` installed by navigating to the directory in which you want to download it and doing one of the following:
+The [pipeline :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/){:target="_blank"} is currently available on github. You can install it on the Harvard cluster or any computer that has `git` installed by navigating to the directory in which you want to download it and doing one of the following:
 
 #### Using git with HTTPS
 
@@ -102,8 +102,8 @@ With that, you should be ready to set-up your data for the pipeline!
 
 To run this pipeline, you will need (corresponding Snakemake config option given in parentheses):
 
-1. A [**rooted**](#3-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format](https://en.wikipedia.org/wiki/Newick_format) (specified in `input_file`).
-2. The [**softmasked**](#4-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each species (specified in `input_file`).
+1. A [**rooted**](#3-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format :octicons-link-external-24:](https://en.wikipedia.org/wiki/Newick_format){:target="_blank"} (specified in `input_file`).
+2. The [**softmasked**](#4-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA :octicons-link-external-24:](https://en.wikipedia.org/wiki/FASTA_format){:target="_blank"} files for each species (specified in `input_file`).
 3. A reference genome to project the alignment to MAF format (`maf_reference`).
 
 You will use these to create the input file for Cactus.
@@ -112,13 +112,13 @@ You will use these to create the input file for Cactus.
 
 The various Cactus commands depend on a single input file with information about the genomes to align. This file is a simple tab delimited file. 
 
-The first line of the file contains the **rooted** input species tree in [Newick format](https://en.wikipedia.org/wiki/Newick_format) and nothing else (be sure to remember the semi-colon at the end of the Newick tree!).
+The first line of the file contains the **rooted** input species tree in [Newick format :octicons-link-external-24:](https://en.wikipedia.org/wiki/Newick_format){:target="_blank"} and nothing else (be sure to remember the semi-colon at the end of the Newick tree!).
 
 Each subsequent line contains in the first column one tip label from the tree and in the second column the path to the genome FASTA file for that species. 
 
 !!! warning "[The FASTA files must softmasked!](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#interface)"
 
-    The genomes you provide in FASTA format must be softmasked before running Cactus, otherwise the the program will likely not complete. You can tell if a genome FASTA file is masked by the presence of lower-case nucleotides: a, t, c, or g. If your FASTA file has these lower-case characters, it has likely been softmasked. If not, you will have to mask the genome with a tool like [RepeatMasker](https://www.repeatmasker.org/). Also importantly, the FASTA files should **not** be **hard** masked, meaning the masked bases are replaced with Ns.
+    The genomes you provide in FASTA format must be softmasked before running Cactus, otherwise the the program will likely not complete. You can tell if a genome FASTA file is masked by the presence of lower-case nucleotides: a, t, c, or g. If your FASTA file has these lower-case characters, it has likely been softmasked. If not, you will have to mask the genome with a tool like [RepeatMasker :octicons-link-external-24:](https://www.repeatmasker.org/){:target="_blank"}. Also importantly, the FASTA files should **not** be **hard** masked, meaning the masked bases are replaced with Ns.
 
 For example, if one were running this pipeline on 5 species named A, B, C, D, and E, the input file may look something like this:
 
@@ -131,7 +131,7 @@ D   seqdir/d.fa
 E   seqdir/e.fa
 ```
 
-For more information about the Cactus input file, see their [official documentation](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#interface). There is also an example input file for a small test dataset [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/evolverMammals.txt) or at `tests/evolverMammals/evolverMammals.txt`. For more info, see section: [Test dataset](#test-dataset).
+For more information about the Cactus input file, see their [official documentation :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#interface){:target="_blank"}. There is also an example input file for a small test dataset [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/evolverMammals.txt){:target="_blank"} or at `tests/evolverMammals/evolverMammals.txt`. For more info, see section: [Test dataset](#test-dataset).
 
 ### Reference sample
 
@@ -141,9 +141,9 @@ In order to run the last step of the workflow that converts the HAL format to a 
 
 !!! tip "Be sure to start with the example config file as a template!"
 
-    The config for the Cactus test data can be found at [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/evolverMammals-cfg.yaml) or at `tests/evolverMammals/evolverMammals-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
+    The config for the Cactus test data can be found at [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/evolverMammals-cfg.yaml){:target="_blank"} or at `tests/evolverMammals/evolverMammals-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
 
-    Additionally, a blank template file is located [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-templates/config-template.yaml) or at `config-templates/config-template.yaml` in your downloaded cactus-snakemake repo.
+    Additionally, a blank template file is located [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-templates/config-template.yaml){:target="_blank"} or at `config-templates/config-template.yaml` in your downloaded cactus-snakemake repo.
 
 Besides the sequence input, the pipeline needs some extra configuration to know where to look for files and write output. That is done in the Snakemake configuration file for a given run. It contains 2 sections, one for specifying the input and output options, and one for specifying resources for the various rules (see [below](#specifying-resources-for-each-rule)). The first part should look something like this:
 
@@ -206,7 +206,7 @@ rule_resources:
     * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rule **blast** must be GPU enabled. If not, the pipeline will fail to run.
     * The `blast: gpus:` option will be ignored if `use_gpu: False` is set.
     * **mem_mb is in MB** and **time is in minutes**.
-    * **If using the [snakemake-executor-plugin-cannon](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html) specifically for the Harvard Cannon cluster, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**
+    * **If using the [snakemake-executor-plugin-cannon :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html){:target="_blank"} specifically for the Harvard Cannon cluster, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.
 
@@ -324,9 +324,9 @@ This will start submitting jobs to SLURM. On your screen, you will see continuou
 
     2. ~~Run the Snakemake job in the background by using `nohup <snakemake command> &`. This will run the command in the background and persist even if you disconnect. However, it makes it difficult to check on the status of your command.~~
 
-    3. Submit the Snakemake command itself as a SLURM job. This will require [preparing and submitting a job script](https://docs.rc.fas.harvard.edu/kb/running-jobs/). This is a good solution.
+    3. Submit the Snakemake command itself as a SLURM job. This will require [preparing and submitting a job script :octicons-link-external-24:](https://docs.rc.fas.harvard.edu/kb/running-jobs/){:target="_blank"}. This is a good solution.
 
-    4. Use a [terminal multiplexer](https://en.wikipedia.org/wiki/Terminal_multiplexer) like [GNU Screen](https://en.wikipedia.org/wiki/GNU_Screen) or [tmux](https://en.wikipedia.org/wiki/Tmux). These programs allow you to open a sub-terminal within your currently connected terminal that remains even after you disconnect from the server. This is also a good solution.
+    4. Use a [terminal multiplexer :octicons-link-external-24:](https://en.wikipedia.org/wiki/Terminal_multiplexer){:target="_blank"} like [GNU Screen :octicons-link-external-24:](https://en.wikipedia.org/wiki/GNU_Screen){:target="_blank"} or [tmux :octicons-link-external-24:](https://en.wikipedia.org/wiki/Tmux){:target="_blank"}. These programs allow you to open a sub-terminal within your currently connected terminal that remains even after you disconnect from the server. This is also a good solution.
 
 Depending on the number of genomes, their sizes, and your wait in the queue, you will hopefully have your whole genome alignment within a few days!
 
@@ -361,11 +361,11 @@ snakemake -j 10 -e slurm -s ../../cactus.smk --configfile evolverMammals-cfg.yam
 
 ## Pipeline outputs
 
-The pipeline will output a [.paf](https://github.com/lh3/miniasm/blob/master/PAF.md), a [.hal](https://github.com/ComparativeGenomicsToolkit/hal/blob/master/README.md), and a [.fa](https://en.wikipedia.org/wiki/FASTA_format) file for every node in the input tree (including ancestral sequences). The final alignment file will be `<final_prefix>.hal`, where `<final_prefix>` is whatever you specified in the Snakemake config file. 
+The pipeline will output a [.paf :octicons-link-external-24:](https://github.com/lh3/miniasm/blob/master/PAF.md){:target="_blank"}, a [.hal :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/hal/blob/master/README.md){:target="_blank"}, and a [.fa :octicons-link-external-24:](https://en.wikipedia.org/wiki/FASTA_format){:target="_blank"} file for every node in the input tree (including ancestral sequences). The final alignment file will be `<final_prefix>.hal`, where `<final_prefix>` is whatever you specified in the Snakemake config file. 
 
-The final alignment will also be presented in MAF format as `<final_prefix>.<maf_reference>.maf`, again where `<maf_reference>` is whatever you set in the Snakemake config. This file will include all sequences. Another MAF file, `<final_prefix>.<maf_reference>.nodupes.maf` will also be generated, which is the alignment in MAF format with no duplicate sequences. The de-duplicated MAF file is generated with `--dupeMode single`. See the [Cactus documentation regarding MAF export](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#maf-export) for more info.
+The final alignment will also be presented in MAF format as `<final_prefix>.<maf_reference>.maf`, again where `<maf_reference>` is whatever you set in the Snakemake config. This file will include all sequences. Another MAF file, `<final_prefix>.<maf_reference>.nodupes.maf` will also be generated, which is the alignment in MAF format with no duplicate sequences. The de-duplicated MAF file is generated with `--dupeMode single`. See the [Cactus documentation regarding MAF export :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#maf-export){:target="_blank"} for more info.
 
-A suite of tools called [HAL tools](https://github.com/ComparativeGenomicsToolkit/Hal) is included with the Cactus singularity image if you need to manipulate or analyze .hal files. There are many tools for manipulating MAF files, though they are not always easy to use. The makers of Cactus also develop [taffy](https://github.com/ComparativeGenomicsToolkit/taffy), which can manipulate MAF files by converting them to TAF files.
+A suite of tools called [HAL tools :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/Hal){:target="_blank"} is included with the Cactus singularity image if you need to manipulate or analyze .hal files. There are many tools for manipulating MAF files, though they are not always easy to use. The makers of Cactus also develop [taffy :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/taffy){:target="_blank"}, which can manipulate MAF files by converting them to TAF files.
 
 ## Questions/troubleshooting
 
@@ -379,7 +379,7 @@ A suite of tools called [HAL tools](https://github.com/ComparativeGenomicsToolki
 
     ##### 2. How can I tell if my input Newick tree is rooted?
 
-    The easiest way to check if your tree is rooted is probably to load the tree into [R](https://www.r-project.org/) with the `ape` package. This can be done with the following commands:
+    The easiest way to check if your tree is rooted is probably to load the tree into [R :octicons-link-external-24:](https://www.r-project.org/){:target="_blank"} with the `ape` package. This can be done with the following commands:
 
     ```r
     install.packages("ape") # Only if you don't have it installed already
@@ -433,17 +433,17 @@ A suite of tools called [HAL tools](https://github.com/ComparativeGenomicsToolki
     awk 'BEGIN{count=0} !/^>/{for(i=1;i<=length($0);i++) if (substr($0,i,1) ~ /[acgt]/) count++} END{print count}' your-genome-file.fa
     ```
 
-    Importantly, your genomes [should not be **hard** masked](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#interface), which means that masked bases are replaced by Ns. Unfortunately, there are many reasons for Ns to appear in a genome fasta file, so it is difficult to tell if it is because it is hardmasked based on the presence of Ns alone. Hopefully the source of the file has left some documentation describing how it was prepared...
+    Importantly, your genomes [should not be **hard** masked :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/progressive.md#interface){:target="_blank"}, which means that masked bases are replaced by Ns. Unfortunately, there are many reasons for Ns to appear in a genome fasta file, so it is difficult to tell if it is because it is hardmasked based on the presence of Ns alone. Hopefully the source of the file has left some documentation describing how it was prepared...
 
-    If your genomes are not softmasked and you wish to do so, you will have to run a program like [RepeatMasker](https://www.repeatmasker.org/) or [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler) on it. Please consult the documentation for these tools.
+    If your genomes are not softmasked and you wish to do so, you will have to run a program like [RepeatMasker :octicons-link-external-24:](https://www.repeatmasker.org/){:target="_blank"} or [RepeatModeler :octicons-link-external-24:](https://github.com/Dfam-consortium/RepeatModeler){:target="_blank"} on it. Please consult the documentation for these tools.
 
 ??? question "4. I want to run this on a cluster with a job scheduler other than SLURM! What do I do?"
 
     ##### 4. Clusters other than SLURM?
 
-    Generally, it should be relatively easy install and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
+    Generally, it should be relatively easy install and use the appropriate [Snakemake cluster executor :octicons-link-external-24:](https://github.com/snakemake?q=executor&type=all&language=&sort=){:target="_blank"}.
 
-    If you need help or run into problems, please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) and we'll try and help - though it will likely be up to you to test on your own cluster, since we only have easy access to a cluster running SLURM.
+    If you need help or run into problems, please [create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} and we'll try and help - though it will likely be up to you to test on your own cluster, since we only have easy access to a cluster running SLURM.
 
 ??? question "5. I got an error related to InsufficientSystemResources regarding GPUs during run_lastz in the `blast` rule. What do I do?"
 
@@ -455,17 +455,17 @@ A suite of tools called [HAL tools](https://github.com/ComparativeGenomicsToolki
     toil.batchSystems.abstractBatchSystem.InsufficientSystemResources: The job 'run_lastz' kind-run_lastz/instance-tqdjs4tj v1 is requesting [{'count': 4, 'kind': 'gpu', 'api': 'cuda', 'brand': 'nvidia'}] accelerators, more than the maximum of [{'kind': 'gpu', 'brand': 'nvidia', 'api': 'cuda', 'count': 1}, {'kind': 'gpu', 'brand': 'nvidia', 'api': 'cuda', 'count': 1}] accelerators that SingleMachineBatchSystem was configured with. The accelerator {'count': 4, 'kind': 'gpu', 'api': 'cuda', 'brand': 'nvidia'} could not be provided. Scale is set to 1.
     ```
 
-    it may be because your GPU partition is set up to use [MIGs (Multi-instance GPUs)](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/). This is essentially like a multi-core CPU, except for GPUs. The problem is that Cactus isn't setup to recognize these as of the last update of this tutorial. It only recognizes physical GPU devices. For instance, let's say you've requested 4 GPUs for your `blast` rule by setting `blast_gpu: 4` in your config file. The BLAST job is submitted to your GPU node, which allocates 2 physical GPUs set up as MIGs, each with 2 instances, which is the equivalent of 4 GPUs. However, cactus only sees the 2 physical GPUs and thinks there aren't enough to accomodate your request for 4, resulting in the error.
+    it may be because your GPU partition is set up to use [MIGs (Multi-instance GPUs) :octicons-link-external-24:](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/){:target="_blank"}. This is essentially like a multi-core CPU, except for GPUs. The problem is that Cactus isn't setup to recognize these as of the last update of this tutorial. It only recognizes physical GPU devices. For instance, let's say you've requested 4 GPUs for your `blast` rule by setting `blast_gpu: 4` in your config file. The BLAST job is submitted to your GPU node, which allocates 2 physical GPUs set up as MIGs, each with 2 instances, which is the equivalent of 4 GPUs. However, cactus only sees the 2 physical GPUs and thinks there aren't enough to accomodate your request for 4, resulting in the error.
 
     To resolve this, check your cluster documentation to see if there is a way to use only physical GPUs instead of MIGs. If not, you will have to set `blast_gpu: 1` in your config. That is the only way to guarantee that the number of physical GPUs aligns with your request.
 
-    Read more about this [here](https://github.com/harvardinformatics/cactus-snakemake/issues/2) and [here](https://github.com/ComparativeGenomicsToolkit/cactus/issues/1618).
+    Read more about this [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues/2){:target="_blank"} and [here :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/issues/1618){:target="_blank"}.
 
 ??? question "6. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
 
     ##### 6. Encountering errors
 
-    Please [search for or create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
+    Please [search for or create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
     Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
 
@@ -473,4 +473,4 @@ A suite of tools called [HAL tools](https://github.com/ComparativeGenomicsToolki
 
     ##### 7. Pipeline improvements
     
-    Great! Please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) describing your idea so we can discuss its implementation!
+    Great! Please [create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} describing your idea so we can discuss its implementation!

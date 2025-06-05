@@ -374,7 +374,7 @@ with open(md_output_file, 'w') as md_output:
             if person_data['link'].startswith("about/people/"):
                 cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '">' + person_data['name'] + '</a></span><br>\n\n';
             else:
-                cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + '</a></span><br>\n\n';
+                cards_tables["alum"] += '\t\t<span class="alum-name"><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + ' <span class="icon-external"></span></a></span><br>\n\n';
         else:
             cards_tables["alum"] += '\t\t<span class="alum-name">' + person_data['name'] + '</span><br>\n\n';
         # Add the person name with or without a link

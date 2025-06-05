@@ -9,7 +9,7 @@ title: Pangenome inference with Cactus-minigraph
     }
 </style>
 
-For aligning genome assemblies from the same species for population genomic analyses, the [Cactus genome alignment software](https://github.com/ComparativeGenomicsToolkit/cactus) has [implemented a workflow](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md) using [minigraph](https://github.com/lh3/minigraph). However, this can still be technically difficult to run. Here we have developed a [Snakemake](https://snakemake.readthedocs.io/en/stable/) pipeline to facilitate running Cactus-minigraph on a computing cluster. For more details on how Snakemake breaks up Cactus-minigraph's steps, expand the box below.
+For aligning genome assemblies from the same species for population genomic analyses, the [Cactus genome alignment software :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus){:target="_blank"} has [implemented a workflow :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md){:target="_blank"} using [minigraph :octicons-link-external-24:](https://github.com/lh3/minigraph){:target="_blank"}. However, this can still be technically difficult to run. Here we have developed a [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} pipeline to facilitate running Cactus-minigraph on a computing cluster. For more details on how Snakemake breaks up Cactus-minigraph's steps, expand the box below.
 
 ??? example "The cactus-minigraph snakemake pipeline's rulegraph"
 
@@ -28,11 +28,11 @@ For aligning genome assemblies from the same species for population genomic anal
 
 You will need several things to be able to run this pipeline:
 
-1. A computing cluster that uses [SLURM](https://slurm.schedmd.com/overview.html), though it should be possible to extend it to [any job scheduler that Snakemake supports](https://github.com/snakemake?q=executor&type=all&language=&sort=).
+1. A computing cluster that uses [SLURM :octicons-link-external-24:](https://slurm.schedmd.com/overview.html){:target="_blank"}, though it should be possible to extend it to [any job scheduler that Snakemake supports :octicons-link-external-24:](https://github.com/snakemake?q=executor&type=all&language=&sort=){:target="_blank"}.
 2. conda or mamba to install software. See [Installing command line software](installing-command-line-software-conda-mamba.md) if you don't have conda/mamba installed.
-2. [Snakemake](https://snakemake.readthedocs.io/en/stable/) and the [Snakemake SLURM plugin](https://anaconda.org/bioconda/snakemake-executor-plugin-slurm)
+2. [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} and the [Snakemake SLURM plugin :octicons-link-external-24:](https://anaconda.org/bioconda/snakemake-executor-plugin-slurm){:target="_blank"}
 3. Singularity - **The pipeline itself will automatically download the latest version of the Cactus singularity container for you.**
-4. The [Harvard Informatics cactus-snakemake pipeline](https://github.com/harvardinformatics/cactus-snakemake/)
+4. The [Harvard Informatics cactus-snakemake pipeline :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/){:target="_blank"}
 
 Below we walk you through our recommended way for getting this all set up.
 
@@ -60,7 +60,7 @@ mamba install conda-forge::singularity
 
 !!! tip "Cannon cluster Snakemake plugin"
 
-    If you are on the Harvard Cannon cluster, instead of the generic snakemake-executor-plugin-slurm, you can use our specific plugin for the Cannon cluster: [snakemake-executor-plugin-cannon](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html). This facilitates *automatic partition selection* based on requested resources. Install this in your environment with:
+    If you are on the Harvard Cannon cluster, instead of the generic snakemake-executor-plugin-slurm, you can use our specific plugin for the Cannon cluster: [snakemake-executor-plugin-cannon :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html){:target="_blank"}. This facilitates *automatic partition selection* based on requested resources. Install this in your environment with:
 
     ```bash
     mamba install bioconda::snakemake-executor-plugin-cannon
@@ -72,7 +72,7 @@ mamba install conda-forge::singularity
 
 ### Downloading the cactus-snakemake pipeline
 
-The [pipeline](https://github.com/harvardinformatics/cactus-snakemake/) is currently available on github. You can install it on the Harvard cluster or any computer that has `git` installed by navigating to the directory in which you want to download it and doing one of the following:
+The [pipeline :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/){:target="_blank"} is currently available on github. You can install it on the Harvard cluster or any computer that has `git` installed by navigating to the directory in which you want to download it and doing one of the following:
 
 #### Using git with HTTPS
 
@@ -103,7 +103,7 @@ With that, you should be ready to set-up your data for the pipeline!
 
 To run this pipeline, you will need (corresponding Snakemake config option given in parentheses):
 
-1. The assembled genome [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files for each sample (specified in `input_file`).
+1. The assembled genome [FASTA :octicons-link-external-24:](https://en.wikipedia.org/wiki/FASTA_format){:target="_blank"} files for each sample (specified in `input_file`).
 2. A reference sample (`reference`).
 
 You will use these to create the input file for Cactus-minigraph.
@@ -128,19 +128,19 @@ D   seqdir/d.fa
 E   seqdir/e.fa
 ```
 
-There is much more information about the Cactus-minigraph input file in the [official documentation for cactus-minigraph](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#interface), including how to run the pipeline with diploid assemblies. There is also an example input file for a small test dataset [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeastPangenome-local.txt) or at `tests/yeast-minigraph/yeastPangenome-local.txt`. For more info, see section: [Test dataset](#test-dataset).
+There is much more information about the Cactus-minigraph input file in the [official documentation for cactus-minigraph :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#interface){:target="_blank"}, including how to run the pipeline with diploid assemblies. There is also an example input file for a small test dataset [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeastPangenome-local.txt){:target="_blank"} or at `tests/yeast-minigraph/yeastPangenome-local.txt`. For more info, see section: [Test dataset](#test-dataset).
 
 ### Reference sample
 
-Cactus-minigraph requires that you select one sample as a reference sample [for a variety of reasons](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#reference-sample). Keep these in mind as you prepare your inputs. The reference sample will be indicated in the Snakemake config file (outlined below). For instance, if I wanted my reference sample in the above file to be **C**, I would put the string `C` in the `reference:` line of the Snakemake config file.
+Cactus-minigraph requires that you select one sample as a reference sample [for a variety of reasons :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#reference-sample){:target="_blank"}. Keep these in mind as you prepare your inputs. The reference sample will be indicated in the Snakemake config file (outlined below). For instance, if I wanted my reference sample in the above file to be **C**, I would put the string `C` in the `reference:` line of the Snakemake config file.
 
 ### Preparing the Snakemake config file
 
 !!! tip "Be sure to start with the example config file as a template!"
 
-    The config for the Cactus-minigraph test data can be found at [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeast-minigraph-cfg.yaml) or at `tests/yeast-minigraph/yeast-minigraph-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
+    The config for the Cactus-minigraph test data can be found at [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeast-minigraph-cfg.yaml){:target="_blank"} or at `tests/yeast-minigraph/yeast-minigraph-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
 
-    Additionally, a blank template file is located [here](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-templates/minigraph-config-template.yaml) or at `config-templates/minigraph-config-template.yaml` in your downloaded cactus-snakemake repo.
+    Additionally, a blank template file is located [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-templates/minigraph-config-template.yaml){:target="_blank"} or at `config-templates/minigraph-config-template.yaml` in your downloaded cactus-snakemake repo.
 
 Besides the sequence input, the pipeline needs some extra configuration to know where to look for files and write output. That is done in the Snakemake configuration file for a given run. It contains 2 sections, one for specifying the input and output options, and one for specifying resources for the various rules (see [below](#specifying-resources-for-each-rule)). The first part should look something like this:
 
@@ -187,7 +187,7 @@ rule_resources:
     * Be sure to use partition names appropriate your cluster. Several examples in this tutorial have partition names that are specific to the Harvard cluster, so be sure to change them.
     * The steps in the cactus-minigraph pipeline are not GPU compatible, so there are no GPU options in this pipeline.
     * **mem_mb is in MB** and **time is in minutes**.
-    * **If using the [snakemake-executor-plugin-cannon](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html) specifically for the Harvard Cannon cluster, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**    
+    * **If using the [snakemake-executor-plugin-cannon :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html){:target="_blank"} specifically for the Harvard Cannon cluster, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**    
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs.
 
@@ -269,9 +269,9 @@ This will start submitting jobs to SLURM. On your screen, you will see continuou
 
     2. ~~Run the Snakemake job in the background by using `nohup <snakemake command> &`. This will run the command in the background and persist even if you disconnect. However, it makes it difficult to check on the status of your command.~~
 
-    3. Submit the Snakemake command itself as a SLURM job. This will require [preparing and submitting a job script](https://docs.rc.fas.harvard.edu/kb/running-jobs/). This is a good solution.
+    3. Submit the Snakemake command itself as a SLURM job. This will require [preparing and submitting a job script :octicons-link-external-24:](https://docs.rc.fas.harvard.edu/kb/running-jobs/){:target="_blank"}. This is a good solution.
 
-    4. Use a [terminal multiplexer](https://en.wikipedia.org/wiki/Terminal_multiplexer) like [GNU Screen](https://en.wikipedia.org/wiki/GNU_Screen) or [tmux](https://en.wikipedia.org/wiki/Tmux). These programs allow you to open a sub-terminal within your currently connected terminal that remains even after you disconnect from the server. This is also a good solution.
+    4. Use a [terminal multiplexer :octicons-link-external-24:](https://en.wikipedia.org/wiki/Terminal_multiplexer){:target="_blank"} like [GNU Screen :octicons-link-external-24:](https://en.wikipedia.org/wiki/GNU_Screen){:target="_blank"} or [tmux :octicons-link-external-24:](https://en.wikipedia.org/wiki/Tmux){:target="_blank"}. These programs allow you to open a sub-terminal within your currently connected terminal that remains even after you disconnect from the server. This is also a good solution.
 
 Depending on the number of genomes, their sizes, and your wait in the queue, you will hopefully have your whole genome alignment within a few days!
 
@@ -308,7 +308,7 @@ snakemake -j 10 -e slurm -s ../../cactus_minigraph.smk --configfile yeast-minigr
 
 The pipeline produces many output files including `.hal`, the Cactus alignment format, `.gfa`, the graphical fragment assembly format, `.vcf`, the variant call format, and `.vg`, the variation graph format.
 
-For more information about all outputs, see [Cactus's minigraph documentation section about output](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#output).
+For more information about all outputs, see [Cactus's minigraph documentation section about output :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#output){:target="_blank"}.
 
 ## Questions/troubleshooting
 
@@ -328,15 +328,15 @@ For more information about all outputs, see [Cactus's minigraph documentation se
 
     ##### 3. Clusters other than SLURM?
 
-    Generally, it should be relatively easy install and use the appropriate [Snakemake cluster executor](https://github.com/snakemake?q=executor&type=all&language=&sort=).
+    Generally, it should be relatively easy install and use the appropriate [Snakemake cluster executor :octicons-link-external-24:](https://github.com/snakemake?q=executor&type=all&language=&sort=){:target="_blank"}.
 
-    If you need help or run into problems, please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) and we'll try and help - though it will likely be up to you to test on your own cluster, since we only have easy access to a cluster running SLURM.
+    If you need help or run into problems, please [create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} and we'll try and help - though it will likely be up to you to test on your own cluster, since we only have easy access to a cluster running SLURM.
 
 ??? question "4. I tried to run the pipeline and I ran into an error that I don't understand or can't resolve. What do I do?"
 
     ##### 4. Encountering errors
 
-    Please [search for or create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
+    Please [search for or create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
     Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
 
@@ -344,4 +344,4 @@ For more information about all outputs, see [Cactus's minigraph documentation se
 
     ##### 5. Pipeline improvements
     
-    Great! Please [create an issue on the pipeline's github](https://github.com/harvardinformatics/cactus-snakemake/issues) describing your idea so we can discuss its implementation!
+    Great! Please [create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} describing your idea so we can discuss its implementation!

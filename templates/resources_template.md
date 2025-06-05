@@ -36,7 +36,7 @@ don't understand a term that they heard or read.
 
 Let us know if there is something we should add!
 
-**[View the glossary](glossary.md)**
+[View the Computing Glossary:material-arrow-right:](glossary.md){{ .md-button .md-button--primary .centered }}
 
 <!--
 

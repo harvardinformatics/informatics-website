@@ -1,16 +1,16 @@
 ﻿Term,Definition
 Server,"A general term for a computer that allows others to connect to it via a network. In HPC, this is a computer setup to have users connect and work on it remotely, usually with more resources than personal computers to accommodate more resource intensive commands and multiple users."
 ssh,"Secure Shell (SSH) is a protocol used to securely connect to a server remotely, enabling encrypted communications. Typically initiated from a terminal using `ssh <username>@<server address>` into a **terminal**, though there are many ways to connect to a server."
-Cluster,"An interconnected collection of **servers** setup such that users can connect to one and specify high resource commands to run which are distributed to the others based on available resources."
-Node,"One computer within a cluster."
+Cluster,An interconnected collection of **servers** setup such that users can connect to one and specify high resource commands to run which are distributed to the others based on available resources.
+Node,One computer within a cluster.
 Login node,"The **node** within the **cluster** which users connect to and interact with. Users can submit jobs from the login node, but they are not run there."
-Head node,"The node within the cluster responsible for managing job scheduling and resource allocation; sometimes serves dual roles as a login node."
-Compute node,"The **node** within the **cluster** which actually runs the jobs."
-Job,"A submitted **command** or set of commands passed from the user to the job scheduler on a **cluster**."
-Job scheduler,"A program that coordinates job submission for all users on the cluster. This program distributes jobs to compute nodes and allocates resources. Harvard uses the <a href='https://slurm.schedmd.com/' target='_blank'>SLURM</a> job scheduling program."
+Head node,The node within the cluster responsible for managing job scheduling and resource allocation; sometimes serves dual roles as a login node.
+Compute node,The **node** within the **cluster** which actually runs the jobs.
+Job,A submitted **command** or set of commands passed from the user to the job scheduler on a **cluster**.
+Job scheduler,"A program that coordinates job submission for all users on the cluster. This program distributes jobs to compute nodes and allocates resources. Harvard uses the <a href='https://slurm.schedmd.com/' target='_blank'>SLURM <span class=""icon-external""></span></a> job scheduling program."
 Queue,"A list of jobs waiting to be run on a **cluster**, where priority and scheduling determine the execution sequence."
-Partition,"A subset of the **cluster**'s resources that can be allocated to a job. Partitions can have different resource limits and priorities."
+Partition,A subset of the **cluster**'s resources that can be allocated to a job. Partitions can have different resource limits and priorities.
 Interactive job,"A job that is run on a **cluster** in real time, allowing the user to interact with the job as it runs. On SLURM, this involves using `salloc` to allocate resources and `srun` to execute applications interactively within the allocated environment."
 Batch job,"A job that is submitted to a **cluster** and run without user interaction. On SLURM, this is done with the `sbatch` command."
 I/O (Input/Output) Operations,"The process of transferring data to and from storage devices. In HPC, this is a critical consideration for performance, as slow I/O can bottleneck the speed of a job."
-Scratch,"Temporary storage on a **cluster** that is not backed up and is intended for short-term storage of data. Typically data is deleted periodically. Users are responsible for moving data to more permanent storage."
+Scratch,Temporary storage on a **cluster** that is not backed up and is intended for short-term storage of data. Typically data is deleted periodically. Users are responsible for moving data to more permanent storage.

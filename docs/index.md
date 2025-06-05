@@ -414,7 +414,7 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.subir.com.np/" target="_blank">Subir Shakya</a></span><br>
+		<span class="alum-name"><a href="https://www.subir.com.np/" target="_blank">Subir Shakya <span class="icon-external"></span></a></span><br>
 
 		(2021-2024)<br>
 
@@ -482,7 +482,7 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik</a></span><br>
+		<span class="alum-name"><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik <span class="icon-external"></span></a></span><br>
 
 		(2019-2021)<br>
 
@@ -517,7 +517,7 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://brian-arnold.github.io/about/" target="_blank">Brian Arnold</a></span><br>
+		<span class="alum-name"><a href="https://brian-arnold.github.io/about/" target="_blank">Brian Arnold <span class="icon-external"></span></a></span><br>
 
 		(2018-2020)<br>
 
@@ -543,7 +543,7 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 <div class="col-0-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://tommytang.bio.link/" target="_blank">Ming "Tommy" Tang</a></span><br>
+		<span class="alum-name"><a href="https://tommytang.bio.link/" target="_blank">Ming "Tommy" Tang <span class="icon-external"></span></a></span><br>
 
 		(2018-2020)<br>
 
@@ -552,7 +552,7 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 <div class="col-1-24 card-margin-inner"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine</a></span><br>
+		<span class="alum-name"><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine <span class="icon-external"></span></a></span><br>
 
 		(2019)<br>
 
@@ -578,7 +578,7 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 <div class="col-7-24 card-margin-outer"></div>
 
 <div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz</a></span><br>
+		<span class="alum-name"><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz <span class="icon-external"></span></a></span><br>
 
 		(2017-2018)<br>
 

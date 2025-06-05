@@ -87,7 +87,7 @@ print(my_variable)
 
 And `my_variable` would have the same value as above: `8`
 
-This works for the other arithmetic operators as well. See the table for all arithmetic and update operators.
+This works for the other arithmetic operators as well. See the table for all arithmetic and update operators. 
 
 ## R terms
 
@@ -113,10 +113,10 @@ This works for the other arithmetic operators as well. See the table for all ari
 
 ## High performance computing (HPC) terms
 
-For more information related to Harvard's cluster, see <a href="https://docs.rc.fas.harvard.edu/" target="_blank">FASRC's documentation</a>, 
-particularly their page on <a href="https://docs.rc.fas.harvard.edu/kb/running-jobs/" target="_blank">running jobs</a>.
+For more information related to Harvard's cluster, see <a href="https://docs.rc.fas.harvard.edu/" target="_blank">FASRC's documentation <span class="icon-external"></span></a>, 
+particularly their page on <a href="https://docs.rc.fas.harvard.edu/kb/running-jobs/" target="_blank">running jobs <span class="icon-external"></span></a>.
 
-They also provide a <a href="https://docs.rc.fas.harvard.edu/kb/glossary/" target="_blank">more extensive glossary</a> for more term definitions.
+They also provide a <a href="https://docs.rc.fas.harvard.edu/kb/glossary/" target="_blank">more extensive glossary <span class="icon-external"></span></a> for more term definitions.
 
 {{ read_csv('data/glossary-tables/computing-programming/hpc.csv') }}   
 
@@ -135,7 +135,7 @@ There are several ways to create environments and containers which are covered b
 
 ## Git terms  
 
-<a href="https://git-scm.com/" target="_blank">Git</a> is a program that stores the history of files in any directory that has been initialized as a git repository. Used in conjunction with web-based platforms this makes for a powerful collaboration tool.
+<a href="https://git-scm.com/" target="_blank">Git <span class="icon-external"></span></a> is a program that stores the history of files in any directory that has been initialized as a git repository. Used in conjunction with web-based platforms this makes for a powerful collaboration tool.
 However, there are many terms associated with Git that may be confusing. In essence, many of these terms are simply other words for "a copy" or "copying" a directory, however with slight distinctions.
 This table tries to define these terms clearly.
 
