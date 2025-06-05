@@ -28,3 +28,10 @@ output:
 output: 
   html_document:
     keep_md: true
+
+
+student-to-instructor needs:
+- delete solutions denoted by some string
+- add link formatting
+- add message with link to student version
+- check that headings start at ##
