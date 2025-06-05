@@ -86,8 +86,10 @@ plugins:
   - search
   - table-reader
   - mkdocs-jupyter:
-      ignore: ['*student.ipynb']
-      # ignore: ['*.ipynb'] # for development, uncomment this line to prevent building all notebooks with each change. be sure to re-comment before pushing to remote (though re-commenting now handled with pre-commit hooks).
+      ignore: 
+        - '*student.ipynb'
+        - '2024-Fall/Python-Day*.ipynb'
+        # - '*.ipynb' # for development, uncomment this line to prevent building all notebooks with each change. be sure to re-comment before pushing to remote (though re-commenting now handled with pre-commit hooks).
 
 hooks:
   - scripts/about_generator.py 
@@ -95,7 +97,7 @@ hooks:
 
 extra_css:
   - stylesheets/extra.css
-  
+
 extra:
   social:
     - icon: material/email-outline
