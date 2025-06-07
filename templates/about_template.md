@@ -21,7 +21,7 @@ Visit our Workshops & Events page to see our schedule and view past workshop mat
 
 We also offer one-on-one consultations to researchers who need help with their bioinformatics projects. This includes assistance with data analysis, troubleshooting computational methods, and advice on best practices in bioinformatics. Our team is composed of experts in various areas of computational biology, and we are committed to helping researchers at all levels, from undergraduates to faculty. A consult can consist of one or more meetings, in-person or virtual, depending on the needs of the researcher. Additionally, we also host office hours every Wednesday from 1:30 to 4:00 PM in our office (B227 Northwest Science Building), where researchers can drop by for quick questions or advice, and we have a Slack channel open to the Harvard community where we are available to answer questions.
 
-To schedule a consult or view info about office hours and Slack channel, please visit our Contact page:
+To schedule a consult or view info about office hours and our Slack channel, please visit our Contact page:
 
 [Contact us :material-arrow-right:](contact.md){{ .md-button .md-button--primary .centered }}
 
