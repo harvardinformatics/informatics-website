@@ -3,9 +3,11 @@ title: Installing command line software with conda/mamba
 ---
 
 <style>
-/* FAQ styles */
     details > h5 {
-        display: none;
+        font-size: 0.01em !important;       /* almost invisible but still present! */
+        color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 </style>
 

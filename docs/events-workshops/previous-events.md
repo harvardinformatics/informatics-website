@@ -57,7 +57,7 @@ title: Past events and workshops
     /* Disable hover effect on table rows */
 </style>
 
-These are topics of previous events with no attached contents and the dates of our previous workshops. See [Events & Workshops](index.md#current-workshop-content) for the most up-to-date workshop content! 
+These are topics of previous events with no attached contents and the dates of our previous workshops. See [Events & Workshops](index.md) for the most up-to-date workshop content! 
 
 :material-tools: = Workshop
 

@@ -3,9 +3,11 @@ title: Whole genome alignment with Cactus
 ---
 
 <style>
-/* FAQ styles */
     details > h5 {
-        display: none;
+        font-size: 0.01em !important;       /* almost invisible but still present! */
+        color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 </style>
 
@@ -102,8 +104,8 @@ With that, you should be ready to set-up your data for the pipeline!
 
 To run this pipeline, you will need (corresponding Snakemake config option given in parentheses):
 
-1. A [**rooted**](#3-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format :octicons-link-external-24:](https://en.wikipedia.org/wiki/Newick_format){:target="_blank"} (specified in `input_file`).
-2. The [**softmasked**](#4-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA :octicons-link-external-24:](https://en.wikipedia.org/wiki/FASTA_format){:target="_blank"} files for each species (specified in `input_file`).
+1. A [**rooted**](#2-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format :octicons-link-external-24:](https://en.wikipedia.org/wiki/Newick_format){:target="_blank"} (specified in `input_file`).
+2. The [**softmasked**](#3-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA :octicons-link-external-24:](https://en.wikipedia.org/wiki/FASTA_format){:target="_blank"} files for each species (specified in `input_file`).
 3. A reference genome to project the alignment to MAF format (`maf_reference`).
 
 You will use these to create the input file for Cactus.

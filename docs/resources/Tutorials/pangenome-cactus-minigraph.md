@@ -3,9 +3,11 @@ title: Pangenome inference with Cactus-minigraph
 ---
 
 <style>
-/* FAQ styles */
     details > h5 {
-        display: none;
+        font-size: 0.01em !important;       /* almost invisible but still present! */
+        color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 </style>
 
@@ -68,7 +70,7 @@ mamba install conda-forge::singularity
 
     Then, when running the workflow, specify the cannon executor with `-e cannon` instead of `-e slurm`.
 
-    If you are not on the Harvard Cannon cluster, stick with the generic SLURM plugin. You will just need to directly specify the partitions for each rule in the config file ([see below](#specifying-resources-for-each-rule)).
+    If you are not on the Harvard Cannon cluster, stick with the generic SLURM plugin. You will just need to explicitly specify the partitions for each rule in the config file ([see below](#specifying-resources-for-each-rule)).
 
 ### Downloading the cactus-snakemake pipeline
 
@@ -193,7 +195,7 @@ You will have to determine the proper resource usage for your dataset. Generally
 
 ## Running the pipeline
 
-With [everything installed](#getting-started), the [Cactus input file](#preparing-the-cactus-input-file), and the [Snakemake configuration file](#preparing-the-snakemake-config-file) setup, you are now ready to run the pipeline.
+With [everything installed](#getting-started), the [Cactus input file](#preparing-the-cactus-minigraph-input-file), and the [Snakemake configuration file](#preparing-the-snakemake-config-file) setup, you are now ready to run the pipeline.
 
 ### Do a `--dryrun` first
 
