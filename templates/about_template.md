@@ -5,7 +5,7 @@ template: home.html
 
 ## Mission & Services 
 
-The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group of scientists and software developers working to advance research and teaching by facilitiating computational analysis of scientific data, primarily in biology. We work closely with data-generating scientific cores and with students, postdocs, and faculty generating data to help make research and discovery efficient and productive. 
+The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group of scientists and software developers working to advance research and teaching by facilitiating computational analysis of scientific data. While our background is primarily in biology and biological data, we are happy to assist in any data science tasks. We work closely with data-generating scientific cores and with students, postdocs, and faculty in analyzing data to help make research and discovery efficient and productive. 
 
 The mission of the Bioinformatics Core includes training, consulting, and research. We organize in several ways to facilitate these goals.
 
