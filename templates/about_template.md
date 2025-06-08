@@ -33,7 +33,7 @@ And here is a sampling of some topics of recent consults:
 
     **Lead Bioinformatician**: Gregg Thomas
 
-    :fontawesome-brands-slack: The researcher needed help running whole genome alignment with Cactus using our [Cactus Snakemake workflow](resourcse/Tutorials/whole-genome-alignment-cactus.md).
+    :fontawesome-brands-slack: The researcher needed help running whole genome alignment with Cactus using our [Cactus Snakemake workflow](resources/Tutorials/whole-genome-alignment-cactus.md).
 
     ---
 
