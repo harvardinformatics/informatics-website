@@ -8,7 +8,7 @@
 
 # Research & Publications
 
-Research in the Bioinformatics Group is primarily driven by collaborative projects with faculty on campus, and by grant-funded internal projects. We also conduct some best practices and methdological research to fill gaps in current knowledge and solve challenging bioinformatics problems.
+Research in the Bioinformatics Group is primarily driven by collaborative projects with faculty on campus, and by grant-funded internal projects. We also conduct best practices and methdological research to fill gaps in current knowledge and solve challenging bioinformatics problems.
 
 :fontawesome-solid-graduation-cap: = Group alumni
 
@@ -46,7 +46,7 @@ Most autotrophic organisms possess a single carbon fixation pathway. The chemoau
 
 !!! abstract "Publication"
 
-    * Mitchell JH, **Freedman AH**, Delaney JA, Girguis PR. 2024. Co-expression analysis reveals distinct alliances around two carbon fixation pathways in hydrothermal vent symbionts. *Nature Microbiology*. 9:1526-1539. [Link :octicons-link-external-24:](https://doi.org/10.5281/zenodo.10894444){:target="_blank"}
+    * Mitchell JH, **Freedman AH**, Delaney JA, Girguis PR. 2024. Co-expression analysis reveals distinct alliances around two carbon fixation pathways in hydrothermal vent symbionts. *Nature Microbiology*. 9:1526-1539. [Link :octicons-link-external-24:]( https://doi.org/10.1038/s41564-024-01704-y){:target="_blank"}
 
 ### Genomics of *Phlox* wildflowers
 
@@ -122,6 +122,8 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
 !!! abstract "Publications"
 
     * **Thomas GWC**, Gemmell P, **Shakya SB**, Hu Z, Liu JS, **Sackton TB**, Edwards SV. 2024. Practical guidance and workflows for identifying fast evolving non-coding genomic elements using PhyloAcc. *Integrative and Comparative Biology*. 64(5):1513-1525. [Link :octicons-link-external-24:](https://doi.org/10.1093/icb/icae056){:target="_blank"}
+
+    * Gemmell P, **Sackton TB**, Edwards SV, Liu JS. 2024. A phylogenetic method linking nucleotide substitution rates to rates of continuous trait evolution. *PLoS Computational Biology*. 20(4):e1011995. [Link :octicons-link-external-24:](https://doi.org/10.1371/journal.pcbi.1011995){:target="_blank"}
 
     * Yan H, Hu Z, **Thomas GWC**, Edwards SV, **Sackton TB**, Liu JS. 2023. PhyloAcc-GT: A Bayesian method for inferring patterns of substitution rate shifts on targeted lineages accounting for gene tree discordance. *Molecular Biology and Evolution*. 40(9):msad195. [Link :octicons-link-external-24:](https://doi.org/10.1093/molbev/msad195){:target="_blank"}
 

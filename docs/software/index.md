@@ -83,7 +83,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/ComparativeGenomicsToolkit/cactus" target="_blank">Cactus <span class="icon-external"></span></a> is a program that performs whole genome alignment for a given set of species and their phylogenetic tree. We developed <a href="https://github.com/harvardinformatics/cactus-snakemake" target="_blank">several Snakemake workflows for performing Cactus alignments and associated tasks <span class="icon-external"></span></a>, such as adding and replacing genomes in an alignment. We also implemented the minigraph-cactus workflow for pangenome inference. Check out the tutorials for each task on the <a href="../resources/index.md">Resources</a> page!
+        <a href="https://github.com/ComparativeGenomicsToolkit/cactus" target="_blank">Cactus <span class="icon-external"></span></a> is a program that performs whole genome alignment for a given set of species and their phylogenetic tree. We developed <a href="https://github.com/harvardinformatics/cactus-snakemake" target="_blank">several Snakemake workflows for performing Cactus alignments and associated tasks <span class="icon-external"></span></a>, such as adding and replacing genomes in an alignment. We also implemented the minigraph-cactus workflow for pangenome inference. Using snakemake facilitates easy, efficient, and reproducible execution on institutional clusters. Check out the tutorials for each task on the <a href="../resources/index.md">Resources</a> page!
     </div>
 </div>
 
