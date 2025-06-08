@@ -121,7 +121,7 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
 
 !!! abstract "Publications"
 
-    * **Thomas GWC**, Gemmell P, **Shakya SB**, Hu Z, Liu JS, **Sackton TB**, Edwards SV. 2024. Practical guidance and workflows for identifying fast evolving non-coding genomic elements using PhyloAcc. *Integrative and Comparative Biology*. 64(5):1513-1525. [Link :octicons-link-external-24:](https://doi.org/10.1093/icb/icae056){:target="_blank"}
+    * **Thomas GWC**, Gemmell P, Shakya SB :fontawesome-solid-graduation-cap:, Hu Z, Liu JS, **Sackton TB**, Edwards SV. 2024. Practical guidance and workflows for identifying fast evolving non-coding genomic elements using PhyloAcc. *Integrative and Comparative Biology*. 64(5):1513-1525. [Link :octicons-link-external-24:](https://doi.org/10.1093/icb/icae056){:target="_blank"}
 
     * Gemmell P, **Sackton TB**, Edwards SV, Liu JS. 2024. A phylogenetic method linking nucleotide substitution rates to rates of continuous trait evolution. *PLoS Computational Biology*. 20(4):e1011995. [Link :octicons-link-external-24:](https://doi.org/10.1371/journal.pcbi.1011995){:target="_blank"}
 
