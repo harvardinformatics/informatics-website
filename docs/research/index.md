@@ -149,7 +149,7 @@ Typical experimental design advice for expression analyses using RNA-seq general
 
 !!! abstract "Publication"
 
-    * **Freedman AH**, Gaspar JM, **Sackton TB**. 2020. Short paired-end reads trump long single-end reads for expression analysis. *BMC Bioinformatics*. 21(149). [Link :octicons-link-external-24:](https://doi.org/10.1186/s12859-020-3484-z){:target="_blank"}
+    * **Freedman AH**, Gaspar JM :fontawesome-solid-graduation-cap: , **Sackton TB**. 2020. Short paired-end reads trump long single-end reads for expression analysis. *BMC Bioinformatics*. 21(149). [Link :octicons-link-external-24:](https://doi.org/10.1186/s12859-020-3484-z){:target="_blank"}
 
 
 
