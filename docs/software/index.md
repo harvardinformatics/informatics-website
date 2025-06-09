@@ -173,7 +173,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/NGmerge" target="_blank">NGmerge <span class="icon-external"></span></a> merges paired-end reads and removing sequencing adapters. In the default stitch mode, NGmerge combines paired-end reads that overlap into a single read that spans the full length of the original DNA fragment. The alternative adapter-removal mode returns the original reads as pairs, removing the 3' overhangs of those reads whose valid stitched alignment has this characteristic.
+        <a href="https://github.com/harvardinformatics/NGmerge" target="_blank">NGmerge <span class="icon-external"></span></a> merges paired-end reads and removes sequencing adapters. In the default stitch mode, NGmerge combines paired-end reads that overlap into a single read that spans the full length of the original DNA fragment. The alternative adapter-removal mode returns the original reads as pairs, removing the 3' overhangs of those reads whose valid stitched alignment has this characteristic.
     </div>
 </div>
 
