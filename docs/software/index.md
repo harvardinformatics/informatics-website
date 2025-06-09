@@ -113,7 +113,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        We wrote an <a href="https://nf-co.re/" target="_blank">Nextflow nf-core <span class="icon-external"></span></a> config file for the Cannon cluster at Harvard. Our <a href="https://nf-co.re/configs/cannon/" target="_blank">Cannon config file <span class="icon-external"></span></a> performs automatic partition selection for Nextflow workflows on the Cannon cluster based on other user-provided resources.
+        We wrote a <a href="https://nf-co.re/" target="_blank">Nextflow nf-core <span class="icon-external"></span></a> config file for the Cannon cluster at Harvard. Our <a href="https://nf-co.re/configs/cannon/" target="_blank">Cannon config file <span class="icon-external"></span></a> performs automatic partition selection for Nextflow workflows on the Cannon cluster based on other user-provided resources.
     </div>
 </div>
 
