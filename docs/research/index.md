@@ -8,7 +8,13 @@
 
 # Research & Publications
 
-Research in the FAS Informatics Group is primarily driven by collaborative projects with faculty on campus, and by grant-funded internal projects. We also conduct best practices and methdological research to fill gaps in current knowledge and solve challenging bioinformatics problems.
+The FAS Informatics group conducts a variety of research:
+
+-  On bioinformatics methods and best practices in aid of our service mission
+-  As part of ongoing collaborations with research labs at Harvard
+-  On topics supported by research grants awarded to the Informatics group
+
+We are a broad group with diverse expertise in the computational analysis of sequencing data, software and pipeline development, experimental design, troubleshooting bioinformatics workflows, data visualization, and analysis and management of biological big data. Although we have experience in a broad range of topics, we've focused particularly on genome assembly and annotation; bulk and single-cell RNA-seq analysis; and population and comparative genomics. We've also worked extensively on methods related to phylogenetic models of sequence evolution, and have been supported by multiple grants related to comparative genomics and convergent evolution.
 
 :fontawesome-solid-graduation-cap: = Group alumni
 
