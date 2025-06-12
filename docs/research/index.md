@@ -1,11 +1,4 @@
 
-<style>
-    .inline-icon {
-    vertical-align: middle;
-    /* margin-bottom: 2px; /* Uncomment and tweak if needed */
-    }
-</style>
-
 # Research & Publications
 
 The FAS Informatics group conducts a variety of research:
@@ -16,14 +9,17 @@ The FAS Informatics group conducts a variety of research:
 
 We are a broad group with diverse expertise in the computational analysis of sequencing data, software and pipeline development, experimental design, troubleshooting bioinformatics workflows, data visualization, and analysis and management of biological big data. Although we have experience in a broad range of topics, we've focused particularly on genome assembly and annotation; bulk and single-cell RNA-seq analysis; and population and comparative genomics. We've also worked extensively on methods related to phylogenetic models of sequence evolution, and have been supported by multiple grants related to comparative genomics and convergent evolution.
 
-:fontawesome-solid-graduation-cap: = Group alumni
+|     |     |     |     |
+| --- | --- | --- | --- |
+| :fontawesome-regular-handshake: = Collaboration | :fontawesome-solid-hand-holding-dollar: = Grant supported | :material-lan-check: = Best practices | :material-vector-polyline-plus: = Methods development |
+| :fontawesome-solid-graduation-cap: = Group alumni |    |    |
 
 ## Genome Assembly and Annotation
 
-A major focus of recent work in the group has been to assist with the assembly and annotation of diverse genomes, often complex and difficult, using long-read sequencing technologies (e.g., Oxford Nanpore and PacBio sequencing). In collaboration with the [Bauer Core](https://bauercore.fas.harvard.edu/), we support assembly and annotation from sample to finished genome. Our recent work in this area includes both collaborations on the genomes of diverse species, and best practices research to assess methods used to produce gene annotations across the tree of life. 
+A major focus of recent work in the group has been to assist with the assembly and annotation of diverse genomes, often complex and difficult, using long-read sequencing technologies (e.g., Oxford Nanpore and PacBio sequencing). In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we support assembly and annotation from sample to finished genome. Our recent work in this area includes both collaborations on the genomes of diverse species, and best practices research to assess methods used to produce gene annotations across the tree of life. 
 
 
-### Panther worm (*Hofstenia*) genomics
+### Panther worm (*Hofstenia*) genomics :fontawesome-regular-handshake:
 
 **Lead Bioinformaticians**: Danielle Khost and Adam Freedman
 
@@ -153,7 +149,7 @@ Variant calling is an extremely common task in a wide variety of fields. However
 The Informatics group has been part of a long term collaboration to develop methods to study the molecular evolution of non-coding DNA, focusing on the software package [PhyloAcc](https://phyloacc.github.io/). We have also worked on other methods related to phylogenetic models of molecular evolution. 
 
 
-### PhyloAcc: using phylogenies to detect substitution rate shifts in non-coding regions
+### :fontawesome-regular-handshake: :fontawesome-solid-hand-holding-dollar: :material-vector-polyline-plus: PhyloAcc: using phylogenies to detect substitution rate shifts in non-coding regions
 
 **Lead Bioinformaticians**: Gregg Thomas and Tim Sackton
 
@@ -189,3 +185,39 @@ Our work in this area has been funded by research grants from both the National 
 
 We have also worked on a variety of other topics as needed to assist with projects ranging from addressing fundamental questions about the evolution of sex to developing methods for the analysis of ATAC-seq data to providing bioinformatics support for complex proteomics projects. Some of the addtional projects Informatics team members have contributed to are listed here. 
 
+<style>
+    .inline-icon {
+    vertical-align: middle;
+    /* margin-bottom: 2px; /* Uncomment and tweak if needed */
+    }
+
+    .md-typeset__table {
+        width: 100% !important;
+        max-width: 1280px !important;
+    }
+    /* Ensure table takes full width */
+    
+    .md-typeset__table table {
+        width: 100% !important;
+        table-layout: fixed;
+    }
+    /* Ensure table takes full width and has fixed layout */
+
+    .md-typeset th, .md-typeset td {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    }
+    /* Ensure text wraps in table cells */
+
+    table thead { display: none; }
+    .md-typeset table, 
+    .md-typeset th, 
+    .md-typeset td {
+        border: none !important;
+        background-color: #ffffff !important;
+        font-size: 1em !important;
+    }
+    /* Remove borders from table, th, and td */
+
+</style>
