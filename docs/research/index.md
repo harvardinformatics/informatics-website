@@ -11,7 +11,7 @@ We are a broad group with diverse expertise in the computational analysis of seq
 
 |     |     |     |     |
 | --- | --- | --- | --- |
-| :fontawesome-regular-handshake: = Collaboration | :fontawesome-solid-hand-holding-dollar: = Grant supported | :material-lan-check: = Best practices | :material-vector-polyline-plus: = Methods development |
+| :fontawesome-regular-handshake:{ .research-icon } = Collaboration | :fontawesome-solid-hand-holding-dollar:{ .research-icon } = Grant supported | :material-lan-check:{ .research-icon } = Best practices | :material-vector-polyline-plus:{ .research-icon } = Methods development |
 | :fontawesome-solid-graduation-cap: = Group alumni |    |    |
 
 ## Genome Assembly and Annotation
@@ -19,7 +19,7 @@ We are a broad group with diverse expertise in the computational analysis of seq
 A major focus of recent work in the group has been to assist with the assembly and annotation of diverse genomes, often complex and difficult, using long-read sequencing technologies (e.g., Oxford Nanpore and PacBio sequencing). In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we support assembly and annotation from sample to finished genome. Our recent work in this area includes both collaborations on the genomes of diverse species, and best practices research to assess methods used to produce gene annotations across the tree of life. 
 
 
-### Panther worm (*Hofstenia*) genomics :fontawesome-regular-handshake:
+### Panther worm (*Hofstenia*) genomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformaticians**: Danielle Khost and Adam Freedman
 
@@ -27,7 +27,7 @@ A major focus of recent work in the group has been to assist with the assembly a
 
 The lab needed to come up with an approach to integrate genome annotations from two different methods: direct assembly of transcripts from RNA-seq reads aligned to the genome, and de novo transcriptome assembly. There was also a question as to why functionally validated single-exon transcripts in the latter failed to be assembled in the former. We came up with a sensible integration strategy that also filters out lowly expressed single-exon transcripts that might be false positives.
 
-### Performance assessment of genome annotation methods across the tree of life
+### Performance assessment of genome annotation methods across the tree of life &nbsp; :material-lan-check:{ .research-icon }
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
@@ -38,7 +38,7 @@ The lab needed to come up with an approach to integrate genome annotations from 
     * **Freedman AH**, **Sackton TB**. 2025. Building better genome annotations across the tree of life. *Genome Research*. 35:1261-1276. [Link :octicons-link-external-24:](https://www.genome.org/cgi/doi/10.1101/gr.280377.124){:target="_blank"}
 
 
-### Genomics of *Phlox* wildflowers
+### Genomics of *Phlox* wildflowers &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
@@ -46,7 +46,7 @@ The lab needed to come up with an approach to integrate genome annotations from 
 
 We helped the Hopkins lab sequence and assemble the genomes of four species of *Phlox* wildflowers using Oxford Nanopore sequencing, as well as scaffolding into chromosome-scale reference assemblies using optical mapping and genetic maps. These samples were particularly challenging due to the large genome sizes (>6 Gbase) and highly repetitive nature of the genomes (~90% repeats). For comparative analysis, we also helped construct whole-genome alignments for the scaffolded genomes, a task that is also challenging for large plant genomes.
 
-### Assembling difficult worm genomes
+### Assembling difficult worm genomes &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
@@ -65,8 +65,7 @@ We worked with several members of the Giribet lab to sequence and assemble genom
 
 The group has a long-standing interest in the analysis of RNA-seq data, both traditional bulk data from whole organisms or tissues, and single-cell data. In this area, we have primarily worked on methods and best practices, as well as contributed to collaborations. 
 
-
-### Deep sea tubeworm transcriptomics
+### Deep sea tubeworm transcriptomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformatcian**: Adam Freedman
 
@@ -78,7 +77,7 @@ Most autotrophic organisms possess a single carbon fixation pathway. The chemoau
 
     * Mitchell JH, **Freedman AH**, Delaney JA, Girguis PR. 2024. Co-expression analysis reveals distinct alliances around two carbon fixation pathways in hydrothermal vent symbionts. *Nature Microbiology*. 9:1526-1539. [Link :octicons-link-external-24:]( https://doi.org/10.1038/s41564-024-01704-y){:target="_blank"}
 
-### Limb regeneration in axolotls
+### Limb regeneration in axolotls &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformatician**: Adam Freedman, Tim Sackton
 
@@ -91,7 +90,7 @@ The Whited lab is investigating the genetic architecture of regeneration in axol
     * Payzin-Dogru D, Blair SJ, ..., **Freedman AH**, ..., **Sackton TB**, Whited JL, 2024. Peripheral nervous system mediates body-wide stem cell activation for limb regeneration. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2021.12.29.474455){:target="_blank"}
 
 
-### Assessing errors and biases in *de novo* transcriptome assembly
+### Assessing errors and biases in *de novo* transcriptome assembly &nbsp; :material-lan-check:{ .research-icon }
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
@@ -101,7 +100,7 @@ At the time we launched this study, approximately 60,000 published papers had re
 
     * **Freedman AH**, Clamp M, **Sackton TB**. 2021. Error, noise and bias in *de novo* transcriptome assemblies. *Molecular Ecology Resources*. 21:18-29. [Link :octicons-link-external-24:](https://doi.org/10.1111/1755-0998.13156){:target="_blank"}
 
-### Comparing efficacy of short paired-end versus longer single-end reads in bulk RNA-seq experiments
+### Comparing efficacy of short paired-end versus longer single-end reads in bulk RNA-seq experiments &nbsp; :material-lan-check:{ .research-icon }
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
@@ -116,7 +115,7 @@ Typical experimental design advice for expression analyses using RNA-seq general
 
 The group has worked on a variety of topics related to population genetics. These include novel methodological approaches, including a large collaborative project to create a comparative pangenome for scrub jays; and work to make variant calling best practices more accessible. We have also been involved in helping provide empirical examples and datasets in the aid of development of new theorectical coalescent models. 
 
-### Scrub jay pangenomes
+### Scrub jay pangenomes &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :fontawesome-solid-hand-holding-dollar:{ .research-icon }
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
@@ -131,7 +130,7 @@ We helped generate high quality genome assemblies for 46 individual scrub jays a
     * Edwards SV, Fang B, **Khost D**, Kolyfetis GE, Cheek RG, DeRaad DA, Chen N, Fitzpatrick JW, McCormack JE, Funk WC, Ghalambor CK, Garrison E, Guarracino A, Li H, **Sackton TB**. 2025. Comparative population pangenomes reveal unexpected complexity and fitness effects of structural variants. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2025.02.11.637762){:target="_blank"}
 
 
-### Population genomics with snpArcher
+### Population genomics with snpArcher &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :material-vector-polyline-plus:{ .research-icon }
 
 **Lead Bioinformaticians**: Tim Sackton and Gregg Thomas
 
@@ -149,7 +148,7 @@ Variant calling is an extremely common task in a wide variety of fields. However
 The Informatics group has been part of a long term collaboration to develop methods to study the molecular evolution of non-coding DNA, focusing on the software package [PhyloAcc](https://phyloacc.github.io/). We have also worked on other methods related to phylogenetic models of molecular evolution. 
 
 
-### :fontawesome-regular-handshake: :fontawesome-solid-hand-holding-dollar: :material-vector-polyline-plus: PhyloAcc: using phylogenies to detect substitution rate shifts in non-coding regions
+### PhyloAcc: using phylogenies to detect substitution rate shifts in non-coding regions &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :fontawesome-solid-hand-holding-dollar:{ .research-icon } &nbsp; :material-vector-polyline-plus:{ .research-icon }
 
 **Lead Bioinformaticians**: Gregg Thomas and Tim Sackton
 
@@ -187,8 +186,8 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 <style>
     .inline-icon {
-    vertical-align: middle;
-    /* margin-bottom: 2px; /* Uncomment and tweak if needed */
+        vertical-align: middle;
+        /* margin-bottom: 2px; /* Uncomment and tweak if needed */
     }
 
     .md-typeset__table {
@@ -219,5 +218,27 @@ We have also worked on a variety of other topics as needed to assist with projec
         font-size: 1em !important;
     }
     /* Remove borders from table, th, and td */
+
+    .research-icon {
+        /* color: #FAA85C; */
+        /* color: #74A58E; */
+        /* color: #265D80; */
+        /* color: #26805E; */
+        /* color: #62C375; */
+
+        /* color: #ffffff;
+        background-color: #0A2240 !important;
+        border-radius: 15% !important; */
+
+        /* color: #34BD78; */
+        color: #8996A0;
+        /* background-color: #0A2240;
+        border: 1px solid #a41c30;
+        padding: 0.1em !important;
+        border-radius: 15% !important; */
+
+        font-size: 1.2em !important;
+        vertical-align: middle !important;
+    }
 
 </style>

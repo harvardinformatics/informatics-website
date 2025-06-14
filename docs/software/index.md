@@ -78,7 +78,7 @@ The FAS Informatics group develops methods and software for various genomics tas
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
         <a href="https://github.com/harvardinformatics/cactus-snakemake" target="_blank" alt="Cactus snakemake logo. A cartoon cactus in between some small piles of sand with the Snakmake logo, which is a stylized snake that is curled into an S shape, peeking out from the right side of the cactus.">
-            <img class="software-logo" src="../img/software-logos/cactus-snakemake.png">
+            <img class="software-logo" src="../img/software-logos/cactus-snakemake-hex.png">
         </a>
     </div>
 
