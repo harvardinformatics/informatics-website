@@ -223,6 +223,8 @@ Our work in this area has been funded by research grants from both the National 
 
 We have also worked on a variety of other topics as needed to assist with projects ranging from addressing fundamental questions about the evolution of sex to developing methods for the analysis of ATAC-seq data to providing bioinformatics support for complex proteomics projects. Some of the addtional projects Informatics team members have contributed to are listed here. 
 
+
+
 <style>
     .inline-icon {
         vertical-align: middle;
