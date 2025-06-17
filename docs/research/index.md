@@ -61,6 +61,19 @@ We worked with several members of the Giribet lab to sequence and assemble genom
     * Sato S, Cunha TJ, de Medeiros BAS, **Khost D**, **Sackton TB**, Giribet G. 2023. Sizing Up the Onychophoran Genome: Repeats, Introns, and Gene Family Expansion Contribute to Genome Gigantism in *Epiperipatus broadwayi*. *Genome Biology and Evolution*. 15(3):evad021 [Link :octicons-link-external-24:](https://doi.org/10.1093/gbe/evad021){:target="_blank"}
 
 
+### Assembling the genome of a parasitic plant &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+
+**Lead Bioinformaticians**: Danielle Khost, Brian Arnold :fontawesome-solid-graduation-cap:, and Tim Sackton
+
+**Collaborators**: [Davis Lab :octicons-link-external-24:](https://davislab.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"}
+
+*Sapria himalayana* is a parasitic plant in the family Rafflesiaceae, which includes the species with the largest flower in the world. The Davis Lab had worked on these plants for many years, but had not produced a usable genome assembly of this fascinating plant. Several members of the Informatics group collaborated with the Davis Lab to assemble a genome of *S. himalayana* and identify unusual features of this species, including the loss of 44% of conserved plant genes and the presence of horizontally transfered genetic elements from the host species. 
+
+!!! abstract "Publication"
+
+    * Cai L, Arnold BJ :fontawesome-solid-graduation-cap:, Xi Z, **Khost DE**, Patel N, Hartmann CB, ... Mathews S, **Sackton TB**, Davis CD, 2021. Deeply Altered Genome Architecture in the Endoparasitic Flowering Plant Sapria himalayana Griff. (Rafflesiaceae). *Current Biology* 31:1002-1011. [Link :octicons-link-external-24:]( https://doi.org/10.1016/j.cub.2020.12.045){:target="_blank"}
+
+
 ## Bulk and Single-cell RNA-seq
 
 The group has a long-standing interest in the analysis of RNA-seq data, both traditional bulk data from whole organisms or tissues, and single-cell data. In this area, we have primarily worked on methods and best practices, as well as contributed to collaborations. 
@@ -98,7 +111,7 @@ At the time we launched this study, approximately 60,000 published papers had re
 
 !!! abstract "Publication"
 
-    * **Freedman AH**, Clamp M, **Sackton TB**. 2021. Error, noise and bias in *de novo* transcriptome assemblies. *Molecular Ecology Resources*. 21:18-29. [Link :octicons-link-external-24:](https://doi.org/10.1111/1755-0998.13156){:target="_blank"}
+    * **Freedman AH**, Clamp M :fontawesome-solid-graduation-cap:, **Sackton TB**. 2021. Error, noise and bias in *de novo* transcriptome assemblies. *Molecular Ecology Resources*. 21:18-29. [Link :octicons-link-external-24:](https://doi.org/10.1111/1755-0998.13156){:target="_blank"}
 
 ### Comparing efficacy of short paired-end versus longer single-end reads in bulk RNA-seq experiments &nbsp; :material-lan-check:{ .research-icon }
 
