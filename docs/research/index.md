@@ -74,6 +74,19 @@ We worked with several members of the Giribet lab to sequence and assemble genom
     * Cai L, Arnold BJ :fontawesome-solid-graduation-cap:, Xi Z, **Khost DE**, Patel N, Hartmann CB, ... Mathews S, **Sackton TB**, Davis CD, 2021. Deeply Altered Genome Architecture in the Endoparasitic Flowering Plant Sapria himalayana Griff. (Rafflesiaceae). *Current Biology* 31:1002-1011. [Link :octicons-link-external-24:]( https://doi.org/10.1016/j.cub.2020.12.045){:target="_blank"}
 
 
+### Assembling the genome of the extinct moa &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+
+**Lead Bioinformaticians**: Tim Sackton
+
+**Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){:target="_blank"})
+
+The little bush moa, *Anomalopteryx didiformis*, is one of approximately nine species of extinct flightless birds from Aotearoa, New Zealand. As part of a collaboration with the Edwards Lab, the Informatics group helped to assemble and analyze the genome of this species. 
+
+!!! abstract "Publication"
+
+    * Edwards SV, Cloutier A, Cockburn G, Grayson P, Katoh K, Baldwin MW, **Sackton TB**, Baker AJ. 2024.A nuclear genome assembly of an extinct flightless bird, the little bush moa. *Science Advances* 10:21. [Link :octicons-link-external-24:]( https://doi.org/10.1126/sciadv.adj6823){:target="_blank"}
+
+
 ## Bulk and Single-cell RNA-seq
 
 The group has a long-standing interest in the analysis of RNA-seq data, both traditional bulk data from whole organisms or tissues, and single-cell data. In this area, we have primarily worked on methods and best practices, as well as contributed to collaborations. 
