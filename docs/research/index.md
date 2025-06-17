@@ -137,6 +137,19 @@ Typical experimental design advice for expression analyses using RNA-seq general
     * **Freedman AH**, Gaspar JM :fontawesome-solid-graduation-cap:, **Sackton TB**. 2020. Short paired-end reads trump long single-end reads for expression analysis. *BMC Bioinformatics*. 21(149). [Link :octicons-link-external-24:](https://doi.org/10.1186/s12859-020-3484-z){:target="_blank"}
 
 
+### The impact of single cell RNA-seq techniques on ecological genomics &nbsp; :material-lan-check:{ .research-icon }
+
+**Lead Bioinformaticians**: Adam Freedman and Tim Sackton
+
+***Invited Review***
+
+Based on our experience with the increasing feasibility of single-cell RNA-seq experiments in diverse organisms beyond the usual model organism context, we wrote a review outlining our perspective on how gene expression studies in ecological genetics could adapt, change, and benefit from the technological revolution in sequencing. 
+
+!!! abstract "Publication"
+
+    * **Freedman AH**, **Sackton TB**. 2024. Rethinking eco‐evo studies of gene expression for non‐model organisms in the genomic era. *Molecular Ecology*. e17378. [Link :octicons-link-external-24:](https://doi.org/10.1111/mec.17378){:target="_blank"}
+
+
 ## Population Genetics
 
 The group has worked on a variety of topics related to population genetics. These include novel methodological approaches, including a large collaborative project to create a comparative pangenome for scrub jays; and work to make variant calling best practices more accessible. We have also been involved in helping provide empirical examples and datasets in the aid of development of new theorectical coalescent models. 
