@@ -92,17 +92,20 @@ The little bush moa, *Anomalopteryx didiformis*, is one of approximately nine sp
 
 The group has a long-standing interest in the analysis of RNA-seq data, both traditional bulk data from whole organisms or tissues, and single-cell data. In this area, we have primarily worked on methods and best practices, as well as contributed to collaborations. 
 
-### Deep sea tubeworm transcriptomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
-**Lead Bioinformatcian**: Adam Freedman
+### Methods for the Analysis of scRNA-seq data &nbsp; :fontawesome-regular-handshake:{ .research-icon } :fontawesome-solid-hand-holding-dollar:{ .research-icon } :material-vector-polyline-plus:{ .research-icon } 
 
-**Collaborators**: [Girguis lab :octicons-link-external-24:](https://www.girguislab.org/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"})
+We have developed several methods related to clustering of single-cell RNA-seq data and cell type identification. 
 
-Most autotrophic organisms possess a single carbon fixation pathway. The chemoautotrophic symbionts of the hydrothermal vent tubeworm *Riftia pachyptila*, however, possess two functional pathways: the Calvin–Benson–Bassham (CBB) and the reductive tricarboxylic acid (rTCA) cycles. How these two pathways are coordinated is unknown. The Girguis lab investigated these pathways with a combination of bulk RNA-seq, and estimates of carbon fixation rates. Our role was to disentangle host (tubeworm) and symbiont (bacterium) reads in the sequence libraries, and generate gene expression counts used for downstream analyses.
+We developed scclusteval, which is a permutation based method to quantify the robustness of cell type clusters, in order to provide a tool to help guide users in manual adjustment of automated clustering, and also as a way to compare the stablity of cell clusters under different parameters. The approach works by resampling cells and reclustering, and then measuring how similar to resampled clusters are to the original clustering. 
 
-!!! abstract "Publication"
+We have also developed two tools, HieRFIT and IP4CI, which both seek to address weaknesses in current cell type identification approaches. In particular, while existing tools are often extremely powerful at projecting cell labels from large atlases to new datasets within species, it can be challenging to align cell types across species. HieRFIT uses a random forest method that allows for cell type projection to internal (uncertain) nodes; IP4CI uses canonical correlation analysis on pathway-level expression, as opposed to individual genes, to attempt to better preserve biological information across species. The development of HieRFIT and IP4CI were supported by a collaborative agreement with [Boehringer Ingelheim :octicons-link-external-24:](https://www.boehringer-ingelheim.com/us). 
 
-    * Mitchell JH, **Freedman AH**, Delaney JA, Girguis PR. 2024. Co-expression analysis reveals distinct alliances around two carbon fixation pathways in hydrothermal vent symbionts. *Nature Microbiology*. 9:1526-1539. [Link :octicons-link-external-24:]( https://doi.org/10.1038/s41564-024-01704-y){:target="_blank"}
+!!! abstract "Publications"
+
+    * Tang M :fontawesome-solid-graduation-cap:, Kaymaz Y :fontawesome-solid-graduation-cap:, Logeman BL, Eichhorn S, Liang ZS, Dulac C, **Sackton TB**. 2020. Evaluating single-cell cluster stability using the Jaccard similarity index. *Bioinformatics* 37:15. [Link :octicons-link-external-24:]( https://doi.org/10.1093/bioinformatics/btaa956){:target="_blank"}
+    * Kaymaz Y :fontawesome-solid-graduation-cap:, Gangleberger F, Tang M :fontawesome-solid-graduation-cap:, Haslinger C, Fernandez-Albert F, Lawless N, **Sackton TB**. 2021. HieRFIT: a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. *Bioinformatics* 37:23. [Link :octicons-link-external-24:](https://doi.org/10.1093/bioinformatics/btab499){:target="_blank"}
+
 
 ### Limb regeneration in axolotls &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
@@ -115,6 +118,34 @@ The Whited lab is investigating the genetic architecture of regeneration in axol
 !!! abstract "Publication"
 
     * Payzin-Dogru D, Blair SJ, ..., **Freedman AH**, ..., **Sackton TB**, Whited JL, 2024. Peripheral nervous system mediates body-wide stem cell activation for limb regeneration. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2021.12.29.474455){:target="_blank"}
+
+
+
+### The impact of single cell RNA-seq techniques on ecological genomics &nbsp; :material-lan-check:{ .research-icon }
+
+**Lead Bioinformaticians**: Adam Freedman and Tim Sackton
+
+***Invited Review***
+
+Based on our experience with the increasing feasibility of single-cell RNA-seq experiments in diverse organisms beyond the usual model organism context, we wrote a review outlining our perspective on how gene expression studies in ecological genetics could adapt, change, and benefit from the technological revolution in sequencing. 
+
+!!! abstract "Publication"
+
+    * **Freedman AH**, **Sackton TB**. 2024. Rethinking eco‐evo studies of gene expression for non‐model organisms in the genomic era. *Molecular Ecology*. e17378. [Link :octicons-link-external-24:](https://doi.org/10.1111/mec.17378){:target="_blank"}
+
+
+
+### Deep sea tubeworm transcriptomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+
+**Lead Bioinformatcian**: Adam Freedman
+
+**Collaborators**: [Girguis lab :octicons-link-external-24:](https://www.girguislab.org/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"})
+
+Most autotrophic organisms possess a single carbon fixation pathway. The chemoautotrophic symbionts of the hydrothermal vent tubeworm *Riftia pachyptila*, however, possess two functional pathways: the Calvin–Benson–Bassham (CBB) and the reductive tricarboxylic acid (rTCA) cycles. How these two pathways are coordinated is unknown. The Girguis lab investigated these pathways with a combination of bulk RNA-seq, and estimates of carbon fixation rates. Our role was to disentangle host (tubeworm) and symbiont (bacterium) reads in the sequence libraries, and generate gene expression counts used for downstream analyses.
+
+!!! abstract "Publication"
+
+    * Mitchell JH, **Freedman AH**, Delaney JA, Girguis PR. 2024. Co-expression analysis reveals distinct alliances around two carbon fixation pathways in hydrothermal vent symbionts. *Nature Microbiology*. 9:1526-1539. [Link :octicons-link-external-24:]( https://doi.org/10.1038/s41564-024-01704-y){:target="_blank"}
 
 
 ### Assessing errors and biases in *de novo* transcriptome assembly &nbsp; :material-lan-check:{ .research-icon }
@@ -138,19 +169,6 @@ Typical experimental design advice for expression analyses using RNA-seq general
     * **Freedman AH**, Gaspar JM :fontawesome-solid-graduation-cap:, **Sackton TB**. 2020. Short paired-end reads trump long single-end reads for expression analysis. *BMC Bioinformatics*. 21(149). [Link :octicons-link-external-24:](https://doi.org/10.1186/s12859-020-3484-z){:target="_blank"}
 
 
-### The impact of single cell RNA-seq techniques on ecological genomics &nbsp; :material-lan-check:{ .research-icon }
-
-**Lead Bioinformaticians**: Adam Freedman and Tim Sackton
-
-***Invited Review***
-
-Based on our experience with the increasing feasibility of single-cell RNA-seq experiments in diverse organisms beyond the usual model organism context, we wrote a review outlining our perspective on how gene expression studies in ecological genetics could adapt, change, and benefit from the technological revolution in sequencing. 
-
-!!! abstract "Publication"
-
-    * **Freedman AH**, **Sackton TB**. 2024. Rethinking eco‐evo studies of gene expression for non‐model organisms in the genomic era. *Molecular Ecology*. e17378. [Link :octicons-link-external-24:](https://doi.org/10.1111/mec.17378){:target="_blank"}
-
-
 ## Population Genetics
 
 The group has worked on a variety of topics related to population genetics. These include novel methodological approaches, including a large collaborative project to create a comparative pangenome for scrub jays; and work to make variant calling best practices more accessible. We have also been involved in helping provide empirical examples and datasets in the aid of development of new theorectical coalescent models. 
@@ -168,6 +186,19 @@ We helped generate high quality genome assemblies for 46 individual scrub jays a
 !!! abstract "Publication"
 
     * Edwards SV, Fang B, **Khost D**, Kolyfetis GE, Cheek RG, DeRaad DA, Chen N, Fitzpatrick JW, McCormack JE, Funk WC, Ghalambor CK, Garrison E, Guarracino A, Li H, **Sackton TB**. 2025. Comparative population pangenomes reveal unexpected complexity and fitness effects of structural variants. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2025.02.11.637762){:target="_blank"}
+
+
+### Modeling Non-Standard Coalescent Processes
+
+Historically, most population genetic has been analyzed using the Kingman coalescent, a model that puts some limits on population history, including where extreme skews in offspring distribution are assumed to be impossible. However, some organisms, in particular broadcast spawning marine species, violate this restriction. A classic example of this are codfish, a high-fecundity broadcast spawning fish where a few individuals can produce a large fraction of the offspring in a given generation. In collaboration with the Wakeley lab and Einar Arnason at the University of Iceland, we are helping to generate and analyze a large cod population genetic panel to test these multiple merger coalsecent models.  
+
+**Lead Bioinformatician**: Tim Sackton
+
+**Collaborators**: [Wakeley Lab :octicons-link-external-24:](https://wakeley.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"}, Einar Árnason, University of Iceland
+
+!!! abstract "Related Publication"
+
+    * Freund F, Kerdoncuff E, Matuszewski S, ... **Sackton TB**, Achaz G. Interpreting the pervasive observation of U-shaped Site Frequency Spectra. 2023. *PLoS Genetics* 19(3) [Link :octicons-link-external-24:](https://doi.org/10.1371/journal.pgen.1010677){:target="_blank"}
 
 
 ### Population genomics with snpArcher &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :material-vector-polyline-plus:{ .research-icon }
