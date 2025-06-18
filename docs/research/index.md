@@ -66,7 +66,7 @@ We worked with several members of the Giribet lab to sequence and assemble genom
 
 **Lead Bioinformaticians**: Danielle Khost, Brian Arnold :fontawesome-solid-graduation-cap:, and Tim Sackton
 
-**Collaborators**: [Davis Lab :octicons-link-external-24:](https://davislab.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"}
+**Collaborators**: [Davis Lab :octicons-link-external-24:](https://davislab.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"})
 
 *Sapria himalayana* is a parasitic plant in the family Rafflesiaceae, which includes the species with the largest flower in the world. The Davis Lab had worked on these plants for many years, but had not produced a usable genome assembly of this fascinating plant. Several members of the Informatics group collaborated with the Davis Lab to assemble a genome of *S. himalayana* and identify unusual features of this species, including the loss of 44% of conserved plant genes and the presence of horizontally transfered genetic elements from the host species. 
 
