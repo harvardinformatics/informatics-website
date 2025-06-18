@@ -12,7 +12,7 @@ We are a broad group with diverse expertise in the computational analysis of seq
 |     |     |     |     |
 | --- | --- | --- | --- |
 | :fontawesome-regular-handshake:{ .research-icon } = Collaboration | :fontawesome-solid-hand-holding-dollar:{ .research-icon } = Grant supported | :material-lan-check:{ .research-icon } = Best practices | :material-vector-polyline-plus:{ .research-icon } = Methods development |
-| :fontawesome-solid-graduation-cap: = Group alumni |    |    |
+| :fontawesome-solid-graduation-cap: = Group alumni |    |    |    |
 
 ## Genome Assembly and Annotation
 
