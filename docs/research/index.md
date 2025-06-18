@@ -19,14 +19,6 @@ We are a broad group with diverse expertise in the computational analysis of seq
 A major focus of recent work in the group has been to assist with the assembly and annotation of diverse genomes, often complex and difficult, using long-read sequencing technologies (e.g., Oxford Nanpore and PacBio sequencing). In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we support assembly and annotation from sample to finished genome. Our recent work in this area includes both collaborations on the genomes of diverse species, and best practices research to assess methods used to produce gene annotations across the tree of life. 
 
 
-### Panther worm (*Hofstenia*) genomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
-
-**Lead Bioinformaticians**: Danielle Khost and Adam Freedman
-
-**Collaborators**: [Srivastava Lab :octicons-link-external-24:](http://www.srivastavalab.org/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){:target="_blank"})
-
-The lab needed to come up with an approach to integrate genome annotations from two different methods: direct assembly of transcripts from RNA-seq reads aligned to the genome, and de novo transcriptome assembly. There was also a question as to why functionally validated single-exon transcripts in the latter failed to be assembled in the former. We came up with a sensible integration strategy that also filters out lowly expressed single-exon transcripts that might be false positives.
-
 ### Performance assessment of genome annotation methods across the tree of life &nbsp; :material-lan-check:{ .research-icon }
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
@@ -36,6 +28,15 @@ The lab needed to come up with an approach to integrate genome annotations from 
 !!! abstract "Publication"
 
     * **Freedman AH**, **Sackton TB**. 2025. Building better genome annotations across the tree of life. *Genome Research*. 35:1261-1276. [Link :octicons-link-external-24:](https://www.genome.org/cgi/doi/10.1101/gr.280377.124){:target="_blank"}
+
+
+### Panther worm (*Hofstenia*) genomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+
+**Lead Bioinformaticians**: Danielle Khost and Adam Freedman
+
+**Collaborators**: [Srivastava Lab :octicons-link-external-24:](http://www.srivastavalab.org/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){:target="_blank"})
+
+The lab needed to come up with an approach to integrate genome annotations from two different methods: direct assembly of transcripts from RNA-seq reads aligned to the genome, and de novo transcriptome assembly. There was also a question as to why functionally validated single-exon transcripts in the latter failed to be assembled in the former. We came up with a sensible integration strategy that also filters out lowly expressed single-exon transcripts that might be false positives.
 
 
 ### Genomics of *Phlox* wildflowers &nbsp; :fontawesome-regular-handshake:{ .research-icon }
@@ -223,7 +224,36 @@ Our work in this area has been funded by research grants from both the National 
 
 We have also worked on a variety of other topics as needed to assist with projects ranging from addressing fundamental questions about the evolution of sex to developing methods for the analysis of ATAC-seq data to providing bioinformatics support for complex proteomics projects. Some of the addtional projects Informatics team members have contributed to are listed here. 
 
+### Genomic Evidence for Sexual Reproduction in Rotifers &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
+*with Meselson Lab, Harvard MCB*
+
+!!! abstract "Publication"
+
+    * Laine VN :fontawesome-solid-graduation-cap:, **Sackton TB**, Meselson M. 2022. Genomic signature of sexual reproduction in the bdelloid rotifer Macrotrachella quadricornifera. *Genetics* 220(2) [Link :octicons-link-external-24:](https://doi.org/10.1093/genetics/iyab221){:target="_blank"}
+
+
+### Genomic Peak Calling Methods and Analysis &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+
+*partially in collaboration with Mango Lab, Harvard MCB*
+
+!!! abstract "Publications"
+
+    * Mutlu B, Chen HM, Moresco JJ ... Gasper JM :fontawesome-solid-graduation-cap: ... Mango SE. 2018. Regulated nuclear accumulation of a histone methyltransferase times the onset of heterochromatin formation in C. elegans embryos. *Science Advances* 4(8) [Link :octicons-link-external-24:](https://doi.org/10.1126/sciadv.aat6224){:target="_blank"}
+    * Giansanti V, Tang M :fontawesome-solid-graduation-cap:, Cittaro D. Fast analysis of scATAC-seq data using a predefined set of genomic regions. 2020. *F1000Research* [Link :octicons-link-external-24:](https://doi.org/10.12688/f1000research.22731.2){:target="_blank"}
+
+### Proteomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+
+*partially in collaboartion with Melton Lab, Harvard SCRB; and with Woo Lab, Harvard CCB*
+
+!!! abstract "Publications"
+
+    * Schwein PA, Ge Y, Yang B, D'Souza AK :fontawesome-solid-graduation-cap:, Mody A, Shen D, Woo CM. 2022. Writing and Erasing O-GlcNAc on Casein Kinase 2 Alpha Alters the Phosphoproteome. *ACS Chemical Biology* 17(5):1111-1121 [Link :octicons-link-external-24:](https://doi.org/10.1021/acschembio.1c00987){:target="_blank"}
+    * Ge Y, Ramirez DH, Yang B, D'Souza AK :fontawesome-solid-graduation-cap:, Aonbangkhen C, Wong S, Woo CM. Target protein deglycosylation in living cells by a nanobody-fused split O-GlcNAcase. 2021. *Nature Chemical Biology* 17(5):593-600 [Link :octicons-link-external-24:](https://doi.org/10.1038/s41589-021-00757-y){:target="_blank"}
+    * Straubhaar J :fontawesome-solid-graduation-cap:, D'Souza AK :fontawesome-solid-graduation-cap:, Niziolek Z, Budnik B. 2024. Single cell proteomics analysis of drug response shows its potential as a drug discovery platform. *Molecular Omics* 20(1):6-18. [Link :octicons-link-external-24:](https://doi.org/10.1039/d3mo00124e){:target="_blank"}
+    * Sharon N, Vanderhooft J, Straubhaar J :fontawesome-solid-graduation-cap:, Mueller J, Chawla R, Zhou Q, Engquist EN, Trapnell C, Gifford DK, Melton DA. 2019. Wnt Signaling Separates the Progenitor and Endocrine Compartments during Pancreas Development. *Cell Rep.* 27(8):2281-2291.e5 [Link :octicons-link-external-24:](https://doi.org/10.1016/j.celrep.2019.04.083){:target="_blank"}
+    * Alvarez-Dominguez JR, Donaghey J, Rasouli N, Kenty JHR, Helman A, Charlton J, Straubhaar JR :fontawesome-solid-graduation-cap:, Meissner A, Melton DA. 2020. Circadian Entrainment Triggers Maturation of Human In Vitro Islets. *Cell Stem Cell.* 26(1):108-122.e10. [Link :octicons-link-external-24:](https://doi.org/10.1016/j.stem.2019.11.011){:target="_blank"}
+    * Helman A, Cangelosi AL, Davis JC, Pham Q, Rothman A, Faust AL, Straubhaar JR :fontawesome-solid-graduation-cap:, Sabatini DM, Melton DA. 2020. *Cell Metab.* 31(5):1004-1016.e5. [Link :octicons-link-external-24:](https://doi.org/10.1016/j.cmet.2020.04.004){:target="_blank"}
 
 <style>
     .inline-icon {
