@@ -3,9 +3,9 @@
 
 The FAS Informatics group conducts a variety of research:
 
--  On bioinformatics methods and best practices in aid of our service mission
--  As part of ongoing collaborations with research labs at Harvard
--  On topics supported by research grants awarded to the Informatics group
+-  On bioinformatics **methods and best practices** in aid of our service mission
+-  As part of ongoing **collaborations** with research labs at Harvard
+-  On topics supported by **research grants** awarded to the Informatics group
 
 We are a broad group with diverse expertise in the computational analysis of sequencing data, software and pipeline development, experimental design, troubleshooting bioinformatics workflows, data visualization, and analysis and management of biological big data. Although we have experience in a broad range of topics, we've focused particularly on genome assembly and annotation; bulk and single-cell RNA-seq analysis; and population and comparative genomics. We've also worked extensively on methods related to phylogenetic models of sequence evolution, and have been supported by multiple grants related to comparative genomics and convergent evolution.
 
@@ -93,13 +93,17 @@ The little bush moa, *Anomalopteryx didiformis*, is one of approximately nine sp
 The group has a long-standing interest in the analysis of RNA-seq data, both traditional bulk data from whole organisms or tissues, and single-cell data. In this area, we have primarily worked on methods and best practices, as well as contributed to collaborations. 
 
 
-### Methods for the Analysis of scRNA-seq data &nbsp; :fontawesome-regular-handshake:{ .research-icon } :fontawesome-solid-hand-holding-dollar:{ .research-icon } :material-vector-polyline-plus:{ .research-icon } 
+### Methods for the Analysis of scRNA-seq data &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :fontawesome-solid-hand-holding-dollar:{ .research-icon } &nbsp; :material-vector-polyline-plus:{ .research-icon } 
 
 We have developed several methods related to clustering of single-cell RNA-seq data and cell type identification. 
 
 We developed scclusteval, which is a permutation based method to quantify the robustness of cell type clusters, in order to provide a tool to help guide users in manual adjustment of automated clustering, and also as a way to compare the stablity of cell clusters under different parameters. The approach works by resampling cells and reclustering, and then measuring how similar to resampled clusters are to the original clustering. 
 
-We have also developed two tools, HieRFIT and IP4CI, which both seek to address weaknesses in current cell type identification approaches. In particular, while existing tools are often extremely powerful at projecting cell labels from large atlases to new datasets within species, it can be challenging to align cell types across species. HieRFIT uses a random forest method that allows for cell type projection to internal (uncertain) nodes; IP4CI uses canonical correlation analysis on pathway-level expression, as opposed to individual genes, to attempt to better preserve biological information across species. The development of HieRFIT and IP4CI were supported by a collaborative agreement with [Boehringer Ingelheim :octicons-link-external-24:](https://www.boehringer-ingelheim.com/us). 
+We have also developed two tools, HieRFIT and IP4CI, which both seek to address weaknesses in current cell type identification approaches. In particular, while existing tools are often extremely powerful at projecting cell labels from large atlases to new datasets within species, it can be challenging to align cell types across species. HieRFIT uses a random forest method that allows for cell type projection to internal (uncertain) nodes; IP4CI uses canonical correlation analysis on pathway-level expression, as opposed to individual genes, to attempt to better preserve biological information across species. 
+
+<img class="inline-icon" src="../img/icons/bi-logo.svg" width="35" alt="Boehringer Ingelheim logo"> **The development of HieRFIT and IP4CI were supported by a collaborative agreement with [Boehringer Ingelheim :octicons-link-external-24:](https://www.boehringer-ingelheim.com/us).** 
+
+**Software**: [scclusteval :octicons-link-external-24:](https://github.com/harvardinformatics/scclusteval){ .target="_blank" }, [HieRFIT :octicons-link-external-24:](https://github.com/harvardinformatics/HieRFIT){ .target="_blank" }
 
 !!! abstract "Publications"
 
@@ -109,7 +113,7 @@ We have also developed two tools, HieRFIT and IP4CI, which both seek to address 
 
 ### Limb regeneration in axolotls &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
-**Lead Bioinformatician**: Adam Freedman, Tim Sackton
+**Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
 **Collaborators**: [Whited Lab :octicons-link-external-24:](https://www.whitedlab.com/){:target="_blank"} ([SCRB :octicons-link-external-24:](https://hscrb.harvard.edu/){:target="_blank"})
 
@@ -190,11 +194,11 @@ We helped generate high quality genome assemblies for 46 individual scrub jays a
 
 ### Modeling Non-Standard Coalescent Processes
 
-Historically, most population genetic has been analyzed using the Kingman coalescent, a model that puts some limits on population history, including where extreme skews in offspring distribution are assumed to be impossible. However, some organisms, in particular broadcast spawning marine species, violate this restriction. A classic example of this are codfish, a high-fecundity broadcast spawning fish where a few individuals can produce a large fraction of the offspring in a given generation. In collaboration with the Wakeley lab and Einar Arnason at the University of Iceland, we are helping to generate and analyze a large cod population genetic panel to test these multiple merger coalsecent models.  
+Historically, most population genetic has been analyzed using the Kingman coalescent, a model that puts some limits on population history, including where extreme skews in offspring distribution are assumed to be impossible. However, some organisms, in particular broadcast spawning marine species, violate this restriction. A classic example of this are codfish, a high-fecundity broadcast spawning fish where a few individuals can produce a large fraction of the offspring in a given generation. In collaboration with the Wakeley lab and Einar Árnason at the University of Iceland, we are helping to generate and analyze a large cod population genetic panel to test these multiple merger coalsecent models.  
 
 **Lead Bioinformatician**: Tim Sackton
 
-**Collaborators**: [Wakeley Lab :octicons-link-external-24:](https://wakeley.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"}, Einar Árnason, University of Iceland
+**Collaborators**: [Wakeley Lab :octicons-link-external-24:](https://wakeleylab.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"}), [Einar Árnason :octicons-link-external-24:](https://iris.rais.is/en/persons/einar-%C3%A1rnason){:target="_blank"}, ([University of Iceland :octicons-link-external-24:](https://english.hi.is/){:target="_blank"})
 
 !!! abstract "Related Publication"
 
@@ -246,6 +250,8 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
 
 
 ## Comparative Genomics and Convergent Evolution
+
+<img class="inline-icon" src="../img/icons/nsf-logo.svg" width="40" alt="NSF logo">
 
 Convergent evolution describes the phenomenon where a similar or identical phenotype evolves in multiple independent lineages. Classic examples include diverse traits such as the evolution of echolocation in bats, cetaceans, and some species of birds; the recurrent evolution of crab-like body plans in crustaceans (carcinisation); and loss of limbs in snakes and caecilians.
 
@@ -322,6 +328,9 @@ We have also worked on a variety of other topics as needed to assist with projec
     /* Remove borders from table, th, and td */
 
     .research-icon {
+        font-size: 1.2em !important;
+        vertical-align: middle !important;
+
         /* color: #FAA85C; */
         /* color: #74A58E; */
         /* color: #265D80; */
@@ -333,14 +342,25 @@ We have also worked on a variety of other topics as needed to assist with projec
         border-radius: 15% !important; */
 
         /* color: #34BD78; */
-        color: #8996A0;
+        /* background-color: #0A2240;
+        border: 1px solid #a41c30;
+        padding: 0.1em !important
+        
+        
+        /* color: #8996A0; */
+        color: rgba(52,152,219,0.9);
+
+        /* color: #a51c30; */
+
         /* background-color: #0A2240;
         border: 1px solid #a41c30;
         padding: 0.1em !important;
         border-radius: 15% !important; */
 
-        font-size: 1.2em !important;
-        vertical-align: middle !important;
+        /* border: 1px solid #333333; */
+        /* border-radius: 20% !important; */
+        /* x-offset | y-offset | blur | spread | color */
+        /* box-shadow: 8px 4px 16px -6px rgba(52,152,219,0.4); */        
     }
 
 </style>
