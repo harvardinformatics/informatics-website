@@ -23,7 +23,8 @@ A major focus of recent work in the group has been to assist with the assembly a
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
-(old text was for the wrong project)
+Recent technological advances in long-read DNA sequencing accompanied by reduction in costs have made the production of genome assemblies financially achievable and computationally feasible, such that genome assembly no longer represents the major hurdle to evolutionary analysis for most non-model organisms. Now, the more difficult challenge is to properly annotate a draft genome assembly once it has been constructed. The primary challenge to annotations is how to select from the myriad gene prediction tools that are currently available, determine what kinds of data are necessary to generate high-quality annotations, and evaluate the quality of the annotation. To determine which methods perform the best and to determine whether the inclusion of RNA-seq data is necessary to obtain a high-quality annotation, we generated annotations with 12 different methods for 21 different species spanning vertebrates, plants, and insects. We found that the annotation transfer method TOGA, BRAKER3, and the RNA-seq assembler StringTie were consistently top performers across a variety of metrics including BUSCO recovery, CDS length, and false-positive rate, with the exception that TOGA performed less well in some monocots with respect to BUSCO recovery. The choice of which of the top-performing methods will depend upon the feasibility of whole-genome alignment, availability of RNA-seq data, importance of capturing noncoding parts of the transcriptome, and, when whole-genome alignment is not feasible, the relative performance in BUSCO recovery between BRAKER3 and StringTie. When whole-genome alignment is not feasible, inclusion of RNA-seq data will lead to substantial improvements to genome annotations.
+
 
 !!! abstract "Publication"
 
