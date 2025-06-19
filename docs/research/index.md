@@ -344,7 +344,7 @@ We have also worked on a variety of other topics as needed to assist with projec
         /* color: #34BD78; */
         /* background-color: #0A2240;
         border: 1px solid #a41c30;
-        padding: 0.1em !important
+        padding: 0.1em !important */
         
         
         /* color: #8996A0; */
