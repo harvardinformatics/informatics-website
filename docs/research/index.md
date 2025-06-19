@@ -252,11 +252,39 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
 
 ## Comparative Genomics and Convergent Evolution
 
-<img class="inline-icon" src="../img/icons/nsf-logo.svg" width="40" alt="NSF logo">
+<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu, Edwards, and Informatics groups**
+
+<img class="inline-icon" src="../img/icons/nsf-logo.svg" width="40" alt="NSF logo"> **Funded by an [NSF :octicons-link-external-24:](https://www.nsf.gov/){target="_blank"} grant to the Informatics group**
+
 
 Convergent evolution describes the phenomenon where a similar or identical phenotype evolves in multiple independent lineages. Classic examples include diverse traits such as the evolution of echolocation in bats, cetaceans, and some species of birds; the recurrent evolution of crab-like body plans in crustaceans (carcinisation); and loss of limbs in snakes and caecilians.
 
 Our work in this area has been funded by research grants from both the National Institutes of Health and the National Science Foundation, with a focus on using comparative and population genomics to understand genomic correlates of convergent phenotypes in birds. Along with a wide range of collaborators, we are working on population genetics of brood parasitic birds; genomic changes associated with morphological evolution towards shorter tarsi in a variety of bird clades; and the genomics of nectarivory in hummingbirds, honeyeaters, parrots, and sunbirds.
+
+In particular, we are interested in the extent to which convergent adaptive phenotypes arise from changes in similar, or different, regions of the genome, and whether convergent changes are regulatory, protein-coding, or both. Across a variety of phenotypes, we have consistently found evidence for shared evolutionary changes in species that share convergent phenotypes, often in the form of positive selection in the same proteins or regulatory regions. While more studies are needed, an emerging trend suggests that morphological phenotypes (e.g., flight loss in ratites; short tarsi across birds) generally seem to be associated with convergent changes in regulatory sequences alone, while other phenotypes (changes in diet, or behavior) are associated with convergent changes in both protein-coding and regulatory sequences. 
+
+!!! abstract "Publications"
+
+    * **Osipova E**, Balakrishnan CN, Spottiswoode CN, Lund J, DaCosta JM, Hauber ME, Warren WC, Sorenson MD, **Sackton T B**. 2025. Comparative population genomics reveals convergent adaptation across independent origins of avian obligate brood parasitism. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2025.04.08.647876){target="_blank"} 
+
+    * **Osipova E**, Ko M-C, Petricek K M, Yung Wa Sin S, Brown T, Winkler S, ... , Baldwin M, Hiller M, **Sackton TB**. 2024. Convergent and lineage-specific genomic changes contribute to adaptations in sugar-consuming birds. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2024.08.30.610474){target="_blank"} 
+  
+    * Shakya SB :fontawesome-solid-graduation-cap:, Edwards SV, **Sackton TB**. 2025. Convergent evolution of noncoding elements associated with short tarsus length in birds. *BMC Biology*. 23(1):52. [Link :octicons-link-external-24:](https://doi.org/10.1186/s12915-025-02156-4){target="_blank"} 
+   
+    * Wuitchik SJS :fontawesome-solid-graduation-cap:, Hillier LW, Balakrishnan CN, Sorenson MD, Warren W , **Sackton TB**. 2022. Patterns of lineage-specific genome evolution in the brood parasitic black-headed duck (*Heteronetta atricapilla*). *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2022.05.22.492970){target="_blank"} 
+
+    * Sadanandan KR, Ko M-C, Low GW, Gahr M, Edwards SV, Hiller M, **Sackton TB**, Rheindt FE, Sin S Y W, Baldwin MW. 2023. Convergence in hearing-related genes between echolocating birds and mammals. *Proceedings of the National Academy of Sciences*. 120(43):e2307340120. [Link :octicons-link-external-24:](https://doi.org/10.1073/pnas.2307340120){target="_blank"} :
+
+    * Clark NL, Hittinger CT, Li-Byarlay H, Rokas A, **Sackton TB**, Unckless RL. 2025. Integrating intermediate traits in phylogenetic genotype-to-phenotype studies. *Integrative and Comparative Biology*. Advance article icaf037. [Link :octicons-link-external-24:](https://doi.org/10.1093/icb/icaf037){target="_blank"} 
+
+    * **Sackton TB** and Clark NL. 2019. Convergent evolution in the genomics era: new insights and directions. *Philosophical Transactions of the Royal Society B: Biological Sciences*. 374(1777):20190102. [Link :octicons-link-external-24:](https://doi.org/10.1098/rstb.2019.0102){target="_blank"}
+
+    * Lamichhaney S, Card D C, Grayson P, Tonini J F R, Bravo G A, Näpflin K, Termignoni-Garcia F, Torres C, Burbrink F, Clarke J A, **Sackton TB**, Edwards SV. 2019. Integrating natural history collections and comparative genomics to study the genetic architecture of convergent evolution. *Philosophical Transactions of the Royal Society B: Biological Sciences*. 374(1777):20180248. [Link :octicons-link-external-24:](https://doi.org/10.1098/rstb.2018.0248){target="_blank"} 
+
+    * Shultz AJ :fontawesome-solid-graduation-cap:, **Sackton TB**. 2019. Immune genes are hotspots of shared positive selection across birds and mammals. *eLife*. 8:e41815. [Link :octicons-link-external-24:](https://doi.org/10.7554/eLife.41815){target="_blank"}
+
+    * **Sackton TB**, Grayson P, Cloutier A, Hu Z, Liu J S, Wheeler N E, Gardner P P, Clarke J A, Baker A J, Clamp M :fontawesome-solid-graduation-cap:, Edwards S V. 2019. Convergent regulatory evolution and loss of flight in paleognathous birds. *Science*. 364(6435):74-78. [Link :octicons-link-external-24:](https://doi.org/10.1126/science.aat7244){target="_blank"}
+
 
 ## Misc Topics
 
