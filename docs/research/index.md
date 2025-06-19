@@ -16,7 +16,7 @@ We are a broad group with diverse expertise in the computational analysis of seq
 
 ## Genome Assembly and Annotation
 
-A major focus of recent work in the group has been to assist with the assembly and annotation of diverse genomes, often complex and difficult, using long-read sequencing technologies (e.g., Oxford Nanpore and PacBio sequencing). In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we support assembly and annotation from sample to finished genome. Our recent work in this area includes both collaborations on the genomes of diverse species, and best practices research to assess methods used to produce gene annotations across the tree of life. 
+A major focus of recent work in the group has been to assist with the assembly and annotation of diverse genomes, often complex and difficult, using long-read sequencing technologies (e.g., Oxford Nanpore and PacBio sequencing). In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){target="_blank"}, we support assembly and annotation from sample to finished genome. Our recent work in this area includes both collaborations on the genomes of diverse species, and best practices research to assess methods used to produce gene annotations across the tree of life. 
 
 
 ### Performance assessment of genome annotation methods across the tree of life &nbsp; :material-lan-check:{ .research-icon }
@@ -27,14 +27,14 @@ A major focus of recent work in the group has been to assist with the assembly a
 
 !!! abstract "Publication"
 
-    * **Freedman AH**, **Sackton TB**. 2025. Building better genome annotations across the tree of life. *Genome Research*. 35:1261-1276. [Link :octicons-link-external-24:](https://www.genome.org/cgi/doi/10.1101/gr.280377.124){:target="_blank"}
+    * **Freedman AH**, **Sackton TB**. 2025. Building better genome annotations across the tree of life. *Genome Research*. 35:1261-1276. [Link :octicons-link-external-24:](https://www.genome.org/cgi/doi/10.1101/gr.280377.124){target="_blank"}
 
 
 ### Panther worm (*Hofstenia*) genomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformaticians**: Danielle Khost and Adam Freedman
 
-**Collaborators**: [Srivastava Lab :octicons-link-external-24:](http://www.srivastavalab.org/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){:target="_blank"})
+**Collaborators**: [Srivastava Lab :octicons-link-external-24:](http://www.srivastavalab.org/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"})
 
 The lab needed to come up with an approach to integrate genome annotations from two different methods: direct assembly of transcripts from RNA-seq reads aligned to the genome, and de novo transcriptome assembly. There was also a question as to why functionally validated single-exon transcripts in the latter failed to be assembled in the former. We came up with a sensible integration strategy that also filters out lowly expressed single-exon transcripts that might be false positives.
 
@@ -43,7 +43,7 @@ The lab needed to come up with an approach to integrate genome annotations from 
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
-**Collaborators**: [Hopkins Lab :octicons-link-external-24:](https://hopkins-lab.org/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [Arnold Arboretum :octicons-link-external-24:](https://arboretum.harvard.edu/){:target="_blank"})
+**Collaborators**: [Hopkins Lab :octicons-link-external-24:](https://hopkins-lab.org/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [Arnold Arboretum :octicons-link-external-24:](https://arboretum.harvard.edu/){target="_blank"})
 
 We helped the Hopkins lab sequence and assemble the genomes of four species of *Phlox* wildflowers using Oxford Nanopore sequencing, as well as scaffolding into chromosome-scale reference assemblies using optical mapping and genetic maps. These samples were particularly challenging due to the large genome sizes (>6 Gbase) and highly repetitive nature of the genomes (~90% repeats). For comparative analysis, we also helped construct whole-genome alignments for the scaffolded genomes, a task that is also challenging for large plant genomes.
 
@@ -51,41 +51,41 @@ We helped the Hopkins lab sequence and assemble the genomes of four species of *
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
-**Collaborators**: [Giribet Lab :octicons-link-external-24:](https://giribetgroup.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){:target="_blank"})
+**Collaborators**: [Giribet Lab :octicons-link-external-24:](https://giribetgroup.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"})
 
 We worked with several members of the Giribet lab to sequence and assemble genomes for a variety of unusual species from areas of the tree of life that are poorly represented with sequencing data, such as velvet worms and marine priapulid worms. The experimental design, sequencing, and assembly for these projects was difficult due to the small size of the organisms and the scarcity of samples.
 
 !!! abstract "Publications"
 
-    * Lord A, Cunha TJ, de Medeiros BAS, Sato S, **Khost D**, **Sackton TB**, Giribet G. 2023. Expanding on Our Knowledge of Ecdysozoan Genomes: A Contiguous Assembly of the Meiofaunal Priapulan *Tubiluchus corallicola*. *Genome Biology and Evolution*. 15(6):evad103 [Link :octicons-link-external-24:](https://doi.org/10.1093/gbe/evad103){:target="_blank"}
+    * Lord A, Cunha TJ, de Medeiros BAS, Sato S, **Khost D**, **Sackton TB**, Giribet G. 2023. Expanding on Our Knowledge of Ecdysozoan Genomes: A Contiguous Assembly of the Meiofaunal Priapulan *Tubiluchus corallicola*. *Genome Biology and Evolution*. 15(6):evad103 [Link :octicons-link-external-24:](https://doi.org/10.1093/gbe/evad103){target="_blank"}
 
-    * Sato S, Cunha TJ, de Medeiros BAS, **Khost D**, **Sackton TB**, Giribet G. 2023. Sizing Up the Onychophoran Genome: Repeats, Introns, and Gene Family Expansion Contribute to Genome Gigantism in *Epiperipatus broadwayi*. *Genome Biology and Evolution*. 15(3):evad021 [Link :octicons-link-external-24:](https://doi.org/10.1093/gbe/evad021){:target="_blank"}
+    * Sato S, Cunha TJ, de Medeiros BAS, **Khost D**, **Sackton TB**, Giribet G. 2023. Sizing Up the Onychophoran Genome: Repeats, Introns, and Gene Family Expansion Contribute to Genome Gigantism in *Epiperipatus broadwayi*. *Genome Biology and Evolution*. 15(3):evad021 [Link :octicons-link-external-24:](https://doi.org/10.1093/gbe/evad021){target="_blank"}
 
 
 ### Assembling the genome of a parasitic plant &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformaticians**: Danielle Khost, Brian Arnold :fontawesome-solid-graduation-cap:, and Tim Sackton
 
-**Collaborators**: [Davis Lab :octicons-link-external-24:](https://davislab.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"})
+**Collaborators**: [Davis Lab :octicons-link-external-24:](https://davislab.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"})
 
 *Sapria himalayana* is a parasitic plant in the family Rafflesiaceae, which includes the species with the largest flower in the world. The Davis Lab had worked on these plants for many years, but had not produced a usable genome assembly of this fascinating plant. Several members of the Informatics group collaborated with the Davis Lab to assemble a genome of *S. himalayana* and identify unusual features of this species, including the loss of 44% of conserved plant genes and the presence of horizontally transfered genetic elements from the host species. 
 
 !!! abstract "Publication"
 
-    * Cai L, Arnold BJ :fontawesome-solid-graduation-cap:, Xi Z, **Khost DE**, Patel N, Hartmann CB, ... Mathews S, **Sackton TB**, Davis CD, 2021. Deeply Altered Genome Architecture in the Endoparasitic Flowering Plant Sapria himalayana Griff. (Rafflesiaceae). *Current Biology* 31:1002-1011. [Link :octicons-link-external-24:]( https://doi.org/10.1016/j.cub.2020.12.045){:target="_blank"}
+    * Cai L, Arnold BJ :fontawesome-solid-graduation-cap:, Xi Z, **Khost DE**, Patel N, Hartmann CB, ... Mathews S, **Sackton TB**, Davis CD, 2021. Deeply Altered Genome Architecture in the Endoparasitic Flowering Plant Sapria himalayana Griff. (Rafflesiaceae). *Current Biology* 31:1002-1011. [Link :octicons-link-external-24:]( https://doi.org/10.1016/j.cub.2020.12.045){target="_blank"}
 
 
 ### Assembling the genome of the extinct moa &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformaticians**: Tim Sackton
 
-**Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){:target="_blank"})
+**Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"})
 
 The little bush moa, *Anomalopteryx didiformis*, is one of approximately nine species of extinct flightless birds from Aotearoa, New Zealand. As part of a collaboration with the Edwards Lab, the Informatics group helped to assemble and analyze the genome of this species. 
 
 !!! abstract "Publication"
 
-    * Edwards SV, Cloutier A, Cockburn G, Grayson P, Katoh K, Baldwin MW, **Sackton TB**, Baker AJ. 2024.A nuclear genome assembly of an extinct flightless bird, the little bush moa. *Science Advances* 10:21. [Link :octicons-link-external-24:]( https://doi.org/10.1126/sciadv.adj6823){:target="_blank"}
+    * Edwards SV, Cloutier A, Cockburn G, Grayson P, Katoh K, Baldwin MW, **Sackton TB**, Baker AJ. 2024.A nuclear genome assembly of an extinct flightless bird, the little bush moa. *Science Advances* 10:21. [Link :octicons-link-external-24:]( https://doi.org/10.1126/sciadv.adj6823){target="_blank"}
 
 
 ## Bulk and Single-cell RNA-seq
@@ -107,21 +107,21 @@ We have also developed two tools, HieRFIT and IP4CI, which both seek to address 
 
 !!! abstract "Publications"
 
-    * Tang M :fontawesome-solid-graduation-cap:, Kaymaz Y :fontawesome-solid-graduation-cap:, Logeman BL, Eichhorn S, Liang ZS, Dulac C, **Sackton TB**. 2020. Evaluating single-cell cluster stability using the Jaccard similarity index. *Bioinformatics* 37:15. [Link :octicons-link-external-24:]( https://doi.org/10.1093/bioinformatics/btaa956){:target="_blank"}
-    * Kaymaz Y :fontawesome-solid-graduation-cap:, Gangleberger F, Tang M :fontawesome-solid-graduation-cap:, Haslinger C, Fernandez-Albert F, Lawless N, **Sackton TB**. 2021. HieRFIT: a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. *Bioinformatics* 37:23. [Link :octicons-link-external-24:](https://doi.org/10.1093/bioinformatics/btab499){:target="_blank"}
+    * Tang M :fontawesome-solid-graduation-cap:, Kaymaz Y :fontawesome-solid-graduation-cap:, Logeman BL, Eichhorn S, Liang ZS, Dulac C, **Sackton TB**. 2020. Evaluating single-cell cluster stability using the Jaccard similarity index. *Bioinformatics* 37:15. [Link :octicons-link-external-24:]( https://doi.org/10.1093/bioinformatics/btaa956){target="_blank"}
+    * Kaymaz Y :fontawesome-solid-graduation-cap:, Gangleberger F, Tang M :fontawesome-solid-graduation-cap:, Haslinger C, Fernandez-Albert F, Lawless N, **Sackton TB**. 2021. HieRFIT: a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. *Bioinformatics* 37:23. [Link :octicons-link-external-24:](https://doi.org/10.1093/bioinformatics/btab499){target="_blank"}
 
 
 ### Limb regeneration in axolotls &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
-**Collaborators**: [Whited Lab :octicons-link-external-24:](https://www.whitedlab.com/){:target="_blank"} ([SCRB :octicons-link-external-24:](https://hscrb.harvard.edu/){:target="_blank"})
+**Collaborators**: [Whited Lab :octicons-link-external-24:](https://www.whitedlab.com/){target="_blank"} ([SCRB :octicons-link-external-24:](https://hscrb.harvard.edu/){target="_blank"})
 
 The Whited lab is investigating the genetic architecture of regeneration in axolotls using single-cell RNA-seq. We provided guidance for the data analysis pipeline, particularly at the data cleanup, filtering, and quality control stage.
 
 !!! abstract "Publication"
 
-    * Payzin-Dogru D, Blair SJ, ..., **Freedman AH**, ..., **Sackton TB**, Whited JL, 2024. Peripheral nervous system mediates body-wide stem cell activation for limb regeneration. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2021.12.29.474455){:target="_blank"}
+    * Payzin-Dogru D, Blair SJ, ..., **Freedman AH**, ..., **Sackton TB**, Whited JL, 2024. Peripheral nervous system mediates body-wide stem cell activation for limb regeneration. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2021.12.29.474455){target="_blank"}
 
 
 
@@ -135,7 +135,7 @@ Based on our experience with the increasing feasibility of single-cell RNA-seq e
 
 !!! abstract "Publication"
 
-    * **Freedman AH**, **Sackton TB**. 2024. Rethinking eco‐evo studies of gene expression for non‐model organisms in the genomic era. *Molecular Ecology*. e17378. [Link :octicons-link-external-24:](https://doi.org/10.1111/mec.17378){:target="_blank"}
+    * **Freedman AH**, **Sackton TB**. 2024. Rethinking eco‐evo studies of gene expression for non‐model organisms in the genomic era. *Molecular Ecology*. e17378. [Link :octicons-link-external-24:](https://doi.org/10.1111/mec.17378){target="_blank"}
 
 
 
@@ -143,13 +143,13 @@ Based on our experience with the increasing feasibility of single-cell RNA-seq e
 
 **Lead Bioinformatcian**: Adam Freedman
 
-**Collaborators**: [Girguis lab :octicons-link-external-24:](https://www.girguislab.org/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"})
+**Collaborators**: [Girguis lab :octicons-link-external-24:](https://www.girguislab.org/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"})
 
 Most autotrophic organisms possess a single carbon fixation pathway. The chemoautotrophic symbionts of the hydrothermal vent tubeworm *Riftia pachyptila*, however, possess two functional pathways: the Calvin–Benson–Bassham (CBB) and the reductive tricarboxylic acid (rTCA) cycles. How these two pathways are coordinated is unknown. The Girguis lab investigated these pathways with a combination of bulk RNA-seq, and estimates of carbon fixation rates. Our role was to disentangle host (tubeworm) and symbiont (bacterium) reads in the sequence libraries, and generate gene expression counts used for downstream analyses.
 
 !!! abstract "Publication"
 
-    * Mitchell JH, **Freedman AH**, Delaney JA, Girguis PR. 2024. Co-expression analysis reveals distinct alliances around two carbon fixation pathways in hydrothermal vent symbionts. *Nature Microbiology*. 9:1526-1539. [Link :octicons-link-external-24:]( https://doi.org/10.1038/s41564-024-01704-y){:target="_blank"}
+    * Mitchell JH, **Freedman AH**, Delaney JA, Girguis PR. 2024. Co-expression analysis reveals distinct alliances around two carbon fixation pathways in hydrothermal vent symbionts. *Nature Microbiology*. 9:1526-1539. [Link :octicons-link-external-24:]( https://doi.org/10.1038/s41564-024-01704-y){target="_blank"}
 
 
 ### Assessing errors and biases in *de novo* transcriptome assembly &nbsp; :material-lan-check:{ .research-icon }
@@ -160,7 +160,7 @@ At the time we launched this study, approximately 60,000 published papers had re
 
 !!! abstract "Publication"
 
-    * **Freedman AH**, Clamp M :fontawesome-solid-graduation-cap:, **Sackton TB**. 2021. Error, noise and bias in *de novo* transcriptome assemblies. *Molecular Ecology Resources*. 21:18-29. [Link :octicons-link-external-24:](https://doi.org/10.1111/1755-0998.13156){:target="_blank"}
+    * **Freedman AH**, Clamp M :fontawesome-solid-graduation-cap:, **Sackton TB**. 2021. Error, noise and bias in *de novo* transcriptome assemblies. *Molecular Ecology Resources*. 21:18-29. [Link :octicons-link-external-24:](https://doi.org/10.1111/1755-0998.13156){target="_blank"}
 
 ### Comparing efficacy of short paired-end versus longer single-end reads in bulk RNA-seq experiments &nbsp; :material-lan-check:{ .research-icon }
 
@@ -170,7 +170,7 @@ Typical experimental design advice for expression analyses using RNA-seq general
 
 !!! abstract "Publication"
 
-    * **Freedman AH**, Gaspar JM :fontawesome-solid-graduation-cap:, **Sackton TB**. 2020. Short paired-end reads trump long single-end reads for expression analysis. *BMC Bioinformatics*. 21(149). [Link :octicons-link-external-24:](https://doi.org/10.1186/s12859-020-3484-z){:target="_blank"}
+    * **Freedman AH**, Gaspar JM :fontawesome-solid-graduation-cap:, **Sackton TB**. 2020. Short paired-end reads trump long single-end reads for expression analysis. *BMC Bioinformatics*. 21(149). [Link :octicons-link-external-24:](https://doi.org/10.1186/s12859-020-3484-z){target="_blank"}
 
 
 ## Population Genetics
@@ -181,7 +181,7 @@ The group has worked on a variety of topics related to population genetics. Thes
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
-**Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){:target="_blank"}), [Chen Lab :octicons-link-external-24:](https://chenlab.oeb.harvard.edu/){:target="_blank"} ([University of Rochester, Department of Biology :octicons-link-external-24:](https://www.sas.rochester.edu/bio/index.html){:target="_blank"}), [Erik Garrison :octicons-link-external-24:](http://hypervolu.me/~erik/erik_garrison.html){:target="_blank"} ([University of Tennessee Health Science Center :octicons-link-external-24:](https://www.uthsc.edu/){:target="_blank"})
+**Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"}), [Chen Lab :octicons-link-external-24:](https://chenlab.oeb.harvard.edu/){target="_blank"} ([University of Rochester, Department of Biology :octicons-link-external-24:](https://www.sas.rochester.edu/bio/index.html){target="_blank"}), [Erik Garrison :octicons-link-external-24:](http://hypervolu.me/~erik/erik_garrison.html){target="_blank"} ([University of Tennessee Health Science Center :octicons-link-external-24:](https://www.uthsc.edu/){target="_blank"})
 
 <img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Edwards and Informatics groups**
 
@@ -189,7 +189,7 @@ We helped generate high quality genome assemblies for 46 individual scrub jays a
 
 !!! abstract "Publication"
 
-    * Edwards SV, Fang B, **Khost D**, Kolyfetis GE, Cheek RG, DeRaad DA, Chen N, Fitzpatrick JW, McCormack JE, Funk WC, Ghalambor CK, Garrison E, Guarracino A, Li H, **Sackton TB**. 2025. Comparative population pangenomes reveal unexpected complexity and fitness effects of structural variants. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2025.02.11.637762){:target="_blank"}
+    * Edwards SV, Fang B, **Khost D**, Kolyfetis GE, Cheek RG, DeRaad DA, Chen N, Fitzpatrick JW, McCormack JE, Funk WC, Ghalambor CK, Garrison E, Guarracino A, Li H, **Sackton TB**. 2025. Comparative population pangenomes reveal unexpected complexity and fitness effects of structural variants. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2025.02.11.637762){target="_blank"}
 
 
 ### Modeling Non-Standard Coalescent Processes
@@ -198,11 +198,11 @@ Historically, most population genetic has been analyzed using the Kingman coales
 
 **Lead Bioinformatician**: Tim Sackton
 
-**Collaborators**: [Wakeley Lab :octicons-link-external-24:](https://wakeleylab.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"}), [Einar Árnason :octicons-link-external-24:](https://iris.rais.is/en/persons/einar-%C3%A1rnason){:target="_blank"}, ([University of Iceland :octicons-link-external-24:](https://english.hi.is/){:target="_blank"})
+**Collaborators**: [Wakeley Lab :octicons-link-external-24:](https://wakeleylab.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"}), [Einar Árnason :octicons-link-external-24:](https://iris.rais.is/en/persons/einar-%C3%A1rnason){target="_blank"}, ([University of Iceland :octicons-link-external-24:](https://english.hi.is/){target="_blank"})
 
 !!! abstract "Related Publication"
 
-    * Freund F, Kerdoncuff E, Matuszewski S, ... **Sackton TB**, Achaz G. Interpreting the pervasive observation of U-shaped Site Frequency Spectra. 2023. *PLoS Genetics* 19(3) [Link :octicons-link-external-24:](https://doi.org/10.1371/journal.pgen.1010677){:target="_blank"}
+    * Freund F, Kerdoncuff E, Matuszewski S, ... **Sackton TB**, Achaz G. Interpreting the pervasive observation of U-shaped Site Frequency Spectra. 2023. *PLoS Genetics* 19(3) [Link :octicons-link-external-24:](https://doi.org/10.1371/journal.pgen.1010677){target="_blank"}
 
 
 ### Population genomics with snpArcher &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :material-vector-polyline-plus:{ .research-icon }
@@ -211,11 +211,11 @@ Historically, most population genetic has been analyzed using the Kingman coales
 
 Variant calling is an extremely common task in a wide variety of fields. However, this remains a complicated pipeline for many researchers, especially given the lack of readily avilable resources describing how to optimize and efficienctly run common variant calling pipelines, such as GATK, in non-human contexts. To aid researchers working in non-human species, we have developed a flexible snakemake pipeline, snpArcher, that is designed to facilitate plug-and-play variant calling for a wide range of species. 
 
-**Software**: [snpArcher :octicons-link-external-24:](https://snparcher.readthedocs.io/en/latest/){:target="_blank"}, [degenotate :octicons-link-external-24:](https://github.com/harvardinformatics/degenotate){:target="_blank"}
+**Software**: [snpArcher :octicons-link-external-24:](https://snparcher.readthedocs.io/en/latest/){target="_blank"}, [degenotate :octicons-link-external-24:](https://github.com/harvardinformatics/degenotate){target="_blank"}
 
 !!! abstract "Publication"
 
-    * Mirchandani CD, Shultz AJ :fontawesome-solid-graduation-cap:, **Thomas GWC**, Smith SJ :fontawesome-solid-graduation-cap:, Baylis M, Arnold B :fontawesome-solid-graduation-cap:, Corbett-Detig R, Enbody E, **Sackton TB**. 2024. A fast, reproducible, high-throughput variant calling workflow for population genomics. *Molecular Biology and Evolution*. 41(1):msad270. [Link :octicons-link-external-24:](https://doi.org/10.1093/molbev/msad270){:target="_blank"}
+    * Mirchandani CD, Shultz AJ :fontawesome-solid-graduation-cap:, **Thomas GWC**, Smith SJ :fontawesome-solid-graduation-cap:, Baylis M, Arnold B :fontawesome-solid-graduation-cap:, Corbett-Detig R, Enbody E, **Sackton TB**. 2024. A fast, reproducible, high-throughput variant calling workflow for population genomics. *Molecular Biology and Evolution*. 41(1):msad270. [Link :octicons-link-external-24:](https://doi.org/10.1093/molbev/msad270){target="_blank"}
 
 
 ## Phylogenetic Methods
@@ -227,25 +227,25 @@ The Informatics group has been part of a long term collaboration to develop meth
 
 **Lead Bioinformaticians**: Gregg Thomas and Tim Sackton
 
-**Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){:target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){:target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){:target="_blank"}), [Liu Lab :octicons-link-external-24:](https://sites.harvard.edu/junliu/){:target="_blank"} ([Statistics :octicons-link-external-24:](https://statistics.fas.harvard.edu/){:target="_blank"})
+**Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"}), [Liu Lab :octicons-link-external-24:](https://sites.harvard.edu/junliu/){target="_blank"} ([Statistics :octicons-link-external-24:](https://statistics.fas.harvard.edu/){target="_blank"})
 
 <img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu, Edwards, and Informatics groups**
 
 PhyloAcc is software that was developed in the Edwards, Liu, and Informatics labs to study molecular evolution of non-coding genomic regions in a phylogenetic context. Version 1 was used to study convergent substitution rate accelerations in marine mammals and flightless birds to identify possible changes in regulatory regions that may lead to the adaptations of those respective groups. Version 2 of PhyloAcc expanded on version 1 by accounting for phylogenetic discordance and providing a friendlier user interface and batching via Snakemake.
 
-**Software**: [PhyloAcc :octicons-link-external-24:](https://phyloacc.github.io/){:target="_blank"}
+**Software**: [PhyloAcc :octicons-link-external-24:](https://phyloacc.github.io/){target="_blank"}
 
 !!! abstract "Publications"
 
-    * **Thomas GWC**, Gemmell P, Shakya SB :fontawesome-solid-graduation-cap:, Hu Z, Liu JS, **Sackton TB**, Edwards SV. 2024. Practical guidance and workflows for identifying fast evolving non-coding genomic elements using PhyloAcc. *Integrative and Comparative Biology*. 64(5):1513-1525. [Link :octicons-link-external-24:](https://doi.org/10.1093/icb/icae056){:target="_blank"}
+    * **Thomas GWC**, Gemmell P, Shakya SB :fontawesome-solid-graduation-cap:, Hu Z, Liu JS, **Sackton TB**, Edwards SV. 2024. Practical guidance and workflows for identifying fast evolving non-coding genomic elements using PhyloAcc. *Integrative and Comparative Biology*. 64(5):1513-1525. [Link :octicons-link-external-24:](https://doi.org/10.1093/icb/icae056){target="_blank"}
 
-    * Gemmell P, **Sackton TB**, Edwards SV, Liu JS. 2024. A phylogenetic method linking nucleotide substitution rates to rates of continuous trait evolution. *PLoS Computational Biology*. 20(4):e1011995. [Link :octicons-link-external-24:](https://doi.org/10.1371/journal.pcbi.1011995){:target="_blank"}
+    * Gemmell P, **Sackton TB**, Edwards SV, Liu JS. 2024. A phylogenetic method linking nucleotide substitution rates to rates of continuous trait evolution. *PLoS Computational Biology*. 20(4):e1011995. [Link :octicons-link-external-24:](https://doi.org/10.1371/journal.pcbi.1011995){target="_blank"}
 
-    * Yan H, Hu Z, **Thomas GWC**, Edwards SV, **Sackton TB**, Liu JS. 2023. PhyloAcc-GT: A Bayesian method for inferring patterns of substitution rate shifts on targeted lineages accounting for gene tree discordance. *Molecular Biology and Evolution*. 40(9):msad195. [Link :octicons-link-external-24:](https://doi.org/10.1093/molbev/msad195){:target="_blank"}
+    * Yan H, Hu Z, **Thomas GWC**, Edwards SV, **Sackton TB**, Liu JS. 2023. PhyloAcc-GT: A Bayesian method for inferring patterns of substitution rate shifts on targeted lineages accounting for gene tree discordance. *Molecular Biology and Evolution*. 40(9):msad195. [Link :octicons-link-external-24:](https://doi.org/10.1093/molbev/msad195){target="_blank"}
 
-    * Hu Z, **Sackton TB**, Edwards SV, Liu JS. 2019. Bayesian detection of convergent rate changes of conserved noncoding elements on phylogenetic trees. *Molecular Biology and Evolution*. 36(5):1086-1100. [Link :octicons-link-external-24:](https://doi.org/10.1093/molbev/msz049){:target="_blank"}
+    * Hu Z, **Sackton TB**, Edwards SV, Liu JS. 2019. Bayesian detection of convergent rate changes of conserved noncoding elements on phylogenetic trees. *Molecular Biology and Evolution*. 36(5):1086-1100. [Link :octicons-link-external-24:](https://doi.org/10.1093/molbev/msz049){target="_blank"}
 
-    * **Sackton TB**, Grayson P, Cloutier A, Hu Z, Liu JS, Wheeler NE, Gardner PP, Clarke JA, Baker AJ, Clamp M, Edwards SV. 2019. Convergent regulatory evolution and loss of flight in paleognathous birds. *Science*. 364(6435):74-78. [Link :octicons-link-external-24:](https://doi.org/10.1126/science.aat7244){:target="_blank"}
+    * **Sackton TB**, Grayson P, Cloutier A, Hu Z, Liu JS, Wheeler NE, Gardner PP, Clarke JA, Baker AJ, Clamp M, Edwards SV. 2019. Convergent regulatory evolution and loss of flight in paleognathous birds. *Science*. 364(6435):74-78. [Link :octicons-link-external-24:](https://doi.org/10.1126/science.aat7244){target="_blank"}
 
 
 
@@ -267,7 +267,7 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 !!! abstract "Publication"
 
-    * Laine VN :fontawesome-solid-graduation-cap:, **Sackton TB**, Meselson M. 2022. Genomic signature of sexual reproduction in the bdelloid rotifer Macrotrachella quadricornifera. *Genetics* 220(2) [Link :octicons-link-external-24:](https://doi.org/10.1093/genetics/iyab221){:target="_blank"}
+    * Laine VN :fontawesome-solid-graduation-cap:, **Sackton TB**, Meselson M. 2022. Genomic signature of sexual reproduction in the bdelloid rotifer Macrotrachella quadricornifera. *Genetics* 220(2) [Link :octicons-link-external-24:](https://doi.org/10.1093/genetics/iyab221){target="_blank"}
 
 
 ### Genomic Peak Calling Methods and Analysis &nbsp; :fontawesome-regular-handshake:{ .research-icon }
@@ -276,8 +276,8 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 !!! abstract "Publications"
 
-    * Mutlu B, Chen HM, Moresco JJ ... Gasper JM :fontawesome-solid-graduation-cap: ... Mango SE. 2018. Regulated nuclear accumulation of a histone methyltransferase times the onset of heterochromatin formation in C. elegans embryos. *Science Advances* 4(8) [Link :octicons-link-external-24:](https://doi.org/10.1126/sciadv.aat6224){:target="_blank"}
-    * Giansanti V, Tang M :fontawesome-solid-graduation-cap:, Cittaro D. Fast analysis of scATAC-seq data using a predefined set of genomic regions. 2020. *F1000Research* [Link :octicons-link-external-24:](https://doi.org/10.12688/f1000research.22731.2){:target="_blank"}
+    * Mutlu B, Chen HM, Moresco JJ ... Gasper JM :fontawesome-solid-graduation-cap: ... Mango SE. 2018. Regulated nuclear accumulation of a histone methyltransferase times the onset of heterochromatin formation in C. elegans embryos. *Science Advances* 4(8) [Link :octicons-link-external-24:](https://doi.org/10.1126/sciadv.aat6224){target="_blank"}
+    * Giansanti V, Tang M :fontawesome-solid-graduation-cap:, Cittaro D. Fast analysis of scATAC-seq data using a predefined set of genomic regions. 2020. *F1000Research* [Link :octicons-link-external-24:](https://doi.org/10.12688/f1000research.22731.2){target="_blank"}
 
 ### Proteomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
@@ -285,17 +285,16 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 !!! abstract "Publications"
 
-    * Schwein PA, Ge Y, Yang B, D'Souza AK :fontawesome-solid-graduation-cap:, Mody A, Shen D, Woo CM. 2022. Writing and Erasing O-GlcNAc on Casein Kinase 2 Alpha Alters the Phosphoproteome. *ACS Chemical Biology* 17(5):1111-1121 [Link :octicons-link-external-24:](https://doi.org/10.1021/acschembio.1c00987){:target="_blank"}
-    * Ge Y, Ramirez DH, Yang B, D'Souza AK :fontawesome-solid-graduation-cap:, Aonbangkhen C, Wong S, Woo CM. Target protein deglycosylation in living cells by a nanobody-fused split O-GlcNAcase. 2021. *Nature Chemical Biology* 17(5):593-600 [Link :octicons-link-external-24:](https://doi.org/10.1038/s41589-021-00757-y){:target="_blank"}
-    * Straubhaar J :fontawesome-solid-graduation-cap:, D'Souza AK :fontawesome-solid-graduation-cap:, Niziolek Z, Budnik B. 2024. Single cell proteomics analysis of drug response shows its potential as a drug discovery platform. *Molecular Omics* 20(1):6-18. [Link :octicons-link-external-24:](https://doi.org/10.1039/d3mo00124e){:target="_blank"}
-    * Sharon N, Vanderhooft J, Straubhaar J :fontawesome-solid-graduation-cap:, Mueller J, Chawla R, Zhou Q, Engquist EN, Trapnell C, Gifford DK, Melton DA. 2019. Wnt Signaling Separates the Progenitor and Endocrine Compartments during Pancreas Development. *Cell Rep.* 27(8):2281-2291.e5 [Link :octicons-link-external-24:](https://doi.org/10.1016/j.celrep.2019.04.083){:target="_blank"}
-    * Alvarez-Dominguez JR, Donaghey J, Rasouli N, Kenty JHR, Helman A, Charlton J, Straubhaar JR :fontawesome-solid-graduation-cap:, Meissner A, Melton DA. 2020. Circadian Entrainment Triggers Maturation of Human In Vitro Islets. *Cell Stem Cell.* 26(1):108-122.e10. [Link :octicons-link-external-24:](https://doi.org/10.1016/j.stem.2019.11.011){:target="_blank"}
-    * Helman A, Cangelosi AL, Davis JC, Pham Q, Rothman A, Faust AL, Straubhaar JR :fontawesome-solid-graduation-cap:, Sabatini DM, Melton DA. 2020. *Cell Metab.* 31(5):1004-1016.e5. [Link :octicons-link-external-24:](https://doi.org/10.1016/j.cmet.2020.04.004){:target="_blank"}
+    * Schwein PA, Ge Y, Yang B, D'Souza AK :fontawesome-solid-graduation-cap:, Mody A, Shen D, Woo CM. 2022. Writing and Erasing O-GlcNAc on Casein Kinase 2 Alpha Alters the Phosphoproteome. *ACS Chemical Biology* 17(5):1111-1121 [Link :octicons-link-external-24:](https://doi.org/10.1021/acschembio.1c00987){target="_blank"}
+    * Ge Y, Ramirez DH, Yang B, D'Souza AK :fontawesome-solid-graduation-cap:, Aonbangkhen C, Wong S, Woo CM. Target protein deglycosylation in living cells by a nanobody-fused split O-GlcNAcase. 2021. *Nature Chemical Biology* 17(5):593-600 [Link :octicons-link-external-24:](https://doi.org/10.1038/s41589-021-00757-y){target="_blank"}
+    * Straubhaar J :fontawesome-solid-graduation-cap:, D'Souza AK :fontawesome-solid-graduation-cap:, Niziolek Z, Budnik B. 2024. Single cell proteomics analysis of drug response shows its potential as a drug discovery platform. *Molecular Omics* 20(1):6-18. [Link :octicons-link-external-24:](https://doi.org/10.1039/d3mo00124e){target="_blank"}
+    * Sharon N, Vanderhooft J, Straubhaar J :fontawesome-solid-graduation-cap:, Mueller J, Chawla R, Zhou Q, Engquist EN, Trapnell C, Gifford DK, Melton DA. 2019. Wnt Signaling Separates the Progenitor and Endocrine Compartments during Pancreas Development. *Cell Rep.* 27(8):2281-2291.e5 [Link :octicons-link-external-24:](https://doi.org/10.1016/j.celrep.2019.04.083){target="_blank"}
+    * Alvarez-Dominguez JR, Donaghey J, Rasouli N, Kenty JHR, Helman A, Charlton J, Straubhaar JR :fontawesome-solid-graduation-cap:, Meissner A, Melton DA. 2020. Circadian Entrainment Triggers Maturation of Human In Vitro Islets. *Cell Stem Cell.* 26(1):108-122.e10. [Link :octicons-link-external-24:](https://doi.org/10.1016/j.stem.2019.11.011){target="_blank"}
+    * Helman A, Cangelosi AL, Davis JC, Pham Q, Rothman A, Faust AL, Straubhaar JR :fontawesome-solid-graduation-cap:, Sabatini DM, Melton DA. 2020. *Cell Metab.* 31(5):1004-1016.e5. [Link :octicons-link-external-24:](https://doi.org/10.1016/j.cmet.2020.04.004){target="_blank"}
 
 <style>
     .inline-icon {
         vertical-align: middle;
-        /* margin-bottom: 2px; /* Uncomment and tweak if needed */
     }
 
     .md-typeset__table {
