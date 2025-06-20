@@ -1,3 +1,8 @@
+---
+markdown_extensions:
+  - toc:
+      toc_depth: 0
+---
 
 # Research & Publications
 
@@ -14,6 +19,7 @@ We are a broad group with diverse expertise in the computational analysis of seq
 | :fontawesome-regular-handshake:{ .research-icon } = Collaboration | :fontawesome-solid-hand-holding-dollar:{ .research-icon } = Grant supported | :material-lan-check:{ .research-icon } = Best practices | :material-vector-polyline-plus:{ .research-icon } = Methods development |
 | :fontawesome-solid-graduation-cap: = Group alumni |    |    |    |
 
+
 ## Genome Assembly and Annotation
 
 A major focus of recent work in the group has been to assist with the assembly and annotation of diverse genomes, often complex and difficult, using long-read sequencing technologies (e.g., Oxford Nanpore and PacBio sequencing). In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){target="_blank"}, we support assembly and annotation from sample to finished genome. Our recent work in this area includes both collaborations on the genomes of diverse species, and best practices research to assess methods used to produce gene annotations across the tree of life. 
@@ -25,6 +31,7 @@ A major focus of recent work in the group has been to assist with the assembly a
 
 Cheap long-read sequencing has made assembling non-model genomes routine; the main obstacle is now accurate annotation. Researchers must pick from many gene-prediction tools, decide which extra data to include, and gauge annotation quality. We benchmarked 12 methods on 21 vertebrate, plant, and insect genomes to assess performance and the value of RNA-seq. Across BUSCO recovery, CDS length, and false-positive rate, three approaches—annotation transfer via TOGA, BRAKER3, and the RNA-seq assembler StringTie—were consistently best, though TOGA lagged for BUSCO in some monocots. Method choice depends on whole-genome alignment feasibility, RNA-seq availability, and the need to capture noncoding transcripts. When alignments aren’t feasible, adding RNA-seq markedly improves annotations.
 
+**Related tutorial:** [How to annotate a genome](../resources/Tutorials/how-to-annotate-a-genome.md)
 
 !!! abstract "Publication"
 
@@ -125,7 +132,6 @@ The Whited lab is investigating the genetic architecture of regeneration in axol
     * Payzin-Dogru D, Blair SJ, ..., **Freedman AH**, ..., **Sackton TB**, Whited JL, 2024. Peripheral nervous system mediates body-wide stem cell activation for limb regeneration. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2021.12.29.474455){target="_blank"}
 
 
-
 ### The impact of single cell RNA-seq techniques on ecological genomics &nbsp; :material-lan-check:{ .research-icon }
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
@@ -137,7 +143,6 @@ Based on our experience with the increasing feasibility of single-cell RNA-seq e
 !!! abstract "Publication"
 
     * **Freedman AH**, **Sackton TB**. 2024. Rethinking eco‐evo studies of gene expression for non‐model organisms in the genomic era. *Molecular Ecology*. e17378. [Link :octicons-link-external-24:](https://doi.org/10.1111/mec.17378){target="_blank"}
-
 
 
 ### Deep sea tubeworm transcriptomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
@@ -249,7 +254,6 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
     * **Sackton TB**, Grayson P, Cloutier A, Hu Z, Liu JS, Wheeler NE, Gardner PP, Clarke JA, Baker AJ, Clamp M, Edwards SV. 2019. Convergent regulatory evolution and loss of flight in paleognathous birds. *Science*. 364(6435):74-78. [Link :octicons-link-external-24:](https://doi.org/10.1126/science.aat7244){target="_blank"}
 
 
-
 ## Comparative Genomics and Convergent Evolution
 
 <img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu, Edwards, and Informatics groups**
@@ -292,7 +296,7 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 ### Genomic Evidence for Sexual Reproduction in Rotifers &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
-*with Meselson Lab, Harvard MCB*
+**Collaborators**: [Meselson Lab :octicons-link-external-24:](https://meselsonlab.scholars.harvard.edu/){target="_blank"} ([MCB :octicons-link-external-24:](https://www.mcb.harvard.edu/){target="_blank"})
 
 !!! abstract "Publication"
 
@@ -301,7 +305,7 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 ### Genomic Peak Calling Methods and Analysis &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
-*partially in collaboration with Mango Lab, Harvard MCB*
+**Collaborators**: [Mango lab :octicons-link-external-24:](https://www.biozentrum.unibas.ch/research/research-groups/research-groups-a-z/own-content/unit/research-group-susan-mango/mango-cv){target="_blank"} ([MCB :octicons-link-external-24:](https://www.mcb.harvard.edu/){target="_blank"}; currently at [Biozentrum at the University of Basel :octicons-link-external-24:](https://www.biozentrum.unibas.ch/){target="_blank"})
 
 !!! abstract "Publications"
 
@@ -310,7 +314,7 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 ### Proteomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
 
-*partially in collaboartion with Melton Lab, Harvard SCRB; and with Woo Lab, Harvard CCB*
+**Collaborators**: [Melton Lab :octicons-link-external-24:](https://hscrb.harvard.edu/labs/melton-lab/){target="_blank"} ([SCRB :octicons-link-external-24:](https://hscrb.harvard.edu/){target="_blank"}), [Woo Lab :octicons-link-external-24:](https://www.woolab.org/){target="_blank"} ([CCB :octicons-link-external-24:](https://www.chemistry.harvard.edu/){target="_blank"})
 
 !!! abstract "Publications"
 
@@ -391,4 +395,42 @@ We have also worked on a variety of other topics as needed to assist with projec
         /* box-shadow: 8px 4px 16px -6px rgba(52,152,219,0.4); */        
     }
 
+    h2 {
+        text-align: center !important;
+            /* background-color: #333333 !important; */
+            /* color: rgba(52,152,219,0.9) !important; */
+            /* border-radius: 5px !important; */
+            /* border: 2px solid #333333 !important; */
+            border-bottom: 2px solid #333333 !important;
+            border-top: 2px solid #333333 !important;
+            font-weight: 500 !important;
+    }
+
+    /* Hide all 2nd-level navs */
+    .md-nav--secondary .md-nav__item .md-nav {
+        display: none !important;
+    }
+
+    /* Show when parent has .expanded class */
+    .md-nav--secondary .md-nav__item.expanded > .md-nav {
+        display: block !important;
+    }
 </style>
+
+<script>
+    function expandActiveTOC() {
+        document.querySelectorAll('.md-nav--secondary .md-nav__item').forEach(item => {
+            const active = item.querySelector('.md-nav__link--active');
+            if (active) {
+            item.classList.add('expanded');
+            } else {
+            item.classList.remove('expanded');
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        expandActiveTOC();
+        document.addEventListener('scroll', expandActiveTOC, true);
+    });
+</script>
