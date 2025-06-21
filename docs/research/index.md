@@ -116,6 +116,7 @@ We have also developed two tools, HieRFIT and IP4CI, which both seek to address 
 !!! abstract "Publications"
 
     * Tang M :fontawesome-solid-graduation-cap:, Kaymaz Y :fontawesome-solid-graduation-cap:, Logeman BL, Eichhorn S, Liang ZS, Dulac C, **Sackton TB**. 2020. Evaluating single-cell cluster stability using the Jaccard similarity index. *Bioinformatics* 37:15. [Link :octicons-link-external-24:]( https://doi.org/10.1093/bioinformatics/btaa956){target="_blank"}
+    
     * Kaymaz Y :fontawesome-solid-graduation-cap:, Gangleberger F, Tang M :fontawesome-solid-graduation-cap:, Haslinger C, Fernandez-Albert F, Lawless N, **Sackton TB**. 2021. HieRFIT: a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. *Bioinformatics* 37:23. [Link :octicons-link-external-24:](https://doi.org/10.1093/bioinformatics/btab499){target="_blank"}
 
 
@@ -309,7 +310,8 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 !!! abstract "Publications"
 
-    * Mutlu B, Chen HM, Moresco JJ ... Gasper JM :fontawesome-solid-graduation-cap: ... Mango SE. 2018. Regulated nuclear accumulation of a histone methyltransferase times the onset of heterochromatin formation in C. elegans embryos. *Science Advances* 4(8) [Link :octicons-link-external-24:](https://doi.org/10.1126/sciadv.aat6224){target="_blank"}
+    * Mutlu B, Chen HM, Moresco JJ ... Gaspar JM :fontawesome-solid-graduation-cap: ... Mango SE. 2018. Regulated nuclear accumulation of a histone methyltransferase times the onset of heterochromatin formation in C. elegans embryos. *Science Advances* 4(8) [Link :octicons-link-external-24:](https://doi.org/10.1126/sciadv.aat6224){target="_blank"}
+
     * Giansanti V, Tang M :fontawesome-solid-graduation-cap:, Cittaro D. Fast analysis of scATAC-seq data using a predefined set of genomic regions. 2020. *F1000Research* [Link :octicons-link-external-24:](https://doi.org/10.12688/f1000research.22731.2){target="_blank"}
 
 ### Proteomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
@@ -319,10 +321,15 @@ We have also worked on a variety of other topics as needed to assist with projec
 !!! abstract "Publications"
 
     * Schwein PA, Ge Y, Yang B, D'Souza AK :fontawesome-solid-graduation-cap:, Mody A, Shen D, Woo CM. 2022. Writing and Erasing O-GlcNAc on Casein Kinase 2 Alpha Alters the Phosphoproteome. *ACS Chemical Biology* 17(5):1111-1121 [Link :octicons-link-external-24:](https://doi.org/10.1021/acschembio.1c00987){target="_blank"}
+
     * Ge Y, Ramirez DH, Yang B, D'Souza AK :fontawesome-solid-graduation-cap:, Aonbangkhen C, Wong S, Woo CM. Target protein deglycosylation in living cells by a nanobody-fused split O-GlcNAcase. 2021. *Nature Chemical Biology* 17(5):593-600 [Link :octicons-link-external-24:](https://doi.org/10.1038/s41589-021-00757-y){target="_blank"}
+
     * Straubhaar J :fontawesome-solid-graduation-cap:, D'Souza AK :fontawesome-solid-graduation-cap:, Niziolek Z, Budnik B. 2024. Single cell proteomics analysis of drug response shows its potential as a drug discovery platform. *Molecular Omics* 20(1):6-18. [Link :octicons-link-external-24:](https://doi.org/10.1039/d3mo00124e){target="_blank"}
+
     * Sharon N, Vanderhooft J, Straubhaar J :fontawesome-solid-graduation-cap:, Mueller J, Chawla R, Zhou Q, Engquist EN, Trapnell C, Gifford DK, Melton DA. 2019. Wnt Signaling Separates the Progenitor and Endocrine Compartments during Pancreas Development. *Cell Rep.* 27(8):2281-2291.e5 [Link :octicons-link-external-24:](https://doi.org/10.1016/j.celrep.2019.04.083){target="_blank"}
+    
     * Alvarez-Dominguez JR, Donaghey J, Rasouli N, Kenty JHR, Helman A, Charlton J, Straubhaar JR :fontawesome-solid-graduation-cap:, Meissner A, Melton DA. 2020. Circadian Entrainment Triggers Maturation of Human In Vitro Islets. *Cell Stem Cell.* 26(1):108-122.e10. [Link :octicons-link-external-24:](https://doi.org/10.1016/j.stem.2019.11.011){target="_blank"}
+
     * Helman A, Cangelosi AL, Davis JC, Pham Q, Rothman A, Faust AL, Straubhaar JR :fontawesome-solid-graduation-cap:, Sabatini DM, Melton DA. 2020. *Cell Metab.* 31(5):1004-1016.e5. [Link :octicons-link-external-24:](https://doi.org/10.1016/j.cmet.2020.04.004){target="_blank"}
 
 <style>
