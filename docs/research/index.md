@@ -251,7 +251,7 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
 
 ## Comparative Genomics and Convergent Evolution
 
-<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu kab, Edwards lab, Informatics group, and collaborators.**
+<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
 
 <img class="inline-icon" src="../img/icons/nsf-logo.svg" width="40" alt="NSF logo"> **Funded by an [NSF :octicons-link-external-24:](https://www.nsf.gov/){target="_blank"} grant to the Informatics group**
 
