@@ -2,15 +2,6 @@
 title: Adding an outgroup to a whole genome alignment
 ---
 
-<style>
-    details > h5 {
-        font-size: 0.01em !important;       /* almost invisible but still present! */
-        color: transparent !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-</style>
-
 Once you have your [HAL file with a whole genome alignment](whole-genome-alignment-cactus.md), you may find that you need to add samples to it as your research questions expand. Re-running the whole alignment pipeline may be too computationally expensive. While we provide a workflow to [add genomes to branches of the tree in your HAL file](add-to-whole-genome-alignment-cactus.md), the process for adding an **outgroup** to the alignement is slightly different. We provide the following pipeline to implement those steps.
 
 ??? example "The cactus_add_outgroup pipeline's rulegraph"
@@ -107,6 +98,10 @@ unzip cactus-snakemake
 ```
 
 With that, you should be ready to set-up your data for the pipeline!
+
+!!! warning "Important! cactus-snakemake v3.0.0 and later requires Cactus v2.9.9 or later."
+
+    Due to bug fixes in Cactus, v3.0.0+ of cactus-snakemake is only compatibile with Cactus v2.9.9 or later. Don't worry, cactus-snakemake will always use the latest version of Cactus available unless you specify otherwise in your config file. However, if you do wish to use an older version of Cactus, you can use [cactus-snakemake v2.1.0  :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/releases/tag/v2.1.0){:target="_blank"}.
 
 ## Inputs you need to prepare
 
@@ -449,3 +444,29 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
     ##### 6. Pipeline improvements
     
     Great! Please [create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} describing your idea so we can discuss its implementation!
+
+<style>
+    h2 {
+        text-align: center !important;
+        border-bottom: 2px solid #333333 !important;
+        border-top: 2px solid #333333 !important;
+        font-weight: 500 !important;
+    }
+    
+    details > h5 {
+        font-size: 0.01em !important;       /* almost invisible but still present! */
+        color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Hide all 2nd-level navs */
+    .md-nav--secondary .md-nav__item .md-nav {
+        display: none !important;
+    }
+
+    /* Show when parent has .expanded class */
+    .md-nav--secondary .md-nav__item.expanded > .md-nav {
+        display: block !important;
+    }    
+</style>

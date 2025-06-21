@@ -2,15 +2,6 @@
 title: Pangenome inference with Cactus-minigraph
 ---
 
-<style>
-    details > h5 {
-        font-size: 0.01em !important;       /* almost invisible but still present! */
-        color: transparent !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-</style>
-
 For aligning genome assemblies from the same species for population genomic analyses, the [Cactus genome alignment software :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus){:target="_blank"} has [implemented a workflow :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md){:target="_blank"} using [minigraph :octicons-link-external-24:](https://github.com/lh3/minigraph){:target="_blank"}. However, this can still be technically difficult to run. Here we have developed a [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} pipeline to facilitate running Cactus-minigraph on a computing cluster. For more details on how Snakemake breaks up Cactus-minigraph's steps, expand the box below.
 
 ??? example "The cactus-minigraph snakemake pipeline's rulegraph"
@@ -100,6 +91,10 @@ unzip cactus-snakemake
 ```
 
 With that, you should be ready to set-up your data for the pipeline!
+
+!!! warning "Important! cactus-snakemake v3.0.0 and later requires Cactus v2.9.9 or later."
+
+    Due to bug fixes in Cactus, v3.0.0+ of cactus-snakemake is only compatibile with Cactus v2.9.9 or later. Don't worry, cactus-snakemake will always use the latest version of Cactus available unless you specify otherwise in your config file. However, if you do wish to use an older version of Cactus, you can use [cactus-snakemake v2.1.0  :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/releases/tag/v2.1.0){:target="_blank"}.
 
 ## Inputs you need to prepare
 
@@ -347,3 +342,29 @@ For more information about all outputs, see [Cactus's minigraph documentation se
     ##### 5. Pipeline improvements
     
     Great! Please [create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} describing your idea so we can discuss its implementation!
+
+<style>
+    h2 {
+        text-align: center !important;
+        border-bottom: 2px solid #333333 !important;
+        border-top: 2px solid #333333 !important;
+        font-weight: 500 !important;
+    }
+    
+    details > h5 {
+        font-size: 0.01em !important;       /* almost invisible but still present! */
+        color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Hide all 2nd-level navs */
+    .md-nav--secondary .md-nav__item .md-nav {
+        display: none !important;
+    }
+
+    /* Show when parent has .expanded class */
+    .md-nav--secondary .md-nav__item.expanded > .md-nav {
+        display: block !important;
+    }    
+</style>

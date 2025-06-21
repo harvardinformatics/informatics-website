@@ -1,9 +1,3 @@
----
-markdown_extensions:
-  - toc:
-      toc_depth: 0
----
-
 # Research & Publications
 
 The FAS Informatics group conducts a variety of research:
@@ -190,7 +184,7 @@ The group has worked on a variety of topics related to population genetics. Thes
 
 **Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"}), [Chen Lab :octicons-link-external-24:](https://chenlab.oeb.harvard.edu/){target="_blank"} ([University of Rochester, Department of Biology :octicons-link-external-24:](https://www.sas.rochester.edu/bio/index.html){target="_blank"}), [Erik Garrison :octicons-link-external-24:](http://hypervolu.me/~erik/erik_garrison.html){target="_blank"} ([University of Tennessee Health Science Center :octicons-link-external-24:](https://www.uthsc.edu/){target="_blank"})
 
-<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Edwards and Informatics groups**
+<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Edwards lab, Informatics group, and collaborators.**
 
 We helped generate high quality genome assemblies for 46 individual scrub jays across four species using HiFi PacBio sequencing. We developed the pipeline for assembly and scaffolding of the individual genomes, and then used those assemblies to construct a pangenome graph for the sample. This allowed us to characterize population and species level structural variation. In addition to developing the pipelines and generating the data, we also assisted with genome annotation and some downstream population genetic analysis.
 
@@ -236,7 +230,7 @@ The Informatics group has been part of a long term collaboration to develop meth
 
 **Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"}), [Liu Lab :octicons-link-external-24:](https://sites.harvard.edu/junliu/){target="_blank"} ([Statistics :octicons-link-external-24:](https://statistics.fas.harvard.edu/){target="_blank"})
 
-<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu, Edwards, and Informatics groups**
+<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
 
 PhyloAcc is software that was developed in the Edwards, Liu, and Informatics labs to study molecular evolution of non-coding genomic regions in a phylogenetic context. Version 1 was used to study convergent substitution rate accelerations in marine mammals and flightless birds to identify possible changes in regulatory regions that may lead to the adaptations of those respective groups. Version 2 of PhyloAcc expanded on version 1 by accounting for phylogenetic discordance and providing a friendlier user interface and batching via Snakemake.
 
@@ -257,7 +251,7 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
 
 ## Comparative Genomics and Convergent Evolution
 
-<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu, Edwards, and Informatics groups**
+<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu kab, Edwards lab, Informatics group, and collaborators.**
 
 <img class="inline-icon" src="../img/icons/nsf-logo.svg" width="40" alt="NSF logo"> **Funded by an [NSF :octicons-link-external-24:](https://www.nsf.gov/){target="_blank"} grant to the Informatics group**
 
@@ -369,48 +363,17 @@ We have also worked on a variety of other topics as needed to assist with projec
     .research-icon {
         font-size: 1.2em !important;
         vertical-align: middle !important;
-
-        /* color: #FAA85C; */
-        /* color: #74A58E; */
-        /* color: #265D80; */
-        /* color: #26805E; */
-        /* color: #62C375; */
-
-        /* color: #ffffff;
-        background-color: #0A2240 !important;
-        border-radius: 15% !important; */
-
-        /* color: #34BD78; */
-        /* background-color: #0A2240;
-        border: 1px solid #a41c30;
-        padding: 0.1em !important */
-        
         
         /* color: #8996A0; */
         color: rgba(52,152,219,0.9);
-
         /* color: #a51c30; */
-
-        /* background-color: #0A2240;
-        border: 1px solid #a41c30;
-        padding: 0.1em !important;
-        border-radius: 15% !important; */
-
-        /* border: 1px solid #333333; */
-        /* border-radius: 20% !important; */
-        /* x-offset | y-offset | blur | spread | color */
-        /* box-shadow: 8px 4px 16px -6px rgba(52,152,219,0.4); */        
     }
 
     h2 {
         text-align: center !important;
-            /* background-color: #333333 !important; */
-            /* color: rgba(52,152,219,0.9) !important; */
-            /* border-radius: 5px !important; */
-            /* border: 2px solid #333333 !important; */
-            border-bottom: 2px solid #333333 !important;
-            border-top: 2px solid #333333 !important;
-            font-weight: 500 !important;
+        border-bottom: 2px solid #333333 !important;
+        border-top: 2px solid #333333 !important;
+        font-weight: 500 !important;
     }
 
     /* Hide all 2nd-level navs */
@@ -423,21 +386,3 @@ We have also worked on a variety of other topics as needed to assist with projec
         display: block !important;
     }
 </style>
-
-<script>
-    function expandActiveTOC() {
-        document.querySelectorAll('.md-nav--secondary .md-nav__item').forEach(item => {
-            const active = item.querySelector('.md-nav__link--active');
-            if (active) {
-            item.classList.add('expanded');
-            } else {
-            item.classList.remove('expanded');
-            }
-        });
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        expandActiveTOC();
-        document.addEventListener('scroll', expandActiveTOC, true);
-    });
-</script>

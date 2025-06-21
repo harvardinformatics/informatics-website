@@ -62,6 +62,9 @@ theme:
     - search.highlight
     - content.code.annotation
     - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.footer.last-update  # Shows the last update in the footer    
   language: en
   favicon: img/Icon_bw.png
   logo: img/fas-shield-logo.png
@@ -90,6 +93,8 @@ plugins:
         - '*student.ipynb'
         - '2024-Fall/Python-Day*.ipynb'
         # - '*.ipynb' # for development, uncomment this line to prevent building all notebooks with each change. be sure to re-comment before pushing to remote (though re-commenting now handled with pre-commit hooks).
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
 
 hooks:
   - scripts/about_generator.py 
@@ -97,6 +102,9 @@ hooks:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - js/extra.js
 
 extra:
   social:
