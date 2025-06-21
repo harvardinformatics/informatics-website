@@ -35,3 +35,9 @@ student-to-instructor needs:
 - add link formatting
 - add message with link to student version
 - check that headings start at ##
+
+
+ &nbsp; :fontawesome-regular-handshake:{ .research-icon } = Collaboration
+ &nbsp; :fontawesome-solid-hand-holding-dollar:{ .research-icon } = Grant supported
+ &nbsp; :material-lan-check:{ .research-icon } = Best practices
+ &nbsp; :material-vector-polyline-plus:{ .research-icon } = Methods development

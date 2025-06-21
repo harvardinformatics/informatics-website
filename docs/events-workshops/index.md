@@ -59,7 +59,7 @@ This short training will introduce students to SNPArcher, a tool for population 
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-:material-arrow-right-bottom: Next up: June 11, 2025, 4-6PM (Northwest Building B227.45)
+:material-arrow-right-bottom: Next up: Juyl 9, 2025, 4-6PM (Northwest Building B227.45)
 
 ### Office hours
 
@@ -150,3 +150,22 @@ December 10, 2024, 9:30-10:30AM and December 11, 2024, 12:15-1:15PM (Northwest B
 To view a list of previous events and workshops, click the button below.
 
 [Previous Events & Workshops :material-arrow-right:](previous-events.md){ .md-button .md-button--primary .centered }
+
+<style>
+    h2 {
+        text-align: center !important;
+        border-bottom: 2px solid #333333 !important;
+        border-top: 2px solid #333333 !important;
+        font-weight: 500 !important;
+    }
+
+    /* Hide all 2nd-level navs */
+    .md-nav--secondary .md-nav__item .md-nav {
+        display: none !important;
+    }
+
+    /* Show when parent has .expanded class */
+    .md-nav--secondary .md-nav__item.expanded > .md-nav {
+        display: block !important;
+    }
+</style>

@@ -3,13 +3,66 @@ title: Harvard FAS Informatics Group
 template: home.html
 ---
 
-## About us
+## Mission & Services 
 
-The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group of scientists and software developers working to advance research and teaching by facilitiating computational analysis of scientific data, primarily in biology. We work closely with data-generating scientific cores and with students, postdocs, and faculty generating data to help make research and discovery efficient and productive. 
+The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is a small group of scientists and software developers working to advance research and teaching by facilitiating computational analysis of scientific data. While our background is primarily in biology and biological data, we are happy to assist in any data science tasks. We work closely with data-generating scientific cores and with students, postdocs, and faculty in analyzing data to help make research and discovery efficient and productive. 
 
-The mission of the Bioinformatics Core includes training, consulting, and research. We run workshops on a variety of subjects of interest to researchers at Harvard and beyond, focusing on introductory and intermediate topics designed to introduce scientists to tools and techniques for the computational analysis of biological big data. We provide one-on-one advice to individuals or lab groups who need assistance with figuring out bioinformatics approaches or debugging computational methods. We conduct research, both grant-funded and as part of collaborations with labs on campus, with a general focus on method development and best practices investigations to meet the needs of the research community. 
+The mission of the Bioinformatics Core includes training, consulting, and research. We organize in several ways to facilitate these goals.
 
-Read more about the people in our group below:
+### Workshops
+
+We run a series of workshops on bioinformatics and computational biology topics, which are open to the entire Harvard community. These workshops cover a range of subjects, from introductory programming in Python and R to more advanced topics like single-cell RNA-seq analysis and population genomics. Our goals are to (1) provide an accessible onramp to data science and computational biology to those without a computational background and (2) equip researchers with the skills they need to analyze biological data effectively.
+
+Visit our Workshops & Events page to see our schedule and view past workshop materials:
+
+[Workshops & Events :material-arrow-right:](events-workshops/index.md){{ .md-button .md-button--primary .centered }}
+
+### One-on-one advising through Consults
+
+We also offer one-on-one consultations to researchers who need help with their projects. This includes assistance with data analysis, troubleshooting computational methods, and advice on best practices in bioinformatics. Our team is composed of experts in various areas of computational biology, and we are committed to helping researchers at all levels, from undergraduates to faculty. A consult can consist of one or more meetings, in-person or virtual, depending on the needs of the researcher. Additionally, we also host office hours every Wednesday from 1:30 to 4:00 PM in our office (B227 Northwest Science Building), where researchers can drop by for quick questions or advice, and we have a Slack channel open to the Harvard community where we are available to answer questions.
+
+To schedule a consult or view info about office hours and our Slack channel, please visit our Contact page:
+
+[Contact us :material-arrow-right:](contact.md){{ .md-button .md-button--primary .centered }}
+
+And here is a sampling of some topics of recent consults:
+
+!!! success "Recent FAS Informatics Consults"
+
+    **Consultee**: A research scientist in the [Department of Immunology and Infectious Diseases :octicons-link-external-24:](https://hsph.harvard.edu/department/immunology-infectious-diseases/){{:target="_blank"}} ([HSPH :octicons-link-external-24:](https://hsph.harvard.edu/){{:target="_blank"}}) 
+
+    **Lead Bioinformatician**: Gregg Thomas
+
+    :fontawesome-brands-slack: The researcher needed help running whole genome alignment with Cactus using our [Cactus Snakemake workflow](resources/Tutorials/whole-genome-alignment-cactus.md).
+
+    ---
+
+    **Consultee**: [Woo lab :octicons-link-external-24:](https://www.woolab.org/){{:target="_blank"}} ([Chemistry & Chemical biology :octicons-link-external-24:](https://www.chemistry.harvard.edu/){{:target="_blank"}})
+
+    **Lead Bioinformatician**: Danielle Khost and Tim Sackton
+
+    The Woo lab was examining the effects several pharmaceutical compounds had on transcription and intron skipping and noticed some discrepancies in their read mapping. They asked us to see if we could recapitulate the result, and we developed some custom code to analyze the proportion of intron skipping between treatment conditions. 
+
+    ---
+
+    **Consultee**: A postdoc in the [Dulac lab :octicons-link-external-24:](https://www.dulaclab.com/){{:target="_blank"}} ([MCB :octicons-link-external-24:](https://www.mcb.harvard.edu/){{:target="_blank"}})
+
+    **Lead Bioinformatician**: Gregg Thomas
+
+    A project required random sub-sampling of 10x Genomics single cell ATACseq generated reads. This required development of a small Snakemake workflow.
+
+    ---
+
+    :fontawesome-solid-users-line: = question from an office hours session; 
+    :fontawesome-brands-slack: = question from the FAS Informatics Slack channel
+
+### Collaborations & Research
+
+Labs may arrange for longer-term collaborations with us, where we work closely with the lab on a specific project to develop custom software solutions or analyze data. These collaborations are projects in which we participate to the level of authorship. We also conduct grant-funded research in comparative and population genomics, as well as internal projects in bioinformatics, focusing on method development and best practices investigations to meet the needs of the research community. We develop [Software](software/index.md) to support our research and collaborations.
+
+For more information about our research and collaborations, please visit our Research page:
+
+[Research page :material-arrow-right:](research/index.md){{ .md-button .md-button--primary .centered }}
 
 ## People
 

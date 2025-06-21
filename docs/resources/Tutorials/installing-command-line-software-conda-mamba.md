@@ -2,14 +2,6 @@
 title: Installing command line software with conda/mamba
 ---
 
-<style>
-/* FAQ styles */
-    details > h5 {
-        display: none;
-    }
-</style>
-
-
 Many scientific software packages are run by text commands via the **command line**. For installing command line software and managing environments, either on your local computer or on a remote server, we recommend **conda** and **mamba**.
 
 **conda** is a cross-platform package manager, as well as the name of the command-line tool to access conda channels.
@@ -276,7 +268,28 @@ This should create and automatically install all the software that was in the ex
 
     If you've searched repositories for your OS or programming language of interest and haven't found the program you want available on any of them, you may be stuck **building from source**. This can be as simple as downloading a script from github with no dependencies. But this can also be a very difficult task: it means you are also responsible for installing any dependencies and specifying paths to libraries that the program uses, which, on shared compute systems (like institutional clusters) where one doesn't have full access to all folders, can be unmanageable. Hopefully the authors of the program have left very good documentation about how to handle these things...
 
+<style>
+    h2 {
+        text-align: center !important;
+        border-bottom: 2px solid #333333 !important;
+        border-top: 2px solid #333333 !important;
+        font-weight: 500 !important;
+    }
+    
+    details > h5 {
+        font-size: 0.01em !important;       /* almost invisible but still present! */
+        color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 
+    /* Hide all 2nd-level navs */
+    .md-nav--secondary .md-nav__item .md-nav {
+        display: none !important;
+    }
 
-
-
+    /* Show when parent has .expanded class */
+    .md-nav--secondary .md-nav__item.expanded > .md-nav {
+        display: block !important;
+    }    
+</style>

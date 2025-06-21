@@ -2,6 +2,54 @@
 title: Past events and workshops
 ---
 
+These are topics of previous events with no attached contents and the dates of our previous workshops. See [Events & Workshops](index.md) for the most up-to-date workshop content! 
+
+:material-tools: = Workshop
+
+:material-monitor-account: = Short training 
+
+:material-star-plus-outline: = Special event 
+
+:fontawesome-solid-pizza-slice: = Programming and Pizza
+
+## 2025
+ 
+{{ read_csv('data/previous-events/2025-events.csv') }}
+
+## 2024
+
+{{ read_csv('data/previous-events/2024-events.csv') }}
+
+## 2023
+
+{{ read_csv('data/previous-events/2023-events.csv') }}
+
+## 2020
+
+{{ read_csv('data/previous-events/2020-events.csv') }}
+
+## 2019
+
+{{ read_csv('data/previous-events/2019-events.csv') }}
+
+> *2019 Bioinformatics nanocourse topics
+>
+> Week 1: Introduction to R (Mon-Wed) and Introduction to Python (Wed-Fri, Northwest Building B108)
+>
+> Week 2: Introduction to Bioinformatics (Monday, Lamont Library B-30), Population Genetics (Tuesday, Biolabs 1058), RNA-seq (Wednesday, Lamont Library B-30), and single-cell analysis (Thursday, Lamont Library B-30) 
+
+## 2018
+
+{{ read_csv('data/previous-events/2018-events.csv') }}
+
+> *2018     Bioinformatics nanocourse topics
+>
+> Introduction to R, Introduction to Unix, Introduction to the Odyssey cluster, Functional Genomics, Comparative and Population Genomics
+
+## 2017
+
+{{ read_csv('data/previous-events/2017-events.csv') }}    
+
 <style>
     .md-typeset__table {
         width: 100% !important;
@@ -56,55 +104,6 @@ title: Past events and workshops
     }
     /* Disable hover effect on table rows */
 </style>
-
-These are topics of previous events with no attached contents and the dates of our previous workshops. See [Events & Workshops](index.md#current-workshop-content) for the most up-to-date workshop content! 
-
-:material-tools: = Workshop
-
-:material-monitor-account: = Short training 
-
-:material-star-plus-outline: = Special event 
-
-:fontawesome-solid-pizza-slice: = Programming and Pizza
-
-## 2025
- 
-{{ read_csv('data/previous-events/2025-events.csv') }}
-
-## 2024
-
-{{ read_csv('data/previous-events/2024-events.csv') }}
-
-## 2023
-
-{{ read_csv('data/previous-events/2023-events.csv') }}
-
-## 2020
-
-{{ read_csv('data/previous-events/2020-events.csv') }}
-
-## 2019
-
-{{ read_csv('data/previous-events/2019-events.csv') }}
-
-> *2019 Bioinformatics nanocourse topics
->
-> Week 1: Introduction to R (Mon-Wed) and Introduction to Python (Wed-Fri, Northwest Building B108)
->
-> Week 2: Introduction to Bioinformatics (Monday, Lamont Library B-30), Population Genetics (Tuesday, Biolabs 1058), RNA-seq (Wednesday, Lamont Library B-30), and single-cell analysis (Thursday, Lamont Library B-30) 
-
-## 2018
-
-{{ read_csv('data/previous-events/2018-events.csv') }}
-
-> *2018     Bioinformatics nanocourse topics
->
-> Introduction to R, Introduction to Unix, Introduction to the Odyssey cluster, Functional Genomics, Comparative and Population Genomics
-
-## 2017
-
-{{ read_csv('data/previous-events/2017-events.csv') }}    
-
 
 
 
