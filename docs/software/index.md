@@ -18,7 +18,7 @@ hide:
 
 # Software
 
-The informatics group develops methods and software for various genomics tasks with an emphasis on reproducibility and ease of use. We aim to provide tools that fill gaps in the current genomics software ecosystem. We also collaborate both within and outside of Harvard to develop new methods.
+The FAS Informatics group develops methods and software for various genomics tasks with an emphasis on reproducibility and ease of use. We aim to provide tools that fill gaps in the current genomics software ecosystem. We also collaborate both within and outside of Harvard to develop new methods.
 
 ## 
 <div class="row software-cont">
@@ -39,10 +39,7 @@ The informatics group develops methods and software for various genomics tasks w
 
 ---
 
-
-
 ##
-
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
         <a href="https://github.com/harvardinformatics/snpArcher" target="_blank" alt="SNP Archer logo. A logo that spells out SNP in large letters and the word Archer below. The S is styled as an abstract snake logo in the style of Snakemake and the P is crossed by an image of an arrow and a bowstring, making it look like a drawn bow and arrow. There is a small image of a bird atop the S.">
@@ -72,6 +69,51 @@ The informatics group develops methods and software for various genomics tasks w
         If given a corresponding VCF file with specified outgroup samples, degenotate can also count synonymous and non-synonymous polymorphisms and fixed differences for use in MK tests (McDonald and Kreitman 1991).
 
         The program also offers coding sequence extraction from the input genome and extraction of sequences by degeneracy (e.g. extract only the 4-fold degenerate sites).
+    </div>
+</div>
+
+---
+
+##
+<div class="row software-cont">
+    <div class="col-6-24 software-logo-cont">
+        <a href="https://github.com/harvardinformatics/cactus-snakemake" target="_blank" alt="Cactus snakemake logo. A cartoon cactus in between some small piles of sand with the Snakmake logo, which is a stylized snake that is curled into an S shape, peeking out from the right side of the cactus.">
+            <img class="software-logo" src="../img/software-logos/cactus-snakemake-hex.png">
+        </a>
+    </div>
+
+    <div class="col-18-24 software-desc">
+        <a href="https://github.com/ComparativeGenomicsToolkit/cactus" target="_blank">Cactus <span class="icon-external"></span></a> is a program that performs whole genome alignment for a given set of species and their phylogenetic tree. We developed <a href="https://github.com/harvardinformatics/cactus-snakemake" target="_blank">several Snakemake workflows for performing Cactus alignments and associated tasks <span class="icon-external"></span></a>, such as adding and replacing genomes in an alignment. We also implemented the minigraph-cactus workflow for pangenome inference. Using snakemake facilitates easy, efficient, and reproducible execution on institutional clusters. Check out the tutorials for each task on the <a href="../resources/index.md">Resources</a> page!
+    </div>
+</div>
+
+---
+
+##
+<div class="row software-cont">
+    <div class="col-6-24 software-logo-cont">
+        <a href="https://github.com/harvardinformatics/snakemake-executor-plugin-cannon" target="_blank" alt="Snakemake cannon plugin logo. The FAS Informatics logo on the left, which is 3 vertical rectangular polygons of different height, some sides colored red and other left white. The Snakmake logo is on the right,  which is a stylized snake that is curled into an S shape.">
+            <img class="software-logo" src="../img/software-logos/cannon-snakemake.png">
+        </a>
+    </div>
+
+    <div class="col-18-24 software-desc">
+        We modified the general <a href="https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html" target="_blank">Snakemake executor plugin for SLURM clusters <span class="icon-external"></span></a> for the Cannon cluster at Harvard. The <a href="https://github.com/harvardinformatics/snakemake-executor-plugin-cannon" target="_blank">Snakemake executor plugin for Cannon<span class="icon-external"></span></a> works exactly the same as the original, but performs automatic partition selection for Snakemake workflows on the Cannon cluster based on other user-provided resources.
+    </div>
+</div>
+
+---
+
+##
+<div class="row software-cont">
+    <div class="col-6-24 software-logo-cont">
+        <a href="https://nf-co.re/configs/cannon/" target="_blank" alt="nf-core cannon config logo. The FAS Informatics logo on the left, which is 3 vertical rectangular polygons of different height, some sides colored red and other left white. The nf-core logo is on the right, which is a green apple core with a stem on top.">
+            <img class="software-logo" src="../img/software-logos/cannon-nf-core.png">
+        </a>
+    </div>
+
+    <div class="col-18-24 software-desc">
+        We wrote a <a href="https://nf-co.re/" target="_blank">Nextflow nf-core <span class="icon-external"></span></a> config file for the Cannon cluster at Harvard. Our <a href="https://nf-co.re/configs/cannon/" target="_blank">Cannon config file <span class="icon-external"></span></a> performs automatic partition selection for Nextflow workflows on the Cannon cluster based on other user-provided resources.
     </div>
 </div>
 
@@ -131,7 +173,7 @@ The informatics group develops methods and software for various genomics tasks w
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/NGmerge" target="_blank">NGmerge <span class="icon-external"></span></a> merges paired-end reads and removing sequencing adapters. In the default stitch mode, NGmerge combines paired-end reads that overlap into a single read that spans the full length of the original DNA fragment. The alternative adapter-removal mode returns the original reads as pairs, removing the 3' overhangs of those reads whose valid stitched alignment has this characteristic.
+        <a href="https://github.com/harvardinformatics/NGmerge" target="_blank">NGmerge <span class="icon-external"></span></a> merges paired-end reads and removes sequencing adapters. In the default stitch mode, NGmerge combines paired-end reads that overlap into a single read that spans the full length of the original DNA fragment. The alternative adapter-removal mode returns the original reads as pairs, removing the 3' overhangs of those reads whose valid stitched alignment has this characteristic.
     </div>
 </div>
 

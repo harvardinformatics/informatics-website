@@ -1,13 +1,7 @@
 ---
 title: Whole genome alignment with Cactus
+author: Gregg Thomas
 ---
-
-<style>
-/* FAQ styles */
-    details > h5 {
-        display: none;
-    }
-</style>
 
 Comparative genomics requires alignments between sequences from different populations or species. While alignment of small chunks of sequence (e.g. genes) between many species is relatively straightforward, whole genome alignment has been challenging. The [Cactus genome alignment software :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus){:target="_blank"} and its [associated tools :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit){:target="_blank"} has made this task feasible for up to hundreds of genomes. However, this can still be technically difficult to run. Here we have developed a [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} pipeline to facilitate running Cactus on a computing cluster. This is done by first running the `cactus-prepare` command to generate the Cactus labeled phylogeny, which is used to guide the submission of jobs to the cluster. For more details on how Snakemake breaks up Cactus's steps, expand the box below.
 
@@ -98,12 +92,16 @@ unzip cactus-snakemake
 
 With that, you should be ready to set-up your data for the pipeline!
 
+!!! warning "Important! cactus-snakemake v3.0.0 and later requires Cactus v2.9.9 or later."
+
+    Due to bug fixes in Cactus, v3.0.0+ of cactus-snakemake is only compatibile with Cactus v2.9.9 or later. Don't worry, cactus-snakemake will always use the latest version of Cactus available unless you specify otherwise in your config file. However, if you do wish to use an older version of Cactus, you can use [cactus-snakemake v2.1.0  :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/releases/tag/v2.1.0){:target="_blank"}.
+
 ## Inputs you need to prepare
 
 To run this pipeline, you will need (corresponding Snakemake config option given in parentheses):
 
-1. A [**rooted**](#3-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format :octicons-link-external-24:](https://en.wikipedia.org/wiki/Newick_format){:target="_blank"} (specified in `input_file`).
-2. The [**softmasked**](#4-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA :octicons-link-external-24:](https://en.wikipedia.org/wiki/FASTA_format){:target="_blank"} files for each species (specified in `input_file`).
+1. A [**rooted**](#2-how-can-i-tell-if-my-input-newick-tree-is-rooted) phylogenetic tree of all species to align, with or without branch lengths, in [Newick format :octicons-link-external-24:](https://en.wikipedia.org/wiki/Newick_format){:target="_blank"} (specified in `input_file`).
+2. The [**softmasked**](#3-how-can-i-tell-if-my-genome-fasta-files-are-softmasked) genome [FASTA :octicons-link-external-24:](https://en.wikipedia.org/wiki/FASTA_format){:target="_blank"} files for each species (specified in `input_file`).
 3. A reference genome to project the alignment to MAF format (`maf_reference`).
 
 You will use these to create the input file for Cactus.
@@ -474,3 +472,31 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
     ##### 7. Pipeline improvements
     
     Great! Please [create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} describing your idea so we can discuss its implementation!
+
+---
+
+<style>
+    h2 {
+        text-align: center !important;
+        border-bottom: 2px solid #333333 !important;
+        border-top: 2px solid #333333 !important;
+        font-weight: 500 !important;
+    }
+    
+    details > h5 {
+        font-size: 0.01em !important;       /* almost invisible but still present! */
+        color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Hide all 2nd-level navs */
+    .md-nav--secondary .md-nav__item .md-nav {
+        display: none !important;
+    }
+
+    /* Show when parent has .expanded class */
+    .md-nav--secondary .md-nav__item.expanded > .md-nav {
+        display: block !important;
+    }    
+</style>

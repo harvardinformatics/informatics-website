@@ -21,6 +21,16 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Debug - Show biotips file status
+        run: |
+          echo 'Biotips submodule directory listing:'
+          ls -lh docs/workshops/biotips/ || echo 'biotips dir missing'
+          echo
+          echo 'File type:'
+          file docs/workshops/biotips/setup-cannon.md || echo 'setup-cannon.md missing'
+          echo
+          echo 'First 20 lines:'
+          head -20 docs/workshops/biotips/setup-cannon.md || echo 'setup-cannon.md missing'        
       - name: Build site
         run: mkdocs build
       - name: Upload site/
