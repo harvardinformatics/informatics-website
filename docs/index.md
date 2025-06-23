@@ -75,7 +75,7 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b><a href="about/people/timsackton/">Tim Sackton, Ph.D.</a></b><br>
+			<b><a href="/people/tim-sackton/">Tim Sackton, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -84,7 +84,7 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<a href="about/people/timsackton/">
+			<a href="/people/tim-sackton/" target="_blank">
 				<img class="card-img" src="img/people/timsackton.jpg" alt="Profile picture of Tim Sackton">
 			</a>
 			<div class="row card-link-row">
@@ -146,7 +146,7 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b><a href="https://ahfgenomics.com/" target="_blank">Adam Freedman, Ph.D.</a></b><br>
+			<b><a href="/people/adam-freedman/">Adam Freedman, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -155,8 +155,8 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<a href="https://ahfgenomics.com/" target="_blank">
-				<img class="card-img" src="img/people/adamfreedman.png" alt="Profile picture of Adam Freedman">
+			<a href="/people/adam-freedman/" target="_blank">
+				<img class="card-img" src="img/people/adamfreedman.jpg" alt="Profile picture of Adam Freedman">
 			</a>
 			<div class="row card-link-row">
 
@@ -209,7 +209,7 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>Danielle Khost, Ph.D.</b><br>
+			<b><a href="/people/danielle-khost/">Danielle Khost, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -218,7 +218,9 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/daniellekhost.jpg" alt="Profile picture of Danielle Khost">
+			<a href="/people/danielle-khost/" target="_blank">
+				<img class="card-img" src="img/people/daniellekhost.jpg" alt="Profile picture of Danielle Khost">
+			</a>
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>
@@ -264,7 +266,7 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b><a href="https://gwct.bio/" target="_blank">Gregg Thomas, Ph.D.</a></b><br>
+			<b><a href="/people/gregg-thomas/">Gregg Thomas, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -273,7 +275,7 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<a href="https://gwct.bio/" target="_blank">
+			<a href="/people/gregg-thomas/" target="_blank">
 				<img class="card-img" src="img/people/greggthomas.jpg" alt="Profile picture of Gregg Thomas">
 			</a>
 			<div class="row card-link-row">
@@ -327,7 +329,7 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-name-container">
 		<div class="col-0-24 card-name-margin"></div>
 		<div class="col-24-24 card-name">
-			<b>Lei Ma, Ph.D.</b><br>
+			<b><a href="/people/lei-ma/">Lei Ma, Ph.D.</a></b><br>
 
 		</div>
 		<div class="col-0-24 card-name-margin"></div>
@@ -336,7 +338,9 @@ For more information about our research and collaborations, please visit our Res
 	<div class="row card-content-container">
 		<div class="col-1-24 card-margin"></div>
 		<div class="col-8-24 card-img-container">
-			<img class="card-img" src="img/people/leima.jpg" alt="Profile picture of Lei Ma">
+			<a href="/people/lei-ma/" target="_blank">
+				<img class="card-img" src="img/people/leima.jpg" alt="Profile picture of Lei Ma">
+			</a>
 			<div class="row card-link-row">
 
 				<div class="col-5-24 card-margin"></div>

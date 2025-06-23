@@ -161,7 +161,7 @@ with open(md_output_file, 'w') as md_output:
                 else:
                     degree = ", Ph.D.";
                 if person_data['link'] != "":
-                    if person_data['link'].startswith("about/people/"):
+                    if person_data['link'].startswith("/people/"):
                         cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '">' + person_data['name'] + degree + '</a></b><br>\n\n';
                     else:
                         cards_tables[section] += '\t\t\t<b><a href="' + person_data['link'] + '" target="_blank">' + person_data['name'] + degree + '</a></b><br>\n\n';

@@ -1,0 +1,34 @@
+---
+hide:
+    - toc
+---
+
+# <img src="/img/people/greggthomas.jpg" style="max-width: 200px; width: 100%; height: auto; vertical-align:middle; margin-right: 0.25em; border-radius: 50%; object-fit: cover; object-position: center; aspect-ratio: 1 / 1;"> Gregg Thomas
+
+With a background in bioinformatics and evolutionary biology, Gregg joined the group in July of 2021 from a postdoctoral position at the University of Montana in [Jeff Good's lab :octicons-link-external-24:](http://www.thegoodlab.org/){:target="_blank"}. Previously he studied at Indiana University with [Matt Hahn :octicons-link-external-24:](http://www.indiana.edu/~hahnlab/){:target="_blank"}.
+
+Gregg is excited to understand the processes and patterns of molecular evolution by using genomics and phylogenetics, and working through some of the problems that vast amounts of genomic data has presented. To this end, he has worked on modeling mutation rate variation in mammals, detecting convergent evolution on genomic data, and analyzing gene family evolution in a number of species.
+
+He contributes to and develops software to facilitate research in comparative genomics. He contributed to [CAFE :octicons-link-external-24:](https://hahnlab.github.io/CAFE/){:target="_blank"} to account for error in gene family analysis, and developed the program [GRAMPA :octicons-link-external-24:](https://gwct.github.io/grampa){:target="_blank"} to study polyploidy in the context of gene tree topologies. He now develops and maintains [PhyloAcc :octicons-link-external-24:](https://phyloacc.github.io/){:target="_blank"} to identify substitution rate shifts in phylogenetic trees. 
+
+To foster best practices and reproducibility in computational biology he also teaches workshops, with subjects ranging from basic computational, programming, and data science skills to more advanced topics like genome assembly and phylogenetics. In the past, he has taught at the [Conservation Genetics workshop (ConGen) :octicons-link-external-24:](https://www.umt.edu/ces/conferences/congen/){:target="_blank"} and he helps teach a [variety of subjects in our group](https://informatics.fas.harvard.edu/resources/).
+
+Outside of the lab, he has a passion for dogs and animals in general. He also enjoys being active and doing puzzles with his partner!
+
+See [Gregg's personal website :octicons-link-external-24:](https://gwct.bio/){:target="_blank"} for his CV, publication list, and software.
+
+---
+
+## Pages authored by Gregg Thomas
+
+ - [[Tutorial] Whole genome alignment with Cactus](../resources/Tutorials/whole-genome-alignment-cactus.md)
+ - [[Workshop] Biotips Day 1: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day1.md)
+ - [[Workshop] Biotips Day 2: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day2.md)
+ - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
+ - [[Workshop] Biotips Day 4: Shell scripting](../workshops/biotips/Biotips-workshop-Day4.md)
+ - [[Workshop] Harvard Informatics Healthy Habits for Data Science Workshop](../workshops/healthy-habits/healthy_habits_day2.md)
+ - [[Workshop] Introduction to R Part 1: R Basics](../workshops/intro-r/R-workshop-Part1.md)
+ - [[Workshop] Introduction to R Part 2: Data manipulation with tidyverse](../workshops/intro-r/R-workshop-Part2.md)
+ - [[Workshop] Introduction to R Part 3: ggplot](../workshops/intro-r/R-workshop-Part3.md)
+ - [[Workshop] Harvard Informatics R ggplot Workshop](../workshops/short-trainings/r-ggplot/R_ggplot_revised.md)
+ - [[Workshop] Harvard Informatics R Tidyverse Workshop](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md)

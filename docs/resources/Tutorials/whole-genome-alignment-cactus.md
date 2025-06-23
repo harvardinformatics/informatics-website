@@ -3,9 +3,11 @@ title: Whole genome alignment with Cactus
 authors: 
     - Gregg Thomas
     - Adam Freedman
+    - Tim Sackton
+    - Lei Ma
 ---
 
-{% include "_author_row.md" %}
+{{ author_row(page) }}
 
 Comparative genomics requires alignments between sequences from different populations or species. While alignment of small chunks of sequence (e.g. genes) between many species is relatively straightforward, whole genome alignment has been challenging. The [Cactus genome alignment software :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus){:target="_blank"} and its [associated tools :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit){:target="_blank"} has made this task feasible for up to hundreds of genomes. However, this can still be technically difficult to run. Here we have developed a [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} pipeline to facilitate running Cactus on a computing cluster. This is done by first running the `cactus-prepare` command to generate the Cactus labeled phylogeny, which is used to guide the submission of jobs to the cluster. For more details on how Snakemake breaks up Cactus's steps, expand the box below.
 
