@@ -11,7 +11,6 @@ hide:
 
 ## Pages authored by Lei Ma
 
- - [[Tutorial] Whole genome alignment with Cactus](../resources/Tutorials/whole-genome-alignment-cactus.md)
  - [[Workshop] Biotips Day 1: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day1.md)
  - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
  - [[Workshop] Biotips Day 4: Shell scripting](../workshops/biotips/Biotips-workshop-Day4.md)

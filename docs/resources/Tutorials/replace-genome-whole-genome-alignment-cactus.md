@@ -1,6 +1,10 @@
 ---
 title: Replacing a genome in a whole genome alignment
+authors: 
+    - Gregg Thomas
 ---
+
+{{ author_row(page) }}
 
 Once you have your [HAL file with a whole genome alignment](whole-genome-alignment-cactus.md), a common occurrence may be the release of a new version of one of the genomes in it. For this reason, and for others, the developers of Cactus provide a method to  [replace a genome in a HAL file :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/cactus-update-prepare.md#replacing-a-genome){:target="_blank"}. Here, we replicate this method as a Snakemake pipeline by emulating the steps laid out by [`cactus-update-prepare` :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/cactus-update-prepare.md){:target="_blank"}.
 

@@ -21,6 +21,11 @@ See [Gregg's personal website :octicons-link-external-24:](https://gwct.bio/){:t
 
 ## Pages authored by Gregg Thomas
 
+ - [[Tutorial] Adding an outgroup to a whole genome alignment](../resources/Tutorials/add-outgroup-to-whole-genome-alignment-cactus.md)
+ - [[Tutorial] Adding a genome to a whole genome alignment](../resources/Tutorials/add-to-whole-genome-alignment-cactus.md)
+ - [[Tutorial] Installing command line software with conda/mamba](../resources/Tutorials/installing-command-line-software-conda-mamba.md)
+ - [[Tutorial] Pangenome inference with Cactus-minigraph](../resources/Tutorials/pangenome-cactus-minigraph.md)
+ - [[Tutorial] Replacing a genome in a whole genome alignment](../resources/Tutorials/replace-genome-whole-genome-alignment-cactus.md)
  - [[Tutorial] Whole genome alignment with Cactus](../resources/Tutorials/whole-genome-alignment-cactus.md)
  - [[Workshop] Biotips Day 1: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day1.md)
  - [[Workshop] Biotips Day 2: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day2.md)
@@ -32,3 +37,5 @@ See [Gregg's personal website :octicons-link-external-24:](https://gwct.bio/){:t
  - [[Workshop] Introduction to R Part 3: ggplot](../workshops/intro-r/R-workshop-Part3.md)
  - [[Workshop] Harvard Informatics R ggplot Workshop](../workshops/short-trainings/r-ggplot/R_ggplot_revised.md)
  - [[Workshop] Harvard Informatics R Tidyverse Workshop](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md)
+ - [[Maintainer] Computing glossary](../resources/glossary.md)
+ - [[Maintainer] Harvard Informatics Software](../software/index.md)

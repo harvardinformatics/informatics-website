@@ -1,6 +1,11 @@
 ---
 title: Pangenome inference with Cactus-minigraph
+authors: 
+    - Gregg Thomas
 ---
+
+{{ author_row(page) }}
+
 
 For aligning genome assemblies from the same species for population genomic analyses, the [Cactus genome alignment software :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus){:target="_blank"} has [implemented a workflow :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md){:target="_blank"} using [minigraph :octicons-link-external-24:](https://github.com/lh3/minigraph){:target="_blank"}. However, this can still be technically difficult to run. Here we have developed a [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} pipeline to facilitate running Cactus-minigraph on a computing cluster. For more details on how Snakemake breaks up Cactus-minigraph's steps, expand the box below.
 

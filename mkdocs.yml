@@ -92,7 +92,7 @@ plugins:
   - macros
   - mkdocs-jupyter:
       ignore: 
-        - '*student.ipynb'
+        - '*student.ipynb' 
         - '2024-Fall/Python-Day*.ipynb'
         # - '*.ipynb' # for development, uncomment this line to prevent building all notebooks with each change. be sure to re-comment before pushing to remote (though re-commenting now handled with pre-commit hooks).
   - git-revision-date-localized:

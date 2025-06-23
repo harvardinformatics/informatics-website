@@ -1,4 +1,11 @@
-# How can I download my sequencing data
+---
+title: How to download sequencing data from the Bauer Core
+authors: 
+    - Nathan Weeks
+---
+
+{{ author_row(page) }}
+
 List of recommended software tools for downloading sequencing data from the Bauer Core.
 
 ## Supported Protocols

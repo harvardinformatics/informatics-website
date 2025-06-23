@@ -4,6 +4,7 @@ def define_env(env):
         "Adam Freedman": "/img/people/adamfreedman.jpg",
         "Tim Sackton": "/img/people/timsackton.jpg",
         "Lei Ma": "/img/people/leima.jpg",
+        "Nathan Weeks": "/img/people/nathanweeks.jpg",
     }
 
     @env.macro

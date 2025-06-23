@@ -1,6 +1,11 @@
 ---
 title: Genome annotation
+authors: 
+    - Adam Freedman
 ---
+
+{{ author_row(page) }}
+
 
 <style>
     details > h5 {

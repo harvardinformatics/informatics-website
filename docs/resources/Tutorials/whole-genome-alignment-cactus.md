@@ -2,9 +2,6 @@
 title: Whole genome alignment with Cactus
 authors: 
     - Gregg Thomas
-    - Adam Freedman
-    - Tim Sackton
-    - Lei Ma
 ---
 
 {{ author_row(page) }}

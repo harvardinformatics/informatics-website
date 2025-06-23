@@ -1,6 +1,10 @@
 ---
 title: Adding an outgroup to a whole genome alignment
+authors: 
+    - Gregg Thomas
 ---
+
+{{ author_row(page) }}
 
 Once you have your [HAL file with a whole genome alignment](whole-genome-alignment-cactus.md), you may find that you need to add samples to it as your research questions expand. Re-running the whole alignment pipeline may be too computationally expensive. While we provide a workflow to [add genomes to branches of the tree in your HAL file](add-to-whole-genome-alignment-cactus.md), the process for adding an **outgroup** to the alignement is slightly different. We provide the following pipeline to implement those steps.
 

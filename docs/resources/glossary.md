@@ -1,5 +1,8 @@
 ---
-title: Glossary
+title: Computing glossary
+authors:
+    - Gregg Thomas
+author_header: Page maintainer
 ---
 
 Like any specific domain, the way we talk about computing and programming is almost its own language. Words in this context may have different meaning than in other contexts. 
@@ -140,3 +143,5 @@ However, there are many terms associated with Git that may be confusing. In esse
 This table tries to define these terms clearly.
 
 {{ read_csv('data/glossary-tables/computing-programming/git.csv') }}
+
+{{ author_row(page) }}

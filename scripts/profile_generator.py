@@ -66,11 +66,15 @@ for mdfile in glob.glob(os.path.join(docs_dir, "**/*.md"), recursive=True):
 
                 # Compute relative URL and title
                 title = meta.get("title", os.path.basename(mdfile))
-                if "Tutorials" in mdfile:
-                    title = "[Tutorial] " + title
-                if "workshops" in mdfile:
-                    title = "[Workshop] " + title
-                #print(mdfile);
+
+                if "author_header" in meta and meta["author_header"].lower() == "page maintainer":
+                    title = "[Maintainer] " + title                   
+                else:
+                    if "Tutorials" in mdfile:
+                        title = "[Tutorial] " + title
+                    if "workshops" in mdfile:
+                        title = "[Workshop] " + title
+                    #print(mdfile);
                 author_to_pages[slug]['pages'].append({'title': title, 'path': mdfile})
 
 # Write author pages
@@ -85,12 +89,24 @@ for slug, data in author_to_pages.items():
         with open(f"data/people/{slug}.md", "r", encoding="utf-8") as bio_file:
             bio = bio_file.read()
 
-    pages_list = [];
+    # Separate maintainer pages and others
+    maintainer_pages = []
+    other_pages = []
     for p in data['pages']:
+        if p['title'].startswith("[Maintainer]"):
+            maintainer_pages.append(p)
+        else:
+            other_pages.append(p)
+
+    # Combine: others first, then maintainers
+    sorted_pages = other_pages + maintainer_pages
+
+    pages_list = []
+    for p in sorted_pages:
         from_path = os.path.join(base_authors_dir, f"{slug}.md")
         to_path = p['path'][len("docs")+1:]
         rel_link = os.path.relpath(to_path, os.path.dirname(from_path)).replace("\\", "/")
-        pages_list.append(f" - [{p['title']}]({rel_link})");
+        pages_list.append(f" - [{p['title']}]({rel_link})")
 
 
     with open(md_output_file, "w", encoding="utf-8") as md_output:
