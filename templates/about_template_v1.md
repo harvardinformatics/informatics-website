@@ -15,7 +15,7 @@ We run a series of workshops on bioinformatics and computational biology topics,
 
 Visit our Workshops & Events page to see our schedule and view past workshop materials:
 
-[Workshops & Events :material-arrow-right:](events-workshops/index.md){ .md-button .md-button--primary .centered }
+[Workshops & Events :material-arrow-right:](events-workshops/index.md){{ .md-button .md-button--primary .centered }}
 
 ### One-on-one advising through Consults
 
@@ -23,13 +23,13 @@ We also offer one-on-one consultations to researchers who need help with their p
 
 To schedule a consult or view info about office hours and our Slack channel, please visit our Contact page:
 
-[Contact us :material-arrow-right:](contact.md){ .md-button .md-button--primary .centered }
+[Contact us :material-arrow-right:](contact.md){{ .md-button .md-button--primary .centered }}
 
 And here is a sampling of some topics of recent consults:
 
 !!! success "Recent FAS Informatics Consults"
 
-    **Consultee**: A research scientist in the [Department of Immunology and Infectious Diseases :octicons-link-external-24:](https://hsph.harvard.edu/department/immunology-infectious-diseases/){:target="_blank"} ([HSPH :octicons-link-external-24:](https://hsph.harvard.edu/){:target="_blank"}) 
+    **Consultee**: A research scientist in the [Department of Immunology and Infectious Diseases :octicons-link-external-24:](https://hsph.harvard.edu/department/immunology-infectious-diseases/){{:target="_blank"}} ([HSPH :octicons-link-external-24:](https://hsph.harvard.edu/){{:target="_blank"}}) 
 
     **Lead Bioinformatician**: Gregg Thomas
 
@@ -37,7 +37,7 @@ And here is a sampling of some topics of recent consults:
 
     ---
 
-    **Consultee**: [Woo lab :octicons-link-external-24:](https://www.woolab.org/){:target="_blank"} ([Chemistry & Chemical biology :octicons-link-external-24:](https://www.chemistry.harvard.edu/){:target="_blank"})
+    **Consultee**: [Woo lab :octicons-link-external-24:](https://www.woolab.org/){{:target="_blank"}} ([Chemistry & Chemical biology :octicons-link-external-24:](https://www.chemistry.harvard.edu/){{:target="_blank"}})
 
     **Lead Bioinformatician**: Danielle Khost and Tim Sackton
 
@@ -45,7 +45,7 @@ And here is a sampling of some topics of recent consults:
 
     ---
 
-    **Consultee**: A postdoc in the [Dulac lab :octicons-link-external-24:](https://www.dulaclab.com/){:target="_blank"} ([MCB :octicons-link-external-24:](https://www.mcb.harvard.edu/){:target="_blank"})
+    **Consultee**: A postdoc in the [Dulac lab :octicons-link-external-24:](https://www.dulaclab.com/){{:target="_blank"}} ([MCB :octicons-link-external-24:](https://www.mcb.harvard.edu/){{:target="_blank"}})
 
     **Lead Bioinformatician**: Gregg Thomas
 
@@ -62,28 +62,26 @@ Labs may arrange for longer-term collaborations with us, where we work closely w
 
 For more information about our research and collaborations, please visit our Research page:
 
-[Research page :material-arrow-right:](research/index.md){ .md-button .md-button--primary .centered }
+[Research page :material-arrow-right:](research/index.md){{ .md-button .md-button--primary .centered }}
 
 ## People
 
-> :material-check: Click on the person's name or contact icons to view more information about them.
-
-{{ staff_cards }}
+{bio_profiles}
 
 Prior to 2025, the group also included the Software Operations Core. Their mission is to support the needs of data generation core facilities by developing software infrastructure. This includes everything from data processing pipelines, to instrument scheduling and training, to billing and invoicing.
 
-As of February 2025, Software Operations has moved to [Research Computing :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"}!
+As of February 2025, Software Operations has moved to [Research Computing :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){{:target="_blank"}}!
 
 ### Group Alumni
 
-{{ alumni_cards }}
+{alum_profiles}
 
 ## Where to Find Us
 
-We are located in [Northwest Science Building :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){:target="_blank"}, on the B2 floor, near the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
+We are located in [Northwest Science Building :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){{:target="_blank"}}, on the B2 floor, near the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){{:target="_blank"}}. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
 
 Harvard FAS Informatics Group  
-[Northwest Building :octicons-link-external-24:](https://nw.fas.harvard.edu/){:target="_blank"} B227  
+[Northwest Building :octicons-link-external-24:](https://nw.fas.harvard.edu/){{:target="_blank"}} B227  
 52 Oxford Street  
 Cambridge, MA 02138  
-[Map :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){:target="_blank"}
+[Map :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){{:target="_blank"}}

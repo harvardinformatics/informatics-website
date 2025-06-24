@@ -108,10 +108,11 @@ hooks:
   - scripts/profile_generator.py
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/cards.css
 
 extra_javascript:
-  - js/extra.js
+  - assets/js/extra.js
 
 extra:
   social:

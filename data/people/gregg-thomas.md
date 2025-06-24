@@ -8,4 +8,4 @@ To foster best practices and reproducibility in computational biology he also te
 
 Outside of the lab, he has a passion for dogs and animals in general. He also enjoys being active and doing puzzles with his partner!
 
-See [Gregg's personal website :octicons-link-external-24:](https://gwct.bio/){:target="_blank"} for his CV, publication list, and software.
+See [Gregg's website :octicons-link-external-24:](https://gwct.bio/){:target="_blank"} for his CV, publication list, and software.

@@ -1,0 +1,44 @@
+<div class="profile-cards">
+{% for group in grouped_staff %}
+    <div class="profile-row">
+        {% for person in group %}
+        <div class="profile-card">
+            <div class="profile-card-header">
+            <span class="profile-card-name">
+                <a href="{{ person['link'] | default('#') }}">
+                    {{ person.name }}{% if person.degree %}, {{ person.degree }}{% endif %}
+                </a>
+            </span>
+            </div>
+            <div class="profile-card-main">
+                <div class="profile-imgcol">
+                    <img class="profile-pic" src="{{ person.img }}" alt="Profile picture of {{ person.name }}">
+                    <div class="profile-links">
+                    {% if person.pubs %}
+                        <a href="{{ person.pubs }}" target="_blank" title="Google Scholar">
+                        <span class="twemoji contact-icon">{% include "scholar-100.svg" %}</span>
+                        </a>
+                    {% endif %}
+                    {% if person.github %}
+                        <a href="{{ person.github }}" target="_blank" title="GitHub">
+                        <span class="twemoji contact-icon">{% include "github.svg" %}</span>
+                        </a>
+                    {% endif %}
+                    {% if person["external-link"] %}
+                        <a href="{{ person['external-link'] }}" target="_blank" title="Website">
+                        <span class="twemoji contact-icon">{% include "web.svg" %}</span>
+                        </a>
+                    {% endif %}
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <div class="profile-title"><b>{{ person.title }}</b></div>
+                    <div class="profile-office">Northwest Labs, {{ person.office }}</div>
+                    <div class="profile-bio">{{ person.profile }}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+</div>

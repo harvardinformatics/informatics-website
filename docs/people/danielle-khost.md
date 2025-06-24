@@ -13,6 +13,13 @@ hide:
 
 
 
+
+---
+
+## Where to find:
+
+:simple-github: [GitHub :octicons-link-external-24:](https://github.com/danielle-khost)
+
 ---
 
 ## Pages authored by Danielle Khost

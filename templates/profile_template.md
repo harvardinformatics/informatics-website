@@ -13,8 +13,8 @@ hide:
 
 {bio}
 
----
+{contact}
 
-## Pages authored by {person}
+---
 
 {pages}

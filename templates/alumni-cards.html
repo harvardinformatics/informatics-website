@@ -1,0 +1,23 @@
+<div class="alumni-cards">
+{% for person in people %}
+  <div class="alumni-card">
+    <div class="alumni-head">
+      {% if person["external-link"] %}
+        <a href="{{ person['external-link'] }}" target="_blank" class="alumni-link alumni-name alumni-link-color">
+          {{ person.name }} <span class="twemoji">{% include "link-external-24.svg" %}</span>
+        </a>
+      {% else %}
+        <span class="alumni-name">{{ person.name }}</span>
+      {% endif %}
+    </div>
+    {% if person["years"] %} 
+    <div class="alumni-years">
+     ({{ person.years }})
+    </div>
+    {% endif %}
+    {% if person.profile %}
+      <div class="alumni-profile">{{ person.profile }}</div>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>

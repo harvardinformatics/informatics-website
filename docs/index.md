@@ -66,389 +66,229 @@ For more information about our research and collaborations, please visit our Res
 
 ## People
 
+> :material-check: Click on the person's name or contact icons to view more information about them.
 
-<div class="row card-row">
+<div class="profile-cards">
 
-<div class="col-7-24 card-margin-outer"></div>
+    <div class="profile-row">
+        
+        <div class="profile-card">
+            <div class="profile-card-header">
+            <span class="profile-card-name">
+                <a href="/people/tim-sackton/">
+                    Tim Sackton, Ph.D.
+                </a>
+            </span>
+            </div>
+            <div class="profile-card-main">
+                <div class="profile-imgcol">
+                    <img class="profile-pic" src="img/people/timsackton.jpg" alt="Profile picture of Tim Sackton">
+                    <div class="profile-links">
+                    
+                        <a href="https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="100px" height="100px" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.69047,0 -23,10.30953 -23,23c0,12.69047 10.30953,23 23,23c12.69047,0 23,-10.30953 23,-23c0,-12.69047 -10.30953,-23 -23,-23zM25,4c11.60953,0 21,9.39047 21,21c0,11.60953 -9.39047,21 -21,21c-11.60953,0 -21,-9.39047 -21,-21c0,-11.60953 9.39047,-21 21,-21zM21,11l-10,9h6.78125c0.02,2.847 2.18628,5.73047 5.98828,5.73047c0.36,0 0.76016,-0.04008 1.16016,-0.08008c-0.18,0.45 -0.36914,0.81969 -0.36914,1.42969c0,1.15 0.57984,1.84 1.08984,2.5c-1.63,0.11 -4.66062,0.29945 -6.89062,1.68945c-2.13,1.29 -2.7793,3.16047 -2.7793,4.48047c0,2.72 2.52,5.25 7.75,5.25c6.2,0 9.49023,-3.48945 9.49023,-6.93945c0,-2.53 -1.44125,-3.78063 -3.03125,-5.14062l-1.28906,-1.0293c-0.4,-0.32 -0.95117,-0.77031 -0.95117,-1.57031c0,-0.81 0.55148,-1.33055 1.02148,-1.81055c1.51,-1.2 3.0293,-2.54953 3.0293,-5.26953c0,-1.043 -0.2438,-1.89184 -0.5918,-2.58984l3.5918,-3.08008v3.70703c-0.595,0.346 -1,0.98366 -1,1.72266v6c0,1.104 0.896,2 2,2c1.104,0 2,-0.896 2,-2v-6c0,-0.738 -0.405,-1.37566 -1,-1.72266v-5.27734c0,-0.043 -0.01939,-0.07909 -0.02539,-0.12109l1.02539,-0.87891zM24.26953,14.24023c3,0 4.55078,4.10977 4.55078,6.75977c0,0.65 -0.08039,1.81992 -0.90039,2.66992c-0.58,0.59 -1.54898,1.0293 -2.45898,1.0293c-3.09,0 -4.51172,-4.07906 -4.51172,-6.53906c0,-0.95 0.19078,-1.93922 0.80078,-2.69922c0.58,-0.75 1.58953,-1.2207 2.51953,-1.2207zM26.03906,30.60938c0.37,0 0.5518,0.00102 0.8418,0.04102c2.74,1.98 3.91992,2.96984 3.91992,4.83984c0,2.27 -1.83078,3.9707 -5.30078,3.9707c-3.86,0 -6.33984,-1.87047 -6.33984,-4.48047c0,-2.61 2.29961,-3.48125 3.09961,-3.78125c1.51,-0.52 3.4593,-0.58984 3.7793,-0.58984z"></path></g></g></svg></span>
+                        </a>
+                    
+                    
+                        <a href="https://github.com/tsackton" target="_blank" title="GitHub">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <div class="profile-title"><b>Director of Bioinformatics</b></div>
+                    <div class="profile-office">Northwest Labs, B227.10</div>
+                    <div class="profile-bio">Tim runs the Bioinformatics group. While his background is population and comparative genomics, these days he does a little bit of everything.</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b><a href="/people/tim-sackton/">Tim Sackton, Ph.D.</a></b><br>
+    <div class="profile-row">
+        
+        <div class="profile-card">
+            <div class="profile-card-header">
+            <span class="profile-card-name">
+                <a href="/people/adam-freedman/">
+                    Adam Freedman, Ph.D.
+                </a>
+            </span>
+            </div>
+            <div class="profile-card-main">
+                <div class="profile-imgcol">
+                    <img class="profile-pic" src="img/people/adamfreedman.jpg" alt="Profile picture of Adam Freedman">
+                    <div class="profile-links">
+                    
+                        <a href="https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="100px" height="100px" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.69047,0 -23,10.30953 -23,23c0,12.69047 10.30953,23 23,23c12.69047,0 23,-10.30953 23,-23c0,-12.69047 -10.30953,-23 -23,-23zM25,4c11.60953,0 21,9.39047 21,21c0,11.60953 -9.39047,21 -21,21c-11.60953,0 -21,-9.39047 -21,-21c0,-11.60953 9.39047,-21 21,-21zM21,11l-10,9h6.78125c0.02,2.847 2.18628,5.73047 5.98828,5.73047c0.36,0 0.76016,-0.04008 1.16016,-0.08008c-0.18,0.45 -0.36914,0.81969 -0.36914,1.42969c0,1.15 0.57984,1.84 1.08984,2.5c-1.63,0.11 -4.66062,0.29945 -6.89062,1.68945c-2.13,1.29 -2.7793,3.16047 -2.7793,4.48047c0,2.72 2.52,5.25 7.75,5.25c6.2,0 9.49023,-3.48945 9.49023,-6.93945c0,-2.53 -1.44125,-3.78063 -3.03125,-5.14062l-1.28906,-1.0293c-0.4,-0.32 -0.95117,-0.77031 -0.95117,-1.57031c0,-0.81 0.55148,-1.33055 1.02148,-1.81055c1.51,-1.2 3.0293,-2.54953 3.0293,-5.26953c0,-1.043 -0.2438,-1.89184 -0.5918,-2.58984l3.5918,-3.08008v3.70703c-0.595,0.346 -1,0.98366 -1,1.72266v6c0,1.104 0.896,2 2,2c1.104,0 2,-0.896 2,-2v-6c0,-0.738 -0.405,-1.37566 -1,-1.72266v-5.27734c0,-0.043 -0.01939,-0.07909 -0.02539,-0.12109l1.02539,-0.87891zM24.26953,14.24023c3,0 4.55078,4.10977 4.55078,6.75977c0,0.65 -0.08039,1.81992 -0.90039,2.66992c-0.58,0.59 -1.54898,1.0293 -2.45898,1.0293c-3.09,0 -4.51172,-4.07906 -4.51172,-6.53906c0,-0.95 0.19078,-1.93922 0.80078,-2.69922c0.58,-0.75 1.58953,-1.2207 2.51953,-1.2207zM26.03906,30.60938c0.37,0 0.5518,0.00102 0.8418,0.04102c2.74,1.98 3.91992,2.96984 3.91992,4.83984c0,2.27 -1.83078,3.9707 -5.30078,3.9707c-3.86,0 -6.33984,-1.87047 -6.33984,-4.48047c0,-2.61 2.29961,-3.48125 3.09961,-3.78125c1.51,-0.52 3.4593,-0.58984 3.7793,-0.58984z"></path></g></g></svg></span>
+                        </a>
+                    
+                    
+                        <a href="https://github.com/adamfreedman" target="_blank" title="GitHub">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    
+                        <a href="https://ahfgenomics.com/" target="_blank" title="Website">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <div class="profile-title"><b>Senior Bioinformatics Scientist</b></div>
+                    <div class="profile-office">Northwest Labs, B227.30</div>
+                    <div class="profile-bio">Adam is our resident expert in genome annotation and RNA-seq analysis, and also has a background in population and conservation genetics.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <div class="profile-card-header">
+            <span class="profile-card-name">
+                <a href="/people/danielle-khost/">
+                    Danielle Khost, Ph.D.
+                </a>
+            </span>
+            </div>
+            <div class="profile-card-main">
+                <div class="profile-imgcol">
+                    <img class="profile-pic" src="img/people/daniellekhost.jpg" alt="Profile picture of Danielle Khost">
+                    <div class="profile-links">
+                    
+                    
+                        <a href="https://github.com/danielle-khost" target="_blank" title="GitHub">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <div class="profile-title"><b>Senior Bioinformatics Scientist</b></div>
+                    <div class="profile-office">Northwest Labs, B227.65</div>
+                    <div class="profile-bio">Danielle is our resident expert in long read sequencing, and works on a variety of challenging genome assembly problems.</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<a href="/people/tim-sackton/" target="_blank">
-				<img class="card-img" src="img/people/timsackton.jpg" alt="Profile picture of Tim Sackton">
-			</a>
-			<div class="row card-link-row">
+    <div class="profile-row">
+        
+        <div class="profile-card">
+            <div class="profile-card-header">
+            <span class="profile-card-name">
+                <a href="/people/gregg-thomas/">
+                    Gregg Thomas, Ph.D.
+                </a>
+            </span>
+            </div>
+            <div class="profile-card-main">
+                <div class="profile-imgcol">
+                    <img class="profile-pic" src="img/people/greggthomas.jpg" alt="Profile picture of Gregg Thomas">
+                    <div class="profile-links">
+                    
+                        <a href="https://scholar.google.com/citations?hl=en&user=4pydfEUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="100px" height="100px" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.69047,0 -23,10.30953 -23,23c0,12.69047 10.30953,23 23,23c12.69047,0 23,-10.30953 23,-23c0,-12.69047 -10.30953,-23 -23,-23zM25,4c11.60953,0 21,9.39047 21,21c0,11.60953 -9.39047,21 -21,21c-11.60953,0 -21,-9.39047 -21,-21c0,-11.60953 9.39047,-21 21,-21zM21,11l-10,9h6.78125c0.02,2.847 2.18628,5.73047 5.98828,5.73047c0.36,0 0.76016,-0.04008 1.16016,-0.08008c-0.18,0.45 -0.36914,0.81969 -0.36914,1.42969c0,1.15 0.57984,1.84 1.08984,2.5c-1.63,0.11 -4.66062,0.29945 -6.89062,1.68945c-2.13,1.29 -2.7793,3.16047 -2.7793,4.48047c0,2.72 2.52,5.25 7.75,5.25c6.2,0 9.49023,-3.48945 9.49023,-6.93945c0,-2.53 -1.44125,-3.78063 -3.03125,-5.14062l-1.28906,-1.0293c-0.4,-0.32 -0.95117,-0.77031 -0.95117,-1.57031c0,-0.81 0.55148,-1.33055 1.02148,-1.81055c1.51,-1.2 3.0293,-2.54953 3.0293,-5.26953c0,-1.043 -0.2438,-1.89184 -0.5918,-2.58984l3.5918,-3.08008v3.70703c-0.595,0.346 -1,0.98366 -1,1.72266v6c0,1.104 0.896,2 2,2c1.104,0 2,-0.896 2,-2v-6c0,-0.738 -0.405,-1.37566 -1,-1.72266v-5.27734c0,-0.043 -0.01939,-0.07909 -0.02539,-0.12109l1.02539,-0.87891zM24.26953,14.24023c3,0 4.55078,4.10977 4.55078,6.75977c0,0.65 -0.08039,1.81992 -0.90039,2.66992c-0.58,0.59 -1.54898,1.0293 -2.45898,1.0293c-3.09,0 -4.51172,-4.07906 -4.51172,-6.53906c0,-0.95 0.19078,-1.93922 0.80078,-2.69922c0.58,-0.75 1.58953,-1.2207 2.51953,-1.2207zM26.03906,30.60938c0.37,0 0.5518,0.00102 0.8418,0.04102c2.74,1.98 3.91992,2.96984 3.91992,4.83984c0,2.27 -1.83078,3.9707 -5.30078,3.9707c-3.86,0 -6.33984,-1.87047 -6.33984,-4.48047c0,-2.61 2.29961,-3.48125 3.09961,-3.78125c1.51,-0.52 3.4593,-0.58984 3.7793,-0.58984z"></path></g></g></svg></span>
+                        </a>
+                    
+                    
+                        <a href="https://github.com/gwct" target="_blank" title="GitHub">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    
+                        <a href="https://gwct.bio/" target="_blank" title="Website">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <div class="profile-title"><b>Senior Bioinformatics Scientist</b></div>
+                    <div class="profile-office">Northwest Labs, B227.65</div>
+                    <div class="profile-bio">Gregg develops phylogenetic methods and has studied convergent evolution, molecular evolution of rodents and insects, and mutation rates in primates.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <div class="profile-card-header">
+            <span class="profile-card-name">
+                <a href="/people/lei-ma/">
+                    Lei Ma, Ph.D.
+                </a>
+            </span>
+            </div>
+            <div class="profile-card-main">
+                <div class="profile-imgcol">
+                    <img class="profile-pic" src="img/people/leima.jpg" alt="Profile picture of Lei Ma">
+                    <div class="profile-links">
+                    
+                    
+                        <a href="https://github.com/microlei" target="_blank" title="GitHub">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <div class="profile-title"><b>Senior Bioinformatics Scientist</b></div>
+                    <div class="profile-office">Northwest Labs, B227.20</div>
+                    <div class="profile-bio">Lei is primarily responsible for developing training and outreach material; she also has a background in metagenomics and microbial ecology.</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-				<div class="col-0-24 card-margin"></div>
+    <div class="profile-row">
+        
+        <div class="profile-card">
+            <div class="profile-card-header">
+            <span class="profile-card-name">
+                <a href="/people/katya-osipova/">
+                    Katya Osipova, Ph.D.
+                </a>
+            </span>
+            </div>
+            <div class="profile-card-main">
+                <div class="profile-imgcol">
+                    <img class="profile-pic" src="img/people/katyaosipova.jpg" alt="Profile picture of Katya Osipova">
+                    <div class="profile-links">
+                    
+                        <a href="https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="100px" height="100px" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.69047,0 -23,10.30953 -23,23c0,12.69047 10.30953,23 23,23c12.69047,0 23,-10.30953 23,-23c0,-12.69047 -10.30953,-23 -23,-23zM25,4c11.60953,0 21,9.39047 21,21c0,11.60953 -9.39047,21 -21,21c-11.60953,0 -21,-9.39047 -21,-21c0,-11.60953 9.39047,-21 21,-21zM21,11l-10,9h6.78125c0.02,2.847 2.18628,5.73047 5.98828,5.73047c0.36,0 0.76016,-0.04008 1.16016,-0.08008c-0.18,0.45 -0.36914,0.81969 -0.36914,1.42969c0,1.15 0.57984,1.84 1.08984,2.5c-1.63,0.11 -4.66062,0.29945 -6.89062,1.68945c-2.13,1.29 -2.7793,3.16047 -2.7793,4.48047c0,2.72 2.52,5.25 7.75,5.25c6.2,0 9.49023,-3.48945 9.49023,-6.93945c0,-2.53 -1.44125,-3.78063 -3.03125,-5.14062l-1.28906,-1.0293c-0.4,-0.32 -0.95117,-0.77031 -0.95117,-1.57031c0,-0.81 0.55148,-1.33055 1.02148,-1.81055c1.51,-1.2 3.0293,-2.54953 3.0293,-5.26953c0,-1.043 -0.2438,-1.89184 -0.5918,-2.58984l3.5918,-3.08008v3.70703c-0.595,0.346 -1,0.98366 -1,1.72266v6c0,1.104 0.896,2 2,2c1.104,0 2,-0.896 2,-2v-6c0,-0.738 -0.405,-1.37566 -1,-1.72266v-5.27734c0,-0.043 -0.01939,-0.07909 -0.02539,-0.12109l1.02539,-0.87891zM24.26953,14.24023c3,0 4.55078,4.10977 4.55078,6.75977c0,0.65 -0.08039,1.81992 -0.90039,2.66992c-0.58,0.59 -1.54898,1.0293 -2.45898,1.0293c-3.09,0 -4.51172,-4.07906 -4.51172,-6.53906c0,-0.95 0.19078,-1.93922 0.80078,-2.69922c0.58,-0.75 1.58953,-1.2207 2.51953,-1.2207zM26.03906,30.60938c0.37,0 0.5518,0.00102 0.8418,0.04102c2.74,1.98 3.91992,2.96984 3.91992,4.83984c0,2.27 -1.83078,3.9707 -5.30078,3.9707c-3.86,0 -6.33984,-1.87047 -6.33984,-4.48047c0,-2.61 2.29961,-3.48125 3.09961,-3.78125c1.51,-0.52 3.4593,-0.58984 3.7793,-0.58984z"></path></g></g></svg></span>
+                        </a>
+                    
+                    
+                        <a href="https://github.com/osipovarev" target="_blank" title="GitHub">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    
+                        <a href="https://osipovarev.github.io/" target="_blank" title="Website">
+                        <span class="twemoji contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>
+                        </a>
+                    
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <div class="profile-title"><b>Postdoctoral Fellow</b></div>
+                    <div class="profile-office">Northwest Labs, B227.65</div>
+                    <div class="profile-bio">Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species.</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Tim Sackton">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Tim Sackton">
-							</div>
-							<span>Scholar</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-0-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/tsackton" target="_blank" title="GitHub profile link for Tim Sackton">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Tim Sackton">
-							</div>
-							<span>GitHub</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-0-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Director of Bioinformatics</b><br>
-			 Northwest Labs, B227.10<br>
-			<p>Tim runs the Bioinformatics group. While his background is population and comparative genomics, these days he does a little bit of everything.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
 </div>
-
-<div class="col-7-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row card-row">
-
-<div class="col-1-24 card-margin-outer"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b><a href="/people/adam-freedman/">Adam Freedman, Ph.D.</a></b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<a href="/people/adam-freedman/" target="_blank">
-				<img class="card-img" src="img/people/adamfreedman.jpg" alt="Profile picture of Adam Freedman">
-			</a>
-			<div class="row card-link-row">
-
-				<div class="col-0-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Adam Freedman">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Adam Freedman">
-							</div>
-							<span>Scholar</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-0-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/adamfreedman" target="_blank" title="GitHub profile link for Adam Freedman">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Adam Freedman">
-							</div>
-							<span>GitHub</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-0-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Senior Bioinformatics Scientist</b><br>
-			 Northwest Labs, B227.30<br>
-			<p>Adam is our resident expert in genome annotation and RNA-seq analysis, and also has a background in population and conservation genetics.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-<div class="col-2-24 card-margin-inner"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b><a href="/people/danielle-khost/">Danielle Khost, Ph.D.</a></b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<a href="/people/danielle-khost/" target="_blank">
-				<img class="card-img" src="img/people/daniellekhost.jpg" alt="Profile picture of Danielle Khost">
-			</a>
-			<div class="row card-link-row">
-
-				<div class="col-5-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/danielle-khost" target="_blank" title="GitHub profile link for Danielle Khost">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Danielle Khost">
-							</div>
-							<span>GitHub</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-5-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Senior Bioinformatics Scientist</b><br>
-			 Northwest Labs, B227.65<br>
-			<p>Danielle is our resident expert in long read sequencing, and works on a variety of challenging genome assembly problems.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-1-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row card-row">
-
-<div class="col-1-24 card-margin-outer"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b><a href="/people/gregg-thomas/">Gregg Thomas, Ph.D.</a></b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<a href="/people/gregg-thomas/" target="_blank">
-				<img class="card-img" src="img/people/greggthomas.jpg" alt="Profile picture of Gregg Thomas">
-			</a>
-			<div class="row card-link-row">
-
-				<div class="col-0-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=4pydfEUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Gregg Thomas">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Gregg Thomas">
-							</div>
-							<span>Scholar</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-0-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/gwct" target="_blank" title="GitHub profile link for Gregg Thomas">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Gregg Thomas">
-							</div>
-							<span>GitHub</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-0-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Senior Bioinformatics Scientist</b><br>
-			 Northwest Labs, B227.65<br>
-			<p>Gregg develops phylogenetic methods and has studied convergent evolution, molecular evolution of rodents and insects, and mutation rates in primates.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-<div class="col-2-24 card-margin-inner"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b><a href="/people/lei-ma/">Lei Ma, Ph.D.</a></b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<a href="/people/lei-ma/" target="_blank">
-				<img class="card-img" src="img/people/leima.jpg" alt="Profile picture of Lei Ma">
-			</a>
-			<div class="row card-link-row">
-
-				<div class="col-5-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/microlei" target="_blank" title="GitHub profile link for Lei Ma">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Lei Ma">
-							</div>
-							<span>GitHub</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-5-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Senior Bioinformatics Scientist</b><br>
-			 Northwest Labs, B227.20<br>
-			<p>Lei is primarily responsible for developing training and outreach material; she also has a background in metagenomics and microbial ecology.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-1-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row card-row">
-
-<div class="col-7-24 card-margin-outer"></div>
-
-<div class="col-10-24 card-container">
-	<div class="row card-name-container">
-		<div class="col-0-24 card-name-margin"></div>
-		<div class="col-24-24 card-name">
-			<b><a href="https://osipovarev.github.io/" target="_blank">Katya Osipova, Ph.D.</a></b><br>
-
-		</div>
-		<div class="col-0-24 card-name-margin"></div>
-	</div>
-	<div class="card-name-sep-div"></div>
-	<div class="row card-content-container">
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-8-24 card-img-container">
-			<a href="https://osipovarev.github.io/" target="_blank">
-				<img class="card-img" src="img/people/katyaosipova.jpg" alt="Profile picture of Katya Osipova">
-			</a>
-			<div class="row card-link-row">
-
-				<div class="col-0-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar link for Katya Osipova">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/scholar-logo-black.png" alt="Google Scholar link profile for Katya Osipova">
-							</div>
-							<span>Scholar</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-0-24 card-margin"></div>
-
-				<div class="col-12-24 card-link-container">
-
-					<div class="icon-link-container">
-						<a class="icon-link" href="https://github.com/osipovarev" target="_blank" title="GitHub profile link for Katya Osipova">
-							<div class="icon-container">
-								<img class="icon" src="img/icons/github-logo-black.png" alt="Github profile link for Katya Osipova">
-							</div>
-							<span>GitHub</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-0-24 card-margin"></div>
-
-			</div>
-
-		</div>
-		<div class="col-1-24 card-margin"></div>
-		<div class="col-13-24 card-content">
-			<b>Postdoctoral Fellow</b><br>
-			 Northwest Labs, B227.65<br>
-			<p>Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species.</p>
-		</div>
-		<div class="col-1-24 card-margin"></div>
-	</div>
-	<div class="sep-div"></div>
-</div>
-
-<div class="col-7-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
 
 Prior to 2025, the group also included the Software Operations Core. Their mission is to support the needs of data generation core facilities by developing software infrastructure. This includes everything from data processing pipelines, to instrument scheduling and training, to billing and invoicing.
 
@@ -456,203 +296,285 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 
 ### Group Alumni
 
+<div class="alumni-cards">
 
-<div class="row alum-card-row">
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Rawan Olayan</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2021-2024)
+    </div>
+    
+    
+      <div class="alumni-profile">Rawan was funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods.</div>
+    
+  </div>
 
-<div class="col-0-24 card-margin-outer"></div>
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <a href="https://www.subir.com.np/" target="_blank" class="alumni-link alumni-name alumni-link-color">
+          Subir Shakya <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"></path><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"></path></svg></span>
+        </a>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2021-2024)
+    </div>
+    
+    
+      <div class="alumni-profile">Former postdoc, Subir works on population and comparative genomics of birds. He is now a postdoc at LMU Munich.</div>
+    
+  </div>
 
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Abhratanu Saha</span><br>
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Abhratanu Saha</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2024)
+    </div>
+    
+    
+      <div class="alumni-profile">Abhro was a visiting student from the Curie Institute in France. He used comparative genomics to study Hi-C maps in Lepidoptera.</div>
+    
+  </div>
 
-		(2024)<br>
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Jared Vessella-Smith</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2023-2024)
+    </div>
+    
+    
+      <div class="alumni-profile">Former full stack developer for instrument facility applications</div>
+    
+  </div>
 
-		<p>Abhro was a visiting student from the Curie Institute in France. He used comparative genomics to study Hi-C maps in Lepidoptera.</p>
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Scott Van Buren</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2020-2022)
+    </div>
+    
+    
+      <div class="alumni-profile">Scott is now a Scientific Investigator in Computational Biology at GSK.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Alexandria D'Souza</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2019-2022)
+    </div>
+    
+    
+      <div class="alumni-profile">Alexandria primarily worked with the mass spec core and the Woo lab while she was in the group.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Juerg Straubhaar</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2017-2021)
+    </div>
+    
+    
+      <div class="alumni-profile">Juerg worked primarily on proteomics data with the Mass Spec Core and the Melton Lab while he was in the group.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank" class="alumni-link alumni-name alumni-link-color">
+          Sara Smith Wuitchik <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"></path><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"></path></svg></span>
+        </a>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2019-2021)
+    </div>
+    
+    
+      <div class="alumni-profile">Sara is now an Assistant Professor at Mount Royal University in Calgary, Canada.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Alex Llanos Garrido</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2019-2021)
+    </div>
+    
+    
+      <div class="alumni-profile">Alex is now at the Universidad Complutense Madrid.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <a href="https://brian-arnold.github.io/about/" target="_blank" class="alumni-link alumni-name alumni-link-color">
+          Brian Arnold <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"></path><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"></path></svg></span>
+        </a>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2018-2020)
+    </div>
+    
+    
+      <div class="alumni-profile">Brian is now a departmental data scientist with the Ecology and Evolutionary Biology department at Princeton.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <a href="https://tommytang.bio.link/" target="_blank" class="alumni-link alumni-name alumni-link-color">
+          Ming "Tommy" Tang <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"></path><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"></path></svg></span>
+        </a>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2018-2020)
+    </div>
+    
+    
+      <div class="alumni-profile">Tommy is now the Director of Computational Biology at Immunitas Therapeutics.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Yasin Kaymaz</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2017-2020)
+    </div>
+    
+    
+      <div class="alumni-profile">Yasin is now an Assistant Professor at Ege University in Izmir, Turkey.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">John Gaspar</span>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2017-2019)
+    </div>
+    
+    
+      <div class="alumni-profile">John is now a Data Science and Bioinformatics Team Lead at Merck.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <a href="https://veronikalaine.netlify.app/" target="_blank" class="alumni-link alumni-name alumni-link-color">
+          Veronika Laine <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"></path><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"></path></svg></span>
+        </a>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2019)
+    </div>
+    
+    
+      <div class="alumni-profile">Veronika is now at the Finnish Museum of Natural History working on bats.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <a href="https://www.allisonshultz.com/" target="_blank" class="alumni-link alumni-name alumni-link-color">
+          Allison Shultz <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"></path><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"></path></svg></span>
+        </a>
+      
+    </div>
+     
+    <div class="alumni-years">
+     (2017-2018)
+    </div>
+    
+    
+      <div class="alumni-profile">Allison is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County.</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Meghan Correa</span>
+      
+    </div>
+    
+    
+      <div class="alumni-profile">Former full stack developer currently at Cisco</div>
+    
+  </div>
+
+  <div class="alumni-card">
+    <div class="alumni-head">
+      
+        <span class="alumni-name">Andy Bryant</span>
+      
+    </div>
+    
+    
+      <div class="alumni-profile">Former front end developer for instrument facility applications</div>
+    
+  </div>
+
 </div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.subir.com.np/" target="_blank">Subir Shakya <span class="icon-external"></span></a></span><br>
-
-		(2021-2024)<br>
-
-		<p>Former postdoc, Subir works on population and comparative genomics of birds. He is now a postdoc at LMU Munich.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Rawan Olayan</span><br>
-
-		(2021-2024)<br>
-
-		<p>Rawan was funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods.</p>
-</div>
-
-<div class="col-0-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row alum-card-row">
-
-<div class="col-0-24 card-margin-outer"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Jared Vessella-Smith</span><br>
-
-		(2023-2024)<br>
-
-		<p>Former full stack developer for instrument facility applications</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Alexandria D'Souza</span><br>
-
-		(2019-2022)<br>
-
-		<p>Alexandria primarily worked with the mass spec core and the Woo lab while she was in the group.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Scott Van Buren</span><br>
-
-		(2020-2022)<br>
-
-		<p>Scott is now a Scientific Investigator in Computational Biology at GSK.</p>
-</div>
-
-<div class="col-0-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row alum-card-row">
-
-<div class="col-0-24 card-margin-outer"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Meghan Correa</span><br>
-
-		<p>Former full stack developer currently at Cisco</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm" target="_blank">Sara Smith Wuitchik <span class="icon-external"></span></a></span><br>
-
-		(2019-2021)<br>
-
-		<p>Sara is now an Assistant Professor at Mount Royal University in Calgary, Canada.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Alex Llanos Garrido</span><br>
-
-		(2019-2021)<br>
-
-		<p>Alex is now at the Universidad Complutense Madrid.</p>
-</div>
-
-<div class="col-0-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row alum-card-row">
-
-<div class="col-0-24 card-margin-outer"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Juerg Straubhaar</span><br>
-
-		(2017-2021)<br>
-
-		<p>Juerg worked primarily on proteomics data with the Mass Spec Core and the Melton Lab while he was in the group.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://brian-arnold.github.io/about/" target="_blank">Brian Arnold <span class="icon-external"></span></a></span><br>
-
-		(2018-2020)<br>
-
-		<p>Brian is now a departmental data scientist with the Ecology and Evolutionary Biology department at Princeton.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Yasin Kaymaz</span><br>
-
-		(2017-2020)<br>
-
-		<p>Yasin is now an Assistant Professor at Ege University in Izmir, Turkey.</p>
-</div>
-
-<div class="col-0-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row alum-card-row">
-
-<div class="col-0-24 card-margin-outer"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://tommytang.bio.link/" target="_blank">Ming "Tommy" Tang <span class="icon-external"></span></a></span><br>
-
-		(2018-2020)<br>
-
-		<p>Tommy is now the Director of Computational Biology at Immunitas Therapeutics.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://veronikalaine.netlify.app/" target="_blank">Veronika Laine <span class="icon-external"></span></a></span><br>
-
-		(2019)<br>
-
-		<p>Veronika is now at the Finnish Museum of Natural History working on bats.</p>
-</div>
-<div class="col-1-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">John Gaspar</span><br>
-
-		(2017-2019)<br>
-
-		<p>John is now a Data Science and Bioinformatics Team Lead at Merck.</p>
-</div>
-
-<div class="col-0-24 card-margin-outer"></div>
-</div>
-
-<div class="card-sep-div"></div>
-
-<div class="row alum-card-row">
-
-<div class="col-7-24 card-margin-outer"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name"><a href="https://www.allisonshultz.com/" target="_blank">Allison Shultz <span class="icon-external"></span></a></span><br>
-
-		(2017-2018)<br>
-
-		<p>Allison is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County.</p>
-</div>
-<div class="col-2-24 card-margin-inner"></div>
-
-<div class="col-6-24 card-container alum-card-container">
-		<span class="alum-name">Andy Bryant</span><br>
-
-		<p>Former front end developer for instrument facility applications</p>
-</div>
-
-<div class="col-7-24 card-margin-outer"></div>
-</div>
-
-
 
 ## Where to Find Us
 

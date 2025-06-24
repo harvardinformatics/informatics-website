@@ -20,10 +20,17 @@ Tim joined the informatics group in 2015, and was promoted to the Director posit
 [CV(pdf)](files/Sackton-CV-current.pdf)
 [Publications](https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate)
 
+
+---
+
+## Where to find:
+
+:simple-github: [GitHub :octicons-link-external-24:](https://github.com/tsackton) &nbsp; :scholar-100: [Scholar :octicons-link-external-24:](https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate)
+
 ---
 
 ## Pages authored by Tim Sackton
 
- - [[Workshop] Biotips Day 4: Shell scripting](../workshops/biotips/Biotips-workshop-Day4.md)
  - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
+ - [[Workshop] Biotips Day 4: Shell scripting](../workshops/biotips/Biotips-workshop-Day4.md)
  - [[Workshop] Introduction to R Part 3: ggplot](../workshops/intro-r/R-workshop-Part3.md)

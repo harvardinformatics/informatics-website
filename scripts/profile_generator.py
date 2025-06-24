@@ -19,7 +19,25 @@ def getTitle(author_name, json_data):
             for name, info in subgroup.items():
                 if name == author_name or info.get("name") == author_name:
                     return info.get("title")
-    return None
+    return ""
+
+####################
+
+def getContact(person, json_data):
+    # Returns markdown for contact section or '' if none
+    for group in json_data.values():
+        for subgroup in group.values():
+            for name, info in subgroup.items():
+                if info.get("name", name) == person:
+                    out = []
+                    if info.get("external-link"):
+                        out.append(f":material-web: [Website :octicons-link-external-24:]({info['external-link']})")
+                    if info.get("github"):
+                        out.append(f":simple-github: [GitHub :octicons-link-external-24:]({info['github']})")
+                    if info.get("pubs"):
+                        out.append(f":scholar-100: [Scholar :octicons-link-external-24:]({info['pubs']})")
+                    return "\n---\n\n## Where to find:\n\n" + " &nbsp; ".join(out) if out else ""
+    return ""
 
 ############################################################
 
@@ -87,6 +105,26 @@ for mdfile in glob.glob(os.path.join(docs_dir, "**/*.md"), recursive=True):
                     #print(mdfile);
                 author_to_pages[slug]['pages'].append({'title': title, 'path': mdfile})
 
+active_people = set()
+for group in json_data.values():
+    for subgroup in group.values():
+        for person, info in subgroup.items():
+            if info.get("status", "").lower() == "active":
+                active_people.add(info.get("name", person))
+## Get active people from the JSON data
+
+page_authors = set(data['name'] for data in author_to_pages.values())
+## Get authors from the pages collected
+
+profile_people = active_people | page_authors
+## Combine active people and page authors
+
+for person in profile_people:
+    slug = person.lower().replace(" ", "-")
+    if slug not in author_to_pages:
+        author_to_pages[slug] = {'name': person, 'pages': []}
+## Add the active people that are not page authors to the author_to_pages dictionary
+
 # Write author pages
 for slug, data in author_to_pages.items():
     md_output_file = os.path.join(authors_dir, f"{slug}.md")
@@ -99,6 +137,8 @@ for slug, data in author_to_pages.items():
     if os.path.exists(f"data/people/{slug}.md"):
         with open(f"data/people/{slug}.md", "r", encoding="utf-8") as bio_file:
             bio = bio_file.read()
+
+    contact_links = getContact(person, json_data)
 
     # Separate maintainer pages and others
     maintainer_pages = []
@@ -119,9 +159,18 @@ for slug, data in author_to_pages.items():
         rel_link = os.path.relpath(to_path, os.path.dirname(from_path)).replace("\\", "/")
         pages_list.append(f" - [{p['title']}]({rel_link})")
 
+    pages = ""
+    if pages_list:
+        pages = f"## Pages authored by {person}\n\n" + "\n".join(pages_list)
+
 
     with open(md_output_file, "w", encoding="utf-8") as md_output:
-        md_output.write(md_template.format(person_lower=person.lower().replace(" ",""), person=person, person_title=title, bio=bio, pages="\n".join(pages_list)));
+        md_output.write(md_template.format(person_lower=person.lower().replace(" ",""), 
+                                           person=person, 
+                                           person_title=title, 
+                                           bio=bio,
+                                           contact=contact_links,
+                                           pages=pages));
     # Write the resources page using the template
 
 print("-" * 20);
