@@ -18,13 +18,13 @@ def define_env(env):
                 url = get_author_url(auth)
                 avatar = get_avatar(auth)
                 margin = " margin-right: 0.5em;" if i < len(authors)-1 else ""
-                line += f'<a href="{url}" style="{margin}"><img src="{avatar}"></a>'
+                line += f'<a href="{url}" alt="{auth}" style="{margin}"><img src="{avatar}"></a>'
         else:
             for i, auth in enumerate(authors):
                 url = get_author_url(auth)
                 avatar = get_avatar(auth)
                 margin = " margin-right: 0.75em;" if i < len(authors)-1 else ""
-                line += f'<a href="{url}" style="{margin}"><img src="{avatar}" style="margin-right: 0.5em;">{auth}</a>'
+                line += f'<a href="{url}" alt="{auth}" style="{margin}"><img src="{avatar}" style="margin-right: 0.5em;">{auth}</a>'
         line += '''
 <span style="margin: 0 0.4em;">·
 <small style="color: #888;">

@@ -100,6 +100,7 @@ plugins:
       exclude:
         - 'resources/tags/*'
         - '_includes/*'
+        - 'people/*'
 
 hooks:
   - scripts/about_generator.py 

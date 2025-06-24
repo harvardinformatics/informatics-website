@@ -3,7 +3,13 @@ hide:
     - toc
 ---
 
-# <img src="/img/people/daniellekhost.jpg" style="max-width: 200px; width: 100%; height: auto; vertical-align:middle; margin-right: 0.25em; border-radius: 50%; object-fit: cover; object-position: center; aspect-ratio: 1 / 1;"> Danielle Khost
+<h1 class="profile-header">
+  <img src="/img/people/daniellekhost.jpg" alt="Danielle Khost">
+  <span class="profile-name">
+    Danielle Khost<br>
+    <span class="profile-title">Senior Bioinformatics Scientist</span>
+  </span>
+</h1>
 
 
 

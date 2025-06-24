@@ -3,7 +3,13 @@ hide:
     - toc
 ---
 
-# <img src="/img/people/timsackton.jpg" style="max-width: 200px; width: 100%; height: auto; vertical-align:middle; margin-right: 0.25em; border-radius: 50%; object-fit: cover; object-position: center; aspect-ratio: 1 / 1;"> Tim Sackton
+<h1 class="profile-header">
+  <img src="/img/people/timsackton.jpg" alt="Tim Sackton">
+  <span class="profile-name">
+    Tim Sackton<br>
+    <span class="profile-title">Director of Bioinformatics</span>
+  </span>
+</h1>
 
 Tim is the Director of Bioinformatics for the FAS Informatics Group, a position he has held since 2017. In this role, he oversees the operations of the Bioinformatics Core, working to facilitate bioinformatics research at Harvard. 
 
@@ -18,6 +24,6 @@ Tim joined the informatics group in 2015, and was promoted to the Director posit
 
 ## Pages authored by Tim Sackton
 
- - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
  - [[Workshop] Biotips Day 4: Shell scripting](../workshops/biotips/Biotips-workshop-Day4.md)
+ - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
  - [[Workshop] Introduction to R Part 3: ggplot](../workshops/intro-r/R-workshop-Part3.md)

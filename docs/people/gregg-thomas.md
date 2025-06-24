@@ -3,7 +3,13 @@ hide:
     - toc
 ---
 
-# <img src="/img/people/greggthomas.jpg" style="max-width: 200px; width: 100%; height: auto; vertical-align:middle; margin-right: 0.25em; border-radius: 50%; object-fit: cover; object-position: center; aspect-ratio: 1 / 1;"> Gregg Thomas
+<h1 class="profile-header">
+  <img src="/img/people/greggthomas.jpg" alt="Gregg Thomas">
+  <span class="profile-name">
+    Gregg Thomas<br>
+    <span class="profile-title">Senior Bioinformatics Scientist</span>
+  </span>
+</h1>
 
 With a background in bioinformatics and evolutionary biology, Gregg joined the group in July of 2021 from a postdoctoral position at the University of Montana in [Jeff Good's lab :octicons-link-external-24:](http://www.thegoodlab.org/){:target="_blank"}. Previously he studied at Indiana University with [Matt Hahn :octicons-link-external-24:](http://www.indiana.edu/~hahnlab/){:target="_blank"}.
 
@@ -21,21 +27,21 @@ See [Gregg's personal website :octicons-link-external-24:](https://gwct.bio/){:t
 
 ## Pages authored by Gregg Thomas
 
- - [[Tutorial] Adding an outgroup to a whole genome alignment](../resources/Tutorials/add-outgroup-to-whole-genome-alignment-cactus.md)
- - [[Tutorial] Adding a genome to a whole genome alignment](../resources/Tutorials/add-to-whole-genome-alignment-cactus.md)
- - [[Tutorial] Installing command line software with conda/mamba](../resources/Tutorials/installing-command-line-software-conda-mamba.md)
- - [[Tutorial] Pangenome inference with Cactus-minigraph](../resources/Tutorials/pangenome-cactus-minigraph.md)
- - [[Tutorial] Replacing a genome in a whole genome alignment](../resources/Tutorials/replace-genome-whole-genome-alignment-cactus.md)
- - [[Tutorial] Whole genome alignment with Cactus](../resources/Tutorials/whole-genome-alignment-cactus.md)
- - [[Workshop] Biotips Day 1: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day1.md)
- - [[Workshop] Biotips Day 2: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day2.md)
- - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
- - [[Workshop] Biotips Day 4: Shell scripting](../workshops/biotips/Biotips-workshop-Day4.md)
- - [[Workshop] Harvard Informatics Healthy Habits for Data Science Workshop](../workshops/healthy-habits/healthy_habits_day2.md)
- - [[Workshop] Introduction to R Part 1: R Basics](../workshops/intro-r/R-workshop-Part1.md)
- - [[Workshop] Introduction to R Part 2: Data manipulation with tidyverse](../workshops/intro-r/R-workshop-Part2.md)
- - [[Workshop] Introduction to R Part 3: ggplot](../workshops/intro-r/R-workshop-Part3.md)
  - [[Workshop] Harvard Informatics R ggplot Workshop](../workshops/short-trainings/r-ggplot/R_ggplot_revised.md)
  - [[Workshop] Harvard Informatics R Tidyverse Workshop](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md)
- - [[Maintainer] Computing glossary](../resources/glossary.md)
+ - [[Workshop] Biotips Day 1: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day1.md)
+ - [[Workshop] Biotips Day 2: Bioinformatics command line tools and file formats](../workshops/biotips/Biotips-workshop-Day2.md)
+ - [[Workshop] Biotips Day 4: Shell scripting](../workshops/biotips/Biotips-workshop-Day4.md)
+ - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
+ - [[Workshop] Harvard Informatics Healthy Habits for Data Science Workshop](../workshops/healthy-habits/healthy_habits_day2.md)
+ - [[Workshop] Introduction to R Part 3: ggplot](../workshops/intro-r/R-workshop-Part3.md)
+ - [[Workshop] Introduction to R Part 1: R Basics](../workshops/intro-r/R-workshop-Part1.md)
+ - [[Workshop] Introduction to R Part 2: Data manipulation with tidyverse](../workshops/intro-r/R-workshop-Part2.md)
+ - [[Tutorial] Adding an outgroup to a whole genome alignment](../resources/Tutorials/add-outgroup-to-whole-genome-alignment-cactus.md)
+ - [[Tutorial] Whole genome alignment with Cactus](../resources/Tutorials/whole-genome-alignment-cactus.md)
+ - [[Tutorial] Installing command line software with conda/mamba](../resources/Tutorials/installing-command-line-software-conda-mamba.md)
+ - [[Tutorial] Adding a genome to a whole genome alignment](../resources/Tutorials/add-to-whole-genome-alignment-cactus.md)
+ - [[Tutorial] Replacing a genome in a whole genome alignment](../resources/Tutorials/replace-genome-whole-genome-alignment-cactus.md)
+ - [[Tutorial] Pangenome inference with Cactus-minigraph](../resources/Tutorials/pangenome-cactus-minigraph.md)
  - [[Maintainer] Harvard Informatics Software](../software/index.md)
+ - [[Maintainer] Computing glossary](../resources/glossary.md)

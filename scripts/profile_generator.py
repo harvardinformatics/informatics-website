@@ -13,6 +13,16 @@ import json
 
 ############################################################
 
+def getTitle(author_name, json_data):
+    for group in json_data.values():
+        for subgroup in group.values():
+            for name, info in subgroup.items():
+                if name == author_name or info.get("name") == author_name:
+                    return info.get("title")
+    return None
+
+############################################################
+
 print("-" * 20);
 print("RUNNING scripts/generate_author_pages.py TO GENERATE AUTHOR PAGES")
 
@@ -21,7 +31,7 @@ docs_dir = "docs"
 base_authors_dir = "people"
 authors_dir = os.path.join(docs_dir, base_authors_dir)
 os.makedirs(authors_dir, exist_ok=True)
-md_template_file = "templates/bio_template.md"
+md_template_file = "templates/profile_template.md"
 author_to_pages = {}
 
 json_file = "data/people/people.json";
@@ -83,6 +93,7 @@ for slug, data in author_to_pages.items():
     print(f"GENERATING AUTHOR PAGE: {md_output_file}")
 
     person = data['name']
+    title = getTitle(person, json_data);
 
     bio = "";
     if os.path.exists(f"data/people/{slug}.md"):
@@ -110,7 +121,7 @@ for slug, data in author_to_pages.items():
 
 
     with open(md_output_file, "w", encoding="utf-8") as md_output:
-        md_output.write(md_template.format(person_lower=person.lower().replace(" ",""), person=person, bio=bio, pages="\n".join(pages_list)));
+        md_output.write(md_template.format(person_lower=person.lower().replace(" ",""), person=person, person_title=title, bio=bio, pages="\n".join(pages_list)));
     # Write the resources page using the template
 
 print("-" * 20);
