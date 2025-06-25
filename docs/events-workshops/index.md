@@ -151,6 +151,12 @@ To view a list of previous events and workshops, click the button below.
 
 [Previous Events & Workshops :material-arrow-right:](previous-events.md){ .md-button .md-button--primary .centered }
 
+
+---
+
+<!-- --------------------------------- -->
+<!-- Page specfic CSS -->
+
 <style>
     h2 {
         text-align: center !important;

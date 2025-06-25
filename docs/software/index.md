@@ -8,18 +8,6 @@ hide:
     - toc
 ---
 
-<style>
-    .md-nav__icon.md-icon {
-        display: none;
-    }
-    /* Hides the menu icon for the toc in the mobile nav sidebar */
-    li.md-nav__item.md-nav__item--active nav.md-nav.md-nav--secondary {
-        display: none;
-    }
-    /* Necessary to hide the pop-up table of contents on clicking the same-page link in
-    mobile nav sidebar */
-</style>
-
 The FAS Informatics group develops methods and software for various genomics tasks with an emphasis on reproducibility and ease of use. We aim to provide tools that fill gaps in the current genomics software ecosystem. We also collaborate both within and outside of Harvard to develop new methods.
 
 ## 
@@ -33,9 +21,9 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://phyloacc.github.io/" target="_blank">PhyloAcc <span class="icon-external"></span></a> is a program to detect shifts of DNA substitution rates in noncoding, conserved genomic regions. It can be used to identify genomic elements that have experienced accelerated rates along certain lineages in a phylogeny. This can be used, for example, to identify convergent rate shifts that coincide with phenotypic convergence. 
+        <a href="https://phyloacc.github.io/" target="_blank">PhyloAcc <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> is a program to detect shifts of DNA substitution rates in noncoding, conserved genomic regions. It can be used to identify genomic elements that have experienced accelerated rates along certain lineages in a phylogeny. This can be used, for example, to identify convergent rate shifts that coincide with phenotypic convergence. 
 
-        We have developed this in conjunction with the <a href="https://edwards.oeb.harvard.edu/" target="_blank">Edwards Lab <span class="icon-external"></span></a> in the Organismic and Evolutionary Biology department and the Museum of Comparative Zoology and the <a href="https://sites.harvard.edu/junliu/" target="_blank">Liu Lab <span class="icon-external"></span></a> in the Department of Statistics.
+        We have developed this in conjunction with the <a href="https://edwards.oeb.harvard.edu/" target="_blank">Edwards Lab <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> in the Organismic and Evolutionary Biology department and the Museum of Comparative Zoology and the <a href="https://sites.harvard.edu/junliu/" target="_blank">Liu Lab <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> in the Department of Statistics.
     </div>
 </div>
 
@@ -50,7 +38,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/snpArcher" target="_blank">snpArcher <span class="icon-external"></span></a> is a reproducible workflow optimized for nonmodel organisms and comparisons across datasets, built on the <a href="https://snakemake.readthedocs.io/en/stable/index.html#" target="_blank">Snakemake <span class="icon-external"></span></a> workflow management system. It provides a streamlined approach to dataset acquisition, variant calling, quality control, and downstream analysis.
+        <a href="https://github.com/harvardinformatics/snpArcher" target="_blank">snpArcher <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> is a reproducible workflow optimized for nonmodel organisms and comparisons across datasets, built on the <a href="https://snakemake.readthedocs.io/en/stable/index.html#" target="_blank">Snakemake <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> workflow management system. It provides a streamlined approach to dataset acquisition, variant calling, quality control, and downstream analysis.
     </div>
 
 </div>
@@ -66,7 +54,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/degenotate" target="_blank">degenotate <span class="icon-external"></span></a> takes as input either a genome FASTA file and a corresponding annotation file (GFF or GTF) OR file or directory of files that contain coding sequences in FASTA format and outputs a bed-like file that contains the degeneracy score (0-, 2-, 3-, or 4-fold) of every coding site.
+        <a href="https://github.com/harvardinformatics/degenotate" target="_blank">degenotate <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> takes as input either a genome FASTA file and a corresponding annotation file (GFF or GTF) OR file or directory of files that contain coding sequences in FASTA format and outputs a bed-like file that contains the degeneracy score (0-, 2-, 3-, or 4-fold) of every coding site.
 
         If given a corresponding VCF file with specified outgroup samples, degenotate can also count synonymous and non-synonymous polymorphisms and fixed differences for use in MK tests (McDonald and Kreitman 1991).
 
@@ -85,7 +73,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/ComparativeGenomicsToolkit/cactus" target="_blank">Cactus <span class="icon-external"></span></a> is a program that performs whole genome alignment for a given set of species and their phylogenetic tree. We developed <a href="https://github.com/harvardinformatics/cactus-snakemake" target="_blank">several Snakemake workflows for performing Cactus alignments and associated tasks <span class="icon-external"></span></a>, such as adding and replacing genomes in an alignment. We also implemented the minigraph-cactus workflow for pangenome inference. Using snakemake facilitates easy, efficient, and reproducible execution on institutional clusters. Check out the tutorials for each task on the <a href="../resources/index.md">Resources</a> page!
+        <a href="https://github.com/ComparativeGenomicsToolkit/cactus" target="_blank">Cactus <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> is a program that performs whole genome alignment for a given set of species and their phylogenetic tree. We developed <a href="https://github.com/harvardinformatics/cactus-snakemake" target="_blank">several Snakemake workflows for performing Cactus alignments and associated tasks <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a>, such as adding and replacing genomes in an alignment. We also implemented the minigraph-cactus workflow for pangenome inference. Using snakemake facilitates easy, efficient, and reproducible execution on institutional clusters. Check out the tutorials for each task on the <a href="../resources/index.md">Resources</a> page!
     </div>
 </div>
 
@@ -100,7 +88,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        We modified the general <a href="https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html" target="_blank">Snakemake executor plugin for SLURM clusters <span class="icon-external"></span></a> for the Cannon cluster at Harvard. The <a href="https://github.com/harvardinformatics/snakemake-executor-plugin-cannon" target="_blank">Snakemake executor plugin for Cannon<span class="icon-external"></span></a> works exactly the same as the original, but performs automatic partition selection for Snakemake workflows on the Cannon cluster based on other user-provided resources.
+        We modified the general <a href="https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html" target="_blank">Snakemake executor plugin for SLURM clusters <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> for the Cannon cluster at Harvard. The <a href="https://github.com/harvardinformatics/snakemake-executor-plugin-cannon" target="_blank">Snakemake executor plugin for Cannon<span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> works exactly the same as the original, but performs automatic partition selection for Snakemake workflows on the Cannon cluster based on other user-provided resources.
     </div>
 </div>
 
@@ -115,7 +103,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        We wrote a <a href="https://nf-co.re/" target="_blank">Nextflow nf-core <span class="icon-external"></span></a> config file for the Cannon cluster at Harvard. Our <a href="https://nf-co.re/configs/cannon/" target="_blank">Cannon config file <span class="icon-external"></span></a> performs automatic partition selection for Nextflow workflows on the Cannon cluster based on other user-provided resources.
+        We wrote a <a href="https://nf-co.re/" target="_blank">Nextflow nf-core <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> config file for the Cannon cluster at Harvard. Our <a href="https://nf-co.re/configs/cannon/" target="_blank">Cannon config file <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> performs automatic partition selection for Nextflow workflows on the Cannon cluster based on other user-provided resources.
     </div>
 </div>
 
@@ -130,7 +118,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/scclusteval" target="_blank">scclusteval <span class="icon-external"></span></a> (Single Cell Cluster Evaluation) evaluates the single cell clustering stability by subsampling the cells and provide many visualization methods for comparing clusters.
+        <a href="https://github.com/harvardinformatics/scclusteval" target="_blank">scclusteval <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> (Single Cell Cluster Evaluation) evaluates the single cell clustering stability by subsampling the cells and provide many visualization methods for comparing clusters.
     </div>
 </div>
 
@@ -145,7 +133,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/HieRFIT" target="_blank">HieRFIT <span class="icon-external"></span></a> is a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. HieRFIT stands for Hierarchical Random Forest for Information Transfer.
+        <a href="https://github.com/harvardinformatics/HieRFIT" target="_blank">HieRFIT <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> is a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. HieRFIT stands for Hierarchical Random Forest for Information Transfer.
     </div>
 </div>
 
@@ -160,7 +148,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/Genrich" target="_blank">Genrich <span class="icon-external"></span></a> is a peak-caller for genomic enrichment assays (e.g. ChIP-seq, ATAC-seq). It analyzes alignment files generated following the assay and produces a file detailing peaks of significant enrichment.
+        <a href="https://github.com/harvardinformatics/Genrich" target="_blank">Genrich <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> is a peak-caller for genomic enrichment assays (e.g. ChIP-seq, ATAC-seq). It analyzes alignment files generated following the assay and produces a file detailing peaks of significant enrichment.
     </div>
 </div>
 
@@ -175,7 +163,7 @@ The FAS Informatics group develops methods and software for various genomics tas
     </div>
 
     <div class="col-18-24 software-desc">
-        <a href="https://github.com/harvardinformatics/NGmerge" target="_blank">NGmerge <span class="icon-external"></span></a> merges paired-end reads and removes sequencing adapters. In the default stitch mode, NGmerge combines paired-end reads that overlap into a single read that spans the full length of the original DNA fragment. The alternative adapter-removal mode returns the original reads as pairs, removing the 3' overhangs of those reads whose valid stitched alignment has this characteristic.
+        <a href="https://github.com/harvardinformatics/NGmerge" target="_blank">NGmerge <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> merges paired-end reads and removes sequencing adapters. In the default stitch mode, NGmerge combines paired-end reads that overlap into a single read that spans the full length of the original DNA fragment. The alternative adapter-removal mode returns the original reads as pairs, removing the 3' overhangs of those reads whose valid stitched alignment has this characteristic.
     </div>
 </div>
 
@@ -183,3 +171,19 @@ The FAS Informatics group develops methods and software for various genomics tas
 
 {{ author_row(page) }}
 
+---
+
+<!-- --------------------------------- -->
+<!-- Page specfic CSS -->
+
+<style>
+    .md-nav__icon.md-icon {
+        display: none;
+    }
+    /* Hides the menu icon for the toc in the mobile nav sidebar */
+    li.md-nav__item.md-nav__item--active nav.md-nav.md-nav--secondary {
+        display: none;
+    }
+    /* Necessary to hide the pop-up table of contents on clicking the same-page link in
+    mobile nav sidebar */
+</style>

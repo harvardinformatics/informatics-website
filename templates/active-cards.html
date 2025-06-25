@@ -11,30 +11,30 @@
             </span>
             </div>
             <div class="profile-card-main">
-                <div class="profile-imgcol">
-                    <img class="profile-pic" src="{{ person.img }}" alt="Profile picture of {{ person.name }}">
-                    <div class="profile-links">
+                <div class="profile-card-imgcol">
+                    <img class="profile-card-pic" src="{{ person.img }}" alt="Profile picture of {{ person.name }}">
+                    <div class="profile-card-links">
                     {% if person.pubs %}
                         <a href="{{ person.pubs }}" target="_blank" title="Google Scholar">
-                        <span class="twemoji contact-icon">{% include "scholar-100.svg" %}</span>
+                            <span class="twemoji contact-icon">{% include "scholar-100.svg" %}</span>
                         </a>
                     {% endif %}
                     {% if person.github %}
                         <a href="{{ person.github }}" target="_blank" title="GitHub">
-                        <span class="twemoji contact-icon">{% include "github.svg" %}</span>
+                            <span class="twemoji contact-icon">{% include "github.svg" %}</span>
                         </a>
                     {% endif %}
                     {% if person["external-link"] %}
                         <a href="{{ person['external-link'] }}" target="_blank" title="Website">
-                        <span class="twemoji contact-icon">{% include "web.svg" %}</span>
+                            <span class="twemoji contact-icon">{% include "web.svg" %}</span>
                         </a>
                     {% endif %}
                     </div>
                 </div>
-                <div class="profile-details">
-                    <div class="profile-title"><b>{{ person.title }}</b></div>
-                    <div class="profile-office">Northwest Labs, {{ person.office }}</div>
-                    <div class="profile-bio">{{ person.profile }}</div>
+                <div class="profile-card-details">
+                    <div class="profile-card-title"><b>{{ person.title }}</b></div>
+                    <div class="profile-card-office">Northwest Labs, {{ person.office }}</div>
+                    <div class="profile-card-bio">{{ person.profile }}</div>
                 </div>
             </div>
         </div>

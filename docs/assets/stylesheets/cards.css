@@ -47,7 +47,7 @@
   align-items: flex-start;
   gap: 1.7em; /* slightly wider gap between image and text */
 }
-.profile-imgcol {
+.profile-card-imgcol {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +55,7 @@
   max-width: 30vw;
   flex: 0 0 180px;
 }
-.profile-pic {
+.profile-card-pic {
   border-radius: 10px;
   width: 8vw;
   max-width: 195px;
@@ -65,27 +65,27 @@
   margin-bottom: 0.7em;
   display: block;
 }
-.profile-details {
+.profile-card-details {
   flex: 1;
   font-size: 0.9em;
 }
-.profile-title {
+.profile-card-title {
   font-size: 0.9em;
   font-weight: bold;
   margin-bottom: 0.1em;
   color: #000000
 }
-.profile-office {
+.profile-card-office {
   font-size: 0.9em;
   color: #555;
   margin-bottom: 0.6em;
 }
-.profile-bio {
+.profile-card-bio {
   margin-bottom: 0.9em;
   font-size: 0.9em;
   color: #000000
 }
-.profile-links {
+.profile-card-links {
   display: flex;
   justify-content: center;
   gap: 0.8em;
@@ -93,17 +93,37 @@
   width: fit-content;
   margin: 0.1em auto 0 auto;
 }
-.profile-links a {
+.profile-card-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;  
   color: #222;
   margin-right: 0;
   text-decoration: none;
+  border-radius: 5px;
+  padding: 0 0.1em;
+  transition: background-color 0.3s ease;
 }
-.profile-links a:hover {
-  color: #c03a29;
+.profile-card-links a:hover {
+	background-color: rgba(182, 173, 184, 0.5);
+	border-radius: 7px;
+}
+.profile-card-links a .contact-text {
+  display: none;
+  font-size: 0.3em;
+  margin-top: 0.2em;
+  max-width: 100%;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.profile-card-links a:hover .contact-text {
+  display: block;
 }
 
-.profile-links .contact-icon svg,
-.profile-links .contact-icon img {
+
+.profile-card-links .contact-icon svg,
+.profile-card-links .contact-icon img {
   width: 32px;
   height: 32px;
   vertical-align: middle;
@@ -122,7 +142,7 @@
     min-width: 220px;
     flex: none;
   }
-  .profile-pic { width: 36vw; min-width: 70px; max-width: 180px; }
+  .profile-card-pic { width: 36vw; min-width: 70px; max-width: 180px; }
 }
 
 /*------------------------------------------------------*/

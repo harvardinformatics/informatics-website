@@ -348,6 +348,11 @@ For more information about all outputs, see [Cactus's minigraph documentation se
     
     Great! Please [create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} describing your idea so we can discuss its implementation!
 
+---
+
+<!-- --------------------------------- -->
+<!-- Page specfic CSS -->
+
 <style>
     h2 {
         text-align: center !important;

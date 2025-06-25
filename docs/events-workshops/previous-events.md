@@ -50,6 +50,11 @@ These are topics of previous events with no attached contents and the dates of o
 
 {{ read_csv('data/previous-events/2017-events.csv') }}    
 
+---
+
+<!-- --------------------------------- -->
+<!-- Page specfic CSS -->
+
 <style>
     .md-typeset__table {
         width: 100% !important;

@@ -374,7 +374,6 @@ th, td {
 .icon-link:hover {
 	background-color: rgba(182, 173, 184, 0.5);
 	border-radius: 7px;
-
 }
 .icon-link span {
 	display:none;

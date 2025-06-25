@@ -63,7 +63,10 @@ We have compiled a list of external resources and tagged them with the categorie
 
 {tags_table}
 
+---
+
 <!-- --------------------------------- -->
+<!-- Page speciifc CSS -->
 
 <style>
     h4 {{

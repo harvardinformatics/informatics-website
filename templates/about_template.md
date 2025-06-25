@@ -64,6 +64,8 @@ For more information about our research and collaborations, please visit our Res
 
 [Research page :material-arrow-right:](research/index.md){ .md-button .md-button--primary .centered }
 
+---
+
 ## People
 
 > :material-check: Click on the person's name or contact icons to view more information about them.
@@ -78,6 +80,8 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 
 {{ alumni_cards }}
 
+---
+
 ## Where to Find Us
 
 We are located in [Northwest Science Building :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){:target="_blank"}, on the B2 floor, near the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
@@ -87,3 +91,5 @@ Harvard FAS Informatics Group
 52 Oxford Street  
 Cambridge, MA 02138  
 [Map :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){:target="_blank"}
+
+---

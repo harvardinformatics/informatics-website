@@ -31,6 +31,6 @@ Tim joined the informatics group in 2015, and was promoted to the Director posit
 
 ## Pages authored by Tim Sackton
 
- - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
  - [[Workshop] Biotips Day 4: Shell scripting](../workshops/biotips/Biotips-workshop-Day4.md)
+ - [[Workshop] Biotips Day 3: VCF files and shell scripts](../workshops/biotips/Biotips-workshop-Day3.md)
  - [[Workshop] Introduction to R Part 3: ggplot](../workshops/intro-r/R-workshop-Part3.md)

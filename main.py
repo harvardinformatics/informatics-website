@@ -25,7 +25,8 @@ def define_env(env):
                 avatar = get_avatar(auth)
                 margin = " margin-right: 0.75em;" if i < len(authors)-1 else ""
                 line += f'<a href="{url}" alt="{auth}" style="{margin}"><img src="{avatar}" style="margin-right: 0.5em;">{auth}</a>'
-        line += '''
+        if author_header != "Page maintainer":
+            line += '''
 <span style="margin: 0 0.4em;">·
 <small style="color: #888;">
     :material-clock-edit-outline: Last updated: {{ git_revision_date_localized }}

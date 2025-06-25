@@ -273,6 +273,11 @@ This should create and automatically install all the software that was in the ex
 
     If you've searched repositories for your OS or programming language of interest and haven't found the program you want available on any of them, you may be stuck **building from source**. This can be as simple as downloading a script from github with no dependencies. But this can also be a very difficult task: it means you are also responsible for installing any dependencies and specifying paths to libraries that the program uses, which, on shared compute systems (like institutional clusters) where one doesn't have full access to all folders, can be unmanageable. Hopefully the authors of the program have left very good documentation about how to handle these things...
 
+---
+
+<!-- --------------------------------- -->
+<!-- Page specfic CSS -->
+
 <style>
     h2 {
         text-align: center !important;

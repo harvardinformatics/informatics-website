@@ -143,3 +143,5 @@ For a new genome assembly, quality metrics will need to be used that don't rely 
 
 ## A final thought: filtering
 Although we have discussed annotation method types and provided a framework for choosing which methods to use, and some straightforward metrics for checking annotation quality, in most instances, your annotation will be improved with some filtering. For example, extremely short single-exon transcripts with near-zero expression (after mapping RNA-seq reads to the transcripts) are likely to be enriched for false positives. In particular, we know from our evaluation of annotation methods, that HMM-based ab initio tools can predict large numbers of protein-coding transcripts that fall outside of known protein-coding gene intervals, and that are almost certainly dominated by false positives. Setting filters to remove as much of this detritus as possible while minimizing the removal of real transcript will requires some data exploration and fine-tuning, as there is unlikely to be a one-size-fits all set of filters for all method-species combinations.
+
+---
