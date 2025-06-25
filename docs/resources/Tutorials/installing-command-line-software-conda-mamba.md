@@ -28,7 +28,7 @@ To install mamba, first navigate to the [Miniforge3 repository page :octicons-li
 ### Mac/Linux
 
 <center>
-  <img src="../../img/mamba-install1.png" alt="A screenshot of the miniforge repository's installation instructions" />
+  <img src="../../../../img/tutorials/mamba-install1.png" alt="A screenshot of the miniforge repository's installation instructions" />
 </center>
 
 On Mac and Linux machines (the [Harvard cluster runs a version of Linux :octicons-link-external-24:](https://www.rc.fas.harvard.edu/about/cluster-architecture/){:target="_blank"}), you'll want to open your Terminal or login to the server to type the download and install commands.
@@ -56,7 +56,7 @@ If necessary, Miniforge does provide an explicit Windows installer for conda/mam
 Once you have followed the above instructions and **restarted your terminal or reconnected to the server**, you should now see that mamba is activated because the `(base)` environment prefix appears before your prompt:
 
 <center>
-    <img src="../../img/prompt1.png" alt="A screenshot of a command prompt with (base) prepended to it" />
+    <img src="../../../../img/tutorials/prompt1.png" alt="A screenshot of a command prompt with (base) prepended to it" />
 </center>
 
 mamba can be used to manage environments. **Environments** modify aspects of a user's file system that make it easier to install and run software, essentially giving the user full control over their own software and negating the need to access critical parts of the file system.
@@ -98,7 +98,7 @@ mamba env list
 Once you are in an environment, your prompt should be updated to be pre-fixed with that environment's name:
 
 <center>
-    <img src="../../img/prompt2.png" alt="A screenshot of a command prompt with (project-env) prepended to it" />
+    <img src="../../../../img/tutorials/prompt2.png" alt="A screenshot of a command prompt with (project-env) prepended to it" />
 </center>
 
 !!! tip "Environments must be activated every time you log on"

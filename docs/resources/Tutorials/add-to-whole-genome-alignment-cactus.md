@@ -14,7 +14,7 @@ Once you have your [HAL file with a whole genome alignment](whole-genome-alignme
     Here is the rulegraph for the pipeline. It performs two rounds of alignment, one for the new node in the tree, and one to re-do the parent of the new node in the tree.
 
     <center>
-        <img src="../../img/cactus-update-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
+        <img src="../../../../img/tutorials/cactus-update-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
     </center>
 
 ## Getting started
@@ -152,7 +152,7 @@ Now that we have the tree, we need to figure out where to put our new genome. We
 We borrow and slightly modify an [image from the cactus documentation :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md#adding-a-new-genome){:target="_blank"} to visualize these pieces of information on an example tree:
 
 <center>
-    <img src="../../img/cactus-adding-to-branch2-ai.png" alt="Two panels, the first showing a phylogenetic tree with 3 tips and internal nodes labeled, the second showing a 4th tip being added to the tree.">
+    <img src="../../../../img/tutorials/cactus-adding-to-branch2-ai.png" alt="Two panels, the first showing a phylogenetic tree with 3 tips and internal nodes labeled, the second showing a 4th tip being added to the tree.">
 </center> 
 
 In this context, we are adding the genome with the name **"6"** to our HAL. We are adding it such that it branches off from the branch defined by node 4 as the child and node 5 as the parent. To do so, we create a new node, which we come up with a name for (let's say **RC** for red circle), and a new branch 6-RC. This new RC node splits the 4-5 branch into two new branches: 4-RC and RC-5. For the pipeline you will need to provide the branch length of the **new** 6-RC branch and the **new** of RC-5 (**top-most**) branch.
@@ -451,7 +451,7 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
 
     Please [search for or create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
-    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
+    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact/index.md) to help you through your errors.
 
 ??? question "6. I have an idea to improve or add to the pipeline. What do I do?"
 

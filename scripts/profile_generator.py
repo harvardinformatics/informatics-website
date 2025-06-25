@@ -10,6 +10,7 @@ from pathlib import Path
 import glob
 import yaml
 import json
+import mkdocs_gen_files
 
 ############################################################
 
@@ -41,14 +42,14 @@ def getContact(person, json_data):
 
 ############################################################
 
-print("-" * 20);
-print("RUNNING scripts/generate_author_pages.py TO GENERATE AUTHOR PAGES")
+print("-" * 10);
+print("MKDOCS-GEN-FILES: scripts/profile_generator.py")
 
 # Settings
 docs_dir = "docs"
 base_authors_dir = "people"
 authors_dir = os.path.join(docs_dir, base_authors_dir)
-os.makedirs(authors_dir, exist_ok=True)
+#os.makedirs(authors_dir, exist_ok=True)
 md_template_file = "templates/profile_template.md"
 author_to_pages = {}
 
@@ -62,11 +63,11 @@ ignore_dirs = [
 
 ####################
 
-print("READING TEMPLATES");
+#print("READING TEMPLATES");
 md_template = open(md_template_file, 'r').read();
 # Read the templates
 
-print("READING PEOPLE JSON");
+#print("READING PEOPLE JSON");
 with open(json_file, 'r') as json_file_stream:
     json_data = json.load(json_file_stream)
 # Read the primary JSON file to get all the profiles
@@ -128,7 +129,7 @@ for person in profile_people:
 # Write author pages
 for slug, data in author_to_pages.items():
     md_output_file = os.path.join(authors_dir, f"{slug}.md")
-    print(f"GENERATING AUTHOR PAGE: {md_output_file}")
+    #print(f"GENERATING AUTHOR PAGE: {md_output_file}")
 
     person = data['name']
     title = getTitle(person, json_data);
@@ -164,7 +165,7 @@ for slug, data in author_to_pages.items():
         pages = f"## Pages authored by {person}\n\n" + "\n".join(pages_list)
 
 
-    with open(md_output_file, "w", encoding="utf-8") as md_output:
+    with mkdocs_gen_files.open(f"people/{slug}.md", "w") as md_output:
         md_output.write(md_template.format(person_lower=person.lower().replace(" ",""), 
                                            person=person, 
                                            person_title=title, 
@@ -173,4 +174,4 @@ for slug, data in author_to_pages.items():
                                            pages=pages));
     # Write the resources page using the template
 
-print("-" * 20);
+print("-" * 10);

@@ -10,25 +10,25 @@ Here we have compiled resources related to bioinformatics and computing. These r
 
 |     |
 | --- |
-| [:material-application-brackets-outline:{ .contact-icon } [ Installing command line software with conda/mamba ]][conda] |
-| [:material-dna:{ .contact-icon } [ Downloading sequencing data from the Bauer Core ]][bauer] |
-| [:material-format-align-top:{ .contact-icon } [ Whole genome alignment with Cactus ]][wga] |
-| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-filter-variant-plus:{ .contact-icon } [ Adding a genome to a whole genome alignment ]][add-genome] |
-| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-vector-polyline-plus:{ .contact-icon } [ Adding an outgroup to a whole genome alignment ]][add-outgroup] |
-| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-file-replace-outline:{ .contact-icon } [ Replacing a genome in a whole genome alignment ]][replace-genome] |
-| [:curly_loop:{ .contact-icon } [ Pangenome inference with Cactus-minigraph ]][pangenome] |
-| [:material-dna:{ .contact-icon } [ How to annotate a genome ]][annotate] |
+| [:material-application-brackets-outline:{{ .contact-icon }} [ Installing command line software with conda/mamba ]][conda] |
+| [:material-dna:{{ .contact-icon }} [ Downloading sequencing data from the Bauer Core ]][bauer] |
+| [:material-format-align-top:{{ .contact-icon }} [ Whole genome alignment with Cactus ]][wga] |
+| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-filter-variant-plus:{{ .contact-icon }} [ Adding a genome to a whole genome alignment ]][add-genome] |
+| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-vector-polyline-plus:{{ .contact-icon }} [ Adding an outgroup to a whole genome alignment ]][add-outgroup] |
+| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-file-replace-outline:{{ .contact-icon }} [ Replacing a genome in a whole genome alignment ]][replace-genome] |
+| [:curly_loop:{{ .contact-icon }} [ Pangenome inference with Cactus-minigraph ]][pangenome] |
+| [:material-dna:{{ .contact-icon }} [ How to annotate a genome ]][annotate] |
 
 **We are developing tutorials for other data science and bioinformatics tasks. Check back soon!**
 
-[conda]: tutorials/installing-command-line-software-conda-mamba.md
-[bauer]: tutorials/how-can-i-download-my-sequencing-data.md
-[wga]: tutorials/whole-genome-alignment-cactus.md
-[add-genome]: tutorials/add-to-whole-genome-alignment-cactus.md
-[add-outgroup]: tutorials/add-outgroup-to-whole-genome-alignment-cactus.md
-[replace-genome]: tutorials/replace-genome-whole-genome-alignment-cactus.md
-[pangenome]: tutorials/pangenome-cactus-minigraph.md
-[annotate]: tutorials/how-to-annotate-a-genome.md
+[conda]: Tutorials/installing-command-line-software-conda-mamba.md
+[bauer]: Tutorials/how-can-i-download-my-sequencing-data.md
+[wga]: Tutorials/whole-genome-alignment-cactus.md
+[add-genome]: Tutorials/add-to-whole-genome-alignment-cactus.md
+[add-outgroup]: Tutorials/add-outgroup-to-whole-genome-alignment-cactus.md
+[replace-genome]: Tutorials/replace-genome-whole-genome-alignment-cactus.md
+[pangenome]: Tutorials/pangenome-cactus-minigraph.md
+[annotate]: Tutorials/how-to-annotate-a-genome.md
 
 ---
 
@@ -43,7 +43,7 @@ don't understand a term that they heard or read.
 
 Let us know if there is something we should add!
 
-[View the Computing Glossary:material-arrow-right:](glossary.md){ .md-button .md-button--primary .centered }
+[View the Computing Glossary:material-arrow-right:](glossary.md){{ .md-button .md-button--primary .centered }}
 
 <!--
 
@@ -61,22 +61,7 @@ Let us know if there is something we should add!
 
 We have compiled a list of external resources and tagged them with the categories below. Click on each tag to see the links!
 
-{% set data = get_resources() %}
-{% set tag_counts = {} %}
-{% for r in data.links.values() if r.status=="active" %}
-    {% for tag in r.tags %}
-        {% set _ = tag_counts.setdefault(tag, 0) %}
-        {% set _ = tag_counts.__setitem__(tag, tag_counts[tag] + 1) %}
-    {% endfor %}
-{% endfor %}
-
-<div class="res-tag-table">
-{% for tag in data.tags | sort(case_sensitive=false) if data.tags[tag].status == "active" %}
-  <a class="res-tag-link" href="/resources/tags/{{ tag|replace(' ', '-') }}/">
-    {{ tag }} ({{ tag_counts.get(tag, 0) }})
-  </a>
-{% endfor %}
-</div>
+{tags_table}
 
 ---
 
@@ -84,63 +69,63 @@ We have compiled a list of external resources and tagged them with the categorie
 <!-- Page speciifc CSS -->
 
 <style>
-    h4 {
+    h4 {{
         font-weight: normal !important;
-    }
+    }}
 
-    .md-typeset th, .md-typeset td {
+    .md-typeset th, .md-typeset td {{
     white-space: normal;
     overflow-wrap: break-word;
     word-break: break-word;
-    }
+    }}
     /* Ensure text wraps in table cells */
 
 
-    table thead { display: none; }
+    table thead {{ display: none; }}
     .md-typeset table, 
     .md-typeset th, 
-    .md-typeset td {
+    .md-typeset td {{
         border: none !important;
         font-size: 1.1em !important;
-    }
+    }}
     /* Remove borders from table, th, and td */
 
     .md-typeset th,
-    .md-typeset td {
+    .md-typeset td {{
         padding-top: 0.7em !important;
         padding-bottom: 0.7em !important;
-    }
+    }}
 
     .md-typeset__table tr:nth-child(even):hover,
-    .md-typeset__table tbody tr:nth-child(even):hover {
+    .md-typeset__table tbody tr:nth-child(even):hover {{
         background-color: #f6f8fa !important;
-    }
+    }}
     .md-typeset__table tr:nth-child(odd):hover,
-    .md-typeset__table tbody tr:nth-child(odd):hover {
+    .md-typeset__table tbody tr:nth-child(odd):hover {{
         background-color: #ffffff !important;
-    }
+    }}
     /* Disable hover effect on table rows */    
 
-    .md-typeset tr:nth-child(3) td {
+    .md-typeset tr:nth-child(3) td {{
         padding-bottom: 0.1em !important;
-    }
+    }}
     /* Style ONLY the 3rd row of the first table on the page */
     
     .md-typeset tr:nth-child(4) td,
     .md-typeset tr:nth-child(5) td,
-    .md-typeset tr:nth-child(6) td {
+    .md-typeset tr:nth-child(6) td {{
         font-size: 0.92em !important;
         padding-top: 0.1em !important;
         padding-bottom: 0.1em !important;
         background-color: #ffffff !important;        
-    }
+    }}
     /* Style ONLY the 4th, 5th, and 6th rows of the first table on the page */
 
-    .md-typeset tr:nth-child(n+7):nth-child(odd) td {
+    .md-typeset tr:nth-child(n+7):nth-child(odd) td {{
         background-color: #f6f8fa !important;
-    }
-    .md-typeset tr:nth-child(n+7):nth-child(even) td {
+    }}
+    .md-typeset tr:nth-child(n+7):nth-child(even) td {{
         background-color: #fff !important;
-    }
+    }}
     /* Style all rows after the 6th row */    
 </style>

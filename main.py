@@ -1,3 +1,6 @@
+import os
+import json
+
 def define_env(env):
     author_avatars = {
         "Gregg Thomas": "/img/people/greggthomas.jpg",
@@ -55,3 +58,8 @@ def define_env(env):
     def get_author_url(author):
         name = author_str(author)
         return f"/people/{name.lower().replace(' ', '-')}/"
+    
+    @env.macro
+    def get_resources():
+        with open(os.path.join(env.project_dir, "data/resources/resources-primary.json"), "r") as f:
+            return json.load(f)

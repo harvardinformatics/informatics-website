@@ -8,6 +8,7 @@
 import json
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
+import mkdocs_gen_files
 
 ############################################################
 
@@ -72,20 +73,20 @@ def getPeopleByStatus(json_data, status_list):
 
 ############################################################
 
-print("-" * 20);
-print("RUNNING scripts/about_generatory.py TO GENERATE PROFILE CARDS")
+print("-" * 10);
+print("MKDOCS-GEN-FILES: scripts/about_generator.py")
 
 DATA_FILE = 'data/people/people.json'
-OUTPUT_FILE = 'docs/index.md'
+OUTPUT_FILE = 'index.md'
 
-print("READING PEOPLE JSON");
+#print("READING PEOPLE JSON");
 with open(DATA_FILE, "r", encoding="utf-8") as f:
     json_data = json.load(f)
 
 ####################
 
 # Prepare data
-print("PREPARING DATA");
+#print("PREPARING DATA");
 staff = getPeopleByStatus(json_data, ["active"])
 grouped_staff = groupPeopleByTitleAndChunk(staff, 2)
 alumni = getPeopleByStatus(json_data, ["moved"])
@@ -94,7 +95,7 @@ alumni.sort(key=parseEndYear, reverse=True)
 ####################
 
 # Set up Jinja2
-print("ADDING TEMPLATES");
+#print("ADDING TEMPLATES");
 env = Environment(
     loader=FileSystemLoader([
         "templates",
@@ -108,13 +109,13 @@ about_template = env.get_template("about_template.md")
 
 ####################
 
-print("WRITING OUTPUT FILE");
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+#print("WRITING OUTPUT FILE");
+with mkdocs_gen_files.open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write(about_template.render(
         staff_cards=staff_cards,
         alumni_cards=alumni_cards,
     ))
-print("DONE: Wrote docs/index.md")
-print("-" * 20);
+#print("DONE: Wrote docs/index.md")
+#print("-" * 20);
 
 ############################################################

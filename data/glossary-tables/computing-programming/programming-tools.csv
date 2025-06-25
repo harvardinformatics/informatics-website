@@ -1,5 +1,5 @@
 Term,Definition,Python example,R example
-Text editor,"A graphical program on a computer that displays plain text files on the screen and allows them to be edited. Many text editors designed for coding (*e.g.* <a href=""https://code.visualstudio.com/"" target=""_blank"">VSCode <span class=""icon-external""></span></a>) have features like syntax highlighting, code folding, and automatic indentation.",VSCode,VSCode
+Text editor,"A graphical program on a computer that displays plain text files on the screen and allows them to be edited. Many text editors designed for coding (*e.g.* <a href=""https://code.visualstudio.com/"" target=""_blank"">VSCode  :octicons-link-external-24:</a>) have features like syntax highlighting, code folding, and automatic indentation.",VSCode,VSCode
 Integrated Development Environment (IDE),A graphical program on a computer that contains tools to aid development in a specific programming language. These usually have an integrated **text editor**,Spyder,Rstudio
 Notebook,"Text formats that allow for the interleaving of code blocks and formatted text in a single document. Notebooks can be run interactively, with code blocks executed in real time.",Jupyter,Rmarkdown
 Markdown,A **syntax** for formatting plain text and interleaving code blocks that can be run when the document is generated.,*NA*,*NA*

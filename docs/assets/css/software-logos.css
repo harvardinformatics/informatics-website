@@ -1,0 +1,57 @@
+/*------------------------------------------------------*/
+/* Software logo styles */
+
+.software-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.software-logo-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.software-logo {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+.software-title-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.software-title {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+@media (max-width: 1025px) {
+  .software-cont {             
+    flex-direction: column;
+    justify-content: center;
+  }
+  .software-logo-cont {
+    min-height: 10vh;
+  }
+  .software-logo {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1vh;
+  }
+  .software-title-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+}
+/* Responsive styles */

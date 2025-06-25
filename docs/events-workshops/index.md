@@ -63,7 +63,7 @@ We host programming and pizza events the second Wednesday of every month. Join u
 
 ### Office hours
 
-We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest Building B227.45. If you can't make it in person, you can always contact us or ask your question on [our Slack channel](../contact.md)!
+We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest Building B227.45. If you can't make it in person, you can always contact us or ask your question on [our Slack channel](../contact/index.md)!
 
 ## Calendar
 

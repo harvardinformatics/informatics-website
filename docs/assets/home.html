@@ -34,67 +34,6 @@
         padding-top: 0 !important;
     }
 
-    #about-us {
-        opacity: 0;
-        height: 0;
-        margin: 0;
-    }
-
-    /* #people {
-        opacity: 0;
-        height: 0;
-        margin: 0;
-    } */
-
-    .banner-row-container {
-        max-width: unset !important;
-        margin: 0 !important;
-        padding-top: .0rem !important;
-        height: 40vh !important;
-        min-height: 300px !important;
-        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.extra.home_gradient_hsla }} 99%, {{ config.extra.home_gradient_hsla }} 99%); */
-        /* This is used for the background gradient */
-
-        background-image: url(img/banners/IMG_7404.jpg);
-        background-position: center center;
-        /* The default background if javascript is disabled */
-
-        background-repeat: no-repeat;
-        /* background-attachment: fixed; */
-        
-        background-clip: border-box;
-        background-origin: padding-box;
-        /* -moz-background-size: cover;
-        background-size: cover; */
-        background-size: 100% auto !important;
-            -moz-background-size: 100% auto !important;
-        /* This stuff is used for the background image */
-    }
-
-    @media (max-width: 1025px) {
-        .banner-row-container { background-attachment: scroll; }
-    }
-
-    @media (max-width: 800px) {
-    .banner-row-container {
-        background-size: cover !important;
-        -moz-background-size: cover !important;
-        }
-    }    
-
-    .banner-row {
-        height:100% !important;
-        background-color: rgba(0,0,0,0.5);
-        /* Should be uncommented for background image */
-
-        /* background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1) 99%, rgba(0,0,0,1) 99%); */
-        /* Should be uncommented for background image for neat gradient effect */
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 </style>
 
 <!-- Main site entry button descriptions -->
@@ -152,33 +91,6 @@
 
     </div>
 </div>
-
-
-<script>
-    // Array of image paths
-    var images = [
-        {path: 'img/banners/IMG_1445.jpg', position: 'center 25%'}, 
-        {path: 'img/banners/IMG_1867.jpg', position: 'center 15%'},
-        {path: 'img/banners/IMG_2171.jpg', position: 'center 13%'},
-        {path: 'img/banners/IMG_2177.jpg', position: 'center 70%'},
-        {path: 'img/banners/IMG_3075.jpg', position: 'center 48%'},
-        {path: 'img/banners/IMG_6113.jpg', position: 'center 75%'},
-        {path: 'img/banners/IMG_6203.jpg', position: 'center 50%'},
-        {path: 'img/banners/IMG_7402-HDR.jpg', position: 'center 50%'},
-        {path: 'img/banners/IMG_7404.jpg', position: 'center 50%'}
-    ];
-    
-    // Generate a random index
-    var index = Math.floor(Math.random() * images.length);
-    
-    // Select an image path
-    var image = images[index];
-    
-    // Set the background image
-    var banner = document.querySelector('.banner-row-container');
-    banner.style.backgroundImage = 'url(' + image.path + ')';
-    banner.style.backgroundPosition = image.position;
-</script>
 
 {% endblock %}
 

@@ -21,7 +21,7 @@
 
     [Research Computing :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"} manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing support for core facility software via the Software Operations group, and providing training, consultation, and collaborative project work for bioinformatics needs through the Bioinformatics group. 
 
-    You can contact Research Computing via their [contact page :octicons-link-external-24:](https://www.rc.fas.harvard.edu/about/contact/){:target="_blank"} for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact.md).
+    You can contact Research Computing via their [contact page :octicons-link-external-24:](https://www.rc.fas.harvard.edu/about/contact/){:target="_blank"} for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact/index.md).
 
 ??? question "How can I know about future workshops?"
 
@@ -33,7 +33,7 @@
 
     ##### Can you run a workshop on X?
 
-    We are always looking to run workshops that people are interested in! Please [contact us](../contact.md) with your suggestions. We can also run a workshop just for your lab group or department if you have a specific need.
+    We are always looking to run workshops that people are interested in! Please [contact us](../contact/index.md) with your suggestions. We can also run a workshop just for your lab group or department if you have a specific need.
 
 ??? question "Can I install command line software on Windows?"
 
@@ -51,19 +51,19 @@
 
     ##### Do you charge for services?
 
-    Training and consultations are provided free-of-charge to the Harvard FAS community. While we do not require funding for short-term collaborations with the Harvard FAS community on a trial basis, extended projects do require a funding arrangment if staff time will be devoted to the collaboration. Please [contact us](../contact.md) to discuss your needs.
+    Training and consultations are provided free-of-charge to the Harvard FAS community. While we do not require funding for short-term collaborations with the Harvard FAS community on a trial basis, extended projects do require a funding arrangment if staff time will be devoted to the collaboration. Please [contact us](../contact/index.md) to discuss your needs.
 
 ??? question "How do I arrange a consultation?"
 
     ##### How do I arrange a consultation?
 
-    Consultations involving sequencing at the Bauer Core should be requested [here :octicons-link-external-24:](https://bauercore.fas.harvard.edu/consultation-request-form){:target="_blank"}. For other projects, please use our [contact form](../contact.md)
+    Consultations involving sequencing at the Bauer Core should be requested [here :octicons-link-external-24:](https://bauercore.fas.harvard.edu/consultation-request-form){:target="_blank"}. For other projects, please use our [contact form](../contact/index.md)
 
 ??? question "What trainings are available?"
 
     ##### What trainings are available?
 
-    We post trainings on our [Events & Workshops page](../events-workshops/index.md). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact.md) for more details. 
+    We post trainings on our [Events & Workshops page](../events-workshops/index.md). We are also available to develop specialized trainings for your lab group or department. Please [contact us](../contact/index.md) for more details. 
 
 ??? question "How do I join the FAS Bioinformatics Slack?"
 
@@ -75,7 +75,7 @@
 
     ##### What's the best way to contact the Bioinformatics team?
 
-    For all questions, you can use the [contact form](../contact.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events & Workshops](../events-workshops/index.md#office-hours) for times).
+    For all questions, you can use the [contact form](../contact/index.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events & Workshops](../events-workshops/index.md#office-hours) for times).
 
 ??? question "How can I run a Snakemake workflow on the Cannon cluster?"
 
@@ -90,6 +90,6 @@
 
     ##### How can I download my sequencing data?
 
-    See our tutorial [here](../resources/Tutorials/how-can-i-download-my-sequencing-data.md).
+    See our tutorial [here](../resources/tutorials/how-can-i-download-my-sequencing-data.md).
 
 ---

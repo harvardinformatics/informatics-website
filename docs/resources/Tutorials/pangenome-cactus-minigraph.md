@@ -14,8 +14,8 @@ For aligning genome assemblies from the same species for population genomic anal
     Here is the rulegraph for the pipeline. It is presented in two parts because the **split** rule breaks up the workflow by chromosome/scaffold for efficient submission of **align** steps. Even though it is presented here as two rulegraphs, the pipeline does all steps in one command, with **align** picking up where **split** left off.
 
     <center>
-        <img src="../../img/minigraph-rulegraph-1.png" alt="A directed acyclic graph showing the rules up to split for the pipeline.'">
-        <img src="../../img/minigraph-rulegraph-2.png" alt="A directed acyclic graph showing the rules starting from align for the pipeline.'">
+        <img src="../../../../img/tutorials/minigraph-rulegraph-1.png" alt="A directed acyclic graph showing the rules up to split for the pipeline.'">
+        <img src="../../../../img/tutorials/minigraph-rulegraph-2.png" alt="A directed acyclic graph showing the rules starting from align for the pipeline.'">
     </center>
 
 !!! tip "This pipeline is suitable for aligning and constructing pangenomes from samples of the same species"
@@ -340,7 +340,7 @@ For more information about all outputs, see [Cactus's minigraph documentation se
 
     Please [search for or create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
-    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
+    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact/index.md) to help you through your errors.
 
 ??? question "5. I have an idea to improve or add to the pipeline. What do I do?"
 

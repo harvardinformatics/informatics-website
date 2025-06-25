@@ -23,7 +23,7 @@ We also offer one-on-one consultations to researchers who need help with their p
 
 To schedule a consult or view info about office hours and our Slack channel, please visit our Contact page:
 
-[Contact us :material-arrow-right:](contact.md){ .md-button .md-button--primary .centered }
+[Contact us :material-arrow-right:](contact/index.md){ .md-button .md-button--primary .centered }
 
 And here is a sampling of some topics of recent consults:
 
@@ -33,7 +33,7 @@ And here is a sampling of some topics of recent consults:
 
     **Lead Bioinformatician**: Gregg Thomas
 
-    :fontawesome-brands-slack: The researcher needed help running whole genome alignment with Cactus using our [Cactus Snakemake workflow](resources/Tutorials/whole-genome-alignment-cactus.md).
+    :fontawesome-brands-slack: The researcher needed help running whole genome alignment with Cactus using our [Cactus Snakemake workflow](resources/tutorials/whole-genome-alignment-cactus.md).
 
     ---
 
@@ -84,7 +84,7 @@ As of February 2025, Software Operations has moved to [Research Computing :octic
 
 ## Where to Find Us
 
-We are located in [Northwest Science Building :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){:target="_blank"}, on the B2 floor, near the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact.md).
+We are located in [Northwest Science Building :octicons-link-external-24:](https://mapprod.cadm.harvard.edu/portal/apps/indoors/?appid=2c3969f8d1b14147920610a68f6db713&itemUniqueIdField=facility_id&itemSourceKey=Facilities&itemUniqueId=CA-04560){:target="_blank"}, on the B2 floor, near the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}. Our offices are in the B227 suite. We hold regular office hours, and you can also contact us [here](contact/index.md).
 
 Harvard FAS Informatics Group  
 [Northwest Building :octicons-link-external-24:](https://nw.fas.harvard.edu/){:target="_blank"} B227  

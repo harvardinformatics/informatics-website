@@ -13,7 +13,7 @@ Once you have your [HAL file with a whole genome alignment](whole-genome-alignme
     Here is the rulegraph for the pipeline. It performs two rounds of alignment, one for the new node in the tree, and one to re-do the parent of the new node in the tree.
 
     <center>
-        <img src="../../img/cactus-replace-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
+        <img src="../../../../img/tutorials/cactus-replace-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
     </center>
 
 ## Getting started
@@ -425,7 +425,7 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
 
     Please [search for or create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
-    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
+    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact/index.md) to help you through your errors.
 
 ??? question "6. I have an idea to improve or add to the pipeline. What do I do?"
 

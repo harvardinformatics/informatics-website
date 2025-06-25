@@ -41,7 +41,7 @@
   margin-bottom: 0.2em;
   text-align: center;
 }
-.profile-card-main {
+.profile-card-main { 
   display: flex;
   flex-direction: row;
   align-items: flex-start;

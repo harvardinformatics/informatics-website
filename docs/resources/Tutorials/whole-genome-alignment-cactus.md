@@ -13,7 +13,7 @@ Comparative genomics requires alignments between sequences from different popula
     Here is the rulegraph for the pipeline. It works in rounds based on the shape of the input phylogeny (hence the cycle). First, genomes at the tips are masked and then all internal nodes are aligned.
 
     <center>
-        <img src="../../img/cactus-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
+        <img src="../../../../img/tutorials/cactus-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
     </center>
 
 !!! tip "This pipeline is suitable for aligning genomes from different species"
@@ -220,7 +220,7 @@ Click below to take a look at an example to get a sense for how many resources y
     We have run the pipeline on 22 turtle genomes. The average genome size is 2210 Mb (2.2 Gb):
     
     <center>
-        <img src="../../img/turtles-genome-sizes.png" alt="A boxplot showing a distribution of genome sizes for 22 turtles">
+        <img src="../../../../img/tutorials/turtles-genome-sizes.png" alt="A boxplot showing a distribution of genome sizes for 22 turtles">
     </center>    
     
     We allocated the following resources for the Cactus rules:
@@ -238,7 +238,7 @@ Click below to take a look at an example to get a sense for how many resources y
     This resulted in the following real run times:
 
     <center>
-        <img src="../../img/turtles-cactus-runtime.png" alt="A figure with multiple boxplots showing  the distribution of run time on 22 turtle genomes">
+        <img src="../../../../img/tutorials/turtles-cactus-runtime.png" alt="A figure with multiple boxplots showing  the distribution of run time on 22 turtle genomes">
     </center>
 
     In general, increasing or decreasing CPUs or GPUs available will decrease runtime.
@@ -246,7 +246,7 @@ Click below to take a look at an example to get a sense for how many resources y
     And max memory usages:
 
     <center>
-        <img src="../../img/turtles-cactus-maxmem.png" alt="A figure with multiple boxplots showing the distribution of max memory usage on 22 turtle genomes">
+        <img src="../../../../img/tutorials/turtles-cactus-maxmem.png" alt="A figure with multiple boxplots showing the distribution of max memory usage on 22 turtle genomes">
     </center>
 
     Increasing available memory may also decrease runtime.
@@ -468,7 +468,7 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
 
     Please [search for or create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
-    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
+    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact/index.md) to help you through your errors.
 
 ??? question "7. I have an idea to improve or add to the pipeline. What do I do?"
 

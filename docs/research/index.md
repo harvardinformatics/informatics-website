@@ -25,7 +25,7 @@ A major focus of recent work in the group has been to assist with the assembly a
 
 Cheap long-read sequencing has made assembling non-model genomes routine; the main obstacle is now accurate annotation. Researchers must pick from many gene-prediction tools, decide which extra data to include, and gauge annotation quality. We benchmarked 12 methods on 21 vertebrate, plant, and insect genomes to assess performance and the value of RNA-seq. Across BUSCO recovery, CDS length, and false-positive rate, three approaches—annotation transfer via TOGA, BRAKER3, and the RNA-seq assembler StringTie—were consistently best, though TOGA lagged for BUSCO in some monocots. Method choice depends on whole-genome alignment feasibility, RNA-seq availability, and the need to capture noncoding transcripts. When alignments aren’t feasible, adding RNA-seq markedly improves annotations.
 
-**Related tutorial:** [How to annotate a genome](../resources/Tutorials/how-to-annotate-a-genome.md)
+**Related tutorial:** [How to annotate a genome](../resources/tutorials/how-to-annotate-a-genome.md)
 
 !!! abstract "Publication"
 
@@ -103,7 +103,7 @@ We developed scclusteval, which is a permutation based method to quantify the ro
 
 We have also developed two tools, HieRFIT and IP4CI, which both seek to address weaknesses in current cell type identification approaches. In particular, while existing tools are often extremely powerful at projecting cell labels from large atlases to new datasets within species, it can be challenging to align cell types across species. HieRFIT uses a random forest method that allows for cell type projection to internal (uncertain) nodes; IP4CI uses canonical correlation analysis on pathway-level expression, as opposed to individual genes, to attempt to better preserve biological information across species. 
 
-<img class="inline-icon" src="../img/icons/bi-logo.svg" width="35" alt="Boehringer Ingelheim logo"> **The development of HieRFIT and IP4CI were supported by a collaborative agreement with [Boehringer Ingelheim :octicons-link-external-24:](https://www.boehringer-ingelheim.com/us).** 
+<span class="twemoji inline-icon-med">{% include "/assets/.icons/bi-logo.svg" %}</span> **The development of HieRFIT and IP4CI were supported by a collaborative agreement with [Boehringer Ingelheim :octicons-link-external-24:](https://www.boehringer-ingelheim.com/us).** 
 
 **Software**: [scclusteval :octicons-link-external-24:](https://github.com/harvardinformatics/scclusteval){ .target="_blank" }, [HieRFIT :octicons-link-external-24:](https://github.com/harvardinformatics/HieRFIT){ .target="_blank" }
 
@@ -184,7 +184,7 @@ The group has worked on a variety of topics related to population genetics. Thes
 
 **Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"}), [Chen Lab :octicons-link-external-24:](https://chenlab.oeb.harvard.edu/){target="_blank"} ([University of Rochester, Department of Biology :octicons-link-external-24:](https://www.sas.rochester.edu/bio/index.html){target="_blank"}), [Erik Garrison :octicons-link-external-24:](http://hypervolu.me/~erik/erik_garrison.html){target="_blank"} ([University of Tennessee Health Science Center :octicons-link-external-24:](https://www.uthsc.edu/){target="_blank"})
 
-<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Edwards lab, Informatics group, and collaborators.**
+<span class="twemoji inline-icon">{% include "/assets/.icons/nih-logo.svg" %}</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Edwards lab, Informatics group, and collaborators.**
 
 We helped generate high quality genome assemblies for 46 individual scrub jays across four species using HiFi PacBio sequencing. We developed the pipeline for assembly and scaffolding of the individual genomes, and then used those assemblies to construct a pangenome graph for the sample. This allowed us to characterize population and species level structural variation. In addition to developing the pipelines and generating the data, we also assisted with genome annotation and some downstream population genetic analysis.
 
@@ -230,7 +230,7 @@ The Informatics group has been part of a long term collaboration to develop meth
 
 **Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"}), [Liu Lab :octicons-link-external-24:](https://sites.harvard.edu/junliu/){target="_blank"} ([Statistics :octicons-link-external-24:](https://statistics.fas.harvard.edu/){target="_blank"})
 
-<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
+<span class="twemoji inline-icon">{% include "/assets/.icons/nih-logo.svg" %}</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
 
 PhyloAcc is software that was developed in the Edwards, Liu, and Informatics labs to study molecular evolution of non-coding genomic regions in a phylogenetic context. Version 1 was used to study convergent substitution rate accelerations in marine mammals and flightless birds to identify possible changes in regulatory regions that may lead to the adaptations of those respective groups. Version 2 of PhyloAcc expanded on version 1 by accounting for phylogenetic discordance and providing a friendlier user interface and batching via Snakemake.
 
@@ -251,9 +251,9 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
 
 ## Comparative Genomics and Convergent Evolution
 
-<img class="inline-icon" src="../img/icons/nih-logo.svg" width="40" alt="NIH logo"> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
+<span class="twemoji inline-icon">{% include "/assets/.icons/nih-logo.svg" %}</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
 
-<img class="inline-icon" src="../img/icons/nsf-logo.svg" width="40" alt="NSF logo"> **Funded by an [NSF :octicons-link-external-24:](https://www.nsf.gov/){target="_blank"} grant to the Informatics group**
+<span class="twemoji inline-icon">{% include "/assets/.icons/nsf-logo.svg" %}</span> **Funded by an [NSF :octicons-link-external-24:](https://www.nsf.gov/){target="_blank"} grant to the Informatics group**
 
 
 Convergent evolution describes the phenomenon where a similar or identical phenotype evolves in multiple independent lineages. Classic examples include diverse traits such as the evolution of echolocation in bats, cetaceans, and some species of birds; the recurrent evolution of crab-like body plans in crustaceans (carcinisation); and loss of limbs in snakes and caecilians.
@@ -333,7 +333,25 @@ We have also worked on a variety of other topics as needed to assist with projec
 
 <style>
     .inline-icon {
-        vertical-align: middle;
+        width: 40px !important;
+        height: auto !important;        
+        vertical-align: middle !important;
+        align-items: center !important;
+    }
+    .inline-icon svg {
+        width: 40px !important;
+        height: auto !important;
+        display: inline-block;      
+    }
+    .inline-icon-med {
+        width: 35px !important;
+        height: auto !important;        
+        vertical-align: middle !important;
+    }
+    .inline-icon-med svg {
+        width: 35px !important;
+        height: auto !important;
+        display: inline-block;       
     }
 
     .md-typeset__table {

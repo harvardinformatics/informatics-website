@@ -13,7 +13,7 @@ Once you have your [HAL file with a whole genome alignment](whole-genome-alignme
     Here is the rulegraph for the pipeline. This one is fairly straightforward: the new outgroup genome is aligned to the root sequence from the original HAL file, creating a small sub-alignment with a new root. The old alignment is then merged into this one by the old root node.
 
     <center>
-        <img src="../../img/cactus-add-outgroup-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
+        <img src="../../../../img/tutorials/cactus-add-outgroup-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.'">
     </center>
 
 ## Getting started
@@ -151,7 +151,7 @@ Now that we have the tree, we need to figure out where to put our new genome. We
 We borrow and slightly modify an [image from the cactus documentation :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md#adding-a-new-genome){:target="_blank"} to visualize these pieces of information on an example tree:
 
 <center>
-    <img src="../../img/cactus-adding-outgroup.png" alt="Two panels, the first showing a phylogenetic tree with 3 tips and internal nodes labeled, the second showing a 4th tip being added to the tree as an outgroup.">
+    <img src="../../../../img/tutorials/cactus-adding-outgroup.png" alt="Two panels, the first showing a phylogenetic tree with 3 tips and internal nodes labeled, the second showing a 4th tip being added to the tree as an outgroup.">
 </center> 
 
 In this context, we are adding the genome with the name **"newGenome"** as an outgroup to our HAL. To do so, we are creating a new root in our tree called **"newRoot"** and connecting it to the original root node, **"5"**. We must supply lengths for the two new branches descending from newRoot.
@@ -441,7 +441,7 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
 
     Please [search for or create an issue on the pipeline's github :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/issues){:target="_blank"} that includes information about your input files, the command you ran, and the error that you are getting. The text of any log files would also be appreciated.
 
-    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact.md) to help you through your errors.
+    Additionally, if you are at Harvard, there are [several ways to contact us](../../contact/index.md) to help you through your errors.
 
 ??? question "6. I have an idea to improve or add to the pipeline. What do I do?"
 
