@@ -88,14 +88,15 @@ We have compiled a list of external resources and tagged them with the categorie
         font-weight: normal !important;
     }
 
+    /* ----- */
+    /* Style the table that displays the tutorials */
     .md-typeset th, .md-typeset td {
     white-space: normal;
     overflow-wrap: break-word;
     word-break: break-word;
     }
     /* Ensure text wraps in table cells */
-
-
+    
     table thead { display: none; }
     .md-typeset table, 
     .md-typeset th, 

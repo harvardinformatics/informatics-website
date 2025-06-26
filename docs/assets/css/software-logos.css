@@ -34,6 +34,9 @@
   font-size: 2em;
 }
 
+/*------------------------------------------------------*/
+/* Responsive styles */
+
 @media (max-width: 1025px) {
   .software-cont {             
     flex-direction: column;
@@ -54,4 +57,3 @@
     width: 100% !important;
   }
 }
-/* Responsive styles */

@@ -6,16 +6,6 @@ authors:
 
 {{ author_row(page) }}
 
-
-<style>
-    details > h5 {
-        font-size: 0.01em !important;       /* almost invisible but still present! */
-        color: transparent !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-</style>
-
 With the rapid increase in the number of new genomes being assembled, the strigent input data requirements for publicly available resources for automating genome annotation (e.g. Ensembl and NCBI), and inevitable increasing wait times for the production of new annotations by those resources, researchers will be increasingly faced with having to generate annotations for their new genome builds themselves. The two immediate challenges they face are:
 
 1. Deciding which tools are best suited for generating a high-quality annotation, and 
@@ -145,3 +135,37 @@ For a new genome assembly, quality metrics will need to be used that don't rely 
 Although we have discussed annotation method types and provided a framework for choosing which methods to use, and some straightforward metrics for checking annotation quality, in most instances, your annotation will be improved with some filtering. For example, extremely short single-exon transcripts with near-zero expression (after mapping RNA-seq reads to the transcripts) are likely to be enriched for false positives. In particular, we know from our evaluation of annotation methods, that HMM-based ab initio tools can predict large numbers of protein-coding transcripts that fall outside of known protein-coding gene intervals, and that are almost certainly dominated by false positives. Setting filters to remove as much of this detritus as possible while minimizing the removal of real transcript will requires some data exploration and fine-tuning, as there is unlikely to be a one-size-fits all set of filters for all method-species combinations.
 
 ---
+
+<!-- --------------------------------- -->
+<!-- Page specfic CSS -->
+
+<style>
+    /* ----- */
+    /* Section headers */
+    h2 {
+        text-align: center !important;
+        border-bottom: 2px solid #333333 !important;
+        border-top: 2px solid #333333 !important;
+        font-weight: 500 !important;
+    }
+    
+    /* ----- */
+    /* For the admonitions, so they have an entry in the toc that doesn't show up on the page */
+    details > h5 {
+        font-size: 0.01em !important;       /* almost invisible but still present! */
+        color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* ----- */
+    /* Hide all 2nd-level navs */
+    .md-nav--secondary .md-nav__item .md-nav {
+        display: none !important;
+    }
+
+    /* Show when parent has .expanded class, which is added by js/collapse_toc.js */
+    .md-nav--secondary .md-nav__item.expanded > .md-nav {
+        display: block !important;
+    }    
+</style>

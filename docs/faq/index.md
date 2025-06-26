@@ -1,15 +1,9 @@
-<style>
-/* FAQ styles */
-    details > h5 {
-        display: none;
-    }
-    article h3 {
-        display: none;
-    }
-    summary {
-        font-size: larger;
-    }
-</style>
+---
+title: Frequently asked questions
+---
+
+# Frequently Asked Questions
+
 
 !!! tip "Click on each question to reveal the answer"
 
@@ -93,3 +87,19 @@
     See our tutorial [here](../resources/tutorials/how-can-i-download-my-sequencing-data.md).
 
 ---
+
+<!-- --------------------------------- -->
+<!-- Page specfic CSS -->
+
+<style>
+/* FAQ styles */
+    details > h5 {
+        display: none;
+    }
+    article h3 {
+        display: none;
+    }
+    summary {
+        font-size: larger;
+    }
+</style>

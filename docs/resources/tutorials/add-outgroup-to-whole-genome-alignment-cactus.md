@@ -455,6 +455,8 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
 <!-- Page specfic CSS -->
 
 <style>
+    /* ----- */
+    /* Section headers */
     h2 {
         text-align: center !important;
         border-bottom: 2px solid #333333 !important;
@@ -462,6 +464,8 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
         font-weight: 500 !important;
     }
     
+    /* ----- */
+    /* For the admonitions, so they have an entry in the toc that doesn't show up on the page */
     details > h5 {
         font-size: 0.01em !important;       /* almost invisible but still present! */
         color: transparent !important;
@@ -469,12 +473,13 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
         padding: 0 !important;
     }
 
+    /* ----- */
     /* Hide all 2nd-level navs */
     .md-nav--secondary .md-nav__item .md-nav {
         display: none !important;
     }
 
-    /* Show when parent has .expanded class */
+    /* Show when parent has .expanded class, which is added by js/collapse_toc.js */
     .md-nav--secondary .md-nav__item.expanded > .md-nav {
         display: block !important;
     }    

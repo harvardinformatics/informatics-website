@@ -14,7 +14,7 @@ nav:
 # This is a list of files that will not be included in the navigation bar, but will still be built by MkDocs.
 # Having this prevents the message listing these files when building the site
 not_in_nav: | 
-  newsletter.md
+  newsletter.md 
   people/*
   events-workshops/previous-events.md
   resources/tutorials/*.md
@@ -24,7 +24,7 @@ not_in_nav: |
   _includes/*
 
 markdown_extensions:
-  - admonition
+  - admonition  
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
@@ -65,7 +65,7 @@ theme:
     - content.action.view
     - content.footer.last-update  # Shows the last update in the footer    
   language: en
-  favicon: img/fasifx/Icon_bw.png
+  favicon: img/fasifx/Icon_bw.png 
   logo: img/fasifx/fas-shield-logo.png
   palette:
     scheme: default
@@ -87,8 +87,8 @@ theme:
 plugins:
   - search
   - table-reader  
-  - macros
-  - gen-files:
+  - macros      # This plugin allows you to use Jinja2-style macros in your markdown files, see main.py for implemented macros.
+  - gen-files:  # This plugin generates files from templates and data files
       scripts: 
         - scripts/about_generator.py 
         - scripts/tags_generator.py
@@ -98,7 +98,8 @@ plugins:
         - '*student.ipynb' 
         - '2024-Fall/Python-Day*.ipynb'
         # - '*.ipynb' # for development, uncomment this line to prevent building all notebooks with each change. be sure to re-comment before pushing to remote (though re-commenting now handled with pre-commit hooks).
-  - git-revision-date-localized:
+  - git-revision-date-localized:  # This plugin adds the last updated date to the footer of each page
+      timezone: America/New_York
       enable_creation_date: true
       exclude:
         - 'resources/tags/*'
@@ -159,24 +160,16 @@ extra:
   # home_gradient_hsla: hsla(1deg,82%,20%,1) # Default Green: hsla(160deg,47%,55%,1)
 
   # Custom Homepage Button(s)
-  home_button1_name: Events                  # Comment this parameter out to remove the button.
-  #home_button1_url: events/                       # This path starts at your root mkdocs directory.
-  home_button1_theme: md-button # Options: "md-button", "md-button md-button--primary"
-  #home_button1_icon: people                        # Options: "people", "gear", "image"
-  #home_button1_blurb: |                            # Short description of this button / section.
-  #  Learn about our group's goals and the people who make up the FAS Informatics Group
+  home_button1_name: Events             # Comment this parameter out to remove the button.
+  home_button1_url: events-workshops/   # This path starts at your root mkdocs directory.
+  home_button1_theme: md-button         # Options: "md-button", "md-button md-button--primary"
 
-  home_button2_name: FAQ   # Comment this parameter out to remove the button.
-  #home_button2_url: faq/    # This path starts at your root mkdocs directory.
-  home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
-  #home_button2_icon: gear       # Options: "people", "gear", "image"
-  #home_button2_blurb: |         # Short description of this button / section.
-  #  Workshops, tutorials, and other resources for learning bioinformatics
+  home_button2_name: FAQ                # Comment this parameter out to remove the button.
+  home_button2_url: faq/                # This path starts at your root mkdocs directory.
+  home_button2_theme: md-button         # Options: "md-button", "md-button md-button--primary"
 
-  home_button3_name: Contact&nbsp;Us   # Comment this parameter out to remove the button.
-  #home_button3_url: contact    # This path starts at your root mkdocs directory.
-  home_button3_theme: md-button # Options: "md-button", "md-button md-button--primary"
-  #home_button3_icon: gear      # Options: "people", "gear", "image"
-  #home_button3_blurb: |         # Short description of this button / section.
-  #  Software developed by the FAS Informatics Group
+
+  home_button3_name: Contact&nbsp;Us    # Comment this parameter out to remove the button.
+  home_button3_url: contact/            # This path starts at your root mkdocs directory.
+  home_button3_theme: md-button         # Options: "md-button", "md-button md-button--primary"
 

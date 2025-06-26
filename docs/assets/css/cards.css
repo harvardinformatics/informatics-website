@@ -1,5 +1,6 @@
 /*------------------------------------------------------*/
-/* Profile cards */
+/* Profile card styles */
+
 .profile-card, .profile-card * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -146,7 +147,7 @@
 }
 
 /*------------------------------------------------------*/
-/* Alumni cards */
+/* Alumni card styles */
 
 .alumni-cards {
   display: grid;

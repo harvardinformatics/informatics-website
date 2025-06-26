@@ -3,8 +3,6 @@
 
 {% extends "base.html" %}
 
-
-
 {% block hero %}
 
 <!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
@@ -39,9 +37,7 @@
 <!-- Main site entry button descriptions -->
 <div class="banner-row-container">
     <div class="row banner-row">
-
         <div class="col-24-24 banner-content-col">
-
             <div class="row banner-content-row">
 
                 <div class="col-6-24 margin"></div>
@@ -53,10 +49,9 @@
                     </div>
 
                     <div class="row banner-buttons md-typeset">
-                        
                         <div class="col-6-24 banner-button">
                             {%- if config.extra.home_button1_name -%}
-                            <a href="events-workshops/" title="Upcoming events and workshops" class="{{ config.extra.home_button1_theme }}">
+                            <a href="{{ config.extra.home_button1_url }}" title="Upcoming events and workshops" class="md-button">
                                 {{ config.extra.home_button1_name }}
                             </a>
                             {%- endif -%}
@@ -64,7 +59,7 @@
                         <div class="col-1-24 margin btn-margin"></div>
                         <div class="col-6-24 banner-button">
                             {%- if config.extra.home_button2_name -%}
-                            <a href="faq" title="Check out some answers to frequently asked questions" class="{{ config.extra.home_button2_theme }}">
+                            <a href="{{ config.extra.home_button2_url }}" title="Check out some answers to frequently asked questions" class="md-button">
                                 {{ config.extra.home_button2_name }}
                             </a>
                             {%- endif -%}
@@ -72,7 +67,7 @@
                         <div class="col-1-24 margin btn-margin"></div>
                         <div class="col-6-24 banner-button">
                             {%- if config.extra.home_button3_name -%}
-                            <a href="contact" title="Different ways to get in touch with us" class="{{ config.extra.home_button3_theme }}">
+                            <a href="{{ config.extra.home_button3_url }}" title="Different ways to get in touch with us" class="md-button">
                                 {{ config.extra.home_button3_name }}
                             </a>
                             {%- endif -%}
@@ -88,7 +83,6 @@
 
             </div>
         </div>
-
     </div>
 </div>
 

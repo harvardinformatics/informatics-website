@@ -332,6 +332,8 @@ We have also worked on a variety of other topics as needed to assist with projec
 <!-- Page specfic CSS -->
 
 <style>
+    /* ----- */
+    /* Sizing of the custom icons (NIH, NSF, BI logos) */
     .inline-icon {
         width: 40px !important;
         height: auto !important;        
@@ -354,12 +356,14 @@ We have also worked on a variety of other topics as needed to assist with projec
         display: inline-block;       
     }
 
+    /* ----- */
+    /* Styling the table for the icon key at the top */
     .md-typeset__table {
         width: 100% !important;
         max-width: 1280px !important;
     }
     /* Ensure table takes full width */
-    
+
     .md-typeset__table table {
         width: 100% !important;
         table-layout: fixed;
@@ -383,6 +387,8 @@ We have also worked on a variety of other topics as needed to assist with projec
     }
     /* Remove borders from table, th, and td */
 
+    /* ----- */
+    /* Styling the research category icons */
     .research-icon {
         font-size: 1.2em !important;
         vertical-align: middle !important;
@@ -392,6 +398,8 @@ We have also worked on a variety of other topics as needed to assist with projec
         /* color: #a51c30; */
     }
 
+    /* ----- */
+    /* Section headers */
     h2 {
         text-align: center !important;
         border-bottom: 2px solid #333333 !important;
@@ -399,12 +407,13 @@ We have also worked on a variety of other topics as needed to assist with projec
         font-weight: 500 !important;
     }
 
+    /* ----- */
     /* Hide all 2nd-level navs */
     .md-nav--secondary .md-nav__item .md-nav {
         display: none !important;
     }
 
-    /* Show when parent has .expanded class */
+    /* Show when parent has .expanded class, which is added by js/collapse_toc.js */
     .md-nav--secondary .md-nav__item.expanded > .md-nav {
         display: block !important;
     }

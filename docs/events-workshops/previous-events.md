@@ -54,6 +54,7 @@ These are topics of previous events with no attached contents and the dates of o
 
 <!-- --------------------------------- -->
 <!-- Page specfic CSS -->
+<!-- These styles modify the table class -->
 
 <style>
     .md-typeset__table {

@@ -40,6 +40,17 @@ def getContact(person, json_data):
                     return "\n---\n\n## Where to find:\n\n" + " &nbsp; ".join(out) if out else ""
     return ""
 
+####################
+
+def getProfile(person, json_data):
+    # Returns the profile text for a person
+    for group in json_data.values():
+        for subgroup in group.values():
+            for name, info in subgroup.items():
+                if info.get("name", name) == person:
+                    return info.get("profile", "")
+    return ""
+
 ############################################################
 
 print("-" * 10);
@@ -135,9 +146,11 @@ for slug, data in author_to_pages.items():
     title = getTitle(person, json_data);
 
     bio = "";
-    if os.path.exists(f"data/people/{slug}.md"):
-        with open(f"data/people/{slug}.md", "r", encoding="utf-8") as bio_file:
+    if os.path.exists(f"data/people/bios/{slug}.md"):
+        with open(f"data/people/bios/{slug}.md", "r", encoding="utf-8") as bio_file:
             bio = bio_file.read()
+    else:
+        bio = getProfile(person, json_data)
 
     contact_links = getContact(person, json_data)
 
