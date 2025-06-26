@@ -29,6 +29,14 @@ And here is a sampling of some topics of recent consults:
 
 !!! success "Recent FAS Informatics Consults"
 
+    **Consultee**: A grad student in the [Neafsey lab :octicons-link-external-24:](https://hsph.harvard.edu/research/neafsey-lab/){:target="_blank"} ([HSPH :octicons-link-external-24:](https://hsph.harvard.edu/){:target="_blank"})
+
+    **Lead Bioinformatician**: Lei Ma
+
+    A nextflow pipeline wasn't running properly on the Harvard cluster and we were able to help the grad student setup their config file to get it going.
+
+    ---
+
     **Consultee**: A research scientist in the [Department of Immunology and Infectious Diseases :octicons-link-external-24:](https://hsph.harvard.edu/department/immunology-infectious-diseases/){:target="_blank"} ([HSPH :octicons-link-external-24:](https://hsph.harvard.edu/){:target="_blank"}) 
 
     **Lead Bioinformatician**: Gregg Thomas
