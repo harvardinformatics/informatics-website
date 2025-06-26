@@ -100,7 +100,7 @@ for mdfile in glob.glob(os.path.join(docs_dir, "**/*.md"), recursive=True):
                 if "author_header" in meta and meta["author_header"].lower() == "page maintainer":
                     title = "[Maintainer] " + title                   
                 else:
-                    if "Tutorials" in mdfile:
+                    if "tutorials" in mdfile:
                         title = "[Tutorial] " + title
                     if "workshops" in mdfile:
                         title = "[Workshop] " + title
