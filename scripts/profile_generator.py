@@ -162,7 +162,7 @@ for slug, data in author_to_pages.items():
 
     pages = ""
     if pages_list:
-        pages = f"## Pages authored by {person.split(" ")[0]}\n\n" + "\n".join(pages_list)
+        pages = f"## Pages authored by {person.split(' ')[0]}\n\n" + "\n".join(pages_list)
 
 
     with mkdocs_gen_files.open(f"people/{slug}.md", "w") as md_output:
