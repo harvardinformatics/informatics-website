@@ -14,13 +14,14 @@ import mkdocs_gen_files
 
 ############################################################
 
-def getTitle(author_name, json_data):
+def getInfo(person, json_data):
+    # Returns a dictionary with the person's info from the JSON data
     for group in json_data.values():
         for subgroup in group.values():
             for name, info in subgroup.items():
-                if name == author_name or info.get("name") == author_name:
-                    return info.get("title")
-    return ""
+                if info.get("name", name) == person:
+                    return info.get("title", ""), info.get("office", ""), info.get("profile", "")
+    return {}
 
 ####################
 
@@ -37,18 +38,7 @@ def getContact(person, json_data):
                         out.append(f":simple-github: [GitHub :octicons-link-external-24:]({info['github']})")
                     if info.get("pubs"):
                         out.append(f":scholar-100: [Scholar :octicons-link-external-24:]({info['pubs']})")
-                    return "\n---\n\n## Where to find:\n\n" + " &nbsp; ".join(out) if out else ""
-    return ""
-
-####################
-
-def getProfile(person, json_data):
-    # Returns the profile text for a person
-    for group in json_data.values():
-        for subgroup in group.values():
-            for name, info in subgroup.items():
-                if info.get("name", name) == person:
-                    return info.get("profile", "")
+                    return "\n---\n\n## Links:\n\n" + " &nbsp; ".join(out) if out else ""
     return ""
 
 ############################################################
@@ -143,14 +133,11 @@ for slug, data in author_to_pages.items():
     #print(f"GENERATING AUTHOR PAGE: {md_output_file}")
 
     person = data['name']
-    title = getTitle(person, json_data);
+    title, office, bio = getInfo(person, json_data);
 
-    bio = "";
     if os.path.exists(f"data/people/bios/{slug}.md"):
         with open(f"data/people/bios/{slug}.md", "r", encoding="utf-8") as bio_file:
             bio = bio_file.read()
-    else:
-        bio = getProfile(person, json_data)
 
     contact_links = getContact(person, json_data)
 
@@ -175,13 +162,14 @@ for slug, data in author_to_pages.items():
 
     pages = ""
     if pages_list:
-        pages = f"## Pages authored by {person}\n\n" + "\n".join(pages_list)
+        pages = f"## Pages authored by {person.split(" ")[0]}\n\n" + "\n".join(pages_list)
 
 
     with mkdocs_gen_files.open(f"people/{slug}.md", "w") as md_output:
         md_output.write(md_template.format(person_lower=person.lower().replace(" ",""), 
                                            person=person, 
-                                           person_title=title, 
+                                           person_title=title,
+                                           person_office=office,
                                            bio=bio,
                                            contact=contact_links,
                                            pages=pages));

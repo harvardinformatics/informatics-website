@@ -107,18 +107,18 @@ plugins:
         - 'people/*' 
 
 extra_css:
-  - assets/css/extra.css
-  - assets/css/author-row.css
-  - assets/css/banner.css
-  - assets/css/cards.css
-  - assets/css/grid.css
-  - assets/css/profile-header.css
-  - assets/css/software-logos.css
-  - assets/css/tags.css
+  - css/extra.css
+  - css/author-row.css
+  - css/banner.css
+  - css/cards.css
+  - css/grid.css
+  - css/profile-header.css
+  - css/software-logos.css
+  - css/tags.css
 
 extra_javascript:
-  - assets/js/collapse_toc.js
-  - assets/js/banner_img.js
+  - js/collapse_toc.js
+  - js/banner_img.js
 
 extra:
   social:

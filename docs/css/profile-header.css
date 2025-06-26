@@ -1,5 +1,5 @@
 /*------------------------------------------------------*/
-/* Profile header styles */
+/* Profile header styles */ 
 
 .profile-header {
  display: flex; 
@@ -7,7 +7,7 @@
  gap: 1em;
 }
 
-.profile-header img {
+.profile-header img { 
   max-width: 200px; 
   width: 100%; 
   height: auto; 
@@ -25,5 +25,10 @@
 
 .profile-title {
   font-size: 0.65em; 
+  color: #666;
+}
+
+.profile-office {
+  font-size: 0.45em; 
   color: #666;
 }
