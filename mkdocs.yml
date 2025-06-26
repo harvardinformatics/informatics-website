@@ -14,7 +14,7 @@ nav:
 # This is a list of files that will not be included in the navigation bar, but will still be built by MkDocs.
 # Having this prevents the message listing these files when building the site
 not_in_nav: | 
-  newsletter.md 
+  newsletter.md  
   people/*
   events-workshops/previous-events.md
   resources/tutorials/*.md
