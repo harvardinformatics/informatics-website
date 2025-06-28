@@ -40,7 +40,7 @@ You will need several things to be able to run this pipeline:
 
 Below we walk you through our recommended way for getting this all set up.
 
-### Creating an enviornment for the cactus pipeline
+### Creating an environment for the cactus pipeline
 
 We recommend **creating a conda environment** to install software:
 
@@ -455,6 +455,9 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
 <!-- Page specfic CSS -->
 
 <style>
+    .md-typset h1 {
+  margin-bottom: 0.5em !important;
+}
     /* ----- */
     /* Section headers */
     h2 {

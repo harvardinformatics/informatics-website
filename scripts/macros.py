@@ -45,6 +45,10 @@ def define_env(env):
         authors = page.meta.get('authors') or [page.meta.get('author')]
         author_header = page.meta.get('author_header', 'Authors')
 
+        if author_header == "Authors" and len(authors) == 1:
+            # If there's only one author, change the header to "Author"
+            author_header = "Author"
+
         # Start building the HTML output
         line = '<span class="author-row">'
         line += f'<span class="author-header">{author_header}:</span>'
