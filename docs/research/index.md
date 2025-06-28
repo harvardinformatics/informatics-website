@@ -8,11 +8,20 @@ The FAS Informatics group conducts a variety of research:
 
 We are a broad group with diverse expertise in the computational analysis of sequencing data, software and pipeline development, experimental design, troubleshooting bioinformatics workflows, data visualization, and analysis and management of biological big data. Although we have experience in a broad range of topics, we've focused particularly on genome assembly and annotation; bulk and single-cell RNA-seq analysis; and population and comparative genomics. We've also worked extensively on methods related to phylogenetic models of sequence evolution, and have been supported by multiple grants related to comparative genomics and convergent evolution.
 
-|     |     |     |     |
-| --- | --- | --- | --- |
-| :fontawesome-regular-handshake:{ .research-icon } = Collaboration | :fontawesome-solid-hand-holding-dollar:{ .research-icon } = Grant supported | :material-lan-check:{ .research-icon } = Best practices | :material-vector-polyline-plus:{ .research-icon } = Methods development |
-| :fontawesome-solid-graduation-cap: = Group alumni |    |    |    |
+---
 
+<table class="icon-key"> 
+    <caption><em>Icon key</em></caption>
+    <tr>
+        <td><span class="twemoji research-icon">{% include "assets/.icons/handshake.svg" %}</span> = Collaboration</td>
+        <td><span class="twemoji research-icon">{% include "assets/.icons/hand-holding-dollar.svg" %}</span> = Grant supported</td>
+        <td><span class="twemoji research-icon">{% include "assets/.icons/lan-check.svg" %}</span> = Best practices</td>
+        <td><span class="twemoji research-icon">{% include "assets/.icons/vector-polyline-plus.svg" %}</span> = Methods development</td>
+    </tr>
+    <tr>
+        <td><span class="twemoji">{% include "assets/.icons/graduation-cap.svg" %}</span> = Group alumni</td>
+    </tr>
+</table>
 
 ## Genome Assembly and Annotation
 
@@ -417,4 +426,32 @@ We have also worked on a variety of other topics as needed to assist with projec
     .md-nav--secondary .md-nav__item.expanded > .md-nav {
         display: block !important;
     }
+
+    /* ----- */
+    /* Icon key table styles */
+    table.icon-key {
+        /* margin-left: auto;
+        margin-right: auto;         */
+        /* border: 1px solid #888888 !important;    Or your desired color and thickness */
+        border-radius: 8px !important;        /* Optional, for rounded edges */
+        border-collapse: separate !important; /* Essential to prevent cell borders */
+        overflow: hidden !important;          /* Optional, for clean rounded corners */
+        padding-left: 1em !important; /* Optional, for spacing around the table */
+    }
+
+    .icon-key caption {
+        caption-side: top;         /* default, but can use bottom */
+        font-size: 0.9em;
+        color: #666666;
+        text-align: left;
+    }
+
+    .icon-key td, .icon-key th {
+        /* Optional: add very basic, uniform formatting, or none at all */
+        width: auto !important;
+        background: none !important;
+        border: none !important;
+        text-align: left;
+        padding-right: 1em;
+    }        
 </style>

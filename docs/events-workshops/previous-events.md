@@ -4,13 +4,17 @@ title: Past events and workshops
 
 These are topics of previous events with no attached contents and the dates of our previous workshops. See [Events & Workshops](index.md) for the most up-to-date workshop content! 
 
-:material-tools: = Workshop
+---
 
-:material-monitor-account: = Short training 
-
-:material-star-plus-outline: = Special event 
-
-:fontawesome-solid-pizza-slice: = Programming and Pizza
+<table class="icon-key">
+    <caption><em>Event icon key:</em></caption>
+    <tr>
+        <td><span class="twemoji">{% include "assets/.icons/tools.svg" %}</span> = Workshop</td>
+        <td><span class="twemoji">{% include "assets/.icons/monitor-account.svg" %}</span> = Short training</td>
+        <td><span class="twemoji">{% include "assets/.icons/star-plus-outline.svg" %}</span> = Special event</td>
+        <td><span class="twemoji">{% include "assets/.icons/pizza-slice.svg" %}</span> = Programming and Pizza</td>
+    </tr>
+</table>
 
 ## 2025
  
@@ -109,6 +113,35 @@ These are topics of previous events with no attached contents and the dates of o
         background-color: #ffffff !important;
     }
     /* Disable hover effect on table rows */
+
+
+    /* ----- */
+    /* Icon key table styles */
+    table.icon-key {
+        /* margin-left: auto;
+        margin-right: auto;         */
+        /* border: 1px solid #888888 !important;    Or your desired color and thickness */
+        border-radius: 8px !important;        /* Optional, for rounded edges */
+        border-collapse: separate !important; /* Essential to prevent cell borders */
+        overflow: hidden !important;          /* Optional, for clean rounded corners */
+        padding-left: 1em !important; /* Optional, for spacing around the table */
+    }
+
+    .icon-key caption {
+        caption-side: top;         /* default, but can use bottom */
+        font-size: 0.9em;
+        color: #666666;
+        text-align: left;
+    }
+
+    .icon-key td, .icon-key th {
+        /* Optional: add very basic, uniform formatting, or none at all */
+        width: auto !important;
+        background: none !important;
+        border: none !important;
+        text-align: left;
+        padding-right: 1em;
+    }    
 </style>
 
 
