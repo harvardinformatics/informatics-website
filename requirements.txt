@@ -1,4 +1,5 @@
 mkdocs-material==9.6.*
+mkdocs-material[imaging]
 mkdocs-table-reader-plugin==2.0.*
 mkdocs-jupyter==0.24.7
 mkdocs-macros-plugin>=1.3.7

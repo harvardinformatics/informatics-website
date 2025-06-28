@@ -106,6 +106,10 @@ plugins:
         - 'resources/tags/*'
         - '_includes/*'
         - 'people/*' 
+  # - social: # IMPORTANT: when developing, the .cache/plugin/social directory must be deleted to see changes to the social links.
+  #     cards_layout_options:
+  #       background_color: "#F3F4F4" 
+  #       color: "#a51c30"
 
 extra_css:
   - css/extra.css
