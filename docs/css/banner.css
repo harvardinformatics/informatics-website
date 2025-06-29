@@ -1,0 +1,185 @@
+/*------------------------------------------------------*/
+/* Home banner styles */
+
+.banner-row-container {
+    max-width: unset !important;
+    margin: 0 !important;
+    padding-top: .0rem !important;
+    height: 40vh !important;
+    min-height: 300px !important;
+    /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.extra.home_gradient_hsla }} 99%, {{ config.extra.home_gradient_hsla }} 99%); */
+    /* This is used for the background gradient */
+
+    background-image: url(../img/banners/IMG_7404.jpg);
+    background-position: center center;
+    /* The default background if javascript is disabled */
+
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    
+    background-clip: border-box;
+    background-origin: padding-box;
+    /* -moz-background-size: cover;
+    background-size: cover; */
+    background-size: 100% auto !important;
+        -moz-background-size: 100% auto !important;
+    /* This stuff is used for the background image */
+}
+
+.banner-row {
+    height:100% !important;
+    background-color: rgba(0,0,0,0.5);
+    /* Should be uncommented for background image */
+
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1) 99%, rgba(0,0,0,1) 99%); */
+    /* Should be uncommented for background image for neat gradient effect */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content-col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content-row {
+  height: 100%;
+}
+
+.banner-content {
+  height: 75%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  /* left-align content */
+}
+
+.banner-title {
+  color: #eeeeee;
+}
+
+.home-tagline {
+  font-size: 2.5em !important;
+
+}
+
+.banner-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.banner-buttons .md-button {
+  margin-top: .5rem;
+  margin-right: .5rem;
+  color: #ce4d4b;
+  border-color: #ffffff !important;
+  background-color: #ffffff;
+  border-radius: 5px;  
+}
+
+/* .banner-buttons .md-button--primary {
+  background-color: #ffffff;
+  color: hsla(280deg, 37%, 48%, 1);
+  border-color: #ffffff;
+  color: #EF5552 !important;
+} */
+
+.banner-buttons .md-button:focus,
+.banner-buttons .md-button:hover {
+  color: #ffffff !important;
+  border-color: #ce4d4b !important;
+  background-color: #ce4d4b !important;
+  border-radius: 10px;
+}
+
+.banner-buttons .btn-margin {
+  max-width: 20px;
+}
+
+.banner-button {
+  width: 100%;
+  max-width: 190px;
+}
+
+.banner-button .md-button {
+  width: 100%;
+  max-width: 175px;
+  text-align: center;
+  padding: 0.25rem 0 !important;
+}
+
+.banner-img-container {
+  height: 75%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.banner-img {
+  height: 100%;
+  max-height: 300px;
+  width: auto;
+}
+
+/*------------------------------------------------------*/
+/* Responsive styles */
+
+@media (max-width: 1200px) {
+  .banner-content-col .margin {
+    display: none;
+    width: 0;
+  }
+  .banner-content {
+    width: 85% !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .banner-buttons {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .banner-button {
+    width: 50% !important; 
+    max-width: unset;
+  }
+  .banner-button .md-button {
+    width: 100%;
+    max-width: unset;
+    text-align: center;
+  }
+  .banner-img-container {
+    display: none !important;
+    width: 0 !important;
+  }
+}
+
+@media (max-width: 1025px) {
+    .banner-row-container { background-attachment: scroll; }
+}
+
+@media (max-width: 800px) {
+.banner-row-container {
+    background-size: cover !important;
+    -moz-background-size: cover !important;
+    }
+} 
+
+@media (max-width: 650px) {
+  .banner-button {
+    width: 75% !important;
+  }
+}
+
+
+
+
+
+

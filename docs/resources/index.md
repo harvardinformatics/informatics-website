@@ -21,14 +21,14 @@ Here we have compiled resources related to bioinformatics and computing. These r
 
 **We are developing tutorials for other data science and bioinformatics tasks. Check back soon!**
 
-[conda]: Tutorials/installing-command-line-software-conda-mamba.md
-[bauer]: Tutorials/how-can-i-download-my-sequencing-data.md
-[wga]: Tutorials/whole-genome-alignment-cactus.md
-[add-genome]: Tutorials/add-to-whole-genome-alignment-cactus.md
-[add-outgroup]: Tutorials/add-outgroup-to-whole-genome-alignment-cactus.md
-[replace-genome]: Tutorials/replace-genome-whole-genome-alignment-cactus.md
-[pangenome]: Tutorials/pangenome-cactus-minigraph.md
-[annotate]: Tutorials/how-to-annotate-a-genome.md
+[conda]: tutorials/installing-command-line-software-conda-mamba.md
+[bauer]: tutorials/how-can-i-download-my-sequencing-data.md
+[wga]: tutorials/whole-genome-alignment-cactus.md
+[add-genome]: tutorials/add-to-whole-genome-alignment-cactus.md
+[add-outgroup]: tutorials/add-outgroup-to-whole-genome-alignment-cactus.md
+[replace-genome]: tutorials/replace-genome-whole-genome-alignment-cactus.md
+[pangenome]: tutorials/pangenome-cactus-minigraph.md
+[annotate]: tutorials/how-to-annotate-a-genome.md
 
 ---
 
@@ -61,128 +61,42 @@ Let us know if there is something we should add!
 
 We have compiled a list of external resources and tagged them with the categories below. Click on each tag to see the links!
 
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/bioinformatics/'>bioinformatics (10)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/conda/'>conda (1)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/data-science/'>data science (11)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/data-visualization/'>data visualization (3)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/genome-assembly/'>genome assembly (1)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/genomics/'>genomics (4)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/git/'>git (3)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/harvard/'>harvard (6)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/high-performance-computing/'>high-performance computing (6)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/machine-learning/'>machine learning (2)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/metagenomics/'>metagenomics (3)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/microbiology/'>microbiology (1)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/nextflow/'>nextflow (7)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/python/'>python (6)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/R/'>R (8)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/reproducibility/'>reproducibility (5)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/RNA-seq/'>RNA seq (3)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/single-cell/'>single cell (1)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/snakemake/'>snakemake (5)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/statistics/'>statistics (3)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-</div>
-<div class='sep-div'></div>
-<div class='row res-tag-table'>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/unix/'>unix (5)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
-<div class='col-5-24 res-tag-link-cont'>
-<div class='res-tag-link'><a href='tags/variant-calling/'>variant calling (2)</a></div>
-</div>
-<div class='col-1-24 res-tag-sep'></div>
+{% set data = get_resources() %}
+{% set tag_counts = {} %}
+{% for r in data.links.values() if r.status=="active" %}
+    {% for tag in r.tags %}
+        {% set _ = tag_counts.setdefault(tag, 0) %}
+        {% set _ = tag_counts.__setitem__(tag, tag_counts[tag] + 1) %}
+    {% endfor %}
+{% endfor %}
+
+<div class="res-tag-table">
+{% for tag in data.tags | sort(case_sensitive=false) if data.tags[tag].status == "active" %}
+  <a class="res-tag-link" href="/resources/tags/{{ tag|replace(' ', '-') }}/">
+    {{ tag }} ({{ tag_counts.get(tag, 0) }})
+  </a>
+{% endfor %}
 </div>
 
+---
 
 <!-- --------------------------------- -->
+<!-- Page speciifc CSS -->
 
 <style>
     h4 {
         font-weight: normal !important;
     }
 
+    /* ----- */
+    /* Style the table that displays the tutorials */
     .md-typeset th, .md-typeset td {
     white-space: normal;
     overflow-wrap: break-word;
     word-break: break-word;
     }
     /* Ensure text wraps in table cells */
-
-
+    
     table thead { display: none; }
     .md-typeset table, 
     .md-typeset th, 
