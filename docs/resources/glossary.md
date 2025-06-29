@@ -147,5 +147,3 @@ This table tries to define these terms clearly.
 ---
 
 {{ author_row(page) }} 
-
---- 

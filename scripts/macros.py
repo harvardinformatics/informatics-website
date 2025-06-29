@@ -51,6 +51,9 @@ def define_env(env):
 
         # Start building the HTML output
         line = '<span class="author-row">'
+        if author_header == "Page maintainer":
+            # If this is a maintainer entry, use a different header
+            line = '<span class="author-row page-maintainer-row">'
         line += f'<span class="author-header">{author_header}:</span>'
 
         for i, auth in enumerate(authors):

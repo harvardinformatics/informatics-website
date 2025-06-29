@@ -18,6 +18,11 @@
   }
 }
 
+.page-maintainer-row {
+  border: none;
+  padding: 0;
+}
+
 .author-header {
   margin-right: 0.6em; 
   font-weight: bold;

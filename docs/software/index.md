@@ -171,8 +171,6 @@ The FAS Informatics group develops methods and software for various genomics tas
 
 {{ author_row(page) }}
 
----
-
 <!-- --------------------------------- -->
 <!-- Page specfic CSS -->
 
