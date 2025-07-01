@@ -174,4 +174,8 @@ To view a list of previous events and workshops, click the button below.
     .md-nav--secondary .md-nav__item.expanded > .md-nav {
         display: block !important;
     }
+
+    h5 {
+        text-decoration: underline;
+    }
 </style>
