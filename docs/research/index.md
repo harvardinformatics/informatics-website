@@ -13,13 +13,13 @@ We are a broad group with diverse expertise in the computational analysis of seq
 <table class="icon-key"> 
     <caption><em>Icon key</em></caption>
     <tr>
-        <td><span class="twemoji research-icon">{% include "assets/.icons/handshake.svg" %}</span> = Collaboration</td>
-        <td><span class="twemoji research-icon">{% include "assets/.icons/hand-holding-dollar.svg" %}</span> = Grant supported</td>
-        <td><span class="twemoji research-icon">{% include "assets/.icons/lan-check.svg" %}</span> = Best practices</td>
-        <td><span class="twemoji research-icon">{% include "assets/.icons/vector-polyline-plus.svg" %}</span> = Methods development</td>
+        <td><span class="twemoji research-icon" aria-label="Collaboration" title="Collaboration">{% include "assets/.icons/handshake.svg" %}</span> = Collaboration</td>
+        <td><span class="twemoji research-icon" aria-label="Grant supported" title="Grant supported">{% include "assets/.icons/hand-holding-dollar.svg" %}</span> = Grant supported</td>
+        <td><span class="twemoji research-icon" aria-label="Best practices" title="Best practices">{% include "assets/.icons/lan-check.svg" %}</span> = Best practices</td>
+        <td><span class="twemoji research-icon" aria-label="Methods development" title="Methods development">{% include "assets/.icons/vector-polyline-plus.svg" %}</span> = Methods development</td>
     </tr>
     <tr>
-        <td><span class="twemoji">{% include "assets/.icons/graduation-cap.svg" %}</span> = Group alumni</td>
+        <td><span class="twemoji" aria-label="Group alumni" title="Group alumni">{% include "assets/.icons/graduation-cap.svg" %}</span> = Group alumni</td>
     </tr>
 </table>
 
@@ -28,7 +28,7 @@ We are a broad group with diverse expertise in the computational analysis of seq
 A major focus of recent work in the group has been to assist with the assembly and annotation of diverse genomes, often complex and difficult, using long-read sequencing technologies (e.g., Oxford Nanpore and PacBio sequencing). In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){target="_blank"}, we support assembly and annotation from sample to finished genome. Our recent work in this area includes both collaborations on the genomes of diverse species, and best practices research to assess methods used to produce gene annotations across the tree of life. 
 
 
-### Performance assessment of genome annotation methods across the tree of life &nbsp; :material-lan-check:{ .research-icon }
+### Performance assessment of genome annotation methods across the tree of life &nbsp; <span aria-label="Best practices" title="Best practices">:material-lan-check:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
@@ -41,7 +41,7 @@ Cheap long-read sequencing has made assembling non-model genomes routine; the ma
     * **Freedman AH**, **Sackton TB**. 2025. Building better genome annotations across the tree of life. *Genome Research*. 35:1261-1276. [Link :octicons-link-external-24:](https://www.genome.org/cgi/doi/10.1101/gr.280377.124){target="_blank"}
 
 
-### Panther worm (*Hofstenia*) genomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Panther worm (*Hofstenia*) genomics &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Danielle Khost and Adam Freedman
 
@@ -50,7 +50,7 @@ Cheap long-read sequencing has made assembling non-model genomes routine; the ma
 The lab needed to come up with an approach to integrate genome annotations from two different methods: direct assembly of transcripts from RNA-seq reads aligned to the genome, and de novo transcriptome assembly. There was also a question as to why functionally validated single-exon transcripts in the latter failed to be assembled in the former. We came up with a sensible integration strategy that also filters out lowly expressed single-exon transcripts that might be false positives.
 
 
-### Genomics of *Phlox* wildflowers &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Genomics of *Phlox* wildflowers &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
@@ -58,7 +58,7 @@ The lab needed to come up with an approach to integrate genome annotations from 
 
 We helped the Hopkins lab sequence and assemble the genomes of four species of *Phlox* wildflowers using Oxford Nanopore sequencing, as well as scaffolding into chromosome-scale reference assemblies using optical mapping and genetic maps. These samples were particularly challenging due to the large genome sizes (>6 Gbase) and highly repetitive nature of the genomes (~90% repeats). For comparative analysis, we also helped construct whole-genome alignments for the scaffolded genomes, a task that is also challenging for large plant genomes.
 
-### Assembling difficult worm genomes &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Assembling difficult worm genomes &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
@@ -73,7 +73,7 @@ We worked with several members of the Giribet lab to sequence and assemble genom
     * Sato S, Cunha TJ, de Medeiros BAS, **Khost D**, **Sackton TB**, Giribet G. 2023. Sizing Up the Onychophoran Genome: Repeats, Introns, and Gene Family Expansion Contribute to Genome Gigantism in *Epiperipatus broadwayi*. *Genome Biology and Evolution*. 15(3):evad021 [Link :octicons-link-external-24:](https://doi.org/10.1093/gbe/evad021){target="_blank"}
 
 
-### Assembling the genome of a parasitic plant &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Assembling the genome of a parasitic plant &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Danielle Khost, Brian Arnold :fontawesome-solid-graduation-cap:, and Tim Sackton
 
@@ -86,7 +86,7 @@ We worked with several members of the Giribet lab to sequence and assemble genom
     * Cai L, Arnold BJ :fontawesome-solid-graduation-cap:, Xi Z, **Khost DE**, Patel N, Hartmann CB, ... Mathews S, **Sackton TB**, Davis CD, 2021. Deeply Altered Genome Architecture in the Endoparasitic Flowering Plant Sapria himalayana Griff. (Rafflesiaceae). *Current Biology* 31:1002-1011. [Link :octicons-link-external-24:]( https://doi.org/10.1016/j.cub.2020.12.045){target="_blank"}
 
 
-### Assembling the genome of the extinct moa &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Assembling the genome of the extinct moa &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Tim Sackton
 
@@ -104,7 +104,7 @@ The little bush moa, *Anomalopteryx didiformis*, is one of approximately nine sp
 The group has a long-standing interest in the analysis of RNA-seq data, both traditional bulk data from whole organisms or tissues, and single-cell data. In this area, we have primarily worked on methods and best practices, as well as contributed to collaborations. 
 
 
-### Methods for the Analysis of scRNA-seq data &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :fontawesome-solid-hand-holding-dollar:{ .research-icon } &nbsp; :material-vector-polyline-plus:{ .research-icon } 
+### Methods for the Analysis of scRNA-seq data &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span> &nbsp; <span aria-label="Grant supported" title="Grant supported">:fontawesome-solid-hand-holding-dollar:{ .research-icon }</span> &nbsp; <span aria-label="Methods development" title="Methods development">:material-vector-polyline-plus:{ .research-icon }</span>
 
 We have developed several methods related to clustering of single-cell RNA-seq data and cell type identification. 
 
@@ -112,7 +112,7 @@ We developed scclusteval, which is a permutation based method to quantify the ro
 
 We have also developed two tools, HieRFIT and IP4CI, which both seek to address weaknesses in current cell type identification approaches. In particular, while existing tools are often extremely powerful at projecting cell labels from large atlases to new datasets within species, it can be challenging to align cell types across species. HieRFIT uses a random forest method that allows for cell type projection to internal (uncertain) nodes; IP4CI uses canonical correlation analysis on pathway-level expression, as opposed to individual genes, to attempt to better preserve biological information across species. 
 
-<span class="twemoji inline-icon-med">{% include "/assets/.icons/bi-logo.svg" %}</span> **The development of HieRFIT and IP4CI were supported by a collaborative agreement with [Boehringer Ingelheim :octicons-link-external-24:](https://www.boehringer-ingelheim.com/us).** 
+<span aria-label="Boehringer Ingelheim logo" title="Boehringer Ingelheim logo">:bi-logo:{ .inline-icon-med }</span> **The development of HieRFIT and IP4CI were supported by a collaborative agreement with [Boehringer Ingelheim :octicons-link-external-24:](https://www.boehringer-ingelheim.com/us).** 
 
 **Software**: [scclusteval :octicons-link-external-24:](https://github.com/harvardinformatics/scclusteval){ .target="_blank" }, [HieRFIT :octicons-link-external-24:](https://github.com/harvardinformatics/HieRFIT){ .target="_blank" }
 
@@ -123,7 +123,7 @@ We have also developed two tools, HieRFIT and IP4CI, which both seek to address 
     * Kaymaz Y :fontawesome-solid-graduation-cap:, Gangleberger F, Tang M :fontawesome-solid-graduation-cap:, Haslinger C, Fernandez-Albert F, Lawless N, **Sackton TB**. 2021. HieRFIT: a hierarchical cell type classification tool for projections from complex single-cell atlas datasets. *Bioinformatics* 37:23. [Link :octicons-link-external-24:](https://doi.org/10.1093/bioinformatics/btab499){target="_blank"}
 
 
-### Limb regeneration in axolotls &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Limb regeneration in axolotls &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
@@ -136,7 +136,7 @@ The Whited lab is investigating the genetic architecture of regeneration in axol
     * Payzin-Dogru D, Blair SJ, ..., **Freedman AH**, ..., **Sackton TB**, Whited JL, 2024. Peripheral nervous system mediates body-wide stem cell activation for limb regeneration. *bioRxiv*. [Link :octicons-link-external-24:](https://doi.org/10.1101/2021.12.29.474455){target="_blank"}
 
 
-### The impact of single cell RNA-seq techniques on ecological genomics &nbsp; :material-lan-check:{ .research-icon }
+### The impact of single cell RNA-seq techniques on ecological genomics &nbsp; <span aria-label="Best practices" title="Best practices">:material-lan-check:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
@@ -149,7 +149,7 @@ Based on our experience with the increasing feasibility of single-cell RNA-seq e
     * **Freedman AH**, **Sackton TB**. 2024. Rethinking eco‐evo studies of gene expression for non‐model organisms in the genomic era. *Molecular Ecology*. e17378. [Link :octicons-link-external-24:](https://doi.org/10.1111/mec.17378){target="_blank"}
 
 
-### Deep sea tubeworm transcriptomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Deep sea tubeworm transcriptomics &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Lead Bioinformatcian**: Adam Freedman
 
@@ -162,7 +162,7 @@ Most autotrophic organisms possess a single carbon fixation pathway. The chemoau
     * Mitchell JH, **Freedman AH**, Delaney JA, Girguis PR. 2024. Co-expression analysis reveals distinct alliances around two carbon fixation pathways in hydrothermal vent symbionts. *Nature Microbiology*. 9:1526-1539. [Link :octicons-link-external-24:]( https://doi.org/10.1038/s41564-024-01704-y){target="_blank"}
 
 
-### Assessing errors and biases in *de novo* transcriptome assembly &nbsp; :material-lan-check:{ .research-icon }
+### Assessing errors and biases in *de novo* transcriptome assembly &nbsp; <span aria-label="Best practices" title="Best practices">:material-lan-check:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
@@ -172,7 +172,7 @@ At the time we launched this study, approximately 60,000 published papers had re
 
     * **Freedman AH**, Clamp M :fontawesome-solid-graduation-cap:, **Sackton TB**. 2021. Error, noise and bias in *de novo* transcriptome assemblies. *Molecular Ecology Resources*. 21:18-29. [Link :octicons-link-external-24:](https://doi.org/10.1111/1755-0998.13156){target="_blank"}
 
-### Comparing efficacy of short paired-end versus longer single-end reads in bulk RNA-seq experiments &nbsp; :material-lan-check:{ .research-icon }
+### Comparing efficacy of short paired-end versus longer single-end reads in bulk RNA-seq experiments &nbsp; <span aria-label="Best practices" title="Best practices">:material-lan-check:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Adam Freedman and Tim Sackton
 
@@ -187,13 +187,13 @@ Typical experimental design advice for expression analyses using RNA-seq general
 
 The group has worked on a variety of topics related to population genetics. These include novel methodological approaches, including a large collaborative project to create a comparative pangenome for scrub jays; and work to make variant calling best practices more accessible. We have also been involved in helping provide empirical examples and datasets in the aid of development of new theorectical coalescent models. 
 
-### Scrub jay pangenomes &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :fontawesome-solid-hand-holding-dollar:{ .research-icon }
+### Scrub jay pangenomes &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span> &nbsp; <span aria-label="Grant supported" title="Grant supported">:fontawesome-solid-hand-holding-dollar:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Danielle Khost and Tim Sackton
 
 **Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"}), [Chen Lab :octicons-link-external-24:](https://chenlab.oeb.harvard.edu/){target="_blank"} ([University of Rochester, Department of Biology :octicons-link-external-24:](https://www.sas.rochester.edu/bio/index.html){target="_blank"}), [Erik Garrison :octicons-link-external-24:](http://hypervolu.me/~erik/erik_garrison.html){target="_blank"} ([University of Tennessee Health Science Center :octicons-link-external-24:](https://www.uthsc.edu/){target="_blank"})
 
-<span class="twemoji inline-icon">{% include "/assets/.icons/nih-logo.svg" %}</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Edwards lab, Informatics group, and collaborators.**
+<span aria-label="NIH logo" title="NIH logo">:nih-logo:{ .inline-icon }</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Edwards lab, Informatics group, and collaborators.**
 
 We helped generate high quality genome assemblies for 46 individual scrub jays across four species using HiFi PacBio sequencing. We developed the pipeline for assembly and scaffolding of the individual genomes, and then used those assemblies to construct a pangenome graph for the sample. This allowed us to characterize population and species level structural variation. In addition to developing the pipelines and generating the data, we also assisted with genome annotation and some downstream population genetic analysis.
 
@@ -215,7 +215,7 @@ Historically, most population genetic has been analyzed using the Kingman coales
     * Freund F, Kerdoncuff E, Matuszewski S, ... **Sackton TB**, Achaz G. Interpreting the pervasive observation of U-shaped Site Frequency Spectra. 2023. *PLoS Genetics* 19(3) [Link :octicons-link-external-24:](https://doi.org/10.1371/journal.pgen.1010677){target="_blank"}
 
 
-### Population genomics with snpArcher &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :material-vector-polyline-plus:{ .research-icon }
+### Population genomics with snpArcher &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span> &nbsp; <span aria-label="Methods development" title="Methods development">:material-vector-polyline-plus:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Tim Sackton and Gregg Thomas
 
@@ -233,13 +233,13 @@ Variant calling is an extremely common task in a wide variety of fields. However
 The Informatics group has been part of a long term collaboration to develop methods to study the molecular evolution of non-coding DNA, focusing on the software package [PhyloAcc](https://phyloacc.github.io/). We have also worked on other methods related to phylogenetic models of molecular evolution. 
 
 
-### PhyloAcc: using phylogenies to detect substitution rate shifts in non-coding regions &nbsp; :fontawesome-regular-handshake:{ .research-icon } &nbsp; :fontawesome-solid-hand-holding-dollar:{ .research-icon } &nbsp; :material-vector-polyline-plus:{ .research-icon }
+### PhyloAcc: using phylogenies to detect substitution rate shifts in non-coding regions &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span> &nbsp; <span aria-label="Grant supported" title="Grant supported">:fontawesome-solid-hand-holding-dollar:{ .research-icon }</span> &nbsp; <span aria-label="Methods development" title="Methods development">:material-vector-polyline-plus:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Gregg Thomas and Tim Sackton
 
 **Collaborators**: [Edwards Lab :octicons-link-external-24:](https://edwards.oeb.harvard.edu/){target="_blank"} ([OEB :octicons-link-external-24:](https://www.oeb.harvard.edu/){target="_blank"} / [MCZ :octicons-link-external-24:](https://www.mcz.harvard.edu/){target="_blank"}), [Liu Lab :octicons-link-external-24:](https://sites.harvard.edu/junliu/){target="_blank"} ([Statistics :octicons-link-external-24:](https://statistics.fas.harvard.edu/){target="_blank"})
 
-<span class="twemoji inline-icon">{% include "/assets/.icons/nih-logo.svg" %}</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
+<span aria-label="NIH logo" title="NIH logo">:nih-logo:{ .inline-icon }</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
 
 PhyloAcc is software that was developed in the Edwards, Liu, and Informatics labs to study molecular evolution of non-coding genomic regions in a phylogenetic context. Version 1 was used to study convergent substitution rate accelerations in marine mammals and flightless birds to identify possible changes in regulatory regions that may lead to the adaptations of those respective groups. Version 2 of PhyloAcc expanded on version 1 by accounting for phylogenetic discordance and providing a friendlier user interface and batching via Snakemake.
 
@@ -260,9 +260,9 @@ PhyloAcc is software that was developed in the Edwards, Liu, and Informatics lab
 
 ## Comparative Genomics and Convergent Evolution
 
-<span class="twemoji inline-icon">{% include "/assets/.icons/nih-logo.svg" %}</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
+<span aria-label="NIH logo" title="NIH logo">:nih-logo:{ .inline-icon }</span> **Funded by an [NIH :octicons-link-external-24:](https://www.nih.gov/){target="_blank"} grant awarded to the Liu lab, Edwards lab, Informatics group, and collaborators.**
 
-<span class="twemoji inline-icon">{% include "/assets/.icons/nsf-logo.svg" %}</span> **Funded by an [NSF :octicons-link-external-24:](https://www.nsf.gov/){target="_blank"} grant to the Informatics group**
+<span aria-label="NSF logo" title="NSF logo">:nsf-logo:{ .inline-icon }</span> **Funded by an [NSF :octicons-link-external-24:](https://www.nsf.gov/){target="_blank"} grant to the Informatics group**
 
 
 Convergent evolution describes the phenomenon where a similar or identical phenotype evolves in multiple independent lineages. Classic examples include diverse traits such as the evolution of echolocation in bats, cetaceans, and some species of birds; the recurrent evolution of crab-like body plans in crustaceans (carcinisation); and loss of limbs in snakes and caecilians.
@@ -298,7 +298,7 @@ In particular, we are interested in the extent to which convergent adaptive phen
 
 We have also worked on a variety of other topics as needed to assist with projects ranging from addressing fundamental questions about the evolution of sex to developing methods for the analysis of ATAC-seq data to providing bioinformatics support for complex proteomics projects. Some of the addtional projects Informatics team members have contributed to are listed here. 
 
-### Genomic Evidence for Sexual Reproduction in Rotifers &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Genomic Evidence for Sexual Reproduction in Rotifers &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Collaborators**: [Meselson Lab :octicons-link-external-24:](https://meselsonlab.scholars.harvard.edu/){target="_blank"} ([MCB :octicons-link-external-24:](https://www.mcb.harvard.edu/){target="_blank"})
 
@@ -307,7 +307,7 @@ We have also worked on a variety of other topics as needed to assist with projec
     * Laine VN :fontawesome-solid-graduation-cap:, **Sackton TB**, Meselson M. 2022. Genomic signature of sexual reproduction in the bdelloid rotifer Macrotrachella quadricornifera. *Genetics* 220(2) [Link :octicons-link-external-24:](https://doi.org/10.1093/genetics/iyab221){target="_blank"}
 
 
-### Genomic Peak Calling Methods and Analysis &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Genomic Peak Calling Methods and Analysis &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Collaborators**: [Mango lab :octicons-link-external-24:](https://www.biozentrum.unibas.ch/research/research-groups/research-groups-a-z/own-content/unit/research-group-susan-mango/mango-cv){target="_blank"} ([MCB :octicons-link-external-24:](https://www.mcb.harvard.edu/){target="_blank"}; currently at [Biozentrum at the University of Basel :octicons-link-external-24:](https://www.biozentrum.unibas.ch/){target="_blank"})
 
@@ -317,7 +317,7 @@ We have also worked on a variety of other topics as needed to assist with projec
 
     * Giansanti V, Tang M :fontawesome-solid-graduation-cap:, Cittaro D. Fast analysis of scATAC-seq data using a predefined set of genomic regions. 2020. *F1000Research* [Link :octicons-link-external-24:](https://doi.org/10.12688/f1000research.22731.2){target="_blank"}
 
-### Proteomics &nbsp; :fontawesome-regular-handshake:{ .research-icon }
+### Proteomics &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Collaborators**: [Melton Lab :octicons-link-external-24:](https://hscrb.harvard.edu/labs/melton-lab/){target="_blank"} ([SCRB :octicons-link-external-24:](https://hscrb.harvard.edu/){target="_blank"}), [Woo Lab :octicons-link-external-24:](https://www.woolab.org/){target="_blank"} ([CCB :octicons-link-external-24:](https://www.chemistry.harvard.edu/){target="_blank"})
 
