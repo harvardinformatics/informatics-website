@@ -59,11 +59,11 @@ This short training will introduce students to SNPArcher, a tool for population 
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-:material-arrow-right-bottom: Next up: Juyl 9, 2025, 4-6PM (Northwest Building B227.45)
+:material-arrow-right-bottom: Next up: July 9, 2025, 4-6PM (Northwest Building B227.45)
 
 ### Office hours
 
-We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest Building B227.45. If you can't make it in person, you can always contact us or ask your question on [our Slack channel](../contact.md)!
+We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest Building B227.45. If you can't make it in person, you can always contact us or ask your question on [our Slack channel](../contact/index.md)!
 
 ## Calendar
 
@@ -151,6 +151,12 @@ To view a list of previous events and workshops, click the button below.
 
 [Previous Events & Workshops :material-arrow-right:](previous-events.md){ .md-button .md-button--primary .centered }
 
+
+---
+
+<!-- --------------------------------- -->
+<!-- Page specfic CSS -->
+
 <style>
     h2 {
         text-align: center !important;
@@ -167,5 +173,9 @@ To view a list of previous events and workshops, click the button below.
     /* Show when parent has .expanded class */
     .md-nav--secondary .md-nav__item.expanded > .md-nav {
         display: block !important;
+    }
+
+    h5 {
+        text-decoration: underline;
     }
 </style>

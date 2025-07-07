@@ -1,7 +1,7 @@
 ﻿Term,Definition
-"<a href='https://git-scm.com/' target='_blank'>Git <span class=""icon-external""></span></a>","Software for **version control**, which keeps track of changes to files in a given directory."
+<a href='https://git-scm.com/' target='_blank'>Git :octicons-link-external-24:</a>,"Software for **version control**, which keeps track of changes to files in a given directory."
 Version control,"The process of tracking changes to files over time, allowing you to recall specific versions later."
-"<a href='https://github.com/' target='_blank'>Github <span class=""icon-external""></span></a>","A web-based platform that facilitates **Git**'s use for collaboration between individuals. Other web-based platforms include <a href='https://about.gitlab.com/' target='_blank'>GitLab <span class=""icon-external""></span><a> and <a href='https://bitbucket.org/' target='_blank'>BitBucket <span class=""icon-external""></span></a>."
+<a href='https://github.com/' target='_blank'>Github :octicons-link-external-24:</a>,A web-based platform that facilitates **Git**'s use for collaboration between individuals. Other web-based platforms include <a href='https://about.gitlab.com/' target='_blank'>GitLab :octicons-link-external-24:<a> and <a href='https://bitbucket.org/' target='_blank'>BitBucket :octicons-link-external-24:</a>.
 Repository/Repo,"A **directory** of files that has been initialized by Git for syncing, possibly including code, documentation, or data."
 Remote repository,"A repository that is hosted on a server, typically on a web-based platform like Github."
 `init`,The process of initializing a directory as a Git repository.

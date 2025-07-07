@@ -11,9 +11,11 @@
                 "date-joined": "07-01-2017",
                 "date-left": "",
                 "status" : "active",
-                "link": "about/people/timsackton/",
+                "link": "/people/tim-sackton/",
+                "external-link": "",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=u8RfnXoAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/tsackton",
+                "degree": "Ph.D.",
                 "profile": "Tim runs the Bioinformatics group. While his background is population and comparative genomics, these days he does a little bit of everything."
             }
         },
@@ -23,14 +25,16 @@
                 "name": "Adam Freedman",
                 "title" : "Senior Bioinformatics Scientist",
                 "office" : "B227.30",
-                "img": "img/people/adamfreedman.png",
+                "img": "img/people/adamfreedman.jpg",
                 "date-added": "12-05-2023",
                 "date-joined": "06-01-2015",
                 "date-left": "",
                 "status" : "active",
-                "link": "https://ahfgenomics.com/",
+                "link": "/people/adam-freedman/",
+                "external-link": "https://ahfgenomics.com/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=6Bt9l1wAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/adamfreedman",
+                "degree": "Ph.D.",
                 "profile": "Adam is our resident expert in genome annotation and RNA-seq analysis, and also has a background in population and conservation genetics."
             },
             "Danielle Khost": {
@@ -43,9 +47,11 @@
                 "date-joined": "06-27-2019",
                 "date-left": "",
                 "status" : "active",
-                "link": "",
+                "link": "/people/danielle-khost/",
+                "external-link": "",
                 "pubs": "",
                 "github": "https://github.com/danielle-khost",
+                "degree": "Ph.D.",
                 "profile": "Danielle is our resident expert in long read sequencing, and works on a variety of challenging genome assembly problems."
             },
             "Gregg Thomas": {
@@ -58,9 +64,11 @@
                 "date-joined": "07-06-2021",
                 "date-left": "",
                 "status" : "active",
-                "link": "https://gwct.bio/",
+                "link": "/people/gregg-thomas/",
+                "external-link": "https://gwct.bio/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=4pydfEUAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/gwct",
+                "degree": "Ph.D.",
                 "profile": "Gregg develops phylogenetic methods and has studied convergent evolution, molecular evolution of rodents and insects, and mutation rates in primates."
             },
             "Lei Ma": {
@@ -73,9 +81,11 @@
                 "date-joined": "09-11-2023",
                 "date-left": "",
                 "status" : "active",
-                "link": "",
+                "link": "/people/lei-ma/",
+                "external-link": "",
                 "pubs": "",
                 "github": "https://github.com/microlei",
+                "degree": "Ph.D.",
                 "profile": "Lei is primarily responsible for developing training and outreach material; she also has a background in metagenomics and microbial ecology."
             },
             "Rawan Olayan": {
@@ -89,8 +99,10 @@
                 "date-left": "07-31-2024",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=qxUMqP4AAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "",
+                "degree": "Ph.D.",
                 "profile": "Rawan was funded by a collaboration with Boehringer Ingelheim, and works on single cell RNA-seq methods."
             },
             "Allison Shultz": {
@@ -101,7 +113,9 @@
                 "date-joined": "09-11-2017",
                 "date-left": "09-07-2018",
                 "status" : "moved",
-                "link": "https://www.allisonshultz.com/",
+                "link": "",
+                "external-link": "https://www.allisonshultz.com/",
+                "degree": "Ph.D.",
                 "profile": "Allison is now the Associate Curator of Ornithology at the Natural History Museum of Los Angeles County."
             },
             "Brian Arnold": {
@@ -112,7 +126,9 @@
                 "date-joined": "09-24-2018",
                 "date-left": "09-23-2020",
                 "status" : "moved",
-                "link": "https://brian-arnold.github.io/about/",
+                "link": "",
+                "external-link": "https://brian-arnold.github.io/about/",
+                "degree": "Ph.D.",
                 "profile": "Brian is now a departmental data scientist with the Ecology and Evolutionary Biology department at Princeton."
             },
             "Ming Tang": {
@@ -123,7 +139,9 @@
                 "date-joined": "10-01-2018",
                 "date-left": "03-27-2020",
                 "status" : "moved",
-                "link": "https://tommytang.bio.link/",
+                "link": "",
+                "external-link": "https://tommytang.bio.link/",
+                "degree": "Ph.D.",
                 "profile": "Tommy is now the Director of Computational Biology at Immunitas Therapeutics."
             },
             "Scott Van Buren": {
@@ -135,6 +153,8 @@
                 "date-left": "06-16-2022",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
+                "degree": "Ph.D.",
                 "profile": "Scott is now a Scientific Investigator in Computational Biology at GSK."
             },
             "Juerg Straubhaar": {
@@ -146,6 +166,8 @@
                 "date-left": "01-08-2021",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
+                "degree": "Ph.D.",
                 "profile": "Juerg worked primarily on proteomics data with the Mass Spec Core and the Melton Lab while he was in the group."
             },
             "John Gaspar": {
@@ -157,6 +179,8 @@
                 "date-left": "01-18-2019",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
+                "degree": "Ph.D.",
                 "profile": "John is now a Data Science and Bioinformatics Team Lead at Merck."
             },
             "Yasin Kaymaz": {
@@ -168,6 +192,8 @@
                 "date-left": "09-01-2020",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
+                "degree": "Ph.D.",
                 "profile": "Yasin is now an Assistant Professor at Ege University in Izmir, Turkey."
             },
             "Alexandria D'Souza": {
@@ -179,6 +205,8 @@
                 "date-left": "09-19-2022",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
+                "degree": "Ph.D.",
                 "profile": "Alexandria primarily worked with the mass spec core and the Woo lab while she was in the group."
             }
         },
@@ -193,9 +221,11 @@
                 "date-joined": "03-01-2021",
                 "date-left": "08-23-2024",
                 "status" : "moved",
-                "link": "https://www.subir.com.np/",
+                "link": "",
+                "external-link": "https://www.subir.com.np/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=ETGvbj0AAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "",
+                "degree": "Ph.D.",
                 "profile": "Former postdoc, Subir works on population and comparative genomics of birds. He is now a postdoc at LMU Munich."
             },
             "Ekaterina Osipova": {
@@ -208,9 +238,11 @@
                 "date-joined": "11-01-2022",
                 "date-left": "",
                 "status" : "active",
-                "link": "https://osipovarev.github.io/",
+                "link": "/people/katya-osipova/",
+                "external-link": "https://osipovarev.github.io/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/osipovarev",
+                "degree": "Ph.D.",
                 "profile": "Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species."
             },
             "Sara Smith Wuitchik": {
@@ -221,7 +253,9 @@
                 "date-joined": "05-06-2019",
                 "date-left": "08-31-2021",
                 "status" : "moved",
-                "link": "https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm",
+                "link": "",
+                "external-link": "https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Sara-Smith-Wuitchik.htm",
+                "degree": "Ph.D.",
                 "profile": "Sara is now an Assistant Professor at Mount Royal University in Calgary, Canada."
             },
             "Alex Llanos Garrido": {
@@ -233,6 +267,8 @@
                 "date-left": "08-31-2021",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
+                "degree": "Ph.D.",
                 "profile": "Alex is now at the Universidad Complutense Madrid."
             },
             "Veronika Laine": {
@@ -243,7 +279,9 @@
                 "date-joined": "01-01-2019",
                 "date-left": "06-16-2019",
                 "status" : "moved",
-                "link": "https://veronikalaine.netlify.app/",
+                "link": "",
+                "external-link": "https://veronikalaine.netlify.app/",
+                "degree": "Ph.D.",
                 "profile": "Veronika is now at the Finnish Museum of Natural History working on bats."
             }
         },
@@ -259,6 +297,7 @@
                 "date-left": "12-20-2024",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
                 "pubs": "",
                 "github": "",
                 "degree": "",
@@ -275,12 +314,14 @@
                 "office" : "B227.70",
                 "img": "img/people/aaronkitzmiller.jpg",
                 "date-added": "12-05-2023",
-                "date-joined": "08",
+                "date-joined": "2008",
                 "date-left": "03-01-2025",
                 "status" : "moved-internal",
                 "link": "",
+                "external-link": "",
                 "pubs": "",
                 "github": "",
+                "degree": "Ph.D.",
                 "profile": "Journeyman wrangler of science adjacent software projects"
             }
         },
@@ -296,6 +337,7 @@
                 "date-left": "03-01-2025",
                 "status" : "moved-internal",
                 "link": "",
+                "external-link": "",
                 "pubs": "",
                 "github": "",
                 "degree": "",
@@ -312,6 +354,7 @@
                 "date-left": "03-01-2025",
                 "status" : "moved-internal",
                 "link": "",
+                "external-link": "",
                 "pubs": "",
                 "github": "",
                 "degree": "",
@@ -328,6 +371,7 @@
                 "date-left": "NA-NA-2024",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
                 "pubs": "",
                 "github": "",
                 "degree": "",
@@ -343,8 +387,10 @@
                 "date-left": "NA-NA-2022",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
                 "pubs": "",
                 "github": "",
+                "degree": "",
                 "profile": "Former full stack developer currently at Cisco"
             },
             "Andy Bryant": {
@@ -357,8 +403,10 @@
                 "date-left": "",
                 "status" : "moved",
                 "link": "",
+                "external-link": "",
                 "pubs": "",
                 "github": "",
+                "degree": "",
                 "profile": "Former front end developer for instrument facility applications"
             }
         }

@@ -1,5 +1,8 @@
 ---
-title: Glossary
+title: Computing glossary
+authors:
+    - Gregg Thomas
+author_header: Page maintainer
 ---
 
 Like any specific domain, the way we talk about computing and programming is almost its own language. Words in this context may have different meaning than in other contexts. 
@@ -113,10 +116,10 @@ This works for the other arithmetic operators as well. See the table for all ari
 
 ## High performance computing (HPC) terms
 
-For more information related to Harvard's cluster, see <a href="https://docs.rc.fas.harvard.edu/" target="_blank">FASRC's documentation <span class="icon-external"></span></a>, 
-particularly their page on <a href="https://docs.rc.fas.harvard.edu/kb/running-jobs/" target="_blank">running jobs <span class="icon-external"></span></a>.
+For more information related to Harvard's cluster, see <a href="https://docs.rc.fas.harvard.edu/" target="_blank">FASRC's documentation  :octicons-link-external-24:</a>, 
+particularly their page on <a href="https://docs.rc.fas.harvard.edu/kb/running-jobs/" target="_blank">running jobs :octicons-link-external-24:</span></a>.
 
-They also provide a <a href="https://docs.rc.fas.harvard.edu/kb/glossary/" target="_blank">more extensive glossary <span class="icon-external"></span></a> for more term definitions.
+They also provide a <a href="https://docs.rc.fas.harvard.edu/kb/glossary/" target="_blank">more extensive glossary  :octicons-link-external-24:</a> for more term definitions.
 
 {{ read_csv('data/glossary-tables/computing-programming/hpc.csv') }}   
 
@@ -135,8 +138,12 @@ There are several ways to create environments and containers which are covered b
 
 ## Git terms  
 
-<a href="https://git-scm.com/" target="_blank">Git <span class="icon-external"></span></a> is a program that stores the history of files in any directory that has been initialized as a git repository. Used in conjunction with web-based platforms this makes for a powerful collaboration tool.
+<a href="https://git-scm.com/" target="_blank">Git  :octicons-link-external-24:</a> is a program that stores the history of files in any directory that has been initialized as a git repository. Used in conjunction with web-based platforms this makes for a powerful collaboration tool.
 However, there are many terms associated with Git that may be confusing. In essence, many of these terms are simply other words for "a copy" or "copying" a directory, however with slight distinctions.
 This table tries to define these terms clearly.
 
 {{ read_csv('data/glossary-tables/computing-programming/git.csv') }}
+
+---
+
+{{ author_row(page) }} 
