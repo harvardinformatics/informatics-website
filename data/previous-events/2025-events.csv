@@ -1,14 +1,14 @@
 Event type,Name,Date,Time,Location
-:fontawesome-solid-pizza-slice:,**Programming and Pizza**,June 11,4:00PM-6:00PM,Northwest Building B227.45
-:fontawesome-solid-pizza-slice:,**Programming and Pizza**,May 14,4:00PM-6:00PM,Northwest Building B227.45
-:material-tools:,**Dataverse step-by-step for biology: how to archive & publish your data**,May 12,1:00PM-3:00PM,Northwest Building 453
-:material-tools:,**The Baton Pass: preparing your data for the hand-off**,April 21,1:00PM-2:00PM,Northwest Building 453
-:material-tools:,**The Baton Pass: preparing your data for the hand-off**,April 28,1:00PM-2:00PM,Northwest Building 453
-:fontawesome-solid-pizza-slice:,**Programming and Pizza**,April 9,4:00PM-6:00PM,Northwest Building B227.45
+<span aria-label="Programming and Pizza" title="Programming and Pizza">:fontawesome-solid-pizza-slice:</span>,**Programming and Pizza**,June 11,4:00PM-6:00PM,Northwest Building B227.45
+<span aria-label="Programming and Pizza" title="Programming and Pizza">:fontawesome-solid-pizza-slice:</span>,**Programming and Pizza**,May 14,4:00PM-6:00PM,Northwest Building B227.45
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Dataverse step-by-step for biology: how to archive & publish your data**,May 12,1:00PM-3:00PM,Northwest Building 453
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**The Baton Pass: preparing your data for the hand-off**,April 21,1:00PM-2:00PM,Northwest Building 453
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**The Baton Pass: preparing your data for the hand-off**,April 28,1:00PM-2:00PM,Northwest Building 453
+<span aria-label="Programming and Pizza" title="Programming and Pizza">:fontawesome-solid-pizza-slice:</span>,**Programming and Pizza**,April 9,4:00PM-6:00PM,Northwest Building B227.45
 :material-monitor-account:,**Installing & Managing software (Conda; Containers)**,March 26,11:00AM-12:00PM,Hybrid
 :material-monitor-account:,**Introduction to scRNA analysis**,March 12,11:00AM-12:00PM,Hybrid
 :material-monitor-account:,**Introduction to Genome Annotation**,March 5,11:00AM-12:00PM,Hybrid
-:material-star-plus-outline:,**Data Visualization Spa** (Love Data Month),February 10-14,By appointment,In person; 30 min consultations
+<span aria-label="Special event" title="Special event">:material-star-plus-outline:</span>,**Data Visualization Spa** (Love Data Month),February 10-14,By appointment,In person; 30 min consultations
 :material-monitor-account:,**Publishing your data analysis on GitHub** (Love Data Month),February 18,10:00AM-12:00PM,In person
 :material-monitor-account:,**Publishing your data analysis on GitHub** (Love Data Month),February 20,10:00AM-12:00PM,Virtual
 :material-monitor-account:,**Version Control and Collaboration using git/GitHub** (Love Data Month),February 25,10:00AM-12:00PM,In person

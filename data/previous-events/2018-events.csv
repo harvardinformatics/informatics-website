@@ -1,15 +1,15 @@
 Event type,Name,Date,Time,Location
-:material-tools:,**Read mapping and variant calling**,December 4,10:00AM-4:00PM,In person
-:material-tools:,**Differential expression with bulk RNA-seq**,November 13,10:00AM-4:00PM,In person
-:material-tools:,**Python on Odyssey**,October 16,10:00AM-4:00PM,In person
-:material-tools:,**Introduction to R**,"September 25 and 27; October 2 and 4",1:00PM-4:00PM,In person
-:material-tools:,**Bioinformatics nanocourse***,August 6-10,9:00AM-5:00PM,In person
-:material-tools:,**Introduction to R**,June 4-7,10:00AM-1:00PM,In person
-:material-tools:,**Peak calling**,May 1,10:00AM-3:00PM,In person
-:material-tools:,**Read mapping and variant calling**,April 3,10:00AM-3:00PM,In person
-:material-tools:,**Differential Expression with RNA-seq**,March 20,10:00AM-3:00PM,In person
-:material-tools:,**Genome Tips and Tricks**,March 6,10:00AM-3:00PM,In person
-:material-tools:,**Python on Odyssey**,February 27,10:00AM-3:00PM,In person
-:material-tools:,**Data Visualization with R**,February 13,10:00AM-3:00PM,In person
-:material-tools:,**Intermediate R**,February 6,10:00AM-3:00PM,In person
-:material-tools:,**Introduction to R**,January 30,10:00AM-3:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Read mapping and variant calling**,December 4,10:00AM-4:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Differential expression with bulk RNA-seq**,November 13,10:00AM-4:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Python on Odyssey**,October 16,10:00AM-4:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Introduction to R**,"September 25 and 27; October 2 and 4",1:00PM-4:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Bioinformatics nanocourse***,August 6-10,9:00AM-5:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Introduction to R**,June 4-7,10:00AM-1:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Peak calling**,May 1,10:00AM-3:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Read mapping and variant calling**,April 3,10:00AM-3:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Differential Expression with RNA-seq**,March 20,10:00AM-3:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Genome Tips and Tricks**,March 6,10:00AM-3:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Python on Odyssey**,February 27,10:00AM-3:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Data Visualization with R**,February 13,10:00AM-3:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Intermediate R**,February 6,10:00AM-3:00PM,In person
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Introduction to R**,January 30,10:00AM-3:00PM,In person

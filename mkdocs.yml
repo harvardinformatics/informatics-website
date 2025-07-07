@@ -84,12 +84,12 @@ theme:
   #   accent: black
   ## Dark mode
 
-plugins:
+plugins: 
   - search
   - table-reader  
-  - macros:      # This plugin allows you to use Jinja2-style macros in your markdown files, see main.py for implemented macros.
+  - macros:      # This plugin allows you to use Jinja2-style macros in your markdown files, see scripts/macros.py for implemented macros.
       module_name: scripts/macros
-  - gen-files:  # This plugin generates files from templates and data files
+  - gen-files:   # This plugin generates files from templates and data files
       scripts: 
         - scripts/about_generator.py 
         - scripts/tags_generator.py
@@ -106,7 +106,7 @@ plugins:
         - 'resources/tags/*'
         - '_includes/*'
         - 'people/*' 
-  # - social: # IMPORTANT: when developing, the .cache/plugin/social directory must be deleted to see changes to the social links.
+  # - social: # IMPORTANT: when developing, the .cache/plugin/social directory must be deleted to see changes to the social cards.
   #     cards_layout_options:
   #       background_color: "#F3F4F4" 
   #       color: "#a51c30"
