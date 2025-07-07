@@ -7,12 +7,12 @@ These are topics of previous events with no attached contents and the dates of o
 ---
 
 <table class="icon-key">
-    <caption><em>Event icon key:</em></caption>
+    <caption><em>Event icon key. Additionally, hover icons on page to view label.</em></caption>
     <tr>
-        <td><span class="twemoji">{% include "assets/.icons/tools.svg" %}</span> = Workshop</td>
-        <td><span class="twemoji">{% include "assets/.icons/monitor-account.svg" %}</span> = Short training</td>
-        <td><span class="twemoji">{% include "assets/.icons/star-plus-outline.svg" %}</span> = Special event</td>
-        <td><span class="twemoji">{% include "assets/.icons/pizza-slice.svg" %}</span> = Programming and Pizza</td>
+        <td><span class="twemoji" aria-label="Workshop" title="Workshop">{% include "assets/.icons/tools.svg" %}</span> = Workshop</td>
+        <td><span class="twemoji" aria-label="Short training" title="Short training">{% include "assets/.icons/monitor-account.svg" %}</span> = Short training</td>
+        <td><span class="twemoji" aria-label="Special event" title="Special event">{% include "assets/.icons/star-plus-outline.svg" %}</span> = Special event</td>
+        <td><span class="twemoji" aria-label="Programming and Pizza" title="Programming and Pizza">{% include "assets/.icons/pizza-slice.svg" %}</span> = Programming and Pizza</td>
     </tr>
 </table>
 

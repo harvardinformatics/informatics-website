@@ -11,7 +11,7 @@ We are a broad group with diverse expertise in the computational analysis of seq
 ---
 
 <table class="icon-key"> 
-    <caption><em>Icon key</em></caption>
+    <caption><em>Icon key. Additionally, hover icons on page to view label.</em></caption>
     <tr>
         <td><span class="twemoji research-icon" aria-label="Collaboration" title="Collaboration">{% include "assets/.icons/handshake.svg" %}</span> = Collaboration</td>
         <td><span class="twemoji research-icon" aria-label="Grant supported" title="Grant supported">{% include "assets/.icons/hand-holding-dollar.svg" %}</span> = Grant supported</td>
