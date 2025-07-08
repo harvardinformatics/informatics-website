@@ -30,7 +30,7 @@ A major focus of recent work in the group has been to assist with the assembly a
 
 ### Performance assessment of genome annotation methods across the tree of life &nbsp; <span aria-label="Best practices" title="Best practices">:material-lan-check:{ .research-icon }</span>
 
-**Lead Bioinformaticians**: Adam Freedman and Tim Sackton
+**Lead Bioinformaticians**: Adam Freedman and Tim Sackton 
 
 Cheap long-read sequencing has made assembling non-model genomes routine; the main obstacle is now accurate annotation. Researchers must pick from many gene-prediction tools, decide which extra data to include, and gauge annotation quality. We benchmarked 12 methods on 21 vertebrate, plant, and insect genomes to assess performance and the value of RNA-seq. Across BUSCO recovery, CDS length, and false-positive rate, three approaches—annotation transfer via TOGA, BRAKER3, and the RNA-seq assembler StringTie—were consistently best, though TOGA lagged for BUSCO in some monocots. Method choice depends on whole-genome alignment feasibility, RNA-seq availability, and the need to capture noncoding transcripts. When alignments aren’t feasible, adding RNA-seq markedly improves annotations.
 
@@ -41,7 +41,9 @@ Cheap long-read sequencing has made assembling non-model genomes routine; the ma
     * **Freedman AH**, **Sackton TB**. 2025. Building better genome annotations across the tree of life. *Genome Research*. 35:1261-1276. [Link :octicons-link-external-24:](https://www.genome.org/cgi/doi/10.1101/gr.280377.124){target="_blank"}
 
 
-### Panther worm (*Hofstenia*) genomics &nbsp; <span aria-label="Collaboration" title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
+{{ render_publications("phyloacc") }}
+
+### Panther worm (*Hofstenia*) genomics &nbsp; <span aria-label="Collaboration"  title="Collaboration">:fontawesome-regular-handshake:{ .research-icon }</span>
 
 **Lead Bioinformaticians**: Danielle Khost and Adam Freedman
 

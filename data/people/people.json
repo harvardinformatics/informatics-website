@@ -4,6 +4,7 @@
             "Tim Sackton": {
                 "id": "1",
                 "name": "Tim Sackton",
+                "bibtex-names": ["Sackton, T. B.", "Sackton, Timothy B.", "Sackton, Tim"],
                 "title" : "Director of Bioinformatics",
                 "office" : "B227.10",
                 "img": "img/people/timsackton.jpg",
@@ -23,6 +24,7 @@
             "Adam Freedman": {
                 "id": "10",
                 "name": "Adam Freedman",
+                "bibtex-names": ["Freedman, A. H.", "Freedman, Adam H."],
                 "title" : "Senior Bioinformatics Scientist",
                 "office" : "B227.30",
                 "img": "img/people/adamfreedman.jpg",
@@ -40,6 +42,7 @@
             "Danielle Khost": {
                 "id": "11",
                 "name": "Danielle Khost",
+                "bibtex-names": ["Khost, D. E.", "Khost, Danielle"],
                 "title" : "Senior Bioinformatics Scientist",
                 "office" : "B227.65",
                 "img": "img/people/daniellekhost.jpg",
@@ -57,6 +60,7 @@
             "Gregg Thomas": {
                 "id": "12",
                 "name": "Gregg Thomas",
+                "bibtex-names": ["Thomas, G. W. C."],
                 "title" : "Senior Bioinformatics Scientist",
                 "office" : "B227.65",
                 "img": "img/people/greggthomas.jpg",
@@ -74,6 +78,7 @@
             "Lei Ma": {
                 "id": "13",
                 "name": "Lei Ma",
+                "bibtex-names": [],
                 "title" : "Senior Bioinformatics Scientist",
                 "office" : "B227.20",
                 "img": "img/people/leima.jpg",
@@ -91,6 +96,7 @@
             "Rawan Olayan": {
                 "id": "14",
                 "name": "Rawan Olayan",
+                "bibtex-names": [],
                 "title" : "Senior Bioinformatics Scientist",
                 "office" : "B227.40",
                 "img": "img/people/rawanolayan.jpg",
@@ -108,6 +114,7 @@
             "Allison Shultz": {
                 "id": "15",
                 "name": "Allison Shultz",
+                "bibtex-names": ["Shultz, A. J."],
                 "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "09-11-2017",
@@ -121,6 +128,7 @@
             "Brian Arnold": {
                 "id": "16",
                 "name": "Brian Arnold",
+                "bibtex-names": ["Arnold, B. J.", "Arnold, B."],
                 "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "09-24-2018",
@@ -134,6 +142,7 @@
             "Ming Tang": {
                 "id": "17",
                 "name": "Ming \"Tommy\" Tang",
+                "bibtex-names": ["Tang, M."],
                 "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "10-01-2018",
@@ -147,6 +156,7 @@
             "Scott Van Buren": {
                 "id": "18",
                 "name": "Scott Van Buren",
+                "bibtex-names": [],
                 "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "09-01-2020",
@@ -160,6 +170,7 @@
             "Juerg Straubhaar": {
                 "id": "19",
                 "name": "Juerg Straubhaar",
+                "bibtex-names": ["Straubhaar, J. R.", "Straubhaar, J."],
                 "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "01-08-2017",
@@ -173,6 +184,7 @@
             "John Gaspar": {
                 "id": "20",
                 "name": "John Gaspar",
+                "bibtex-names": ["Gaspar, J. M."],
                 "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "03-01-2017",
@@ -186,6 +198,7 @@
             "Yasin Kaymaz": {
                 "id": "21",
                 "name": "Yasin Kaymaz",
+                "bibtex-names": ["Kaymaz, Y."],
                 "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "08-01-2017",
@@ -199,6 +212,7 @@
             "Alexandria D'Souza": {
                 "id": "22",
                 "name": "Alexandria D'Souza",
+                "bibtex-names": ["D'Souza, A."],
                 "title": "Senior Bioinformatics Scientist",
                 "date-added": "12-05-2023",
                 "date-joined": "09-30-2019",
@@ -214,6 +228,7 @@
             "Subir Shakya": {
                 "id": "30",
                 "name": "Subir Shakya",
+                "bibtex-names": ["Shakya, S. B."],
                 "title" : "Postdoctoral Fellow",
                 "office" : "B227.65",
                 "img": "img/people/subirshakya.jpg",
@@ -231,6 +246,7 @@
             "Ekaterina Osipova": {
                 "id": "31",
                 "name": "Katya Osipova",
+                "bibtex-names": ["Osipova, K.", "Osipova, Ekaterina"],
                 "title" : "Postdoctoral Fellow",
                 "office" : "B227.65",
                 "img": "img/people/katyaosipova.jpg",
@@ -248,6 +264,7 @@
             "Sara Smith Wuitchik": {
                 "id": "32",
                 "name": "Sara Smith Wuitchik",
+                "bibtex-names": ["Wuitchik, S. J. S.", "Wuitchik, Sara JS"],
                 "title" : "Postdoctoral Fellow",
                 "date-added": "12-05-2023",
                 "date-joined": "05-06-2019",
@@ -261,6 +278,7 @@
             "Alex Llanos Garrido": {
                 "id": "33",
                 "name": "Alex Llanos Garrido",
+                "bibtex-names": [],
                 "title" : "Postdoctoral Fellow",
                 "date-added": "12-05-2023",
                 "date-joined": "09-01-2019",
@@ -274,6 +292,7 @@
             "Veronika Laine": {
                 "id": "34",
                 "name": "Veronika Laine",
+                "bibtex-names": ["Laine, V. N."],
                 "title" : "Postdoctoral Fellow",
                 "date-added": "12-05-2023",
                 "date-joined": "01-01-2019",
@@ -289,6 +308,7 @@
             "Abhratanu Saha": {
                 "id": "40",
                 "name": "Abhratanu Saha",
+                "bibtex-names": [],
                 "title" : "Visiting Student",
                 "office" : "B227.65",
                 "img": "img/people/abhratanusaha.jpg",
@@ -310,6 +330,7 @@
             "Aaron Kitzmiller": {
                 "id": "50",
                 "name": "Aaron Kitzmiller",
+                "bibtex-names": [],
                 "title" : "Director of Software Operations",
                 "office" : "B227.70",
                 "img": "img/people/aaronkitzmiller.jpg",
@@ -329,6 +350,7 @@
             "David D'Antonio": {
                 "id": "60",
                 "name": "David D'Antonio",
+                "bibtex-names": [],
                 "title" : "Senior Web Developer",
                 "office" : "Remote",
                 "img": "img/people/ddantonio.jpg",
@@ -346,6 +368,7 @@
             "Nathan Weeks": {
                 "id": "61",
                 "name": "Nathan Weeks",
+                "bibtex-names": [],
                 "title" : "Applications Professional",
                 "office" : "B227.30",
                 "img": "img/people/nathanweeks.jpg",
@@ -363,6 +386,7 @@
             "Jared Vessella-Smith": {
                 "id": "64",
                 "name": "Jared Vessella-Smith",
+                "bibtex-names": [],
                 "title" : "Applications Professional",
                 "office" : "B227.40",
                 "img": "",
@@ -380,6 +404,7 @@
             "Meghan Correa": {
                 "id": "62",
                 "name": "Meghan Correa",
+                "bibtex-names": [],
                 "title" : "Applications Professional",
                 "office" : "",
                 "date-added": "12-05-2023",
@@ -396,6 +421,7 @@
             "Andy Bryant": {
                 "id": "63",
                 "name": "Andy Bryant",
+                "bibtex-names": [],
                 "title" : "Applications Professional",
                 "office" : "",
                 "date-added": "12-05-2023",

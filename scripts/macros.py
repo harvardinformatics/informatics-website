@@ -5,6 +5,7 @@
 
 import os
 import json
+import bibtexparser
 
 ############################################################
 
@@ -93,5 +94,73 @@ def define_env(env):
         """
         with open(os.path.join(env.project_dir, "data/resources/resources-primary.json"), "r") as f:
             return json.load(f)
+        
+    ###############
+
+    def bibtexLookup(json_data):
+        lookup = {}
+        for group in json_data.values():
+            for subgroup in group.values():
+                for canonical_name, fields in subgroup.items():
+                    status = fields.get("status", "")
+                    bibtex_names = fields.get("bibtex-names", [])
+                    for bname in bibtex_names:
+                        lookup[bname.strip().lower()] = [canonical_name, status]
+        return lookup
+
+    @env.macro
+    def render_publications(project):
+        print(f"Rendering publications for project: {project}")
+        
+        # Load bibtex entries
+        with open(os.path.join(env.project_dir, 'data', 'publications', 'fasifx-pubs.bib'), encoding='utf-8') as f:
+            bibtex_db = bibtexparser.load(f)
+
+        bibtex_lookup = bibtexLookup(PEOPLE_JSON_DATA)
+
+        pubs = []
+        # Filter pubs by project keyword
+        for entry in bibtex_db.entries:
+            kwords = entry.get('keywords','')
+            if f"project:{project}\n" in kwords:
+                pubs.append(entry)
+
+        # Sort as desired
+        pubs.sort(key=lambda e: (-int(e.get('year', 0)), e.get('journal','')))
+        print("PUBS", pubs);
+
+        # Compose output string
+        result = '!!! abstract "Publications"\n\n'
+        for pub in pubs:
+            # Parse and format authors
+            authorlist = [a.strip() for a in pub.get('author', '').split(' and ')]
+            formatted_authors = []
+            for auth in authorlist:
+                canonical_name, status = bibtex_lookup[auth]
+                formatted_author_names = getPeopleField(canonical_name, "bibtex-names", PEOPLE_JSON_DATA, auth)
+                formatted_author_name = formatted_author_names[0].replace(', ', ' ').replace('. ', '')[:-1]  # Remove trailing period
+
+                if status == 'active':
+                    formatted_authors.append(f'**{formatted_author_name}**')
+                elif status == 'alumni':
+                    formatted_authors.append(f'{formatted_author_name} :fontawesome-solid-people-group:')
+                else:
+                    formatted_authors.append(formatted_author_name)
+
+            author_str = ', '.join(formatted_authors)
+            title = pub.get('title','').strip().rstrip('.')
+            year = pub.get('year','')
+            journal = pub.get('journal','')
+            volume = pub.get('volume','')
+            number = pub.get('number','')
+            pages = pub.get('pages','')
+            doi = pub.get('doi','')
+            url = f"https://doi.org/{doi}" if doi else pub.get('url', '')
+
+            citation = f"* {author_str} {year}. {title}. *{journal}*. {volume}{f'({number})' if number else ''}:{pages}."
+            if url:
+                citation += f' [Link :octicons-link-external-24:]({url}){{target="_blank"}}'
+            result += citation + '\n\n'
+        return result        
         
 ############################################################        
