@@ -4,7 +4,7 @@
             "Tim Sackton": {
                 "id": "1",
                 "name": "Tim Sackton",
-                "bibtex-names": ["Sackton, T. B.", "Sackton, Timothy B.", "Sackton, Tim"],
+                "bibtex-names": ["Sackton, T. B.", "Sackton, Timothy B.", "Sackton, Timothy B", "Sackton, Tim"],
                 "title" : "Director of Bioinformatics",
                 "office" : "B227.10",
                 "img": "img/people/timsackton.jpg",
@@ -222,7 +222,21 @@
                 "external-link": "",
                 "degree": "Ph.D.",
                 "profile": "Alexandria primarily worked with the mass spec core and the Woo lab while she was in the group."
-            }
+            },
+            "Michele Clamp": {
+                "id": "23",
+                "name": "Michele Clamp",
+                "bibtex-names": ["Clamp, M."],
+                "title": "Director of Bioinformatics",
+                "date-added": "07-09-2025",
+                "date-joined": "2012",
+                "date-left": "06-30-2017",
+                "status" : "retired",
+                "link": "",
+                "external-link": "https://micheleclamp.com/",
+                "degree": "Ph.D.",
+                "profile": "The former Director of Bioinformatics, Michele was at the forefront of bioinformatics during genomics' coming of age. She is now retired and devoted to making and teaching about art."
+            }            
         },
         "Postdoctoral Researchers": {
             "Subir Shakya": {
@@ -264,7 +278,7 @@
             "Sara Smith Wuitchik": {
                 "id": "32",
                 "name": "Sara Smith Wuitchik",
-                "bibtex-names": ["Wuitchik, S. J. S.", "Wuitchik, Sara JS"],
+                "bibtex-names": ["Wuitchik, S. J. S.", "Wuitchik, Sara JS", "Smith, S. J."],
                 "title" : "Postdoctoral Fellow",
                 "date-added": "12-05-2023",
                 "date-joined": "05-06-2019",

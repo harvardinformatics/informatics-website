@@ -89,7 +89,7 @@ with open(DATA_FILE, "r", encoding="utf-8") as f:
 #print("PREPARING DATA");
 staff = getPeopleByStatus(json_data, ["active"])
 grouped_staff = groupPeopleByTitleAndChunk(staff, 2)
-alumni = getPeopleByStatus(json_data, ["moved"])
+alumni = getPeopleByStatus(json_data, ["moved", "retired"])
 alumni.sort(key=parseEndYear, reverse=True)
 
 ####################

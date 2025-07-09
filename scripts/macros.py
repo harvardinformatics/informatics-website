@@ -4,6 +4,7 @@
 ############################################################
 
 import os
+import re
 import json
 import bibtexparser
 
@@ -20,7 +21,7 @@ def define_env(env):
 
     def getPeopleField(name, field, json_data=PEOPLE_JSON_DATA, default=""):
         """
-        Search the nested JSON people data for a person's name, then return the 
+        Helper: Search the nested JSON people data for a person's name, then return the 
         value for the specified field, or a default if not found.
         """
         for group in json_data.values():
@@ -98,6 +99,11 @@ def define_env(env):
     ###############
 
     def bibtexLookup(json_data):
+        """
+        Helper: Create a lookup table from the JSON people data for bibtex names.
+        The lookup table maps bibtex names to their canonical name and status.
+        - Helper for render_publications macro.
+        """
         lookup = {}
         for group in json_data.values():
             for subgroup in group.values():
@@ -105,48 +111,94 @@ def define_env(env):
                     status = fields.get("status", "")
                     bibtex_names = fields.get("bibtex-names", [])
                     for bname in bibtex_names:
-                        lookup[bname.strip().lower()] = [canonical_name, status]
+                        lookup[bname.strip()] = [canonical_name, status]
         return lookup
+
+    def formatAuthor(author):
+        """
+        Helper: Format an author name into "Lastname FM" style.
+        - Helper for render_publications macro.
+        """
+        author = author.strip()
+        # If there is a comma style: "Lastname, F. M."
+        if ',' in author:
+            last, fi = [s.strip() for s in author.split(',', 1)]
+        else:
+            # Otherwise, assume "Firstname [Middle] Lastname"
+            tokens = author.split()
+            if len(tokens) == 1:
+                # single name (unlikely)
+                return author
+            last = tokens[-1]
+            fi = ' '.join(tokens[:-1])
+        # Grab first letter of each word in fi, uppercase with no dots/spaces
+        initials = ''.join([w[0].upper() for w in re.findall(r'\b\w', fi)])
+        return f"{last} {initials}"
 
     @env.macro
     def render_publications(project):
+        """
+        Macro: Renders a list of publications for a given project.
+        - Filters publications based on the project keyword in the bibtex entries.
+        - Formats the authors, title, year, journal, volume, number, pages, and DOI.
+        - Returns a formatted string suitable for Markdown rendering.
+        """
+
         print(f"Rendering publications for project: {project}")
+        project_list = ["annotation", "worm-genomes", "parasitic-plant", "moa", "scrna-methods", 
+                        "axolotls", "scrna-ecology", "tube-worms", "transcriptome-assembly",
+                        "rnaseq-assessment", "scrub-jay", "coalescent-processes", "snparcher",
+                        "phyloacc", "convergent-comparative", "rotifers", "peak-calling", 
+                        "proteomics"]
         
+        if project not in project_list:
+            raise ValueError(
+            f"Project '{project}' is not recognized. Please ensure the project name is correct, "
+            "and add it to scripts/macros.py if so."
+            )
+
         # Load bibtex entries
-        with open(os.path.join(env.project_dir, 'data', 'publications', 'fasifx-pubs.bib'), encoding='utf-8') as f:
+        bibtex_file = os.path.join(env.project_dir, 'data', 'publications', 'fasifx-pubs.bib')
+        with open(bibtex_file, encoding='utf-8') as f:
             bibtex_db = bibtexparser.load(f)
 
+        # Create a lookup for bibtex names to canonical names and status
         bibtex_lookup = bibtexLookup(PEOPLE_JSON_DATA)
 
         pubs = []
         # Filter pubs by project keyword
         for entry in bibtex_db.entries:
-            kwords = entry.get('keywords','')
-            if f"project:{project}\n" in kwords:
+            kwords = entry.get('keywords','').split("\n")
+            if f"project:{project}" in kwords:
                 pubs.append(entry)
 
-        # Sort as desired
+        # Sort by year (descending) and journal name (ascending)
         pubs.sort(key=lambda e: (-int(e.get('year', 0)), e.get('journal','')))
-        print("PUBS", pubs);
 
-        # Compose output string
-        result = '!!! abstract "Publications"\n\n'
+        # Initialize output string
+        output_string = '!!! abstract "Publications"\n\n'
+
         for pub in pubs:
             # Parse and format authors
             authorlist = [a.strip() for a in pub.get('author', '').split(' and ')]
             formatted_authors = []
             for auth in authorlist:
-                canonical_name, status = bibtex_lookup[auth]
-                formatted_author_names = getPeopleField(canonical_name, "bibtex-names", PEOPLE_JSON_DATA, auth)
-                formatted_author_name = formatted_author_names[0].replace(', ', ' ').replace('. ', '')[:-1]  # Remove trailing period
+                # Format author name for output as "Lastname FM"
+                formatted_author_name = formatAuthor(auth)
 
-                if status == 'active':
-                    formatted_authors.append(f'**{formatted_author_name}**')
-                elif status == 'alumni':
-                    formatted_authors.append(f'{formatted_author_name} :fontawesome-solid-people-group:')
+                # If the author is a member of the group, check status to format accordingly
+                if auth in bibtex_lookup:
+                    canonical_name, status = bibtex_lookup[auth]
+                    if status == 'active':
+                        formatted_authors.append(f'**{formatted_author_name}**')
+                    elif status in ['moved', 'retired']:
+                        formatted_authors.append(f'{formatted_author_name} :fontawesome-solid-graduation-cap:')
+                    else:
+                        formatted_authors.append(formatted_author_name)
                 else:
                     formatted_authors.append(formatted_author_name)
 
+            # Extract publication details
             author_str = ', '.join(formatted_authors)
             title = pub.get('title','').strip().rstrip('.')
             year = pub.get('year','')
@@ -157,10 +209,28 @@ def define_env(env):
             doi = pub.get('doi','')
             url = f"https://doi.org/{doi}" if doi else pub.get('url', '')
 
-            citation = f"* {author_str} {year}. {title}. *{journal}*. {volume}{f'({number})' if number else ''}:{pages}."
+            # Additional formatting for bioRxiv
+            if journal == "bioRxiv":
+                pages = '';
+            else:
+                journal += ". "
+
+            # Additional formatting for issue number
+            if number:
+                number = f"({number})"
+
+            # Additionaly formatting for pages
+            if pages and (volume or number):
+                pages = f":{pages}"
+
+            # Construct the citation string
+            citation = f"* {author_str}. {year}. {title}. *{journal}*{volume}{number}{pages}."
             if url:
                 citation += f' [Link :octicons-link-external-24:]({url}){{target="_blank"}}'
-            result += citation + '\n\n'
-        return result        
+
+            # Add the citation to the output string    
+            output_string += "    " + citation + '\n\n'
+
+        return output_string        
         
-############################################################        
+############################################################
