@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   font-size: 0.98em;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 0.25em;
+  padding-bottom: 0.75em;
   /* gap: 0.75em; */
 }
 @media (max-width: 600px) {

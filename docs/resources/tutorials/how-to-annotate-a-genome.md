@@ -1,8 +1,11 @@
 ---
-title: Genome annotation
+title: "[Tutorial] Genome annotation"
+description: "A page discussing methods and best practices for genome annotation."
 authors: 
     - Adam Freedman
 ---
+
+# Genome Annotation
 
 {{ author_row(page) }}
 

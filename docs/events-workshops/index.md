@@ -1,3 +1,10 @@
+---
+title: "Events & Workshops"
+description: "A list of upcoming events and workshops and past workshop content from the Harvard FAS Informatics group."
+---
+
+# Events & Workshops
+
 The FAS Informatics Group creates hosts events such as workshops, both online and in-person. Here is a list of upcoming events, as well as current and past workshop content!
 
 ## Upcoming events & workshops
@@ -59,7 +66,7 @@ This short training will introduce students to SNPArcher, a tool for population 
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-:material-arrow-right-bottom: Next up: July 9, 2025, 4-6PM (Northwest Building B227.45)
+:material-arrow-right-bottom: **These will return in the Fall of 2025!** :fontawesome-solid-pizza-slice:
 
 ### Office hours
 

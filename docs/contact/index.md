@@ -1,4 +1,6 @@
 ---
+title: "Contact us"
+description: "Various methods for getting in touch with the Harvard FAS Informatics group"
 hide:
     - navigation
     - toc
@@ -6,7 +8,7 @@ hide:
 
 # Contact us
 
-There are several ways to get in touch with us:
+There are several ways to get in touch with us for help on your bioinformatics or data science project:
 
 ## [:material-email-outline:{ .contact-icon } Consults :octicons-link-external-24:](https://forms.office.com/r/qwXEPbBvFK){:target="_blank"}
 

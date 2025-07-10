@@ -1,8 +1,11 @@
 ---
-title: How to download sequencing data from the Bauer Core
+title: "[Tutorial] Bauer Core downloads"
+description: "A walkthrough describing the various ways to download raw sequence data from Harvard's Bauer Sequencing Core"
 authors: 
     - Nathan Weeks
 ---
+
+# How to download sequencing data from the Bauer Core
 
 {{ author_row(page) }}
 

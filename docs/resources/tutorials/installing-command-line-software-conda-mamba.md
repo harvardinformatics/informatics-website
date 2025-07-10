@@ -1,11 +1,13 @@
 ---
-title: Installing command line software with conda/mamba
+title: "[Tutorial] Intro to conda/mamba"
+description: "An introduction to installing software and managing environments with conda and mamba."
 authors: 
     - Gregg Thomas
 ---
 
-{{ author_row(page) }}
+# Installing command line software with conda/mamba
 
+{{ author_row(page) }}
 
 Many scientific software packages are run by text commands via the **command line**. For installing command line software and managing environments, either on your local computer or on a remote server, we recommend **conda** and **mamba**.
 

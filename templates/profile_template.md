@@ -1,4 +1,6 @@
 ---
+title: "{person}"
+description: "Bio, links, and pages authored by {person}."
 hide:
     - toc
 ---

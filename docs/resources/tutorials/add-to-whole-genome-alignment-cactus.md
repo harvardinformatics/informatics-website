@@ -1,11 +1,13 @@
 ---
-title: Adding a genome to a whole genome alignment
+title: "[Tutorial] Add new genome to HAL file"
+description: "A tutorial and associated Snakemake workflow for adding a new sequence to a whole genome alignment (.hal file)."
 authors: 
     - Gregg Thomas
 ---
 
-{{ author_row(page) }}
+# Adding a genome to a whole genome alignment
 
+{{ author_row(page) }}
 
 Once you have your [HAL file with a whole genome alignment](whole-genome-alignment-cactus.md), you may find that you need to add samples to it as your research questions expand. Re-running the whole alignment pipeline may be too computationally expensive. Luckily, Cactus provides a method to [add genomes to a HAL file :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md){:target="_blank"} with minimal computational effort. Here, we replicate this method as a Snakemake pipeline by emulating the steps laid out by [`cactus-update-prepare` :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/cactus-update-prepare.md){:target="_blank"}. Specifically, we have implemented the "[add to a branch :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md#adding-a-new-genome){:target="_blank"}" method, as that is the [recommended way :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/issues/1595#issuecomment-2616927008){:target="_blank"} to add a genome to an alignment.
 

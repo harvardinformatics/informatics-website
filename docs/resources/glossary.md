@@ -1,9 +1,12 @@
 ---
-title: Computing glossary
+title: "[Resource] Computing glossary"
+description: "A set of tables with basic computing and programming terms and their definitions."
 authors:
     - Gregg Thomas
 author_header: Page maintainer
 ---
+
+# Computing glossary
 
 Like any specific domain, the way we talk about computing and programming is almost its own language. Words in this context may have different meaning than in other contexts. 
 As programmers ourselves, we are so used to using words in the context of programming that we sometimes forget others aren't used to it. This is one of the biggest roadblocks
