@@ -1,5 +1,5 @@
 ---
-title: "[Tutorial] Replace a genome in a whole genome alignment"
+title: "[Tutorial] Replace a genome in a HAL file"
 description: "A tutorial and associated Snakemake workflow to add replace a genome in a whole genome alignment (.hal file)."
 authors: 
     - Gregg Thomas

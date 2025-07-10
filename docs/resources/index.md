@@ -62,7 +62,7 @@ Let us know if there is something we should add!
 
 We have compiled a list of external resources and tagged them with the categories below. Click on each tag to see the links!
 
-{% set data = get_resources() %}
+{% set data = get_resources(page) %}
 {% set tag_counts = {} %}
 {% for r in data.links.values() if r.status=="active" %}
     {% for tag in r.tags %}

@@ -1,5 +1,5 @@
 ---
-title: "[Tutorial] Pangenome inference with Minigraph-Cactus"
+title: "[Tutorial] Pangenomes with Minigraph-Cactus"
 description: "A tutorial and associated Snakemake workflow for infering a pangenome with Minigraph-Cactus."
 authors: 
     - Gregg Thomas

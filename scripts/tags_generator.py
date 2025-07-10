@@ -37,7 +37,7 @@ title: "[External resource] {tag}"
 description: "Links to external resources related to {tag}."
 ---
 
-{{% set data = get_resources() %}}
+{{% set data = get_resources(page) %}}
 {{% set tag = "{tag}" %}}
 
 # {tag} resources

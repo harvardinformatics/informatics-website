@@ -1,6 +1,6 @@
 ---
 title: "Research & Publications"
-description: "The Harvard FAS Informatics group's research and collaborations as well as related publications."
+description: "The Harvard FAS Informatics group's research and collaborations along with related publications."
 ---
 
 # Research & Publications

@@ -43,7 +43,8 @@ def define_env(env):
         - Includes last updated info (with icon) except for "Page maintainer" rows.
         """
 
-        #print(f"[MACRO] Generating author row for {page}")
+        chatter = env.start_chatting("author_row")
+        chatter(f"Generating author row for {page.url}")
 
         # Get the authors and the author header from the page metadata
         authors = page.meta.get('authors') or [page.meta.get('author')]
@@ -89,13 +90,14 @@ def define_env(env):
     ###############
 
     @env.macro
-    def get_resources():
+    def get_resources(page):
         """
         Macro: Loads the primary resource data from JSON and returns it (for use in templates).
         This is loaded/re-parsed every time the macro is called. 
         - Used in resources/index.md
         """
-        #print(f"[MACRO] Loading tags for tag index table on resources.md")
+        chatter = env.start_chatting("get_resources")
+        chatter(f"Loading resources to generate {page.url}")
         with open(os.path.join(env.project_dir, "data/resources/resources-primary.json"), "r") as f:
             return json.load(f)
         
@@ -147,7 +149,8 @@ def define_env(env):
         - Returns a formatted string suitable for Markdown rendering.
         """
 
-        #print(f"[MACRO] Rendering publications for project: {project}")
+        chatter = env.start_chatting("render_publications")
+        chatter(f"Project: {project}")
         project_list = ["annotation", "worm-genomes", "parasitic-plant", "moa", "scrna-methods", 
                         "axolotls", "scrna-ecology", "tube-worms", "transcriptome-assembly",
                         "rnaseq-assessment", "scrub-jay", "coalescent-processes", "snparcher",

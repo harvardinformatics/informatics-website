@@ -1,5 +1,5 @@
 ---
-title: "[Tutorial] Add outgroup to whole genome alignment"
+title: "[Tutorial] Add outgroup to HAL file"
 description: "A tutorial and associated Snakemake workflow to add a new sequence as an outgroup to a whole genome alignment (.hal file)."
 authors: 
     - Gregg Thomas

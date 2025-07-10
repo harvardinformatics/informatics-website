@@ -1,5 +1,5 @@
 ---
-title: "[Tutorial] Add new genome to whole genome alignment"
+title: "[Tutorial] Add new genome to HAL file"
 description: "A tutorial and associated Snakemake workflow for adding a new sequence to a whole genome alignment (.hal file)."
 authors: 
     - Gregg Thomas

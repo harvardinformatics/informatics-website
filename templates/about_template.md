@@ -1,6 +1,6 @@
 ---
-title: "Harvard FAS Informatics Group"
-description: Our mission and services, people in the group, and how to contact us."
+title: "Bioinformatics and data science training and research"
+description: "Our mission and services, people in the group, and how to contact us."
 template: home.html
 ---
 

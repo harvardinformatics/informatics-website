@@ -1,5 +1,5 @@
 ---
-title: "[Tutorial] Whole genome alignment with Cactus"
+title: "[Tutorial] Cactus whole genome alignment"
 description: "A tutorial and associated Snakemake workflow to generate a whole genome alignment (.hal file) with Cactus."
 authors: 
     - Gregg Thomas
