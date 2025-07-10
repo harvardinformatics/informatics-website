@@ -33,6 +33,10 @@ jobs:
           head -20 docs/workshops/biotips/setup-cannon.md || echo 'setup-cannon.md missing'        
       - name: Build site
         run: mkdocs build
+
+      - name: Patch jupyter HTML with metadata # Adds title and description to HTML rendered from jupyter notebooks
+        run: python scripts/add_jupyter_meta.py
+
       - name: Upload site/
         uses: actions/upload-pages-artifact@v3
         with:
