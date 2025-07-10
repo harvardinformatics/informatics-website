@@ -197,7 +197,7 @@ You will have to determine the proper resource usage for your dataset. Generally
 
 ## Running the pipeline
 
-With [everything installed](#getting-started), the [Cactus input file](#preparing-the-cactus-minigraph-input-file), and the [Snakemake configuration file](#preparing-the-snakemake-config-file) setup, you are now ready to run the pipeline.
+With [everything installed](#getting-started), the [Cactus input file](#preparing-the-minigraph-cactus-input-file), and the [Snakemake configuration file](#preparing-the-snakemake-config-file) setup, you are now ready to run the pipeline.
 
 ### Do a `--dryrun` first
 
