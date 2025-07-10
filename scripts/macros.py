@@ -43,6 +43,8 @@ def define_env(env):
         - Includes last updated info (with icon) except for "Page maintainer" rows.
         """
 
+        #print(f"[MACRO] Generating author row for {page}")
+
         # Get the authors and the author header from the page metadata
         authors = page.meta.get('authors') or [page.meta.get('author')]
         author_header = page.meta.get('author_header', 'Authors')
@@ -93,6 +95,7 @@ def define_env(env):
         This is loaded/re-parsed every time the macro is called. 
         - Used in resources/index.md
         """
+        #print(f"[MACRO] Loading tags for tag index table on resources.md")
         with open(os.path.join(env.project_dir, "data/resources/resources-primary.json"), "r") as f:
             return json.load(f)
         
@@ -144,7 +147,7 @@ def define_env(env):
         - Returns a formatted string suitable for Markdown rendering.
         """
 
-        print(f"Rendering publications for project: {project}")
+        #print(f"[MACRO] Rendering publications for project: {project}")
         project_list = ["annotation", "worm-genomes", "parasitic-plant", "moa", "scrna-methods", 
                         "axolotls", "scrna-ecology", "tube-worms", "transcriptome-assembly",
                         "rnaseq-assessment", "scrub-jay", "coalescent-processes", "snparcher",

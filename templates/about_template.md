@@ -1,5 +1,6 @@
 ---
-title: Harvard FAS Informatics Group
+title: "Harvard FAS Informatics Group"
+description: Our mission and services, people in the group, and how to contact us."
 template: home.html
 ---
 

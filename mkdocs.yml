@@ -84,7 +84,7 @@ theme:
   #   accent: black
   ## Dark mode
 
-plugins: 
+plugins:
   - search
   - table-reader  
   - macros:      # This plugin allows you to use Jinja2-style macros in your markdown files, see scripts/macros.py for implemented macros.

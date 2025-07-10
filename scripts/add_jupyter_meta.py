@@ -32,6 +32,8 @@ jupyter_files = {
 
 for jupyter_file in jupyter_files:
     html_path = os.path.join(jupyter_dir, jupyter_file, "index.html")
+    print(f"[PATCH] {html_path}")
+    
     title = jupyter_files[jupyter_file]["title"]
     description = jupyter_files[jupyter_file]["description"]
 
@@ -63,4 +65,3 @@ for jupyter_file in jupyter_files:
         with open(html_path, "w", encoding="utf-8") as f:
             f.write(html)
 
-    print(f"Patched {html_path}")

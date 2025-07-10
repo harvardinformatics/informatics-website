@@ -43,8 +43,8 @@ def getContact(person, json_data):
 
 ############################################################
 
-print("-" * 10);
-print("MKDOCS-GEN-FILES: scripts/profile_generator.py")
+# print("-" * 10);
+print("[GEN-FILES] scripts/profile_generator.py")
 
 # Settings
 docs_dir = "docs"
@@ -98,13 +98,18 @@ for mdfile in glob.glob(os.path.join(docs_dir, "**/*.md"), recursive=True):
                 title = meta.get("title", os.path.basename(mdfile))
 
                 if "author_header" in meta and meta["author_header"].lower() == "page maintainer":
-                    title = "[Maintainer] " + title                   
-                else:
-                    if "tutorials" in mdfile:
-                        title = "[Tutorial] " + title
-                    if "workshops" in mdfile:
-                        title = "[Workshop] " + title
-                    #print(mdfile);
+                    if title.startswith("[Resource] "):
+                        title = title.replace("[Resource] ", "")
+                    if title.startswith("[Workshop] "):
+                        title = title.replace("[Workshop] ", "")                        
+                    title = "[Maintainer] " + title
+
+                # else:
+                #     if "tutorials" in mdfile:
+                #         title = "[Tutorial] " + title
+                #     if "workshops" in mdfile:
+                #         title = "[Workshop] " + title
+                #     #print(mdfile);
                 author_to_pages[slug]['pages'].append({'title': title, 'path': mdfile})
 
 active_people = set()

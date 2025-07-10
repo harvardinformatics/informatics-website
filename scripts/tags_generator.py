@@ -12,8 +12,8 @@ import mkdocs_gen_files
 
 ############################################################
 
-print("-" * 10);
-print("MKDOCS-GEN-FILES: scripts/tags_generator.py")
+# print("-" * 10);
+print("[GEN-FILES] scripts/tags_generator.py")
 
 # Path to your JSON data
 json_path = "data/resources/resources-primary.json"
@@ -33,7 +33,8 @@ for tag, tagmeta in tags.items():
 
     with mkdocs_gen_files.open(filename, "w") as f_out:
         print(f"""---
-title: "{tag}"
+title: "[External resource] {tag}"
+description: "Links to external resources related to {tag}."
 ---
 
 {{% set data = get_resources() %}}

@@ -1,6 +1,9 @@
 ---
-title: Past events and workshops
+title: "Previous events and workshops"
+description: "A list of all previous events and workshops developed and hosted by the Harvard FAS Informatics group"
 ---
+
+# Previous events and workshops
 
 These are topics of previous events with no attached contents and the dates of our previous workshops. See [Events & Workshops](index.md) for the most up-to-date workshop content! 
 

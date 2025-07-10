@@ -1,9 +1,9 @@
 ---
-title: Frequently asked questions
+title: "Frequently asked questions"
+description: "A short list of frequently asked questions related to the Harvard FAS Informatics group and their answers."
 ---
 
 # Frequently Asked Questions
-
 
 !!! tip "Click on each question to reveal the answer"
 

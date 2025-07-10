@@ -1,5 +1,6 @@
 ---
-title: Harvard Informatics Software
+title: Software
+description: "Software developed and maintained by the Harvard FAS Informatics group."
 authors:
     - Gregg Thomas
 author_header: Page maintainer
@@ -7,6 +8,8 @@ hide:
     - navigation
     - toc
 ---
+
+# Software
 
 The FAS Informatics group develops methods and software for various genomics tasks with an emphasis on reproducibility and ease of use. We aim to provide tools that fill gaps in the current genomics software ecosystem. We also collaborate both within and outside of Harvard to develop new methods.
 

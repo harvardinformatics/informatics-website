@@ -73,8 +73,8 @@ def getPeopleByStatus(json_data, status_list):
 
 ############################################################
 
-print("-" * 10);
-print("MKDOCS-GEN-FILES: scripts/about_generator.py")
+# print("-" * 10);
+print("[GEN-FILES] scripts/about_generator.py")
 
 DATA_FILE = 'data/people/people.json'
 OUTPUT_FILE = 'index.md'

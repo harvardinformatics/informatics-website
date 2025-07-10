@@ -1,6 +1,11 @@
+---
+title: Newsletter sign-up
+description: "Use this form to sign up for our monthly newsletter about events and workshops of related to bioinformatics and data science."
+---
+
 # Newsletter sign-up
 
-Sign up for our newsletter! We will send out notifications about events and workshops of interest to bioinformatics.
+Sign up for our newsletter! We will send out notifications about events and workshops of related to bioinformatics and data science.
 
 <div id="mc_embed_shell">
       <link href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">

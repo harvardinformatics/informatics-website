@@ -1,5 +1,6 @@
 ---
 title: Resources
+description: "Links to various bioinformatics and data science resources, including tutorials, glossaries, and external resources."
 ---
 
 # Resources

@@ -1,13 +1,15 @@
 ---
-title: Pangenome inference with Cactus-minigraph
+title: "[Tutorial] Pangenome inference with Minigraph-Cactus"
+description: "A tutorial and associated Snakemake workflow for infering a pangenome with Minigraph-Cactus."
 authors: 
     - Gregg Thomas
 ---
 
+# Pangenome inference with Minigraph-Cactus
+
 {{ author_row(page) }}
 
-
-For aligning genome assemblies from the same species for population genomic analyses, the [Cactus genome alignment software :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus){:target="_blank"} has [implemented a workflow :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md){:target="_blank"} using [minigraph :octicons-link-external-24:](https://github.com/lh3/minigraph){:target="_blank"}. However, this can still be technically difficult to run. Here we have developed a [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} pipeline to facilitate running Cactus-minigraph on a computing cluster. For more details on how Snakemake breaks up Cactus-minigraph's steps, expand the box below.
+For aligning genome assemblies from the same species for population genomic analyses, the [Cactus genome alignment software :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus){:target="_blank"} has [implemented a workflow :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md){:target="_blank"} using [minigraph :octicons-link-external-24:](https://github.com/lh3/minigraph){:target="_blank"}. However, this can still be technically difficult to run. Here we have developed a [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"} pipeline to facilitate running Minigraph-Cactus on a computing cluster. For more details on how Snakemake breaks up Minigraph-Cactus's steps, expand the box below.
 
 ??? example "The cactus-minigraph snakemake pipeline's rulegraph"
 
@@ -108,15 +110,15 @@ To run this pipeline, you will need (corresponding Snakemake config option given
 1. The assembled genome [FASTA :octicons-link-external-24:](https://en.wikipedia.org/wiki/FASTA_format){:target="_blank"} files for each sample (specified in `input_file`).
 2. A reference sample (`reference`).
 
-You will use these to create the input file for Cactus-minigraph.
+You will use these to create the input file for Minigraph-Cactus.
 
-### Preparing the Cactus-minigraph input file
+### Preparing the Minigraph-Cactus input file
 
-The various Cactus-minigraph commands depend on a single input file with information about the genomes to align. This file is a simple tab delimited file with two columns. 
+The various Minigraph-Cactus commands depend on a single input file with information about the genomes to align. This file is a simple tab delimited file with two columns. 
 
 Each line contains in the first column one sample label and in the second column the path to the genome FASTA file for that sample. 
 
-!!! note "Unlike regular Cactus, Cactus-minigraph does not require the input sequences to be softmasked"
+!!! note "Unlike regular Cactus, Minigraph-Cactus does not require the input sequences to be softmasked"
 
     However, the FASTA files should still **not** be **hard** masked, meaning masked bases are replaced with Ns.
 
@@ -130,17 +132,17 @@ D   seqdir/d.fa
 E   seqdir/e.fa
 ```
 
-There is much more information about the Cactus-minigraph input file in the [official documentation for cactus-minigraph :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#interface){:target="_blank"}, including how to run the pipeline with diploid assemblies. There is also an example input file for a small test dataset [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeastPangenome-local.txt){:target="_blank"} or at `tests/yeast-minigraph/yeastPangenome-local.txt`. For more info, see section: [Test dataset](#test-dataset).
+There is much more information about the Minigraph-Cactus input file in the [official documentation for Minigraph-Cactus :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#interface){:target="_blank"}, including how to run the pipeline with diploid assemblies. There is also an example input file for a small test dataset [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeastPangenome-local.txt){:target="_blank"} or at `tests/yeast-minigraph/yeastPangenome-local.txt`. For more info, see section: [Test dataset](#test-dataset).
 
 ### Reference sample
 
-Cactus-minigraph requires that you select one sample as a reference sample [for a variety of reasons :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#reference-sample){:target="_blank"}. Keep these in mind as you prepare your inputs. The reference sample will be indicated in the Snakemake config file (outlined below). For instance, if I wanted my reference sample in the above file to be **C**, I would put the string `C` in the `reference:` line of the Snakemake config file.
+Minigraph-Cactus requires that you select one sample as a reference sample [for a variety of reasons :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#reference-sample){:target="_blank"}. Keep these in mind as you prepare your inputs. The reference sample will be indicated in the Snakemake config file (outlined below). For instance, if I wanted my reference sample in the above file to be **C**, I would put the string `C` in the `reference:` line of the Snakemake config file.
 
 ### Preparing the Snakemake config file
 
 !!! tip "Be sure to start with the example config file as a template!"
 
-    The config for the Cactus-minigraph test data can be found at [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeast-minigraph-cfg.yaml){:target="_blank"} or at `tests/yeast-minigraph/yeast-minigraph-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
+    The config for the Minigraph-Cactus test data can be found at [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/yeast-minigraph-cfg.yaml){:target="_blank"} or at `tests/yeast-minigraph/yeast-minigraph-cfg.yaml` in your downloaded cactus-snakemake repo. Be sure to use this as the template for your project since it has all the options needed! **Note: the partitions set in this config file are specific to the Harvard cluster. Be sure to update them if you are running this pipeline elsewhere.**
 
     Additionally, a blank template file is located [here :octicons-link-external-24:](https://github.com/harvardinformatics/cactus-snakemake/blob/main/config-templates/minigraph-config-template.yaml){:target="_blank"} or at `config-templates/minigraph-config-template.yaml` in your downloaded cactus-snakemake repo.
 
@@ -287,7 +289,7 @@ Here is a breakdown of the files so you can investigate them and prepare similar
 | -------------------------- | ----------- |
 | `seq/`                     | This directory contains the input sequence files for the test dataset in FASTA format. |
 | `yeast-minigraph-cfg.yaml` | This is the config file for Snakemake and has all of the options you would need to setup for your own project. |
-| `yeastPangenome-local.txt` | This is the input file as required by Cactus-minigraph. It has lines containing the location of the sequence files for each sample. |
+| `yeastPangenome-local.txt` | This is the input file as required by Minigraph-Cactus. It has lines containing the location of the sequence files for each sample. |
 
 We recommend running this test dataset before setting up your own project.
 
@@ -320,7 +322,7 @@ For more information about all outputs, see [Cactus's minigraph documentation se
 
     As long as there wasn't an error with one of the jobs, Snakemake is designed to be able to resume and resubmit jobs pretty seamlessly. You just need to run the same command you ran to begin with and it should pickup submitting jobs where it left off. You could also run a `--dryrun` first and it should tell you which jobs are left to be done.
 
-??? question "2. The Cactus-minigraph docs say to not use hardmasked genomes. How can I tell if my genome FASTA files are hardmasked?"
+??? question "2. The Minigraph-Cactus docs say to not use hardmasked genomes. How can I tell if my genome FASTA files are hardmasked?"
 
     ##### 2. How can I tell if my genome FASTA files are hardmasked?
 

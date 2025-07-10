@@ -1,3 +1,8 @@
+---
+title: "Research & Publications"
+description: "The Harvard FAS Informatics group's research and collaborations as well as related publications."
+---
+
 # Research & Publications
 
 The FAS Informatics group conducts a variety of research:
