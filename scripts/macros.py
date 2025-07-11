@@ -50,12 +50,19 @@ def define_env(env):
         authors = page.meta.get('authors') or [page.meta.get('author')]
         author_header = page.meta.get('author_header', 'Authors')
 
-        if author_header == "Authors" and len(authors) == 1:
+        many_authors_threshold = 4;
+        num_authors = len(authors)
+        many_authors = False
+        if num_authors >= many_authors_threshold:
+            many_authors = True
+
+        if author_header == "Authors" and num_authors == 1:
             # If there's only one author, change the header to "Author"
             author_header = "Author"
 
         # Start building the HTML output
-        line = '<span class="author-row">'
+        author_class = "author-row many-authors" if many_authors else "author-row few-authors"
+        line = f'<span class="{author_class}">'
         if author_header == "Page maintainer":
             # If this is a maintainer entry, use a different header
             line = '<span class="author-row page-maintainer-row">'
@@ -78,7 +85,8 @@ def define_env(env):
         # Finish the HTML with last updated info if not for a maintainer entry
         if author_header != "Page maintainer":
             line += '''
-<span style="margin: 0 0.4em;">·
+<span class="author-row-last-updated">
+<span class="author-row-dot">·</span>
 <small style="color: #888;">
     :material-clock-edit-outline: Last updated: {{ git_revision_date_localized }}
 </small>
