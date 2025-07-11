@@ -12,7 +12,9 @@
             </div>
             <div class="profile-card-main">
                 <div class="profile-card-imgcol">
-                    <img class="profile-card-pic" src="{{ person.img }}" alt="Profile picture of {{ person.name }}">
+                    <a href="{{ person['link'] | default('#') }}">
+                        <img class="profile-card-pic" src="{{ person.img }}" alt="Profile picture of {{ person.name }}">
+                    </a>
                     <div class="profile-card-links">
                     {% if person.pubs %}
                         <a href="{{ person.pubs }}" target="_blank" title="Google Scholar">

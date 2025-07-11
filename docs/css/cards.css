@@ -122,7 +122,6 @@
   display: block;
 }
 
-
 .profile-card-links .contact-icon svg,
 .profile-card-links .contact-icon img {
   width: 32px;
@@ -144,6 +143,44 @@
     flex: none;
   }
   .profile-card-pic { width: 36vw; min-width: 70px; max-width: 180px; }
+}
+
+@media (max-width: 600px) {
+  .profile-card-main {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+  .profile-card {
+    width: 80vw !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    /* removes any min/max-width constraint from desktop */
+  }
+  .profile-card-imgcol {
+    align-self: center;
+    margin-bottom: 0.7em !important; /* THE ONLY GAP */
+    max-width: 90vw !important;
+  }
+  .profile-card-pic {
+    width: 50vw;        /* responsive: 60% of viewport width */
+    max-width: 130px;   /* never get bigger than 130px */
+    min-width: 64px;    /* don't get too tiny */
+    height: auto;       /* keep aspect ratio */
+    margin-bottom: 0;   /* see prior advice */
+    display: block;
+  }
+  .profile-card-details {
+    text-align: center;
+    width: 100%;
+    margin-top: 0 !important;
+  }
+  .profile-card-title {
+    font-size: 1.1em;
+  }
+  /* .profile-card-links {
+    display: none !important;
+    height: 0 !important;
+  } */
 }
 
 /*------------------------------------------------------*/
@@ -195,6 +232,7 @@
   .alumni-cards {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center; 
+    gap: 1em 0; 
   }
   .alumni-card { width: 40%; }
 }
@@ -205,6 +243,17 @@
 @media (max-width: 750px) {
   .alumni-cards {
     grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1em 0; 
+  }
+  .alumni-card {
+    width: 100%; /* Optional: can use 100% for full width, or 95% for margin */
+    min-width: 0; /* Let it go narrow on small screens */
+    max-width: 340px; /* cap so they don't sprawl */
+  }
+
+  .alumni-profile {
+    font-size: 0.95em;
   }
 }
 

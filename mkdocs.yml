@@ -90,7 +90,7 @@ plugins:
   - table-reader  
   - macros:      # This plugin allows you to run Python macros to insert content onto pages as the site is built use Jinja2-style; see scripts/macros.py for implemented macros.
       module_name: scripts/macros
-      verbose: false # Set true for debugging (use chatter() in macros)
+      verbose: true # Set true for debugging (use chatter() in macros)
   - gen-files:   # This plugin generates files from templates and data files
       scripts: 
         - scripts/about_generator.py 

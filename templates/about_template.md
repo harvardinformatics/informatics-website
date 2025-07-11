@@ -77,7 +77,7 @@ For more information about our research and collaborations, please visit our Res
 
 ## People
 
-> :material-check: Click on the person's name or contact icons to view more information about them.
+> :material-check: Click on the person's name, image, or contact icons to view more information about them.
 
 {{ staff_cards }}
 
