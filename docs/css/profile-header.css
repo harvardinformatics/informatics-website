@@ -32,3 +32,20 @@
   font-size: 0.45em; 
   color: #666;
 }
+
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center; /* Optional: center image/text horizontally */
+    gap: 0.7em;          /* Optional: smaller gap for mobile */
+  }
+  .profile-header img {
+    margin-right: 0;     /* Remove right margin, so it's centered above text */
+    width: 60vw;         /* Optionally, use a more natural mobile width (max stays 200px) */
+    max-width: 200px;
+  }
+  .profile-name {
+    align-items: center; /* Center name/title/office under the image */
+    text-align: center;
+  }
+}
