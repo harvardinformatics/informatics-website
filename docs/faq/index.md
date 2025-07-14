@@ -13,7 +13,7 @@ description: "A short list of frequently asked questions related to the Harvard 
 
     ##### What's the difference between Informatics and Research Computing?
 
-    [Research Computing :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"} manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing support for core facility software via the Software Operations group, and providing training, consultation, and collaborative project work for bioinformatics needs through the Bioinformatics group. 
+    [Research Computing :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"} manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing training, consultation, and collaborative project work for bioinformatics and other data science research projects. 
 
     You can contact Research Computing via their [contact page :octicons-link-external-24:](https://www.rc.fas.harvard.edu/about/contact/){:target="_blank"} for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact/index.md).
 
@@ -21,7 +21,7 @@ description: "A short list of frequently asked questions related to the Harvard 
 
     ##### How can I create an account for the cluster?
 
-    Cluster account creation is handled by Research Computing. See [their documentation](https://docs.rc.fas.harvard.edu/kb/how-do-i-get-a-research-computing-account/) regarding how to request an account.
+    Cluster account creation is handled by Research Computing. See [their documentation :octicons-link-external-24:](https://docs.rc.fas.harvard.edu/kb/how-do-i-get-a-research-computing-account/){:target="_blank"} regarding how to request an account.
 
 ??? question "How can I know about future workshops?"
 
