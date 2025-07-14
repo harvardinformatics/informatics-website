@@ -39,7 +39,7 @@ description: "A short list of frequently asked questions related to the Harvard 
 
     ##### Can I install command line software on Windows?
 
-    While its true that most command line software for scientific computing is built for Linux (and therefore Mac) operating systems, it's now actually very easy to install and run such software on Windows as well.
+    While its true that most command line software for scientific computing is built for Unix-like (*i.e.* Linux and Mac) operating systems, it's now actually very easy to install and run such software on Windows as well.
 
     Newer versions of Windows can install the **Windows Subsystem for Linux (WSL)**, which basically installs a Linux file system and shell (bash) within Windows. Installing WSL should be relatively easy (one command in PowerShell). Follow the instructions here: [Microsoft: How to install Linux on Windows with WSL :octicons-link-external-24:](https://learn.microsoft.com/en-us/windows/wsl/install){:target="_blank"}.
 
