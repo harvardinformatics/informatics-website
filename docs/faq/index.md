@@ -17,6 +17,12 @@ description: "A short list of frequently asked questions related to the Harvard 
 
     You can contact Research Computing via their [contact page :octicons-link-external-24:](https://www.rc.fas.harvard.edu/about/contact/){:target="_blank"} for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact/index.md).
 
+??? question "How can I create an account for the cluster?"
+
+    ##### How can I create an account for the cluster?
+
+    Cluster account creation is handled by Research Computing. See [their documentation](https://docs.rc.fas.harvard.edu/kb/how-do-i-get-a-research-computing-account/) regarding how to request an account.
+
 ??? question "How can I know about future workshops?"
 
     ##### How can I know about future workshops?
