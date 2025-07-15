@@ -1,11 +1,27 @@
-import os, sys
+############################################################
+# This script is a hook for converting Jupyter notebooks to
+# Markdown files and subsequently adding metadate, alt-text
+# for images, and styles for code blocks, tables, and output.
+#
+# Gregg Thomas, July 2025
+############################################################
+
+import os
 import re
 import subprocess
-
 
 ############################################################
 
 def wrapOutputBlocks(md_lines):
+    """
+    This function reads through the markdown file and detects
+    output blocks of code blocks. It wraps these blocks in <pre class="output-block">...</pre>.
+
+    Output blocks are detected as lines after a code block indented with 4 spaces.
+    It excludes lines after a code block in <div></div> tags, because those are output
+    tables and styled separately.
+    """
+
     result = []
     in_code_block = False
     in_div = False  # Track if inside <div>...</div>
@@ -65,56 +81,122 @@ jupyter_dir = "docs/workshops/python-intensive/"
 jupyter_files = {
     "Python-Day1.ipynb": {
         "title": "[Workshop] Python intensive, day 1",
-        "description": "Introduction to programming concepts such as functions, data types, operators, logic, and control flow.",
-        "authors" : ["Gregg Thomas", "Tim Sackton"]
+        "description": (
+            "Introduction to programming concepts such as functions, data types, "
+            "operators, logic, and control flow."
+        ),
+        "authors": ["Gregg Thomas", "Tim Sackton"]
     },
     "Python-Day2.ipynb": {
         "title": "[Workshop] Python intensive, day 2",
-        "description": "Introduction to Python data structures, including lists and dictionaries, loops, libraries, and writing functions.",
-        "authors" : ["Gregg Thomas", "Danielle Khost"]
+        "description": (
+            "Introduction to Python data structures, including lists and dictionaries, "
+            "loops, libraries, and writing functions."
+        ),
+        "authors": ["Gregg Thomas", "Danielle Khost"]
     },
     "Python-Day3.ipynb": {
         "title": "[Workshop] Python intensive, day 3",
-        "description": "More on writing your own functions, debugging strategies, and exception handling in Python.",
-        "authors" : ["Lei Ma", "Tim Sackton"],
+        "description": (
+            "More on writing your own functions, debugging strategies, and exception "
+            "handling in Python."
+        ),
+        "authors": ["Lei Ma", "Tim Sackton"],
     },
     "Python-Day4.ipynb": {
         "title": "[Workshop] Python intensive, day 4",
-        "description": "Introduction to file handling and the numpy library for numerical computing in Python, including arrays and basic operations.",
-        "authors" : ["Lei Ma", "Adam Freedman"],
-        "alts" : ["A pie chart titled 'Programming Language Popularity': Python 26.9%, Ruby 26.2%, C++ 30.6%, and Java 16.2%."]
+        "description": (
+            "Introduction to file handling and the numpy library for numerical computing "
+            "in Python, including arrays and basic operations."
+        ),
+        "authors": ["Lei Ma", "Adam Freedman"],
+        "alts": [
+            "A pie chart titled 'Programming Language Popularity': Python 26.9%, Ruby 26.2%, "
+            "C++ 30.6%, and Java 16.2%."
+        ]
     },
     "Python-Day5.ipynb": {
         "title": "[Workshop] Python intensive, day 5",
-        "description": "Introduction to data manipulation with pandas and data visualization with seaborn.",
-        "authors" : ["Danielle Khost", "Adam Freedman"],
-        "alts" : ["An illustration of a penguin's head with 'bill length' and 'bill depth'. Note: In the raw data, bill dimensions are recorded as 'culmen length' and 'culmen depth'. The culmen is the dorsal ridge atop the bill.",
-                  "An image showing the different seaborn plot categories and the types of plots within them: relplots are scatter plots and line plots; distplots are histograms, KDE plots, ecdf plots, and rug plots; catplots are bar plots, box plots, violin plots, strip plots, swarm plots, and point plots",
-                  "A histogram showing 'flipper length' in millimeters on the x-axis ranging from 170-230 and 'Count' on the y-axis ranging from 0 to 80. There is a sharp peak around 190mm, a drop-off at 205mm, and then a smaller peak around 215mm.",
-                  "A categorical boxplot. On the x-axis are 3 bird species: Adelie, Gentoo, and Chinstrap. The y-axis is 'bill length' in millimeters ranging from 35-60. Adelie have the shortest bill length with a median around 39mm while the other two species have similar distributions of bill length with medians around 46-47mm.",
-                  "An overlapping histogram showing the distribution of 'flipper length' in millimeters for 3 species of penguins: Adelie, Gentoo, and Chinstrap. The x-axis ranges from 170-230mm and the y-axis is 'Count'. Because the bars overlap, the data is difficult to parse.",
-                  "A stacked histogram showing the distribution of 'flipper length' in millimeters for 3 species of penguins: Adelie, Gentoo, and Chinstrap. The x-axis ranges from 170-230mm and the y-axis is 'Count'. The bars are stacked on top of each other, making it easier to see the distribution of each species.",
-                  "A scatter plot with 'bill length' in millimeters on the x-axis ranging from 35-60 and 'body mass' in grams on the y-axis ranging from 3000-6000. The points are colored by species: Adelie, Gentoo, and Chinstrap. dots represent males and x's represent females. The plot shows a clear separation between the species based on bill length and body mass and a separation between sexes within species."
-                  ]
+        "description": (
+            "Introduction to data manipulation with pandas and data visualization with seaborn."
+        ),
+        "authors": ["Danielle Khost", "Adam Freedman"],
+        "alts": [
+            "An illustration of a penguin's head with 'bill length' and 'bill depth'. "
+            "The bill length is the distance from the tip of the bill to the base, "
+            "while the bill depth is the distance from the top of the bill to the bottom. "
+            " Note: In the raw data, bill dimensions are recorded as 'culmen length' and 'culmen depth'. The culmen is the dorsal ridge atop the bill.",
+
+            "The different seaborn plot categories and the types of plots within them: relplots are scatter plots and line plots; "
+            "distplots are histograms, KDE plots, ecdf plots, and rug plots; catplots are bar plots, box plots, violin plots, strip plots, swarm plots, and point plots",
+
+            "A histogram showing 'flipper length' in millimeters on the x-axis ranging from 170-230 and 'Count' on the y-axis ranging from 0 to 80. "
+            "There is a sharp peak around 190mm, a drop-off at 205mm, and then a smaller peak around 215mm.",
+
+            "A categorical boxplot. On the x-axis are 3 bird species: Adelie, Gentoo, and Chinstrap. The y-axis is 'bill length' in millimeters ranging from 35-60. "
+            "Adelie have the shortest bill length with a median around 39mm while the other two species have similar distributions of bill length with medians around 46-47mm.",
+
+            "An overlapping histogram showing the distribution of 'flipper length' in millimeters for 3 species of penguins: Adelie, Gentoo, and Chinstrap. "
+            "The x-axis ranges from 170-230mm and the y-axis is 'Count'. Because the bars overlap, the data is difficult to parse. ",
+
+            "A stacked histogram showing the distribution of 'flipper length' in millimeters for 3 species of penguins: Adelie, Gentoo, and Chinstrap. "
+            "The x-axis ranges from 170-230mm and the y-axis is 'Count'. The bars are stacked on top of each other."
+            "The distributions for the 3 species are roughly normal."
+            "The Adelie species has a peak around 190mm with a count of 80, the Gentoo species has a peak around 210mm with a count of 20, and the Chinstrap species has a peak around 220mm with a count of 40.",
+
+            "A scatter plot with 'bill length' in millimeters on the x-axis ranging from 35-60 and 'body mass' in grams on the y-axis ranging from 3000-6000. "
+            "The points are colored by species: Adelie, Gentoo, and Chinstrap. dots represent males and x's represent females. "
+            "The plot shows a clear separation between the species based on bill length and body mass and a separation between sexes within species."
+            "Adelie have the smallest bill length and body mass, centered around 40mm and 4000g, respectively."
+            "Chinstrap have longer bill lengths centered around 450mm, but a similar range of body mass to the Adelie, centered around 3800g."
+            "The Gentoo have a bill length between the other two species, centered around 47mm but higher body mass, centered around 5000g."
+            "In all species, females have both shorter bills and lower body masses."
+        ]
     },
     "Python-Day6.ipynb": {
         "title": "[Workshop] Python intensive, day 6",
-        "description": "Analyzing a real dataset: Indiana storms.",
-        "authors" : ["Danielle Khost", "Lei Ma"],
-        "alts" : ["A barplot showing the number of Floods and Flash Floods in different counties in Indiana. The x-axis separates 'Flood' and 'Flash Flood' events, while the y-axis shows the number of events. Bars in each category are colored by county name.",
-                  "A strip plot showing the duration of different events in hours in hours on the x-axis, ranging from 0 to 35. The y-axis shows the event type.",
-                  "A strip plot showing the duration of Flood and Flash flood events in hours on the x-axis, ranging from 0 to 35. The y-axis shows the event type."]
+        "description": (
+            "Analyzing a real dataset: Indiana storms."
+        ),
+        "authors": ["Danielle Khost", "Lei Ma"],
+        "alts": [
+            "A barplot showing the number of Floods and Flash Floods in different counties in Indiana. "
+            "The x-axis separates 'Flood' and 'Flash Flood' events, while the y-axis shows the number of events. "
+            "Bars in each category are colored by county name."
+            "For Flash flood: Spencer 1, Marion 6, Vermillion 1, Monroe 0, Tippecanoe 0."
+            "For Flood: Spencer 1, Marion 4, Vermillion 1, Monroe 1, Tippecanoe 1.",
+
+            "A strip plot showing the duration of different events in hours in hours on the x-axis, ranging from 0 to 35. "
+            "The y-axis shows the event type."
+            "Event types are 'Winter Weather', 'Heavy Snow', 'Thunderstorm Wind', 'Extreme Cold/Wind Chill', 'Hail', 'Heavy Rain', "
+            "''Tornado', 'Heat', 'Dense Fog', 'Cold/Wind Chill', and 'Winter Storm'."
+            "Winter Weather and Heavy Snow span the range of durations, while Winter Storms last between 10 and 26 hours."
+            "Thunderstorm Wind, Hail, and Tornados have short durations, less than 1 hour. "
+            "There are few Extreme Cold/Wind Chill events, mostly around 13 hours long. "
+            "Heat, Dense Fog, and Cold/Wind Chill events all last between 4 and 13 hours.",
+
+            "A strip plot showing the duration of Flood and Flash flood events in hours on the x-axis, ranging from 0 to 700. "
+            "The y-axis shows the event type."
+            "Flash Floods all last under 24 hours while Floods can last up to 700 hours."
+        ]
     }
 }
 
 HOOK_PATH = os.path.abspath(__file__)
 HOOK_MTIME = os.path.getmtime(HOOK_PATH)
 
+####################
+
 for jupyter_file in jupyter_files:
+
+    # Get input and output paths
     ipynb_path = os.path.join(jupyter_dir, jupyter_file)
     md_path = os.path.splitext(ipynb_path)[0] + ".md"
     print(f"[HOOK] {ipynb_path}")
 
+    # Only rebuild a markdown if 1) the ipynb has been modified or
+    # 2) the hook script has been modified.
+    # If the markdown file does not exist, it will be rebuilt.
     rebuild = False
     if not os.path.exists(md_path):
         rebuild = True
@@ -128,16 +210,18 @@ for jupyter_file in jupyter_files:
         print(f"    [SKIP] Markdown up to date for {jupyter_file}")
         continue  # Go to next notebook
 
+    # Convert the notebooks to markdown
     convert_cmd = ["jupyter", "nbconvert", "--to", "markdown", ipynb_path]
     subprocess.run(convert_cmd, check=True)
 
+     ##########
+
+    # Extract and format front-matter for the notebook
     title = jupyter_files[jupyter_file]["title"]
     description = jupyter_files[jupyter_file]["description"]
     authors = jupyter_files[jupyter_file].get("authors", [])
 
     author_str = "\n    ".join(f"- {author}" for author in authors)
-
-    ##########
 
     front_matter = """---
 title: "{title}"
@@ -152,6 +236,8 @@ authors:
 
     ##########
 
+    # CSS styles for output tables, output blocks, and code blocks to be added
+    # to the end of the file
     style = """
 ---
 
@@ -237,9 +323,12 @@ authors:
 
     ##########
 
+    # Read the markdown file
     with open(md_path, encoding="utf-8") as md_stream:
         md = md_stream.read().split("\n")
 
+    # Read every line and detect if it starts with the image syntax
+    # If so, add the alt-text
     pattern = r"^(\s*)!\[(.*?)\](\([^\)]*\))"
     num_img = 0;
     for i in range(len(md)):
@@ -250,8 +339,10 @@ authors:
 
     ##########
 
+    # Wrap the output block ins <pre class="output-block"> tags
     md = wrapOutputBlocks(md)
 
+    # Write the markdown file with front-matter, alt-texts, and styles
     md = "\n".join(md)
     with open(md_path, "w", encoding="utf-8") as md_stream:
         md_stream.write(front_matter_content + md + style)
