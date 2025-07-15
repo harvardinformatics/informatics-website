@@ -140,16 +140,16 @@ jupyter_files = {
             "The x-axis ranges from 170-230mm and the y-axis is 'Count'. Because the bars overlap, the data is difficult to parse. ",
 
             "A stacked histogram showing the distribution of 'flipper length' in millimeters for 3 species of penguins: Adelie, Gentoo, and Chinstrap. "
-            "The x-axis ranges from 170-230mm and the y-axis is 'Count'. The bars are stacked on top of each other."
-            "The distributions for the 3 species are roughly normal."
+            "The x-axis ranges from 170-230mm and the y-axis is 'Count'. The bars are stacked on top of each other. "
+            "The distributions for the 3 species are roughly normal. "
             "The Adelie species has a peak around 190mm with a count of 80, the Gentoo species has a peak around 210mm with a count of 20, and the Chinstrap species has a peak around 220mm with a count of 40.",
 
             "A scatter plot with 'bill length' in millimeters on the x-axis ranging from 35-60 and 'body mass' in grams on the y-axis ranging from 3000-6000. "
             "The points are colored by species: Adelie, Gentoo, and Chinstrap. dots represent males and x's represent females. "
-            "The plot shows a clear separation between the species based on bill length and body mass and a separation between sexes within species."
-            "Adelie have the smallest bill length and body mass, centered around 40mm and 4000g, respectively."
-            "Chinstrap have longer bill lengths centered around 450mm, but a similar range of body mass to the Adelie, centered around 3800g."
-            "The Gentoo have a bill length between the other two species, centered around 47mm but higher body mass, centered around 5000g."
+            "The plot shows a clear separation between the species based on bill length and body mass and a separation between sexes within species. "
+            "Adelie have the smallest bill length and body mass, centered around 40mm and 4000g, respectively. "
+            "Chinstrap have longer bill lengths centered around 450mm, but a similar range of body mass to the Adelie, centered around 3800g. "
+            "The Gentoo have a bill length between the other two species, centered around 47mm but higher body mass, centered around 5000g. "
             "In all species, females have both shorter bills and lower body masses."
         ]
     },
@@ -162,21 +162,21 @@ jupyter_files = {
         "alts": [
             "A barplot showing the number of Floods and Flash Floods in different counties in Indiana. "
             "The x-axis separates 'Flood' and 'Flash Flood' events, while the y-axis shows the number of events. "
-            "Bars in each category are colored by county name."
-            "For Flash flood: Spencer 1, Marion 6, Vermillion 1, Monroe 0, Tippecanoe 0."
-            "For Flood: Spencer 1, Marion 4, Vermillion 1, Monroe 1, Tippecanoe 1.",
+            "Bars in each category are colored by county name. "
+            "For Flash flood: Spencer 1, Marion 6, Vermillion 1, Monroe 0, Tippecanoe 0. "
+            "For Flood: Spencer 1, Marion 4, Vermillion 1, Monroe 1, Tippecanoe 1. ",
 
             "A strip plot showing the duration of different events in hours in hours on the x-axis, ranging from 0 to 35. "
-            "The y-axis shows the event type."
+            "The y-axis shows the event type. "
             "Event types are 'Winter Weather', 'Heavy Snow', 'Thunderstorm Wind', 'Extreme Cold/Wind Chill', 'Hail', 'Heavy Rain', "
-            "''Tornado', 'Heat', 'Dense Fog', 'Cold/Wind Chill', and 'Winter Storm'."
-            "Winter Weather and Heavy Snow span the range of durations, while Winter Storms last between 10 and 26 hours."
+            "''Tornado', 'Heat', 'Dense Fog', 'Cold/Wind Chill', and 'Winter Storm'. "
+            "Winter Weather and Heavy Snow span the range of durations, while Winter Storms last between 10 and 26 hours. "
             "Thunderstorm Wind, Hail, and Tornados have short durations, less than 1 hour. "
             "There are few Extreme Cold/Wind Chill events, mostly around 13 hours long. "
             "Heat, Dense Fog, and Cold/Wind Chill events all last between 4 and 13 hours.",
 
             "A strip plot showing the duration of Flood and Flash flood events in hours on the x-axis, ranging from 0 to 700. "
-            "The y-axis shows the event type."
+            "The y-axis shows the event type. "
             "Flash Floods all last under 24 hours while Floods can last up to 700 hours."
         ]
     }
