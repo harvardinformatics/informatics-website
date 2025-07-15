@@ -104,7 +104,7 @@ This training will focus on the best practices for onboarding and offboarding da
 
 *September 24, 2025 12 PM - 1 PM*
 
-Short training on the basics of git and GitHub for project sharing and backup.
+Short training on the basics of git and GitHub for project sharing and backup. Demonstration will be using GitHub Desktop application so no command line familiarity is required. If you want to follow along, please sign up for GitHub and install [GitHub Desktop](https://github.com/apps/desktop). 
 
 [Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button}
 
@@ -125,7 +125,7 @@ This 2 part training will introduce students to the basics of single-cell RNA-se
 
 *November 19, 2025 11 AM - 1 PM*
 
-In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies.
+In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies and analysis. We will provide you with the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
 
 [Zoom Registration](https://harvard.zoom.us/meeting/register/bHCSKnsKTgmH4JlUpPRQSQ){ .md-button}
 
@@ -133,7 +133,7 @@ In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](ht
 
 *December 3, 2025 12 PM - 1 PM*
 
-The short training will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool.
+This short training will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool.
 
 [Zoom Registration](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){ .md-button}
 
