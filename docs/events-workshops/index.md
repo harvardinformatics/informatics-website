@@ -72,7 +72,7 @@ Introduction to R is a 4 day workshop that prepares students to manipulate and p
 
 [Register here](https://docs.google.com/forms/d/e/1FAIpQLSfIlFhLDHj_6f9XuX2gKtmLnPhQJB-NGWvTGuj9Z7MA6vYyug/viewform?usp=dialog){ .md-button}
 
-#### Introduction to Nextflow (weeks of November 10 and November 17)
+#### Introduction to Nextflow
 
 This 2 part intermediate level workshop will introduce students to [Nextflow](https://nextflow.io/), a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Nextflow workflow. In the second session, we will build on the first session and learn how to **write** a Nextflow workflow from scratch.
 
