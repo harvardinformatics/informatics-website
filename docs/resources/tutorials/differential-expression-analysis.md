@@ -35,9 +35,20 @@ sample2,fastq/sample2_R1_fastq.gz,fastq/sample2_R2_fastq.gz,auto
 While strand configuration can be manually specified, we prefer to use Salmon's auto-detect function, which will also account for cases when the set of samples include data where the strandedness is unknown (e.g. SRA accessions without detailed metadata), mistakenly specified, or where issues with reagents led to a strand-specific kit producing a library without strand specificity. This workflow is only appropriate for paired-end data. Locations of R1 and R2 can be paths relative to the location where the workflow is being launched or absolute paths. Fastq files should be gzipped. In cases where a sample id occurs in more than one row of the table, the workflow assumes these are separate sequencing runs of the same sample and counts estimation will be aggregated across rows with the same value for sample.
 
 ### the gtf/gff annotation file
-The nf-core ecosystem was built to work optimally with annotation files from Ensembl. In most cases, it will work with NCBI annotation files. However, for both Ensembl and NCBI the gtf versions of the annotation files are preferred. For NCBI, the gff version will occasionally fail because there are subset of (typically manually curated) features for which there isn't a value for *gene_id* in the attributes (9th) column of the file. In addition, warnings, or in some cases job failure will occur if there is a value for *gene_biotype*, so we use an additional argument in our workflow that skips a biotype-based expression QC metric. An example workflow command would be as follows:
+The nf-core ecosystem was built to work optimally with annotation files from Ensembl. In most cases, it will work with NCBI annotation files. However, for both Ensembl and NCBI the gtf versions of the annotation files are preferred. For NCBI, the gff version will occasionally fail because there are subset of (typically manually curated) features for which there isn't a value for *gene_id* in the attributes (9th) column of the file. In addition, warnings, or in some cases job failure will occur if there is a value for *gene_biotype*, so we use an additional argument in our workflow that skips a biotype-based expression QC metric.
+
+### executing the nf-core RNA-seq workflow
+An example execution script to launch the workflow, where the parent job for the workflow is deployed on a cluster that uses the SLURM job scheduler is as follows:
 
 ```bash
+#SBATCH -J nfcorerna
+#SBATCH -N 1
+#SBATCH -c 1
+#SBATCH -t 23:00:00  # time in hours, minutes and seconds           
+#SBATCH -p         # add partition name here 
+#SBATCH --mem=12000              
+#SBATCH -e nf-core_star_salmon_%A.err
+#SBATCH -o nf-core_star_salmon_%A.out
 module load python
 mamba activate nfcore-rnaseq
 
@@ -53,7 +64,13 @@ nextflow run nf-core/rnaseq \
     -c rnaseq_cluster.config
 ```
 
-The genome needs to be gzipped, and the annotation file should be uncompressed. If you opt to use a gff file then, `--gtf` should be changed to `--gff`. In addition, a config file needs to be supplied that specifies the type of computational resources that get allocated for jobs that are labelled in the workflow by their memory requirements. The config file we have successfully deployed on Harvard's Cannon HPC cluster can be found [here](https://github.com/nf-core/rnaseq/blob/master/conf/base.config). By default, this config will have jobs run locally on the computer/node where the job is launched. To use HPC resources, you need to specify a line at the beginning of the *process* block indicating the executor, and an additional line below with partition names to use. In the case of the Cannon cluster, on which jobs are scheduled by SLURM, and where we use the partitions named "sapphire" and "shared", we modify the beginning of the config file to look like this:
+* Launching nfcore/rnaseq automatically downloads the workflow from the GitHub repository, and installs all dependencies
+* The genome needs to be gzipped
+* The annotation file should be uncompressed. If you opt to use a gff file then, `--gtf` should be changed to `--gff`
+* A config file should be provided that specifies compute resources for various workflow child processes (see below)
+
+#### The config file
+A config file needs to be supplied that specifies the type of computational resources that get allocated for jobs that are labelled in the workflow by their memory requirements. The config file we have successfully deployed on Harvard's Cannon HPC cluster can be found [here](https://github.com/nf-core/rnaseq/blob/master/conf/base.config). By default, this config will have jobs run locally on the computer/node where the job is launched. To use HPC resources, you need to specify a line at the beginning of the *process* block indicating the executor, and an additional line below with partition names to use. In the case of the Cannon cluster, on which jobs are scheduled by SLURM, and where we use the partitions named "sapphire" and "shared", we modify the beginning of the config file to look like this:
 
 ```bash
 process {
