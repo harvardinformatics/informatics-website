@@ -94,7 +94,7 @@ jupyter_files = {
                   "A categorical boxplot. On the x-axis are 3 bird species: Adelie, Gentoo, and Chinstrap. The y-axis is 'bill length' in millimeters ranging from 35-60. Adelie have the shortest bill length with a median around 39mm while the other two species have similar distributions of bill length with medians around 46-47mm.",
                   "An overlapping histogram showing the distribution of 'flipper length' in millimeters for 3 species of penguins: Adelie, Gentoo, and Chinstrap. The x-axis ranges from 170-230mm and the y-axis is 'Count'. Because the bars overlap, the data is difficult to parse.",
                   "A stacked histogram showing the distribution of 'flipper length' in millimeters for 3 species of penguins: Adelie, Gentoo, and Chinstrap. The x-axis ranges from 170-230mm and the y-axis is 'Count'. The bars are stacked on top of each other, making it easier to see the distribution of each species.",
-                  "A scatter plot with 'bill length' in millimeters on the x-axis ranging from 35-60 and 'body mass' in grans on the y-axis ranging from 3000-6000. The points are colored by species: Adelie, Gentoo, and Chinstrap. dots represent males and x's represent females. The plot shows a clear separation between the species based on bill length and body mass and a separation between sexes within species."
+                  "A scatter plot with 'bill length' in millimeters on the x-axis ranging from 35-60 and 'body mass' in grams on the y-axis ranging from 3000-6000. The points are colored by species: Adelie, Gentoo, and Chinstrap. dots represent males and x's represent females. The plot shows a clear separation between the species based on bill length and body mass and a separation between sexes within species."
                   ]
     },
     "Python-Day6.ipynb": {
@@ -107,10 +107,26 @@ jupyter_files = {
     }
 }
 
+HOOK_PATH = os.path.abspath(__file__)
+HOOK_MTIME = os.path.getmtime(HOOK_PATH)
+
 for jupyter_file in jupyter_files:
     ipynb_path = os.path.join(jupyter_dir, jupyter_file)
     md_path = os.path.splitext(ipynb_path)[0] + ".md"
     print(f"[HOOK] {ipynb_path}")
+
+    rebuild = False
+    if not os.path.exists(md_path):
+        rebuild = True
+    else:
+        ipynb_mtime = os.path.getmtime(ipynb_path)
+        md_mtime = os.path.getmtime(md_path)
+        if ipynb_mtime > md_mtime or HOOK_MTIME > md_mtime:
+            rebuild = True
+
+    if not rebuild:
+        print(f"    [SKIP] Markdown up to date for {jupyter_file}")
+        continue  # Go to next notebook
 
     convert_cmd = ["jupyter", "nbconvert", "--to", "markdown", ipynb_path]
     subprocess.run(convert_cmd, check=True)
