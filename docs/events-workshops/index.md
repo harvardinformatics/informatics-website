@@ -7,58 +7,144 @@ description: "A list of upcoming events and workshops and past workshop content 
 
 The FAS Informatics Group creates hosts events such as workshops, both online and in-person. Here is a list of upcoming events, as well as current and past workshop content!
 
-## Upcoming events & workshops
+## Fall 2025 Upcoming events & workshops
 
-### Tentative schedule for Fall 2025
+### :material-tools: Workshops
 
-_Check back for more details and registration links!_
+A workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation!
 
-!!! warning "This is a Tentative Schedule"
-    **Until registration links appear, dates and topics are subject to change.**
+#### Introduction to Python Intensive
 
-#### :material-tools: Workshops
+*Tuesdays and Thursdays 9:30 AM - 12:30 PM from September 2 to September 18th*
 
-##### Introduction to Python Intensive (September 2025)
+*Northwest Building 453*
 
-Our annual Introduction to Python Intensive workshop will be held in September 2025. This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content.
+Our annual python intensive serves as an introduction to coding and data analysis with the python programming language. This course assumes zero programming knowledge, but will move at a quick pace to cover all the content. This will be a 3 week workshop that runs twice per week for 3 hours each session.
 
-##### Introduction to Snakemake (weeks of September 29 and October 6)
+Day 1-3: Introduction to coding with python
 
-This 2 part workshop will introduce students to Snakemake, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Snakemake workflow. In the second session, we will build on the first session and learn how to **write** a Snakemake workflow from scratch. Some familiarity with the command line and Python is recommended, but not required.
+* Programming basics and intro to logic and control
+* Iterables, Lists, and Dictionaries
+* Writing functions
 
-##### Introduction to R (weeks of October 13 and October 20)
+Day 4-6: Python as a data science language
 
-An updated version of our Introduction to R workshop. [See below](#introduction-to-r-fall-2023) for more details.
+* Reading and writing files into dictionaries
+* Introduction to tidy data manipulation with Pandas dataframes
+* Plotting with Seaborn
 
-##### Introduction to Nextflow (weeks of November 10 and November 17)
+!!! Note
+    If you are familiar with other coding languages or have some experience with python before, you may choose to sign up for only Days 4-6. A quick self-test would be: Write a function that takes two lists of numbers and returns the list with the highest mean. You can also look at past exercises [here](../workshops/python-intensive/index.md).
 
-This 2 part workshop will introduce students to Nextflow, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Nextflow workflow. In the second session, we will build on the first session and learn how to **write** a Nextflow workflow from scratch.
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSdB_tENqiofMbhOv2bfbfrY3Ayq8czHKpMEeoO2ousGEMMu3g/viewform?usp=dialog){ .md-button}
 
-#### :material-monitor-account: Short trainings (virtual)
+#### Introduction to Snakemake
 
-##### The Baton Pass: Data Onboarding and Offboarding (week of August 25)
+*Snakemake Run: September 30, 2025 9:30 AM - 12:30 PM*
+
+*Snakemake Develop: October 7, 2025 9:30 AM - 12:30 PM*
+
+*Northwest Building 453*
+
+This 2 part intermediate level workshop will introduce students to [Snakemake](https://snakemake.readthedocs.io/en/stable/), a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Snakemake workflow. In the second session, we will build on the first session and learn how to **write** a Snakemake workflow from scratch. 
+
+Pre-requisites:
+
+* Does not have to have written any scripts themselves
+* Can navigate the Terminal using command line. 
+* Can read basic BASH scripts
+* Has previously run SBATCH jobs on the cluster
+* Has previously run command line software before
+* Has used conda or singularity in the past to manage software
+
+!!! Note
+    You may sign up for only Snakemake Run or both Snakemake Run and Snakemake Develop. Run is a pre-req to Develop.
+
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSdkODxG1ZmD-kE6n-CDH_zr-TteVhh58sLTYJ0WJgLKHSj5-A/viewform?usp=dialog){ .md-button}
+
+#### Introduction to R
+
+*Tuesdays and Thursdays 9:30-12:30 from October 14, 2025 to October 23, 2025*
+
+*Northwest Building 453*
+
+Introduction to R is a 4 day workshop that prepares students to manipulate and plot data in RStudio using the R programming language. This course assumes no coding background and is suitable for beginners. This is an updated version of our previous Introduction to R workshop. [See below](#introduction-to-r-fall-2023) for more details.
+
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSfIlFhLDHj_6f9XuX2gKtmLnPhQJB-NGWvTGuj9Z7MA6vYyug/viewform?usp=dialog){ .md-button}
+
+#### Introduction to Nextflow (weeks of November 10 and November 17)
+
+This 2 part intermediate level workshop will introduce students to [Nextflow](https://nextflow.io/), a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Nextflow workflow. In the second session, we will build on the first session and learn how to **write** a Nextflow workflow from scratch.
+
+Pre-requisites:
+
+* Does not have to have written any scripts themselves
+* Can navigate the Terminal using command line. 
+* Can read basic BASH scripts
+* Has previously run SBATCH jobs on the cluster
+* Has previously run command line software before
+* Has used conda or singularity in the past to manage software
+
+!!! Note
+    You may sign up for only Snakemake Run or both Snakemake Run and Snakemake Develop. Run is a pre-req to Develop.
+
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSe1z1HzBtD0CY1kaZ_3Sx8hGrMEvZ_86Ptv-98-Huca8SHzjQ/viewform?usp=dialog){ .md-button}
+
+### :material-monitor-account: Short trainings (virtual)
+
+#### The Baton Pass: Data Onboarding and Offboarding
+
+*August 27, 2025 11 AM - 1 PM*
 
 This training will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
 
-##### Basics of git and GitHub (week of Septermber 22)
+[Zoom Registration](https://harvard.zoom.us/meeting/register/acyihPSQRRqvBZKrhFMTlQ){ .md-button}
+
+#### Basics of git and GitHub
+
+*September 24, 2025 12 PM - 1 PM*
 
 Short training on the basics of git and GitHub for project sharing and backup.
 
-##### Introduction to single-cell RNA-seq (weeks of October 27 and November 3)
+[Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button}
+
+#### Introduction to single-cell RNA-seq
+
+*Part 1: October 29, 2025 12 PM - 1 PM*
+
+*Part 2: November 5, 2025 12 PM - 1 PM*
 
 This 2 part training will introduce students to the basics of single-cell RNA-seq analysis. In the first session, we'll go over basic quality control of scRNA data. In the second session, we'll go over some downstream analysis of scRNA data.
 
-##### DNA sequencing with long reads (week of November 17)
+[Zoom Registration Part 1](https://harvard.zoom.us/meeting/register/2ZlMBmbTR8eliGg3MVsciw){ .md-button}
+
+[Zoom Registration Part 2](https://harvard.zoom.us/meeting/register/M51DsxLiQDmDhRwBlu50AA){ .md-button}
+
+
+#### DNA sequencing with long reads
+
+*November 19, 2025 11 AM - 1 PM*
 
 In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies.
 
-##### Introduction to Genome Annotation (week of December 1)
+[Zoom Registration](https://harvard.zoom.us/meeting/register/bHCSKnsKTgmH4JlUpPRQSQ){ .md-button}
+
+#### Introduction to Genome Annotation
+
+*December 3, 2025 12 PM - 1 PM*
 
 The short training will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool.
 
-##### Population Genomics: Getting started with SNPArcher (week of December 8)
+[Zoom Registration](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){ .md-button}
+
+
+#### Population Genomics: Getting started with SNPArcher
+
+*December 10, 2025 12 PM - 1 PM*
 
 This short training will introduce students to SNPArcher, a tool for population genomics analysis. We will cover the basics of how to use SNPArcher to analyze population genomics data, including how to run the tool and interpret the results.
+
+[Zoom Registration](https://harvard.zoom.us/meeting/register/VQ6EVh3tQwiah-dMWNJb-A){ .md-button}
 
 ## Recurring events
 
@@ -182,7 +268,7 @@ To view a list of previous events and workshops, click the button below.
         display: block !important;
     }
 
-    h5 {
+    h4 {
         text-decoration: underline;
     }
 </style>
