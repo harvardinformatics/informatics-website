@@ -17,6 +17,7 @@ nav:
 not_in_nav: | 
   newsletter.md  
   people/*
+  events/*
   events-workshops/previous-events.md
   resources/tutorials/*.md
   resources/glossary.md
