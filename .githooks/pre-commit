@@ -14,18 +14,29 @@ fi
 MODIFIED=0
 while IFS= read -r LINE; do
   # Re-comment dev ignore line for .ipynb
-  if printf '%s\n' "$LINE" | grep -qE '^[[:space:]]*-[[:space:]]*'\''\*\.ipynb'\'''; then
+  # if printf '%s\n' "$LINE" | grep -qE '^[[:space:]]*-[[:space:]]*'\''\*\.ipynb'\'''; then
+  #   if printf '%s\n' "$LINE" | grep -vq '^[[:space:]]*#'; then
+  #     INDENT=$(printf "%s" "$LINE" | sed -E 's/^([ ]*).*/\1/')
+  #     BODY=$(printf "%s" "$LINE" | sed -E 's/^\s*-\s*(.*)$/- \1/')
+  #     echo "${INDENT}# ${BODY}" >> "$TEMP_FILE"
+  #     MODIFIED=1
+  #     continue
+  #   fi
+  # fi
+
+  # Re-comment dev verbose-in-macros line if not already commented
+  if printf '%s\n' "$LINE" | grep -q 'verbose: true # MACRO DEBUG:'; then
     if printf '%s\n' "$LINE" | grep -vq '^[[:space:]]*#'; then
       INDENT=$(printf "%s" "$LINE" | sed -E 's/^([ ]*).*/\1/')
-      BODY=$(printf "%s" "$LINE" | sed -E 's/^\s*-\s*(.*)$/- \1/')
+      BODY=$(printf "%s" "$LINE" | sed -E 's/^\s*(.*)$/\1/')
       echo "${INDENT}# ${BODY}" >> "$TEMP_FILE"
       MODIFIED=1
       continue
     fi
   fi
 
-  # Re-comment dev verbose-in-macros line if not already commented
-  if printf '%s\n' "$LINE" | grep -q 'verbose: true # MACRO DEBUG:'; then
+  # Re-comment dev social plugin line if not already commented
+  if printf '%s\n' "$LINE" | grep -q 'enabled: false # SOCIAL PLUGIN:'; then
     if printf '%s\n' "$LINE" | grep -vq '^[[:space:]]*#'; then
       INDENT=$(printf "%s" "$LINE" | sed -E 's/^([ ]*).*/\1/')
       BODY=$(printf "%s" "$LINE" | sed -E 's/^\s*(.*)$/\1/')

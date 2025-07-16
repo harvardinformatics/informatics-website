@@ -1,3 +1,15 @@
+############################################################
+# This script adds titles and descriptions to html files
+# that resulted from conversion of jupyter notebooks by the
+# mkdocs-jupyter plugin. It would have been run during
+# site build by out github actions script (.github/gh_pages.yml)
+#
+# Since jupyter notebooks are now converted to markdown via
+# the jupyter_convert.py hook, this is all defunct.
+#
+# Gregg Thomas, July 2025
+############################################################
+
 import re
 import os
 

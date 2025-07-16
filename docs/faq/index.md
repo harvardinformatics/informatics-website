@@ -13,9 +13,15 @@ description: "A short list of frequently asked questions related to the Harvard 
 
     ##### What's the difference between Informatics and Research Computing?
 
-    [Research Computing :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"} manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing support for core facility software via the Software Operations group, and providing training, consultation, and collaborative project work for bioinformatics needs through the Bioinformatics group. 
+    [Research Computing :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"} manages the Cannon cluster, among other things, and provides advice and support on HPC and related hardware and software questions. The Informatics Group supports specific software and analysis needs, including providing training, consultation, and collaborative project work for bioinformatics and other data science research projects. 
 
     You can contact Research Computing via their [contact page :octicons-link-external-24:](https://www.rc.fas.harvard.edu/about/contact/){:target="_blank"} for any questions related to HPC hardware or software environments. You can contact FAS Informatics for questions related to bioinformatics support via our [contact page](../contact/index.md).
+
+??? question "How can I create an account for the cluster?"
+
+    ##### How can I create an account for the cluster?
+
+    Cluster account creation is handled by Research Computing. See [their documentation :octicons-link-external-24:](https://docs.rc.fas.harvard.edu/kb/how-do-i-get-a-research-computing-account/){:target="_blank"} regarding how to request an account.
 
 ??? question "How can I know about future workshops?"
 
@@ -33,7 +39,7 @@ description: "A short list of frequently asked questions related to the Harvard 
 
     ##### Can I install command line software on Windows?
 
-    While its true that most command line software for scientific computing is built for Linux (and therefore Mac) operating systems, it's now actually very easy to install and run such software on Windows as well.
+    While its true that most command line software for scientific computing is built for Unix-like (*i.e.* Linux and Mac) operating systems, it's now actually very easy to install and run such software on Windows as well.
 
     Newer versions of Windows can install the **Windows Subsystem for Linux (WSL)**, which basically installs a Linux file system and shell (bash) within Windows. Installing WSL should be relatively easy (one command in PowerShell). Follow the instructions here: [Microsoft: How to install Linux on Windows with WSL :octicons-link-external-24:](https://learn.microsoft.com/en-us/windows/wsl/install){:target="_blank"}.
 
