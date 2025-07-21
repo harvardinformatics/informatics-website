@@ -311,7 +311,7 @@ As before, we can get the entire table (including those that do not show signifi
 ```bash
 all_genes<-topTable(fit_2factor, adjust="BH",coef="temperaturelow", p.value=1, number=Inf ,resort.by="P")
 all_genes$geneid<-row.names(all_genes)
-
+```
 
 
 ---
