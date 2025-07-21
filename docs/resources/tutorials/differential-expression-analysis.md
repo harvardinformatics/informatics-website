@@ -241,10 +241,28 @@ Overall, (1589+1728)/13307 or ~ 24.9% of genes are differentially expressed as a
 
 ```bash
 topTable(fit, adjust="BH",resort.by="P")
+
+                               logFC  AveExpr         t      P.Value    adj.P.Val        B
+FBgn0038819_Cpr92F          2.473527 6.201774  24.28881 1.306910e-13 1.739105e-09 21.29258
+FBgn0028544_Vajk3           1.675184 4.029281  21.90298 6.069753e-13 3.524528e-09 19.66813
+FBgn0267681_lncRNA:CR46017 -3.974938 1.044005 -21.50807 7.945880e-13 3.524528e-09 16.80878
+FBgn0031940_CG7214          2.198970 7.945664  20.75054 1.349821e-12 4.490516e-09 19.14847
+FBgn0038702_CG3739         -2.869172 6.514652 -20.49734 4.414988e-12 1.175005e-08 18.01975
+FBgn0014454_Acp1            2.231834 7.638125  17.79441 2.089853e-11 3.997808e-08 16.54909
+
 ```
+There are several columns in the output:
+* the gene name (the row name)
+* log-fold change
+* t the t-statistic for the underlying t-test
+* *P.value*, the raw P-value
+* *adj.P.Val*, the Benjamini-Hochberg FDR-adjusted p-value, aka a q value
+* *B* is the B-statistic, i.e. the log-odds that the gene is differentially expressed.
+
+
 
 ### 14. Create full table
-The full table will be useful for many purposes, such as creating custom MA or volcano plots with color-coding and symbols to meet your needs.
+The full table will be useful for many purposes, such as creating custom MA or volcano plots with color-coding and symbols to meet your needs. **NOTE:** we must explicitly specify the coefficient for the factor of interest. In this case, as revealed in the summary table above, it is *templow*.
 
 ```bash
 all_genes<-topTable(fit, adjust="BH",coef="templow", p.value=1, number=Inf ,resort.by="P")
@@ -255,6 +273,45 @@ coeff = the coefficient or contrast you want to extract
 number = the max number of genes to list  
 adjust = the P value adjustment method  
 resort.by determines what criteria with which to sort the table  
+
+
+## DE analysis: a more complicated, 2-factor design
+Extending limma to analyze more complex designs, such as when considering two factors, temperature and population, is relatively straightforward. A key part is to specify the design matrix properly. For the 2-factor design, one would do this as follows.
+
+### 15. build design matrix for 2-factor model
+
+```bash
+population <- factor(sample_info$population,levels=c("maine","panama"))
+temperature <- factor(sample_info$temp, levels=c("high","low"))
+design_2factor<- model.matrix(~population+temperature)
+design_2factor
+```
+
+Then, you would proceed with DE analysis in a similar fashion as with the single factor experiment described above. Notice that we have specified the levels of temperature such that low is second, which results in "templow" being the dummy variable with which to fit the coefficient for temperature. 
+
+### 16. run voom with quality weights with 2-factor design matrix
+
+```bash
+vwts_2factor <- voomWithQualityWeights(DGE, design=design_2factor,normalize.method="none", plot=TRUE)
+fit_2factor=lmFit(vwts_2factor,design_2factor)
+fit_2factor=eBayes(fit_2factor,robust=TRUE)
+summary(decideTests(fit_2factor,adjust.method="fdr",p.value = 0.05))
+
+(Intercept) populationpanama temperaturelow
+Down           249              765           2259
+NotSig         565            11625           8646
+Up           12493              917           2402
+```
+
+There are now (2259+2402)/13307 or ~ 36.4% of genes are differentially expressed as a function of temperature after partitioning variation among temperature and population-level effects. In essence, accounting for population-level variation provided greater power in detecting the effects of temperature, as in the above 1-factor test, only 24.9% of genes were differentially expressed with respect to temperature.
+
+### 17. Get full results table
+As before, we can get the entire table (including those that do not show significant DE). **NOTE:** when we fit models with limma with a multi-factor design there are now two possible coefficients to select. Because we are interested in the effects of temperature, we specify *temperaturelow*. If we wanted to look at genes with differential regulation with respect to population, we would have to specify *populationpanama*.
+
+```bash
+all_genes<-topTable(fit_2factor, adjust="BH",coef="temperaturelow", p.value=1, number=Inf ,resort.by="P")
+all_genes$geneid<-row.names(all_genes)
+
 
 
 ---
