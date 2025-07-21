@@ -85,11 +85,65 @@ process {
 where the order of queues indicates the order of prioritization for partition selection.
 
 ## Differential expression analysis: a worked example
+This tutorial performs differential expression analysis with R, and for the purposes of making debugging and visualization/plotting easier, we recommend using [RStudio], and interactive environment that can downloaded from [here](https://posit.co/download/rstudio-desktop/). It will require that a version of R is already installed on your computer. If it isn't you can obtaine R from [https://cran.r-project.org/]. If all of this seems very new to you, it may be tricky to get an understanding for what the R code is doing. If that is the case, we recommend attending an Informatics Group R workshop, the next one of which will be offered in the Fall of 2025. Assuming R isn't entirely foreign to you, we will assume that you will be loading the commands explained below into a script (or an R markdown file), the lines of which you will execute in sequence. 
+
 
 ### Example data
-Our sample data comprises 12 paired-end RNA-seq libraries for whole body samples of *Drosophila melanogaster* from two geographic regions (Panama and Maine), with two temperature treatments ("low" ane "high") for each region, featuring three biological replicates for each region x treatment combination. Previously, these data were used to look for parallel gene expression patterns between high and low latitude populations (Zhao et al, 2015, *PLoS Genetics*). Fastq files were downloaded from NCBI's Short Read Archive, and were processed using the *nf-core/rnaseq* workflow. To demonstrate a differential expression analysis using limma, we use the gene-level tab-separated count table *salmon.merged.gene_counts.tsv*. The column header includes "gene_id" and	"gene_name" for the first two columns, and the sample names from the sample sheet for the remaining column labels. In other words, each row consists of a gene id, and putative gene symbol for that gene, and the estimated counts for each of the samples. For a differential expression analysis to be performed, one needs to know the experimental condition for each of the samples. The sample sheet supplied to *nf-core/rnaseq* does not include this information, so we need to generate a sample sheet that can be supplied to *limma*, which looks like this:
+Our sample data comprises 12 paired-end RNA-seq libraries for whole body samples of *Drosophila melanogaster* from two geographic regions (Panama and Maine), with two temperature treatments ("low" ane "high") for each region, featuring three biological replicates for each region x treatment combination. Previously, these data were used to look for parallel gene expression patterns between high and low latitude populations (Zhao et al, 2015, *PLoS Genetics*). Fastq files were downloaded from NCBI's Short Read Archive, and were processed using the *nf-core/rnaseq* workflow. To demonstrate a differential expression analysis using limma, we use the gene-level tab-separated count table *salmon.merged.gene_counts.tsv*. The column header includes "gene_id" and	"gene_name" for the first two columns, and the sample names from the sample sheet for the remaining column labels. In other words, each row consists of a gene id, and putative gene symbol for that gene, and the estimated counts for each of the samples. For a differential expression analysis to be performed, one needs to know the experimental condition for each of the samples. The sample sheet supplied to *nf-core/rnaseq* does not include this information, so we need to generate a sample sheet that can be supplied to *limma*. Our example sample sheet is called *dme_elev_samples.tsv*, and looks like this:
 
+```bash
+sample population temp
+SRR1576457 maine low
+SRR1576458 maine low
+SRR1576459 maine low
+SRR1576460 maine high
+SRR1576461 maine high
+SRR1576462 maine high
+SRR1576463 panama low
+SRR1576464 panama low
+SRR1576465 panama low
+SRR1576514 panama high
+SRR1576515 panama high
+SRR1576516 panama high
+```
 
+### 1. Expression analysis in R: preliminaries
+The differential expression analysis we demonstrate requires a number of R packages, which can be installed as follows:
+
+```
+install.packages("tidyverse")
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("limma","edgeR")
+```
+
+*Tidyverse* is a data science packages that facilitates the manipulation of tabular data, and plotting visualizations. *edgeR* and *limma* are bioinformatics packages for analyzing bulk RNA-seq data.
+
+### 2. Load gene-level abundance data
+The first two columns of *salmon.merged.gene_counts.tsv* are "gene_id", the original gene id in the annotation, and "gene_name", the gene symbol. There may be cases in which a gene symbol is not unique among gene ids, such that it is useful to concatenate these two columns into a new label, which we do here. To manipulate the data into a matrix format that limma expects, we also need to remove the id and name information from the data table, and set the new concatenated label as row names. We do basic table manipulation by loading the table as a tibble via tidyverse, but then, since tidyverse doesn't accomodate row names, convert back to a data frame.
+
+```bash
+expression_data <-read_table("salmon.merged.gene_counts.tsv") %>%
+                  mutate(gene_id_symbol=paste(gene_id,gene_name,sep="_")) %>%
+                  select(!c(gene_id,gene_name)) %>%
+                  relocate(gene_id_symbol)
+
+new_ids=expression_data$gene_id_symbol
+expression_data <- expression_data %>% select(!c(gene_id_symbol))
+expression_data <-as.data.frame(expression_data)
+row.names(expression_data)=new_ids
+
+```
+
+### 3. Load sample information
+We not only load the sample info, but also create a new variable, *pop_temp*, that is the concatenation of the two categorical variables. We will use this concatenated variable to filter out lowly expressed genes, to insure that retained genes have sufficient counts for performing data analysis across samples consisting of each combination of temperature and population.
+
+```bash
+sample_info <- read.table("expression_data/dme_elev_samples.tsv",header = TRUE, stringsAsFactors=FALSE)
+sample_info$pop_temp<-paste(sample_info$population,sample_info$temp,sep="_")
+```
 
 ---
 
