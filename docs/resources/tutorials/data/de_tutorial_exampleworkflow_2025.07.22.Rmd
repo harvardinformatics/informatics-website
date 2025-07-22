@@ -15,15 +15,24 @@ A broader goal of this workshop is to demonstrate how to analyze complex designs
 Our sample data comprises 12 paired-end RNA-seq libraries for whole body samples of *Drosophila melanogaster* from two geographic regions (Panama and Maine), with two temperature treatments ("low" ane "high") for each region, featuring three biological replicates for each region x treatment combination. Previously, these data were used to look for parallel gene expression patterns between high and low latitude populations (Zhao et al, 2015, *PLoS Genetics*)
 
 ## Loading required R libraries
-First, load all the R libraries that will be used for today's analyses:
+First, install the R libraries that will be used for today's analyses:
+```{r,quietly = TRUE}
+install.packages("tidyverse")
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("limma","edgeR")
+```
+
+Then load them:
+
 ```{r, echo=TRUE}
 library(limma)
 library(edgeR)
-#library(tibble)
-#library(dplyr)
 library(tidyverse)
-#library(statmod)
 ```
+
 # II. Analysis with limma voom
 
 ### 1. load gene-level abundance table
