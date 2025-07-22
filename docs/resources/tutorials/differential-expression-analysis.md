@@ -168,15 +168,27 @@ DGE=calcNormFactors(DGE,method =c("TMM"))
 ```
 
 ### 7. Examine data for outliers
-We do this to make sure there are no outliers with respect to a particular experimental variable, suggesting a potential issue with an RNA-seq library, and to also check for sample swaps. This can be done with a multidimensional scaling (MDS) plot using the top 500 highest expressed genes.
+We do this to make sure there are no outliers with respect to a particular experimental variable, suggesting a potential issue with an RNA-seq library, and to also check for sample swaps. This can be done with a multidimensional scaling (MDS) plot using the top 500 highest expressed genes. 
+
+We can color-code samples by level of the temperature factor:
 
 ```bash
 tempvals<-sample_info$temp
 plotMDS(DGE,top=500,col=ifelse(tempvals=="low","blue","red"),gene.selection="common")
+```
+<center>
+    <img src="../../../../img/tutorials/de_temp_mds.png" alt="MDS plot on expression data: temperature" width="75%" />
+</center>
 
+Or by the levels of the population factor:
+
+```bash
 popvals<-sample_info$population
 plotMDS(DGE,top=500,col=ifelse(popvals=="maine","darkgreen","dodgerblue"),gene.selection="common")
 ```
+<center>
+  <img src="../../../../img/tutorials/de_pop_mds.png" alt="MDS plot on expression data: population" width="75%" />
+</center>
 
 As expected, there is clear separation between temeprature regimes and geographic locations, but no outliers indicating bad samples or potential label swaps.
 
