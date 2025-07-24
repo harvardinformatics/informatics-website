@@ -12,6 +12,18 @@ import subprocess
 
 ############################################################
 
+def style_link(match):
+    excluded_domain = "https://informatics.fas.harvard.edu/"
+    link_text = match.group(1)
+    link_url = match.group(2).strip()
+    if (link_url.startswith(excluded_domain)
+        or not (link_url.startswith("http://") or link_url.startswith("https://"))):
+        # Exclude domain and all relative links
+        return match.group(0)
+    return f"[{link_text} :octicons-link-external-24:]({link_url})" + '{:target="_blank"}'
+
+####################
+
 def wrapOutputBlocks(md_lines):
     """
     This function reads through the markdown file and detects
@@ -179,6 +191,15 @@ jupyter_files = {
             "The y-axis shows the event type. "
             "Flash Floods all last under 24 hours while Floods can last up to 700 hours."
         ]
+    },
+    "python-healthy-habits.ipynb": {
+        "title": "[Workshop] Python intensive - healthy habits",
+        "description": (
+            "A supplemental resource for the Python intensive workshop, "
+            "Includes tips on writing clean code, using comments effectively, and following best practices."
+        ),
+        "authors": ["Lei Ma"],
+        "alts" : []
     }
 }
 
@@ -187,7 +208,13 @@ HOOK_MTIME = os.path.getmtime(HOOK_PATH)
 
 ####################
 
+skip = ["python-healthy-habits.ipynb"]
+
 for jupyter_file in jupyter_files:
+
+    if jupyter_file in skip:
+        print(f"[HOOK] Skipping {jupyter_file}")
+        continue
 
     # Get input and output paths
     ipynb_path = os.path.join(jupyter_dir, jupyter_file)
@@ -327,18 +354,25 @@ authors:
     with open(md_path, encoding="utf-8") as md_stream:
         md = md_stream.read().split("\n")
 
+    # === 1. Process image alt-texts ===
     # Read every line and detect if it starts with the image syntax
     # If so, add the alt-text
-    pattern = r"^(\s*)!\[(.*?)\](\([^\)]*\))"
-    num_img = 0;
+    pattern_img = r"^(\s*)!\[(.*?)\](\([^\)]*\))"
+    num_img = 0
     for i in range(len(md)):
-        if re.match(pattern, md[i]):
+        if re.match(pattern_img, md[i]):
             alt_text = jupyter_files[jupyter_file].get("alts", [])[num_img]
-            md[i] = re.sub(pattern, r"\1![{}]\3".format(alt_text), md[i])
+            md[i] = re.sub(pattern_img, r"\1![{}]\3".format(alt_text), md[i])
             num_img += 1
 
-    ##########
+    # === 2. Decorate eligible markdown links ===
+    pattern_link = re.compile(r'(?<!\!)\[([^\]]+?)\]\(([^)]+?)\)')
+    excluded_domain = "https://informatics.fas.harvard.edu/"
 
+    for i in range(len(md)):
+        md[i] = pattern_link.sub(style_link, md[i])
+
+    # === 3. Wrap code output blocks ===
     # Wrap the output block ins <pre class="output-block"> tags
     md = wrapOutputBlocks(md)
 

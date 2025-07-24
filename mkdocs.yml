@@ -112,7 +112,7 @@ plugins:
   - social:
       # enabled: false # SOCIAL PLUGIN: Uncomment to disable for local builds
       cards_layout_options:
-        background_color: "#F3F4F4" 
+        background_color: "#F3F4F4"
         color: "#a51c30"
         font_family: Open Sans
         # font_family: DM Sans
