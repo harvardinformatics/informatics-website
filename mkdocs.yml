@@ -117,8 +117,8 @@ plugins:
         font_family: Open Sans
         # font_family: DM Sans
 
-hooks:
-  - scripts/jupyter_convert.py 
+# hooks:
+#   - scripts/jupyter_convert.py 
 
 extra_css:
   - css/extra.css
