@@ -39,7 +39,7 @@ If you want to skip directly to the differential expression analysis part, you w
 
 ## Quantifying expression: a brief review
 ### Alignment-based
-Quantification of gene (or transcript) abundance requires determining the transcript of origin for the RNA-seq reads in a fastq file for a given sample, and then counting the number of reads that are assigned to a transcipt, and summing those counts over constituent transcripts of a gene to obtain gene-level estimates of expression. A long-standing approach for quantification begins with formally aligning sequencing reads to either a genome or a set of transcripts derived from a genome annotation. In both of these instances, a [*sam* :octicons-link-external-24:](https://samtools.github.io/hts-specs/SAMv1.pdf){:target="_blank"} or a binary versions (bam format) output file is produced that describes where reads aligned to, assigns a score to each alignment, etc. Alignment directly to a genome requires using a splice-aware aligner to accommodate alignment gaps due to introns, with [STAR :octicons-link-external-24:](https://github.com/alexdobin/STAR){:target="_blank"} being the most popular of these, while tools like [bowtie2 :octicons-link-external-24:](https://github.com/BenLangmead/bowtie2){:target="_blank"} can be used to map reads to a set of transcript sequences. Once bam files are generated, these can be supplied to tools like [RSEM :octicons-link-external-24:](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323){:target="_blank"} to generate expression estimates.
+Quantification of gene (or transcript) abundance requires determining the transcript of origin for the RNA-seq reads in a fastq file for a given sample, and then counting the number of reads that are assigned to a transcipt, and summing those counts over constituent transcripts of a gene to obtain gene-level estimates of expression. A long-standing approach for quantification begins with formally aligning sequencing reads to either a genome or a set of transcripts derived from a genome annotation. In both of these instances, a [*sam* :octicons-link-external-24:](https://samtools.github.io/hts-specs/SAMv1.pdf){:target="_blank"} (or bam) format output file is produced that describes where reads aligned to, assigns a score to each alignment, etc. Alignment directly to a genome requires using a splice-aware aligner to accommodate alignment gaps due to introns, with [STAR :octicons-link-external-24:](https://github.com/alexdobin/STAR){:target="_blank"} being the most popular of these, while tools like [bowtie2 :octicons-link-external-24:](https://github.com/BenLangmead/bowtie2){:target="_blank"} can be used to map reads to a set of transcript sequences. Once bam files are generated, these can be supplied to tools like [RSEM :octicons-link-external-24:](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323){:target="_blank"} to generate expression estimates.
 
 ### Pseudo-alignment
 A more recent set of approaches uses something called "pseudo-alignment", where formal sequence alignment is not undertaken, but instead uses substring matching to probabilistically determines locus of origin without obtaining base-level precision of where any given read came from. Tools such as [Salmon :octicons-link-external-24:](https://github.com/COMBINE-lab/salmon){:target="_blank"} and [kallisto :octicons-link-external-24:](https://github.com/pachterlab/kallisto){:target="_blank"} employ this approach. The pseudo-alignment approach is much quicker, and in addition both tools output expression estimates at the same time as figuring out where reads come from, saving end users from having to perform quantification separately.  
@@ -47,7 +47,7 @@ A more recent set of approaches uses something called "pseudo-alignment", where 
 ### The middle path
 Salmon has the ability to take bam files as input, and use sequence alignments to make probabilistic assignments of reads to loci (and count those assignments). For this "alignment-based" mode, Salmon requires that reads be mapped to a set of transcript sequences rather than splice-mapped to the genome. Because bam files contain a lot of information that are useful for performing quality checks on your data, we believe it is worthwhile to perform sequence alignment. Our specific recommendation follows immediately below.
 
-## Quantifying expression best practice
+## Quantifying expression: best practice
 In order to obtain a comprehensive set of quality control metrics on our fastq files, while also obtaining gene and isoform-level count matrices from Salmon's (isoform-level) quantification machinery, we use nf-core's RNA-seq pipeline, found [here :octicons-link-external-24:](https://nf-co.re/rnaseq/3.19.0){:target="_blank"}. [nf-core :octicons-link-external-24:](https://nf-co.re/){:target="_blank"} is a collection of *Nextflow* workflows for automating analyses of high-dimensional biological data. [Nextflow :octicons-link-external-24:](https://www.nextflow.io/){:target="_blank"} is a workflow language that can be used to chain together multi-step data analysis workflows, which can easily be adapted for running on high performance computing enviornments such as Harvard's [CANNON :octicons-link-external-24:](https://www.rc.fas.harvard.edu/services/cluster-computing/){:target="_blank"} cluster. The RNA-seq workflow has a variety of option to choose from, but we specifically use the "STAR-salmon" option (see the green line in the workflow diagram below). This option performs spliced alignment to the genome with *STAR*, projects those alignments onto the transcriptome, and performs alignment-based quantification from the projected alignments with Salmon. The workflow requires as input a specifically formatted sample sheet, a genome fasta, and either a gtf or a gff annotation file.
 
 ??? Note "Click here to see the nf-core RNA-seq workflow diagram"
@@ -301,7 +301,7 @@ v <- voom(DGE, design=design_temp, plot=TRUE)
 
 A better solution to this problem is to apply weights to samples such that outlier samples are down-weighted during differential expression calculations. Limma voom does this by calculating "empirical quality weights" for each sample. Note that we don't specify a normalization method becaues the data have already been normalized with TMM.
 
-### 9b. Run limma voom with sample quality weights
+### 9b. Running limma with sample quality weights
 
 ```R
 vwts <- voomWithQualityWeights(DGE, design=design_temp,normalize.method="none", plot=TRUE) 
@@ -310,7 +310,7 @@ Most bulk RNA-seq differential expression analysis packages need to fit a mean-v
 
 *Note:** we have already applied TMM normalization, thus can set the normalization argument to none. This above command will also generate a plot with two panels showing the mean-variance relationship fit on the left, and a barplot of weights assigned to individual samples.
 
-### 10. Run the linear model fitting procedure 1st step
+### 10. Run the linear model fitting procedure
 
 ```R
 fit=lmFit(vwts,design_temp)
@@ -347,16 +347,18 @@ Overall, (1589+1728)/13307 or ~ 24.9% of genes are differentially expressed as a
 ```R
 topTable(fit, adjust="BH",resort.by="P")
 ```
-```                               logFC  AveExpr         t      P.Value    adj.P.Val        B
+```
+                               logFC  AveExpr         t      P.Value    adj.P.Val        B
 FBgn0038819_Cpr92F          2.473527 6.201774  24.28881 1.306910e-13 1.739105e-09 21.29258
 FBgn0028544_Vajk3           1.675184 4.029281  21.90298 6.069753e-13 3.524528e-09 19.66813
 FBgn0267681_lncRNA:CR46017 -3.974938 1.044005 -21.50807 7.945880e-13 3.524528e-09 16.80878
 FBgn0031940_CG7214          2.198970 7.945664  20.75054 1.349821e-12 4.490516e-09 19.14847
 FBgn0038702_CG3739         -2.869172 6.514652 -20.49734 4.414988e-12 1.175005e-08 18.01975
 FBgn0014454_Acp1            2.231834 7.638125  17.79441 2.089853e-11 3.997808e-08 16.54909
-
 ```
+
 There are several columns in the output:
+
 * the gene name (the row name)
 * log-fold change
 * AveExpr, the average expression across samples
@@ -375,6 +377,7 @@ all_genes<-topTable(fit, adjust="BH",coef="templow", p.value=1, number=Inf ,reso
 ```
 
 where:
+
 coeff = the coefficient or contrast you want to extract  
 number = the max number of genes to list  
 adjust = the P value adjustment method  
@@ -395,7 +398,7 @@ design_2factor
 
 Then, you would proceed with DE analysis in a similar fashion as with the single factor experiment described above. Notice that we have specified the levels of temperature such that low is second, which results in "templow" being the dummy variable with which to fit the coefficient for temperature. 
 
-### 16. run voom with quality weights with 2-factor design matrix
+### 16. Run voom with quality weights with 2-factor design matrix
 
 ```R
 vwts_2factor <- voomWithQualityWeights(DGE, design=design_2factor,normalize.method="none", plot=TRUE)
