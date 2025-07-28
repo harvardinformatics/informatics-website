@@ -21,6 +21,11 @@ This tutorial is designed to demonstrate best practice for implementing statisti
 
 
 ## Getting Started
+This tutorial is divided into two parts: data preparation and differential expression analysis. Data preparation converts raw sequencing data into a table of gene-level counts (also referred to as a count matrix), where rows correspond to genes and columns correspond to samples.
+
+Data preparation typically occurs on a high-performance computing (HPC) cluster or in a cloud computing environment, because it requires more computational resources than are typically available on a personal computer. In our data preparation section, we will be using a pre-made bioinformatics pipeline from the *Nextflow nf-core* project. A Nextflow workflow is a set of scripts that automate the multiple steps of data preparation, leading to reproducible and portable workflows. 
+
+The differential expression analysis part of this tutorial is designed to be performed using on a personal computer using the R programming language and the `limma` package. This part of the tutorial involves performing statistical inference, creating figures/plots of the data, and interpreting the results. 
 
 If you are interested in following along with generating a count matrix using the *nf-core/rnaseq* workflow, you will need the following:
 
@@ -47,7 +52,7 @@ A more recent set of approaches uses something called "pseudo-alignment", where 
 ### The middle path
 Salmon has the ability to take bam files as input, and use sequence alignments to make probabilistic assignments of reads to loci (and count those assignments). For this "alignment-based" mode, Salmon requires that reads be mapped to a set of transcript sequences rather than splice-mapped to the genome. Because bam files contain a lot of information that are useful for performing quality checks on your data, we believe it is worthwhile to perform sequence alignment. Our specific recommendation follows immediately below.
 
-## Quantifying expression: best practice
+## Quantifying expression: best practice using the *nf-core/rnaseq* workflow
 In order to obtain a comprehensive set of quality control metrics on our fastq files, while also obtaining gene and isoform-level count matrices from Salmon's (isoform-level) quantification machinery, we use nf-core's RNA-seq pipeline, found [here :octicons-link-external-24:](https://nf-co.re/rnaseq/3.19.0){:target="_blank"}. [nf-core :octicons-link-external-24:](https://nf-co.re/){:target="_blank"} is a collection of *Nextflow* workflows for automating analyses of high-dimensional biological data. [Nextflow :octicons-link-external-24:](https://www.nextflow.io/){:target="_blank"} is a workflow language that can be used to chain together multi-step data analysis workflows, which can easily be adapted for running on high performance computing enviornments such as Harvard's [CANNON :octicons-link-external-24:](https://www.rc.fas.harvard.edu/services/cluster-computing/){:target="_blank"} cluster. The RNA-seq workflow has a variety of option to choose from, but we specifically use the "STAR-salmon" option (see the green line in the workflow diagram below). This option performs spliced alignment to the genome with *STAR*, projects those alignments onto the transcriptome, and performs alignment-based quantification from the projected alignments with Salmon. The workflow requires as input a specifically formatted sample sheet, a genome fasta, and either a gtf or a gff annotation file.
 
 ??? Note "Click here to see the nf-core RNA-seq workflow diagram"
@@ -173,7 +178,7 @@ The output of this workflow includes:
 
 We are now ready to perform differential expression analysis in R. 
 
-## Differential expression analysis: a worked example
+## Differential expression analysis: a worked example in R
 This tutorial performs differential expression analysis with R, and for the purposes of making debugging and visualization/plotting easier, we recommend using RStudio, an interactive environment that can downloaded from [here :octicons-link-external-24:](https://posit.co/download/rstudio-desktop/){:target="_blank"}. 
 
 If you want to reproduce the workflow explained below, the R markdown (Rmd) file for it can be found [here :octicons-download-24:](data/de_tutorial_exampleworkflow_2025.07.22.Rmd). The sample sheet that relates sample IDs to experimental conditions can be found at [sample_sheet :octicons-download-24:](data/dme_elev_samples.tsv), and the gene-level count matrix can be found at [count_matrix :octicons-download-24:](data/salmon.merged.gene_counts.tsv).
@@ -423,6 +428,21 @@ all_genes<-topTable(fit_2factor, adjust="BH",coef="temperaturelow", p.value=1, n
 all_genes$geneid<-row.names(all_genes)
 ```
 
+## Questions/Troubleshooting
+
+??? question "1. My Nextflow run is failing while running on the Cannon cluster! What should I do?"
+    Please check the following:
+    
+    * Make sure you have Nextflow installed and loaded (if in a conda environment)
+    * Make sure your environment includes java, which needs to be installed in the same conda environment or, if Nextflow is in your base environment, that you load java with `module load jdk`.
+    * Check that your config file is submitting jobs to the correct partition. You may instead consider using the `-profile cannon` option, which will use the default config file for the Cannon cluster.
+    * If you are still having issues, consider [contacting us :octicons-link-external-24:](https://forms.office.com/r/qwXEPbBvFK)
+
+??? question "2. What is a good sample size for differential expression analysis?"
+    !!! ADAM TO ANSWER THIS HERE !!!
+
+??? question "3. How do I deal with drastically varying quality and read depth across my samples?"
+    !!! ADAM TO ANSWER THIS HERE !!!
 
 ---
 
