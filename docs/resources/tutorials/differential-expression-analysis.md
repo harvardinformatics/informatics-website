@@ -11,16 +11,23 @@ authors:
 
 Bulk RNA-seq involves generating estimates of gene expression for samples consisting of large pools of cells, for example a section of tissue, an aliquot of blood, or a collection of cells of particular interest, such as those obtained via fluorescence-activated cell sorting (FACS). The two primary pillars of bulk RNA-seq analysis are the estimation of abundance, at either the gene or isoform level (or both), and statistical analysis to identify genes or isoforms that show different levels of expression between a set of conditions or treatments of interest. This tutorial provides a brief review of expression quantification, but mostly focuses on how to perform tests for differential expression with *limma*. See [Ritchie et al. 2015](https://academic.oup.com/nar/article/43/7/e47/2414268) for more details. *Limma* is built on a linear-modeling framework and is available as a [*Bioconductor* package](https://bioconductor.org/packages/release/bioc/html/limma.html) in R.   
 
+
+## Tutorial target audience
+This tutorial is designed to demonstrate best practice for implementing statistical methods on bulk RNA-seq data to test the null hypothesis that expression of individual genes does not vary between conditions. Ideally, users of this tutorial will have a working understanding of:
+
+* how to use [R](https://www.r-project.org/about.html), and ideally how to run it inside [Rstudio](https://posit.co/download/rstudio-desktop/)
+* what gene expression estimates quantify, and the methods for performing such quantification
+* hypothesis testing using statistics
+
+
 ## Getting Started
 
 If you are interested in following along with generating a count matrix using the *nf-core/rnaseq* workflow, you will need the following:
 
 1. A set of paired-end RNA-seq fastq files from the paper by Zhao et al. (2015) [*PLoS Genetics*](https://doi.org/10.1371/journal.pgen.1005204), which can be downloaded from the NCBI Short Read Archive (SRA) under the accession numbers SRR1576457-SRR1576516 and collected [here](https://www.ncbi.nlm.nih.gov/sra/SRP047141). 
-2. A genome fasta file for *Drosophila melanogaster* and a gtf annotation file for the same species. We used !!INSERT LINKS!!
+2. A genome fasta file for *Drosophila melanogaster* and a gtf annotation file for the same species. We used the following [genome fasta](https://ftp.ensembl.org/pub/release-114/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.54.dna_sm.toplevel.fa.gz) and [gtf](https://ftp.ensembl.org/pub/release-114/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.54.114.gtf.gz) files.
 3. A current version of [nextflow](https://nextflow.io/) installed on an HPC cluster you are using (in our case, we are using the Cannon cluster at Harvard)
 
-!!! Note
-    If you are performing sequencing through the Bauer Core, the Informatics group can also assist you with running your samples through the *nf-core/rnaseq* workflow, and generating a count matrix. !!LINK TO INSTRUCTIONS ON HOW TO REQUEST THIS!!  
 
 If you want to skip directly to the differential expression analysis part, you will need the following:
 
@@ -41,7 +48,7 @@ A more recent set of approaches uses something called "pseudo-alignment", where 
 Salmon has the ability to take bam files as input, and use sequence alignments to make probabilistic assignments of reads to loci (and count those assignments). For this "alignment-based" mode, Salmon requires that reads be mapped to a set of transcript sequences rather than splice-mapped to the genome. Because bam files contain a lot of information that are useful for performing quality checks on your data, we believe it is worthwhile to perform sequence alignment. Our specific recommendation follows immediately below.
 
 ## Quantifying expression best practice
-In order to obtain a comprehensive set of quality control metrics on our fastq files, while also obtaining gene and isoform-level count matrices from Salmon's (isoform-level) quantification machinery, we use nf-core's RNA-seq pipeline, found [here](https://nf-co.re/rnaseq/3.19.0). [nf-core](https://nf-co.re/) is a collection of *Nextflow* workflows for automating analyses of high-dimensional biological data. The RNA-seq workflow has a variety of option to choose from, but we specifically use the "STAR-salmon" option. This option performs spliced alignment to the genome with *STAR*, projects those alignments onto the transcriptome, and performs alignment-based quantification from the projected alignments with Salmon. The workflow requires as input a specifically formatted sample sheet, a genome fasta, and either a gtf or a gff annotation file.
+In order to obtain a comprehensive set of quality control metrics on our fastq files, while also obtaining gene and isoform-level count matrices from Salmon's (isoform-level) quantification machinery, we use nf-core's RNA-seq pipeline, found [here](https://nf-co.re/rnaseq/3.19.0). [nf-core](https://nf-co.re/) is a collection of *Nextflow* workflows for automating analyses of high-dimensional biological data. [Nextflow](https://www.nextflow.io/) is a workflow language that can be used to chain together multi-step data analysis workflows, which can easily be adapted for running on high performance computing enviornments such as Harvard's [CANNON](https://www.rc.fas.harvard.edu/services/cluster-computing/) cluster. The RNA-seq workflow has a variety of option to choose from, but we specifically use the "STAR-salmon" option (see the green line in the workflow diagram below). This option performs spliced alignment to the genome with *STAR*, projects those alignments onto the transcriptome, and performs alignment-based quantification from the projected alignments with Salmon. The workflow requires as input a specifically formatted sample sheet, a genome fasta, and either a gtf or a gff annotation file.
 
 ??? Note "Click here to see the nf-core RNA-seq workflow diagram"
     <center>
@@ -85,10 +92,10 @@ While strand configuration can be manually specified, we prefer to use Salmon's 
 ### The gtf/gff genome annotation file
 The nf-core ecosystem was built to work optimally with annotation files from Ensembl. In most cases, it will work with NCBI annotation files. However, for both Ensembl and NCBI, the gtf versions of the annotation files are preferred. 
 
-For NCBI, the gff version will occasionally fail because there are subset of (typically manually curated) features for which there isn't a value for *gene_id* in the attributes (9th) column of the file. Below is what an error due to the missing *gene_id* field might look like. To fix, this you can use the gtf version of the annotation file !!IS THIS ALWAYS AN OPTION?!!:
+For NCBI annotations, the workflow will occasionally fail because there are subset of (typically manually curated) features for which there isn't a value for *gene_id* in the attributes (9th) column of the gtf (or gff) file. A typical error message of this type starts with something like this: 
 
-```
-!!PUT EXAMPLE ERROR HERE!!
+```bash
+ERROR: failed to find the gene identifier attribute in the 9th column of the provided GTF file.
 ```
 
 In addition, warnings, or in some cases job failure will occur if there is a value for *gene_biotype*, so we use an additional argument `--skip_biotype_qc` in our workflow that skips a biotype-based expression QC metric. This applies to both NCBI gff and gtf files. 
@@ -154,9 +161,14 @@ nextflow run nf-core/rnaseq \
 * A config file should be provided that specifies compute resources for various workflow child processes
 
 ### The output
-The output of this workflow will be
-
-* !! LIST IMPORTANT OUTPUTS HERE !!
+The output of this workflow includes:
+* the *star_salmon* directory, inside of which are:
+  * bam files resulting from sequence alignment with STAR for each sample
+  * gene and transcript length-scaled count tables in tsv format
+  * gene and transcript length tables in tsv format
+  * gene and transcript tables with estimates of transcripts-per-million (TPM)
+  * *salmon.merged.gene_counts.tsv* and *salmon.merged.transcript_counts.tsv*, which are the estimated raw counts in matrix form
+* the *multiqc/star_salmon* directory, inside of which is *multiqc_report.html*, and html report compiling all of the sample-level quality metrics that are generated by the workflow.
 
 We are now ready to perform differential expression analysis in R. 
 
@@ -166,10 +178,7 @@ This tutorial performs differential expression analysis with R, and for the purp
 If you want to reproduce the workflow explained below, the R markdown (Rmd) file for it can be found [here](data/de_tutorial_exampleworkflow_2025.07.22.Rmd). The sample sheet that relates sample IDs to experimental conditions can be found at [sample_sheet](data/dme_elev_samples.tsv), and the gene-level count matrix can be found at [count_matrix](data/salmon.merged.gene_counts.tsv).
 
 ### Example data
-Our sample data comprises 12 paired-end RNA-seq libraries for whole body samples of *Drosophila melanogaster* from two geographic regions (Panama and Maine), with two temperature treatments ("low" ane "high") for each region, featuring three biological replicates for each region x treatment combination. Previously, these data were used to look for parallel gene expression patterns between high and low latitude populations ([Zhao et al, 2015, *PLoS Genetics*](https://doi.org/10.1371/journal.pgen.1005204)). 
-
-!! THE BELOW PARAGRAPH IS CONFUSING I DON'T KNOW WHAT IT'S SUPPOSED TO CONVEY !!
-Fastq files were downloaded from NCBI's Short Read Archive, and were processed using the *nf-core/rnaseq* workflow. To demonstrate a differential expression analysis using limma, we use the gene-level tab-separated count table `salmon.merged.gene_counts.tsv`. The column header includes "gene_id" and "gene_name" for the first two columns, and the sample names from the sample sheet for the remaining column labels. In other words, each row consists of a gene id, and putative gene symbol for that gene, and the estimated counts for each of the samples. 
+Our sample data comprises 12 paired-end RNA-seq libraries for whole body samples of *Drosophila melanogaster* from two geographic regions (Panama and Maine), with two temperature treatments ("low" ane "high") for each region, featuring three biological replicates for each region x treatment combination. Previously, these data were used to look for parallel gene expression patterns between high and low latitude populations ([Zhao et al, 2015, *PLoS Genetics*](https://doi.org/10.1371/journal.pgen.1005204)). For this tutorial, we downloaded the fastq files for the RNA-seq libraries from NCBI's short read archive and generated the count matrices using the nf-core rnaseq workflow described above. One can either perform differential expression tests on isoform (i.e. transcript) counts or gene-level counts, i.e those aggregated across all of a gene's constituent transcripts. For this tutorial we focus on gene-level patterns of differential expression. Thus we use the count data in `salmon.merged.gene_counts.tsv`. In this file, The column header includes "gene_id" and "gene_name" for the first two columns, and the sample names from the sample sheet for the remaining column labels. In other words, each row in the file includes a gene id (first column), a gene name (e.g. HOX1), and the estimated counts for the samples in the experiment.  
 
 For a differential expression analysis to be performed, one needs to know the experimental condition for each of the samples. The sample sheet supplied to *nf-core/rnaseq* does not include this information, so we need to generate a sample sheet that can be supplied to the `limma` R package. Our example sample sheet is called `dme_elev_samples.tsv`, and looks like this:
 
