@@ -50,6 +50,7 @@ This 2 part intermediate level workshop will introduce students to [Snakemake](h
 
 Pre-requisites:
 
+* A FASRC Cannon account
 * Does not have to have written any scripts themselves
 * Can navigate the Terminal using command line. 
 * Can read basic BASH scripts
@@ -58,7 +59,7 @@ Pre-requisites:
 * Has used conda or singularity in the past to manage software
 
 !!! Note
-    You may sign up for only Snakemake Run or both Snakemake Run and Snakemake Develop. Run is a pre-req to Develop.
+    If you only want to learn how to run Snakemake workflows, you may sign up for Snakemake Run only. However, if you want to learn how to convert your own scripts into Snakemake workflows, you must sign up for both Snakemake Run and Snakemake Develop. 
 
 [Register here](https://docs.google.com/forms/d/e/1FAIpQLSdkODxG1ZmD-kE6n-CDH_zr-TteVhh58sLTYJ0WJgLKHSj5-A/viewform?usp=dialog){ .md-button}
 
@@ -74,10 +75,18 @@ Introduction to R is a 4 day workshop that prepares students to manipulate and p
 
 #### Introduction to Nextflow
 
+*Nextflow Run: November 13, 2025 9:30 AM - 12:30 PM*
+
+*Nextflow Develop: November 20, 2025 9:30 AM - 12:30 PM*
+
+*Northwest Building 453*
+
 This 2 part intermediate level workshop will introduce students to [Nextflow](https://nextflow.io/), a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Nextflow workflow. In the second session, we will build on the first session and learn how to **write** a Nextflow workflow from scratch.
 
 Pre-requisites:
 
+* A FASRC Cannon account (if you want to run things on the cluster)
+* A GitHub account (we will be using github codespaces)
 * Does not have to have written any scripts themselves
 * Can navigate the Terminal using command line. 
 * Can read basic BASH scripts
@@ -86,7 +95,7 @@ Pre-requisites:
 * Has used conda or singularity in the past to manage software
 
 !!! Note
-    You may sign up for only Snakemake Run or both Snakemake Run and Snakemake Develop. Run is a pre-req to Develop.
+    If you only want to learn how to run Nextflow workflows, you may sign up for Nextflow Run only. However, if you want to learn how to convert your own scripts into Nextflow workflows, you must sign up for both Nextflow Run and Nextflow Develop. 
 
 [Register here](https://docs.google.com/forms/d/e/1FAIpQLSe1z1HzBtD0CY1kaZ_3Sx8hGrMEvZ_86Ptv-98-Huca8SHzjQ/viewform?usp=dialog){ .md-button}
 
