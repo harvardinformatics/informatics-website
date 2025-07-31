@@ -1,5 +1,5 @@
 ---
-title: "[Tutorial] Differential analysis of bulk RNA-seq data"
+title: "[Tutorial] Bulk RNA-seq DE analysis"
 description: "A page explaining how to perform differential expression analysis of bulk RNA-seq data using limma."
 authors: 
     - Adam Freedman
@@ -44,13 +44,22 @@ If you want to skip directly to the differential expression analysis part, you w
 
 ## Quantifying expression: a brief review
 ### Alignment-based
-Quantification of gene (or transcript) abundance requires determining the transcript of origin for the RNA-seq reads in a fastq file for a given sample, and then counting the number of reads that are assigned to a transcipt, and summing those counts over constituent transcripts of a gene to obtain gene-level estimates of expression. A long-standing approach for quantification begins with formally aligning sequencing reads to either a genome or a set of transcripts derived from a genome annotation. In both of these instances, a [*sam* :octicons-link-external-24:](https://samtools.github.io/hts-specs/SAMv1.pdf){:target="_blank"} (or bam) format output file is produced that describes where reads aligned to, assigns a score to each alignment, etc. Alignment directly to a genome requires using a splice-aware aligner to accommodate alignment gaps due to introns, with [STAR :octicons-link-external-24:](https://github.com/alexdobin/STAR){:target="_blank"} being the most popular of these, while tools like [bowtie2 :octicons-link-external-24:](https://github.com/BenLangmead/bowtie2){:target="_blank"} can be used to map reads to a set of transcript sequences. Once bam files are generated, these can be supplied to tools like [RSEM :octicons-link-external-24:](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323){:target="_blank"} to generate expression estimates.
+Quantification of gene (or transcript) abundance requires determining the transcript of origin for the RNA-seq reads in a fastq file for a given sample, and then counting the number of reads that are assigned to a transcipt, and summing those counts over constituent transcripts of a gene to obtain gene-level estimates of expression. A long-standing approach for quantification begins with formally aligning sequencing reads to either a genome or a set of transcripts derived from a genome annotation. In both of these instances, a [*sam* :octicons-link-external-24:](https://samtools.github.io/hts-specs/SAMv1.pdf){:target="_blank"} (or bam) format output file is produced that describes where reads aligned to, assigns a score to each alignment, etc. Alignment directly to a genome requires using a splice-aware aligner to accommodate alignment gaps due to introns, with [STAR :octicons-link-external-24:](https://github.com/alexdobin/STAR){:target="_blank"} being the most popular of these, while tools like [bowtie2 :octicons-link-external-24:](https://github.com/BenLangmead/bowtie2){:target="_blank"} can be used to map reads to a set of transcript sequences. Once bam files are generated, these can be supplied to tools like [RSEM :octicons-link-external-24:](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323){:target="_blank"} to generate expression estimates.  
+
 
 ### Pseudo-alignment
-A more recent set of approaches uses something called "pseudo-alignment", where formal sequence alignment is not undertaken, but instead uses substring matching to probabilistically determines locus of origin without obtaining base-level precision of where any given read came from. Tools such as [Salmon :octicons-link-external-24:](https://github.com/COMBINE-lab/salmon){:target="_blank"} and [kallisto :octicons-link-external-24:](https://github.com/pachterlab/kallisto){:target="_blank"} employ this approach. The pseudo-alignment approach is much quicker, and in addition both tools output expression estimates at the same time as figuring out where reads come from, saving end users from having to perform quantification separately.  
+Read alignment is computationally intensive, with the computational cost becoming a bigger issue for studies that process thousands of RNA-seq samples. To reduce computational cost, a more recent set of approaches uses something called "pseudo-alignment", where formal sequence alignment is not undertaken, but instead uses substring matching to probabilistically determines locus of origin without obtaining base-level precision of where any given read came from. Tools such as [Salmon :octicons-link-external-24:](https://github.com/COMBINE-lab/salmon){:target="_blank"} and [kallisto :octicons-link-external-24:](https://github.com/pachterlab/kallisto){:target="_blank"} employ this approach. The pseudo-alignment approach is much quicker, and in addition both tools output expression estimates at the same time as figuring out where reads come from, saving end users from having to perform quantification separately. One downside of pseudo-alignment is that there are a number of quality control metrics that require sequence alignment, and there may be cases where a fine grained look a read alignments for a locus of interest may be necessary. Making the choice between pseudo-alignment and alignment based approaches for data analysis will involved balancing computational costs and resources available for your study, with particular bioinformatics needs for downstream analysis and quality control of data.
 
-### The middle path
-Salmon has the ability to take bam files as input, and use sequence alignments to make probabilistic assignments of reads to loci (and count those assignments). For this "alignment-based" mode, Salmon requires that reads be mapped to a set of transcript sequences rather than splice-mapped to the genome. Because bam files contain a lot of information that are useful for performing quality checks on your data, we believe it is worthwhile to perform sequence alignment. Our specific recommendation follows immediately below.
+### Running salmon with read alignments
+`Salmon` has the ability to take bam files as input, and use sequence alignments to make probabilistic assignments of reads to loci (and count those assignments). For this "alignment-based" mode, Salmon requires that reads be mapped to a set of transcript sequences rather than splice-mapped to the genome. Because bam files contain a lot of information that are useful for performing quality checks on your data, we believe it is worthwhile to perform sequence alignment unless it is computationally infeasible. Our specific recommendation follows in the next section.
+
+### Summary
+A few key points are worth noting when deciding which tools to use in your gene expression study.
+
+1. read alignment is computationally expensive, but can be important if extended quality checks on individual RNA-seq libraries are likely to be important
+2. pseudo-alignment is much faster tha read alignment, and can be a sensible choice when thousands of samples are being analyzed (assuming alignment-based QC metrics are not necessary)
+3. some tools such as `salmon` can use sequence alignments, or run pseudo-alignment directly on fastq files to produce expression estimates
+4. neither alignment or pseudo-alignment based quantification tools generate the data matrix of counts (rows for each gene, columns for each sample) required for differential expression analysis, but the `nf-core/rnaseq` workflow generates them, and tools like `RSEM` have utilities for creating them from a set of samples.
 
 ## Quantifying expression: best practice using the *nf-core/rnaseq* workflow
 In order to obtain a comprehensive set of quality control metrics on our fastq files, while also obtaining gene and isoform-level count matrices from Salmon's (isoform-level) quantification machinery, we use nf-core's RNA-seq pipeline, found [here :octicons-link-external-24:](https://nf-co.re/rnaseq/3.19.0){:target="_blank"}. [nf-core :octicons-link-external-24:](https://nf-co.re/){:target="_blank"} is a collection of *Nextflow* workflows for automating analyses of high-dimensional biological data. [Nextflow :octicons-link-external-24:](https://www.nextflow.io/){:target="_blank"} is a workflow language that can be used to chain together multi-step data analysis workflows, which can easily be adapted for running on high performance computing enviornments such as Harvard's [CANNON :octicons-link-external-24:](https://www.rc.fas.harvard.edu/services/cluster-computing/){:target="_blank"} cluster. The RNA-seq workflow has a variety of option to choose from, but we specifically use the "STAR-salmon" option (see the green line in the workflow diagram below). This option performs spliced alignment to the genome with *STAR*, projects those alignments onto the transcriptome, and performs alignment-based quantification from the projected alignments with Salmon. The workflow requires as input a specifically formatted sample sheet, a genome fasta, and either a gtf or a gff annotation file.
@@ -219,18 +228,11 @@ BiocManager::install("limma","edgeR")
 `Tidyverse` is a data science packages that facilitates the manipulation of tabular data, and plotting visualizations. `edgeR` and `limma` are bioinformatics packages for analyzing bulk RNA-seq data.
 
 ### 2. Load gene-level abundance data
-The first two columns of `salmon.merged.gene_counts.tsv` are "gene_id", the original gene id in the annotation, and "gene_name", the gene symbol. There may be cases in which a gene symbol is not unique among gene ids, such that it is useful to concatenate these two columns into a new label, which we do here. To manipulate the data into a matrix format that limma expects, we also need to remove the id and name information from the data table, and set the new concatenated label as row names. We do basic table manipulation by loading the table as a tibble via tidyverse, but then, since tidyverse doesn't accomodate row names, convert back to a data frame.
+The first two columns of `salmon.merged.gene_counts.tsv` are "gene_id", the original gene id in the annotation, and "gene_name", the gene symbol. To manipulate the data into a matrix format that limma expects, we also need to remove the id and name information from the data table, and set  gene names as row names. 
 
 ```R
-expression_data <-read_table("salmon.merged.gene_counts.tsv") %>%
-                  mutate(gene_id_symbol=paste(gene_id,gene_name,sep="_")) %>%
-                  select(!c(gene_id,gene_name)) %>%
-                  relocate(gene_id_symbol)
-
-new_ids=expression_data$gene_id_symbol
-expression_data <- expression_data %>% select(!c(gene_id_symbol))
-expression_data <-as.data.frame(expression_data)
-row.names(expression_data)=new_ids
+expression_data <-read.table("salmon.merged.gene_counts.tsv",row.names=gene_name)
+expression_data$gene_id <- NULL
 ```
 
 ### 3. Load sample information
@@ -238,29 +240,29 @@ We not only load the sample info, but also create a new variable, *pop_temp*, th
 
 ```R
 sample_info <- read.table("expression_data/dme_elev_samples.tsv",header = TRUE, stringsAsFactors=FALSE)
-sample_info$pop_temp<-paste(sample_info$population,sample_info$temp,sep="_")
+sample_info$pop_temp <- paste(sample_info$population,sample_info$temp,sep="_")
 ```
 
 ### 4. Create Digital Gene Expression (DGE) object
 `Limma` and `edgeR` store and analyze bulk RNA-seq data in a *digital gene expression object*. Thus, we need to load the count data into one of these data structures, which contains both the expression matrix and information on individual samples with respect to their experimental condition(s) as obtained from the sample sheet.
 
 ```R
-DGE=DGEList(expression_data,samples=sample_info$sample,group=c(sample_info$sample_info$pop_temp))
+DGE=DGEList(expression_data,samples=sample_info$sample,group=c(sample_info$pop_temp))
 ```
 
 ### 5. Filtering out lowly expressed genes
-A number of transcripts/genes will be not expressed at all in any sample, or may only be expressed in a small number of samples. In the latter case, testing for differential expression is noisy and under-powered. 
+A number of transcripts/genes will be not expressed at all in any sample, or may only be expressed in a small number of samples. In the latter case, testing for differential expression is noisy and under-powered. Specifically we use the `filterByExpr` function in `edgeR` to identify genes have a minimum count for a minimum number of samples within each group defined in the `DGE` object.  We then use the boolean output of that function (where TRUE means the minimum count criterion is satisfied) to filter the DGE.
 
 ```R
-keep.exprs <- filterByExpr(DGE, group=DGE$samples$group)
-DGE <- DGE[keep.exprs,, keep.lib.sizes=FALSE]
+keep.exprs <- filterByExpr(DGE)
+DGE <- DGE[keep.exprs, keep.lib.sizes=FALSE]
 ```
 
 ### 6. TMM normalization
 The next step is conducting normalization of the counts across samples so that library size differences and the effects of genes that are highly expressed and sample specific are accounted for. Regarding the latter, we want to avoid having a few genes take up expression sequencing "real estate" given the overall number of reads generated by a sample, such that it reduces the reads in other transcripts in a way that would lead to false positive DE. To do this, we use the trimmed mean of M-values (TMM)  of [Robinson and Oshlack (2010) :octicons-link-external-24:](https://doi.org/10.1186/gb-2010-11-3-r25){:target="_blank"} available in edgeR. Note, one can use other normalization schemes, and I have seen some evidence that conditional quantile normalizartion (CQN) mignt be worth considering as an alternative.
 
 ```R
-DGE=calcNormFactors(DGE,method =c("TMM"))
+DGE <- calcNormFactors(DGE,method =c("TMM"))
 ```
 
 ### 7. Examine data for outliers
@@ -269,7 +271,7 @@ We do this to make sure there are no outliers with respect to a particular exper
 We can color-code samples by level of the temperature factor:
 
 ```R
-tempvals<-sample_info$temp
+tempvals <- sample_info$temp
 plotMDS(DGE,top=500,col=ifelse(tempvals=="low","blue","red"),gene.selection="common")
 ```
 <center>
@@ -292,7 +294,7 @@ As expected, there is clear separation between temeprature regimes and geographi
 At the heart of linear modeling are design matrices that specify boolean variables for the intercept, and additional factors, and limma requires such a matrix for performing differential expression analysis. Our first analysis is going to focus on a one-factor model, in which we ignore geography and look at the effects of low and high temperature treatments. We make a design matrix for this analysis as follows:
 
 ```R
-design_temp=model.matrix(~temp, data=sample_info)
+design_temp <- model.matrix(~temp, data=sample_info)
 design_temp
 ```
 
@@ -318,12 +320,12 @@ Most bulk RNA-seq differential expression analysis packages need to fit a mean-v
 ### 10. Run the linear model fitting procedure
 
 ```R
-fit=lmFit(vwts,design_temp)
+fit <- lmFit(vwts,design_temp)
 ``` 
 
 ### 11. Then apply the empirical bayes procedure:
 ```R
-fit=eBayes(fit,robust=TRUE)
+fit <- eBayes(fit,robust=TRUE)
 ```
 
 We use the robust=TRUE setting to leverage the quality weights such that the analysis is robust to outliers.
@@ -374,8 +376,8 @@ There are several columns in the output:
 
 
 
-### 14. Create full table
-The full table will be useful for many purposes, such as creating custom MA or volcano plots with color-coding and symbols to meet your needs. **NOTE:** we must explicitly specify the coefficient for the factor of interest. In this case, as revealed in the summary table above, it is *templow*.
+### 14. Create results table for all genes
+The full table that also include genes with no significant DE will be useful for many purposes, such as creating custom MA or volcano plots with color-coding and symbols to meet your needs. **NOTE:** we must explicitly specify the coefficient for the factor of interest. In this case, as revealed in the summary table above, it is *templow*.
 
 ```R
 all_genes<-topTable(fit, adjust="BH",coef="templow", p.value=1, number=Inf ,resort.by="P")
@@ -397,18 +399,18 @@ Extending limma to analyze more complex designs, such as when considering two fa
 ```R
 population <- factor(sample_info$population,levels=c("maine","panama"))
 temperature <- factor(sample_info$temp, levels=c("high","low"))
-design_2factor<- model.matrix(~population+temperature)
+design_2factor <- model.matrix(~population+temperature)
 design_2factor
 ```
 
 Then, you would proceed with DE analysis in a similar fashion as with the single factor experiment described above. Notice that we have specified the levels of temperature such that low is second, which results in "templow" being the dummy variable with which to fit the coefficient for temperature. 
 
-### 16. Run voom with quality weights with 2-factor design matrix
+### 16. Run limma with quality weights with 2-factor design matrix
 
 ```R
 vwts_2factor <- voomWithQualityWeights(DGE, design=design_2factor,normalize.method="none", plot=TRUE)
-fit_2factor=lmFit(vwts_2factor,design_2factor)
-fit_2factor=eBayes(fit_2factor,robust=TRUE)
+fit_2factor <- lmFit(vwts_2factor,design_2factor)
+fit_2factor <- eBayes(fit_2factor,robust=TRUE)
 summary(decideTests(fit_2factor,adjust.method="fdr",p.value = 0.05))
 ```
 ```
@@ -424,8 +426,8 @@ There are now (2259+2402)/13307 or ~ 36.4% of genes are differentially expressed
 As before, we can get the entire table (including those that do not show significant DE). **NOTE:** when we fit models with limma with a multi-factor design there are now two possible coefficients to select. Because we are interested in the effects of temperature, we specify *temperaturelow*. If we wanted to look at genes with differential regulation with respect to population, we would have to specify *populationpanama*.
 
 ```R
-all_genes<-topTable(fit_2factor, adjust="BH",coef="temperaturelow", p.value=1, number=Inf ,resort.by="P")
-all_genes$geneid<-row.names(all_genes)
+all_genes <- topTable(fit_2factor, adjust="BH",coef="temperaturelow", p.value=1, number=Inf ,resort.by="P")
+all_genes$geneid <- row.names(all_genes)
 ```
 
 ## Questions/Troubleshooting
@@ -439,10 +441,10 @@ all_genes$geneid<-row.names(all_genes)
     * If you are still having issues, consider [contacting us :octicons-link-external-24:](https://forms.office.com/r/qwXEPbBvFK)
 
 ??? question "2. What is a good sample size for differential expression analysis?"
-    !!! ADAM TO ANSWER THIS HERE !!!
+    The more biological replicates per condition, the greater the statistical power to detect differential expression. At a bare minimum, for tools like limma to work properly, one needs a minimum of three biological replicates per condition, or combination of conditions, e.g. temperature x geographic region in the case of our example data.
 
 ??? question "3. How do I deal with drastically varying quality and read depth across my samples?"
-    !!! ADAM TO ANSWER THIS HERE !!!
+    Samples wih low quality can typically be flagged with alignment base QC metrics, and `limma voom` can adjust the contribution of individual samples in inverse proportion to their "quality" as inferred by their location in reduced dimension space relative to other samples. However, if very few reads align to the transcriptome or there are other indicators of poor quality, the researcher will have to make a judgement call about excluding samples. Regarding read depth, one intrinsically expects read depth variation simply due to variation in expression across genes. That aside, a high quality sequencing library with roughly 15 million reads should produce good expression estimates, assuming the genome annotation is also reasonably accurate and complete. But, if many reads don't align, this will reduce coverage depth across the transcriptome and reduce statistical power for detecting DE. This becomes more of an issue when the low quality samples are biased towards particular conditions that are in the experiment. 
 
 ---
 
