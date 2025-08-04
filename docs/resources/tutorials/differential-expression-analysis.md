@@ -231,7 +231,7 @@ BiocManager::install("limma","edgeR")
 The first two columns of `salmon.merged.gene_counts.tsv` are "gene_id", the original gene id in the annotation, and "gene_name", the gene symbol. To manipulate the data into a matrix format that limma expects, we also need to remove the id and name information from the data table, and set  gene names as row names. 
 
 ```R
-expression_data <-read.table("salmon.merged.gene_counts.tsv",row.names=gene_name)
+expression_data <-read.table("salmon.merged.gene_counts.tsv",header=TRUE,row.names="gene_name")
 expression_data$gene_id <- NULL
 ```
 
@@ -422,8 +422,50 @@ Up           12493              917           2402
 
 There are now (2259+2402)/13307 or ~ 36.4% of genes are differentially expressed as a function of temperature after partitioning variation among temperature and population-level effects. In essence, accounting for population-level variation provided greater power in detecting the effects of temperature, as in the above 1-factor test, only 24.9% of genes were differentially expressed with respect to temperature.
 
-### 17. Get full results table
+### 17. Get results table for all genes
 As before, we can get the entire table (including those that do not show significant DE). **NOTE:** when we fit models with limma with a multi-factor design there are now two possible coefficients to select. Because we are interested in the effects of temperature, we specify *temperaturelow*. If we wanted to look at genes with differential regulation with respect to population, we would have to specify *populationpanama*.
+
+## Specifying particular comparisions: data subsetting
+In a simple experiment where you have two groups of samples, with each assigned to one of two different conditions, following a workflow akin to the "vanilla one factor" one described above is a perfectly reasonable. For example, if there was no second "population" factor, such as if flies had only been collected from Panama and subjected to either high or low temperature treatments. However, not all experiments are that straightforward. For example, you may one factor, and several levels for that factor, and you might only be interested in specific comparisons. Imagine a case where there are three temperature levels: low, medium and high, and you are only interested in changes relative to "low". In other words, you might only want to test for DE between a) medium and low and b) high and low. Or, in a two factor experiment such as in our example data, you might only be interested in testing for changes between high and low temperature within each population. One way to perform these tests is to:
+
+1. subset the DGE to only include samples from the conditions of interest
+2. create a design matrix from this subsetted data, and
+3. run the DE testing with limma per the "vanilla experiment
+
+We will demonstrate how this is done for carrying out a DE test for high versus low temperature only within the Panama population
+
+### subset the data
+
+#### subset the DGE
+```R
+panama_samples<-sample_info$sample[sample_info$population=="panama"]
+panama_DGE <- DGE[,panama_samples]
+```
+
+#### subset the sample info table
+We do this by selecting rows with "panama" for the value of the population factor, and include all columns. Because limma and edgeR work with data frames and not tibbles, we use base R code for doing this.
+
+```R
+panama_sample_info <-sample_info[sample_info$population=="panama",]
+panama_sample_info$temp<-factor(panama_sample_info$temp, levels=c("high","low"))
+panama_sample_info
+```
+
+### create design matrix for subsetted data
+```R
+panama_design_temp=model.matrix(~temp, data=panama_sample_info)
+panama_design_temp
+```
+
+### do DE testing on Panama samples
+```R
+vwts_panama <- voomWithQualityWeights(panama_DGE, design=panama_design_temp,normalize.method="none", plot=TRUE)
+panama_fit=lmFit(vwts_panama,panama_design_temp)
+panama_fit=eBayes(panama_fit,robust=TRUE)
+summary(decideTests(panama_fit,adjust.method="fdr",p.value = 0.05))
+topTable(panama_fit, adjust="BH",resort.by="P")
+```
+
 
 ```R
 all_genes <- topTable(fit_2factor, adjust="BH",coef="temperaturelow", p.value=1, number=Inf ,resort.by="P")
