@@ -219,10 +219,92 @@ summary(decideTests(panama_fit,adjust.method="fdr",p.value = 0.05))
 topTable(panama_fit, adjust="BH",resort.by="P")
 ```
 
+## Specifying particular comparisions: linear contrasts
+Under the hood, `limma` fits linear models to patterns of expression across conditions, such that, when it performs differential expression tests, it is testing the null hypothesis that the coefficient for a particular term in the linear model is equal to zero. `limma` leverages the design matrix to build the model from which statistical tests will be performed on the coefficients of that model. In the simple case of the dataset restricted to samples from Panama, our model is $$ Expression\ of\ gene\ A = \beta_0 + temperature* \beta_1 $$
 
-# III. Final thoughts on limma voom
-One of limma's big advantages is that, for complex experiments, one is able to specify arbitrary contrasts to extract and test, leveraging the full spectrum of options for linear modeling. However, doing so **properly** requires a thorough understanding of linear modeling. 
+In the above formula, *temperature* references the group coding for the temperature factor in the design matrix. Because "high" is the first level, it is represented in the matrix by zeroes, and "low" by ones. `limma` interprets this coding to assign samples to groups, and constructs a model where the first coefficient represents the mean expression of *gene A*, and the second coefficient represents the difference in expression between low and high temperature conditions, i.e. low-high. One of limma's big advantages is that, for complex experiments, one is able to specify arbitrary contrasts to extract and test, leveraging the full spectrum of options for linear modeling. However, doing so **properly** requires a thorough understanding of linear modeling. If you wish to read more about linear modeling in voom, we recommend the [chapter 9 of thelimma user's guide](https://bioconductor.org/packages/release/bioc/vignettes/limma/inst/doc/usersguide.pdf). Nevertheless, there is a straightforward syntax for specifying particular "contrasts" that reflect different biological hypotheses of interest, and without having to subset the data. We demonstrate this below.
 
+### Building a contrast design matrix
+You may recall that in our original `sample_info` object we created a variable named `pop_temp`. This variable concatenation is a key part of specifying contrasts in a straightforward manner. But first, we need to assign factor levels to these combinations:
 
-    
+```{r}
+poptemp<-factor(sample_info$pop_temp,levels=c("maine_low","maine_high","panama_low","panama_high"))
+```
+Then we create our contrast design
 
+```{r}
+contrast_design<-model.matrix(~0+poptemp)
+colnames(contrast_design) <- levels(poptemp)
+contrast_design
+```
+In this design, each value for `poptemp` gets a column, with ones indicating if the sample is assigned to that value. Once it has been created, we can make a contrast matrix:
+
+```{r}
+cont.matrix <- makeContrasts(Mlowhi=maine_low-maine_high,Plowhi=panama_low-panama_high,Diff=(maine_low-maine_high)-(panama_low-panama_high),levels=contrast_design)
+cont.matrix
+```
+such that:
+* `Mlowhi` specifies a contrast (and model coefficient) for the difference in expression between low and high temperature expression in Maine
+* `Plowhi` specifies a contrast for the difference in expression between low and high temperature in Panama, and
+* `Diff` specifies an interaction term for evaluating whether the nature of the difference between low and high temperature depends upon geographic location, i.e. does the difference vary by geography
+
+### Build a voom object for the contrast design
+Next, we need to rebuild a voom object specifying the new design:
+```{r}
+vwts_contrast <- voomWithQualityWeights(DGE, design=contrast_design,normalize.method="none", plot=TRUE)
+```
+
+### do DE testing
+#### run linear model fitting
+```{r} 
+fit_2factor_contrast=lmFit(vwts_contrast,contrast_design)
+```
+#### fit contrasts
+```{r}
+fit_2factor_contrast<-contrasts.fit(fit_2factor_contrast, cont.matrix)
+```
+
+#### run empirical Bayes procedure
+```{r}
+fit_2factor_contrast=eBayes(fit_2factor_contrast,robust=TRUE)
+```
+
+#### get summary table
+We can generate a summary table as with the above examples, but also visualize overlap of significant differences between coefficients.
+```{r}
+contrast_summary<-decideTests(fit_2factor_contrast,adjust.method="fdr",p.value = 0.05)
+summary(decideTests(fit_2factor_contrast,adjust.method="fdr",p.value = 0.05))
+vennDiagram(contrast_summary)
+```
+
+### create merged results table
+Because the first, second and third coefficients in the ```cont.matrix``` are for `Mlowhi`, `Plowhi`, and  `Diff`, we can extract the results for each contrast and combine the results into a single table:
+
+```{r}
+Mlowhi_results<-topTable(fit_2factor_contrast, adjust="BH",coef=1, p.value=1, number=Inf ,resort.by="P")
+colnames(Mlowhi_results)<-paste("Mlowhi",colnames(Mlowhi_results),sep=".")
+Mlowhi_results$geneid<-row.names(Mlowhi_results)
+Plowhi_results<-topTable(fit_2factor_contrast, adjust="BH",coef=2, p.value=1, number=Inf ,resort.by="P")
+colnames(Plowhi_results)<-paste("Plowhi",colnames(Plowhi_results),sep=".")
+Plowhi_results$geneid<-row.names(Plowhi_results)
+Diff_results<-topTable(fit_2factor_contrast, adjust="BH",coef=3, p.value=1, number=Inf ,resort.by="P")
+colnames(Diff_results)<-paste("Diff",colnames(Diff_results),sep=".")
+Diff_results$geneid<-row.names(Diff_results)
+results_merge<-merge(Mlowhi_results,Plowhi_results,by=c("geneid"))
+results_merge<-as_tibble(merge(results_merge,Diff_results,by=c("geneid")))
+head(results_merge)
+```
+
+Once this merged table is created, one can query it using *tidyverse* table parsing to ask particular questions of interest. For example, which genes are up-regulated in high temperature conditions in a parallel fashion between Panama and Maine? To do this, you would want to identify genes where there is a non-significant interaction term, log-fold change is negative in both regions (remember, the contrast and factor levels mean it's low-high, so negative values mean up-regulation with high temperature), and significant for both regions, assuming an FDR level of 0.05.
+
+```{r}
+parallel_high_upreg_genes <-results_merge %>% filter(Diff.adj.P.Val > 0.05) %>%
+                  filter(Plowhi.adj.P.Val <=0.05) %>%
+                  filter(Mlowhi.adj.P.Val <=0.05) %>%
+                  filter(Plowhi.logFC < 0) %>%
+                  filter(Mlowhi.logFC < 0)
+head(parallel_high_upreg_genes)
+```
+A total of 378 genes fit the pattern of parallel, significant upregulation with high temperature.
+
+                  
