@@ -16,6 +16,10 @@ jobs:
           submodules: true
           fetch-depth: 0 # Fetch all history for all branches and tags
 
+      - name: Update submodules to latest main branch
+        run: |
+          git submodule foreach 'git fetch origin && git checkout main && git pull'
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
