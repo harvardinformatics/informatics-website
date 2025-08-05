@@ -377,7 +377,9 @@ There are several columns in the output:
 
 
 ### 14. Create results table for all genes
-The full table that also include genes with no significant DE will be useful for many purposes, such as creating custom MA or volcano plots with color-coding and symbols to meet your needs. **NOTE:** we must explicitly specify the coefficient for the factor of interest. In this case, as revealed in the summary table above, it is *templow*.
+`topTable` used with default arguments reports DE results for the 10 most highly significant differentially expressed genes. However, one often needs the results for all genes, even those for which there was no significant DE. This information is useful for querying specific hypothesized candidate genes--and it may be interesting that some candidates are not differntially expressed--but is also useful for common data visualizations such as MA plots or volcano plots. To get the results for all genes you can use the `topTable` function but specify a p-value threshold of 1. 
+
+**NOTE:** one must explicitly specify the coefficient for the factor of interest. In this case, as revealed in the summary table above, it is *templow*.
 
 ```R
 all_genes<-topTable(fit, adjust="BH",coef="templow", p.value=1, number=Inf ,resort.by="P")
