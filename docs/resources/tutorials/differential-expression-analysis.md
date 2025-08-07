@@ -197,21 +197,22 @@ Our sample data comprises 12 paired-end RNA-seq libraries for whole body samples
 
 For a differential expression analysis to be performed, one needs to know the experimental condition for each of the samples. The sample sheet supplied to *nf-core/rnaseq* does not include this information, so we need to generate a sample sheet that can be supplied to the `limma` R package. Our example sample sheet is called `dme_elev_samples.tsv`, and looks like this:
 
-```bash title="dme_elev_samples.tsv"
-sample population temp
-SRR1576457 maine low
-SRR1576458 maine low
-SRR1576459 maine low
-SRR1576460 maine high
-SRR1576461 maine high
-SRR1576462 maine high
-SRR1576463 panama low
-SRR1576464 panama low
-SRR1576465 panama low
-SRR1576514 panama high
-SRR1576515 panama high
-SRR1576516 panama high
-```
+
+| sample | population | temp |
+|--------|------------|----|
+| SRR1576457 | maine | low |
+| SRR1576458 | maine | low |
+| SRR1576459 | maine | low |
+| SRR1576460 | maine | high |
+| SRR1576461 | maine | high |
+| SRR1576462 | maine | high |
+| SRR1576463 | panama | low |
+| SRR1576464 | panama | low |
+| SRR1576465 | panama | low |
+| SRR1576514 | panama | high |
+| SRR1576515 | panama | high |
+| SRR1576516 | panama | high |
+
 
 ### 1. Expression analysis in R: preliminaries
 The differential expression analysis we demonstrate requires a number of R packages, which can be installed as follows:
@@ -298,6 +299,22 @@ design_temp <- model.matrix(~temp, data=sample_info)
 design_temp
 ```
 
+| row number | (intercept) | templow |
+|------------|-------------|---------|
+|     1      |      1      |    1    |
+|     2      |      1      |    1    |
+|     3      |      1      |    1    | 
+|     4      |      1      |    0    |
+|     5      |      1      |    0    |
+|     6      |      1      |    0    |
+|     7      |      1      |    1    |
+|     8      |      1      |    1    |
+|     9      |      1      |    1    |
+|    10      |      1      |    0    |
+|    11      |      1      |    0    |
+|    12      |      1      |    0    |
+
+
 ### 9a. Running limma
 After creating the design matrix object, the standard approach is to next run limma voom on the DGE object, e.g.:
 
@@ -313,9 +330,15 @@ A better solution to this problem is to apply weights to samples such that outli
 ```R
 vwts <- voomWithQualityWeights(DGE, design=design_temp,normalize.method="none", plot=TRUE) 
 ```
+
 Most bulk RNA-seq differential expression analysis packages need to fit a mean-variance relationship--which is used to adjust estimated variances-- and the *voomWithQualityWeights* command generates a plot of this relationship as well as a bar plot of the weights assigned to each sample. 
 
-*Note:** we have already applied TMM normalization, thus can set the normalization argument to none. This above command will also generate a plot with two panels showing the mean-variance relationship fit on the left, and a barplot of weights assigned to individual samples.
+**Note:** we have already applied TMM normalization, thus why `normalization.method` is set to "none".
+
+<center>
+    <img src="../../../../img/tutorials/onefactor_voomplot.png" alt="vwts: one-factor" width="75%" />
+</center>
+
 
 ### 10. Run the linear model fitting procedure
 
