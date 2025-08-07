@@ -318,7 +318,7 @@ design_temp
 The row number references the row in the sample table, and thus the associated sample id, while the boolean variable *templow* indicates which samples have received the low temperature treatment (i.e. those where the value in the matrix is 1).
 
 ### 9a. Running limma
-After creating the design matrix object, the standard approach is to next run limma voom on the DGE object, e.g.:
+After creating the design matrix object, the standard approach is to next run limma voom on the DGE object. This step is a prelude to fitting linear models, and involves transforming count data to log-transformed counts per million (CPM), estimating the gene-wise relationship between mean and variance of expression, and calculating "observation-level precision weights", which are estimates of precision for individual genes that are then used subsequently by the `lmFit` function (see below) that fits linear models.
 
 ```R
 v <- voom(DGE, design=design_temp, plot=TRUE)
@@ -328,6 +328,7 @@ v <- voom(DGE, design=design_temp, plot=TRUE)
 A better solution to this problem is to apply weights to samples such that outlier samples are down-weighted during differential expression calculations. Limma voom does this by calculating "empirical quality weights" for each sample. Note that we don't specify a normalization method becaues the data have already been normalized with TMM.
 
 ### 9b. Running limma with sample quality weights
+To estimate quality weights for use in downstream analysis, instead of using the standard `voom` function, we use `voomWithQualityWeights`. 
 
 ```R
 vwts <- voomWithQualityWeights(DGE, design=design_temp,normalize.method="none", plot=TRUE) 
