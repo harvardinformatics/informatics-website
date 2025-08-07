@@ -520,7 +520,7 @@ vwts_panama <- voomWithQualityWeights(panama_DGE, design=panama_design_temp,norm
 ```
 
 <center>
-  <img src="../../../../img/tutorials/panama_subset_vwts.png" alt="vwts on Panama subset" width="50%" />
+  <img src="../../../../img/tutorials/panama_subset_vwts.png" alt="vwts on Panama subset" width="75%" />
 </center>
 
 ```R
@@ -581,6 +581,21 @@ colnames(contrast_design) <- levels(poptemp)
 contrast_design
 ```
 
+| row number | maine_low | maine_high | panama_low | panama_high |
+|------------|-----------|------------|------------|-------------|
+| 1 | 1 | 0 | 0 | 0 |
+| 2 | 1 | 0 | 0 | 0 |
+| 3 | 1 | 0 | 0 | 0 |
+| 4 | 0 | 1 | 0 | 0 |
+| 5 | 0 | 1 | 0 | 0 |
+| 6 | 0 | 1 | 0 | 0 |
+| 7 | 0 | 0 | 1 | 0 |
+| 8 | 0 | 0 | 1 | 0 |
+| 9 | 0 | 0 | 1 | 0 |
+| 10 | 0 | 0 | 0 | 1 |
+| 11 | 0 | 0 | 0 | 1 |
+| 12 | 0 | 0 | 0 | 1 |
+
 In this design, each value for `poptemp` gets a column, with ones indicating if the sample is assigned to that value. Once it has been created, we can make a contrast matrix, with named contrasts:
 
 * `Mlowhi` specifies a contrast (and model coefficient) for the difference in expression between low and high temperature expression in Maine
@@ -592,11 +607,26 @@ cont.matrix <- makeContrasts(Mlowhi=maine_low-maine_high,Plowhi=panama_low-panam
 cont.matrix
 ```
 
+| Contrasts: | Mlowhi | Plowhi |Diff |
+|--------|--------|--------|-----|
+| **Levels:** |                      |
+| maine_low | 1 | 0 | 1 |
+| maine_high | -1 | 0 | -1 |
+| panama_low | 0 | 1 | -1 |
+| panama_high | 0 | -1 | 1 |
+
+
 ### Build a voom object for the contrast design
 Next, we need to rebuild a voom object specifying the new design:
 ```R
 vwts_contrast <- voomWithQualityWeights(DGE, design=contrast_design,normalize.method="none", plot=TRUE)
 ```
+
+<center>
+  <img src="../../../../img/tutorials/vwts_contrast.png" alt="voom plots for contrast design" width="75%" />
+</center>
+
+
 
 ### do DE testing
 Next we can do DE testing and extract the comparisons (i.e contrasts) of interest
