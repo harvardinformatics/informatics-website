@@ -252,7 +252,7 @@ DGE=DGEList(expression_data,samples=sample_info$sample,group=c(sample_info$pop_t
 ```
 
 ### 5. Filtering out lowly expressed genes
-A number of transcripts/genes will be not expressed at all in any sample, or may only be expressed in a small number of samples. In the latter case, testing for differential expression is noisy and under-powered. Specifically we use the `filterByExpr` function in `edgeR` to identify genes have a minimum count for a minimum number of samples within each group defined in the `DGE` object.  We then use the boolean output of that function (where TRUE means the minimum count criterion is satisfied) to filter the DGE.
+A number of transcripts/genes will be not expressed at all in any sample, or may only be expressed in a small number of samples. In the latter case, testing for differential expression is noisy and under-powered. Specifically we use the `filterByExpr` function in `edgeR` to identify genes have a minimum count for a minimum number of samples corresponding to the size of the smallest group defined in the `DGE` object.  We then use the boolean output of that function (where TRUE means the minimum count criterion is satisfied) to filter the DGE.
 
 ```R
 keep.exprs <- filterByExpr(DGE)
