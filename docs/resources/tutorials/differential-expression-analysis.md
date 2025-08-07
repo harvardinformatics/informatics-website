@@ -465,7 +465,6 @@ summary(decideTests(fit_2factor,adjust.method="fdr",p.value = 0.05))
 | Down | 249 | 765 | 2259 |
 | NotSig | 565 | 11625 | 8646 |
 | Up | 12493 | 917 | 2402 |
-```
 
 There are now (2259+2402)/13307 or ~ 36.4% of genes are differentially expressed as a function of temperature after partitioning variation among temperature and population-level effects. In essence, accounting for population-level variation provided greater power in detecting the effects of temperature, as in the above 1-factor test, only 24.9% of genes were differentially expressed with respect to temperature.
 
@@ -498,6 +497,17 @@ panama_sample_info$temp<-factor(panama_sample_info$temp, levels=c("high","low"))
 panama_sample_info
 ```
 
+|row number| sample | population | temp | pop_temp |
+|----------|--------|------------|------|----------|
+| 7 | SRR1576463 | panama | low | panama_low |
+| 8 | SRR1576464 | panama | low	| panama_low |
+| 9 | SRR1576465 | panama | low	| panama_low |
+| 10 | SRR1576514 | panama | high | panama_high |
+| 11 | SRR1576515 | panama | high | panama_high |
+| 12 | SRR1576516 | panama | high | panama_high |
+
+Notice that the row numbers are preserved from the original sample table, i.e. they are not re-numbered on the fly to start at 1.
+
 ### create design matrix for subsetted data
 ```R
 panama_design_temp=model.matrix(~temp, data=panama_sample_info)
@@ -507,10 +517,38 @@ panama_design_temp
 ### do DE testing on Panama samples
 ```R
 vwts_panama <- voomWithQualityWeights(panama_DGE, design=panama_design_temp,normalize.method="none", plot=TRUE)
+```
+
+<center>
+  <img src="../../../../img/tutorials/panama_subset_vwts.png" alt="vwts on Panama subset" width="50%" />
+</center>
+
+```R
 panama_fit=lmFit(vwts_panama,panama_design_temp)
 panama_fit=eBayes(panama_fit,robust=TRUE)
 summary(decideTests(panama_fit,adjust.method="fdr",p.value = 0.05))
+```
+
+| test result | (Intercept) | templow |
+|-------------|-------------|---------|
+| Down | 1481 | 1964 |
+| NotSig | 1232 | 11013 |
+| Up | 12527 | 2263 |
+
+```R
 topTable(panama_fit, adjust="BH",resort.by="P")
+
+          logFC  AveExpr         t      P.Value    adj.P.Val        B
+Acp1     2.324353 7.742532  26.98556 1.297966e-11 1.722261e-07 17.08139
+Cpr92F   2.473170 6.188566  25.67331 2.260185e-11 1.722261e-07 16.55697
+tim     -1.516393 6.111509 -21.04818 2.041175e-10 7.080602e-07 14.51690
+CG43732  4.143109 2.740078  20.83128 2.288273e-10 7.080602e-07 13.29214
+Acyp     2.304751 3.771257  20.80282 2.323032e-10 7.080602e-07 14.16458
+TM4SF    1.245547 5.012359  16.88155 2.295124e-09 5.675822e-06 12.13905
+CG40472  2.431640 5.644105  20.06151 2.607005e-09 5.675822e-06 12.10037
+twi     -1.779439 4.385314 -16.19768 3.599106e-09 6.268029e-06 11.68599
+PPO1    -1.690476 4.421855 -16.05957 3.949836e-09 6.268029e-06 11.59834
+Vajk3    1.485155 4.050126  15.95085 4.252039e-09 6.268029e-06 11.51536
 ```
 
 
