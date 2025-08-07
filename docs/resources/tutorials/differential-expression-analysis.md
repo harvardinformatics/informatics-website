@@ -315,6 +315,8 @@ design_temp
 |    12      |      1      |    0    |
 
 
+The row number references the row in the sample table, and thus the associated sample id, while the boolean variable *templow* indicates which samples have received the low temperature treatment (i.e. those where the value in the matrix is 1).
+
 ### 9a. Running limma
 After creating the design matrix object, the standard approach is to next run limma voom on the DGE object, e.g.:
 
@@ -431,6 +433,21 @@ temperature <- factor(sample_info$temp, levels=c("high","low"))
 design_2factor <- model.matrix(~population+temperature)
 design_2factor
 ```
+
+| row number | (intercept) | populationpanama | temperaturelow |
+|------------|-------------|------------------|----------------|
+|     1      |      1      |         0        |       1        |
+|     2      |      1      |         0        |       1        |
+|     3      |      1      |         0        |       1        |
+|     4      |      1      |         0        |       0        |
+|     5      |      1      |         0        |       0        |
+|     6      |      1      |         0        |       0        |
+|     7      |      1      |         1        |       1        |
+|     8      |      1      |         1        |       1        |
+|     9      |      1      |         1        |       1        |
+|     10     |      1      |         1        |       0        |
+|     11     |      1      |         1        |       0        |
+|     12     |      1      |         1        |       0        |
 
 Then, you would proceed with DE analysis in a similar fashion as with the single factor experiment described above. Notice that we have specified the levels of temperature such that low is second, which results in "templow" being the dummy variable with which to fit the coefficient for temperature. 
 
