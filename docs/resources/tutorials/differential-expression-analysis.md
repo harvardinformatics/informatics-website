@@ -343,17 +343,19 @@ Most bulk RNA-seq differential expression analysis packages need to fit a mean-v
 
 
 ### 10. Run the linear model fitting procedure
+The next step in differential expression analysis with *limma* is to fit the linear model specified by the design matrix, in this case `design_temp`, and estimate fold changes and standard errors on those fold changes. We do this with the `lmFit` function.
 
 ```R
 fit <- lmFit(vwts,design_temp)
 ``` 
 
 ### 11. Then apply the empirical bayes procedure:
+Given the typically small number of biological replicates in a bulk RNA-experiment, the standard errors estimated for individual genes will be noisy, and yet accurate estimates of the standard errors are necessary in order for statistical tests of differential expression to be robust. For this reason, all bioinformatics tools for performing differential expresssion involve a step in which the standard errors estimates are adjusted. This adjustment is predicated upon the reasonable assumption that genes with similar expression levels should have similar standard errors. We can observe this general pattern in the mean-variance relationship that estimated (and plotted) when we run `voomWithQualityWeights`. The adjustment of standard errors is often called "shrinkage", because it involves "shrinking" the estimates of gene-wise dispersion towards the fitted curve in the mean-variance relationship--genes whose dispersion is further away from the fitted line are "shrunk" more, those that are closer are "shrunk" less--and standard errors are recalcuated from these "shrunk" standard errors. Different tools do this is slightly different ways. In *limma*, this is done with the `eBayes` function. `eBayes` takes as input the `fit` object created with `lmFit` , and computes moderated t-statistics, moderated F-statistics, and log-odds of differential expression by empirical Bayes moderation (i.e. "shrinkage") of the standard errors. We use the `robust=TRUE` setting to leverage the quality weights such that the analysis is robust to outliers.
+
 ```R
 fit <- eBayes(fit,robust=TRUE)
 ```
 
-We use the robust=TRUE setting to leverage the quality weights such that the analysis is robust to outliers.
 
 ### 12. Get summary table
 One can then get a quick and dirty summary of how many genes are differentially expressed, setting the FDR threshold,where the "fdr" and "BH" methods are synonymous for Benjamini Hochberg adjusted p-values.
