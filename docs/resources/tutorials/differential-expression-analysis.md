@@ -333,7 +333,7 @@ vwts <- voomWithQualityWeights(DGE, design=design_temp,normalize.method="none", 
 
 Most bulk RNA-seq differential expression analysis packages need to fit a mean-variance relationship--which is used to adjust estimated variances-- and the *voomWithQualityWeights* command generates a plot of this relationship as well as a bar plot of the weights assigned to each sample. 
 
-**Note:** we have already applied TMM normalization, thus why `normalization.method` is set to "none".
+**NOTE:** we have already applied TMM normalization, thus why `normalization.method` is set to "none".
 
 <center>
     <img src="../../../../img/tutorials/onefactor_voomplot.png" alt="vwts: one-factor" width="75%" />
@@ -359,18 +359,22 @@ One can then get a quick and dirty summary of how many genes are differentially 
 ```R
 summary(decideTests(fit,adjust.method="fdr",p.value = 0.05))
 ```
-```
-(Intercept) templow
-Down           250    1589
-NotSig         511    9990
-Up           12546    1728
 
-```
+| test result | (Intercept) | templow |
+|-------------|-------------|---------|
+| Down | 250 | 1589 |
+| NotSig | 511 | 9990 |
+| Up | 12546 | 1728 |
 
+Remember, the way the design matrix has been set up means that the intercept = the mean expression for the high temperature condition, so that test results are interpreted as follows:
 
-One piece of important info is the factor relative to which logfold change is being calculated, i.e. low will be the numerator for logfold change calculations.
+* *Down* = the low temperature condition is down-regulated relative to the high-temperature condition (i.e. LFC <0)
+* *Up* = the low temperature condition is up-regulated relative to the  high-temperature condition (i.e. LFC >0)
+* *NotSig* = the null hypothesis that expression does not differ between the low and high temperature conditions was not rejected
 
-Overall, (1589+1728)/13307 or ~ 24.9% of genes are differentially expressed as a function of temperature treatment, without considering the effect of population.
+In other words, logfold change is being calculated relative to the "reference" condition defined by the intercept, which is high temperature, so log-fold change calculations will have low temperature expression in the numerator and high temperature expression in the denominator. Overall, (1589+1728)/13307 or ~ 24.9% of genes are differentially expressed as a function of temperature treatment, without considering the effect of population.
+
+*Why is the intercept significant for nearly all genes?* Remember, the intercept estimates the baseline expression level for the high temperature condition, such that the null hypothesis is that gene expression in the high temperature condition does not differ from zero. It is a trivial and, frankly, uninteresting hypothesis to test, such that we generally don't pay attention to results for the intercept.
 
 ### 13. Explore top 10 DE genes (ordered by p-value):
 
@@ -438,11 +442,12 @@ fit_2factor <- lmFit(vwts_2factor,design_2factor)
 fit_2factor <- eBayes(fit_2factor,robust=TRUE)
 summary(decideTests(fit_2factor,adjust.method="fdr",p.value = 0.05))
 ```
-```
-(Intercept) populationpanama temperaturelow
-Down           249              765           2259
-NotSig         565            11625           8646
-Up           12493              917           2402
+
+| test result | (Intercept) | populationpanama | temperaturelow |
+|-------------|-------------|------------------|----------------|
+| Down | 249 | 765 | 2259 |
+| NotSig | 565 | 11625 | 8646 |
+| Up | 12493 | 917 | 2402 |
 ```
 
 There are now (2259+2402)/13307 or ~ 36.4% of genes are differentially expressed as a function of temperature after partitioning variation among temperature and population-level effects. In essence, accounting for population-level variation provided greater power in detecting the effects of temperature, as in the above 1-factor test, only 24.9% of genes were differentially expressed with respect to temperature.
