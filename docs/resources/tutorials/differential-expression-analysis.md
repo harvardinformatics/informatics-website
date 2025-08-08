@@ -223,7 +223,7 @@ install.packages("tidyverse")
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install("limma","edgeR")
+BiocManager::install("limma","edgeR","ggrepel")
 ```
 
 `Tidyverse` is a data science packages that facilitates the manipulation of tabular data, and plotting visualizations. `edgeR` and `limma` are bioinformatics packages for analyzing bulk RNA-seq data.
@@ -248,7 +248,7 @@ sample_info$pop_temp <- paste(sample_info$population,sample_info$temp,sep="_")
 `Limma` and `edgeR` store and analyze bulk RNA-seq data in a *digital gene expression object*. Thus, we need to load the count data into one of these data structures, which contains both the expression matrix and information on individual samples with respect to their experimental condition(s) as obtained from the sample sheet.
 
 ```R
-DGE=DGEList(expression_data,samples=sample_info$sample,group=c(sample_info$pop_temp))
+DGE=DGEList(expression_data,samples=sample_info$sample,group=sample_info$pop_temp)
 ```
 
 ### 5. Filtering out lowly expressed genes
@@ -269,27 +269,31 @@ DGE <- calcNormFactors(DGE,method =c("TMM"))
 ### 7. Examine data for outliers
 We do this to make sure there are no outliers with respect to a particular experimental variable, suggesting a potential issue with an RNA-seq library, and to also check for sample swaps. This can be done with a multidimensional scaling (MDS) plot using the top 500 highest expressed genes. 
 
-We can color-code samples by level of the temperature factor:
+We can color-code samples by temperature and population:
 
 ```R
-tempvals <- sample_info$temp
-plotMDS(DGE,top=500,col=ifelse(tempvals=="low","blue","red"),gene.selection="common")
-```
-<center>
-    <img src="../../../../img/tutorials/de_temp_mds.png" alt="MDS plot on expression data: temperature" width="75%" />
-</center>
-
-Or by the levels of the population factor:
-
-```R
+tempvals<-sample_info$temp
 popvals<-sample_info$population
-plotMDS(DGE,top=500,col=ifelse(popvals=="maine","darkgreen","dodgerblue"),gene.selection="common")
+mds<-plotMDS(DGE,top=500,plot=FALSE,gene.selection="common")
+mds_dataframe <-cbind(sample_info$sample,sample_info$pop_temp,mds$x,mds$y)
+colnames(mds_dataframe) <-c("sample","poptemp","pc1","pc2")
+mds_dataframe <- as_tibble(mds_dataframe) %>% mutate(across(c(pc1, pc2), as.numeric))
+
+mds_plot <- mds_dataframe %>% ggplot(aes(x=pc1,y=pc2,color=poptemp)) +
+            geom_point(size=3) +
+            xlab("Principal coordinate 1") +
+            ylab("Principal coordinate 2") + 
+            geom_text_repel(aes(label = sample), size=3)
+
+print(mds_plot)
+
 ```
 <center>
-  <img src="../../../../img/tutorials/de_pop_mds.png" alt="MDS plot on expression data: population" width="75%" />
+    <img src="../../../../img/tutorials/de_mds.png" alt="MDS plot on expression data" width="75%" />
 </center>
 
-As expected, there is clear separation between temeprature regimes and geographic locations, but no outliers indicating bad samples or potential label swaps.
+
+While there is clearly separation according to geographic along the first prinicipal coordinate (i.e. MDS) axis, one sample from the Maine-low temperature treatment (SRR1576458) is a bit separated from all other samples on the second axis. While it is hard to know exactly what might be the cause of this, one of the strengths of *limma* is that it has the option to assign "quality weights" to samples in order to down-weight samples that exhibit more outlier-like behavior. We will demonstrate this below.
 
 ### 8. Create design matrix
 At the heart of linear modeling are design matrices that specify boolean variables for the intercept, and additional factors, and limma requires such a matrix for performing differential expression analysis. Our first analysis is going to focus on a one-factor model, in which we ignore geography and look at the effects of low and high temperature treatments. We make a design matrix for this analysis as follows:
