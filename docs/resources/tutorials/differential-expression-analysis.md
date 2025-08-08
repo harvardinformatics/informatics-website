@@ -362,7 +362,7 @@ fit <- eBayes(fit,robust=TRUE)
 ```
 
 
-### 12. Get summary table
+### 12. Get summary table and make volcano plot
 One can then get a quick and dirty summary of how many genes are differentially expressed, setting the FDR threshold,where the "fdr" and "BH" methods are synonymous for Benjamini Hochberg adjusted p-values.
 
 ```R
@@ -384,6 +384,19 @@ Remember, the way the design matrix has been set up means that the intercept = t
 In other words, logfold change is being calculated relative to the "reference" condition defined by the intercept, which is high temperature, so log-fold change calculations will have low temperature expression in the numerator and high temperature expression in the denominator. Overall, (1589+1728)/13307 or ~ 24.9% of genes are differentially expressed as a function of temperature treatment, without considering the effect of population.
 
 *Why is the intercept significant for nearly all genes?* Remember, the intercept estimates the baseline expression level for the high temperature condition, such that the null hypothesis is that gene expression in the high temperature condition does not differ from zero. It is a trivial and, frankly, uninteresting hypothesis to test, such that we generally don't pay attention to results for the intercept.
+
+
+We can also make a quick and dirty volcano plot, where the x-axis is log-fold change, and the y-axis is -log10(Pvalue) using limma's `volcanoplot` function:
+
+```R
+volcanoplot(fit,coeff=1)
+```
+
+<center>
+    <img src="../../../../img/tutorials/volcanoplot_temp.png" alt="volcano plot: 1-factor temperature" width="75%" />
+</center>
+
+Remember, the coefficient indexed by 0 is the intercept, which we are less interested in. Thus, 1 would refer to `templow`. The volcano plot suggests there are far more genes that are up-regulated in the low temperature condition (i.e. with log-fold change > 0) than there are genes up-regulated in the high temperature condition.
 
 ### 13. Explore top 10 DE genes (ordered by p-value):
 

@@ -17,7 +17,7 @@ Our sample data comprises 12 paired-end RNA-seq libraries for whole body samples
 ## Loading required R libraries
 First, install the R libraries that will be used for today's analyses:
 ```{r,quietly = TRUE}
-install.packages("tidyverse")
+install.packages("tidyverse","ggrepel")
 
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
@@ -54,7 +54,7 @@ sample_info$pop_temp<-paste(sample_info$population,sample_info$temp,sep="_")
 ### 3. Create Digital Gene Expression (DGE) object
 
 ```{r}
-DGE=DGEList(expression_data,samples=sample_info$sample,group=c(sample_info$pop_temp))
+DGE=DGEList(expression_data,samples=sample_info$sample,group=sample_info$pop_temp)
 ```
 
 ### 4. filtering lowly expressed genes
@@ -76,11 +76,18 @@ DGE<-calcNormFactors(DGE,method =c("TMM"))
 We do this to make sure there are no outliers with respect to a particular experimental variable:
 ```{r,echo=TRUE}
 tempvals<-sample_info$temp
-plotMDS(DGE,top=500,col=ifelse(tempvals=="low","blue","red"),gene.selection="common")
-
 popvals<-sample_info$population
-plotMDS(DGE,top=500,col=ifelse(popvals=="maine","darkgreen","dodgerblue"),gene.selection="common")
+mds<-plotMDS(DGE,top=500,plot=FALSE,gene.selection="common")
+mds_dataframe <-cbind(sample_info$sample,sample_info$pop_temp,mds$x,mds$y)
+colnames(mds_dataframe) <-c("sample","poptemp","pc1","pc2")
+mds_dataframe <- as_tibble(mds_dataframe) %>% mutate(across(c(pc1, pc2), as.numeric))
 
+mds_plot <- mds_dataframe %>% ggplot(aes(x=pc1,y=pc2,color=poptemp)) +
+            geom_point(size=3) +
+            xlab("Principal coordinate 1") +
+            ylab("Principal coordinate 2") +
+            geom_text_repel(aes(label = sample), size=3)
+print(mds_plot)
 
 ```
 
@@ -125,13 +132,21 @@ We use the robust=TRUE setting to leverage the quality weights such that the ana
 
 One can then get a quick and dirty summary of how many genes are differentially expressed, setting the FDR threshold,where the "fdr" and "BH" methods are synonymous for Benjamini Hochberg adjusted p-values.
 
-11. Get summary table:
+11. Get summary table and make volcano plot:
 ```{r,echo=TRUE}
 summary(decideTests(fit,adjust.method="fdr",p.value = 0.05))
 ```
 One piece of important info is the factor relative to which logfold change is being calculated, i.e. low will be the numerator for logfold change calculations.
 
 Overall, (1589+1728)/13307 or ~ 24.9% of genes are differentially expressed as a function of temperature treatment, without considering the effect of population.
+
+We can also make a quick and dirty volcano plot, where the x-axis is log-fold change, and the y-axis is -log10(Pvalue) using limma's `volcanoplot` function:
+
+```{r}
+volcanoplot(fit,coeff=1)
+```
+
+Remember, the coefficient indexed by 0 is the intercept, which we are less interested in. Thus, 1 would refer to `templow`. The volcano plot suggests there are far more genes that are up-regulated in the low temperature condition (i.e. with log-fold change > 0) than there are genes up-regulated in the high temperature condition.
 
 12. Explore the data by extracting the top 10 DE genes (sorted by p-value):
 ```{r,echo=TRUE}
