@@ -19,6 +19,7 @@ Here we have compiled resources related to bioinformatics and computing. These r
 | &nbsp;&nbsp;:material-arrow-right-bottom:[:material-file-replace-outline:{ .contact-icon } [ Replacing a genome in a whole genome alignment ]][replace-genome] |
 | [:curly_loop:{ .contact-icon } [ Pangenome inference with Cactus-minigraph ]][pangenome] |
 | [:material-dna:{ .contact-icon } [ How to annotate a genome ]][annotate] |
+| [:material-dna:{ .contact-icon } [ How to perform bulk RNA-seq differential expression analysis ]][de] |
 
 **We are developing tutorials for other data science and bioinformatics tasks. Check back soon!**
 
@@ -30,6 +31,7 @@ Here we have compiled resources related to bioinformatics and computing. These r
 [replace-genome]: tutorials/replace-genome-whole-genome-alignment-cactus.md
 [pangenome]: tutorials/pangenome-cactus-minigraph.md
 [annotate]: tutorials/how-to-annotate-a-genome.md
+[de]: tutorials/differential-expression-analysis.md
 
 ---
 
