@@ -13,3 +13,6 @@
 [submodule "docs/workshops/short-trainings"]
     path = docs/workshops/short-trainings
     url = https://github.com/harvardinformatics/short-trainings.git
+[submodule "docs/workshops/snakemake"]
+	path = docs/workshops/snakemake
+	url = https://github.com/harvardinformatics/snakemake-workshop.git
