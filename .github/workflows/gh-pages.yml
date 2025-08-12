@@ -16,6 +16,9 @@ jobs:
           submodules: true
           fetch-depth: 0 # Fetch all history for all branches and tags
 
+      - name: Update submodules to latest main
+        run: git submodule foreach 'git checkout main && git pull origin main'
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -37,9 +40,6 @@ jobs:
 
       - name: Build site
         run: mkdocs build
-
-      # - name: Patch jupyter HTML with metadata # Adds title and description to HTML rendered from jupyter notebooks, defunct in favor of jupyter_convert hook
-      #   run: python scripts/add_jupyter_meta.py
 
       - name: Upload site/
         uses: actions/upload-pages-artifact@v3
