@@ -3,7 +3,7 @@ site_url: https://informatics.fas.harvard.edu/
 copyright: © 2023-2025 | Harvard FAS Informatics | <a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Digital Accessibility</a>
 ## Site info
 
-nav: 
+nav:  
   - About: index.md
   - Events & Workshops: events-workshops/index.md
   - Research & Publications: research/index.md
@@ -66,6 +66,7 @@ theme:
     - content.action.edit
     - content.action.view
     - content.footer.last-update  # Shows the last update in the footer    
+    - announce.dismiss
   language: en
   favicon: img/fasifx/Icon_bw.png 
   logo: img/fasifx/fas-shield-logo.png

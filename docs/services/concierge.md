@@ -1,4 +1,9 @@
-## Data Concierge Service
+---
+title: "Data Concierge Service"
+description: "The Harvard FAS Informatics group's data management consultation service."
+---
+
+# Data Concierge Service
 
 The FAS Informatics Group offers a Data Concierge service to support FAS-affiliated labs, especially those working with biological data, in managing research data more effectively. This service provides hands-on support for the development and implementation of data management processes and workflows, with the goal of enabling research continuity. This is a FREE service that is currently in “open beta” but may become a paid service in the future. Sign up is on a rolling basis and we maintain an active waitlist. 
 

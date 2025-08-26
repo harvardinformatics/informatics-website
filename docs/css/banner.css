@@ -1,4 +1,45 @@
 /*------------------------------------------------------*/
+/* Announcement banner styles */
+
+/* Best way I could find to comment out the announcement banner
+without deleting the content */
+div[data-md-component="announce"] {
+  display: none !important;
+}
+
+aside.md-banner {
+    background-color: #8996A0 !important;
+    color: #ffffff !important;
+    text-align: left;
+    font-size: 1.1em;
+    padding: 0.25rem 0.5rem;
+}
+
+aside.md-banner .inline-button {
+  display: inline-block;
+  padding: 0.2em 0.8em;
+  /* margin-left: 1em; */
+  font-size: 1em;
+  color: #ce4d4b;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.6s ease !important;
+  vertical-align: middle;
+}
+
+aside.md-banner .inline-button:hover,
+aside.md-banner .inline-button:focus {
+  background: #fffafa;
+  color: #ce4d4b;
+  border-color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/*------------------------------------------------------*/
 /* Home banner styles */
 
 .banner-row-container {
