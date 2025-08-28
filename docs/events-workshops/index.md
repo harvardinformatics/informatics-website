@@ -34,9 +34,10 @@ Day 4-6: Python as a data science language
 * Plotting with Seaborn
 
 !!! Note
-    If you are familiar with other coding languages or have some experience with python before, you may choose to sign up for only Days 4-6. A quick self-test would be: Write a function that takes two lists of numbers and returns the list with the highest mean. You can also look at past exercises [here](../workshops/python-intensive/index.md).
+    If you are familiar with other coding languages or have some experience with python before, you may choose to sign up for only Days 4-6. A quick self-test would be: Write a function that takes two lists of numbers and returns the list with the highest mean. You can also look at some of the exercises [here](../workshops/python-intensive/index.md).
 
-[Register here](https://docs.google.com/forms/d/e/1FAIpQLSdB_tENqiofMbhOv2bfbfrY3Ayq8czHKpMEeoO2ousGEMMu3g/viewform?usp=dialog){ .md-button}
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSdB_tENqiofMbhOv2bfbfrY3Ayq8czHKpMEeoO2ousGEMMu3g/viewform?usp=dialog){ .md-button .centered }</br>
+[Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
 
 #### Introduction to Snakemake
 
@@ -46,7 +47,7 @@ Day 4-6: Python as a data science language
 
 *Northwest Building 453*
 
-This 2 part intermediate level workshop will introduce students to [Snakemake](https://snakemake.readthedocs.io/en/stable/), a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Snakemake workflow. In the second session, we will build on the first session and learn how to **write** a Snakemake workflow from scratch. 
+This 2 part intermediate level workshop will introduce students to [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Snakemake workflow. In the second session, we will build on the first session and learn how to **write** a Snakemake workflow from scratch. 
 
 Pre-requisites:
 
@@ -61,7 +62,7 @@ Pre-requisites:
 !!! Note
     If you only want to learn how to run Snakemake workflows, you may sign up for Snakemake Run only. However, if you want to learn how to convert your own scripts into Snakemake workflows, you must sign up for both Snakemake Run and Snakemake Develop. 
 
-[Register here](https://docs.google.com/forms/d/e/1FAIpQLSdkODxG1ZmD-kE6n-CDH_zr-TteVhh58sLTYJ0WJgLKHSj5-A/viewform?usp=dialog){ .md-button}
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSdkODxG1ZmD-kE6n-CDH_zr-TteVhh58sLTYJ0WJgLKHSj5-A/viewform?usp=dialog){ .md-button .centered }
 
 #### Introduction to R
 
@@ -71,7 +72,7 @@ Pre-requisites:
 
 Introduction to R is a 4 day workshop that prepares students to manipulate and plot data in RStudio using the R programming language. This course assumes no coding background and is suitable for beginners. This is an updated version of our previous Introduction to R workshop. [See below](#introduction-to-r-fall-2023) for more details.
 
-[Register here](https://docs.google.com/forms/d/e/1FAIpQLSfIlFhLDHj_6f9XuX2gKtmLnPhQJB-NGWvTGuj9Z7MA6vYyug/viewform?usp=dialog){ .md-button}
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSfIlFhLDHj_6f9XuX2gKtmLnPhQJB-NGWvTGuj9Z7MA6vYyug/viewform?usp=dialog){ .md-button .centered }
 
 #### Introduction to Nextflow
 
@@ -81,7 +82,7 @@ Introduction to R is a 4 day workshop that prepares students to manipulate and p
 
 *Northwest Building 453*
 
-This 2 part intermediate level workshop will introduce students to [Nextflow](https://nextflow.io/), a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Nextflow workflow. In the second session, we will build on the first session and learn how to **write** a Nextflow workflow from scratch.
+This 2 part intermediate level workshop will introduce students to [Nextflow :octicons-link-external-24:](https://nextflow.io/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Nextflow workflow. In the second session, we will build on the first session and learn how to **write** a Nextflow workflow from scratch.
 
 Pre-requisites:
 
@@ -97,7 +98,7 @@ Pre-requisites:
 !!! Note
     If you only want to learn how to run Nextflow workflows, you may sign up for Nextflow Run only. However, if you want to learn how to convert your own scripts into Nextflow workflows, you must sign up for both Nextflow Run and Nextflow Develop. 
 
-[Register here](https://docs.google.com/forms/d/e/1FAIpQLSe1z1HzBtD0CY1kaZ_3Sx8hGrMEvZ_86Ptv-98-Huca8SHzjQ/viewform?usp=dialog){ .md-button}
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSe1z1HzBtD0CY1kaZ_3Sx8hGrMEvZ_86Ptv-98-Huca8SHzjQ/viewform?usp=dialog){ .md-button .centered }
 
 ### :material-monitor-account: Short trainings (virtual)
 
@@ -107,15 +108,15 @@ Pre-requisites:
 
 This training will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
 
-[Zoom Registration](https://harvard.zoom.us/meeting/register/acyihPSQRRqvBZKrhFMTlQ){ .md-button}
+[Zoom Registration](https://harvard.zoom.us/meeting/register/acyihPSQRRqvBZKrhFMTlQ){ .md-button .centered }
 
 #### Basics of git and GitHub
 
 *September 24, 2025 12 PM - 1 PM*
 
-Short training on the basics of git and GitHub for project sharing and backup. Demonstration will be using GitHub Desktop application so no command line familiarity is required. If you want to follow along, please sign up for GitHub and install [GitHub Desktop](https://github.com/apps/desktop). 
+Short training on the basics of git and GitHub for project sharing and backup. Demonstration will be using GitHub Desktop application so no command line familiarity is required. If you want to follow along, please sign up for GitHub and install [GitHub Desktop :octicons-link-external-24:](https://github.com/apps/desktop){:target="_blank"}. 
 
-[Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button}
+[Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button .centered }
 
 #### Introduction to single-cell RNA-seq
 
@@ -125,9 +126,9 @@ Short training on the basics of git and GitHub for project sharing and backup. D
 
 This 2 part training will introduce students to the basics of single-cell RNA-seq analysis. In the first session, we'll go over basic quality control of scRNA data. In the second session, we'll go over some downstream analysis of scRNA data.
 
-[Zoom Registration Part 1](https://harvard.zoom.us/meeting/register/2ZlMBmbTR8eliGg3MVsciw){ .md-button}
+[Zoom Registration Part 1](https://harvard.zoom.us/meeting/register/2ZlMBmbTR8eliGg3MVsciw){ .md-button .centered }
 
-[Zoom Registration Part 2](https://harvard.zoom.us/meeting/register/M51DsxLiQDmDhRwBlu50AA){ .md-button}
+[Zoom Registration Part 2](https://harvard.zoom.us/meeting/register/M51DsxLiQDmDhRwBlu50AA){ .md-button .centered }
 
 
 #### DNA sequencing with long reads
@@ -136,7 +137,7 @@ This 2 part training will introduce students to the basics of single-cell RNA-se
 
 In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies and analysis. We will provide you with the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
 
-[Zoom Registration](https://harvard.zoom.us/meeting/register/bHCSKnsKTgmH4JlUpPRQSQ){ .md-button}
+[Zoom Registration](https://harvard.zoom.us/meeting/register/bHCSKnsKTgmH4JlUpPRQSQ){ .md-button .centered }
 
 #### Introduction to Genome Annotation
 
@@ -144,7 +145,7 @@ In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](ht
 
 This short training will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool.
 
-[Zoom Registration](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){ .md-button}
+[Zoom Registration](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){ .md-button .centered }
 
 
 #### Population Genomics: Getting started with SNPArcher
@@ -153,7 +154,7 @@ This short training will consist of a broad overview of what genome annotation i
 
 This short training will introduce students to SNPArcher, a tool for population genomics analysis. We will cover the basics of how to use SNPArcher to analyze population genomics data, including how to run the tool and interpret the results.
 
-[Zoom Registration](https://harvard.zoom.us/meeting/register/VQ6EVh3tQwiah-dMWNJb-A){ .md-button}
+[Zoom Registration](https://harvard.zoom.us/meeting/register/VQ6EVh3tQwiah-dMWNJb-A){ .md-button .centered }
 
 ## Recurring events
 
@@ -192,6 +193,10 @@ This section contains the most up-to-date content for our workshops! The date we
 This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
 [Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
+
+!!! note "Workshop currently running"
+
+    The Python workshop is currently running, so links to some material may be missing. Don't worry! They'll return as the workshop progresses.
 
 ### :material-food-apple-outline: Healthy Habits for Data Science (Spring 2024)
 
