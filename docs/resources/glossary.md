@@ -23,6 +23,19 @@ Please feel free to suggest additions or edits.
 
 {{ read_csv('data/glossary-tables/computing-programming/computing-general.csv') }}
 
+### File formats
+
+Information on a computer is stored in discrete blocks called **files**. In order to reliably and accurately retrieve information from within files, they are 
+often formatted in a standard way. Below we describe some common file formats you may encounter when performing data analysis. Links to official specifications 
+and Wikipedia descriptions are provided where available.
+
+Some of these file formats are **plain text**, which are both *human* and *machine* readable, meaning that the information in the files can be viewed directly in 
+addition to being parsed by the computer. Others are **binary** and are only *machine* readable. The information in these files can only be retrieved in a 
+meaningful way with the aid of other special software. While the official specifications for binary formats tend to be very technical, links are provided for 
+completeness.
+
+{{ read_csv('data/glossary-tables/computing-programming/file-formats.csv') }}
+
 ## General programming terms
 
 {{ read_csv('data/glossary-tables/computing-programming/programming-general.csv') }} 
