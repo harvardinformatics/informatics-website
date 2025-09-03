@@ -158,15 +158,25 @@ This short training will introduce students to SNPArcher, a tool for population 
 
 ## Recurring events
 
+### Office hours
+
+We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest Building B227.45. If you can't make it in person, you can always contact us or ask your question on [our Slack channel](../contact/index.md)!
+
 ### :pizza: Programming and Pizza :pizza:
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-:material-arrow-right-bottom: **These will return in the Fall of 2025!** :fontawesome-solid-pizza-slice:
+Fall 2025 Programming & Pizza dates:
 
-### Office hours
+:fontawesome-solid-pizza-slice: September 10, Northwest Building room B227.45, 4:00-6:00PM
 
-We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest Building B227.45. If you can't make it in person, you can always contact us or ask your question on [our Slack channel](../contact/index.md)!
+:fontawesome-solid-pizza-slice: October 8, Northwest Building room B227.45, 4:00-6:00PM
+
+:fontawesome-solid-pizza-slice: November 12, Northwest Building room B227.45, 4:00-6:00PM
+
+:fontawesome-solid-pizza-slice: December 10, Northwest Building room B227.45, 4:00-6:00PM
+
+<!-- :material-arrow-right-bottom: **These will return in the Fall of 2025!** :fontawesome-solid-pizza-slice: -->
 
 ## Calendar
 
@@ -188,15 +198,11 @@ This Google calendar will show all our upcoming office hours as well as any work
 
 This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is noted.
 
-### :fontawesome-brands-python: Introduction to Python Intensive (January 2025)
+### :fontawesome-brands-python: Introduction to Python Intensive (September 2025)
 
 This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
 [Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
-
-!!! note "Workshop currently running"
-
-    The Python workshop is currently running, so links to some material may be missing. Don't worry! They'll return as the workshop progresses.
 
 ### :material-food-apple-outline: Healthy Habits for Data Science (Spring 2024)
 
