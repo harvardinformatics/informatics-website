@@ -147,6 +147,10 @@ This table tries to define these terms clearly.
 
 {{ read_csv('data/glossary-tables/computing-programming/git.csv') }}
 
+## Workflow management
+
+{{ read_csv('data/glossary-tables/computing-programming/workflows.csv') }}  
+
 ---
 
 {{ author_row(page) }} 

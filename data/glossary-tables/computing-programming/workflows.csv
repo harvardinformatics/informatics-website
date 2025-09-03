@@ -1,0 +1,14 @@
+Term,Definition
+Workflow,"A set of ordered steps for processing and analyzing data, possibly mixing custom scripts and third-party tools, where the output of one step is the input of the next step(s)"
+Pipeline,Another word for workflow; a series of steps where the output of one is the input for the next
+Workflow management system,"Software that allows one to script workflows and helps organize, execute, and monitor all the steps in a workflow automatically"
+<a href=https://snakemake.readthedocs.io/en/v8.26.0/' target='_blank'>Snakemake  :octicons-link-external-24:</a>,"A workflow management tool based on the Python programming language for creating and running workflows, often used in scientific research or data analysis"
+<a href='https://www.nextflow.io/docs/latest/index.html' target='_blank'>Nextflow  :octicons-link-external-24:</a>,"A workflow management tool based on the Java-based Groovy language, used to create and run data analysis pipelines, especially in bioinformatics, on local computers, clusters, or the cloud"
+Rulegraph,A diagram that shows how steps in a workflow depend on one another
+Directed acyclyc graph (DAG),A diagram that shows how each individual file in a workflow depends on the other files in the workflow
+Rule,An individual step in a workflow
+Job,The computational process spawned from any invocation of a rule
+Task,Similar to Job
+Input file,The file(s) required for a given rule to run; rules may have one or more inputs
+Output file,The file(s) produced by a given rule for a single set of input file(s)
+Log file,A file that stores information related to a given run of a rule that is not the direct output of the rule
