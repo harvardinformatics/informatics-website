@@ -3,9 +3,9 @@
 
 /* Best way I could find to comment out the announcement banner
 without deleting the content */
-div[data-md-component="announce"] {
+/* div[data-md-component="announce"] {
   display: none !important;
-}
+} */
 
 aside.md-banner {
     background-color: #8996A0 !important;
