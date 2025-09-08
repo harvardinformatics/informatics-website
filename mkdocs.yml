@@ -24,6 +24,7 @@ not_in_nav: |
   resources/tags/*.md
   workshops/
   _includes/*
+  services/concierge.md
 
 markdown_extensions:
   - admonition  
