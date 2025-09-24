@@ -229,23 +229,23 @@ This workshop aims to introduce first-time users to the [R programming language 
 
 We piloted a series of short one hour short trainings in the Fall of 2024. These sessions are designed to be quick introductions to topics that we think are useful for researchers. Sessions with content are listed below. See our [previous events page](previous-events.md) to view topics that were live demonstrations with no attached content (look for the short trainings icon: :material-monitor-account:). If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
 
-#### Data transformation in R with Tidyverse
-    
-October 22, 2024, 9:30-10:30AM and October 23, 2024, 12:15-1:15PM (Northwest Building 453)
+#### Basics of git and GitHub with GitHub Desktop
 
-[Traning page :material-arrow-right:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.Rmd){ .md-button }
+September 24, 2025, 12:00-1:00PM (Virtual)
 
-#### Plotting in R with ggplot
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/git-github/git_github_one_hour.pdf){ .md-button }
 
-October 29, 2024, 9:30-10:30AM and October 30, 2024, 12:15-1:15PM (Northwest Building 453)
+#### The Baton Pass: Data onboarding and offboarding
 
-[Training page :material-arrow-right:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.Rmd){ .md-button }
+August 27, 2025, 11:00AM-1:00PM (Virtual)
 
-#### Workflow managers and Nextflow demo
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/onboarding-offboarding/Onboarding_Offboarding_Fall2025.pdf){ .md-button }
 
-November 12, 2024, 9:30-10:30AM and November 13, 2024, 12:15-1:15PM (Northwest Building 453)
+#### Population Genomics: Getting started with SNPArcher
 
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/workflow-managers/Workflow_managers.pdf){ .md-button }
+December 10, 2024, 9:30-10:30AM and December 11, 2024, 12:15-1:15PM (Northwest Building 453)
+
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial-202412.pdf){ .md-button }
 
 #### Introduction to single-cell RNA-seq analysis
 
@@ -253,11 +253,25 @@ November 19, 2024, 9:30-10:30AM and November 20, 2024, 12:15-1:15PM (Northwest B
 
 [Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.Rmd){ .md-button }
 
-#### Population Genomics: Getting started with SNPArcher
+#### Workflow managers and Nextflow demo
 
-December 10, 2024, 9:30-10:30AM and December 11, 2024, 12:15-1:15PM (Northwest Building 453)
+November 12, 2024, 9:30-10:30AM and November 13, 2024, 12:15-1:15PM (Northwest Building 453)
 
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial-202412.pdf){ .md-button }
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/workflow-managers/Workflow_managers.pdf){ .md-button }
+
+#### Plotting in R with ggplot
+
+October 29, 2024, 9:30-10:30AM and October 30, 2024, 12:15-1:15PM (Northwest Building 453)
+
+[Training page :material-arrow-right:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.Rmd){ .md-button }
+
+#### Data transformation in R with Tidyverse
+    
+October 22, 2024, 9:30-10:30AM and October 23, 2024, 12:15-1:15PM (Northwest Building 453)
+
+[Traning page :material-arrow-right:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.Rmd){ .md-button }
+
+
 
 ## :material-archive-check-outline: Event and Workshop Archive
 
