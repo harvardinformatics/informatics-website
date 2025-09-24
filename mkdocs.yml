@@ -89,7 +89,7 @@ theme:
   ## Dark mode
 
 plugins:
-  - search 
+  - search
   - table-reader  
   - macros:      # This plugin allows you to run Python macros to insert content onto pages as the site is built use Jinja2-style; see scripts/macros.py for implemented macros.
       module_name: scripts/macros
