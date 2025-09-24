@@ -7,13 +7,13 @@ description: "A list of upcoming events and workshops and past workshop content 
 
 The FAS Informatics Group creates hosts events such as workshops, both online and in-person. Here is a list of upcoming events, as well as current and past workshop content!
 
-## Fall 2025 Upcoming events & workshops
+## Upcoming Events & Workshops
 
 ### :material-tools: Workshops
 
 A workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation!
 
-#### Introduction to Python Intensive
+<!-- #### Introduction to Python Intensive
 
 *Tuesdays and Thursdays 9:30 AM - 12:30 PM from September 2 to September 18th*
 
@@ -37,7 +37,7 @@ Day 4-6: Python as a data science language
     If you are familiar with other coding languages or have some experience with python before, you may choose to sign up for only Days 4-6. A quick self-test would be: Write a function that takes two lists of numbers and returns the list with the highest mean. You can also look at some of the exercises [here](../workshops/python-intensive/index.md).
 
 [Register here](https://docs.google.com/forms/d/e/1FAIpQLSdB_tENqiofMbhOv2bfbfrY3Ayq8czHKpMEeoO2ousGEMMu3g/viewform?usp=dialog){ .md-button .centered }</br>
-[Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
+[Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered } -->
 
 #### Introduction to Snakemake
 
@@ -62,7 +62,8 @@ Pre-requisites:
 !!! Note
     If you only want to learn how to run Snakemake workflows, you may sign up for Snakemake Run only. However, if you want to learn how to convert your own scripts into Snakemake workflows, you must sign up for both Snakemake Run and Snakemake Develop. 
 
-[Register here](https://docs.google.com/forms/d/e/1FAIpQLSdkODxG1ZmD-kE6n-CDH_zr-TteVhh58sLTYJ0WJgLKHSj5-A/viewform?usp=dialog){ .md-button .centered }
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSdkODxG1ZmD-kE6n-CDH_zr-TteVhh58sLTYJ0WJgLKHSj5-A/viewform?usp=dialog){ .md-button .centered }</br>
+[Snakemake Workshop Landing Page :material-arrow-right:](../workshops/snakemake/index.md){ .md-button .md-button--primary .centered }
 
 #### Introduction to R
 
@@ -100,15 +101,15 @@ Pre-requisites:
 
 [Register here](https://docs.google.com/forms/d/e/1FAIpQLSe1z1HzBtD0CY1kaZ_3Sx8hGrMEvZ_86Ptv-98-Huca8SHzjQ/viewform?usp=dialog){ .md-button .centered }
 
-### :material-monitor-account: Short trainings (virtual)
+### :material-monitor-account: Short Trainings (virtual)
 
-#### The Baton Pass: Data Onboarding and Offboarding
+<!-- #### The Baton Pass: Data Onboarding and Offboarding
 
 *August 27, 2025 11 AM - 1 PM*
 
 This training will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
 
-[Zoom Registration](https://harvard.zoom.us/meeting/register/acyihPSQRRqvBZKrhFMTlQ){ .md-button .centered }
+[Zoom Registration](https://harvard.zoom.us/meeting/register/acyihPSQRRqvBZKrhFMTlQ){ .md-button .centered } -->
 
 #### Basics of git and GitHub
 
@@ -168,7 +169,7 @@ We host programming and pizza events the second Wednesday of every month. Join u
 
 Fall 2025 Programming & Pizza dates:
 
-:fontawesome-solid-pizza-slice: September 10, Northwest Building room B227.45, 4:00-6:00PM
+<span style="color:gray;">:fontawesome-solid-pizza-slice: September 10, Northwest Building room B227.45, 4:00-6:00PM</span>
 
 :fontawesome-solid-pizza-slice: October 8, Northwest Building room B227.45, 4:00-6:00PM
 
@@ -194,13 +195,13 @@ This Google calendar will show all our upcoming office hours as well as any work
     ></iframe>
 </center>
 
-## Latest workshop content
+## Latest Workshop Content
 
 This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is noted.
 
 ### :fontawesome-brands-python: Introduction to Python Intensive (September 2025)
 
-This is a four-day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
+This is a six day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
 [Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
 
@@ -224,7 +225,7 @@ This workshop aims to introduce first-time users to the [R programming language 
 
 ---
 
-### :material-monitor-account: Short trainings
+### :material-monitor-account: Short Trainings
 
 We piloted a series of short one hour short trainings in the Fall of 2024. These sessions are designed to be quick introductions to topics that we think are useful for researchers. Sessions with content are listed below. See our [previous events page](previous-events.md) to view topics that were live demonstrations with no attached content (look for the short trainings icon: :material-monitor-account:). If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
 
@@ -258,7 +259,7 @@ December 10, 2024, 9:30-10:30AM and December 11, 2024, 12:15-1:15PM (Northwest B
 
 [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial-202412.pdf){ .md-button }
 
-## :material-archive-check-outline: Event and workshop archive
+## :material-archive-check-outline: Event and Workshop Archive
 
 To view a list of previous events and workshops, click the button below.
 

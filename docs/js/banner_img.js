@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
         {path: 'img/banners/IMG_6113.jpg', position: 'center 75%'},
         {path: 'img/banners/IMG_6203.jpg', position: 'center 50%'},
         {path: 'img/banners/IMG_7402-HDR.jpg', position: 'center 50%'},
-        {path: 'img/banners/IMG_7404.jpg', position: 'center 50%'}
+        {path: 'img/banners/IMG_7404.jpg', position: 'center 50%'},
+        // {path: 'img/banners/IMG_3742.jpg', position: 'center 60%'},
+        {path: 'img/banners/IMG_0982.jpg', position: 'center 50%'}
     ];
 
     var index = Math.floor(Math.random() * images.length);
