@@ -22,7 +22,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9.x' # same as macOS
+          python-version: '3.11' # same as macOS
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
