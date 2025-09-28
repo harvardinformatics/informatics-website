@@ -101,6 +101,11 @@ aside.md-banner .inline-button:focus {
 
 .banner-title {
   color: #eeeeee;
+  text-shadow:
+    -1px -1px 0 #333,
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333;
 }
 
 .home-tagline {
