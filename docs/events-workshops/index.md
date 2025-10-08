@@ -61,13 +61,13 @@ This training will focus on the best practices for onboarding and offboarding da
 
 [Zoom Registration](https://harvard.zoom.us/meeting/register/acyihPSQRRqvBZKrhFMTlQ){ .md-button .centered } -->
 
-#### Basics of git and GitHub
+<!-- #### Basics of git and GitHub
 
 *September 24, 2025 12 PM - 1 PM*
 
 Short training on the basics of git and GitHub for project sharing and backup. Demonstration will be using GitHub Desktop application so no command line familiarity is required. If you want to follow along, please sign up for GitHub and install [GitHub Desktop :octicons-link-external-24:](https://github.com/apps/desktop){:target="_blank"}. 
 
-[Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button .centered }
+[Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button .centered } -->
 
 #### Introduction to single-cell RNA-seq
 
