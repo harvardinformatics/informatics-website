@@ -23,7 +23,7 @@ Introduction to R is a 4 day workshop that prepares students to manipulate and p
 
 [Register here](https://docs.google.com/forms/d/e/1FAIpQLSfIlFhLDHj_6f9XuX2gKtmLnPhQJB-NGWvTGuj9Z7MA6vYyug/viewform?usp=dialog){ .md-button .centered }</br>
 
-<!-- [Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/index.md){ .md-button .md-button--primary .centered } -->
+[Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/index.md){ .md-button .md-button--primary .centered }
 
 #### Introduction to Nextflow
 
@@ -121,7 +121,7 @@ Fall 2025 Programming & Pizza dates:
 
 <span style="color:gray;">:fontawesome-solid-pizza-slice: September 10, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-:fontawesome-solid-pizza-slice: October 8, Northwest Building room B227.45, 4:00-6:00PM
+<span style="color:gray;">:fontawesome-solid-pizza-slice: October 8, Northwest Building room B227.45, 4:00-6:00PM</span>
 
 :fontawesome-solid-pizza-slice: November 12, Northwest Building room B227.45, 4:00-6:00PM
 
@@ -176,12 +176,6 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 ### :material-language-r: Introduction to R (Fall 2023)
 
 This workshop aims to introduce first-time users to the [R programming language :octicons-link-external-24:](https://www.r-project.org/){:target="_blank"} and the [RStudio :octicons-link-external-24:](https://posit.co/download/rstudio-desktop/){:target="_blank"} development environment. We will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse :octicons-link-external-24:](https://www.tidyverse.org/){:target="_blank"}, a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot :octicons-link-external-24:](https://ggplot2.tidyverse.org/){:target="_blank"}. You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
-
-!!! warning "R workshop currently being updated"
-
-    We are currently updating our R workshop for the fall 2025 session, so some material here may be out of date or incomplete. Check back soon for the most up to date material.
-
-[Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/index.md){ .md-button .md-button--primary .centered }
 
 ---
 
