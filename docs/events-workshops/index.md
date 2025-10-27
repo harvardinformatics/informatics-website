@@ -13,18 +13,6 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 A workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation!
 
-#### Introduction to R
-
-*Tuesdays and Thursdays 9:30-12:30 from October 14, 2025 to October 23, 2025*
-
-*Northwest Building 453*
-
-Introduction to R is a 4 day workshop that prepares students to manipulate and plot data in RStudio using the R programming language. This course assumes no coding background and is suitable for beginners. This is an updated version of our previous Introduction to R workshop. [See below](#introduction-to-r-fall-2023) for more details.
-
-[Register here](https://docs.google.com/forms/d/e/1FAIpQLSfIlFhLDHj_6f9XuX2gKtmLnPhQJB-NGWvTGuj9Z7MA6vYyug/viewform?usp=dialog){ .md-button .centered }</br>
-
-[Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/index.md){ .md-button .md-button--primary .centered }
-
 #### Introduction to Nextflow
 
 *Nextflow Run: November 13, 2025 9:30 AM - 12:30 PM*
@@ -149,6 +137,20 @@ This Google calendar will show all our upcoming office hours as well as any work
 
 This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is noted.
 
+#### Introduction to R
+
+*Tuesdays and Thursdays 9:30-12:30 from October 14, 2025 to October 23, 2025*
+
+*Northwest Building 453*
+
+### :material-language-r: Introduction to R (Fall 2025)
+
+This workshop aims to introduce first-time users to the [R programming language :octicons-link-external-24:](https://www.r-project.org/){:target="_blank"} and the [RStudio :octicons-link-external-24:](https://posit.co/download/rstudio-desktop/){:target="_blank"} development environment. This 4 session workshop will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse :octicons-link-external-24:](https://www.tidyverse.org/){:target="_blank"}, a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot :octicons-link-external-24:](https://ggplot2.tidyverse.org/){:target="_blank"}. You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
+
+This course assumes no coding background and is suitable for beginners.
+
+[Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/index.md){ .md-button .md-button--primary .centered }
+
 ### <span class="twemoji">{% include "assets/.icons/custom/snakemake-logo.svg" %}</span> Introduction to Snakemake (September 2025)
 
 This two part intermediate level workshop introduces students to [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we cover understanding the basics of **running** a Snakemake workflow. In the second session, we build on the first session and learn how to **write** a Snakemake workflow from scratch.  
@@ -172,10 +174,6 @@ This workshop aims to teach students how to be more effective at working on thei
 This workshop aims to introduce students to some basic bioinformatics file formats, tools, and general best practices. The first two days of the workshop will be dedicated to introductions of bioinformatics file formats and the command line tools that we use to view, manipulate, and analyze them. After that, we will begin to shift from using individual commands to writing shell scripts and constructing bioinformatics workflows.
 
 [Biotips Landing Page :material-arrow-right:](../workshops/biotips/index.md){ .md-button .md-button--primary .centered }
-
-### :material-language-r: Introduction to R (Fall 2023)
-
-This workshop aims to introduce first-time users to the [R programming language :octicons-link-external-24:](https://www.r-project.org/){:target="_blank"} and the [RStudio :octicons-link-external-24:](https://posit.co/download/rstudio-desktop/){:target="_blank"} development environment. We will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse :octicons-link-external-24:](https://www.tidyverse.org/){:target="_blank"}, a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot :octicons-link-external-24:](https://ggplot2.tidyverse.org/){:target="_blank"}. You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
 
 ---
 

@@ -1,4 +1,5 @@
 Event type,Name,Date,Time,Location
+<span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Introduction to R**,"October 14-23, Tuesdays and Thursdays",9:30AM-12:30PM,Northwest Building 453
 <span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Introduction to Snakemake**,"September 30 and October 7",9:30AM-12:30PM,Northwest Building 453
 <span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Basics of git and GitHub using GitHub Desktop**,September 23,12:00PM-1:00PM,Virtual
 <span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Introduction to Python Intensive**,"September 2-18, Tuesdays and Thursdays",9:30AM-12:30PM,Northwest Building 453
