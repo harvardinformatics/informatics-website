@@ -147,10 +147,6 @@ If we want to replace the *simHuman_chr6* genome in our HAL with a new version o
 
 You can also run `halStats --genomes example.hal` to print out the labels without the Newick tree formatting.
 
-!!! note "You will not be able to change the label for the new genome"
-
-    As of the writing of this tutorial, it isn't possible to change the label of the genome in the HAL file as you replace it, *e.g.* from *simHuman_chr6* to *simHuman_chr6_v2*. The labels will be the same, so it may be a good idea to have your output directory and prefix named to note the change.
-
 ### Reference sample
 
 In order to run the last step of the workflow that converts the HAL format to a readable MAF format (See [pipeline outputs](#pipeline-outputs) for more info), you will need to select one assembly as a reference assembly. The reference assembly's coordinate system will be used for projection to MAF format. You should indicate the reference assembly in the Snakemake config file (outlined below). For instance, if I wanted my reference sample in the above tree to be the genome labeled **simHuman_chr6** in the tree, I would put the string `simHuman_chr6` in the `maf_reference:` line of the Snakemake config file.
@@ -206,7 +202,8 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 | `cactus_path`            | Path to the Cactus Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. If a version string is provided (e.g. 2.9.5), then that version will be downloaded and used. This will be used whether `use_gpu` is True or False. |
 | `cactus_gpu_path`        | Path to the Cactus GPU Singularity image. If blank or 'download', the image of the latest Cactus version will be downloaded and used. If a version string is provided (e.g. 2.9.5), then that version will be downloaded and used. This will only be used if `use_gpu` is True. |
 | `input_hal`              | Path to the previously generated HAL file to which you want to add a new genome. |
-| `replace`                | The label of the genome to replace in the HAL file. The new HAL file will have the same label but contain the updated sequence from `new_genome_fasta`. |
+| `replace`                | The label of the genome to replace in the HAL file. |
+| `new_genome_name`        | The label you'd like the new genome to have in the HAL file. |
 | `new_genome_fasta`       | The path to the FASTA file containing the new genome to add to the alignment. |
 | `output_dir`             | Directory where the all output will be written. |
 | `overwrite_original_hal` | Whether to overwrite the original HAL file (`True`) or to make a copy and add the new genome to it (`False`). Overwriting will save storage space, but risks corruption of the original file. |
