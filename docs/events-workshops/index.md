@@ -201,9 +201,18 @@ December 10, 2024, 9:30-10:30AM and December 11, 2024, 12:15-1:15PM (Northwest B
 
 #### Introduction to single-cell RNA-seq analysis
 
-November 19, 2024, 9:30-10:30AM and November 20, 2024, 12:15-1:15PM (Northwest Building 453)
+##### Part 1: October 29, 2025, 12:00-1:00PM (Zoom)
+Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
 
 [Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.Rmd){ .md-button }
+[Download html file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.html){ .md-button }
+
+
+##### Part 2: November 5, 2025, 12:00-1:00PM (Zoom)
+Part 2 covers cluster marker gene discover, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. Note that to run the downloadable markdown below will require generating count matrices for the samples used in the training using *cellranger count*. Until we create an option for delivering the count matrices, please contact the Informatics Group for more information.
+
+[Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.Rmd){ .md-button }
+[Download html file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.html){ .md-button }
 
 #### Workflow managers and Nextflow demo
 
