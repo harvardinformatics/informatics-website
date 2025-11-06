@@ -39,6 +39,8 @@ Pre-requisites:
 
 [Register here](https://docs.google.com/forms/d/e/1FAIpQLSe1z1HzBtD0CY1kaZ_3Sx8hGrMEvZ_86Ptv-98-Huca8SHzjQ/viewform?usp=dialog){ .md-button .centered }
 
+[Training page :material-arrow-right:](../workshops/nextflow-workshop/index.md){ .md-button .centered }
+
 ### :material-monitor-account: Short Trainings (virtual)
 
 <!-- #### The Baton Pass: Data Onboarding and Offboarding
