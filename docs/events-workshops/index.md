@@ -197,6 +197,12 @@ Part 2 covers cluster marker gene discover, cell type annotation, and for multi-
 [Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.Rmd){ .md-button }
 [Download html file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.html){ .md-button }
 
+#### DNA sequencing with long reads
+
+In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies and analysis. We will provide you with the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
+
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/long-read/Long_Read_Workshop.pdf){ .md-button }
+
 #### Workflow managers and Nextflow demo
 
 November 12, 2024, 9:30-10:30AM and November 13, 2024, 12:15-1:15PM (Northwest Building 453)
