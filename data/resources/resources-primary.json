@@ -320,6 +320,106 @@
             "description": ""
         },
 
+        "SequencEng: An interactive learning resource for next-generation sequencing (NGS) techniques": {
+            "id": "33",
+            "name": "SequencEng",
+            "link": "https://education.knoweng.org/sequenceng/",
+            "tags": ["genomics", "RNA seq", "genome assembly", "bioinformatics"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Data Science Bootstrap: book": {
+            "id": "34",
+            "name": "Data Science Bootstrap",
+            "link": "https://ericmjl.github.io/data-science-bootstrap-notes/",
+            "tags": ["data science", "unix", "git"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "The RBioc(unductor book)": {
+            "id": "35",
+            "name": "The RBioc(unductor book)",
+            "link": "https://seandavi.github.io/RBiocBook/",
+            "tags": ["R", "bioinformatics", "statistics", "machine learning", "data science"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Bioinformatics: The Missing Semester": {
+            "id": "36",
+            "name": "Bioinformatics: The Missing Semester",
+            "link": "https://themissingsemester.substack.com/",
+            "tags": ["bioinformatics","genomics","RNA seq"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Causal Inference: What If by Miguel A. Hernan, James M. Robins": {
+            "id": "37",
+            "name": "Causal Inference: What If",
+            "link": "https://content.sph.harvard.edu/wwwhsph/sites/1268/2024/01/hernanrobins_WhatIf_2jan24.pdf",
+            "tags": ["statistics"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Another Book on Data Science: Learn R and Python in Parallel": {
+            "id": "38",
+            "name": "Another Book on Data Science",
+            "link": "https://www.anotherbookondatascience.com/index.html",
+            "tags": ["R", "python", "data science"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "Harvard Image Analysis Collaboratory": {
+            "id": "39",
+            "name": "Harvard Image Analysis Collaboratory",
+            "link": "https://iac.hms.harvard.edu/",
+            "tags": ["harvard", "image analysis"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "215 BIO: Introduction to Bioinformatics and Computational Biology": {
+            "id": "40",
+            "name": "Introduction to Bioinformatics and Computational Biology",
+            "link": "https://liulab-dfci.github.io/bioinfo-combio/",
+            "tags": ["harvard", "bioinformatics", "genomics", "RNA seq", "genome assembly", "variant calling", "epigenetics", "single cell"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "RNA-seq Bioinformatics course": {
+            "id": "41",
+            "name": "RNA-seq Bioinformatics course",
+            "link": "https://rnabio.org/course/",
+            "tags": ["RNA seq", "bioinformatics", "single cell"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
+        "IQSS Workshop Materials": {
+            "id": "42",
+            "name": "IQSS Workshop Materials",
+            "link": "https://www.iq.harvard.edu/data-science-services/workshop-materials/",
+            "tags": ["R", "data science", "python", "stata"],
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": ""
+        },
+
         "Template": {
             "id": "999",
             "name": "template",
@@ -329,6 +429,7 @@
             "status" : "inactive",
             "description": ""
         }
+
     },
 
     "tags": {
@@ -506,6 +607,30 @@
             "date-added": "11-26-2024",
             "status" : "active",
             "description": "Links to resources related to the conda package manager"
+        },
+
+        "stata": {
+            "id": "23",
+            "tag": "stata",
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": "Links to resources related to STATA"
+        },
+
+        "epigenetics": {
+            "id": "24",
+            "tag": "epigenetics",
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": "Links to resources related to epigenetics"
+        },
+
+        "image analysis": {
+            "id": "25",
+            "tag": "image analysis",
+            "date-added": "11-20-2025",
+            "status" : "active",
+            "description": "Links to resources related to image analysis"
         },
 
         "template": {

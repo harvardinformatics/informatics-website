@@ -13,33 +13,7 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 A workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation!
 
-#### Introduction to Nextflow
-
-*Nextflow Run: November 13, 2025 9:30 AM - 12:30 PM*
-
-*Nextflow Develop: November 20, 2025 9:30 AM - 12:30 PM*
-
-*Northwest Building 453*
-
-This 2 part intermediate level workshop will introduce students to [Nextflow :octicons-link-external-24:](https://nextflow.io/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we will cover understanding the basics of **running** a Nextflow workflow. In the second session, we will build on the first session and learn how to **write** a Nextflow workflow from scratch.
-
-Pre-requisites:
-
-* A FASRC Cannon account (if you want to run things on the cluster)
-* A GitHub account (we will be using github codespaces)
-* Does not have to have written any scripts themselves
-* Can navigate the Terminal using command line. 
-* Can read basic BASH scripts
-* Has previously run SBATCH jobs on the cluster
-* Has previously run command line software before
-* Has used conda or singularity in the past to manage software
-
-!!! Note
-    If you only want to learn how to run Nextflow workflows, you may sign up for Nextflow Run only. However, if you want to learn how to convert your own scripts into Nextflow workflows, you must sign up for both Nextflow Run and Nextflow Develop. 
-
-[Register here](https://docs.google.com/forms/d/e/1FAIpQLSe1z1HzBtD0CY1kaZ_3Sx8hGrMEvZ_86Ptv-98-Huca8SHzjQ/viewform?usp=dialog){ .md-button .centered }
-
-[Training page :material-arrow-right:](../workshops/nextflow-workshop/index.md){ .md-button .centered }
+*All in person workshops for the Fall 2025 semester have concluded. Please check the [Latest Workshop Content](#latest-workshop-content) section below for workshop materials.*
 
 ### :material-monitor-account: Short Trainings (virtual)
 
@@ -59,7 +33,7 @@ Short training on the basics of git and GitHub for project sharing and backup. D
 
 [Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button .centered } -->
 
-#### Introduction to single-cell RNA-seq
+<!-- #### Introduction to single-cell RNA-seq
 
 *Part 1: October 29, 2025 12 PM - 1 PM*
 
@@ -78,7 +52,7 @@ This 2 part training will introduce students to the basics of single-cell RNA-se
 
 In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies and analysis. We will provide you with the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
 
-[Zoom Registration](https://harvard.zoom.us/meeting/register/bHCSKnsKTgmH4JlUpPRQSQ){ .md-button .centered }
+[Zoom Registration](https://harvard.zoom.us/meeting/register/bHCSKnsKTgmH4JlUpPRQSQ){ .md-button .centered } -->
 
 #### Introduction to Genome Annotation
 
@@ -153,13 +127,20 @@ This course assumes no coding background and is suitable for beginners.
 
 [Intro to R Landing Page :material-arrow-right:](../workshops/intro-r/index.md){ .md-button .md-button--primary .centered }
 
-### <span class="twemoji">{% include "assets/.icons/custom/snakemake-logo.svg" %}</span> Introduction to Snakemake (September 2025)
+### <span class="twemoji">{% include "assets/.icons/custom/snakemake-logo.svg" %}</span> Introduction to Snakemake (Fall 2025)
 
 This two part intermediate level workshop introduces students to [Snakemake :octicons-link-external-24:](https://snakemake.readthedocs.io/en/stable/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we cover understanding the basics of **running** a Snakemake workflow. In the second session, we build on the first session and learn how to **write** a Snakemake workflow from scratch.  
 
 [Snakemake Workshop Landing Page :material-arrow-right:](../workshops/snakemake/index.md){ .md-button .md-button--primary .centered }
 
-### :fontawesome-brands-python: Introduction to Python Intensive (September 2025)
+
+### <span class="twemoji">{% include "assets/.icons/nextflow-icon.svg" %}</span> Introduction to Nextflow (Fall 2025)
+
+This 2 part intermediate level workshop introduces students to [Nextflow :octicons-link-external-24:](https://nextflow.io/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we cover understanding the basics of **running** a Nextflow workflow. In the second session, we build on the first session and learn how to **write** a Nextflow workflow from scratch.
+
+[Nextflow Workshop Landing Page :material-arrow-right:](../workshops/nextflow-workshop/index.md){ .md-button .centered }
+
+### :fontawesome-brands-python: Introduction to Python Intensive (Fall 2025)
 
 This is a six day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
@@ -215,6 +196,12 @@ Part 2 covers cluster marker gene discover, cell type annotation, and for multi-
 
 [Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.Rmd){ .md-button }
 [Download html file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.html){ .md-button }
+
+#### DNA sequencing with long reads
+
+In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies and analysis. We will provide you with the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
+
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/long-read/Long_Read_Workshop.pdf){ .md-button }
 
 #### Workflow managers and Nextflow demo
 
