@@ -11,7 +11,7 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ### :material-tools: Workshops
 
-A workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation!
+All workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation!
 
 *All in person workshops for the Fall 2025 semester have concluded. Please check the [Latest Workshop Content](#latest-workshop-content) section below for workshop materials.*
 
@@ -87,7 +87,7 @@ Fall 2025 Programming & Pizza dates:
 
 <span style="color:gray;">:fontawesome-solid-pizza-slice: October 8, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-:fontawesome-solid-pizza-slice: November 12, Northwest Building room B227.45, 4:00-6:00PM
+<span style="color:gray;">:fontawesome-solid-pizza-slice: November 12, Northwest Building room B227.45, 4:00-6:00PM</span>
 
 :fontawesome-solid-pizza-slice: December 10, Northwest Building room B227.45, 4:00-6:00PM
 
@@ -113,12 +113,6 @@ This Google calendar will show all our upcoming office hours as well as any work
 
 This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is noted.
 
-#### Introduction to R
-
-*Tuesdays and Thursdays 9:30-12:30 from October 14, 2025 to October 23, 2025*
-
-*Northwest Building 453*
-
 ### :material-language-r: Introduction to R (Fall 2025)
 
 This workshop aims to introduce first-time users to the [R programming language :octicons-link-external-24:](https://www.r-project.org/){:target="_blank"} and the [RStudio :octicons-link-external-24:](https://posit.co/download/rstudio-desktop/){:target="_blank"} development environment. This 4 session workshop will provide a basic introduction to coding in R and then shift to data manipulation using the [tidyverse :octicons-link-external-24:](https://www.tidyverse.org/){:target="_blank"}, a set of R libraries designed to handle data tables in a consistent and easy way. Then, we'll learn how to generate some basic plots to explore our data using [ggplot :octicons-link-external-24:](https://ggplot2.tidyverse.org/){:target="_blank"}. You do not need any prior programming experience to take this workshop. But also note that this workshop is not a comprehensive programming class nor a comprehensive statistics class. The main goal of this workshop is to get you familiar with reading your data into R and performing basic operations and generating figures.
@@ -133,12 +127,11 @@ This two part intermediate level workshop introduces students to [Snakemake :oct
 
 [Snakemake Workshop Landing Page :material-arrow-right:](../workshops/snakemake/index.md){ .md-button .md-button--primary .centered }
 
-
-### <span class="twemoji">{% include "assets/.icons/nextflow-icon.svg" %}</span> Introduction to Nextflow (Fall 2025)
+### <span class="twemoji">{% include "assets/.icons/custom/nextflow-icon.svg" %}</span> Introduction to Nextflow (Fall 2025)
 
 This 2 part intermediate level workshop introduces students to [Nextflow :octicons-link-external-24:](https://nextflow.io/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we cover understanding the basics of **running** a Nextflow workflow. In the second session, we build on the first session and learn how to **write** a Nextflow workflow from scratch.
 
-[Nextflow Workshop Landing Page :material-arrow-right:](../workshops/nextflow-workshop/index.md){ .md-button .centered }
+[Nextflow Workshop Landing Page :material-arrow-right:](../workshops/nextflow-workshop/index.md){ .md-button .md-button--primary .centered }
 
 ### :fontawesome-brands-python: Introduction to Python Intensive (Fall 2025)
 
@@ -164,6 +157,30 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 
 We piloted a series of short one hour short trainings in the Fall of 2024. These sessions are designed to be quick introductions to topics that we think are useful for researchers. Sessions with content are listed below. See our [previous events page](previous-events.md) to view topics that were live demonstrations with no attached content (look for the short trainings icon: :material-monitor-account:). If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
 
+#### DNA sequencing with long reads
+
+November 19, 2025, 11:00AM-1:00PM (Virtual)
+
+In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we hosted a short training session on DNA sequencing with long reads. This training covered the basics of long-read sequencing technologies and analysis. We provide the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
+
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/long-read/Long_Read_Workshop.pdf){ .md-button }
+
+#### Introduction to single-cell RNA-seq analysis
+
+##### Part 1: October 29, 2025, 12:00-1:00PM (Virtual)
+
+Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
+
+[Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.Rmd){ .md-button }
+[View rendered notebook :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.html){ .md-button }
+
+##### Part 2: November 5, 2025, 12:00-1:00PM (Virtual)
+
+Part 2 covers cluster marker gene discover, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. Note that to run the downloadable markdown below will require generating count matrices for the samples used in the training using *cellranger count*. Until we create an option for delivering the count matrices, please contact the Informatics Group for more information.
+
+[Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.Rmd){ .md-button }
+[View rendered notebook](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.html){ .md-button }
+
 #### Basics of git and GitHub with GitHub Desktop
 
 September 24, 2025, 12:00-1:00PM (Virtual)
@@ -182,27 +199,6 @@ December 10, 2024, 9:30-10:30AM and December 11, 2024, 12:15-1:15PM (Northwest B
 
 [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial-202412.pdf){ .md-button }
 
-#### Introduction to single-cell RNA-seq analysis
-
-##### Part 1: October 29, 2025, 12:00-1:00PM (Zoom)
-Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
-
-[Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.Rmd){ .md-button }
-[Download html file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.html){ .md-button }
-
-
-##### Part 2: November 5, 2025, 12:00-1:00PM (Zoom)
-Part 2 covers cluster marker gene discover, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. Note that to run the downloadable markdown below will require generating count matrices for the samples used in the training using *cellranger count*. Until we create an option for delivering the count matrices, please contact the Informatics Group for more information.
-
-[Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.Rmd){ .md-button }
-[Download html file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.html){ .md-button }
-
-#### DNA sequencing with long reads
-
-In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies and analysis. We will provide you with the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
-
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/long-read/Long_Read_Workshop.pdf){ .md-button }
-
 #### Workflow managers and Nextflow demo
 
 November 12, 2024, 9:30-10:30AM and November 13, 2024, 12:15-1:15PM (Northwest Building 453)
@@ -220,7 +216,6 @@ October 29, 2024, 9:30-10:30AM and October 30, 2024, 12:15-1:15PM (Northwest Bui
 October 22, 2024, 9:30-10:30AM and October 23, 2024, 12:15-1:15PM (Northwest Building 453)
 
 [Traning page :material-arrow-right:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.Rmd){ .md-button }
-
 
 
 ## :material-archive-check-outline: Event and Workshop Archive
