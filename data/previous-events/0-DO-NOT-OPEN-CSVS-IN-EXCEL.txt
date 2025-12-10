@@ -1,0 +1,2 @@
+plz don't open these csvs in excel. it messes up the dates and makes the formatting inconsistent :(
+    -gwct

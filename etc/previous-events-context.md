@@ -1,3 +1,58 @@
+#### The Baton Pass: Data Onboarding and Offboarding
+
+*August 27, 2025 11 AM - 1 PM*
+
+This training will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
+
+[Zoom Registration](https://harvard.zoom.us/meeting/register/acyihPSQRRqvBZKrhFMTlQ){ .md-button .centered }
+
+#### Basics of git and GitHub
+
+*September 24, 2025 12 PM - 1 PM*
+
+Short training on the basics of git and GitHub for project sharing and backup. Demonstration will be using GitHub Desktop application so no command line familiarity is required. If you want to follow along, please sign up for GitHub and install [GitHub Desktop :octicons-link-external-24:](https://github.com/apps/desktop){:target="_blank"}. 
+
+[Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button .centered }
+
+#### Introduction to single-cell RNA-seq
+
+*Part 1: October 29, 2025 12 PM - 1 PM*
+
+*Part 2: November 5, 2025 12 PM - 1 PM*
+
+This 2 part training will introduce students to the basics of single-cell RNA-seq analysis. In the first session, we'll go over basic quality control of scRNA data. In the second session, we'll go over some downstream analysis of scRNA data.
+
+[Zoom Registration Part 1](https://harvard.zoom.us/meeting/register/2ZlMBmbTR8eliGg3MVsciw){ .md-button .centered }
+
+[Zoom Registration Part 2](https://harvard.zoom.us/meeting/register/M51DsxLiQDmDhRwBlu50AA){ .md-button .centered }
+
+
+#### DNA sequencing with long reads
+
+*November 19, 2025 11 AM - 1 PM*
+
+In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies and analysis. We will provide you with the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
+
+[Zoom Registration](https://harvard.zoom.us/meeting/register/bHCSKnsKTgmH4JlUpPRQSQ){ .md-button .centered }
+
+#### Introduction to Genome Annotation
+
+*December 3, 2025 12 PM - 1 PM*
+
+This short training will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool.
+
+[Zoom Registration](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){ .md-button .centered }
+
+
+#### Population Genomics: Getting started with SNPArcher
+
+*December 10, 2025 12 PM - 1 PM*
+
+This short training will introduce students to SNPArcher, a tool for population genomics analysis. We will cover the basics of how to use SNPArcher to analyze population genomics data, including how to run the tool and interpret the results.
+
+[Zoom Registration](https://harvard.zoom.us/meeting/register/VQ6EVh3tQwiah-dMWNJb-A){ .md-button .centered }
+
+
 This Spring we are offering a series of workshop on the theme of research data management.
 
 [Register here](https://docs.google.com/forms/d/e/1FAIpQLSe5dXZuB6Y_UaS-mazh1XS12hhdcRTspHoKGjXstvEXwr79bA/viewform){ .md-button }
