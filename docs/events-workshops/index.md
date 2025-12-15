@@ -77,7 +77,7 @@ This two part intermediate level workshop introduces students to [Snakemake :oct
 
 This 2 part intermediate level workshop introduces students to [Nextflow :octicons-link-external-24:](https://nextflow.io/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we cover understanding the basics of **running** a Nextflow workflow. In the second session, we build on the first session and learn how to **write** a Nextflow workflow from scratch.
 
-[Nextflow Workshop Landing Page :material-arrow-right:](../workshops/nextflow-workshop/index.md){ .md-button .md-button--primary .centered }
+[Nextflow Workshop Landing Page :material-arrow-right:](../workshops/nextflow/index.md){ .md-button .md-button--primary .centered }
 
 ### :fontawesome-brands-python: Introduction to Python Intensive (Fall 2025)
 
