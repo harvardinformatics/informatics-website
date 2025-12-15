@@ -9,67 +9,13 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming Events & Workshops
 
-### :material-tools: Workshops
+<!-- ### :material-tools: Workshops -->
 
-All workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation!
+<!-- All workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation! -->
 
-*All in person workshops for the Fall 2025 semester have concluded. Please check the [Latest Workshop Content](#latest-workshop-content) section below for workshop materials.*
+*All workshops for the Fall 2025 semester have concluded. Please check back soon for our Spring 2026 schedule, and check the [Latest Workshop Content](#latest-workshop-content) section below for current workshop materials.*
 
-### :material-monitor-account: Short Trainings (virtual)
-
-<!-- #### The Baton Pass: Data Onboarding and Offboarding
-
-*August 27, 2025 11 AM - 1 PM*
-
-This training will focus on the best practices for onboarding and offboarding data in research projects. We will cover how to document data sources, ensure reproducibility, and maintain data integrity throughout the project lifecycle. We will go over a template for creating an onboarding document and an offboarding checklist that is specific to those of us who deal with biological data.
-
-[Zoom Registration](https://harvard.zoom.us/meeting/register/acyihPSQRRqvBZKrhFMTlQ){ .md-button .centered } -->
-
-<!-- #### Basics of git and GitHub
-
-*September 24, 2025 12 PM - 1 PM*
-
-Short training on the basics of git and GitHub for project sharing and backup. Demonstration will be using GitHub Desktop application so no command line familiarity is required. If you want to follow along, please sign up for GitHub and install [GitHub Desktop :octicons-link-external-24:](https://github.com/apps/desktop){:target="_blank"}. 
-
-[Zoom Registration](https://harvard.zoom.us/meeting/register/eIYDDzRvTBSS1HGvz9RHBg){ .md-button .centered } -->
-
-<!-- #### Introduction to single-cell RNA-seq
-
-*Part 1: October 29, 2025 12 PM - 1 PM*
-
-*Part 2: November 5, 2025 12 PM - 1 PM*
-
-This 2 part training will introduce students to the basics of single-cell RNA-seq analysis. In the first session, we'll go over basic quality control of scRNA data. In the second session, we'll go over some downstream analysis of scRNA data.
-
-[Zoom Registration Part 1](https://harvard.zoom.us/meeting/register/2ZlMBmbTR8eliGg3MVsciw){ .md-button .centered }
-
-[Zoom Registration Part 2](https://harvard.zoom.us/meeting/register/M51DsxLiQDmDhRwBlu50AA){ .md-button .centered }
-
-
-#### DNA sequencing with long reads
-
-*November 19, 2025 11 AM - 1 PM*
-
-In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we'll be hosting a short training session on DNA sequencing with long reads. This training will cover the basics of long-read sequencing technologies and analysis. We will provide you with the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
-
-[Zoom Registration](https://harvard.zoom.us/meeting/register/bHCSKnsKTgmH4JlUpPRQSQ){ .md-button .centered } -->
-
-#### Introduction to Genome Annotation
-
-*December 3, 2025 12 PM - 1 PM*
-
-This short training will consist of a broad overview of what genome annotation is, an explanation of the various approaches and how they differ, and discussion of what metrics one should consider using to evaluate genome annotation quality. Students will learn how to pick the right tool for annotation and how to evaluate the product of that tool.
-
-[Zoom Registration](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){ .md-button .centered }
-
-
-#### Population Genomics: Getting started with SNPArcher
-
-*December 10, 2025 12 PM - 1 PM*
-
-This short training will introduce students to SNPArcher, a tool for population genomics analysis. We will cover the basics of how to use SNPArcher to analyze population genomics data, including how to run the tool and interpret the results.
-
-[Zoom Registration](https://harvard.zoom.us/meeting/register/VQ6EVh3tQwiah-dMWNJb-A){ .md-button .centered }
+<!-- ### :material-monitor-account: Short Trainings (virtual) -->
 
 ## Recurring events
 
@@ -131,7 +77,7 @@ This two part intermediate level workshop introduces students to [Snakemake :oct
 
 This 2 part intermediate level workshop introduces students to [Nextflow :octicons-link-external-24:](https://nextflow.io/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we cover understanding the basics of **running** a Nextflow workflow. In the second session, we build on the first session and learn how to **write** a Nextflow workflow from scratch.
 
-[Nextflow Workshop Landing Page :material-arrow-right:](../workshops/nextflow-workshop/index.md){ .md-button .md-button--primary .centered }
+[Nextflow Workshop Landing Page :material-arrow-right:](../workshops/nextflow/index.md){ .md-button .md-button--primary .centered }
 
 ### :fontawesome-brands-python: Introduction to Python Intensive (Fall 2025)
 
@@ -156,6 +102,18 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 ### :material-monitor-account: Short Trainings
 
 We piloted a series of short one hour short trainings in the Fall of 2024. These sessions are designed to be quick introductions to topics that we think are useful for researchers. Sessions with content are listed below. See our [previous events page](previous-events.md) to view topics that were live demonstrations with no attached content (look for the short trainings icon: :material-monitor-account:). If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
+
+#### Population Genomics: Getting started with SNPArcher
+
+December 10, 2025, 11:00AM-12:00PM (Virtual)
+
+[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial.pdf){ .md-button }
+
+#### Introduction to Genome Annotation
+
+December 3, 2024, 11:00-12:00PM (Virtual)
+
+[Tutorial :material-arrow-top-right:](../resources/tutorials/how-to-annotate-a-genome.md){target="_blank" .md-button }
 
 #### DNA sequencing with long reads
 
@@ -192,12 +150,6 @@ September 24, 2025, 12:00-1:00PM (Virtual)
 August 27, 2025, 11:00AM-1:00PM (Virtual)
 
 [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/onboarding-offboarding/Onboarding_Offboarding_Fall2025.pdf){ .md-button }
-
-#### Population Genomics: Getting started with SNPArcher
-
-December 10, 2024, 9:30-10:30AM and December 11, 2024, 12:15-1:15PM (Northwest Building 453)
-
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial-202412.pdf){ .md-button }
 
 #### Workflow managers and Nextflow demo
 

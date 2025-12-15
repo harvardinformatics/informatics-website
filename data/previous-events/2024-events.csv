@@ -1,12 +1,24 @@
 Event type,Name,Date,Time,Location
-<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Scaling SLURM on the HPC cluster and benchmarking**,December 3,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**SNPArcher Tutorial - A Snakemake workflow for variant calling in non-model species**,December 11,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**SNPArcher Tutorial - A Snakemake workflow for variant calling in non-model species**,December 10,12:15-1:15PM,Northwest Building 453
 <span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Scaling SLURM on the HPC cluster and benchmarking**,December 4,12:15-1:15PM,Northwest Building 453
-<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Introduction to Genome Annotation**,November 5,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Scaling SLURM on the HPC cluster and benchmarking**,December 3,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Introduction to Single-cell RNA Analysis**,November 20,12:15-1:15PM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Introduction to Single-cell RNA Analysis**,November 19,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Workflow Management and Nextflow Demonstration**,November 13,12:15-1:15PM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Workflow Management and Nextflow Demonstration**,November 12,9:30-10:30AM,Northwest Building 453
 <span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Introduction to Genome Annotation**,November 6,12:15-1:15PM,Northwest Building 453
-<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Submitting your first SLURM script or job array**,October 15,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Introduction to Genome Annotation**,November 5,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Data Visulization with R and ggplot**,October 30,12:15-1:15PM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Data Visulization with R and ggplot**,October 29,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Data Wrangling with R and tidyverse**,October 23,12:15-1:15PM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Data Wrangling with R and tidyverse**,October 22,9:30-10:30AM,Northwest Building 453
 <span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Submitting your first SLURM script or job array**,October 16,12:15-1:15PM,Northwest Building 453
-<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Git and GitHub Introduction**,October 1,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Submitting your first SLURM script or job array**,October 15,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,"**Installing and Managing Software (conda, containers)**",October 9,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,"**Installing and Managing Software (conda, containers)**",October 8,12:15-1:15PM,Northwest Building 453
 <span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Git and GitHub Introduction**,October 2,12:15-1:15PM,Northwest Building 453
-<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Project organization & Data management**,September 24,9:30-10:30AM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Git and GitHub Introduction**,October 1,9:30-10:30AM,Northwest Building 453
 <span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Project organization & Data management**,September 25,12:15-1:15PM,Northwest Building 453
+<span aria-label="Short training" title="Short training">:material-monitor-account:</span>,**Project organization & Data management**,September 24,9:30-10:30AM,Northwest Building 453
 <span aria-label="Workshop" title="Workshop">:material-tools:</span>,**Introduction to Python Intensive**,"August 28, September 5, 12, and 19",10:00AM-1:00PM day 1; 2:00-5:00PM days 2-4,In person
