@@ -35,6 +35,18 @@ Here we have compiled resources related to bioinformatics and computing. These r
 
 ---
 
+## Snakemake configuration for Cannon partition selection
+
+<div style="text-align:center;">
+    <img src="../../img/software-logos/cannon-snakemake-cfg.png" alt="Cannon Snakemake configuration" />
+</div>
+
+See our page describing how to use the configuration file for automatic partition selection when running Snakemake on the Cannon cluster:
+
+[Snakemake Cannon config :material-arrow-right:](snakemake-cannon-config.md){ .md-button .md-button--primary .centered }
+
+---
+
 ## [Computing glossary](glossary.md)
 
 Like any specific domain, the way we talk about computing and programming is almost its own language. Words in this context may have different meaning than in other contexts. 
@@ -46,7 +58,7 @@ don't understand a term that they heard or read.
 
 Let us know if there is something we should add!
 
-[View the Computing Glossary:material-arrow-right:](glossary.md){ .md-button .md-button--primary .centered }
+[View the Computing Glossary :material-arrow-right:](glossary.md){ .md-button .md-button--primary .centered }
 
 <!--
 
