@@ -459,8 +459,8 @@ A suite of tools called [HAL tools :octicons-link-external-24:](https://github.c
 
 <style>
     .md-typset h1 {
-  margin-bottom: 0.5em !important;
-}
+        margin-bottom: 0.5em !important;
+    }
     /* ----- */
     /* Section headers */
     h2 {

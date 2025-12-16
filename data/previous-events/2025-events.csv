@@ -1,10 +1,13 @@
 Event type,Name,Date,Time,Location
+"<span aria-label=""Programming and Pizza"" title=""Programming and Pizza"">:fontawesome-solid-pizza-slice:</span>",**Programming and Pizza**,December 10,4:00PM-6:00PM,Northwest Building B227.45
 "<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**Population Genomics: Getting started with SNPArcher**,December 10,11:00AM-12:00PM,Virtual
 "<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**Introduction to Genome Annotation**,December 3,12:00PM-1:00PM,Virtual
 "<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**DNA sequencing with long reads**,November 19,11:00AM-1:00PM,Virtual
 "<span aria-label=""Workshop"" title=""Workshop"">:material-tools:</span>",**Introduction to Nextflow**,November 13 and November 20,9:30AM-12:30PM,Northwest Building 453
+"<span aria-label=""Programming and Pizza"" title=""Programming and Pizza"">:fontawesome-solid-pizza-slice:</span>",**Programming and Pizza**,November 12,4:00PM-6:00PM,Northwest Building B227.45
 "<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**Introduction to single-cell RNA-seq**,October 29 and November 5,12:00PM-1:00PM,Virtual
 "<span aria-label=""Workshop"" title=""Workshop"">:material-tools:</span>",**Introduction to R**,"October 14-23, Tuesdays and Thursdays",9:30AM-12:30PM,Northwest Building 453
+"<span aria-label=""Programming and Pizza"" title=""Programming and Pizza"">:fontawesome-solid-pizza-slice:</span>",**Programming and Pizza**,October 8,4:00PM-6:00PM,Northwest Building B227.45
 "<span aria-label=""Workshop"" title=""Workshop"">:material-tools:</span>",**Introduction to Snakemake**,September 30 and October 7,9:30AM-12:30PM,Northwest Building 453
 "<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**Basics of git and GitHub using GitHub Desktop**,September 23,12:00PM-1:00PM,Virtual
 "<span aria-label=""Workshop"" title=""Workshop"">:material-tools:</span>",**Introduction to Python Intensive**,"September 2-18, Tuesdays and Thursdays",9:30AM-12:30PM,Northwest Building 453
