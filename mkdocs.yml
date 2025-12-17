@@ -20,6 +20,7 @@ not_in_nav: |
   events/*
   events-workshops/previous-events.md
   resources/tutorials/*.md
+  resources/snakemake-cannon-config.md
   resources/glossary.md
   resources/tags/*.md
   workshops/
