@@ -4,7 +4,7 @@
             "Tim Sackton": {
                 "id": "1",
                 "name": "Tim Sackton",
-                "bibtex-names": ["Sackton, T. B.", "Sackton, Timothy B.", "Sackton, Timothy B", "Sackton, Tim"],
+                "bibtex-names": ["Sackton, T. B.", "Sackton, Timothy B.", "Sackton, Timothy B", "Sackton, Tim", "Sackton, Timothy"],
                 "title" : "Director of Bioinformatics",
                 "office" : "B227.10",
                 "img": "img/people/timsackton.jpg",
@@ -42,7 +42,7 @@
             "Danielle Khost": {
                 "id": "11",
                 "name": "Danielle Khost",
-                "bibtex-names": ["Khost, D. E.", "Khost, Danielle"],
+                "bibtex-names": ["Khost, D. E.", "Khost, Danielle", "Khost, D."],
                 "title" : "Senior Bioinformatics Scientist",
                 "office" : "B227.65",
                 "img": "img/people/daniellekhost.jpg",
@@ -260,7 +260,7 @@
             "Ekaterina Osipova": {
                 "id": "31",
                 "name": "Katya Osipova",
-                "bibtex-names": ["Osipova, K.", "Osipova, Ekaterina"],
+                "bibtex-names": ["Osipova, K.", "Osipova, Ekaterina", "Osipova, E."],
                 "title" : "Postdoctoral Fellow",
                 "office" : "B227.65",
                 "img": "img/people/katyaosipova.jpg",

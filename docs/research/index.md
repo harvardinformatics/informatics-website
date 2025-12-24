@@ -24,7 +24,7 @@ We are a broad group with diverse expertise in the computational analysis of seq
         <td><span class="twemoji research-icon" aria-label="Methods development" title="Methods development">{% include "assets/.icons/vector-polyline-plus.svg" %}</span> = Methods development</td>
     </tr>
     <tr>
-        <td><span class="twemoji" aria-label="Group alumni" title="Group alumni">{% include "assets/.icons/graduation-cap.svg" %}</span> = Group alumni</td>
+        <td><span class="twemoji" aria-label="Group alum" title="Group alum">{% include "assets/.icons/graduation-cap.svg" %}</span> = Group alum</td>
     </tr>
 </table>
 
