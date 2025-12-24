@@ -130,14 +130,14 @@ In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](ht
 Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
 
 [Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.Rmd){ .md-button }
-[View rendered notebook :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.md){ .md-button }
+[View rendered notebook :material-arrow-right:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.md){ .md-button }
 
 ##### Part 2: November 5, 2025, 12:00-1:00PM (Virtual)
 
 Part 2 covers cluster marker gene discover, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. Note that to run the downloadable markdown below will require generating count matrices for the samples used in the training using *cellranger count*. Until we create an option for delivering the count matrices, please contact the Informatics Group for more information.
 
 [Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.Rmd){ .md-button }
-[View rendered notebook](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.md){ .md-button }
+[View rendered notebook :material-arrow-right:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.md){ .md-button }
 
 #### Basics of git and GitHub with GitHub Desktop
 
