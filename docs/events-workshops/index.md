@@ -9,13 +9,45 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming Events & Workshops
 
+Here is our first round of events for the Spring 2026 semester! 
+
+*For the most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
+
 <!-- ### :material-tools: Workshops -->
 
-<!-- All workshops below will be held in person in Northwest Building 453 and will meet on Tuesdays and/or Thursdays. Registration for all workshops is free. **Please do not register unless you can commit to attending** as spots are limited by the size of the space reservation! -->
+### :material-monitor-account: Short Trainings (virtual)
 
-*All workshops for the Fall 2025 semester have concluded. Please check back soon for our Spring 2026 schedule, and check the [Latest Workshop Content](#latest-workshop-content) section below for current workshop materials.*
+#### Command line 101: What's the deal with directories?
 
-<!-- ### :material-monitor-account: Short Trainings (virtual) -->
+**Thursday February 5 2026, 11AM - 12PM**
+
+Is this your first time sitting down typing commands into the command line or logging into the Cannon cluster to do your analysis? In this one hour seminar, we'll show you how files and directories are organized on the cluster, give tips on how to manage your own project directories, and more. You'll learn how to navigate a file system using the command line (aka the terminal), understand file permissions, and write files using the nano file editor. This seminar is suitable for absolute beginners to command line and cluster usage.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/S0eEFw5pQdaxbUazGtYLCA){:target="_blank" .md-button .md-button--primary .centered }
+
+#### Command line 101: Tips & tricks for aspiring power users
+
+**Thursday February 12 2026, 11AM - 12PM**
+
+Now that you know how to move around the cluster, let's explore how to customize your command line experience. You'll learn about using dotfiles to automatically run things upon login, save and search your command  history, use terminal multiplexers like screen, and more. If you plan to spend a good amount of time running programs on the command line, this seminar will save you effort and make your experience smoother!
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){:target="_blank" .md-button .md-button--primary .centered }
+
+#### Command line 101: Integrating your local and cluster compute environments
+
+**Thursday February 19 2026, 11AM - 12PM**
+
+In this seminar, we will cover topics and allow you to seamlessly move between your local environment to the cluster computer environment by using tools like VSCode and various file transfer applications. Geared towards both beginner and intermediate users, students will learn how to use apps to help them program and process data like a pro.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered }
+
+#### Command line 101: Git/GiHub on the cluster and on your computer
+
+**Thursday February 26 2026, 11AM - 12PM**
+
+This is a hands-on training teaching how to use command line git to version control your code and how to use GitHub to backup your scripts. To participate in the hands-on portion of the workshop, please have a github account. Cannon cluster account is optional. Users are expected to know how to create files and directories using the command line.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }
 
 ## Recurring events
 
