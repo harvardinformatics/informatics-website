@@ -77,12 +77,11 @@ description: "A short list of frequently asked questions related to the Harvard 
 
     For all questions, you can use the [contact form](../contact/index.md). For possibly quicker answers, you can try our public slack channel (FAS Bioinformatics Public). For hands-on help, come to our office hours in Northwest Labs B227 (see [Events & Workshops](../events-workshops/index.md#office-hours) for times).
 
-??? question "How can I run a Snakemake workflow on the Cannon cluster?"
+??? question "How can I run a Snakemake or Nextflow workflow on the Cannon cluster?"
 
-    ##### Snakemake on the Cannon cluster
+    ##### Snakemake and Nextflow on the Cannon cluster
 
-    We have developed a [Snakemake plugin for the Cannon cluster :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html){:target="_blank"}, based on the [generic SLURM plugin :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html){:target="_blank"}. See [the documentation :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html){:target="_blank"} for information on how to install and use it, and feel free to report [issues or questions on the github repo :octicons-link-external-24:](https://github.com/harvardinformatics/snakemake-executor-plugin-cannon){:target="_blank"}.
-
+    We maintain config files for the Cannon cluster for both Snakemake and Nextflow that aid in automatic partition selection. See our [Software](../software/index.md) page for more info.
 
 ## Bauer Core Sequencing
 
