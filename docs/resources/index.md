@@ -9,17 +9,37 @@ Here we have compiled resources related to bioinformatics and computing. These r
 
 ## Tutorials
 
-|     |
-| --- |
-| [:material-application-brackets-outline:{ .contact-icon } [ Installing command line software with conda/mamba ]][conda] |
-| [:material-dna:{ .contact-icon } [ Downloading sequencing data from the Bauer Core ]][bauer] |
-| [:material-format-align-top:{ .contact-icon } [ Whole genome alignment with Cactus ]][wga] |
-| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-filter-variant-plus:{ .contact-icon } [ Adding a genome to a whole genome alignment ]][add-genome] |
-| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-vector-polyline-plus:{ .contact-icon } [ Adding an outgroup to a whole genome alignment ]][add-outgroup] |
-| &nbsp;&nbsp;:material-arrow-right-bottom:[:material-file-replace-outline:{ .contact-icon } [ Replacing a genome in a whole genome alignment ]][replace-genome] |
-| [:curly_loop:{ .contact-icon } [ Pangenome inference with Cactus-minigraph ]][pangenome] |
-| [:material-dna:{ .contact-icon } [ How to annotate a genome ]][annotate] |
-| [:material-dna:{ .contact-icon } [ How to perform bulk RNA-seq differential expression analysis ]][de] |
+<div class="grid cards" markdown>
+
+- :material-application-brackets-outline: **[Installing command line software with conda/mamba][conda]**
+
+- :material-dna: **[Downloading sequencing data from the Bauer Core][bauer]**
+
+- :material-dna: **[How to annotate a genome][annotate]**
+
+- :material-dna: **[How to perform bulk RNA-seq differential expression analysis][de]**
+
+- :curly_loop: **[Pangenome inference with Cactus-minigraph][pangenome]**
+
+- <span class="empty-card"></span>
+
+- :material-format-align-top: **[Whole genome alignment with Cactus][wga]**
+
+    ---
+    
+    **Related tasks:**
+    
+    :material-filter-variant-plus: [Adding a genome][add-genome]
+
+    :material-vector-polyline-plus: [Adding an outgroup][add-outgroup]
+
+    :material-file-replace-outline: [Replacing a genome][replace-genome]
+
+- <span class="empty-card"></span>
+
+- <span class="empty-card"></span>
+
+</div>
 
 **We are developing tutorials for other data science and bioinformatics tasks. Check back soon!**
 
@@ -104,54 +124,7 @@ We have compiled a list of external resources and tagged them with the categorie
     }
 
     /* ----- */
-    /* Style the table that displays the tutorials */
-    .md-typeset th, .md-typeset td {
-    white-space: normal;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    }
-    /* Ensure text wraps in table cells */
-    
-    table thead { display: none; }
-    .md-typeset table, 
-    .md-typeset th, 
-    .md-typeset td {
-        border: none !important;
-        font-size: 1.1em !important;
-    }
-    /* Remove borders from table, th, and td */
-
-    .md-typeset th,
-    .md-typeset td {
-        padding-top: 0.7em !important;
-        padding-bottom: 0.7em !important;
-    }
-
-    .md-typeset__table tr:nth-child(even):hover,
-    .md-typeset__table tbody tr:nth-child(even):hover {
-        background-color: #f6f8fa !important;
-    }
-    .md-typeset__table tr:nth-child(odd):hover,
-    .md-typeset__table tbody tr:nth-child(odd):hover {
-        background-color: #ffffff !important;
-    }
-    /* Disable hover effect on table rows */    
-
-    .md-typeset tr:nth-child(3) td {
-        padding-bottom: 0.1em !important;
-    }
-    /* Style ONLY the 3rd row of the first table on the page */
-    
-    .md-typeset tr:nth-child(4) td,
-    .md-typeset tr:nth-child(5) td,
-    .md-typeset tr:nth-child(6) td {
-        font-size: 0.92em !important;
-        padding-top: 0.1em !important;
-        padding-bottom: 0.1em !important;
-        background-color: #ffffff !important;        
-    }
-    /* Style ONLY the 4th, 5th, and 6th rows of the first table on the page */
-
+    /* Style the tutorial grid cards */
     .md-typeset tr:nth-child(n+7):nth-child(odd) td {
         background-color: #f6f8fa !important;
     }
@@ -159,4 +132,38 @@ We have compiled a list of external resources and tagged them with the categorie
         background-color: #fff !important;
     }
     /* Style all rows after the 6th row */    
+
+    .grid.cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid.cards > :is(ul, ol) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Completely hide empty placeholder cards */
+    .grid.cards > :is(ul, ol) > li:has(.empty-card) {
+        visibility: hidden !important;
+        border: none !important;
+        background: none !important;
+        box-shadow: none !important;
+        pointer-events: none !important;
+    }
+
+    /* Responsive: 2 columns on tablets */
+    @media screen and (max-width: 960px) {
+        .grid.cards,
+        .grid.cards > :is(ul, ol) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Responsive: 1 column on mobile */
+    @media screen and (max-width: 600px) {
+        .grid.cards,
+        .grid.cards > :is(ul, ol) {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
