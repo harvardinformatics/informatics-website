@@ -41,7 +41,7 @@ In this seminar, we will cover topics and allow you to seamlessly move between y
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered }
 
-#### Command line 101: Git/GiHub on the cluster and on your computer
+#### Command line 101: Git/GitHub on the cluster and on your computer
 
 **Thursday February 26 2026, 11AM - 12PM**
 
