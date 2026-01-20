@@ -65,17 +65,11 @@ If the help menu displays, you already have Singularity installed. If not, you w
 mamba install conda-forge::singularity
 ```
 
-!!! tip "Cannon cluster Snakemake plugin"
+!!! tip "Cannon cluster Snakemake config"
 
-    If you are on the Harvard Cannon cluster, instead of the generic snakemake-executor-plugin-slurm, you can use our specific plugin for the Cannon cluster: [snakemake-executor-plugin-cannon :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html){:target="_blank"}. This facilitates *automatic partition selection* based on requested resources. Install this in your environment with:
+    If you are on the Harvard Cannon cluster, you can use our configuration file to facilitate automatic partition selection! Just leave the `partition:` entries blank in your run's config file. See [here](../snakemake-cannon-config.md) for more usage information.
 
-    ```bash
-    mamba install bioconda::snakemake-executor-plugin-cannon
-    ```
-
-    Then, when running the workflow, specify the cannon executor with `-e cannon` instead of `-e slurm`.
-
-    If you are not on the Harvard Cannon cluster, stick with the generic SLURM plugin. You will just need to directly specify the partitions for each rule in the config file ([see below](#specifying-resources-for-each-rule)).
+    If you are not on the Harvard Cannon cluster, you can still directly specify the partitions for each rule in the config file ([see below](#specifying-resources-for-each-rule)), or you may take it upon yourself to [make a partition configuration :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html#automatic-partition-selection){:target="_blank"} file for your own cluster.
 
 ### Downloading the cactus-snakemake pipeline
 
@@ -273,7 +267,7 @@ rule_resources:
     * **Allocate the proper partitions based on `use_gpu`.** If you want to use the GPU version of cactus (*i.e.* you have set `use_gpu: True` in the config file), the partition for the rule **blast** must be GPU enabled. If not, the pipeline will fail to run.
     * The `blast: gpus:` option will be ignored if `use_gpu: False` is set.
     * **mem is in MB** and **time is in minutes**.
-    * **If using the [snakemake-executor-plugin-cannon :octicons-link-external-24:](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cannon.html){:target="_blank"} specifically for the Harvard Cannon cluster, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**
+    * **If using the [Snakemake partition config file specifically for the Harvard Cannon cluster :material-arrow-top-right:](../snakemake-cannon-config.md){:target="_blank"}, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**
 
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.
 
@@ -299,7 +293,7 @@ snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_u
     | ------------------------------------------------- | ----------- |
     | `snakemake`                                       | The call to the snakemake workflow program to execute the workflow. |
     | `-j <# of jobs to submit simultaneously>`         | The maximum number of jobs that will be submitted to your SLURM cluster at one time. |
-    | `-e slurm`                                        | Specify to use the SLURM executor plugin, or use `-e cannon` if using the Cannon specific plugin.  See: [Getting started](#getting-started) |
+    | `-e slurm`                                        | Specify to use the SLURM executor plugin. |
     | `-s </path/to/cactus_update.smk>`                 | The path to the workflow file. |
     | `--configfile <path/to/your/snakmake-config.yml>` | The path to your config file. See: [Preparing the Snakemake config file](#preparing-the-snakemake-config-file). |
     | `--dryrun`                                        | Do not execute anything, just display what would be done. |
@@ -307,6 +301,10 @@ snakemake -j <# of jobs to submit simultaneously> -e slurm -s </path/to/cactus_u
 !!! info "This command won't actually submit the pipeline jobs!"
 
     However even during a `--dryrun` some pre-processing steps will be run, including creation of the output directory if it doesn't exist, downloading the Cactus Singularity image if `cactus_path: download` is set in the config file, and running `cactus-update-prepare`. These should all be relatively fast and not resource intensive tasks.
+
+!!! tip "Use the Cannon config file for automatic partition selection"
+
+    Recall, if you are on the Harvard Cannon cluster, you can specify the [partition config :material-arrow-top-right:](../snakemake-cannon-config.md){:target="_blank"} file with `--slurm-partition-config` option and partitions will be selected automatically!
 
 If this completes successfully, you should see a bunch of blue, yellow, and green text on the screen, ending with something like this (the number of jobs and Reasons: may differ for your project):
 

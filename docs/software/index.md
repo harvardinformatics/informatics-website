@@ -85,13 +85,15 @@ The FAS Informatics group develops methods and software for various genomics tas
 ##
 <div class="row software-cont">
     <div class="col-6-24 software-logo-cont">
-        <a href="https://github.com/harvardinformatics/snakemake-executor-plugin-cannon" target="_blank" alt="Snakemake cannon plugin logo. The FAS Informatics logo on the left, which is 3 vertical rectangular polygons of different height, some sides colored red and other left white. The Snakmake logo is on the right,  which is a stylized snake that is curled into an S shape.">
-            <img class="software-logo" src="../img/software-logos/cannon-snakemake.png">
+        <a href="https://github.com/harvardinformatics/snakemake-executor-plugin-cannon" target="_blank" alt="Snakemake cannon config logo. The FAS Informatics logo on the left, which is 3 vertical rectangular polygons of different height, some sides colored red and other left white. The Snakmake logo is on the right,  which is a stylized snake that is curled into an S shape.">
+            <img class="software-logo" src="../img/software-logos/cannon-snakemake-cfg.png">
         </a>
     </div>
 
     <div class="col-18-24 software-desc">
-        We modified the general <a href="https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html" target="_blank">Snakemake executor plugin for SLURM clusters <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> for the Cannon cluster at Harvard. The <a href="https://github.com/harvardinformatics/snakemake-executor-plugin-cannon" target="_blank">Snakemake executor plugin for Cannon<span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> works exactly the same as the original, but performs automatic partition selection for Snakemake workflows on the Cannon cluster based on other user-provided resources.
+        We maintain a configuration file for the Cannon cluster for <a href="https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html#automatic-partition-selection" target="_blank">Snakemake's automatic partition selection<span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a>. See the <a href="../resources/snakemake-cannon-config">config setup page</a> for more information.
+
+        <!-- We modified the general <a href="https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html" target="_blank">Snakemake executor plugin for SLURM clusters <span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> for the Cannon cluster at Harvard. The <a href="https://github.com/harvardinformatics/snakemake-executor-plugin-cannon" target="_blank">Snakemake executor plugin for Cannon<span class="twemoji">{% include "/assets/.icons/link-external-24.svg" %}</span></a> works exactly the same as the original, but performs automatic partition selection for Snakemake workflows on the Cannon cluster based on other user-provided resources. -->
     </div>
 </div>
 
