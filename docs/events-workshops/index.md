@@ -31,7 +31,7 @@ Is this your first time sitting down typing commands into the command line or lo
 
 Now that you know how to move around the cluster, let's explore how to customize your command line experience. You'll learn about using dotfiles to automatically run things upon login, save and search your command  history, use terminal multiplexers like screen, and more. If you plan to spend a good amount of time running programs on the command line, this seminar will save you effort and make your experience smoother!
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ZFpSxkP_Qtqu9UlPzRRYDA){:target="_blank" .md-button .md-button--primary .centered }
 
 #### Command line 101: Integrating your local and cluster compute environments
 
