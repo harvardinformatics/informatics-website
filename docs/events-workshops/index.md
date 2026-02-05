@@ -135,6 +135,18 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 
 We piloted a series of short one hour short trainings in the Fall of 2024. These sessions are designed to be quick introductions to topics that we think are useful for researchers. Sessions with content are listed below. See our [previous events page](previous-events.md) to view topics that were live demonstrations with no attached content (look for the short trainings icon: :material-monitor-account:). If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
 
+#### Command Line 101 Series
+
+Introductions to working on computers through text interfaces, starting with file system basics and moving to topics such as remote computing, customizing your shell environment and git from the command line.
+
+##### :octicons-command-palette-24: Part 1: What's the deal with directories?
+
+February 5, 2026, 11:00AM-12:00PM (Virtual)
+
+Is this your first time sitting down typing commands into the command line or logging into the Cannon cluster to do an analysis? In this one hour seminar, we'll show you how files and directories are organized on common operating systems, including the Cannon cluster. You'll learn how to navigate a file system using the command line (aka the terminal), understand file permissions, and login to a remote server. This seminar is suitable for absolute beginners to command line and cluster usage.
+
+[Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/filesystems.pptx){ .md-button }
+
 #### Population Genomics: Getting started with SNPArcher
 
 December 10, 2025, 11:00AM-12:00PM (Virtual)
@@ -234,5 +246,10 @@ To view a list of previous events and workshops, click the button below.
 
     h4 {
         text-decoration: underline;
+    }
+
+    h5 {
+        font-size: 0.9em !important;
+        color: #000000 !important;
     }
 </style>
