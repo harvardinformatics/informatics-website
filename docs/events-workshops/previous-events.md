@@ -19,6 +19,10 @@ These are topics of previous events with no attached contents and the dates of o
     </tr>
 </table>
 
+## 2026
+ 
+{{ read_csv('data/previous-events/2026-events.csv') }}
+
 ## 2025
  
 {{ read_csv('data/previous-events/2025-events.csv') }}

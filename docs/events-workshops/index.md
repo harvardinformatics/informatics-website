@@ -17,7 +17,7 @@ Here is our first round of events for the Spring 2026 semester!
 
 ### :material-monitor-account: Short Trainings (virtual)
 
-#### Command line 101: What's the deal with directories?
+<!-- #### Command line 101: What's the deal with directories?
 
 **Thursday February 5 2026, 11AM - 12PM**
 
@@ -31,7 +31,7 @@ Is this your first time sitting down typing commands into the command line or lo
 
 Now that you know how to move around the cluster, let's explore how to customize your command line experience. You'll learn about using dotfiles to automatically run things upon login, save and search your command  history, use terminal multiplexers like screen, and more. If you plan to spend a good amount of time running programs on the command line, this seminar will save you effort and make your experience smoother!
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ZFpSxkP_Qtqu9UlPzRRYDA){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ZFpSxkP_Qtqu9UlPzRRYDA){:target="_blank" .md-button .md-button--primary .centered } -->
 
 #### Command line 101: Integrating your local and cluster compute environments
 
@@ -59,17 +59,17 @@ We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest B
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-<!-- Fall 2025 Programming & Pizza dates:
+Spring 2026 Programming & Pizza dates:
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: September 10, Northwest Building room B227.45, 4:00-6:00PM</span>
+<span style="color:gray;">:fontawesome-solid-pizza-slice: Februray 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: October 8, Northwest Building room B227.45, 4:00-6:00PM</span>
+:fontawesome-solid-pizza-slice: March 11, Northwest Building room B227.45, 4:00-6:00PM
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: November 12, Northwest Building room B227.45, 4:00-6:00PM</span>
+:fontawesome-solid-pizza-slice: April 8, Northwest Building room B227.45, 4:00-6:00PM
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: December 10, Northwest Building room B227.45, 4:00-6:00PM</span> -->
+:fontawesome-solid-pizza-slice: May 13, Northwest Building room B227.45, 4:00-6:00PM
 
-:material-arrow-right-bottom: **These will return in the Spring of 2026!** :fontawesome-solid-pizza-slice:
+<!-- :material-arrow-right-bottom: **These will return in the Spring of 2026!** :fontawesome-solid-pizza-slice: -->
 
 ## Calendar
 
@@ -139,13 +139,21 @@ We piloted a series of short one hour short trainings in the Fall of 2024. These
 
 Introductions to working on computers through text interfaces, starting with file system basics and moving to topics such as remote computing, customizing your shell environment and git from the command line.
 
-##### :octicons-command-palette-24: Part 1: What's the deal with directories?
+##### :octicons-command-palette-24: Part 1: What's the deal with directories? Intro to file systems
 
 February 5, 2026, 11:00AM-12:00PM (Virtual)
 
 Is this your first time sitting down typing commands into the command line or logging into the Cannon cluster to do an analysis? In this one hour seminar, we'll show you how files and directories are organized on common operating systems, including the Cannon cluster. You'll learn how to navigate a file system using the command line (aka the terminal), understand file permissions, and login to a remote server. This seminar is suitable for absolute beginners to command line and cluster usage.
 
 [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/filesystems.pptx){ .md-button }
+
+##### :octicons-command-palette-24: Part 2: Tips & tricks for aspring power users
+
+February 12, 2026, 11:00AM-12:00PM (Virtual)
+
+Now that you know how to move around the file system, let's explore how to customize your command line experience. You'll learn about using environment variables and aliases, dotfiles to automatically run things upon login, and using terminal multiplexers like screen. If you plan to spend a good amount of time running programs on the command line, this seminar will save you effort and make your experience smoother!
+
+[Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/cmdline-tips.pptx){ .md-button }
 
 #### Population Genomics: Getting started with SNPArcher
 
