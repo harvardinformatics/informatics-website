@@ -145,7 +145,7 @@ February 5, 2026, 11:00AM-12:00PM (Virtual)
 
 Is this your first time sitting down typing commands into the command line or logging into the Cannon cluster to do an analysis? In this one hour seminar, we'll show you how files and directories are organized on common operating systems, including the Cannon cluster. You'll learn how to navigate a file system using the command line (aka the terminal), understand file permissions, and login to a remote server. This seminar is suitable for absolute beginners to command line and cluster usage.
 
-[Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/filesystems.pptx){ .md-button }
+[Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/01-filesystems.pptx){ .md-button }
 
 ##### :octicons-command-palette-24: Part 2: Tips & tricks for aspring power users
 
@@ -153,7 +153,16 @@ February 12, 2026, 11:00AM-12:00PM (Virtual)
 
 Now that you know how to move around the file system, let's explore how to customize your command line experience. You'll learn about using environment variables and aliases, dotfiles to automatically run things upon login, and using terminal multiplexers like screen. If you plan to spend a good amount of time running programs on the command line, this seminar will save you effort and make your experience smoother!
 
-[Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/cmdline-tips.pptx){ .md-button }
+[Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/02-cmdline-tips.pptx){ .md-button }
+
+##### :octicons-command-palette-24: Part 3: Integrating your local and cluster compute environments
+
+February 19, 2026, 11:00AM-12:00PM (Virtual)
+
+In this seminar, we will cover topics and allow you to seamlessly move between your local environment to the cluster computer environment by using tools like VSCode and various file transfer applications. Geared towards both beginner and intermediate users, students will learn how to use apps to help them program and process data like a pro.
+
+[Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/03-integration.pptx){ .md-button }
+
 
 #### Population Genomics: Getting started with SNPArcher
 
