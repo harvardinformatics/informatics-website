@@ -13,6 +13,16 @@ Here is our first round of events for the Spring 2026 semester!
 
 *For the most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
 
+### Research Services Showcase
+
+**Thursday March 4, 2026, 10:00AM–4:00PM (Virtual)**
+
+Join us for a virtual showcase of research services and support offerings across FAS.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/zQw5e9EXRyOQJG628aiHQA#/registration){:target="_blank" .md-button .md-button--primary .centered }
+
+<img src="../../img/events/2026-research-services-showcase-flyer.png" alt="Research Services Showcase flyer" title="Research Services Showcase - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;" />
+
 <!-- ### :material-tools: Workshops -->
 
 ### :material-monitor-account: Short Trainings (virtual)
