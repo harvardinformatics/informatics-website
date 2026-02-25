@@ -13,11 +13,21 @@ Here is our first round of events for the Spring 2026 semester!
 
 *For the most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
 
+### Research Services Showcase
+
+**Thursday March 4, 2026, 10:00AM–4:00PM (Virtual)**
+
+Join us for a virtual showcase of research services and support offerings across FAS.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/zQw5e9EXRyOQJG628aiHQA#/registration){:target="_blank" .md-button .md-button--primary .centered }
+
+<img src="../../img/events/2026-research-services-showcase-flyer.png" alt="Research Services Showcase flyer" title="Research Services Showcase - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;" />
+
 <!-- ### :material-tools: Workshops -->
 
 ### :material-monitor-account: Short Trainings (virtual)
 
-#### Command line 101: What's the deal with directories?
+<!-- #### Command line 101: What's the deal with directories?
 
 **Thursday February 5 2026, 11AM - 12PM**
 
@@ -31,7 +41,7 @@ Is this your first time sitting down typing commands into the command line or lo
 
 Now that you know how to move around the cluster, let's explore how to customize your command line experience. You'll learn about using dotfiles to automatically run things upon login, save and search your command  history, use terminal multiplexers like screen, and more. If you plan to spend a good amount of time running programs on the command line, this seminar will save you effort and make your experience smoother!
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/QV7jrUsNQ0m6-17lwiY85w){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ZFpSxkP_Qtqu9UlPzRRYDA){:target="_blank" .md-button .md-button--primary .centered }
 
 #### Command line 101: Integrating your local and cluster compute environments
 
@@ -39,7 +49,7 @@ Now that you know how to move around the cluster, let's explore how to customize
 
 In this seminar, we will cover topics and allow you to seamlessly move between your local environment to the cluster computer environment by using tools like VSCode and various file transfer applications. Geared towards both beginner and intermediate users, students will learn how to use apps to help them program and process data like a pro.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered } -->
 
 #### Command line 101: Git/GitHub on the cluster and on your computer
 
@@ -59,21 +69,21 @@ We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest B
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-<!-- Fall 2025 Programming & Pizza dates:
+Spring 2026 Programming & Pizza dates:
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: September 10, Northwest Building room B227.45, 4:00-6:00PM</span>
+<span style="color:gray;">:fontawesome-solid-pizza-slice: Februray 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: October 8, Northwest Building room B227.45, 4:00-6:00PM</span>
+:fontawesome-solid-pizza-slice: March 11, Northwest Building room B227.45, 4:00-6:00PM
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: November 12, Northwest Building room B227.45, 4:00-6:00PM</span>
+:fontawesome-solid-pizza-slice: April 8, Northwest Building room B227.45, 4:00-6:00PM
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: December 10, Northwest Building room B227.45, 4:00-6:00PM</span> -->
+:fontawesome-solid-pizza-slice: May 13, Northwest Building room B227.45, 4:00-6:00PM
 
-:material-arrow-right-bottom: **These will return in the Spring of 2026!** :fontawesome-solid-pizza-slice:
+<!-- :material-arrow-right-bottom: **These will return in the Spring of 2026!** :fontawesome-solid-pizza-slice: -->
 
 ## Calendar
 
-This Google calendar will show all our upcoming office hours as well as any workshops we have scheduled.
+This calendar will show all our upcoming office hours as well as any workshops or events we have scheduled.
 
 <center>
     <iframe 
@@ -135,71 +145,127 @@ This workshop aims to introduce students to some basic bioinformatics file forma
 
 We piloted a series of short one hour short trainings in the Fall of 2024. These sessions are designed to be quick introductions to topics that we think are useful for researchers. Sessions with content are listed below. See our [previous events page](previous-events.md) to view topics that were live demonstrations with no attached content (look for the short trainings icon: :material-monitor-account:). If you are interested in any of these topics, please let us know and we can schedule another workshop or just talk about it with you!
 
-#### Population Genomics: Getting started with SNPArcher
+#### Command line 101
 
-December 10, 2025, 11:00AM-12:00PM (Virtual)
+Introductions to working on computers through text interfaces, starting with file system basics (part 1) and moving to topics such as remote computing, customizing your shell environment (parts 2 and 3), and git from the command line (part 4).
 
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial.pdf){ .md-button }
+<div class="grid cards short-training-grid" markdown>
 
-#### Introduction to Genome Annotation
+- ##### :octicons-command-palette-24: Part 1: What's the deal with directories? Intro to file systems
 
-December 3, 2024, 11:00-12:00PM (Virtual)
+    February 5, 2026, 11:00AM-12:00PM (Virtual)
 
-[Tutorial :material-arrow-top-right:](../resources/tutorials/how-to-annotate-a-genome.md){target="_blank" .md-button }
+    <!-- Is this your first time sitting down typing commands into the command line or logging into the Cannon cluster to do an analysis? In this one hour seminar, we'll show you how files and directories are organized on common operating systems, including the Cannon cluster. You'll learn how to navigate a file system using the command line (aka the terminal), understand file permissions, and login to a remote server. This seminar is suitable for absolute beginners to command line and cluster usage. -->
 
-#### DNA sequencing with long reads
+    [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/01-filesystems.pptx){ .md-button }
 
-November 19, 2025, 11:00AM-1:00PM (Virtual)
+- ##### :octicons-command-palette-24: Part 2: Tips & tricks for aspiring power users
 
-In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}, we hosted a short training session on DNA sequencing with long reads. This training covered the basics of long-read sequencing technologies and analysis. We provide the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes. 
+    February 12, 2026, 11:00AM-12:00PM (Virtual)
 
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/long-read/Long_Read_Workshop.pdf){ .md-button }
+    <!-- Now that you know how to move around the file system, let's explore how to customize your command line experience. You'll learn about using environment variables and aliases, dotfiles to automatically run things upon login, and using terminal multiplexers like screen. If you plan to spend a good amount of time running programs on the command line, this seminar will save you effort and make your experience smoother! -->
+
+    [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/02-cmdline-tips.pptx){ .md-button }
+
+- ##### :octicons-command-palette-24: Part 3: Integrating your local and cluster compute environments
+
+    February 19, 2026, 11:00AM-12:00PM (Virtual)
+
+    <!-- In this seminar, we will cover topics and allow you to seamlessly move between your local environment to the cluster computer environment by using tools like VSCode and various file transfer applications. Geared towards both beginner and intermediate users, students will learn how to use apps to help them program and process data like a pro. -->
+
+    [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/03-integration.pptx){ .md-button }
+
+</div>
 
 #### Introduction to single-cell RNA-seq analysis
 
-##### Part 1: October 29, 2025, 12:00-1:00PM (Virtual)
-
 Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
-
-[Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.Rmd){ .md-button }
-[View rendered notebook :material-arrow-right:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.md){ .md-button }
-
-##### Part 2: November 5, 2025, 12:00-1:00PM (Virtual)
 
 Part 2 covers cluster marker gene discover, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. Note that to run the downloadable markdown below will require generating count matrices for the samples used in the training using *cellranger count*. Until we create an option for delivering the count matrices, please contact the Informatics Group for more information.
 
-[Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.Rmd){ .md-button }
-[View rendered notebook :material-arrow-right:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.md){ .md-button }
+<div class="grid cards short-training-grid" markdown>
 
-#### Basics of git and GitHub with GitHub Desktop
+- ##### :material-dna: Part 1
 
-September 24, 2025, 12:00-1:00PM (Virtual)
+    October 29, 2025, 12:00-1:00PM (Virtual)
 
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/git-github/git_github_one_hour.pdf){ .md-button }
+    [Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.Rmd){ .md-button }
+   
+    [View rendered notebook :material-arrow-right:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq.md){ .md-button }
 
-#### The Baton Pass: Data onboarding and offboarding
+- ##### :material-dna: Part 2
 
-August 27, 2025, 11:00AM-1:00PM (Virtual)
+    November 5, 2025, 12:00-1:00PM (Virtual)
 
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/onboarding-offboarding/Onboarding_Offboarding_Fall2025.pdf){ .md-button }
-
-#### Workflow managers and Nextflow demo
-
-November 12, 2024, 9:30-10:30AM and November 13, 2024, 12:15-1:15PM (Northwest Building 453)
-
-[Download PDF of slides :octicons-download-24:](../workshops/short-trainings/workflow-managers/Workflow_managers.pdf){ .md-button }
-
-#### Plotting in R with ggplot
-
-October 29, 2024, 9:30-10:30AM and October 30, 2024, 12:15-1:15PM (Northwest Building 453)
-
-[Training page :material-arrow-right:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.Rmd){ .md-button }
-
-#### Data transformation in R with Tidyverse
+    [Download RMD file :octicons-download-24:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.Rmd){ .md-button }
     
-October 22, 2024, 9:30-10:30AM and October 23, 2024, 12:15-1:15PM (Northwest Building 453)
+    [View rendered notebook :material-arrow-right:](../workshops/short-trainings/scRNA-intro/SinglecellRNAseq_part2.md){ .md-button }
 
-[Traning page :material-arrow-right:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md){ .md-button } - [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.Rmd){ .md-button }
+- <span class="empty-card"></span>
+
+</div>
+
+#### All others
+
+<div class="grid cards short-training-grid" markdown>
+
+- ##### :material-chart-line: Population Genomics: Getting started with SNPArcher
+
+    December 10, 2025, 11:00AM-12:00PM (Virtual)
+
+    [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/snparcher/snparcher-tutorial.pdf){ .md-button }
+
+- ##### :material-book-open-variant: Introduction to Genome Annotation
+
+    December 3, 2024, 11:00-12:00PM (Virtual)
+
+    <p class="card-btn-container" markdown>
+    [Tutorial :material-arrow-right:](../resources/tutorials/how-to-annotate-a-genome.md){:target="_blank" .md-button}
+    </p>
+    
+- ##### :material-dna: DNA sequencing with long reads
+
+    November 19, 2025, 11:00AM-1:00PM (Virtual)
+
+    In collaboration with the [Bauer Sequencing Core :octicons-link-external-24:](https://bauercore.fas.harvard.edu/){:target="_blank"}<!--, we hosted a short training session on DNA sequencing with long reads. This training covered the basics of long-read sequencing technologies and analysis. We provide the necessary information for you to (1) choose the sequencing technology options best suited for your research question and/or your sample quality, (2) understand the pros and cons of a PacBio vs ONT assembly for your project, (3) anticipate decision making points in your experiment and how it might affect downstream processes.-->
+
+    [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/long-read/Long_Read_Workshop.pdf){ .md-button }
+
+- ##### :material-source-branch: Basics of git and GitHub with GitHub Desktop
+
+    September 24, 2025, 12:00-1:00PM (Virtual)
+
+    [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/git-github/git_github_one_hour.pdf){ .md-button }
+
+- ##### :material-transfer: The Baton Pass: Data onboarding and offboarding
+
+    August 27, 2025, 11:00AM-1:00PM (Virtual)
+
+    [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/onboarding-offboarding/Onboarding_Offboarding_Fall2025.pdf){ .md-button }
+
+- ##### <span class="twemoji">{% include "assets/.icons/custom/nextflow-icon.svg" %}</span> Workflow managers and Nextflow demo
+
+    November 12-13, 2024 (Northwest Building 453)
+
+    [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/workflow-managers/Workflow_managers.pdf){ .md-button }
+
+- ##### :material-chart-bar: Plotting in R with ggplot
+
+    October 29-30, 2024 (Northwest Building 453)
+
+    [Training page :material-arrow-right:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.md){ .md-button }
+    [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-ggplot/R_ggplot_revised.Rmd){ .md-button }
+
+- ##### :material-table: Data transformation in R with Tidyverse
+
+    October 22-23, 2024 (Northwest Building 453)
+
+    [Training page :material-arrow-right:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md){ .md-button }
+    [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.Rmd){ .md-button }
+
+- <span class="empty-card"></span>
+
+</div>
 
 
 ## :material-archive-check-outline: Event and Workshop Archive
@@ -235,4 +301,99 @@ To view a list of previous events and workshops, click the button below.
     h4 {
         text-decoration: underline;
     }
+
+    h5 {
+        font-size: 0.9em !important;
+        color: #000000 !important;
+    }
+
+    .short-training-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .short-training-grid > :is(ul, ol) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .short-training-grid > :is(ul, ol) > li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .short-training-grid > :is(ul, ol) > li:has(.empty-card) {
+        visibility: hidden !important;
+        border: none !important;
+        background: none !important;
+        box-shadow: none !important;
+        pointer-events: none !important;
+    }
+
+    .short-training-grid > :is(ul, ol) > li > :is(p:has(.md-button), a.md-button) {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: 0.35rem;
+    }
+
+    .short-training-grid > :is(ul, ol) > li > :is(p:has(.md-button), a.md-button) + :is(p:has(.md-button), a.md-button) {
+        margin-top: 0.35rem;
+    }
+
+    .short-training-grid > :is(ul, ol) > li > :is(p:has(.md-button), a.md-button):last-child {
+        margin-bottom: auto;
+    }
+
+    .short-training-grid > :is(ul, ol) > li .md-button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2em;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.72rem;
+        padding: 0.35em 0.7em;
+        border-radius: 0.35rem;
+        line-height: 1.2;
+    }
+
+    .short-training-grid > :is(ul, ol) > li > h5 {
+        all: unset !important;
+        display: block !important;
+        margin: 0 0 0.35rem 0 !important;
+        font: inherit !important;
+        font-weight: 700 !important;
+        line-height: inherit !important;
+        color: inherit !important;
+        text-decoration: none !important;
+    }
+
+    .short-training-grid > :is(ul, ol) > li > h5 .headerlink {
+        display: none !important;
+    }
+
+    .short-training-grid > :is(ul, ol) > li > p:not(:has(.md-button)) {
+        font-size: 0.86em;
+        line-height: 1.4;
+    }
+
+    @media screen and (max-width: 960px) {
+        .short-training-grid,
+        .short-training-grid > :is(ul, ol) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .short-training-grid,
+        .short-training-grid > :is(ul, ol) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* card is a vertical flex container */
+    .card-btn-container{
+        padding-top: 18px;
+    }
+
 </style>
