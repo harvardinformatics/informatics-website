@@ -59,7 +59,7 @@ This is a hands-on training teaching how to use command line git to version cont
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }
 
-### Command Line 101: SLURM and job management tips
+#### Command Line 101: SLURM and job management tips
 
 **Friday March 6 2026, 11AM - 12PM**
 
@@ -67,7 +67,7 @@ This virtual seminar will introduce students to the basic concept of a computing
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VFD_JEFPQzSby_SK0czkgg#/registration){:target="_blank" .md-button .md-button--primary .centered }
 
-### How to effectively use LLMs and coding agents for Bioinformatics
+#### How to effectively use LLMs and coding agents for Bioinformatics
 
 **Thursday March 12 2026, 11AM - 12PM**
 
@@ -75,7 +75,7 @@ This virtual seminar will introduce some tips and tricks for productively workin
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VH6CaFLeTSeHls4f_vMwdw#/registration){:target="_blank" .md-button .md-button--primary .centered }
 
-### Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup
+#### Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup
 
 **Thursday March 19 2026, 12PM - 1PM**
 
@@ -83,7 +83,7 @@ Part 1 introduces students to the basics of single-cell RNA-seq analysis, includ
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/f1nXo9cETgKGDlGqIoRCmA){:target="_blank" .md-button .md-button--primary .centered }
 
-### Introduction to single-cell RNA-seq analysis Part 2: clustering, cell type annotation, and differential expression
+#### Introduction to single-cell RNA-seq analysis Part 2: clustering, cell type annotation, and differential expression
 
 **Thursday March 26 2026, 12PM - 1PM**
 
