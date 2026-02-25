@@ -59,6 +59,38 @@ This is a hands-on training teaching how to use command line git to version cont
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }
 
+#### Command Line 101: SLURM and job management tips
+
+**Friday March 6 2026, 11AM - 12PM**
+
+This virtual seminar will introduce students to the basic concept of a computing cluster and walk them through how to create jobs and monitor them.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VFD_JEFPQzSby_SK0czkgg#/registration){:target="_blank" .md-button .md-button--primary .centered }
+
+#### How to effectively use LLMs and coding agents for Bioinformatics
+
+**Thursday March 12 2026, 11AM - 12PM**
+
+This virtual seminar will introduce some tips and tricks for productively working with LLMs, understanding their strong and weak points, and managing AI agents in the context of bioinformatics.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VH6CaFLeTSeHls4f_vMwdw#/registration){:target="_blank" .md-button .md-button--primary .centered }
+
+#### Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup
+
+**Thursday March 19 2026, 12PM - 1PM**
+
+Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/f1nXo9cETgKGDlGqIoRCmA){:target="_blank" .md-button .md-button--primary .centered }
+
+#### Introduction to single-cell RNA-seq analysis Part 2: clustering, cell type annotation, and differential expression
+
+**Thursday March 26 2026, 12PM - 1PM**
+
+Part 2 covers cluster marker gene discovery, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. 
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/Cyd-A4vJRyWiI202d9Dz1A){:target="_blank" .md-button .md-button--primary .centered }
+
 ## Recurring events
 
 ### Office hours
