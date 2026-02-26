@@ -21,6 +21,34 @@ Join us for a virtual showcase of research services and support offerings across
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/zQw5e9EXRyOQJG628aiHQA#/registration){:target="_blank" .md-button .md-button--primary .centered }
 
+<details markdown="1">
+<summary><strong>Full schedule of speakers</strong></summary>
+
+| Time slot | Core | Speaker |
+|-----------|------|---------|
+| 10:00 | Intro | Lei Ma|
+| 10:15 | HCBI | Alex Lovely |
+| 10:30 | HCBI | Emily Roloson |
+| 10:45 | HCBI | Evan Heller |
+| 11:00 | HCBI | Q&A |
+| 11:15 | HCMS | Sunia Trauger|
+| 12:00 | Bauer | Nicole El-Ali (Ramirez), Kelly Cribary, Jeff Nelson |
+| 12:15 | Bauer | Kelsie Lopez |
+| 12:30 | Bauer | Colin Kim |
+| 12:45 | Bauer | Q&A |
+| 1:00 | FASRC | Manasvita Joshi|
+| 1:15 | FASRC | Piyush Nanda |
+| 1:30 | FASRC | Q&A |
+| 1:45 | Informatics | Lei Ma, Tim Sackton |
+| 2:00 | Informatics | Jessica Whited |
+| 2:15 | Informatics | Robin Hopkins |
+| 2:30 | Informatics | Q&A |
+| 2:45 | Library | Ehsan Moghadam|
+| 3:00 | Library | Sarah Joan Kariko |
+| 3:15 | Library | Q&A |
+
+</details>
+
 <img src="../../img/events/2026-research-services-showcase-flyer.png" alt="Research Services Showcase flyer" title="Research Services Showcase - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;" />
 
 <!-- ### :material-tools: Workshops -->
@@ -49,7 +77,7 @@ Now that you know how to move around the cluster, let's explore how to customize
 
 In this seminar, we will cover topics and allow you to seamlessly move between your local environment to the cluster computer environment by using tools like VSCode and various file transfer applications. Geared towards both beginner and intermediate users, students will learn how to use apps to help them program and process data like a pro.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered } -->
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered } 
 
 #### Command line 101: Git/GitHub on the cluster and on your computer
 
@@ -57,7 +85,7 @@ In this seminar, we will cover topics and allow you to seamlessly move between y
 
 This is a hands-on training teaching how to use command line git to version control your code and how to use GitHub to backup your scripts. To participate in the hands-on portion of the workshop, please have a github account. Cannon cluster account is optional. Users are expected to know how to create files and directories using the command line.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }-->
 
 #### Command Line 101: SLURM and job management tips
 
@@ -179,7 +207,7 @@ We piloted a series of short one hour short trainings in the Fall of 2024. These
 
 #### Command line 101
 
-Introductions to working on computers through text interfaces, starting with file system basics (part 1) and moving to topics such as remote computing, customizing your shell environment (parts 2 and 3), and git from the command line (part 4).
+Introductions to working on computers through text interfaces, starting with file system basics (part 1) and moving to topics such as remote computing, customizing your shell environment (parts 2 and 3), git from the command line (part 4), and Tips for the submitting jobs (part 5).
 
 <div class="grid cards short-training-grid" markdown>
 
@@ -207,6 +235,13 @@ Introductions to working on computers through text interfaces, starting with fil
 
     [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/03-integration.pptx){ .md-button }
 
+- ##### :octicons-command-palette-24: Part 4: Git/GitHub on the cluster and on your computer
+
+    Thursday February 26 2026, 11AM - 12PM
+
+    <!-- This is a hands-on training teaching how to use command line git to version control your code and how to use GitHub to backup your scripts. To participate in the hands-on portion of the workshop, please have a github account. Cannon cluster account is optional. Users are expected to know how to create files and directories using the command line. -->
+
+    [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/04-git.pptx){ .md-button }
 </div>
 
 #### Introduction to single-cell RNA-seq analysis
