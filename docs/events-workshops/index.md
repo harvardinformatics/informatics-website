@@ -33,7 +33,7 @@ Join us for a virtual showcase of research services and support offerings across
     | 10:45a | HCBI | Evan Heller |
     | 11:00a | HCBI | Q&A |
     | 11:15a | Harvard Center for Mass Spectometry| Sunia Trauger|
-    | 12:00p | Bauer | Nicole El-Ali (Ramirez), Kelly Cribary, Jeff Nelson |
+    | 12:00p | Bauer Sequencing Core | Nicole El-Ali (Ramirez), Kelly Cribary, Jeff Nelson |
     | 12:15p | Bauer | Kelsie Lopez |
     | 12:30p | Bauer | Colin Kim |
     | 12:45p | Bauer | Q&A |
