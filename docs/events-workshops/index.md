@@ -21,6 +21,33 @@ Join us for a virtual showcase of research services and support offerings across
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/zQw5e9EXRyOQJG628aiHQA#/registration){:target="_blank" .md-button .md-button--primary .centered }
 
+??? info "Full schedule of speakers"
+
+    #### Schedule
+
+    | Time | Core | Speaker |
+    |-----------|------|---------|
+    | 10:00a | Introduction | Lei Ma|
+    | 10:15a | Harvard Center for Biological Imaging (HCBI) | Alex Lovely |
+    | 10:30a | HCBI | Emily Roloson |
+    | 10:45a | HCBI | Evan Heller |
+    | 11:00a | HCBI | Q&A |
+    | 11:15a | Harvard Center for Mass Spectometry| Sunia Trauger|
+    | 12:00p | Bauer Sequencing Core | Nicole El-Ali (Ramirez), Kelly Cribary, Jeff Nelson |
+    | 12:15p | Bauer | Kelsie Lopez |
+    | 12:30p | Bauer | Colin Kim |
+    | 12:45p | Bauer | Q&A |
+    | 1:00p | FAS Research Computing (FASRC) | Manasvita Joshi|
+    | 1:15p | FASRC | Piyush Nanda |
+    | 1:30p | FASRC | Q&A |
+    | 1:45p | Informatics | Lei Ma, Tim Sackton |
+    | 2:00p | Informatics | Jessica Whited |
+    | 2:15p | Informatics | Robin Hopkins |
+    | 2:30p | Informatics | Q&A |
+    | 2:45p | Library | Ehsan Moghadam|
+    | 3:00p | Library | Sarah Joan Kariko |
+    | 3:15p | Library | Q&A |
+
 <img src="../../img/events/2026-research-services-showcase-flyer.png" alt="Research Services Showcase flyer" title="Research Services Showcase - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;" />
 
 <!-- ### :material-tools: Workshops -->
@@ -49,7 +76,7 @@ Now that you know how to move around the cluster, let's explore how to customize
 
 In this seminar, we will cover topics and allow you to seamlessly move between your local environment to the cluster computer environment by using tools like VSCode and various file transfer applications. Geared towards both beginner and intermediate users, students will learn how to use apps to help them program and process data like a pro.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered } -->
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered } 
 
 #### Command line 101: Git/GitHub on the cluster and on your computer
 
@@ -57,19 +84,19 @@ In this seminar, we will cover topics and allow you to seamlessly move between y
 
 This is a hands-on training teaching how to use command line git to version control your code and how to use GitHub to backup your scripts. To participate in the hands-on portion of the workshop, please have a github account. Cannon cluster account is optional. Users are expected to know how to create files and directories using the command line.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }-->
 
 #### Command Line 101: SLURM and job management tips
 
-**Friday March 6 2026, 11AM - 12PM**
+**Friday March 6, 2026, 11AM - 12PM**
 
 This virtual seminar will introduce students to the basic concept of a computing cluster and walk them through how to create jobs and monitor them.
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VFD_JEFPQzSby_SK0czkgg#/registration){:target="_blank" .md-button .md-button--primary .centered }
 
-#### How to effectively use LLMs and coding agents for Bioinformatics
+#### How to effectively use LLMs and coding agents for bioinformatics
 
-**Thursday March 12 2026, 11AM - 12PM**
+**Thursday March 12, 2026, 11AM - 12PM**
 
 This virtual seminar will introduce some tips and tricks for productively working with LLMs, understanding their strong and weak points, and managing AI agents in the context of bioinformatics.
 
@@ -77,7 +104,7 @@ This virtual seminar will introduce some tips and tricks for productively workin
 
 #### Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup
 
-**Thursday March 19 2026, 12PM - 1PM**
+**Thursday March 19, 2026, 12PM - 1PM**
 
 Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
 
@@ -85,7 +112,7 @@ Part 1 introduces students to the basics of single-cell RNA-seq analysis, includ
 
 #### Introduction to single-cell RNA-seq analysis Part 2: clustering, cell type annotation, and differential expression
 
-**Thursday March 26 2026, 12PM - 1PM**
+**Thursday March 26, 2026, 12PM - 1PM**
 
 Part 2 covers cluster marker gene discovery, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. 
 
@@ -179,7 +206,7 @@ We piloted a series of short one hour short trainings in the Fall of 2024. These
 
 #### Command line 101
 
-Introductions to working on computers through text interfaces, starting with file system basics (part 1) and moving to topics such as remote computing, customizing your shell environment (parts 2 and 3), and git from the command line (part 4).
+Introductions to working on computers through text interfaces, starting with file system basics (part 1) and moving to topics such as remote computing, customizing your shell environment (parts 2 and 3), git from the command line (part 4), and tips for the submitting jobs on the SLURM cluster (part 5).
 
 <div class="grid cards short-training-grid" markdown>
 
@@ -207,6 +234,13 @@ Introductions to working on computers through text interfaces, starting with fil
 
     [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/03-integration.pptx){ .md-button }
 
+- ##### :octicons-command-palette-24: Part 4: Git/GitHub on the cluster and on your computer
+
+    Thursday February 26, 2026, 11AM - 12PM
+
+    <!-- This is a hands-on training teaching how to use command line git to version control your code and how to use GitHub to backup your scripts. To participate in the hands-on portion of the workshop, please have a github account. Cannon cluster account is optional. Users are expected to know how to create files and directories using the command line. -->
+
+    [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/04-git.pptx){ .md-button }
 </div>
 
 #### Introduction to single-cell RNA-seq analysis
