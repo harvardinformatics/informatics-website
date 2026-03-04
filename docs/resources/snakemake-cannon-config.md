@@ -47,11 +47,66 @@ Now, the `SMK_PART_CFG` will be loaded automatically everytime you log in. **NOT
 
     You can always confirm that that `SMK_PART_CFG` environment variable is loaded by typing `echo $SMK_PART_CFG`. It should print out the path to the profile. If it displays nothing (or some other data), the config won't work properly with that variable.
 
-## Modifying the configuration file
+## Generating a custom configuration file
 
 There may be some instances where one might want to modify the configuration file, for instance to exclude certain partitions from being considered, or for adding lab-specific partitions to the config file.
 
-In both cases, the first step will be to *copy* the configuration file:
+We provide a script that will parse the partitions available to the current user to automatically to generate a config file:
+
+```bash
+/n/holylfs05/LABS/informatics/Everyone/internal-share/cannon-snakemake-cfg/generate_snakemake_partition_config.py
+```
+
+While you can run this script from our directory by providing the full path to Python (*e.g.* python /n/holylfs05/LABS/informatics/Everyone/internal-share/cannon-snakemake-cfg/generate_snakemake_partition_config.python), it may be easier to copy the script to your own directory:
+
+```bash
+cp /n/holylfs05/LABS/informatics/Everyone/internal-share/cannon-snakemake-cfg/generate_snakemake_partition_config.py generate_snakemake_partition_config.py
+```
+The examples below assume a copy of the script is in your current working directory.
+
+First, get a list of all partitions you have access to:
+
+```bash
+python generate_snakemake_partition_config.py --list-partitions
+```
+
+The table output lists the partitions and their resources. Use the **selected** column to determine if each partition will be written to the config file. To include a partition that is currently not selected or would be commented, use the `--include` flag:
+
+```bash
+python generate_snakemake_partition_config.py --include part1,part2 --list-partitions
+```
+
+Likewise, to exclude a partition that would be included, use the `--exclude` flag:
+
+```bash
+python generate_snakemake_partition_config.py --exclude part3,part4,part5 --list-partitions
+```
+
+These options can be combined:
+
+```bash
+python generate_snakemake_partition_config.py --include part1,part2 --exclude part3,part4,part5 --list-partitions
+```
+
+Once the partition table includes all the partitions you want Snakemake to choose from, remove the `--list-partitions` option to generate the config file:
+
+```bash
+python generate_snakemake_partition_config.py --include part1,part2 --exclude part3,part4,part5
+```
+
+By default, this will write a file called `cannon-snakemake.generated-<timestamp>.yml`, but you can specify a file name with `--output`
+
+```bash
+python generate_snakemake_partition_config.py --include part1,part2 --exclude part3,part4,part5 --output my-custom-config.yml
+```
+
+See the [cannon-snakemake-cfg :octicons-link-external-24:](https://github.com/harvardinformatics/cannon-snakemake-cfg) repo for more documentation related to the script.
+
+## Modifying the configuration file manually
+
+If you don't wish to run the Python script above, you can always manually edit the configuration file.
+
+In both cases (excluding partitions or including lab partitions), the first step will be to *copy* the configuration file:
 
 ```bash
 cp /n/holylfs05/LABS/informatics/Everyone/internal-share/cannon-snakemake-cfg/cannon-snakemake.yml cannon-snakemake.cfg
