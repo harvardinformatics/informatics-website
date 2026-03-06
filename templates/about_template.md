@@ -10,7 +10,7 @@ The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is 
 
 The mission of the Bioinformatics Core includes training, consulting, and research. We organize in several ways to facilitate these goals.
 
-???+ tip "Announcements"
+<!-- ???+ tip "Announcements"
 
     ### Announcements {: .toc-only }
 
@@ -31,6 +31,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
     Beginning in Fall 2025, we are launching a data concierge service aimed at PIs who want bespoke solutions for their data management challenges. For more information, please click the link below.
 
     [Data Concierge](services/concierge.md){ .md-button .md-button--primary .centered}
+-->
 
 ### Workshops
 
@@ -94,6 +95,12 @@ Labs may arrange for longer-term collaborations with us, where we work closely w
 For more information about our research and collaborations, please visit our Research page:
 
 [Research page :material-arrow-right:](research/index.md){ .md-button .md-button--primary .centered }
+
+### Data Concierge Service
+
+We also offer a data concierge service aimed at PIs who want bespoke solutions for their data management challenges. For more information, please click the link below.
+
+[Data Concierge](services/concierge.md){ .md-button .md-button--primary .centered}
 
 ---
 
