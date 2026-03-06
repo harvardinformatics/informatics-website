@@ -13,7 +13,7 @@ Here is our first round of events for the Spring 2026 semester!
 
 *For the most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
 
-### Research Services Showcase
+<!-- ### Research Services Showcase
 
 **Thursday March 4, 2026, 10:00AM–4:00PM (Virtual)**
 
@@ -48,7 +48,7 @@ Join us for a virtual showcase of research services and support offerings across
     | 3:00p | Library | Sarah Joan Kariko |
     | 3:15p | Library | Q&A |
 
-<img src="../../img/events/2026-research-services-showcase-flyer.png" alt="Research Services Showcase flyer" title="Research Services Showcase - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;" />
+<img src="../../img/events/2026-research-services-showcase-flyer.png" alt="Research Services Showcase flyer" title="Research Services Showcase - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;" /> -->
 
 <!-- ### :material-tools: Workshops -->
 
@@ -84,7 +84,7 @@ In this seminar, we will cover topics and allow you to seamlessly move between y
 
 This is a hands-on training teaching how to use command line git to version control your code and how to use GitHub to backup your scripts. To participate in the hands-on portion of the workshop, please have a github account. Cannon cluster account is optional. Users are expected to know how to create files and directories using the command line.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }-->
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }
 
 #### Command Line 101: SLURM and job management tips
 
@@ -92,7 +92,7 @@ This is a hands-on training teaching how to use command line git to version cont
 
 This virtual seminar will introduce students to the basic concept of a computing cluster and walk them through how to create jobs and monitor them.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VFD_JEFPQzSby_SK0czkgg#/registration){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VFD_JEFPQzSby_SK0czkgg#/registration){:target="_blank" .md-button .md-button--primary .centered }-->
 
 #### How to effectively use LLMs and coding agents for bioinformatics
 
@@ -241,6 +241,14 @@ Introductions to working on computers through text interfaces, starting with fil
     <!-- This is a hands-on training teaching how to use command line git to version control your code and how to use GitHub to backup your scripts. To participate in the hands-on portion of the workshop, please have a github account. Cannon cluster account is optional. Users are expected to know how to create files and directories using the command line. -->
 
     [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/04-git.pptx){ .md-button }
+
+- ##### :octicons-command-palette-24: Part 5: Command Line 101: SLURM and job management tips
+
+    Friday March 6, 2026, 11AM - 12PM
+
+    <!-- This virtual seminar will introduce students to the basic concept of a computing cluster and walk them through how to create jobs and monitor them. We will also cover how to manage and optimize your jobs for better performance. -->
+
+    [Download slides :octicons-download-24:](../workshops/short-trainings/cmd-line-101/05-slurm.pptx){ .md-button }
 </div>
 
 #### Introduction to single-cell RNA-seq analysis
