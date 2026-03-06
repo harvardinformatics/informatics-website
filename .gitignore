@@ -172,3 +172,5 @@ docs/resources/tags/*
 
 *.Rhistory*
 !scripts/lib/
+
+.vscode/

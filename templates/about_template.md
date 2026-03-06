@@ -32,6 +32,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 
     [Data Concierge](services/concierge.md){ .md-button .md-button--primary .centered}
 -->
+
 ### Workshops
 
 We run a series of workshops on bioinformatics and computational biology topics, which are open to the entire Harvard community. These workshops cover a range of subjects, from introductory programming in Python and R to more advanced topics like single-cell RNA-seq analysis and population genomics. Our goals are to (1) provide an accessible onramp to data science and computational biology to those without a computational background and (2) equip researchers with the skills they need to analyze biological data effectively.
@@ -94,6 +95,12 @@ Labs may arrange for longer-term collaborations with us, where we work closely w
 For more information about our research and collaborations, please visit our Research page:
 
 [Research page :material-arrow-right:](research/index.md){ .md-button .md-button--primary .centered }
+
+### Data Concierge Service
+
+We also offer a data concierge service aimed at PIs who want bespoke solutions for their data management challenges. For more information, please click the link below.
+
+[Data Concierge](services/concierge.md){ .md-button .md-button--primary .centered}
 
 ---
 
