@@ -1,16 +1,12 @@
 
-
 # Genome QC using kmer plots
 
-When evaluating a genome assembly, some commonly QC metrics include QUAST and BUSCO. Another powerful tool is using kmer analysis, which can give info about genome completeness, reference-free accuracy estimates and levels of duplication. There are many tools for counting kmers, but for this pipeline we will use [Meryl](https://github.com/marbl/meryl) to build a kmer database in combination with [Merqury](https://github.com/marbl/merqury) to construct kmer frquency spectra and calculate quality stats. As mentioned, this does not require a separate reference genome...all you need is your de novo genome assembly and the reads used to construct the assembly.
+When evaluating a genome assembly, some commonly QC metrics include QUAST and BUSCO. Another powerful tool is using kmer analysis, which can give info about genome completeness, reference-free accuracy estimates and levels of duplication present in the assembly. There are many tools for counting kmers, but for this pipeline we will use [Meryl](https://github.com/marbl/meryl) to build a kmer database in combination with [Merqury](https://github.com/marbl/merqury) to construct kmer frquency spectra and calculate quality stats. As mentioned, this does not require a separate reference genome...all you need is your de novo genome assembly and the reads used to construct the assembly.
 
-As a note: `merqury` was originally designed to use Illumina sequencing reads, which are very high accuracy. It should still work current gen single molecule real-time sequencing reads such as PacBio Hifi (read accuracy ~99.9%) and more recent chemistries from Oxford Nanopore (read accuracy >98%), though the higher error rates compared to Illumina might affect some of the estimates.
+If you have built your assembly using our [Hifiasm snakemake pipeline](https://github.com/harvardinformatics/pacbio_hifi_assembly), `merqury` is already run as part of the QC steps and you can skip straight to interpretting the output. However if you already have an assembly or wish to re-run `merqury`, let's look at how to install and run it.
 
 ## Installing the programs
-While `merqury` can be installed using `conda/mamba` there are some environmental variables that still need to be set, and `meryl` need to be installed manually.
-
-
-### Installing merqury
+The easiest way to install is using the `conda/mamba` package for `merqury`, which includes the required `meryl` program. Assuming you are on the Harvard `cannon` HPC (or similar), you can load the `python` module and create a `conda` environment for `merqury` as follows (if you are not on a HPC, you will have to install `python` and `conda` yourself):
 
 ```
 #Load python and create a conda environment
@@ -23,34 +19,23 @@ conda install -c bioconda merqury
 
 ```
 
-When you install `merqury`, it will print out a path that needs to be set as an environmental variable; you'll want to set this whenever you run the program. E.g.
+As a note, activating the environment will set an environmental variable `$MERQURY` which points to the install of the program and which we will need to reference for several of the supplemental scripts. You can check this variable with:
 
 ```
-MERQURY="/n/holylfs05/LABS/informatics/Users/dkhost/mamba/envs/merqury/share/merqury"
+echo $MERQURY
 ```
-
-### Installing meryl
-Meryl is available as an executable, so simply download it using `wget` in an appropriate spot (e.g. your directory in your lab storage) and unzip it. For convenience, we'll add the Meryl `/bin` directory to our `$PATH` environmental variable for easy reference: 
-
-```
-wget https://github.com/marbl/meryl/releases/download/v1.4.1/meryl-1.4.1.Linux-amd64.tar.xz
-tar -xJf meryl-1.4.1.Linux-amd64.tar.xz
-
-export PATH=/n/holylfs05/LABS/informatics/Users/dkhost/meryl-1.3/bin:$PATH
-```
-
 
 ## Build the kmer database
-First we need to construct a meryl database of the kmers in the reads to enable quick lookup. We can calculate the optimal kmer size using a script included as part of the `Merqury` package, `best_k.sh`. Set the genome size and, optionally, the error rate of the reads:
+First we need to construct a `meryl` database of the kmers in the reads to enable quick lookup. We can calculate the optimal kmer size using a script included as part of the `merqury` package, `best_k.sh`. Set the genome size and, optionally, the error rate of the reads:
 
 ```
 $MERQURY/best_k.sh [genome size] [tolerable_collision_rate=0.001]
 ```
 
 ### How does kmer size affect estimates?
-Merqury looks at the proportions of kmers found in the reads vs the assembly to estimate assembly completeness and accuracy. If we set the kmer size too low we lose "resolution" and cannot detect genuine errors and run the risk of overestimating assembly quality value (QV) scores. 
+Merqury looks at the proportions of kmers found in the reads vs the assembly to estimate assembly completeness and accuracy. As all sequencing technologies will contain errors, we have to balance the size of the kmers with the error rate of the reads. Lowering the kmer size will result in fewer unique kmers, while increasing size will result in more unique kmers. If we set the kmer size too low we lose "resolution" and cannot detect genuine errors and run the risk of overestimating assembly quality value (QV) scores, while too large will do the opposite. 
 
-Merqury was originally designed with an Illumina error rate in mind (i.e. Q30, or 0.001 error rate), and the `best_k.sh` script assumes this error rate. For sequencing with a higher error rate we can increase the `tolerable_collison_rate` parameter in the `best_k.sh` script, which will result in a smaller suggested kmer size. However, the developers recommend **k=31 as a good general setting, and k=21 as a minimum kmer size,**. Tl;dr: *generally it is a better idea to err on the side of caution and use a larger kmer size.* 
+The `best_k.sh` script by default assumes an error rate of about 1 in 1000 (i.e. 0.001 or Q30), which is typical of Illumina short reads and more recent PacBio Hifi reads. Other sequencing technologies have higher error rates, such as Oxford Nanopore (typically ~0.01 or Q20) or older long read chemistries. For sequencing with a higher error rate we can increase the `tolerable_collison_rate` parameter in the `best_k.sh` script, which will result in a smaller suggested kmer size. However, due to the resolution problem mentioned above, the developers recommend **k=21 as a minimum kmer size, and k=31 as a good general purpose setting**. In my experience, k=21 vs k=31 produce very similar estimate of assembly quality (Q62 vs Q61, respectively). If in doubt, *generally it is a better idea to err on the side of caution and use a larger kmer size.* 
 
 ## Run Merqury
 Building the kmer database is the most time consuming step, but depending on the size of your data it should finish in a couple of hours. Here is an example SLURM script to run the whole pipeline on the Cannon cluster. In this example we created our assembly using `hifiasm`, which produced a *primary assembly* (`aphWoo.p_ctg.fa`) and two *haplotype assemblies*, only one of which we are testing here (`aphWoo.hap1.p_ctg.fa`): 
@@ -69,24 +54,20 @@ Building the kmer database is the most time consuming step, but depending on the
 module load python
 conda activate merqury
 
-#Set paths to executables
-MERQURY="/n/holylfs05/LABS/informatics/Users/dkhost/mamba/envs/merqury/share/merqury"
-export PATH=/n/holylfs05/LABS/informatics/Users/dkhost/meryl-1.3/bin:$PATH
-
 READS="/n/holylfs05/LABS/informatics/Lab/projects/tsackton/scrubjay/raw-data/MCZ_Orn_365336/*/*.fastq.gz"
 
 #Build kmer database
 meryl count k=31 output aphwoo_hifireads.meryl $READS
 
 #Run Merqury
-$MERQURY/merqury.sh aphwoo_hifireads.meryl aphWoo.p_ctg.fa aphWoo.hap1.p_ctg.fa merqury_aphwoo
+merqury.sh aphwoo_hifireads.meryl aphWoo.p_ctg.fa aphWoo.hap1.p_ctg.fa merqury_aphwoo
 ```
 
 ## Output 
 ### Interpretting kmer copy number spectra
-The kmer copy number spectrum plot (i.e. spectra-cn plot) compares the number of times a given kmer appears in the raw reads vs the number of times it appears in an assembly, which can give us information about assembly accuracy and completeness. It can also indicate whether there is sequence duplication in the assembly, e.g. if haplotigs are erroneously present (requiring removal with a pipeline like purge_haplotigs). All the actual stats values are present in other output from Merqury, but the spectra-cn plots are still useful for "eyeballing" our assembly to spot any potential problems. There's a lot of information in these plots, so let's walk thru some.
+The kmer copy number spectrum plot (i.e. spectra-cn plot) compares *the number of times a given kmer appears in the raw reads vs the number of times it appears in an assembly*, which can give us information about assembly accuracy and completeness. It can also indicate whether there is sequence duplication in the assembly, e.g. if haplotigs are erroneously present (requiring removal with a separate pipeline like `purge_haplotigs`). All the actual stats values are present in other output from Merqury, but the spectra-cn plots are still useful for "eyeballing" our assembly to spot any potential problems. There's a lot of information in these plots, so let's walk thru what they look like and how to interpret them.
 
-First, we can use the `*cn.hist` output file with the `plot_spectra_cn.R` script that is included with the Merqury repo to actually construct the spectrum histogram; the script will plot the data several different ways (line plot, filled histogram, stacked histogram), personally I find the "stacked" plot easiest to interpret. We'll construct a plot for both our primary assembly and our haplotype assembly:
+First, we can use the `*cn.hist` output file with the `plot_spectra_cn.R` script that is included with the Merqury repo to actually construct the spectrum histogram; the script will plot the data several different ways (line plot, filled histogram, stacked histogram)... personally I find the "stacked" plot easiest to interpret. We'll construct a plot for both our primary assembly and our haplotype assembly:
 
 ```
 Rscript $MERQURY/plot/plot_spectra_cn.R -f merqury_aphwoo.AW_365336.p_ctg.spectra-cn.hist -p -o merqury_aphwoo.AW_365336.p_ctg -m 100
@@ -94,7 +75,7 @@ Rscript $MERQURY/plot/plot_spectra_cn.R -f merqury_aphwoo.AW_365336.p_ctg.spectr
 Rscript $MERQURY/plot/plot_spectra_cn.R -f merqury_aphwoo.AW_365336.hap1.p_ctg.spectra-cn.hist -p -o merqury_aphwoo.AW_365336.hap1 -m 100
 ```
 
-The `-p` argument outputs the plots as PDF files, and the `-m 100` argument sets the maximum of the x-axis to 100. 
+The `-p` argument outputs the plots as PDF files, and the `-m 100` argument sets the maximum of the x-axis to 100 (note the max x-axis might take some tinkering, depending on your data!). 
 
 'Kmer multiplicity' refers to home many times a given kmer occurs *in the read set*, while the line color refers to how many times a given kmer appears *in the assembly*. For a diploid organism like in our example, we should expect to see three main peaks. The peak around ~1 represents low frequency kmers that only occur a single time, and thus can be assumed to be sequencing errors. We then have two peaks: one centered around ~48, which corresponds to our sequencing depth and *represents kmers present in both haplotypes*, aka the 2-copy or homozygous peak. We should then have a smaller peak centered at roughly half coverage which *represents kmers present only in a single haplotype*, aka the 1-copy or heterozygous peak.
 
