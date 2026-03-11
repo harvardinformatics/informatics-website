@@ -104,7 +104,7 @@ This virtual seminar will introduce some tips and tricks for productively workin
 
 #### Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup
 
-**Thursday March 19, 2026, 12PM - 1PM**
+**Thursday March 19, 2026, 11AM - 12PM**
 
 Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
 
@@ -112,7 +112,7 @@ Part 1 introduces students to the basics of single-cell RNA-seq analysis, includ
 
 #### Introduction to single-cell RNA-seq analysis Part 2: clustering, cell type annotation, and differential expression
 
-**Thursday March 26, 2026, 12PM - 1PM**
+**Thursday March 26, 2026, 11AM - 12PM**
 
 Part 2 covers cluster marker gene discovery, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. 
 
