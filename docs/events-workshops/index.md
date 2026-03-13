@@ -155,7 +155,7 @@ We host programming and pizza events the second Wednesday of every month. Join u
 
 Spring 2026 Programming & Pizza dates:
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: Februray 11, Northwest Building room B227.45, 4:00-6:00PM</span>
+<span style="color:gray;">:fontawesome-solid-pizza-slice: February 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
 <span style="color:gray;">:fontawesome-solid-pizza-slice: March 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
@@ -308,6 +308,12 @@ Part 2 covers cluster marker gene discover, cell type annotation, and for multi-
 
 <div class="grid cards short-training-grid" markdown>
 
+- ##### :material-robot-outline: Using LLMs and coding agents for bioinformatics
+
+    March 12, 2026, 11:00AM-12:00PM (Virtual)
+
+    [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/llms-for-bioinformatics/LLMs_for_Bioinformatics.pdf){ .md-button }
+
 - ##### :material-chart-line: Population Genomics: Getting started with SNPArcher
 
     December 10, 2025, 11:00AM-12:00PM (Virtual)
@@ -362,7 +368,7 @@ Part 2 covers cluster marker gene discover, cell type annotation, and for multi-
     [Training page :material-arrow-right:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md){ .md-button }
     [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.Rmd){ .md-button }
 
-- <span class="empty-card"></span>
+<!-- - <span class="empty-card"></span> -->
 
 </div>
 
