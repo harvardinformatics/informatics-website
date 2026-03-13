@@ -20,7 +20,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 
     <center>
         <a href="events-workshops/#using-omero-for-imaging-workflows-a-full-day-virtual-hands-on-workshop">
-            <img src="../../img/events/omero_zoom_header.png" alt="OMERO workshop banner" title="OMERO Workshop - Spring 2026" />
+            <img src="img/events/omero_zoom_header.png" alt="OMERO workshop banner" title="OMERO Workshop - Spring 2026" />
         </a>
     </center>
 <!--
