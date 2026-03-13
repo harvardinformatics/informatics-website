@@ -9,9 +9,33 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming Events & Workshops
 
-Here is our first round of events for the Spring 2026 semester! 
-
 *For the most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
+
+### Using OMERO for Imaging Workflows: A Full-Day Virtual Hands-On Workshop
+
+**Friday March 27, 2026, 9:00AM-4:00PM (Virtual)**
+
+<p align="center">
+    <a href="https://harvard.zoom.us/meeting/register/8zZVeuCuS0qntX9jxXIH4A" target="_blank">
+        <img src="../../img/events/Omero_flyer.png" alt="Omero Workshop Flyer for Spring 2026" title="Omero Workshop Flyer - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;"/>
+    </a>
+</p>
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/8zZVeuCuS0qntX9jxXIH4A){:target="_blank" .md-button .md-button--primary .centered }
+
+Join us for a full day hands-on workshop on how to use the open source software [OMERO](https://www.openmicroscopy.org/omero/) for your image analysis and data management needs. Although not required, participants may want to have the [OMERO.insight](https://omero-guides.readthedocs.io/en/latest/upload/docs/import-desktop-client.html#setup) app installed and/or the [OMERO plugin for FIJI](https://omero-guides.readthedocs.io/en/latest/fiji/docs/installation.html). Follow the links for installation instructions. 
+
+??? info "Schedule of the day"
+
+    | Time            | Topic     |
+    |-----------------|------------------------|
+    | 9:00 – 10:30    | Importing into OMERO|
+    | 10:30 – 10:45   |Break   |
+    | 10:45 – 12:00   | **OMERO core concepts I**<br>- Data management<br>- Metadata, Users and groups |
+    | 12:00 – 1:00    | Lunch             |
+    | 1:00 – 2:30     | **OMERO core concepts II**<br>- Viewers: OMERO.iviewer<br>- Import of metadata (CSV import scripts)<br>- OMERO.figure introduction |
+    | 2:30 – 2:45     | Break    |
+    | 2:45 – 4:00     | **OMERO.figure part II**<br>**Analysis of Images in OMERO:**<br>- Analysis with 3rd party tools (principles)<br>- QuPath and OMERO (optional)<br>- Analysis with Fiji: manual<br>- Analysis with Fiji: scripting |
 
 <!-- ### Research Services Showcase
 
@@ -92,7 +116,7 @@ This is a hands-on training teaching how to use command line git to version cont
 
 This virtual seminar will introduce students to the basic concept of a computing cluster and walk them through how to create jobs and monitor them.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VFD_JEFPQzSby_SK0czkgg#/registration){:target="_blank" .md-button .md-button--primary .centered }-->
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VFD_JEFPQzSby_SK0czkgg#/registration){:target="_blank" .md-button .md-button--primary .centered }
 
 #### How to effectively use LLMs and coding agents for bioinformatics
 
@@ -100,7 +124,7 @@ This virtual seminar will introduce students to the basic concept of a computing
 
 This virtual seminar will introduce some tips and tricks for productively working with LLMs, understanding their strong and weak points, and managing AI agents in the context of bioinformatics.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VH6CaFLeTSeHls4f_vMwdw#/registration){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VH6CaFLeTSeHls4f_vMwdw#/registration){:target="_blank" .md-button .md-button--primary .centered }-->
 
 #### Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup
 
@@ -118,6 +142,7 @@ Part 2 covers cluster marker gene discovery, cell type annotation, and for multi
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/Cyd-A4vJRyWiI202d9Dz1A){:target="_blank" .md-button .md-button--primary .centered }
 
+
 ## Recurring events
 
 ### Office hours
@@ -130,9 +155,9 @@ We host programming and pizza events the second Wednesday of every month. Join u
 
 Spring 2026 Programming & Pizza dates:
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: Februray 11, Northwest Building room B227.45, 4:00-6:00PM</span>
+<span style="color:gray;">:fontawesome-solid-pizza-slice: February 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-:fontawesome-solid-pizza-slice: March 11, Northwest Building room B227.45, 4:00-6:00PM
+<span style="color:gray;">:fontawesome-solid-pizza-slice: March 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
 :fontawesome-solid-pizza-slice: April 8, Northwest Building room B227.45, 4:00-6:00PM
 
@@ -283,6 +308,12 @@ Part 2 covers cluster marker gene discover, cell type annotation, and for multi-
 
 <div class="grid cards short-training-grid" markdown>
 
+- ##### :material-robot-outline: Using LLMs and coding agents for bioinformatics
+
+    March 12, 2026, 11:00AM-12:00PM (Virtual)
+
+    [Download PDF of slides :octicons-download-24:](../workshops/short-trainings/llms-for-bioinformatics/LLMs_for_Bioinformatics.pdf){ .md-button }
+
 - ##### :material-chart-line: Population Genomics: Getting started with SNPArcher
 
     December 10, 2025, 11:00AM-12:00PM (Virtual)
@@ -337,7 +368,7 @@ Part 2 covers cluster marker gene discover, cell type annotation, and for multi-
     [Training page :material-arrow-right:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.md){ .md-button }
     [Download RMD file :octicons-download-24:](../workshops/short-trainings/r-tidyverse/R_tidyverse_revised.Rmd){ .md-button }
 
-- <span class="empty-card"></span>
+<!-- - <span class="empty-card"></span> -->
 
 </div>
 
