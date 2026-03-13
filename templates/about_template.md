@@ -16,11 +16,11 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
 
     #### **OMERO Workshop**
 
-    Join us for a full day hands-on workshop on how to use the open source software [OMERO](https://www.openmicroscopy.org/omero/) for your image analysis and data management needs. Check the [Events & Workshops page](events-workshops/#using-omero-for-imaging-workflows-a-full-day-virtual-hands-on-workshop) for the full flyer and registration link.
+    Join us for a full day hands-on workshop on how to use the open source software [OMERO](https://www.openmicroscopy.org/omero/) for your image analysis and data management needs. Check the [Events & Workshops page](events-workshops/index.md#using-omero-for-imaging-workflows-a-full-day-virtual-hands-on-workshop) for the full flyer and registration link.
 
     <center>
         <a href="events-workshops/#using-omero-for-imaging-workflows-a-full-day-virtual-hands-on-workshop">
-            <img src="img/events/omero_zoom_header.png" alt="OMERO workshop banner" title="OMERO Workshop - Spring 2026" />
+            <img src="img/events/Omero_zoom_header.png" alt="OMERO workshop banner" title="OMERO Workshop - Spring 2026" />
         </a>
     </center>
 <!--
