@@ -10,20 +10,20 @@ The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is 
 
 The mission of the Bioinformatics Core includes training, consulting, and research. We organize in several ways to facilitate these goals.
 
-<!-- ???+ tip "Announcements"
+???+ tip "Announcements"
 
     ### Announcements {: .toc-only }
 
-    #### **Research Services Symposium**
+    #### **OMERO Workshop**
 
-    Join us for a virtual showcase of research services and support offerings across FAS. Check the [Events & Workshops page](events-workshops/#research-services-showcase) for the full flyer and registration link.
+    Join us for a full day hands-on workshop on how to use the open source software [OMERO](https://www.openmicroscopy.org/omero/) for your image analysis and data management needs. Check the [Events & Workshops page](events-workshops/#using-omero-for-imaging-workflows-a-full-day-virtual-hands-on-workshop) for the full flyer and registration link.
 
     <center>
-        <a href="events-workshops/#research-services-showcase">
-            <img src="../../img/events/2026-research-services-showcase-banner.png" alt="Research Services Showcase baner" title="Research Services Showcase - Spring 2026" />
+        <a href="events-workshops/#using-omero-for-imaging-workflows-a-full-day-virtual-hands-on-workshop">
+            <img src="../../img/events/omero_zoom_header.png" alt="OMERO workshop banner" title="OMERO Workshop - Spring 2026" />
         </a>
     </center>
-
+<!--
     ---
 
     #### **New Data Concierge Service**
