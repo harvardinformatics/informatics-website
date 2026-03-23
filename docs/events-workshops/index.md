@@ -37,6 +37,20 @@ Join us for a full day hands-on workshop on how to use the open source software 
     | 2:30 – 2:45     | Break    |
     | 2:45 – 4:00     | **OMERO.figure part II**<br>**Analysis of Images in OMERO:**<br>- Analysis with 3rd party tools (principles)<br>- QuPath and OMERO (optional)<br>- Analysis with Fiji: manual<br>- Analysis with Fiji: scripting |
 
+### Genomics on the Command Line: Developing Your Bioinformatics Intuition (Spring 2026)
+
+**Thursdays April 2 - April 23, 2026, 9:30AM-12:30PM (In-person)**
+
+**[Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 453**
+
+Genomics on the Command Line is a four-part beginner workshop designed to help researchers build confidence in taking a practical “first pass” look at genomics data on the command line. The goal is not to teach in-depth scripting in Bash, Python, or LLM-based workflows, but to help participants develop a hands-on feel for common bioinformatics file formats, the basic tools available for inspecting them, and the kinds of questions they can answer quickly when something looks off.
+
+It is designed for biologists at all levels who want to know how to look at their data files and go "huh, that's strange" and then know how to diagnose and troubleshoot the problem. 
+
+[Register Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSdMNEPPavtez0LuEcl2GVPTYNoLgjy8b3Fnsk7F8ksA--SM4Q/viewform?usp=dialog){:target="_blank" .md-button .md-button--primary .centered }
+
+[Landing Page](../workshops/biotips/index.md){.md-button .md-button--primary .centered }
+
 <!-- ### Research Services Showcase
 
 **Thursday March 4, 2026, 10:00AM–4:00PM (Virtual)**
@@ -124,7 +138,7 @@ This virtual seminar will introduce students to the basic concept of a computing
 
 This virtual seminar will introduce some tips and tricks for productively working with LLMs, understanding their strong and weak points, and managing AI agents in the context of bioinformatics.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VH6CaFLeTSeHls4f_vMwdw#/registration){:target="_blank" .md-button .md-button--primary .centered }-->
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VH6CaFLeTSeHls4f_vMwdw#/registration){:target="_blank" .md-button .md-button--primary .centered }
 
 #### Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup
 
@@ -132,7 +146,7 @@ This virtual seminar will introduce some tips and tricks for productively workin
 
 Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/f1nXo9cETgKGDlGqIoRCmA){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/f1nXo9cETgKGDlGqIoRCmA){:target="_blank" .md-button .md-button--primary .centered }-->
 
 #### Introduction to single-cell RNA-seq analysis Part 2: clustering, cell type annotation, and differential expression
 
@@ -217,11 +231,11 @@ This workshop aims to teach students how to be more effective at working on thei
 
 [Healthy Habits Landing Page :material-arrow-right:](../workshops/healthy-habits/index.md){ .md-button .md-button--primary .centered }
 
-### :material-application-brackets-outline: Unix tips and tricks for bioinformatics (Spring 2024)
+### :material-application-brackets-outline: Genomics on the Command Line: Developing Your Bioinformatics Intuition (Spring 2026)
 
-This workshop aims to introduce students to some basic bioinformatics file formats, tools, and general best practices. The first two days of the workshop will be dedicated to introductions of bioinformatics file formats and the command line tools that we use to view, manipulate, and analyze them. After that, we will begin to shift from using individual commands to writing shell scripts and constructing bioinformatics workflows.
+Genomics on the Command Line is a four-part beginner workshop designed to help researchers build confidence in taking a practical “first pass” look at genomics data on the command line. The goal is not to teach in-depth scripting in Bash, Python, or LLM-based workflows, but to help participants develop a hands-on feel for common bioinformatics file formats, the basic tools available for inspecting them, and the kinds of questions they can answer quickly when something looks off.
 
-[Biotips Landing Page :material-arrow-right:](../workshops/biotips/index.md){ .md-button .md-button--primary .centered }
+[Genomics on the Command Line Landing Page :material-arrow-right:](../workshops/biotips/index.md){ .md-button .md-button--primary .centered }
 
 ---
 

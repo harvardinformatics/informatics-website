@@ -61,6 +61,21 @@
   width: max-content !important;   /* button fits its text */
 }
 
+.md-button.is-disabled {
+  background-color: #bdbdbd !important;
+  border-color: #bdbdbd !important;
+  color: #ffffff !important;
+  pointer-events: none;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.md-button.is-disabled:hover {
+  background-color: #bdbdbd !important;
+  border-color: #bdbdbd !important;
+  color: #ffffff !important;
+}
 
 /*------------------------------------------------------*/
 /* Navigation and sidebar styles */
