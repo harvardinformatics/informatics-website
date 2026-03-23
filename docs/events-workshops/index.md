@@ -146,7 +146,7 @@ This virtual seminar will introduce some tips and tricks for productively workin
 
 Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/f1nXo9cETgKGDlGqIoRCmA){:target="_blank" .md-button .md-button--primary .centered }
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/f1nXo9cETgKGDlGqIoRCmA){:target="_blank" .md-button .md-button--primary .centered }-->
 
 #### Introduction to single-cell RNA-seq analysis Part 2: clustering, cell type annotation, and differential expression
 
@@ -154,7 +154,7 @@ Part 1 introduces students to the basics of single-cell RNA-seq analysis, includ
 
 Part 2 covers cluster marker gene discovery, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. 
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/Cyd-A4vJRyWiI202d9Dz1A){:target="_blank" .md-button .md-button--primary .centered }-->
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/Cyd-A4vJRyWiI202d9Dz1A){:target="_blank" .md-button .md-button--primary .centered }
 
 
 ## Recurring events
