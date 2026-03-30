@@ -1,4 +1,7 @@
 Event type,Name,Date,Time,Location
+"<span aria-label=""Special event"" title=""Special event"">:material-star-plus-outline:</span>",**Using OMERO for Imaging Workflows: A Full-Day Virtual Hands-On Workshop**,March 27,9:00AM-4:00PM,Virtual
+"<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**Introduction to single-cell RNA-seq analysis Part 2: clustering cell type annotation and differential expression**,March 26,11:00AM-12:00PM,Virtual
+"<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup**,March 19,11:00AM-12:00PM,Virtual
 "<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**How to effectively use LLMs and coding agents for bioinformatics**,March 12,11:00AM-12:00PM,Virtual
 "<span aria-label=""Programming and Pizza"" title=""Programming and Pizza"">:fontawesome-solid-pizza-slice:</span>",**Programming and Pizza**,March 11,4:00PM-6:00PM,Northwest Building B227.45
 "<span aria-label=""Short training"" title=""Short training"">:material-monitor-account:</span>",**Command Line 101: SLURM and job management tips**,March 6,11:00AM-12:00PM,Virtual

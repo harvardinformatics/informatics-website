@@ -11,33 +11,33 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 *For the most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
 
-### Using OMERO for Imaging Workflows: A Full-Day Virtual Hands-On Workshop
+<!-- ### Template for special events
 
-**Friday March 27, 2026, 9:00AM-4:00PM (Virtual)**
+**Day Month Date Year, Time (Location)**
+
+Description of the event.
+
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/XXXXXXXXXXXX){:target="_blank" .md-button .md-button--primary .centered } 
 
 <p align="center">
-    <a href="https://harvard.zoom.us/meeting/register/8zZVeuCuS0qntX9jxXIH4A" target="_blank">
-        <img src="../../img/events/Omero_flyer.png" alt="Omero Workshop Flyer for Spring 2026" title="Omero Workshop Flyer - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;"/>
+    <a href="LINK" target="_blank">
+        <img src="../../img/events/FLYER.png" alt="FLYER ALT" title="FLYER TITLE" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;"/>
     </a>
 </p>
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/8zZVeuCuS0qntX9jxXIH4A){:target="_blank" .md-button .md-button--primary .centered }
-
-Join us for a full day hands-on workshop on how to use the open source software [OMERO](https://www.openmicroscopy.org/omero/) for your image analysis and data management needs. Although not required, participants may want to have the [OMERO.insight](https://omero-guides.readthedocs.io/en/latest/upload/docs/import-desktop-client.html#setup) app installed and/or the [OMERO plugin for FIJI](https://omero-guides.readthedocs.io/en/latest/fiji/docs/installation.html). Follow the links for installation instructions. 
 
 ??? info "Schedule of the day"
 
     | Time            | Topic     |
-    |-----------------|------------------------|
-    | 9:00 – 10:30    | Importing into OMERO|
-    | 10:30 – 10:45   |Break   |
-    | 10:45 – 12:00   | **OMERO core concepts I**<br>- Data management<br>- Metadata, Users and groups |
-    | 12:00 – 1:00    | Lunch             |
-    | 1:00 – 2:30     | **OMERO core concepts II**<br>- Viewers: OMERO.iviewer<br>- Import of metadata (CSV import scripts)<br>- OMERO.figure introduction |
-    | 2:30 – 2:45     | Break    |
-    | 2:45 – 4:00     | **OMERO.figure part II**<br>**Analysis of Images in OMERO:**<br>- Analysis with 3rd party tools (principles)<br>- QuPath and OMERO (optional)<br>- Analysis with Fiji: manual<br>- Analysis with Fiji: scripting |
+    |-----------------|--------------------|
+    | 9:00 – 10:30    | Activity|
+    | 10:30 – 10:45   | Activity   |
 
-### Genomics on the Command Line: Developing Your Bioinformatics Intuition (Spring 2026)
+
+-->
+
+### :material-tools: Workshops
+
+#### Genomics on the Command Line: Developing Your Bioinformatics Intuition (Spring 2026)
 
 **Thursdays April 2 - April 23, 2026, 9:30AM-12:30PM (In-person)**
 
@@ -51,110 +51,16 @@ It is designed for biologists at all levels who want to know how to look at thei
 
 [Landing Page](../workshops/biotips/index.md){.md-button .md-button--primary .centered }
 
-<!-- ### Research Services Showcase
+<!-- ### :material-monitor-account: Short Trainings (virtual) -->
 
-**Thursday March 4, 2026, 10:00AM–4:00PM (Virtual)**
+<!-- #### Template for short trainings
 
-Join us for a virtual showcase of research services and support offerings across FAS.
+**Day Month Date Year, Time (Virtual)**
 
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/zQw5e9EXRyOQJG628aiHQA#/registration){:target="_blank" .md-button .md-button--primary .centered }
+Description of the training.
 
-??? info "Full schedule of speakers"
+[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/XXXXXXXXXXXX){:target="_blank" .md-button .md-button--primary .centered } -->
 
-    #### Schedule
-
-    | Time | Core | Speaker |
-    |-----------|------|---------|
-    | 10:00a | Introduction | Lei Ma|
-    | 10:15a | Harvard Center for Biological Imaging (HCBI) | Alex Lovely |
-    | 10:30a | HCBI | Emily Roloson |
-    | 10:45a | HCBI | Evan Heller |
-    | 11:00a | HCBI | Q&A |
-    | 11:15a | Harvard Center for Mass Spectometry| Sunia Trauger|
-    | 12:00p | Bauer Sequencing Core | Nicole El-Ali (Ramirez), Kelly Cribary, Jeff Nelson |
-    | 12:15p | Bauer | Kelsie Lopez |
-    | 12:30p | Bauer | Colin Kim |
-    | 12:45p | Bauer | Q&A |
-    | 1:00p | FAS Research Computing (FASRC) | Manasvita Joshi|
-    | 1:15p | FASRC | Piyush Nanda |
-    | 1:30p | FASRC | Q&A |
-    | 1:45p | Informatics | Lei Ma, Tim Sackton |
-    | 2:00p | Informatics | Jessica Whited |
-    | 2:15p | Informatics | Robin Hopkins |
-    | 2:30p | Informatics | Q&A |
-    | 2:45p | Library | Ehsan Moghadam|
-    | 3:00p | Library | Sarah Joan Kariko |
-    | 3:15p | Library | Q&A |
-
-<img src="../../img/events/2026-research-services-showcase-flyer.png" alt="Research Services Showcase flyer" title="Research Services Showcase - Spring 2026" style="max-width:640px; width:100%; height:auto; display:block; margin:0 auto;" /> -->
-
-<!-- ### :material-tools: Workshops -->
-
-### :material-monitor-account: Short Trainings (virtual)
-
-<!-- #### Command line 101: What's the deal with directories?
-
-**Thursday February 5 2026, 11AM - 12PM**
-
-Is this your first time sitting down typing commands into the command line or logging into the Cannon cluster to do your analysis? In this one hour seminar, we'll show you how files and directories are organized on the cluster, give tips on how to manage your own project directories, and more. You'll learn how to navigate a file system using the command line (aka the terminal), understand file permissions, and write files using the nano file editor. This seminar is suitable for absolute beginners to command line and cluster usage.
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/S0eEFw5pQdaxbUazGtYLCA){:target="_blank" .md-button .md-button--primary .centered }
-
-#### Command line 101: Tips & tricks for aspiring power users
-
-**Thursday February 12 2026, 11AM - 12PM**
-
-Now that you know how to move around the cluster, let's explore how to customize your command line experience. You'll learn about using dotfiles to automatically run things upon login, save and search your command  history, use terminal multiplexers like screen, and more. If you plan to spend a good amount of time running programs on the command line, this seminar will save you effort and make your experience smoother!
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ZFpSxkP_Qtqu9UlPzRRYDA){:target="_blank" .md-button .md-button--primary .centered }
-
-#### Command line 101: Integrating your local and cluster compute environments
-
-**Thursday February 19 2026, 11AM - 12PM**
-
-In this seminar, we will cover topics and allow you to seamlessly move between your local environment to the cluster computer environment by using tools like VSCode and various file transfer applications. Geared towards both beginner and intermediate users, students will learn how to use apps to help them program and process data like a pro.
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/ltySkk-NQMyoDpcx6mkP_Q){:target="_blank" .md-button .md-button--primary .centered } 
-
-#### Command line 101: Git/GitHub on the cluster and on your computer
-
-**Thursday February 26 2026, 11AM - 12PM**
-
-This is a hands-on training teaching how to use command line git to version control your code and how to use GitHub to backup your scripts. To participate in the hands-on portion of the workshop, please have a github account. Cannon cluster account is optional. Users are expected to know how to create files and directories using the command line.
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/pHX2psB2RXSTCVtkcoImsg){:target="_blank" .md-button .md-button--primary .centered }
-
-#### Command Line 101: SLURM and job management tips
-
-**Friday March 6, 2026, 11AM - 12PM**
-
-This virtual seminar will introduce students to the basic concept of a computing cluster and walk them through how to create jobs and monitor them.
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VFD_JEFPQzSby_SK0czkgg#/registration){:target="_blank" .md-button .md-button--primary .centered }
-
-#### How to effectively use LLMs and coding agents for bioinformatics
-
-**Thursday March 12, 2026, 11AM - 12PM**
-
-This virtual seminar will introduce some tips and tricks for productively working with LLMs, understanding their strong and weak points, and managing AI agents in the context of bioinformatics.
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/VH6CaFLeTSeHls4f_vMwdw#/registration){:target="_blank" .md-button .md-button--primary .centered }
-
-#### Introduction to single-cell RNA-seq analysis Part 1: Pre-processing and cleanup
-
-**Thursday March 19, 2026, 11AM - 12PM**
-
-Part 1 introduces students to the basics of single-cell RNA-seq analysis, including pre-processing and cleanup of data for downstream analyses.
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/f1nXo9cETgKGDlGqIoRCmA){:target="_blank" .md-button .md-button--primary .centered }-->
-
-#### Introduction to single-cell RNA-seq analysis Part 2: clustering, cell type annotation, and differential expression
-
-**Thursday March 26, 2026, 11AM - 12PM**
-
-Part 2 covers cluster marker gene discovery, cell type annotation, and for multi-sample, multi-condition experiments, assessing and correcting batch effects, and differential expression analysis across experimental conditions. 
-
-[Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/Cyd-A4vJRyWiI202d9Dz1A){:target="_blank" .md-button .md-button--primary .centered }
 
 
 ## Recurring events
