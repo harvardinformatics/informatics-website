@@ -10,7 +10,7 @@ The Harvard Faculty of Arts and Sciences Informatics Group (FAS Informatics) is 
 
 The mission of the Bioinformatics Core includes training, consulting, and research. We organize in several ways to facilitate these goals.
 
-???+ tip "Announcements"
+<!-- ???+ tip "Announcements"
 
     ### Announcements {: .toc-only }
 
@@ -23,7 +23,7 @@ The mission of the Bioinformatics Core includes training, consulting, and resear
             <img src="img/events/Omero_zoom_header.png" alt="OMERO workshop banner" title="OMERO Workshop - Spring 2026" />
         </a>
     </center>
-<!--
+
     ---
 
     #### **New Data Concierge Service**
