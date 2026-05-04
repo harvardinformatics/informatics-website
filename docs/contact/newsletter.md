@@ -5,7 +5,12 @@ description: "Use this form to sign up for our monthly newsletter about events a
 
 # Newsletter sign-up
 
-Sign up for our newsletter! We will send out notifications about events and workshops of related to bioinformatics and data science.
+Sign up for our newsletter! We will send out notifications about events and workshops of related to bioinformatics and data science. 
+
+Our **monthly newsletter** will include all upcoming Informatics events for that month and links to other Harvard events/workshops related to bioinformatics and data science. 
+We will also send out **weekly emails** with events from the FAS Informatics group only. 
+
+The FAS Informatics group is organizing a series of monthly meetings focused on the analysis of comparative genomic data (whole genome alignment, orthology inference, gene alignments, gene family evolution, molecular evolutionary models of protein-coding and conserved non-coding regions, and related analysis). Check the box for **Comparative Genomics mailing group** if you are interested!
 
 <div id="mc_embed_shell">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
