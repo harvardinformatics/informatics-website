@@ -13,12 +13,37 @@ import mkdocs_gen_files
 ############################################################
 
 def getYearRange(person):
-    if person.get("date-joined") and person.get("date-left"):
-        start_year = person["date-joined"].split("-")[-1]
-        end_year = person["date-left"].split("-")[-1]
+    date_joined = person.get("date-joined")
+    date_left = person.get("date-left")
+
+    def format_range(start_date, end_date):
+        start_year = start_date.split("-")[-1] if start_date else ""
+        end_year = end_date.split("-")[-1] if end_date else ""
+        if start_year and end_year:
+            return f"{start_year}" if start_year == end_year else f"{start_year}-{end_year}"
+        if start_year:
+            return start_year
+        return ""
+
+    if isinstance(date_joined, list) or isinstance(date_left, list):
+        if not isinstance(date_joined, list) or not isinstance(date_left, list):
+            raise ValueError("date-joined and date-left must both be lists when either is a list")
+        if len(date_joined) != len(date_left):
+            raise ValueError("date-joined and date-left lists must have the same length")
+        return ", ".join(
+            years for years in (
+                format_range(start_date, end_date)
+                for start_date, end_date in zip(date_joined, date_left)
+            )
+            if years
+        )
+
+    if date_joined and date_left:
+        start_year = date_joined.split("-")[-1]
+        end_year = date_left.split("-")[-1]
         return f"{start_year}" if start_year == end_year else f"{start_year}-{end_year}"
-    elif person.get("date-joined"):
-        return person["date-joined"].split("-")[-1]
+    elif date_joined:
+        return date_joined.split("-")[-1]
     else:
         return ""
 
@@ -26,13 +51,19 @@ def getYearRange(person):
 
 def parseEndYear(person):
     y = person.get("years", "")
-    # For "2021-2024" → 2024, for "2022" → 2022
-    if "-" in y:
-        return int(y.split("-")[-1])
-    try:
-        return int(y)
-    except Exception:
-        return -1  # Or another value to push "unknown" to the end
+    end_years = []
+    # For "2021-2024" -> 2024, for "2022" -> 2022, for "2024, 2026" -> 2026
+    for date_range in y.split(","):
+        date_range = date_range.strip()
+        if not date_range:
+            continue
+        if "-" in date_range:
+            date_range = date_range.split("-")[-1]
+        try:
+            end_years.append(int(date_range))
+        except Exception:
+            continue
+    return max(end_years) if end_years else -1
 
 ####################
 

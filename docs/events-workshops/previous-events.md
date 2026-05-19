@@ -14,6 +14,7 @@ These are topics of previous events with no attached contents and the dates of o
     <tr>
         <td><span class="twemoji" aria-label="Workshop" title="Workshop">{% include "assets/.icons/tools.svg" %}</span> = Workshop</td>
         <td><span class="twemoji" aria-label="Short training" title="Short training">{% include "assets/.icons/monitor-account.svg" %}</span> = Short training</td>
+        <td><span class="twemoji" aria-label="User group meeting" title="User group meeting">{% include "assets/.icons/account-group.svg" %}</span> = User group meeting</td>
         <td><span class="twemoji" aria-label="Special event" title="Special event">{% include "assets/.icons/star-plus-outline.svg" %}</span> = Special event</td>
         <td><span class="twemoji" aria-label="Programming and Pizza" title="Programming and Pizza">{% include "assets/.icons/pizza-slice.svg" %}</span> = Programming and Pizza</td>
     </tr>

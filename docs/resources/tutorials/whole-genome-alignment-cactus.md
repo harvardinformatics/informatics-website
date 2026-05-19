@@ -222,6 +222,10 @@ Click below to take a look at an example to get a sense for how many resources y
     
     We allocated the following resources for the Cactus rules:
 
+    !!! warning "GPU usage in Cactus has changed over time"
+
+        Note that in this example GPUs were used for 3 rules: **Preprocess**, **Blast**, and **Align**. Current versions of cactus only use GPUs for the **Blast** rule, so you will only see GPU usage and improvements for that rule. See [this issue in the Cactus github repo   :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/issues/1652){:target="_blank"} for more information.
+
     <center>
 
     | Step       | Partition | Memory | CPUs | GPUs | Time |
