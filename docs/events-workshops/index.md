@@ -9,7 +9,9 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming Events & Workshops
 
-*For the most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
+We currently have no scheduled events. Check back soon as we update our schedule for Summer and Fall 2026!
+
+*To view our most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
 
 <!-- ### Template for special events
 
@@ -35,21 +37,22 @@ Description of the event.
 
 -->
 
-### :material-tools: Workshops
+<!-- ### :material-tools: Workshops -->
 
-#### Genomics on the Command Line: Developing Your Bioinformatics Intuition (Spring 2026)
+<!-- #### Template for workshops
 
-**Thursdays April 2 - April 23, 2026, 9:30AM-12:30PM (In-person)**
+**Date(s), Year, Time(s) (in person or virtual)**
 
 **[Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 453**
 
-Genomics on the Command Line is a four-part beginner workshop designed to help researchers build confidence in taking a practical “first pass” look at genomics data on the command line. The goal is not to teach in-depth scripting in Bash, Python, or LLM-based workflows, but to help participants develop a hands-on feel for common bioinformatics file formats, the basic tools available for inspecting them, and the kinds of questions they can answer quickly when something looks off.
+Description of workshop.
 
 It is designed for biologists at all levels who want to know how to look at their data files and go "huh, that's strange" and then know how to diagnose and troubleshoot the problem. 
 
 [Register Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSdMNEPPavtez0LuEcl2GVPTYNoLgjy8b3Fnsk7F8ksA--SM4Q/viewform?usp=dialog){:target="_blank" .md-button .md-button--primary .centered }
 
-[Landing Page](../workshops/biotips/index.md){.md-button .md-button--primary .centered }
+[Landing Page](){.md-button .md-button--primary .centered } -->
+
 
 <!-- ### :material-monitor-account: Short Trainings (virtual) -->
 
@@ -61,8 +64,6 @@ Description of the training.
 
 [Zoom Registration :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/XXXXXXXXXXXX){:target="_blank" .md-button .md-button--primary .centered } -->
 
-
-
 ## Recurring events
 
 ### Office hours
@@ -73,15 +74,17 @@ We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest B
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-Spring 2026 Programming & Pizza dates:
+Spring/Summer 2026 Programming & Pizza dates:
 
 <span style="color:gray;">:fontawesome-solid-pizza-slice: February 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
 <span style="color:gray;">:fontawesome-solid-pizza-slice: March 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-:fontawesome-solid-pizza-slice: April 8, Northwest Building room B227.45, 4:00-6:00PM
+<span style="color:gray;">:fontawesome-solid-pizza-slice: April 8, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-:fontawesome-solid-pizza-slice: May 13, Northwest Building room B227.45, 4:00-6:00PM
+<span style="color:gray;">:fontawesome-solid-pizza-slice: May 13, Northwest Building room B227.45, 4:00-6:00PM</span>
+
+:fontawesome-solid-pizza-slice: June 10, Northwest Building room B227.45, 4:00-6:00PM
 
 <!-- :material-arrow-right-bottom: **These will return in the Spring of 2026!** :fontawesome-solid-pizza-slice: -->
 
@@ -104,6 +107,16 @@ This calendar will show all our upcoming office hours as well as any workshops o
 ## Latest Workshop Content
 
 This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is noted.
+
+### :material-application-brackets-outline: Genomics on the Command Line: Developing Your Bioinformatics Intuition (Spring 2026)
+
+!!! info "Note that this workshop was previously called **Biotips**"
+    
+    
+
+Genomics on the Command Line is a four-part beginner workshop designed to help researchers build confidence in taking a practical “first pass” look at genomics data on the command line. The goal is not to teach in-depth scripting in Bash, Python, or LLM-based workflows, but to help participants develop a hands-on feel for common bioinformatics file formats, the basic tools available for inspecting them, and the kinds of questions they can answer quickly when something looks off.
+
+[Genomics on the Command Line Landing Page :material-arrow-right:](../workshops/biotips/index.md){ .md-button .md-button--primary .centered }
 
 ### :material-language-r: Introduction to R (Fall 2025)
 
@@ -136,12 +149,6 @@ This is a six day workshop that will introduce students to Python as a data scie
 This workshop aims to teach students how to be more effective at working on their projects using reproducible habits. We learn how to organize projects on the local machine as well as the Cannon cluster, how to manage software environments, how to use git and GitHub to track code changes, and how to write and scale scripts on an HPC.
 
 [Healthy Habits Landing Page :material-arrow-right:](../workshops/healthy-habits/index.md){ .md-button .md-button--primary .centered }
-
-### :material-application-brackets-outline: Genomics on the Command Line: Developing Your Bioinformatics Intuition (Spring 2026)
-
-Genomics on the Command Line is a four-part beginner workshop designed to help researchers build confidence in taking a practical “first pass” look at genomics data on the command line. The goal is not to teach in-depth scripting in Bash, Python, or LLM-based workflows, but to help participants develop a hands-on feel for common bioinformatics file formats, the basic tools available for inspecting them, and the kinds of questions they can answer quickly when something looks off.
-
-[Genomics on the Command Line Landing Page :material-arrow-right:](../workshops/biotips/index.md){ .md-button .md-button--primary .centered }
 
 ---
 
