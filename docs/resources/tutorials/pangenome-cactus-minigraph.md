@@ -153,6 +153,10 @@ reference: <Sample ID from input_file>
 
 prefix: <string>
 
+join_graph_type: <string. options: full, clip, filter>
+
+join_filter: <integer>
+
 tmp_dir: <path/to/tmp-dir/>
 ```
 
@@ -165,7 +169,11 @@ Simply replace the string surrounded by <> with the path or option desired. Belo
 | `output_dir`           | Directory where the all output will be written. |
 | `reference`            | The sample ID from the input file to serve as the reference for pangenome creation. |
 | `prefix`               | A string that will be appended to all files created by the pipeline. |
+| `join_graph_type`      | Controls the level of filtering on the final files. One of "full", "clip", or "filter". |
+| `join_filter`          | Only applicable for `join_graph_type: filter`. The minimum number of haplotypes that must be present in a node for it to be retained. |
 | `tmp_dir`              | A temporary directory for Snakemake and Cactus to use. Should have lots of space. |
+
+For `join_graph_type` and `join_filter`, see [the Cactus docs :octicons-link-external-24:](https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#clipping-filtering-and-indexing){:target="_blank"} for more info.
 
 #### Specifying resources for each rule
 
