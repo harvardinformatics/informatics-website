@@ -9,7 +9,21 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming Events & Workshops
 
-We currently have no scheduled events. Check back soon as we update our schedule for Summer and Fall 2026!
+#### Comparative Genomics User Group
+
+**Next meeting: Monday June 15, 2026, Northwest Labs B253**
+
+*Main topic: Orthology inference*
+
+This group brings researchers across Harvard together to discuss and learn more about modern comparative genomics. It is for people who are using genomic data from multiple species to make inferences about evolutionary processes, with tools/approaches like whole genome alignment, orthology inference, phylogenetics, and molecular evolutionary analysis. One major goal of this group is to discuss common pain points and analysis challenges that come up repeatedly in this kind of work, and move towards developing broadly useful solutions (potentially via a Hackathon to build more robust comparative genomics pipelines). 
+
+To be added to the Comparative Genomics User Group mailing list, fill out the following:
+
+--8<-- "docs/assets/comp-genomics-form.html"
+
+---
+
+Check back soon as we update our schedule for Summer and Fall 2026!
 
 *To view our most up to date workshop materials, check the [Latest Workshop Content](#latest-workshop-content) section below.*
 
