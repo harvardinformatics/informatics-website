@@ -442,4 +442,16 @@ To view a list of previous events and workshops, click the button below.
         padding-top: 18px;
     }
 
+    @media screen and (max-width: 600px) {
+    .md-typeset .md-button.centered {
+        box-sizing: border-box;
+        width: fit-content !important;
+        max-width: 100%;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        text-align: center;
+        line-height: 1.25;
+      }
+    }
+
 </style>
