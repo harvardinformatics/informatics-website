@@ -206,6 +206,19 @@ rule_resources:
     * **mem_mb is in MB** and **time is in minutes**.
     * **If using the [Snakemake partition config file specifically for the Harvard Cannon cluster :material-arrow-top-right:](../snakemake-cannon-config.md){:target="_blank"}, you can leave the `partition:` fields blank and one will be selected automatically based on the other resources requested!**
 
+!!! tip "Scale resources on retry"
+
+    Resource values in `rule_resources` can also be given as per-attempt schedules. When Snakemake is run with retries enabled, such as `--retries 3`, failed jobs can be resubmitted with larger `mem_mb`, longer `time`, or other updated rule resources instead of requiring manual config edits between restarts. For example, for the rule `blast`, you could scale memory and runtime as follows:
+
+    ```yaml
+    rule_resources:
+      blast:
+        mem_mb: [80000, 160000, 200000]
+        time: [1660, 3320, 6640, 7200]
+    ```
+
+    Attempt 1 uses the first value, attempt 2 uses the second, and later attempts reuse the last value. GPU resources such as `gpus` and `gres` are not currently scaled this way.
+
 You will have to determine the proper resource usage for your dataset. Generally, the larger the genomes, the more time and memory each job will need, and the more you will benefit from providing more CPUs and GPUs.
 
 Click below to take a look at an example to get a sense for how many resources you will need to allot, adjusting for the genome size of your organisms. :material-arrow-down-right:
