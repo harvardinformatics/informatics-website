@@ -1,6 +1,8 @@
 Event type,Name,Date,Time,Location
+"<span aria-label=""User group meeting"" title=""User group meeting"">:material-account-group:</span>",**Comparative Genomics User Group Meeting***,June 15,3:30PM-4:30PM,Northwest Building B253
+"<span aria-label=""Programming and Pizza"" title=""Programming and Pizza"">:fontawesome-solid-pizza-slice:</span>",**Programming and Pizza**,June 10,4:00PM-6:00PM,Northwest Building B227.45
 "<span aria-label=""Programming and Pizza"" title=""Programming and Pizza"">:fontawesome-solid-pizza-slice:</span>",**Programming and Pizza**,May 13,4:00PM-6:00PM,Northwest Building B227.45
-"<span aria-label=""User group meeting"" title=""User group meeting"">:material-account-group:</span>",**Comparative Genomics User Group Meeting**,May 2,2:00PM-3:00PM,Northwest Building B253
+"<span aria-label=""User group meeting"" title=""User group meeting"">:material-account-group:</span>",**Comparative Genomics User Group Meeting***,May 2,2:00PM-3:00PM,Northwest Building B253
 "<span aria-label=""Programming and Pizza"" title=""Programming and Pizza"">:fontawesome-solid-pizza-slice:</span>",**Programming and Pizza**,April 8,4:00PM-6:00PM,Northwest Building B227.45
 "<span aria-label=""Workshop"" title=""Workshop"">:material-tools:</span>",**Genomics on the Command Line**,"April 2, 9, 16, and 23",9:30AM-12:30PM,Northwest Building 453
 "<span aria-label=""Special event"" title=""Special event"">:material-star-plus-outline:</span>",**Using OMERO for Imaging Workflows: A Full-Day Virtual Hands-On Workshop**,March 27,9:00AM-4:00PM,Virtual

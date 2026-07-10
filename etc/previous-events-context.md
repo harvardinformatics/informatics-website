@@ -1,3 +1,11 @@
+#### Comparative Genomics User Group
+
+**Next meeting: Monday June 15, 2026, Northwest Labs B253**
+
+*Main topic: Orthology inference*
+
+This group brings researchers across Harvard together to discuss and learn more about modern comparative genomics. It is for people who are using genomic data from multiple species to make inferences about evolutionary processes, with tools/approaches like whole genome alignment, orthology inference, phylogenetics, and molecular evolutionary analysis. One major goal of this group is to discuss common pain points and analysis challenges that come up repeatedly in this kind of work, and move towards developing broadly useful solutions (potentially via a Hackathon to build more robust comparative genomics pipelines). 
+
 #### The Baton Pass: Data Onboarding and Offboarding
 
 *August 27, 2025 11 AM - 1 PM*
