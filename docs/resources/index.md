@@ -21,6 +21,8 @@ Here we have compiled resources related to bioinformatics and computing. These r
 
 - :curly_loop: **[Pangenome inference with Cactus-minigraph][pangenome]**
 
+- :material-format-align-justify: **[Predict conserved elements from a whole genome alignment :octicons-link-external-24:][ces]{:target="_blank"}**
+
 - <span class="empty-card"></span>
 
 - :material-format-align-top: **[Whole genome alignment with Cactus][wga]**
@@ -37,8 +39,6 @@ Here we have compiled resources related to bioinformatics and computing. These r
 
 - <span class="empty-card"></span>
 
-- <span class="empty-card"></span>
-
 </div>
 
 **We are developing tutorials for other data science and bioinformatics tasks. Check back soon!**
@@ -52,6 +52,7 @@ Here we have compiled resources related to bioinformatics and computing. These r
 [pangenome]: tutorials/pangenome-cactus-minigraph.md
 [annotate]: tutorials/how-to-annotate-a-genome.md
 [de]: tutorials/differential-expression-analysis.md
+[ces]: https://phyloacc.github.io/workflow.html
 
 ---
 
@@ -149,6 +150,14 @@ We have compiled a list of external resources and tagged them with the categorie
         background: none !important;
         box-shadow: none !important;
         pointer-events: none !important;
+    }
+
+    /* Keep the WGA row's cards sized to their own content instead of
+       stretching to match the taller, expanded WGA card (nth-child 7-9) */
+    .grid.cards > :is(ul, ol) > li:nth-child(7),
+    .grid.cards > :is(ul, ol) > li:nth-child(8),
+    .grid.cards > :is(ul, ol) > li:nth-child(9) {
+        align-self: start;
     }
 
     /* Responsive: 2 columns on tablets */

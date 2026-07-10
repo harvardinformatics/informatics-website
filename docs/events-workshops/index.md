@@ -11,9 +11,11 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 #### Comparative Genomics User Group
 
-**Next meeting: Monday June 15, 2026, Northwest Labs B253**
+**Check back soon for more info on our next meeting!**
 
-*Main topic: Orthology inference*
+<!-- **Next meeting: Monday June 15, 2026, Northwest Labs B253**
+
+*Main topic: Orthology inference* -->
 
 This group brings researchers across Harvard together to discuss and learn more about modern comparative genomics. It is for people who are using genomic data from multiple species to make inferences about evolutionary processes, with tools/approaches like whole genome alignment, orthology inference, phylogenetics, and molecular evolutionary analysis. One major goal of this group is to discuss common pain points and analysis challenges that come up repeatedly in this kind of work, and move towards developing broadly useful solutions (potentially via a Hackathon to build more robust comparative genomics pipelines). 
 
@@ -88,7 +90,7 @@ We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest B
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-Spring/Summer 2026 Programming & Pizza dates:
+<!-- Spring/Summer 2026 Programming & Pizza dates:
 
 <span style="color:gray;">:fontawesome-solid-pizza-slice: February 11, Northwest Building room B227.45, 4:00-6:00PM</span>
 
@@ -98,9 +100,9 @@ Spring/Summer 2026 Programming & Pizza dates:
 
 <span style="color:gray;">:fontawesome-solid-pizza-slice: May 13, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-:fontawesome-solid-pizza-slice: June 10, Northwest Building room B227.45, 4:00-6:00PM
+:fontawesome-solid-pizza-slice: June 10, Northwest Building room B227.45, 4:00-6:00PM -->
 
-<!-- :material-arrow-right-bottom: **These will return in the Spring of 2026!** :fontawesome-solid-pizza-slice: -->
+:material-arrow-right-bottom: **These will return in the Fall of 2026!** :fontawesome-solid-pizza-slice:
 
 ## Calendar
 

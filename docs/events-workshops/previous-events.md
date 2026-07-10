@@ -24,6 +24,12 @@ These are topics of previous events with no attached contents and the dates of o
  
 {{ read_csv('data/previous-events/2026-events.csv') }}
 
+> *Comparative Genomics User Group Meeting topics
+>
+> May 2  : Introductions, group goals
+>
+> June 15: Orthology
+
 ## 2025
  
 {{ read_csv('data/previous-events/2025-events.csv') }}
