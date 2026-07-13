@@ -40,6 +40,50 @@ aside.md-banner .inline-button:focus {
 }
 
 /*------------------------------------------------------*/
+/* Scheduled banner styles (js/scheduled_banner.js) */
+
+#scheduled-banner-wrapper {
+    position: relative;
+    z-index: 3;
+    min-height: 10vh;
+}
+
+.scheduled-banner {
+    background-color: #F2A900;
+    color: #1e1e1e; 
+    min-height: 10vh;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scheduled-banner + .scheduled-banner {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.scheduled-banner-content {
+    flex: 1;
+}
+
+.scheduled-banner-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.4em;
+    line-height: 1;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.scheduled-banner-close:hover,
+.scheduled-banner-close:focus {
+    color: #ce4d4b;
+}
+
+/*------------------------------------------------------*/
 /* Home banner styles */
 
 .banner-row-container {

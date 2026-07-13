@@ -1,0 +1,74 @@
+[
+    {
+        "id": "test-banner",
+        "enabled": false,
+        "dismissable": false,
+        "start": "2026-07-01",
+        "end": "2026-07-31",
+        "html": "This is a <strong>test banner</strong>. Set <code>enabled</code> to <code>false</code> for this entry in data/scheduled-banners/banners.json to turn it off."
+    },
+    {
+        "id": "thanksgiving-2025",
+        "enabled": true,
+        "dismissable": false,
+        "start": "2025-11-26",
+        "end": "2025-11-30",
+        "html": "FAS Informatics offices are closed for Thanksgiving recess, November 26&ndash;30, 2025. Happy Thanksgiving!"
+    },
+    {
+        "id": "thanksgiving-2026",
+        "enabled": true,
+        "dismissable": false,
+        "start": "2026-11-25",
+        "end": "2026-11-29",
+        "html": "FAS Informatics offices are closed for Thanksgiving recess, November 25&ndash;29, 2026. Happy Thanksgiving!"
+    },
+    {
+        "id": "thanksgiving-2027",
+        "enabled": true,
+        "dismissable": false,
+        "start": "2027-11-24",
+        "end": "2027-11-28",
+        "html": "FAS Informatics offices are closed for Thanksgiving recess, November 24&ndash;28, 2027. Happy Thanksgiving!"
+    },
+    {
+        "id": "thanksgiving-2028",
+        "enabled": true,
+        "dismissable": false,
+        "start": "2028-11-22",
+        "end": "2028-11-26",
+        "html": "FAS Informatics offices are closed for Thanksgiving recess, November 22&ndash;26, 2028. Happy Thanksgiving!"
+    },
+    {
+        "id": "winter-break-2025",
+        "enabled": true,
+        "dismissable": false,
+        "start": "2025-12-20",
+        "end": "2026-01-02",
+        "html": "FAS Informatics will offer reduced support during winter recess, December 20, 2025 &ndash; January 2, 2026. Happy holidays!"
+    },
+    {
+        "id": "winter-break-2026",
+        "enabled": true,
+        "dismissable": false,
+        "start": "2026-12-20",
+        "end": "2027-01-04",
+        "html": "FAS Informatics will offer reduced support during winter recess, December 20, 2026 &ndash; January 4, 2027. Happy holidays!"
+    },
+    {
+        "id": "winter-break-2027",
+        "enabled": true,
+        "dismissable": false,
+        "start": "2027-12-19",
+        "end": "2028-01-04",
+        "html": "FAS Informatics will offer reduced support during winter recess, December 19, 2027 &ndash; January 4, 2028. Happy holidays!"
+    },
+    {
+        "id": "winter-break-2028",
+        "enabled": true,
+        "dismissable": false,
+        "start": "2028-12-21",
+        "end": "2029-01-02",
+        "html": "FAS Informatics will offer reduced support during winter recess, December 21, 2028 &ndash; January 2, 2029. Happy holidays!"
+    }
+]

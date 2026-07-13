@@ -97,10 +97,11 @@ plugins:
       module_name: scripts/macros
       # verbose: true # MACRO DEBUG: Uncomment for debugging (use chatter() in macros)
   - gen-files:   # This plugin generates files from templates and data files
-      scripts: 
-        - scripts/about_generator.py 
+      scripts:
+        - scripts/about_generator.py
         - scripts/tags_generator.py
-        - scripts/profile_generator.py 
+        - scripts/profile_generator.py
+        - scripts/scheduled_banners_generator.py
   # - mkdocs-jupyter: # mkdocs-jupyter==0.24.7, succeeded by jupyter_convert hook
   #     ignore: 
   #       - '*student.ipynb' 
@@ -137,6 +138,8 @@ extra_css:
 extra_javascript:
   - js/collapse_toc.js
   - js/banner_img.js
+  - js/scheduled-banners-data.js
+  - js/scheduled_banner.js
 
 extra:
   social:
