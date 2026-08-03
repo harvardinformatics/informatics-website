@@ -11,14 +11,18 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ### :material-calendar-month: Fall 2026 at a glance
 
-| Dates | Workshop / session | Format | Sign up |
-|-------|--------------------|--------|---------|
-| **Sept 1** *or* **Sept 4** · 10:30AM | [GenAI Week 1: Setting up Claude](#week-1-setting-up-claude) | Virtual | [Sept 1 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank"} · [Sept 4 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank"} |
-| **Sept 10 & 11** · 1:00PM | [GenAI Week 2: Launching GenAI tools on FASRC clusters](#week-2-launching-genai-tools-on-fasrc-clusters) | Virtual | [Register :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank"} |
-| **Sept 15 & 22** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 1](#weeks-3-4-data-analysis-with-agentic-tools): 🦠🧬 *E. coli* evolution | In person · NW 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
-| **Sept 18 & 25** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 2](#weeks-3-4-data-analysis-with-agentic-tools): 🐀⚡ Cambridge rat boxes | In person · NW 425 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
-| **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | In person · NW 453 | *Coming soon* |
-| *Date TBD* | [Comparative Genomics User Group](#comparative-genomics-user-group) | In person | [Join mailing list](#comparative-genomics-user-group) |
+<div class="centered-table" markdown>
+
+| Dates | Workshop / session | Location | Sign up |
+|-------|--------------------|----------|---------|
+| **Sept 1** *or* **Sept 4** · 10:30AM | [GenAI Week 1: Setting up Claude](#week-1-setting-up-claude-virtual) | Virtual | [Sept 1 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank"} · [Sept 4 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank"} |
+| **Sept 10 & 11** · 1:00PM | [GenAI Week 2: Launching GenAI tools on FASRC clusters](#week-2-launching-genai-tools-on-fasrc-clusters-virtual-w-fasrc) | Virtual | [Register :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank"} |
+| **Sept 15 & 22** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 1](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🦠🧬 *E. coli* evolution | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
+| **Sept 18 & 25** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 2](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🐀⚡ Cambridge rat boxes | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 425 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
+| **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | *Coming soon* |
+| *Date TBD* | [Comparative Genomics User Group](#comparative-genomics-user-group) | In person, TBD | [Join mailing list](#comparative-genomics-user-group) |
+
+</div>
 
 :material-alert-outline: **Signing up for any GenAI session?** You need an active Harvard Claude Code subscription — [request one](#pre-requisite-harvard-claude-code-subscription) at least 3–5 business days beforehand.
 
@@ -83,23 +87,25 @@ Use the tools from the previous sections to practice data analysis on real datas
 
 ^^Track 1: 🦠🧬E. coli Long Term Evolution Experiment^^
 
-*Session 1 Tuesday September 15 9:00AM - 12:00PM, Northwest Building 453*
+**Session 1 Tuesday September 15 9:00AM - 12:00PM, [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 453**
 
-*Session 2 Tuesday September 22 9:00AM - 12:00PM, Northwest Building 453*
+**Session 2 Tuesday September 22 9:00AM - 12:00PM, [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 453**
 
 Explore a real published dataset of RNA-seq and Ribo-seq data from a long term *E. coli* evolution experiment. You’ll be working with cleaned and processed read count and gene data in csv format only, no bioinformatics tools needed! Central question of the dataset: How does gene expression change over the course of 50,000 generations across 11 identical cell lines? 
 [Data from [Favate et al. eLife 2022 :octicons-link-external-24:](https://doi.org/10.7554/eLife.81979){:target="_blank"}]
 
 ^^Track 2:  🐀⚡ Rat Boxes in Cambridge^^
 
-*Session 1 Friday Sept 18 9:00AM - 12:00PM, Northwest Building 425*
+**Session 1 Friday Sept 18 9:00AM - 12:00PM, [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 425**
 
-*Session 2 Friday Sept 25 9:00AM - 12:00PM, Northwest Building 425*
+**Session 2 Friday Sept 25 9:00AM - 12:00PM, [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 425**
 
 Compare the success of Cambridge’s program to zap rats with Smart Rat Boxes with 311 calls about rat sightings. You’ll be working with a list of Smart Rat Box deployments & 311 calls with addresses involving rat sightings over time. Central question of the dataset: Have smart rat boxes been effective in Cambridge for fighting the rat problem? 
 [Data from [Cambridge Open Data :octicons-link-external-24:](https://data.cambridgema.gov/){:target="_blank"}]
 
 [Register for Data Science with Agentic Tools Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank" .md-button .md-button--primary .centered }
+
+---
 
 #### Introduction to Python
 
@@ -115,7 +121,9 @@ This workshop will teach the basics of programming in the context of Python. No 
 
 <!-- [Landing Page](){.md-button .md-button--primary .centered } -->
 
-#### Comparative Genomics User Group
+---
+
+### Comparative Genomics User Group
 
 **Check back soon for more info on our next meeting!**
 
@@ -454,10 +462,21 @@ To view a list of previous events and workshops, click the button below.
 
     h4 {
         text-decoration: underline;
+        font-size: 1.2em !important;
+    }
+
+    /* Center the "at a glance" table. Material renders tables as
+       inline-block, so text-align centers it; margin:auto would not. */
+    .centered-table {
+        text-align: center;
+    }
+
+    .centered-table table {
+        text-align: left;   /* keep cell contents left-aligned */
     }
 
     h5 {
-        font-size: 0.9em !important;
+        font-size: 1.0em !important;
         color: #000000 !important;
     }
 
