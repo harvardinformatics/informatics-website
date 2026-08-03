@@ -74,18 +74,18 @@ Use the tools from the previous sections to practice data analysis on real datas
 
 ^^Track 1: 🦠🧬E. coli Long Term Evolution Experiment^^
 
-**Session 1 Tuesday September 15 9:00AM - 12:00PM, Northwest Building 453**
+*Session 1 Tuesday September 15 9:00AM - 12:00PM, Northwest Building 453*
 
-**Session 2 Tuesday September 22 9:00AM - 12:00PM, Northwest Building 453**
+*Session 2 Tuesday September 22 9:00AM - 12:00PM, Northwest Building 453*
 
 Explore a real published dataset of RNA-seq and Ribo-seq data from a long term *E. coli* evolution experiment. You’ll be working with cleaned and processed read count and gene data in csv format only, no bioinformatics tools needed! Central question of the dataset: How does gene expression change over the course of 50,000 generations across 11 identical cell lines? 
 [Data from [Favate et al. eLife 2022 :octicons-link-external-24:](https://doi.org/10.7554/eLife.81979){:target="_blank"}]
 
 ^^Track 2:  🐀⚡ Rat Boxes in Cambridge^^
 
-**Session 1 Friday Sept 18 9:00AM - 12:00PM, Northwest Building 425**
+*Session 1 Friday Sept 18 9:00AM - 12:00PM, Northwest Building 425*
 
-**Session 2 Friday Sept 25 9:00AM - 12:00PM, Northwest Building 425**
+*Session 2 Friday Sept 25 9:00AM - 12:00PM, Northwest Building 425*
 
 Compare the success of Cambridge’s program to zap rats with Smart Rat Boxes with 311 calls about rat sightings. You’ll be working with a list of Smart Rat Box deployments & 311 calls with addresses involving rat sightings over time. Central question of the dataset: Have smart rat boxes been effective in Cambridge for fighting the rat problem? 
 [Data from [Cambridge Open Data :octicons-link-external-24:](https://data.cambridgema.gov/){:target="_blank"}]
@@ -96,9 +96,7 @@ Compare the success of Cambridge’s program to zap rats with Smart Rat Boxes wi
 
 **Tuesdays and Thursdays, September 29 - October 15 (6 sessions), 2026, 9:00AM-12:00PM (In person)**
 
-*Location TBD.*
-
-<!-- **[Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 453** -->
+**[Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 453**
 
 This workshop will teach the basics of programming in the context of Python. No prior knowledge of Python or programming is required, but the pace will be fast. The workshop meets for six 3 hour sessions. See [below](#introduction-to-python-intensive-fall-2025) for info on the past sessions.
 
