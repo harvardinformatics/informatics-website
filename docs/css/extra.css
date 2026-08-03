@@ -61,6 +61,14 @@
   width: max-content !important;   /* button fits its text */
 }
 
+/* Row of buttons centered side-by-side; use instead of .centered on each button */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .md-button.is-disabled {
   background-color: #bdbdbd !important;
   border-color: #bdbdbd !important;
