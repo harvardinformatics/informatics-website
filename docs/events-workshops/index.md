@@ -9,6 +9,105 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming Events & Workshops
 
+### :material-tools: Workshops
+
+#### Data Analysis Using GenAI Tools
+
+Do you want to learn how to responsibly use agentic generative AI tools like Claude to help analyze your data, but are afraid of letting it loose on your own research data? Have you only used chat windows or code completion and are curious what the big deal with "agentic" generative AI is? 
+
+In this four week training series, Informatics and [FASRC :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"} will cover:
+
+1. Setting up GenAI tools and agentic workflows.
+2. Using GenAI tools on FASRC clusters in a safe and secure manner.
+3. Using agents to analyze data.
+
+Registration is per session, so sign up for all that interest you. See below for individual session info.
+
+!!! warning "Pre-requisite: Harvard Claude code subscription"
+
+    You **must** activate your Claude code subscription **at least 3-5 business days before the date of the first workshop you sign up for below.** Fill out the HUIT AI request form to get that process started:
+
+    [Request Claude account :octicons-link-external-24:](https://harvard.service-now.com/ithelp?id=sc_cat_item&sys_id=53b1914133a083d074dca3813d5c7b2d){:target="_blank" .md-button .centered }
+
+
+##### Week 1: Setting up Claude (Virtual)
+
+**September 1 and September 4, 2026, 10:30AM (virtual)**
+
+!!! info "Identical sessions"
+
+    The sessions on September 1 and 4 will be identical. Register for the one that best fits your schedule.
+
+Learn how to set up and use the Harvard-provided Claude code subscription. 
+
+Topics covered:
+
+* Harvard IT and FASRC AI use policy
+* How to set up Claude Code and different ways to interact with it
+* General LLM tips & tricks
+
+[Register for Session 1: Sept. 1, 2026 10:30AM :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank" .md-button .md-button--primary }
+[Register for Session 2: Sept. 4, 2026 10:30AM :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank" .md-button .md-button--primary }
+{: .button-row }
+
+##### Week 2: Launching GenAI Tools on FASRC Clusters (Virtual w/ [FASRC :octicons-link-external-24:](https://www.rc.fas.harvard.edu/))
+
+Designed for researchers of all experience levels. These sessions demonstrate how to deploy HUIT-approved GenAI tools, such as coding agents and extensions, in Jupyter, RStudio, VS Code, and the command line. This training will also emphasize on the best practices for safeguarding research data while leveraging GenAI capabilities on FASRC clusters in alignment with institutional security, privacy, and data protection standards. 
+
+Sessions 1 & 2 cover different materials. Session 1, while not a pre-requisite, is a precursor to Session 2 and it will be beneficial to attend it prior to Session 2.
+
+**Session 1: September 10, 2026 1:00PM (virtual)**
+
+* Intro and overview of GenAI tools supported on the cluster 
+* How to access them safely via API keys or Harvard subscription 
+* Command-line setup of these tools on the cluster
+
+**Session 2: September 11, 2026 1:00PM (virtual)**
+
+* Launching GenAI tools, safely on the cluster (covered in Session 1), in Jupyter, RStudio, and VSCode 
+
+[Register for one or both sessions here :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank" .md-button .md-button--primary .centered }
+
+##### Weeks 3 & 4:  Data Analysis with Agentic Tools (In-person)
+
+Use the tools from the previous sections to practice data analysis on real datasets! We will analyze different datasets in different tracks of the workshop, each of which is broken into two sessions. The skills demonstrated will be the same regardless of which dataset track you choose, so pick a dataset track that interests you!
+
+^^Track 1: 🦠🧬E. coli Long Term Evolution Experiment^^
+
+**Session 1 Tuesday September 15 9:00AM - 12:00PM, Northwest Building 453**
+
+**Session 2 Tuesday September 22 9:00AM - 12:00PM, Northwest Building 453**
+
+Explore a real published dataset of RNA-seq and Ribo-seq data from a long term *E. coli* evolution experiment. You’ll be working with cleaned and processed read count and gene data in csv format only, no bioinformatics tools needed! Central question of the dataset: How does gene expression change over the course of 50,000 generations across 11 identical cell lines? 
+[Data from [Favate et al. eLife 2022 :octicons-link-external-24:](https://doi.org/10.7554/eLife.81979){:target="_blank"}]
+
+^^Track 2:  🐀⚡ Rat Boxes in Cambridge^^
+
+**Session 1 Friday Sept 18 9:00AM - 12:00PM, Northwest Building 425**
+
+**Session 2 Friday Sept 25 9:00AM - 12:00PM, Northwest Building 425**
+
+Compare the success of Cambridge’s program to zap rats with Smart Rat Boxes with 311 calls about rat sightings. You’ll be working with a list of Smart Rat Box deployments & 311 calls with addresses involving rat sightings over time. Central question of the dataset: Have smart rat boxes been effective in Cambridge for fighting the rat problem? 
+[Data from [Cambridge Open Data :octicons-link-external-24:](https://data.cambridgema.gov/){:target="_blank"}]
+
+[Register for Data Science with Agentic Tools Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank" .md-button .md-button--primary .centered }
+
+#### Introduction to Python
+
+**Tuesdays and Thursdays, September 29 - October 15 (6 sessions), 2026, 9:00AM-12:00PM (In person)**
+
+*Location TBD.*
+
+<!-- **[Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room 453** -->
+
+This workshop will teach the basics of programming in the context of Python. No prior knowledge of Python or programming is required, but the pace will be fast. The workshop meets for six 3 hour sessions. See [below](#introduction-to-python-intensive-fall-2025) for info on the past sessions.
+
+*Registration link coming soon*
+
+<!-- [Register Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSdMNEPPavtez0LuEcl2GVPTYNoLgjy8b3Fnsk7F8ksA--SM4Q/viewform?usp=dialog){:target="_blank" .md-button .md-button--primary .centered } -->
+
+<!-- [Landing Page](){.md-button .md-button--primary .centered } -->
+
 #### Comparative Genomics User Group
 
 **Check back soon for more info on our next meeting!**
