@@ -9,19 +9,28 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming Events & Workshops
 
+### :material-calendar-month: Fall 2026 at a glance
+
+| Dates | Workshop / session | Format | Sign up |
+|-------|--------------------|--------|---------|
+| **Sept 1** *or* **Sept 4** · 10:30AM | [GenAI Week 1: Setting up Claude](#week-1-setting-up-claude) | Virtual | [Sept 1 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank"} · [Sept 4 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank"} |
+| **Sept 10 & 11** · 1:00PM | [GenAI Week 2: Launching GenAI tools on FASRC clusters](#week-2-launching-genai-tools-on-fasrc-clusters) | Virtual | [Register :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank"} |
+| **Sept 15 & 22** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 1](#weeks-3-4-data-analysis-with-agentic-tools): 🦠🧬 *E. coli* evolution | In person · NW 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
+| **Sept 18 & 25** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 2](#weeks-3-4-data-analysis-with-agentic-tools): 🐀⚡ Cambridge rat boxes | In person · NW 425 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
+| **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | In person · NW 453 | *Coming soon* |
+| *Date TBD* | [Comparative Genomics User Group](#comparative-genomics-user-group) | In person | [Join mailing list](#comparative-genomics-user-group) |
+
+:material-alert-outline: **Signing up for any GenAI session?** You need an active Harvard Claude Code subscription — [request one](#pre-requisite-harvard-claude-code-subscription) at least 3–5 business days beforehand.
+
 ### :material-tools: Workshops
 
-#### Data Analysis Using GenAI Tools
+#### :material-robot-outline: Data Analysis Using GenAI Tools
 
-Do you want to learn how to responsibly use agentic generative AI tools like Claude to help analyze your data, but are afraid of letting it loose on your own research data? Have you only used chat windows or code completion and are curious what the big deal with "agentic" generative AI is? 
+**Four-week series · September 1–25, 2026 · with [FASRC :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"}**
 
-In this four week training series, Informatics and [FASRC :octicons-link-external-24:](https://www.rc.fas.harvard.edu/){:target="_blank"} will cover:
+Want to use agentic AI tools like Claude on your own research data, but are wary of letting one loose on it? Only used chat windows or code completion, and curious what the "agentic" part actually buys you? Over four weeks we go from setup, to running these tools securely on FASRC clusters, to analyzing a real dataset end to end.
 
-1. Setting up GenAI tools and agentic workflows.
-2. Using GenAI tools on FASRC clusters in a safe and secure manner.
-3. Using agents to analyze data.
-
-Registration is per session, so sign up for all that interest you. See below for individual session info.
+**Registration is per session** — sign up for all that interest you.
 
 !!! warning "Pre-requisite: Harvard Claude code subscription"
 
