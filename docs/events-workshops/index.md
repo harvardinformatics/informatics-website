@@ -19,7 +19,7 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 | **Sept 10 & 11** · 1:00PM | [GenAI Week 2: Launching GenAI tools on FASRC clusters](#week-2-launching-genai-tools-on-fasrc-clusters-virtual-w-fasrc) | Virtual | [Register :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank"} |
 | **Sept 15 & 22** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 1](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🦠🧬 *E. coli* evolution | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
 | **Sept 18 & 25** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 2](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🐀⚡ Cambridge rat boxes | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 425 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
-| **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | *Coming soon* |
+| **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank"} |
 | *Date TBD* | [Comparative Genomics User Group](#comparative-genomics-user-group) | In person, TBD | [Join mailing list](#comparative-genomics-user-group) |
 
 </div>
@@ -115,9 +115,26 @@ Compare the success of Cambridge’s program to zap rats with Smart Rat Boxes wi
 
 This workshop will teach the basics of programming in the context of Python. No prior knowledge of Python or programming is required, but the pace will be fast. The workshop meets for six 3 hour sessions. See [below](#introduction-to-python-intensive-fall-2025) for info on the past sessions.
 
-*Registration link coming soon*
+Day 1-3: Introduction to coding with python
 
-<!-- [Register Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSdMNEPPavtez0LuEcl2GVPTYNoLgjy8b3Fnsk7F8ksA--SM4Q/viewform?usp=dialog){:target="_blank" .md-button .md-button--primary .centered } -->
+* Programming basics and intro to logic and control
+* Control flow and iterable data structures
+* Writing functions & putting it all together
+
+Day 4-6: Python as a data science language
+
+* Introduction to pandas dataframes
+* Plotting data
+* Analyzing a real dataset: Indiana Storms
+
+There are two entry points to this workshop, you may start on day 1 or on day 4. If you start on day 1, you must commit to the full 6 days. If you already have some programming background and just need to learn python as a data science language, you may register for day 4. 
+
+Not sure if you should start on day 4 or day 1? If you want perform the below self test easily, you should register for day 4:
+Write a function in python that takes two lists of numbers and returns the list with the highest mean
+
+You can also check out the final [day 3 exercise](../workshops/python-intensive/Python-Part3.md#functions-to-programs) from the workshop, where we program a random walk function. 
+
+[Register Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank" .md-button .md-button--primary .centered }
 
 <!-- [Landing Page](){.md-button .md-button--primary .centered } -->
 
