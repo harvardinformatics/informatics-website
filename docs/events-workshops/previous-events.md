@@ -29,6 +29,8 @@ These are topics of previous events with no attached contents and the dates of o
 > May 2  : Introductions, group goals
 >
 > June 15: Orthology
+>
+> August 31: Reference-based CNEE prediction
 
 ## 2025
  

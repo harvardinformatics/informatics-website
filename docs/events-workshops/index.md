@@ -15,12 +15,13 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 | Dates | Workshop / session | Location | Sign up |
 |-------|--------------------|----------|---------|
-| **Sept 1** *or* **Sept 4** · 10:30AM | [GenAI Week 1: Setting up Claude](#week-1-setting-up-claude-virtual) | Virtual | [Sept 1 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank"} · [Sept 4 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank"} |
+| <span style="opacity:.55">**August 31** · 3:30PM</span> | <span style="opacity:.55">[Comparative Genomics User Group](#comparative-genomics-user-group)</span> | <span style="opacity:.55">[NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} B253</span> | <span style="opacity:.55">[Join mailing list](#comparative-genomics-user-group)</span> |
+| <span style="opacity:.55">**Sept 1** *or* **Sept 4** · 10:30AM</span> | <span style="opacity:.55">[GenAI Week 1: Setting up Claude](#week-1-setting-up-claude-virtual)</span> | <span style="opacity:.55">Virtual</span> | <span style="opacity:.55">[Sept 1 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank"} · [Sept 4 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank"}</span> |
 | **Sept 10 & 11** · 1:00PM | [GenAI Week 2: Launching GenAI tools on FASRC clusters](#week-2-launching-genai-tools-on-fasrc-clusters-virtual-w-fasrc) | Virtual | [Register :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank"} |
 | **Sept 15 & 22** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 1](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🦠🧬 *E. coli* evolution | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
 | **Sept 18 & 25** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 2](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🐀⚡ Cambridge rat boxes | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 425 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
 | **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank"} |
-| *Date TBD* | [Comparative Genomics User Group](#comparative-genomics-user-group) | In person, TBD | [Join mailing list](#comparative-genomics-user-group) |
+
 
 </div>
 
@@ -59,9 +60,9 @@ Topics covered:
 * How to set up Claude Code and different ways to interact with it
 * General LLM tips & tricks
 
-[Register for Session 1: Sept. 1, 2026 10:30AM :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank" .md-button .md-button--primary }
-[Register for Session 2: Sept. 4, 2026 10:30AM :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank" .md-button .md-button--primary }
-{: .button-row }
+<!-- [Register for Session 1: Sept. 1, 2026 10:30AM :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank" .md-button .md-button--primary } -->
+<!-- [Register for Session 2: Sept. 4, 2026 10:30AM :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank" .md-button .md-button--primary } -->
+<!-- {: .button-row } -->
 
 ##### Week 2: Launching GenAI Tools on FASRC Clusters (Virtual w/ [FASRC :octicons-link-external-24:](https://www.rc.fas.harvard.edu/))
 
@@ -221,19 +222,19 @@ We hold office hours every week on Wednesdays from 1:30 to 4:00pm in Northwest B
 
 We host programming and pizza events the second Wednesday of every month. Join us in our office in [Northwest Building :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} room B227.45 from 4:00 to 6:00 pm for a casual evening of coding, pizza, and conversation. Bring your laptop and any project you are working on, or just come to hang out and learn from others!
 
-<!-- Spring/Summer 2026 Programming & Pizza dates:
+Fall 2026 Programming & Pizza dates:
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: February 11, Northwest Building room B227.45, 4:00-6:00PM</span>
+<!-- <span style="color:gray;">:fontawesome-solid-pizza-slice: February 11, Northwest Building room B227.45, 4:00-6:00PM</span> -->
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: March 11, Northwest Building room B227.45, 4:00-6:00PM</span>
+:fontawesome-solid-pizza-slice: September 9, Northwest Building room B227.45, 4:00-6:00PM
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: April 8, Northwest Building room B227.45, 4:00-6:00PM</span>
+:fontawesome-solid-pizza-slice: October 14, Northwest Building room B227.45, 4:00-6:00PM
 
-<span style="color:gray;">:fontawesome-solid-pizza-slice: May 13, Northwest Building room B227.45, 4:00-6:00PM</span>
+:fontawesome-solid-pizza-slice: November 11, Northwest Building room B227.45, 4:00-6:00PM
 
-:fontawesome-solid-pizza-slice: June 10, Northwest Building room B227.45, 4:00-6:00PM -->
+:fontawesome-solid-pizza-slice: December 9, Northwest Building room B227.45, 4:00-6:00PM
 
-:material-arrow-right-bottom: **These will return in the Fall of 2026!** :fontawesome-solid-pizza-slice:
+<!-- :material-arrow-right-bottom: **These will return in the Fall of 2026!** :fontawesome-solid-pizza-slice: -->
 
 ## Calendar
 
