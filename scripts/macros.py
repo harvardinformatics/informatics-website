@@ -7,6 +7,7 @@ import os
 import re
 import json
 import bibtexparser
+from bibtexparser.middlewares import NormalizeFieldKeys
 
 ############################################################
 
@@ -111,6 +112,17 @@ def define_env(env):
         
     ###############
 
+    def bibField(entry, key, default=''):
+        """
+        Helper: Return the value of a bibtex field as a string.
+        bibtexparser v2's Entry.get() returns a Field object rather than the
+        field's value, and Entry[key] raises KeyError when the field is absent,
+        so neither is a drop-in for v1's dict-style .get(key, default).
+        - Helper for render_publications macro.
+        """
+        field = entry.get(key)
+        return default if field is None else field.value
+
     def bibtexLookup(json_data):
         """
         Helper: Create a lookup table from the JSON people data for bibtex names.
@@ -173,8 +185,22 @@ def define_env(env):
 
         # Load bibtex entries
         bibtex_file = os.path.join(env.project_dir, 'data', 'publications', 'fasifx-pubs.bib')
-        with open(bibtex_file, encoding='utf-8') as f:
-            bibtex_db = bibtexparser.load(f)
+        # utf-8-sig strips the byte-order mark this .bib file is saved with.
+        # NormalizeFieldKeys lowercases field keys the way bibtexparser v1 did:
+        # without it, the file's uppercase 'DOI' key would not be found below.
+        bibtex_db = bibtexparser.parse_file(
+            bibtex_file,
+            append_middleware=[NormalizeFieldKeys()],
+            encoding='utf-8-sig',
+        )
+
+        # v2 collects unparseable blocks rather than raising, which would drop
+        # publications from the page silently; surface them as an error instead
+        if bibtex_db.failed_blocks:
+            failed = "; ".join(f"line {b.start_line}" for b in bibtex_db.failed_blocks)
+            raise ValueError(
+                f"Failed to parse {len(bibtex_db.failed_blocks)} block(s) in {bibtex_file} ({failed})"
+            )
 
         # Create a lookup for bibtex names to canonical names and status
         bibtex_lookup = bibtexLookup(PEOPLE_JSON_DATA)
@@ -182,19 +208,19 @@ def define_env(env):
         pubs = []
         # Filter pubs by project keyword
         for entry in bibtex_db.entries:
-            kwords = entry.get('keywords','').split("\n")
+            kwords = bibField(entry, 'keywords').split("\n")
             if f"project:{project}" in kwords:
                 pubs.append(entry)
 
         # Sort by year (descending) and journal name (ascending)
-        pubs.sort(key=lambda e: (-int(e.get('year', 0)), e.get('journal','')))
+        pubs.sort(key=lambda e: (-int(bibField(e, 'year', 0)), bibField(e, 'journal')))
 
         # Initialize output string
         output_string = '!!! abstract "Publications"\n\n'
 
         for pub in pubs:
             # Parse and format authors
-            authorlist = [a.strip() for a in pub.get('author', '').split(' and ')]
+            authorlist = [a.strip() for a in bibField(pub, 'author').split(' and ')]
             formatted_authors = []
             for auth in authorlist:
                 # Format author name for output as "Lastname FM"
@@ -214,14 +240,14 @@ def define_env(env):
 
             # Extract publication details
             author_str = ', '.join(formatted_authors)
-            title = pub.get('title','').strip().rstrip('.')
-            year = pub.get('year','')
-            journal = pub.get('journal','')
-            volume = pub.get('volume','')
-            number = pub.get('number','')
-            pages = pub.get('pages','')
-            doi = pub.get('doi','')
-            url = f"https://doi.org/{doi}" if doi else pub.get('url', '')
+            title = bibField(pub, 'title').strip().rstrip('.')
+            year = bibField(pub, 'year')
+            journal = bibField(pub, 'journal')
+            volume = bibField(pub, 'volume')
+            number = bibField(pub, 'number')
+            pages = bibField(pub, 'pages')
+            doi = bibField(pub, 'doi')
+            url = f"https://doi.org/{doi}" if doi else bibField(pub, 'url')
 
             # Additional formatting for bioRxiv
             if journal == "bioRxiv":
