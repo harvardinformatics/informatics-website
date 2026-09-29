@@ -16,11 +16,11 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 | Dates | Workshop / session | Location | Sign up |
 |-------|--------------------|----------|---------|
 | <span style="opacity:.55">**August 31** · 3:30PM</span> | <span style="opacity:.55">[Comparative Genomics User Group](#comparative-genomics-user-group)</span> | <span style="opacity:.55">[NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} B253</span> | <span style="opacity:.55">[Join mailing list](#comparative-genomics-user-group)</span> |
-| <span style="opacity:.55">**Sept 1** *or* **Sept 4** · 10:30AM</span> | <span style="opacity:.55">[GenAI Week 1: Setting up Claude](#week-1-setting-up-claude-virtual)</span> | <span style="opacity:.55">Virtual</span> | <span style="opacity:.55">[Sept 1 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank"} · [Sept 4 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank"}</span> |
-| **Sept 10 & 11** · 1:00PM | [GenAI Week 2: Launching GenAI tools on FASRC clusters](#week-2-launching-genai-tools-on-fasrc-clusters-virtual-w-fasrc) | Virtual | [Register :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank"} |
-| **Sept 15 & 22** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 1](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🦠🧬 *E. coli* evolution | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
-| **Sept 18 & 25** · 9:00AM–12:00PM | [GenAI Weeks 3 & 4, Track 2](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🐀⚡ Cambridge rat boxes | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 425 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"} |
-| **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453 | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank"} |
+| <span style="opacity:.55">**Sept 1** *or* **Sept 4** · 10:30AM</span> | <span style="opacity:.55">[GenAI Week 1: Setting up Claude](#week-1-setting-up-claude-virtual)</span> | <span style="opacity:.55">Virtual</span> | <!-- <span style="opacity:.55">[Sept 1 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank"} · [Sept 4 :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank"}</span> --> |
+| <span style="opacity:.55">**Sept 10 & 11** · 1:00PM</span> | <span style="opacity:.55">[GenAI Week 2: Launching GenAI tools on FASRC clusters](#week-2-launching-genai-tools-on-fasrc-clusters-virtual-w-fasrc)</span> | <span style="opacity:.55">Virtual</span> | <!-- <span style="opacity:.55">[Register :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank"}</span> --> |
+| <span style="opacity:.55">**Sept 15 & 22** · 9:00AM–12:00PM</span> | <span style="opacity:.55">[GenAI Weeks 3 & 4, Track 1](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🦠🧬 *E. coli* evolution</span> | <span style="opacity:.55">[NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453</span> | <!-- <span style="opacity:.55">[Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"}</span> --> |
+| <span style="opacity:.55">**Sept 18 & 25** · 9:00AM–12:00PM</span> | <span style="opacity:.55">[GenAI Weeks 3 & 4, Track 2](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🐀⚡ Cambridge rat boxes</span> | <span style="opacity:.55">[NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 425</span> | <!-- <span style="opacity:.55">[Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"}</span> --> |
+| **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453</span> | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank"} |
 
 
 </div>
@@ -80,7 +80,7 @@ Sessions 1 & 2 cover different materials. Session 1, while not a pre-requisite, 
 
 * Launching GenAI tools, safely on the cluster (covered in Session 1), in Jupyter, RStudio, and VSCode 
 
-[Register for one or both sessions here :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank" .md-button .md-button--primary .centered }
+<!-- [Register for one or both sessions here :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank" .md-button .md-button--primary .centered } -->
 
 ##### Weeks 3 & 4:  Data Analysis with Agentic Tools (In-person)
 
@@ -104,7 +104,7 @@ Explore a real published dataset of RNA-seq and Ribo-seq data from a long term *
 Compare the success of Cambridge’s program to zap rats with Smart Rat Boxes with 311 calls about rat sightings. You’ll be working with a list of Smart Rat Box deployments & 311 calls with addresses involving rat sightings over time. Central question of the dataset: Have smart rat boxes been effective in Cambridge for fighting the rat problem? 
 [Data from [Cambridge Open Data :octicons-link-external-24:](https://data.cambridgema.gov/){:target="_blank"}]
 
-[Register for Data Science with Agentic Tools Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank" .md-button .md-button--primary .centered }
+<!-- [Register for Data Science with Agentic Tools Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank" .md-button .md-button--primary .centered } -->
 
 ---
 
@@ -137,7 +137,7 @@ You can also check out the final [day 3 exercise](../workshops/python-intensive/
 
 [Register Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank" .md-button .md-button--primary .centered }
 
-<!-- [Landing Page](){.md-button .md-button--primary .centered } -->
+[Introduction to Python Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
 
 ---
 
@@ -256,11 +256,15 @@ This calendar will show all our upcoming office hours as well as any workshops o
 
 This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is noted.
 
+### :fontawesome-brands-python: Introduction to Python Intensive (Fall 2026)
+
+This is a six day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
+
+[Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
+
 ### :material-application-brackets-outline: Genomics on the Command Line: Developing Your Bioinformatics Intuition (Spring 2026)
 
 !!! info "Note that this workshop was previously called **Biotips**"
-    
-    
 
 Genomics on the Command Line is a four-part beginner workshop designed to help researchers build confidence in taking a practical “first pass” look at genomics data on the command line. The goal is not to teach in-depth scripting in Bash, Python, or LLM-based workflows, but to help participants develop a hands-on feel for common bioinformatics file formats, the basic tools available for inspecting them, and the kinds of questions they can answer quickly when something looks off.
 
@@ -285,12 +289,6 @@ This two part intermediate level workshop introduces students to [Snakemake :oct
 This 2 part intermediate level workshop introduces students to [Nextflow :octicons-link-external-24:](https://nextflow.io/){:target="_blank"}, a workflow management system that allows you to create reproducible and scalable data analysis pipelines. In the first session we cover understanding the basics of **running** a Nextflow workflow. In the second session, we build on the first session and learn how to **write** a Nextflow workflow from scratch.
 
 [Nextflow Workshop Landing Page :material-arrow-right:](../workshops/nextflow/index.md){ .md-button .md-button--primary .centered }
-
-### :fontawesome-brands-python: Introduction to Python Intensive (Fall 2025)
-
-This is a six day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
-
-[Python Intensive Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
 
 ### :material-food-apple-outline: Healthy Habits for Data Science (Spring 2024)
 

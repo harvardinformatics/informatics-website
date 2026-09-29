@@ -31,6 +31,8 @@ These are topics of previous events with no attached contents and the dates of o
 > June 15: Orthology
 >
 > August 31: Reference-based CNEE prediction
+>
+> ^With [FASRC](https://www.rc.fas.harvard.edu/events/genai-tools-on-fasrc-session-1/)
 
 ## 2025
  

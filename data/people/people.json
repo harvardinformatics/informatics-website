@@ -266,14 +266,14 @@
                 "img": "img/people/katyaosipova.jpg",
                 "date-added": "12-05-2023",
                 "date-joined": "11-01-2022",
-                "date-left": "",
-                "status" : "active",
+                "date-left": "08-01-2026",
+                "status" : "moved",
                 "link": "/people/katya-osipova/",
                 "external-link": "https://osipovarev.github.io/",
                 "pubs": "https://scholar.google.com/citations?hl=en&user=OhvZN8cAAAAJ&view_op=list_works&sortby=pubdate",
                 "github": "https://github.com/osipovarev",
                 "degree": "Ph.D.",
-                "profile": "Katya works on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species."
+                "profile": "Katya worked on convergent evolution of brood parasitic birds, funded by an NSF grant to study the genomics of these species. She is now a <a href=\"https://www.crick.ac.uk/research/labs/katya-osipova\", target=\"_blank\">Group Leader</a> at the Francis Crick Institute in London, UK."
             },
             "Sara Smith Wuitchik": {
                 "id": "32",
