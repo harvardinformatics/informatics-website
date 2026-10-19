@@ -9,7 +9,7 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 
 ## Upcoming Events & Workshops
 
-### :material-calendar-month: Fall 2026 at a glance
+### :material-calendar-month: Fall 2026 workshops at a glance
 
 <div class="centered-table" markdown>
 
@@ -20,14 +20,18 @@ The FAS Informatics Group creates hosts events such as workshops, both online an
 | <span style="opacity:.55">**Sept 10 & 11** · 1:00PM</span> | <span style="opacity:.55">[GenAI Week 2: Launching GenAI tools on FASRC clusters](#week-2-launching-genai-tools-on-fasrc-clusters-virtual-w-fasrc)</span> | <span style="opacity:.55">Virtual</span> | <!-- <span style="opacity:.55">[Register :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank"}</span> --> |
 | <span style="opacity:.55">**Sept 15 & 22** · 9:00AM–12:00PM</span> | <span style="opacity:.55">[GenAI Weeks 3 & 4, Track 1](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🦠🧬 *E. coli* evolution</span> | <span style="opacity:.55">[NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453</span> | <!-- <span style="opacity:.55">[Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"}</span> --> |
 | <span style="opacity:.55">**Sept 18 & 25** · 9:00AM–12:00PM</span> | <span style="opacity:.55">[GenAI Weeks 3 & 4, Track 2](#weeks-3-4-data-analysis-with-agentic-tools-in-person): 🐀⚡ Cambridge rat boxes</span> | <span style="opacity:.55">[NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 425</span> | <!-- <span style="opacity:.55">[Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank"}</span> --> |
-| **Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM | [Introduction to Python](#introduction-to-python) (6 sessions) | [NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453</span> | [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank"} |
+| <span style="opacity:.55">**Sept 29 – Oct 15** · Tue & Thu, 9:00AM–12:00PM</span> | <span style="opacity:.55">[Introduction to Python](#introduction-to-python) (6 sessions)</span> | <span style="opacity:.55">[NW :octicons-link-external-24:](https://maps.app.goo.gl/1MqNswcVaTYcCx68A){:target="_blank"} 453</span> | <!-- [Register :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank"} --> |
 
 
 </div>
 
-:material-alert-outline: **Signing up for any GenAI session?** You need an active Harvard Claude Code subscription — [request one](#pre-requisite-harvard-claude-code-subscription) at least 3–5 business days beforehand.
+<!-- >:material-alert-outline: **Signing up for any GenAI session?** You need an active Harvard Claude Code subscription — [request one](#pre-requisite-harvard-claude-code-subscription) at least 3–5 business days beforehand. -->
 
-### :material-tools: Workshops
+**The first part of our fall event schedule has concluded. Check back soon for more events and workshops! And see below for continuing events.**
+
+<!-- ### :material-tools: Workshops -->
+
+<!-- 
 
 #### :material-robot-outline: Data Analysis Using GenAI Tools
 
@@ -60,9 +64,13 @@ Topics covered:
 * How to set up Claude Code and different ways to interact with it
 * General LLM tips & tricks
 
+-->
+
 <!-- [Register for Session 1: Sept. 1, 2026 10:30AM :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/oofDaA1gReGP87giXeL7mw#/registration){:target="_blank" .md-button .md-button--primary } -->
 <!-- [Register for Session 2: Sept. 4, 2026 10:30AM :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/KQr8FrQOThmB2SR6cLuUBg#/registration){:target="_blank" .md-button .md-button--primary } -->
 <!-- {: .button-row } -->
+
+<!-- 
 
 ##### Week 2: Launching GenAI Tools on FASRC Clusters (Virtual w/ [FASRC :octicons-link-external-24:](https://www.rc.fas.harvard.edu/))
 
@@ -80,7 +88,11 @@ Sessions 1 & 2 cover different materials. Session 1, while not a pre-requisite, 
 
 * Launching GenAI tools, safely on the cluster (covered in Session 1), in Jupyter, RStudio, and VSCode 
 
+-->
+
 <!-- [Register for one or both sessions here :octicons-link-external-24:](https://harvard.zoom.us/meeting/register/WD00pLPfRJCt3cBXiE8dqQ#/registration){:target="_blank" .md-button .md-button--primary .centered } -->
+
+<!-- 
 
 ##### Weeks 3 & 4:  Data Analysis with Agentic Tools (In-person)
 
@@ -104,7 +116,11 @@ Explore a real published dataset of RNA-seq and Ribo-seq data from a long term *
 Compare the success of Cambridge’s program to zap rats with Smart Rat Boxes with 311 calls about rat sightings. You’ll be working with a list of Smart Rat Box deployments & 311 calls with addresses involving rat sightings over time. Central question of the dataset: Have smart rat boxes been effective in Cambridge for fighting the rat problem? 
 [Data from [Cambridge Open Data :octicons-link-external-24:](https://data.cambridgema.gov/){:target="_blank"}]
 
+-->
+
 <!-- [Register for Data Science with Agentic Tools Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLSc-XO3Ynye9wZ-NpW1TTFRe0bgPQYsFDoVvEOr9084HRxsb-Q/viewform){:target="_blank" .md-button .md-button--primary .centered } -->
+
+<!-- 
 
 ---
 
@@ -138,6 +154,8 @@ You can also check out the final [day 3 exercise](../workshops/python-intensive/
 [Register Here :octicons-link-external-24:](https://docs.google.com/forms/d/e/1FAIpQLScsH9CGENJypxLNQqBWUacs_wXZvwbhwbfXwSeXta50buO6tQ/viewform){:target="_blank" .md-button .md-button--primary .centered }
 
 [Introduction to Python Landing Page :material-arrow-right:](../workshops/python-intensive/index.md){ .md-button .md-button--primary .centered }
+
+-->
 
 ---
 
@@ -226,9 +244,9 @@ Fall 2026 Programming & Pizza dates:
 
 <!-- <span style="color:gray;">:fontawesome-solid-pizza-slice: February 11, Northwest Building room B227.45, 4:00-6:00PM</span> -->
 
-:fontawesome-solid-pizza-slice: September 9, Northwest Building room B227.45, 4:00-6:00PM
+<span style="color:gray;">:fontawesome-solid-pizza-slice: September 9, Northwest Building room B227.45, 4:00-6:00PM</span>
 
-:fontawesome-solid-pizza-slice: October 14, Northwest Building room B227.45, 4:00-6:00PM
+<span style="color:gray;">:fontawesome-solid-pizza-slice: October 14, Northwest Building room B227.45, 4:00-6:00PM</span>
 
 :fontawesome-solid-pizza-slice: November 11, Northwest Building room B227.45, 4:00-6:00PM
 
@@ -256,7 +274,9 @@ This calendar will show all our upcoming office hours as well as any workshops o
 
 This section contains the most up-to-date content for our workshops! The date we last updated and ran the workshop is noted.
 
-### :fontawesome-brands-python: Introduction to Python Intensive (Fall 2026)
+### :fontawesome-brands-python: Introduction to Programming and Data Science with Python (Fall 2026)
+
+!!! info "Note that this workshop was previously called **Python Intensive**"
 
 This is a six day workshop that will introduce students to Python as a data science language. We teach the basics of programming and logic in the context of Python and go on to show the tools that use Python for modern data analysis. This assumes no prior knowledge of Python, but will move at a quick pace to cover all the content. The workshop meets for 3 hours for 4 sessions. 
 
