@@ -57,7 +57,7 @@ We provide a script that will parse the partitions available to the current user
 /n/holylfs05/LABS/informatics/Everyone/internal-share/cannon-snakemake-cfg/generate_snakemake_partition_config.py
 ```
 
-While you can run this script from our directory by providing the full path to Python (*e.g.* python /n/holylfs05/LABS/informatics/Everyone/internal-share/cannon-snakemake-cfg/generate_snakemake_partition_config.python), it may be easier to copy the script to your own directory:
+While you can run this script from our directory by providing the full path to Python (*e.g.* `python /n/holylfs05/LABS/informatics/Everyone/internal-share/cannon-snakemake-cfg/generate_snakemake_partition_config.py`), it may be easier to copy the script to your own directory:
 
 ```bash
 cp /n/holylfs05/LABS/informatics/Everyone/internal-share/cannon-snakemake-cfg/generate_snakemake_partition_config.py generate_snakemake_partition_config.py
