@@ -1,0 +1,128 @@
+#############################################################################
+# This config file is a necessary input file for the Minigraph-Cactus Snakemake
+# pipeline: cactus_minigraph.smk. It contains the parameters needed to run the pipeline.
+#
+# This pipeline uses the Minigraph-Cactus pipeline to create a pangenome graph and
+# align genomes.
+# https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md
+#############################################################################
+
+# ./cactus_snakemake prep minigraph --configfile <this config>
+# ./cactus_snakemake run minigraph --configfile <this config> -j 5 -e slurm --dryrun
+
+#############################################################################
+#
+# Below are the parameters you need to set for the cactus-minigraph snakemake pipeline.
+#
+
+cactus_path: 
+# File path, version tag (e.g. v3.3.0), or "download".
+# Provide the path to the cactus singularity container. 
+# If you don't have it, set this to "download" and prep will download it for you (once; every run then uses that image).
+# To download a specific version, give its full version tag, e.g. v3.3.0 or 3.3.0 (not 3.3, which YAML
+# reads as a number). Cactus v3.0.0 or later is required.
+
+input_file: 
+# File path.
+# File containing a list of sample IDs and genome files.
+
+output_dir: 
+# Directory path.
+# The desired output directory for the snakemake pipeline. This directory will be created if it doesn't exist.
+# This directory will be created if it doesn't exist.
+
+reference: 
+# String
+# The reference genome for the pangenome. This should be the name of one of the genomes in the input_file.
+
+prefix: 
+# String
+# A prefix for the output files.
+
+join_graph_type:
+# String. One of: full, clip, filter
+# Controls how the final pangenome graph is generated. See the cactus documentation for more details:
+# https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md#clipping-filtering-and-indexing
+
+join_filter: 2
+# Integer
+# Only relevant for join_graph_type: filter
+# The minimum number of haplotypes that must be present in a node for it to be retained.
+
+tmp_dir: 
+# A temporary directory for snakemake and cactus to use. 
+# Will be created if it doesn't exist, but it should be located somewhere with lots of space.
+
+#############################################################################
+## Below are the partitions and resources for each rule in the snakemake pipeline.
+## Be sure to adjust them to meet your needs and the resources available on your cluster.
+##
+## The default: block fills in any value that a rule's own entry leaves blank, and is used in
+## full for rules that have no entry of their own.
+##
+## mem_mb is in MB
+## time is in minutes
+## Any resource except gpus and gres can be either a single value or a YAML list of per-attempt values.
+## If a list is provided, attempt 1 uses the first value, attempt 2 the second, etc.,
+## and attempts beyond the list length reuse the last value.
+## This requires Snakemake retries, e.g. --retries 3.
+## Example:
+##   align:
+##     mem_mb: [80000, 160000, 200000]
+##     time: [1660, 3320, 6640, 7200]
+##
+## If you run with -e slurm --slurm-partition-config <path to your cluster's partition config>, partition names can be left blank.
+
+rule_resources:
+  default:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time:  
+
+  copy_input:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  minigraph:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  graphmap:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  split:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  align:  
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  join:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+#############################################################################
+## OPTIONAL
+## Below are optional settings that most runs can leave blank.
+
+singularity_bind_paths:
+# Optional YAML list of extra Singularity bind paths to add to every container command.
+# Only needed if some of your files are on a filesystem that isn't available inside the
+# container by default; jobs failing to find files that do exist are the usual sign.
+# Each entry must use src[:dest[:opts]] format, e.g. /nfs6:/nfs6 or /scratch:/scratch:rw
+# Leave blank or set to [] to use the cluster defaults only.

@@ -1,0 +1,199 @@
+#############################################################################
+# This config file is a necessary input file for the Cactus add-genome Snakemake
+# pipeline: cactus_add_genome.smk. It contains the parameters needed to run the pipeline.
+#
+# This pipeline uses the add to branch method to add a new genome to an existing HAL file.
+# https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md
+# https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/cactus-update-prepare.md
+#############################################################################
+
+# ./cactus_snakemake prep add-genome --configfile <this config>
+# ./cactus_snakemake run add-genome --configfile <this config> -j 5 -e slurm --dryrun
+
+#############################################################################
+#
+# Below are the parameters you need to set for the cactus snakemake pipeline.
+#
+
+cactus_path: 
+# File path, version tag (e.g. v3.3.0), or "download".
+# Provide the path to the cactus singularity container. This is needed whether use_gpu is True or False.
+# With use_gpu: True, a version tag or "download" gets the GPU build of that version (don't add -gpu
+# yourself), and a file path must point to a GPU image.
+# If you don't have it, set this to "download" and prep will download it for you (once; every run then uses that image).
+# To download a specific version, give its full version tag, e.g. v3.3.0 or 3.3.0 (not 3.3, which YAML
+# reads as a number). Cactus v3.0.0 or later is required.
+
+input_hal:
+# File path.
+# The input HAL file. This is the output of a previous cactus run.
+
+new_genome_name:
+# String.
+# The name of the new genome to be added to the HAL file.
+# This will also be the name in the tree.
+# E.g node 6 in https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md#adding-a-new-genome
+
+new_genome_fasta:
+# File path.
+# The path to the genome file to be added to the HAL file.
+
+new_anc_node:
+# String.
+# The name of the new node that will be created in the tree.
+# We will be creating a new branch in the tree connecting the new genome to this node.
+# E.g. the red circle in https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md#adding-a-new-genome
+
+new_branch_length:
+# Float or blank (defaults to 1.0).
+# The branch length of the new branch connecting the new genome to the new_anc_node.
+# E.g. the dashed branch between 6 and the red circle in https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md#adding-a-new-genome
+
+parent_node:
+# String.
+# The node directly above the new_anc_node to be added in the tree.
+# E.g. node 5 in https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md#adding-a-new-genome
+
+child_node:
+# String.
+# The node directly below the genome to be added in the tree.
+# This is the node directly below a new branch which will be added to the tree.
+# E.g. node 4 in https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/updating-alignments.md#adding-a-new-genome
+
+top_branch_length:
+# Float or blank (defaults to 1.0).
+# This specifies how the existing branch between child_node and parent_node will be split by the new_anc_node.
+# This is the length of the branch that will connect new_anc_node to the existing parent_node.
+# Leave blank if the original tree did not have branch lengths (or if the tree in the HAL file has all branch lengths set to 1.0)
+
+output_dir: 
+# Directory path.
+# The desired output directory for the snakemake pipeline. This directory will be created if it doesn't exist.
+# This directory will be created if it doesn't exist.
+
+overwrite_original_hal:
+# True/False.
+# Whether or not to overwrite the original HAL file (True) or make a copy and use it (False).
+# If a copy is made (False), you don't risk corrupting the original HAL file, but you will
+# use twice as much disk space.
+
+final_prefix:
+# String.
+# The prefix for the final output files. This will be used to name the final HAL file and the final MAF files.
+
+maf_reference:
+# String.
+# The reference genome for the MAF files. This should be the name of the reference genome in the input_file.
+
+maf_include_anc: False
+# True/False.
+# Whether to include the ancestral genomes in the MAF files. If False (the default), they are
+# left out (cactus-hal2maf --noAncestors).
+
+tmp_dir:
+# Directory path.
+# A temporary directory for snakemake and cactus to use. Should have lots of space.
+
+use_gpu:
+# True/False.
+# Whether or not to use the GPU version of cactus.
+# If you have GPU partitions and want to use them, set this to True.
+# If you don't have a GPU partition, set this to False.
+
+#############################################################################
+## Below are the partitions and resources for each rule in the snakemake pipeline.
+## Be sure to adjust them to meet your needs and the resources available on your cluster.
+## In this pipeline, the blast entry is used by both blast rules (blast_new_genome and blast_parent),
+## the align entry by both align rules (align_new_genome and align_parent), and the convert entry
+## by convert_new_genome.
+## Notably, for the blast rules, if you use the GPU version of cactus you will need to
+## provide a partition with GPUs and set exactly one of the two options below:
+##   gpus: number of GPUs to request through Snakemake's gpu resource
+##   gres: GPU GRES request in any of these forms: 1, a100:2, gpu:1, gpu:a100:2
+##         If gpu: is omitted, the pipeline will add it.
+## If you are not using the cactus GPU version, both values will be ignored.
+##
+## The default: block fills in any value that a rule's own entry leaves blank, and is used in
+## full for rules that have no entry of their own.
+##
+## mem_mb is in MB
+## time is in minutes
+## Any resource except gpus and gres can be either a single value or a YAML list of per-attempt values.
+## If a list is provided, attempt 1 uses the first value, attempt 2 the second, etc.,
+## and attempts beyond the list length reuse the last value.
+## This requires Snakemake retries, e.g. --retries 3.
+## Example:
+##   blast:
+##     mem_mb: [80000, 160000, 200000]
+##     time: [1660, 3320, 6640, 7200]
+##
+## If you run with -e slurm --slurm-partition-config <path to your cluster's partition config>, partition names can be left blank.
+
+rule_resources:
+  default:
+    partition: 
+    mem_mb: 
+    cpus: 
+    gpus: 0
+    time:  
+
+  preprocess:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  blast:
+    partition: # If use_gpu is True, this must be a partition with GPUs
+    mem_mb: 
+    cpus: 
+    gpus: # Use this for Snakemake's gpu resource; do not set together with gres
+    gres: # Use this for Snakemake's gres resource, e.g. 1, a100:2, gpu:1, or gpu:a100:2
+    time: 
+
+  align:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  convert:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  copy_or_get_hal:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  append_subtrees:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  add_to_branch:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+  maf:
+    partition: 
+    mem_mb: 
+    cpus: 
+    time: 
+
+#############################################################################
+## OPTIONAL
+## Below are optional settings that most runs can leave blank.
+
+singularity_bind_paths:
+# Optional YAML list of extra Singularity bind paths to add to every container command.
+# Only needed if some of your files are on a filesystem that isn't available inside the
+# container by default; jobs failing to find files that do exist are the usual sign.
+# Each entry must use src[:dest[:opts]] format, e.g. /nfs6:/nfs6 or /scratch:/scratch:rw
+# Leave blank or set to [] to use the cluster defaults only.

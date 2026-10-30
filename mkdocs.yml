@@ -24,8 +24,12 @@ not_in_nav: |
   resources/glossary.md
   resources/tags/*.md
   workshops/
-  _includes/*
   services/concierge.md
+
+# Files in docs/ that are not built as pages.
+# assets/snippets/ holds shared text that is inserted into pages with pymdownx.snippets (--8<--).
+exclude_docs: |
+  assets/snippets/
 
 markdown_extensions:
   - admonition  
@@ -36,7 +40,8 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      check_paths: true   # Fail the build if an included snippet file is missing, instead of silently leaving it out
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -114,8 +119,7 @@ plugins:
       enable_creation_date: true
       exclude:
         - 'resources/tags/*'
-        - '_includes/*'
-        - 'people/*' 
+        - 'people/*'
   - social:
       # enabled: false # SOCIAL PLUGIN: Uncomment to disable for local builds
       cards_layout_options:
