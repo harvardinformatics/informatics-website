@@ -16,7 +16,7 @@ Comparative genomics requires alignments between sequences from different popula
     Here is the rulegraph for the pipeline. It works in rounds based on the shape of the input phylogeny (hence the cycle). First, genomes at the tips are masked and then all internal nodes are aligned.
 
     <center>
-        <img src="https://raw.githubusercontent.com/harvardinformatics/cactus-snakemake/main/tests/evolverMammals/rulegraphs-dags/cactus-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.">
+        <img src="https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/rulegraphs-dags/cactus-align-rulegraph.png?raw=true" alt="A directed cyclic graph showing the rules for the pipeline.">
     </center>
 
 !!! tip "This pipeline is suitable for aligning genomes from different species"

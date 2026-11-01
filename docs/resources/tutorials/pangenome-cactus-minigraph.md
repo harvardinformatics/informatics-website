@@ -16,7 +16,7 @@ For aligning genome assemblies from the same species for population genomic anal
     Here is the rulegraph for the pipeline. The **split** rule breaks up the workflow by chromosome/scaffold for efficient submission of **align** steps, with **align** picking up where **split** left off.
 
     <center>
-        <img src="https://raw.githubusercontent.com/harvardinformatics/cactus-snakemake/main/tests/yeast-minigraph/rulegraphs-dags/cactus-minigraph-rulegraph.png" alt="A directed acyclic graph showing the rules for the pipeline.">
+        <img src="https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/yeast-minigraph/rulegraphs-dags/cactus-minigraph-rulegraph.png?raw=true" alt="A directed acyclic graph showing the rules for the pipeline.">
     </center>
 
 !!! tip "This pipeline is suitable for aligning and constructing pangenomes from samples of the same species"

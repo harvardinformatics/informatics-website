@@ -16,7 +16,7 @@ Once you have your [HAL file with a whole genome alignment](whole-genome-alignme
     Here is the rulegraph for the pipeline. This one is fairly straightforward: the new outgroup genome is aligned to the root sequence from the original HAL file, creating a small sub-alignment with a new root. The old alignment is then merged into this one by the old root node.
 
     <center>
-        <img src="https://raw.githubusercontent.com/harvardinformatics/cactus-snakemake/main/tests/evolverMammals/rulegraphs-dags/cactus-add-outgroup-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.">
+        <img src="https://raw.githubusercontent.com/harvardinformatics/cactus-snakemake/main/tests/evolverMammals/rulegraphs-dags/cactus-add-outgroup-rulegraph.png" alt="A directed acyclic graph showing the rules for the pipeline.">
     </center>
 
 ## Getting started

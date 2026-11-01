@@ -16,7 +16,7 @@ Once you have your [HAL file with a whole genome alignment](whole-genome-alignme
     Here is the rulegraph for the pipeline. It performs one round of alignment: the old genome is removed from the HAL, and the parent of the replaced genome is re-aligned with the new genome.
 
     <center>
-        <img src="https://raw.githubusercontent.com/harvardinformatics/cactus-snakemake/main/tests/evolverMammals/rulegraphs-dags/cactus-replace-genome-rulegraph.png" alt="A directed cyclic graph showing the rules for the pipeline.">
+        <img src="https://github.com/harvardinformatics/cactus-snakemake/blob/main/tests/evolverMammals/rulegraphs-dags/cactus-replace-genome-rulegraph.png?raw=true" alt="A directed acyclic graph showing the rules for the pipeline.">
     </center>
 
 ## Getting started
